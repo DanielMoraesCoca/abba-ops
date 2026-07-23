@@ -8,7 +8,7 @@
 |---|---|---|
 | Análise por informação pública (scout) apresentada em 5 dias úteis | Prazo da avaliação profunda: 2–3 semanas (depende da agenda de entrevistas DO CLIENTE — deixar explícito) | Benchmarks entre clientes (exige 3+ clientes no vault) |
 | Avaliação em 25 dimensões com entrevistas do conselho à linha de frente | Primeira execução com dados reais — enquadrar como charter: método validado, primeira aplicação real com escopo controlado (risco R1) | "Método certificado em clientes reais" — ainda não é verdade |
-| Relatórios editados pelos sócios + one-pager + quantificação rastreável | | Widget público de análise no site (aposta futura 2) |
+| Relatórios editados pelos sócios + one-pager + quantificação rastreável | Assessment web público (no ar — ver abaixo): usar como porta, mas com o gating/CTA pendentes do Caminho Crítico | |
 | Compartilhamento seguro: só o one-pager anonimizado, link com expiração | | |
 
 ## Superfície web (assessment.abbaservices.com.br)
