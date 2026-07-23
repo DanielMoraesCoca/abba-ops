@@ -13,13 +13,9 @@
 - [ ] Pedido espontâneo de 2+ empresas para "só a plataforma"
 - [ ] Conteúdo dos níveis Praticante+ completo e revisado
 
-## Aposta 2 — Degustação como widget público self-service
+## Aposta 2 — Degustação como widget público self-service ✅ REALIZADA (2026-07)
 
-**O que é:** o scout (análise por informação pública) exposto no site como ferramenta interativa de lead-gen: visitante digita o CNPJ/nome e recebe a amostra na hora.
-
-**Por que não agora:** custo por análise sem qualificação, risco de abuso, e o brief manual entregue em call converte melhor no começo (gera conversa). Hoje a degustação é gerada internamente e apresentada ao vivo ([estágio 02](../02-jornada-do-cliente/02-diagnostico-gratuito.md)).
-
-**Gatilhos:** site no ar + 20 degustações manuais entregues (aprendemos o que converte) + custo por análise conhecido.
+**Virou realidade antes do previsto:** existe um assessment ao vivo em `assessment.abbaservices.com.br`, gerando relatórios profundos por informação pública (ex.: Brasal, 42 págs, jul/2026). A aposta sai daqui e vira operação: alinhamento de marca/nomes/CTA e estratégia de gating no [Caminho Crítico](../05-interno/plano-de-acao.md) e no [estágio 02](../02-jornada-do-cliente/02-diagnostico-gratuito.md).
 
 ## Aposta 3 — Verticalização por setor
 

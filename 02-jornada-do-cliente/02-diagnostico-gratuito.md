@@ -6,7 +6,7 @@
 A amostra do método: uma análise da empresa do prospect feita **apenas com informação pública**, usando o scout do assessment-brain + curadoria dos sócios. De graça, com limite honesto declarado. Objetivo: provar competência e converter para a Avaliação de Prontidão paga.
 
 ## Entrada
-Lead aceitou a degustação na call de descoberta (ou via site, no futuro).
+Lead aceitou a degustação na call de descoberta — **ou chegou pelo assessment web** (`assessment.abbaservices.com.br`, no ar). Regra enquanto o gating não é implementado: lead vindo do assessment web JÁ tem o relatório — o T2 vira "apresentação comentada + o que a avaliação profunda revelaria", não a entrega do PDF.
 
 ## Checklist
 

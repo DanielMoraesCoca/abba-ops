@@ -11,6 +11,10 @@
 | Relatórios editados pelos sócios + one-pager + quantificação rastreável | | Widget público de análise no site (aposta futura 2) |
 | Compartilhamento seguro: só o one-pager anonimizado, link com expiração | | |
 
+## Superfície web (assessment.abbaservices.com.br)
+
+O assessment público no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). {{CONFIRMAR: qual engine o alimenta, se captura e-mail do visitante antes do resultado, e custo por execução}}. Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md): visual (navy/dourado), nomes (tabela oficial), CTA final e gating.
+
 ## Setup de cliente (executar no [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
 
 - [ ] Criar cliente + engajamento na ferramenta
