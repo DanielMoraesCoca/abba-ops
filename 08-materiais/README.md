@@ -58,9 +58,9 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 
 | Material | Uso | Status |
 |---|---|---|
-| Deck institucional (PPTX, ~12 slides) | 1ª reunião / apresentação da ABBA | a criar |
+| Deck institucional (PPTX, 12 slides) | 1ª reunião / apresentação da ABBA | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
 | Modelo de deck de kickoff (PPTX) | [roteiro já existe](../04-entrega/kickoff-roteiro.md) | a criar |
-| Modelo do PDF da Análise ABBA (degustação) | estágio 02 | a criar |
+| Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | Modelos DOCX das 3 propostas de entrada | derivar do modelo canônico | a criar |
 | Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | a criar |
 | Certificados (participante e campeão) | graduação | a criar |
