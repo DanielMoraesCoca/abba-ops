@@ -16,7 +16,7 @@ Onboarding concluído ([05](05-onboarding.md)); escopo da avaliação no Anexo I
 **Análise (semana 2)**
 - [ ] Entrevista de governança (90 min, Jurídico/Compliance/TI)
 - [ ] `abba assess` rodado (modelo de nível cliente — Sonnet/Opus, nunca o barato para entregável)
-- [ ] Relatório gerado e **editado pelos sócios** (a ferramenta produz o rascunho; o julgamento é nosso) — estrutura no [template de handoff](../04-entrega/relatorio-avaliacao-handoff.md)
+- [ ] Conjunto do Assessment produzido nos 3 modelos Word e **editado pelos sócios** (a ferramenta produz o rascunho; o julgamento é nosso) — [processo de handoff](../04-entrega/relatorio-avaliacao-handoff.md)
 - [ ] Revisão cruzada do outro sócio
 
 **Entrega**
@@ -29,4 +29,4 @@ Onboarding concluído ([05](05-onboarding.md)); escopo da avaliação no Anexo I
 Programa: diretoria aprova o plano → [07-construcao](07-construcao-e-implantacao.md). Standalone: decisão de continuidade → [03-proposta](03-proposta.md) do programa (com crédito de 100%) ou encerramento limpo.
 
 ## Ferramentas e templates
-assessment-brain (ingest, questions, assess, report, share) · portal (pré-trabalho) · [template de relatório](../04-entrega/relatorio-avaliacao-handoff.md) · Drive `03 Avaliacao/`
+assessment-brain (ingest, questions, assess, report, share) · portal (pré-trabalho) · [processo de entrega](../04-entrega/relatorio-avaliacao-handoff.md) + modelos Word (maturidade, oportunidades, plano diretor em [`08-materiais/modelos/`](../08-materiais/modelos/)) · Drive `03 Avaliacao/`

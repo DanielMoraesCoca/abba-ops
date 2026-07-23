@@ -23,15 +23,9 @@
 
 **Janela de suporte:** dias úteis, {{9h–18h}} (horário de Brasília). Canal de abertura: {{e-mail dedicado / canal do projeto}} — WhatsApp **não** abre chamado ([política de comunicação](../05-interno/comunicacao.md)).
 
-## 3. Relatório mensal (modelo)
+## 3. Relatório mensal
 
-1. Resumo do mês em 3 bullets
-2. Por agente: execuções · taxa de aprovação humana · custo · disponibilidade
-3. **Projetado vs. realizado** (a métrica de valor acordada no Anexo I — sempre presente)
-4. Incidentes: ocorrência, severidade, tempo de resposta/solução, causa raiz
-5. Horas de evolução usadas ({{X}}/{{HORAS_MES}})
-6. Adoção da plataforma: ativos, progressão, novos onboardados
-7. Recomendações para o próximo mês / insumos para o ritual do conselho
+O relatório mensal segue o modelo Word canônico: [`../08-materiais/modelos/relatorio-mensal-modelo.docx`](../08-materiais/modelos/relatorio-mensal-modelo.docx) — com a tabela **projetado vs. realizado** sempre presente. Processo de emissão no [estágio 09](../02-jornada-do-cliente/09-manutencao.md).
 
 ## 4. Condições
 

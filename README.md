@@ -20,11 +20,20 @@
 | [`07-drive/`](07-drive/estrutura-drive.md) | Especificação da estrutura no Google Drive | Criação de pastas de cliente; organização de arquivos vivos |
 | [`08-materiais/`](08-materiais/README.md) | Catálogo dos materiais reais (Academy, propostas, modelos-mestres) + fila de produção | Antes de criar qualquer material novo; onboarding de conteúdo |
 
-## 📐 Regra de ouro: git vs. Drive
+## 📐 Arquitetura de documentos: as três camadas
 
-- **git (este repo)** = o que é **canônico e reutilizável**: templates, processos, decisões, metodologia. Versionado, revisável, nunca contém dados de cliente.
-- **Google Drive** = o que é **vivo e específico de cliente**: a proposta preenchida da empresa X, o contrato assinado, apresentações, atas. Estrutura espelhada definida em [`07-drive/estrutura-drive.md`](07-drive/estrutura-drive.md).
-- **Nunca**: dado de cliente em git; template canônico só no Drive.
+Todo documento da ABBA vive em exatamente UMA destas camadas — é isso que impede duplicação e desalinhamento:
+
+| Camada | O que é | Onde vive | Exemplo |
+|---|---|---|---|
+| **1. Processo** (interno — o COMO) | Checklists, regras, jornada. O que os sócios seguem | Markdown neste repo (`02-jornada/`, `04-entrega/*.md`…) | [processo do termo de aceite](04-entrega/termo-de-aceite.md) |
+| **2. Modelo** (externo — o QUE o cliente vê) | DOCX/PPTX no padrão visual, com `{{PLACEHOLDERS}}` | [`08-materiais/modelos/`](08-materiais/README.md) neste repo | [`termo-de-aceite-modelo.docx`](08-materiais/modelos/termo-de-aceite-modelo.docx) |
+| **3. Instância** (por cliente) | O modelo preenchido para a empresa X, congelado em PDF | Google Drive ([estrutura](07-drive/estrutura-drive.md)) | `2026-08-14 Termo de Aceite — ExemploCorp.pdf` |
+
+Regras que decorrem disso:
+- Conteúdo de entregável mora **só no modelo** — o processo aponta para ele, nunca o duplica.
+- Mudou o que o cliente recebe? Muda o **modelo** (camada 2) e registra no [log de decisões](05-interno/registro-de-decisoes.md). Mudou como trabalhamos? Muda o **processo** (camada 1).
+- **Nunca**: dado de cliente em git; modelo canônico só no Drive; instância editada depois de enviada (nova versão datada).
 
 ## ✍️ Convenções
 

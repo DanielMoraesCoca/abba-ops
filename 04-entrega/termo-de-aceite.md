@@ -1,47 +1,17 @@
-# Termo de Aceite de Entregáveis — template
+# Termo de Aceite — processo
 
-> Transcrito do modelo real (`ABBA_Termo_Aceite.docx`, Drive legado). Usado ao fim de **cada fase/marco** do engajamento: formaliza a aceitação dos entregáveis, autoriza a fase seguinte e **dispara a parcela do marco** (condição da [Cláusula 6 do contrato](../03-comercial/contrato-sow-esqueleto.md)). Preencher, colher assinaturas (eletrônicas), arquivar em `02 Clientes/<Nome>/01 Contrato/`.
+> **Camada:** processo interno (como usar). **O documento do cliente é o modelo Word:** [`../08-materiais/modelos/termo-de-aceite-modelo.docx`](../08-materiais/modelos/termo-de-aceite-modelo.docx).
 
-## 1. Informações do projeto
+## Quando usar
+Ao fim de **cada fase/marco** do engajamento (avaliação entregue, protótipo validado, implantação concluída). É o gate formal prometido na proposta ("gate de qualidade entre fases") e a condição da parcela de marco ([contrato, Cláusula 6](../03-comercial/contrato-sow-esqueleto.md)).
 
-| Campo | |
-|---|---|
-| Cliente | {{ }} |
-| Projeto / engajamento | {{ }} |
-| Fase concluída | {{ex.: Avaliação profunda / Protótipo / Implantação}} |
-| Contrato/proposta de referência | ABBA-{{ANO}}-{{NUM}} |
-| Responsável ABBA / Responsável Cliente | {{ }} / {{ }} |
-| Data de entrega | {{ }} |
+## Checklist
+- [ ] Preencher o modelo com os entregáveis e critérios **do Anexo I** (nunca inventar critérios novos no aceite)
+- [ ] Apresentar na sessão de entrega da fase — nunca enviar por e-mail frio
+- [ ] Pendências registradas ganham dono e prazo (aceite com ressalvas mantém o cronograma)
+- [ ] Colher assinaturas eletrônicas · arquivar em `02 Clientes/<Nome>/01 Contrato/`
+- [ ] **Avisar Fin-Admin: termo assinado = fatura do marco liberada**
 
-## 2. Entregáveis desta fase
-
-| # | Entregável | Descrição | Status |
-|---|---|---|---|
-| 1 | {{ }} | conforme Anexo I do contrato | {{Completo}} |
-| 2 | {{ }} | | |
-
-## 3. Critérios de aceitação
-
-| # | Critério | Atendido? | Observações |
-|---|---|---|---|
-| 1 | {{critério de sucesso do Anexo I / kickoff}} | {{Sim/Não}} | |
-| 2 | Documentação entregue | | |
-| 3 | Treinamento realizado (quando aplicável) | | |
-
-## 4. Pendências e ressalvas
-
-| # | Pendência | Prazo | Responsável | Impacto |
-|---|---|---|---|---|
-| | *(vazio = aceite integral)* | | | |
-
-## 5. Declaração de aceite
-
-As partes declaram que os entregáveis da Seção 2 foram revisados e atendem aos critérios da Seção 3, ressalvadas as pendências da Seção 4. Com a assinatura, a fase **{{FASE}}** é considerada formalmente concluída, autorizando o início da fase subsequente e o faturamento da parcela correspondente ao marco.
-
-**Pelo Cliente:** nome/cargo/data · **Pela ABBA:** nome/cargo/data
-
-## Regras de uso
-
-1. **Sem termo assinado, não há fase seguinte nem fatura de marco** — é o gate formal prometido na proposta ("gate de qualidade entre fases").
-2. Pendência registrada ≠ aceite negado: aceite com ressalvas mantém o cronograma e cria ação com dono e prazo.
-3. Enviar junto com a sessão de entrega da fase, nunca depois por e-mail frio.
+## Regras
+1. Sem termo assinado, não há fase seguinte nem fatura de marco.
+2. Recusa de aceite → tratar como incidente de entrega: causa raiz, plano de correção com prazo, novo aceite.

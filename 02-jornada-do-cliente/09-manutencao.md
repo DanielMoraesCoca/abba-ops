@@ -12,7 +12,7 @@ Monitoramento dos agentes em produção · correções e ajuste fino · pequenas
 
 - [ ] Saúde dos agentes verificada (execuções, custo, taxa de aprovação humana, erros)
 - [ ] Incidentes do mês: resposta dentro do SLA? Causa raiz registrada?
-- [ ] Relatório mensal emitido a partir do [modelo no SLA](../04-entrega/sla-manutencao.md) e enviado ao patrocinador — com **projetado vs. realizado** sempre presente
+- [ ] Relatório mensal emitido a partir do [modelo Word](../08-materiais/modelos/relatorio-mensal-modelo.docx) e enviado ao patrocinador — com **projetado vs. realizado** sempre presente
 - [ ] Uso da plataforma: adoção sustentada? Novos colaboradores onboardados?
 - [ ] Oportunidades novas detectadas → registrar para o próximo ritual do conselho (insumo de expansão)
 - [ ] Fatura mensal emitida (Fin-Admin)

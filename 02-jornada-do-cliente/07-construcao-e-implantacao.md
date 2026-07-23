@@ -22,10 +22,10 @@ Plano aprovado pela diretoria ([06](06-avaliacao-profunda.md) + sessão de alinh
 - [ ] Go-live com acompanhamento diário na primeira semana
 - [ ] Inventário de decisões automatizadas atualizado (Art. 20 LGPD — checkpoint humano identificado por decisão)
 - [ ] Medição baseline capturada (para o projetado vs. realizado)
-- [ ] Marco de implantação atingido → **faturar 2ª parcela** (30%) — avisar Fin-Admin
+- [ ] Relatório de deployment emitido + [Termo de Aceite](../04-entrega/termo-de-aceite.md) assinado → **faturar a parcela do marco** — avisar Fin-Admin
 
 ## Saída
 Agente(s) em produção com critério de sucesso medindo → [08-capacitacao](08-capacitacao-e-transformacao.md) (roda em paralelo) e [09-manutencao](09-manutencao.md) (após período de operação assistida).
 
 ## Ferramentas e templates
-assessment-brain (export handoff → manifesto CrewAI) · CrewAI · sistemas do cliente · Drive `04 Construcao/`
+assessment-brain (export handoff → manifesto CrewAI) · CrewAI · [relatório de protótipo](../08-materiais/modelos/relatorio-prototipo-modelo.docx) e [de deployment](../08-materiais/modelos/relatorio-deployment-modelo.docx) · [termo de aceite](../04-entrega/termo-de-aceite.md) · Drive `04 Construcao/`

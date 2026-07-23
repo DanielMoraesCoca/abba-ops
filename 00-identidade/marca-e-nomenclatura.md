@@ -16,7 +16,7 @@
 | Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) | ✅ fixo |
 | Níveis da plataforma | ⚠️ TRÊS escalas coexistem: portal (Explorador→Praticante→Especialista→Arquiteto) · materiais Academy (Nível 1→Praticante→Integrador→Multiplicador) · proposta (Fases 1–4: Fundamentos→Aplicação→Autonomia→Multiplicação) | ⏳ decisão **P7** |
 | Guia de IA do portal | **Iris** (único nome, também externo; nunca "AI Concierge") | ✅ fixo |
-| Instrumento pessoal | **Bússola** (Parar / Começar / Continuar) — card impresso no kit do Kickoff | ✅ fixo |
+| Instrumento pessoal | **Bússola** — card com colunas PARAR / COMEÇAR / CONTINUAR. No discurso, as três perguntas: "o que posso parar de fazer? o que posso começar a fazer? **o que ainda preciso fazer?**" (card e discurso são a mesma coisa, registrados assim para não divergirem) | ✅ fixo |
 | Método pedagógico | **Método 4D** (adaptado do AI Fluency Framework — atribuição obrigatória a Dakan, Feller & Anthropic sempre que aparecer; validação da licença na pauta P4) | ✅ fixo |
 | Artefatos impressos do Kickoff | Card da Bússola · Semáforo de Dados · Esqueleto de Prompt · Lente de Oportunidade · Solution Canvas · Ficha Primeira Vitória | ✅ fixo |
 | Instrumentos internos do método | Lente (tarefa) · Canvas (solução) · Brief (departamento) · Bússola (pessoa) | ✅ fixo — só a Bússola é vocabulário externo |
