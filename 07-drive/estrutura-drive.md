@@ -52,6 +52,15 @@ ABBA (Drive compartilhado)
 4. **Encerrou o contrato?** A pasta do cliente permanece por 24 meses (prazo de retenção prometido em proposta), depois é eliminada — o processo de eliminação segue [11-renovacao-e-encerramento](../02-jornada-do-cliente/11-renovacao-e-encerramento.md).
 5. **Compartilhamento externo:** só arquivos individuais, nunca pastas inteiras; sempre com prazo de expiração quando o Drive permitir.
 
+## Migração do Drive antigo (fazer junto com o setup)
+
+Existe um Drive ABBA anterior com testes e rascunhos: [pasta "ABBA"](https://drive.google.com/drive/folders/1baqSSorcHRxRJKgtAOOrLGCjT8WBxJes) na conta pessoal `pedrohdmoura@gmail.com` (criada em mar/2026). Regras da migração:
+
+1. **Não construir nada novo lá.** A pasta antiga é legado até a migração.
+2. Com o Drive oficial criado (abaixo), os dois sócios revisam a pasta antiga juntos (1 sessão): cada item é **movido** para o lugar certo da árvore oficial, ou **descartado**. Rascunhos superados morrem — não migram "por via das dúvidas".
+3. Renomear a pasta antiga para `_ARQUIVO ABBA (não usar)` ao final, mantendo-a apenas como backup por 90 dias.
+4. Motivo estrutural: material da empresa em conta pessoal de sócio é risco (acesso, saída, LGPD). O Drive oficial vive no Workspace da empresa (`abbaservices.com.br`), com os dois sócios como administradores.
+
 ## Setup inicial (fazer uma vez, ~30 min)
 
 - [ ] Criar Drive compartilhado "ABBA" no Google Workspace (ver decisão pendente P2 do [registro de decisões](../05-interno/registro-de-decisoes.md) — requer o Workspace)

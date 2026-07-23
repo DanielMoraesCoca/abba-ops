@@ -24,7 +24,7 @@
 ## O que depende SÓ dos sócios (pendências P1–P9)
 
 Ordem recomendada — ver [registro de decisões](registro-de-decisoes.md):
-1. **P2** Google Workspace no abbaservices.com.br + Drive compartilhado (30 min + custo) — destrava envio de proposta
+1. **P2** Google Workspace no abbaservices.com.br + Drive compartilhado (30 min + custo) — destrava envio de proposta · inclui **migrar o Drive antigo** (pasta na conta pessoal — ver [estrutura-drive](../07-drive/estrutura-drive.md))
 2. **P1** Planilha de precificação numa sentada (2–3h) — destrava a tabela v1
 3. **P6** Divisão dos chapéus (30 min)
 4. **P9** SLA sustentável para 2 pessoas (30 min) — corrige a promessa 24/7
