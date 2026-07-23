@@ -1,5 +1,7 @@
 # Mapa Jornada × Ferramentas
 
+> Fichas de negócio por ferramenta (o que prometer, setup de cliente, custo por uso, dono): [Avaliação](ferramenta-avaliacao.md) · [Portal](ferramenta-portal.md) · [Agentes](ferramenta-agentes.md)
+
 > Qual ferramenta serve cada estágio da [jornada](../02-jornada-do-cliente/README.md), o estado real de cada uma, e a lacuna — **como risco gerenciado, não como backlog** (as lacunas relevantes têm entrada no [registro de riscos](../05-interno/registro-de-riscos.md)). Dono da manutenção deste mapa: chapéu [Tecnologia](../01-setores/tecnologia.md). Revisar mensalmente.
 
 | Estágio | Ferramenta | Estado (2026-07) | Lacuna / observação |

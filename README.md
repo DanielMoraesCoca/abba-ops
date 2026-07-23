@@ -16,7 +16,7 @@
 | [`03-comercial/`](03-comercial/) | Propostas prontas, contrato-esqueleto, precificação, pautas, e-mails | Da primeira conversa até a assinatura |
 | [`04-entrega/`](04-entrega/) | Kickoff, relatório de avaliação, plano de capacitação, SLA, pauta do conselho | Da assinatura até a renovação |
 | [`05-interno/`](05-interno/) | Decisões, riscos, finanças, comunicação, societário | Reunião semanal de sócios; qualquer decisão relevante |
-| [`06-ferramentas/`](06-ferramentas/mapa-jornada-ferramentas.md) | Mapa jornada × ferramenta (qual ferramenta serve qual estágio) | Planejamento técnico; avaliação de lacunas |
+| [`06-ferramentas/`](06-ferramentas/mapa-jornada-ferramentas.md) | Mapa jornada × ferramenta + fichas de negócio (o que prometer, setup, custo, dono) | Antes de prometer qualquer coisa técnica; setup de cliente novo |
 | [`07-drive/`](07-drive/estrutura-drive.md) | Especificação da estrutura no Google Drive | Criação de pastas de cliente; organização de arquivos vivos |
 | [`08-materiais/`](08-materiais/README.md) | Catálogo dos materiais reais (Academy, propostas, modelos-mestres) + fila de produção | Antes de criar qualquer material novo; onboarding de conteúdo |
 

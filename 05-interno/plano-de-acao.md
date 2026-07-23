@@ -1,57 +1,83 @@
-# Plano de Ação — cobertura do pedido original e o que falta
+# Caminho Crítico — do estado atual ao primeiro cliente entregue com maestria
 
-> Revisão de 2026-07-23 contra o pedido fundador ("organizar TUDO da ABBA consultoria: setores, plano de negócio, precificação, documentos, apresentações, processos, armazenamento, canais, unificação — profissional em todas as faces"). Atualizar esta página a cada reunião de sócios até tudo virar ✅.
+> O plano-mestre. Tudo que existe serve a UM objetivo: **receber o primeiro cliente com estrutura, profissionalismo e seriedade — e entregar melhor do que prometemos.** Este doc sequencia o que falta, com o porquê de cada coisa. Revisitar na reunião semanal de sócios; concluído → riscar; decisão → [log](registro-de-decisoes.md). Cobertura do que JÁ existe: ver [registro de decisões](registro-de-decisoes.md) e o [catálogo](../08-materiais/README.md).
 
-## O que já está resolvido ✅
+## A lógica do caminho
 
-| Pedido original | Onde está |
+O funil só funciona quando as quatro frentes ficam prontas **nesta ordem de dependência**:
+
+```
+A. DECIDIR (sócios)  →  B. PRODUZIR (materiais)  →  C. ENSAIAR (fluência + Cliente Zero)  →  D. PROSPECTAR (mercado)
+   sem A, B trava           sem B, C não tem          sem C, D queima leads —              só começa quando
+   (sem preço não há         o que ensaiar             o 1º prospect real nunca             A+B+C = ✅
+   proposta; sem e-mail                                é o ensaio
+   não há envio)
+```
+
+Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente do cliente. Produzir antes de decidir = retrabalho. Ensaiar depois de prospectar = aprender errando em lead real (caro). A ordem protege o ativo mais escasso do começo: **a primeira impressão de cada lead**.
+
+## Frente A — Decidir (sócios; ~1 semana de calendário)
+
+| # | Decisão | Por quê primeiro | Recomendação |
+|---|---|---|---|
+| P2 | Workspace + e-mail @abbaservices.com.br + Drive oficial + migração da pasta legada ([mapa pronto](../07-drive/estrutura-drive.md)) | Bloqueia QUALQUER envio profissional | Fazer HOJE — 1h + custo baixo |
+| P1 | [Planilha de precificação](../03-comercial/precificacao-planilha.md) numa sentada | Sem tabela v1, não existe proposta | Ancorar na referência real: R$ 150K emitidos em jun/2026 — e registrar como o prospect reagiu |
+| P6 | Divisão dos 5 chapéus | Sem dono, checklist não roda | 30 min na próxima reunião |
+| P9 | SLA sustentável p/ 2 pessoas | Congela a promessa 24/7 antes que ela entre em outra proposta | Horário comercial + plantão crítico definido; revisar quando houver time |
+| P8 | Status real das parcerias | Uma checagem do prospect derruba a credibilidade | "Stack orquestrada" (verdadeiro) até haver contrato assinado |
+| P7 | Nome único dos 4 níveis | 3 escalas coexistem; a 1ª turma cristaliza o que estiver de pé | Decidir antes do 1º kickoff |
+| P4/P5 | Advogado (contrato + licença 4D) e contador (regime) | Maiores prazos externos — iniciar já, correm em paralelo | Começar os contatos esta semana |
+| P3 | Nome oficial do programa | Só bloqueia o site — pode esperar | Decidir junto com o site |
+| — | Confirmar as linhas `{{CONFIRMAR}}` das [fichas de capacidade](../06-ferramentas/README.md) | É o que separa promessa segura de promessa quebrada | 30 min, juntos |
+
+## Frente B — Produzir (eu produzo; vocês revisam)
+
+Fila restante do [catálogo](../08-materiais/README.md), em ordem de impacto no funil:
+
+1. **Deck de kickoff** (PPTX — roteiro pronto) → primeiro dia de cliente impecável
+2. **3 propostas de entrada em DOCX** (workshop, avaliação, sprint — md prontos, derivar do kit) → T3 para qualquer porta de entrada
+3. **Certificados + papel timbrado** → graduação e correspondência no padrão
+4. **Gravação dos 3 vídeos de maior alavancagem + cards na gráfica** (vocês executam; roteiros word-for-word prontos) → trilha do 1º cliente
+5. Site de marketing → **depois** do 1º charter (decidido; a Análise ao vivo converte melhor agora)
+
+## Frente C — Ensaiar (a fluência que impressiona; ~1 semana)
+
+Regime completo na [coreografia da conversão](../03-comercial/coreografia-da-conversao.md):
+
+1. **3 ensaios de T1+T2** gravados e revistos (um sócio faz o prospect difícil)
+2. **Drill das 8 objeções** — resposta natural em ≤30s
+3. **Dry-run da Análise** numa empresa real, cronometrado
+4. **Cliente Zero** (o descobridor de gaps): percorrer a jornada INTEIRA internamente — scout → Análise → proposta preenchida → contrato preenchido → kickoff montado → setup das 3 ferramentas executado. Cada travada = gap corrigido em ambiente seguro. Critério de saída: jornada completa sem improviso.
+
+Por quê isso importa mais que qualquer documento: o prospect não lê o repo — ele sente a fluência. Maestria percebida = preparo × naturalidade. Documento dá o preparo; ensaio dá a naturalidade.
+
+## Frente D — Prospectar (só quando A+B+C = ✅)
+
+1. **Lista de 20 alvos nomeados** (perfil do [plano de negócio](../00-identidade/plano-de-negocio.md): mid-market BR, 50–500 colab., dor de IA visível; começar pela rede real dos sócios + setor jurídico/serviços profissionais)
+2. **Cadência:** {{N}} contatos novos/semana (sócios fixam — sugestão: 10) · toda degustação aceita entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo
+3. **Meta do trimestre:** 1 cliente charter assinado (Avaliação de Prontidão como porta, programa como conversão)
+4. **Retrospectiva de 10 min após cada conversa real** — o funil melhora a cada repetição
+
+## Métricas do caminho (revisão semanal)
+
+| Indicador | Meta inicial |
 |---|---|
-| "Organizar em setores" | [`01-setores/`](../01-setores/README.md) — 5 chapéus com dono, checklist, gatilhos de contratação |
-| "Plano de negócio" | [`00-identidade/plano-de-negocio.md`](../00-identidade/plano-de-negocio.md) |
-| "Modelo de precificar" | [Metodologia](../03-comercial/precificacao-metodologia.md) + [planilha](../03-comercial/precificacao-planilha.md) — **números dependem dos sócios (P1)** |
-| "Organizar documentos" | Este repo (canônico) + [estrutura do Drive](../07-drive/estrutura-drive.md) (instâncias) |
-| "Processos de clientes" | [Jornada em 11 estágios](../02-jornada-do-cliente/README.md), cada um executável |
-| "Onde armazenar" | Regra git vs. Drive no [README](../README.md) |
-| "Canal de comunicação" | [`comunicacao.md`](comunicacao.md) — **domínio decidido: abbaservices.com.br** |
-| "O que precisa ser unificado" | [Nomenclatura](../00-identidade/marca-e-nomenclatura.md) + pendências P7/P8/P9 |
-| "Site com degustação" | Processo manual definido ([estágio 02](../02-jornada-do-cliente/02-diagnostico-gratuito.md)); widget público = [aposta futura 2](../00-identidade/apostas-futuras.md) |
-| "Portal + treinamento híbrido" | [Modelo de serviço etapa 4](../00-identidade/modelo-de-servico.md) + [plano de capacitação](../04-entrega/plano-de-capacitacao.md) + **materiais finais catalogados** ([`08-materiais/`](../08-materiais/README.md)) |
-| "Manutenção (não estava sólido)" | [SLA](../04-entrega/sla-manutencao.md) + [estágio 09](../02-jornada-do-cliente/09-manutencao.md) — números finais na P9 |
-| "Alinhamento constante com a diretoria" | [Ritual do conselho](../02-jornada-do-cliente/10-alinhamento-conselho.md) + [pauta](../04-entrega/pauta-conselho.md) |
-| "Contrato profissional" | [Esqueleto](../03-comercial/contrato-sow-esqueleto.md) — advogado pendente (P4) |
-| "Visualmente alinhado" | [Identidade visual](../00-identidade/identidade-visual.md) (navy + dourado) + modelo-mestre de proposta |
+| Contatos novos/semana | {{10}} |
+| Contato → aceite da Análise | ≥ 30% |
+| Análises entregues no prazo (5 dias úteis) | 100% |
+| Análise apresentada → proposta pedida | ≥ 50% |
+| Proposta → contrato | ≥ 30% (charter) |
+| Reações a preço registradas | 100% das conversas |
 
-## O que depende SÓ dos sócios (pendências P1–P9)
+Números baixos não são fracasso — são diagnóstico: contato→aceite baixo = mensagem; análise→proposta baixo = T2; proposta→contrato baixo = preço/âncora. O funil diz ONDE ajustar.
 
-Ordem recomendada — ver [registro de decisões](registro-de-decisoes.md):
-1. **P2** Google Workspace no abbaservices.com.br + Drive compartilhado (30 min + custo) — destrava envio de proposta · inclui **migrar o Drive antigo** (pasta na conta pessoal — ver [estrutura-drive](../07-drive/estrutura-drive.md))
-2. **P1** Planilha de precificação numa sentada (2–3h) — destrava a tabela v1
-3. **P6** Divisão dos chapéus (30 min)
-4. **P9** SLA sustentável para 2 pessoas (30 min) — corrige a promessa 24/7
-5. **P8** Status real das parcerias (1h de levantamento)
-6. **P7** Nome único dos níveis (30 min)
-7. **P4/P5** Advogado (contrato + licença 4D) e contador (regime tributário)
-8. **P3** Nome oficial do programa
+## Critério final: "pronto para receber um cliente"
 
-## Fila de produção de materiais (para ficar "visualmente igual")
+- [ ] E-mail @abbaservices.com.br ativo + Drive oficial montado e migrado (P2)
+- [ ] Tabela de preços v1 fixada (P1) · chapéus divididos (P6)
+- [ ] SLA realista publicado (P9) · parcerias com texto honesto (P8) · fichas de capacidade confirmadas
+- [ ] Família de materiais completa (frente B, itens 1–3)
+- [ ] Ensaios feitos + **Cliente Zero percorrido sem improviso**
+- [ ] Contrato revisado por advogado OU alçada ativa (P4)
 
-Fonte: [catálogo, seção 4](../08-materiais/README.md). Ordem de impacto:
-1. **Deck institucional** (PPTX, ~12 slides, padrão visual) — a cara da ABBA na 1ª reunião
-2. **Modelo do PDF da Análise ABBA** (degustação) — o 1º artefato que um prospect recebe
-3. **3 propostas de entrada em DOCX** derivadas do modelo-mestre
-4. **Deck de kickoff** (roteiro já existe)
-5. **Gravação dos 3 vídeos de maior alavancagem** + impressão dos 6 cards (Academy)
-6. **Modelo do Relatório de Avaliação** (capa/estilo no padrão)
-7. **Certificados** (participante, campeão)
-8. **Logo profissional** (encomendar; até lá, ABBA tipográfico navy)
-
-## Critério de "pronto para receber um cliente"
-
-- [ ] E-mail @abbaservices.com.br ativo e Drive montado (P2)
-- [ ] Tabela de preços v1 fixada (P1)
-- [ ] Deck institucional + modelo de degustação prontos (fila 1–2)
-- [ ] Contrato revisado por advogado OU regra de alçada ativa (P4)
-- [ ] SLA realista publicado (P9)
-- [ ] Chapéus divididos (P6)
-
-Quando as 6 caixas estiverem marcadas: a ABBA recebe um cliente de ponta a ponta sem improviso.
+**Seis caixas marcadas = a ABBA não recebe um cliente "pronta no papel" — recebe pronta de verdade, porque já percorreu o caminho uma vez.**
