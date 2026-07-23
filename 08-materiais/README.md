@@ -64,7 +64,24 @@ A pasta antiga do Drive contém **os modelos dos entregáveis que a proposta pro
 
 Nota de nomenclatura: os docs legados usam "ABBA Intelligence" / "AI Consulting & Platform" / "ABBA Consulting" — o nome comercial vigente é **ABBA Consultoria de IA** ([marca](../00-identidade/marca-e-nomenclatura.md)); padronizar na migração.
 
-## 5. O que ainda NÃO existe (fila de produção de materiais)
+## 5. Família de modelos regularizada (2026-07-23)
+
+Os modelos legados foram **regenerados do zero** no padrão vigente — mesma identidade visual, discurso alinhado (modelo de 6 etapas, nomes oficiais, sem promessas pendentes de P8/P9), `{{PLACEHOLDERS}}` no lugar de dados de exemplo. Em [`modelos/`](modelos/):
+
+| Modelo | Estágio da jornada |
+|---|---|
+| `relatorio-maturidade-modelo.docx` | 06 — Avaliação (6 dimensões executivas, escala 1–5) |
+| `mapa-de-oportunidades-modelo.docx` | 06 — Avaliação (matriz de priorização + ROI rastreável) |
+| `plano-diretor-modelo.docx` | 06 — Avaliação (roadmap com gates e governança) |
+| `relatorio-prototipo-modelo.docx` | 07 — Construção (GO/NO-GO com números medidos) |
+| `relatorio-deployment-modelo.docx` | 07 — Implantação (aceite, SLA, handover, hypercare) |
+| `relatorio-mensal-modelo.docx` | 09 — Manutenção (projetado vs. realizado sempre) |
+| `termo-de-aceite-modelo.docx` | gates — fecha fase e libera fatura de marco |
+| `plano-capacitacao-modelo.docx` | 08 — Capacitação (4 fases, Bússola, kickoff meio dia) |
+
+**Regra:** os DOCX legados do Drive viram ARQUIVO após a migração — quem vale são estes. Os markdown correspondentes em `04-entrega/` são a documentação do processo; os DOCX são o que o cliente vê.
+
+## 6. O que ainda NÃO existe (fila de produção de materiais)
 
 Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [padrão visual](../00-identidade/identidade-visual.md):
 
@@ -74,7 +91,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Modelo de deck de kickoff (PPTX) | [roteiro já existe](../04-entrega/kickoff-roteiro.md) | a criar |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | Modelos DOCX das 3 propostas de entrada | derivar do modelo canônico | a criar |
-| Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | base existe (Relatório de Maturidade no Drive legado) — padronizar |
+| Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | ✅ regularizado (`modelos/relatorio-maturidade-modelo.docx` + oportunidades + plano diretor) |
 | Certificados (participante e campeão) | graduação | a criar |
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
