@@ -3,8 +3,8 @@
 ## Com o cliente
 
 ### E-mail (canal oficial)
-- **Somente do domínio próprio** (pendência P2: registrar domínio + Google Workspace). Até lá, **proibido enviar proposta ou contrato** de e-mail pessoal — é o tipo de detalhe que mata a percepção de profissionalismo.
-- Endereços a criar: `nome@dominio` (cada sócio) · `contato@` (entrada geral) · `comercial@` (propostas) · futuro `suporte@` (SLA)
+- **Domínio oficial: `abbaservices.com.br`** (decidido 2026-07-23). Falta contratar o Google Workspace e criar as contas (pendência P2). Até as contas existirem, **proibido enviar proposta ou contrato** de e-mail pessoal.
+- Endereços: `nome@abbaservices.com.br` (cada sócio) · `contato@abbaservices.com.br` (entrada geral) · `comercial@abbaservices.com.br` (propostas) · futuro `suporte@abbaservices.com.br` (SLA)
 - Tudo que é **decisão, escopo, valor ou anexo confidencial vai por e-mail** — trilha auditável.
 
 ### WhatsApp (canal de conveniência — norma brasileira, com regras)

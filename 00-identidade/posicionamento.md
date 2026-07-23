@@ -44,4 +44,4 @@
 2. Nunca parear "ABBA" + "treinamento" como produto em material externo — treinamento é COMO entregamos a etapa 4, não O QUE vendemos.
 3. Ao listar entregáveis, liderar com o que é **verificado** (resultado projetado vs. realizado, portfólio quantificado) — é o diferencial.
 4. Preço externo: sempre programa primeiro, produtos de entrada depois ("se ainda não for o momento…").
-5. Assinaturas e rodapés usam somente o domínio próprio (pendência P2) — nunca URLs de ferramenta interna.
+5. Assinaturas e rodapés usam somente **abbaservices.com.br** — nunca URLs de ferramenta interna.

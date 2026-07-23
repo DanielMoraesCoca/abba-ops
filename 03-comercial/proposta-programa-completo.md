@@ -1,92 +1,70 @@
-# Proposta — Programa Completo de Transformação em IA
+# Proposta — Programa Completo de Transformação em IA (estrutura canônica)
 
-> **Uso interno:** a proposta do engajamento-herói. Enviada normalmente após um produto de entrada (avaliação, workshop) ou uma degustação forte. Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), personalizar as seções 1 e 3 com os achados da degustação/avaliação do prospect, congelar PDF no Drive, enviar.
+> **Uso interno:** conteúdo de referência da proposta-herói. O arquivo que vai ao cliente é o **modelo Word** [`../08-materiais/modelos/proposta-comercial-modelo.docx`](../08-materiais/modelos/proposta-comercial-modelo.docx) (identidade visual aplicada) — este markdown é a fonte da estrutura e do texto. Baseada na primeira proposta real emitida (ref ABBA-2026-001, jun/2026; decisão no [registro](../05-interno/registro-de-decisoes.md)). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), personalizar seções 1–2 com achados da degustação, congelar PDF no Drive, registrar a ref sequencial (`ABBA-AAAA-NNN`).
 
----
+## Estrutura (11 seções) e conteúdo-base
 
-# {{NOME_DA_EMPRESA}}
-## Programa de Transformação em IA — Proposta
+### 1. Sumário Executivo
+Programa estruturado de transformação em IA que conduz a organização do diagnóstico à operação **AI Native em todos os níveis hierárquicos**, combinando três frentes que se retroalimentam: **consultoria de implementação, plataforma de agentes e portal de capacitação contínua**. Diferente de consultorias que entregam relatórios e slides: a ABBA entrega **sistemas funcionando e pessoas capacitadas**. Stat-cards: `{{12–16}} semanas · 3 frentes · 3 níveis · {{SLA — ver P9}}`.
 
-**Preparado para:** {{NOME_CONTATO}}, {{CARGO_CONTATO}}
-**Preparado por:** ABBA Consultoria de IA
-**Data:** {{DATA}} · **Válida até:** {{DATA_MAIS_30}}
+### 2. Contexto e Desafios (personalizar com a degustação/descoberta)
+**Situação** → **Complicação** (custo da inação: cada mês sem implementação é produtividade desperdiçada e distância ampliada) → **Desafios identificados** (tabela: maturidade digital, dados fragmentados, adoção e cultura, competitividade) → **Resolução:** *a ABBA encontra a empresa onde ela está na jornada e conduz a transformação inteira, com entrega tangível em cada etapa. IA não como ferramenta isolada, mas como remodelação da organização.*
 
----
+### 3. A Transformação AI Native em Todos os Níveis
 
-## 1. Abertura
+| Nível | O que transformamos |
+|---|---|
+| Estratégia (C-Level) | Como a liderança decide — agentes consolidam dados de todas as áreas em visão integrada |
+| Workflows (Processos) | Fluxos críticos reengenheirados, com agentes operando dentro deles |
+| Pessoas (Colaboradores) | Cada colaborador operando AI Native no dia a dia, com autonomia |
 
-As grandes consultorias reportam o mesmo achado em suas pesquisas: **70–80% dos projetos de IA corporativa falham — e as falhas não são técnicas.** Os modelos funcionam. As ferramentas funcionam. O que falha é a capacidade organizacional de adotar: os 70% do valor da transformação que vivem em pessoas, processos, cultura e governança.
+As três perguntas (espinha pedagógica): **O que posso parar de fazer? O que posso começar a fazer? O que ainda preciso fazer?** Resultado: não uma empresa que usa IA pontualmente — uma empresa remodelada.
 
-Esta proposta é a instalação desses 70% na {{NOME_DA_EMPRESA}}: um engajamento de {{DURACAO_SEMANAS}} semanas que entrega soluções de IA funcionando em produção, uma organização treinada em todos os níveis para trabalhar com elas, e um ritmo permanente de decisão entre a ABBA e a sua diretoria — para que cada passo siga os objetivos de quem dirige a empresa, não o roteiro genérico de um fornecedor.
+### 4. A Jornada ABBA (modular — cada etapa justifica o próprio investimento)
+- **4.1 Assessment Profundo ({{4–5}} semanas):** diagnóstico ativo com a ferramenta proprietária em 6 dimensões (processos, dados, pessoas, tecnologia, governança, estratégia). Entregáveis: Relatório de Maturidade (scoring + benchmarks + espectro de 5 estágios) · Mapa de Oportunidades com ROI · Arquitetura de Referência · Plano Diretor 6–12 meses · Business Case + change management.
+- **4.2 Protótipo de Caso de Uso ({{6–8}} semanas):** agente funcional em produção limitada, com dados reais, validado com usuários-chave — reduz o risco antes do deployment total.
+- **4.3 Deployment Completo:** expansão para a organização em **ABBA Cloud** (gerenciada: menor custo de entrada, atualizações automáticas) ou **On-Premise** (soberania de dados: saúde, financeiro, governo), treinamento operacional, monitoramento, handover formal com SLAs.
+- **4.4 Portal de Capacitação (contínuo):** seção 5.
+- **4.5 Serviços Gerenciados:** a ABBA opera e evolui a solução — camada de inteligência gerenciada, sem exigir time interno especializado.
 
-## 2. O programa em seis etapas
+### 5. Portal de Capacitação em IA
+Aprendizado contínuo e gamificado para todos os colaboradores. **Aprender desbloqueia ferramentas** — o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
 
-| Etapa | O que acontece | Entregável principal |
+| Fase | Foco | Desbloqueia |
 |---|---|---|
-| **1. Avaliação profunda** | Análise da empresa em **25 dimensões proprietárias**: entrevistas do conselho à linha de frente, revisão documental, quantificação financeira das oportunidades | Relatório de avaliação + portfólio ranqueado de oportunidades + caminho recomendado |
-| **2. Alinhamento com a diretoria** | Sessão de decisão com o conselho/diretoria: o que construir primeiro, segundo os **seus** objetivos — a ABBA recomenda; vocês decidem | Plano de transformação aprovado pela diretoria |
-| **3. Construção e implantação** | Construção de {{QTD_AGENTES}} agentes de IA sob medida, com pontos de aprovação humana, implantados **na sua infraestrutura ou em nuvem gerenciada** — sua escolha | Agentes em produção, integrados aos seus sistemas |
-| **4. Capacitação híbrida** | Toda a equipe contratada na **plataforma ABBA**: trilhas progressivas em 4 níveis (Explorador → Praticante → Especialista → Arquiteto), desafios práticos avaliados por IA, a Bússola (Parar / Começar / Continuar) e a Iris (guia de IA em português, sempre disponível) — **mais sessões presenciais** com os fundadores da ABBA nos marcos do programa. No nível mais alto, sua equipe ganha acesso a ferramentas de criação de agentes para construir as próprias soluções | Equipe certificada por nível + campeões internos formados |
-| **5. Operação assistida** | {{DIAS_OPERACAO}} dias de operação acompanhada: monitoramento, ajuste fino, medição de resultado | Relatório de impacto: projetado vs. realizado |
-| **6. Encerramento e continuidade** | Workshop executivo de fechamento + pacote de handover + decisão de continuidade (manutenção) | Pacote de handover: relatório final, roadmap ano-2, certificados |
+| 1 — Fundamentos | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
+| 2 — Aplicação | IA em tarefas reais da própria função | Ferramentas por área |
+| 3 — Autonomia | Construir e ajustar fluxos com IA | Ferramentas avançadas |
+| 4 — Multiplicação | Ser referência interna | Recursos de criação + papel de multiplicador |
 
-**A pergunta que instalamos em cada colaborador:** *O que eu posso parar de fazer (porque a IA agora faz)? O que eu posso começar a fazer (porque a IA agora permite)? O que eu ainda preciso fazer?* — essa é a mudança de mentalidade que transforma a base da empresa, não só os processos.
+Conteúdo próprio (ABBA Academy — [materiais finais](../08-materiais/README.md)) {{+ recursos de parceiros — texto conforme P8}}. Kickoff e marcos **presenciais** com os fundadores. *(Nomes das fases: unificação pendente — P7.)*
 
-## 3. Por que a {{NOME_DA_EMPRESA}}, por que agora
+### 6. Metodologia de Entrega (5 fases com gates de qualidade)
+**Discovery → Analysis → Design → Build → Deploy.** Princípios: valor incremental · transparência total (dashboards + reports semanais) · flexibilidade controlada entre fases · knowledge transfer contínuo · gate formal de qualidade entre fases. A capacitação corre em paralelo a todas.
 
-{{PERSONALIZAR: 2–3 parágrafos com os achados da degustação/avaliação — as oportunidades específicas identificadas, o custo de esperar, o que a diretoria declarou como objetivo}}
+### 7. Cronograma de Execução ({{16}} semanas, indicativo — refinado no Discovery)
 
-## 4. Governança do engajamento
+| Semana | Marco | Critério de aceite |
+|---|---|---|
+| 1 | Kick-off | Workshop de abertura; cronograma e governança aprovados |
+| 4 | Assessment entregue | Relatório de maturidade + mapa de oportunidades + plano diretor aprovados |
+| 8 | Design aprovado | Arquitetura validada pelo comitê técnico |
+| 12–14 | Protótipo validado | Demonstrado e aprovado por usuários-chave, com métricas de impacto |
+| 16 | Go-live | Produção com SLAs, documentação, handover concluído, serviços gerenciados ativos |
 
-- **Reunião semanal de 30 min** com o patrocinador durante toda a entrega
-- **Ritual de alinhamento com a diretoria** ao final de cada etapa e, após o programa, trimestralmente: resultados contra os objetivos declarados por vocês → recomendações da ABBA → decisão de vocês → registro
-- Todos os agentes implantados têm **pontos de aprovação humana** e inventário de decisões automatizadas mapeado ao Art. 20 da LGPD
+### 8. Equipe e Governança
+Papéis ABBA: **Engagement Lead · AI Architect · Data Engineer · Agent Developer · Enablement Lead** *(nota interna: hoje são chapéus dos 2 sócios + rede de especialistas — apresentar como papéis, jamais como headcount)*. Governança: Status Report semanal · Steering Committee quinzenal · War Room técnico sob demanda · Dashboard de KPIs contínuo.
 
-## 5. O que precisamos de você
+### 9. Arquitetura e Ecossistema
+A ABBA **orquestra** o ecossistema, sem vendor lock-in: roteamento de LLMs (Claude/OpenAI/Gemini) por custo e performance · CrewAI para orquestração multi-agente · infraestrutura {{Azure/AWS}} · camada de dados · portal de capacitação. **Agentes com conhecimento institucional:** o operador pergunta sobre processo, o gestor pede análise de indicadores, o executivo pede impacto estratégico — o mesmo cérebro responde nas três altitudes. Treinamento deixa de ser evento e vira serviço contínuo. {{Parcerias: texto conforme P8.}}
 
-- **Patrocinador executivo** com autoridade para mobilizar a equipe
-- Diretoria disponível para as sessões de alinhamento (2h por etapa)
-- Participação da equipe no pré-trabalho, na plataforma e nas sessões presenciais
-- Acessos e integrações acordados no kickoff (sistemas, dados, canais)
+### 10. Termos, SLAs e Garantias
+⚠️ **Prometer apenas o que o [SLA vigente](../04-entrega/sla-manutencao.md) sustenta — pendência P9 alinha estes números à capacidade real.** Estrutura: disponibilidade {{%}} · janela de suporte {{ }} · resposta a incidente crítico {{ }} · garantia de {{30}} dias do protótipo · ciclo formal de revisão dos entregáveis · documentação completa · **Segurança:** LGPD total, NDA, ambiente segregado com audit trail, opção on-premise · **PI:** metodologia, frameworks e plataforma são da ABBA; outputs (relatórios, diagnósticos, agentes treinados com dados do cliente, documentação) são do cliente; dados devolvidos ou destruídos ao final · **Validade:** 30 dias, valores em BRL, impostos conforme regime aplicável.
 
-## 6. Investimento
+### 11. Por Que a ABBA
+> A maioria das consultorias de IA entrega slides. A ABBA entrega sistemas funcionando e pessoas capacitadas.
 
-**Programa completo: {{PRECO_PROGRAMA}}** — dimensionado por porte da organização e escopo de construção ({{QTD_AGENTES}} agentes, {{QTD_PARTICIPANTES}} participantes na capacitação).
+Diferenciais (tabela): consultoria que produz produto · capacitação que gera adoção · AI Native nos 3 níveis · ecossistema orquestrado · serviços gerenciados · deploy flexível. **Posicionamento competitivo:** vs. grandes consultorias (velocidade, custo, produto próprio) · vs. boutiques (profundidade técnica + plataforma + recorrência) · vs. ferramentas genéricas (verticalização + implementação + capacitação) · vs. TI interna (velocidade + metodologia pronta).
 
-**Faturamento:** 30% na assinatura · 30% no marco de implantação (etapa 3 concluída) · 40% no encerramento. Alternativa mensalizada disponível.
-
-**Continuidade (opcional, após o programa):** manutenção dos agentes + plataforma + ritual trimestral por {{PRECO_MANUTENCAO}}/mês — ver [SLA de manutenção](../04-entrega/sla-manutencao.md).
-
-Se você chegou aqui por um produto de entrada (workshop ou avaliação) contratado nos últimos 90 dias, **o valor pago credita 100%** neste programa.
-
-## 7. O que este programa NÃO é
-
-- Não é um curso de IA — treinamento é como entregamos; o que vendemos é capacidade instalada e verificada
-- Não é um piloto eterno — cada agente entra em produção com critério de sucesso definido antes
-- Não é uma caixa-preta — vocês decidem a cada etapa, com os dados na mesa
-
-## 8. Próximos passos
-
-1. Sessão de apresentação desta proposta à diretoria (oferecemos conduzir)
-2. Assinatura (proposta + [contrato](contrato-sow-esqueleto.md))
-3. Kickoff em até 10 dias úteis
-
-Dúvidas: {{NOME_RESPONSAVEL}}, {{EMAIL_RESPONSAVEL}}.
-
-## 9. Termos essenciais
-
-Regidos pelo contrato anexo: confidencialidade de 5 anos · LGPD (ABBA como Operadora; suboperadores no Anexo II) · propriedade intelectual (metodologia e plataforma são da ABBA; relatórios, agentes implantados e entregáveis específicos são seus após quitação) · **a ABBA não treina modelos com dados de clientes** · cancelamento e rescisão conforme cláusula 10 do contrato.
-
----
-
-Assinaturas:
-
-_______________________________
-{{SIGNATARIO_CLIENTE}} — {{NOME_DA_EMPRESA}} · Data:
-
-_______________________________
-ABBA Consultoria de IA · Data:
-
----
-
-*ABBA · Confidencial · Proposta válida por 30 dias. Preços em reais (BRL), sujeitos à confirmação de escopo.*
+## Investimento (seção 10 ou anexo)
+{{PRECO_PROGRAMA}} conforme [tabela](tabela-de-precos.md) — 30/30/40 por marco (assinatura / protótipo validado / go-live) ou mensalizado. Serviços gerenciados: {{PRECO_MANUTENCAO}}/mês após o go-live. Crédito de 100% de produto de entrada contratado nos últimos 90 dias.

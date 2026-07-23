@@ -1,6 +1,6 @@
 # Sequência de E-mails — ABBA
 
-> Modelos prontos para os momentos-chave do funil. Enviar **sempre do domínio próprio** (pendência P2 — até lá, não enviar proposta). Assinatura padrão no rodapé deste doc. Prazos contam a partir do evento anterior.
+> Modelos prontos para os momentos-chave do funil. Enviar **sempre de `@abbaservices.com.br`** (contas pendentes na P2 — até existirem, não enviar proposta). Assinatura padrão no rodapé deste doc. Prazos contam a partir do evento anterior.
 
 ## E-mail 0 — Prospecção fria (quando não há indicação)
 
@@ -74,4 +74,4 @@
 
 > [Nome do sócio]
 > Sócio-fundador, ABBA Consultoria de IA
-> [e-mail no domínio próprio] · [WhatsApp Business] · [site]
+> [nome]@abbaservices.com.br · [WhatsApp Business] · abbaservices.com.br

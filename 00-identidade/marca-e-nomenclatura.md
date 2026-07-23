@@ -14,9 +14,11 @@
 | Workshop | **Workshop de Descoberta de Shadow AI** | ✅ fixo |
 | Sprint | **Sprint LGPD + Governança de IA** | ✅ fixo |
 | Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) | ✅ fixo |
-| Níveis da plataforma | **Explorador → Praticante → Especialista → Arquiteto** (4 níveis, nesta ordem) | ✅ fixo |
+| Níveis da plataforma | ⚠️ TRÊS escalas coexistem: portal (Explorador→Praticante→Especialista→Arquiteto) · materiais Academy (Nível 1→Praticante→Integrador→Multiplicador) · proposta (Fases 1–4: Fundamentos→Aplicação→Autonomia→Multiplicação) | ⏳ decisão **P7** |
 | Guia de IA do portal | **Iris** (único nome, também externo; nunca "AI Concierge") | ✅ fixo |
-| Instrumento pessoal | **Bússola** (Parar / Começar / Continuar) | ✅ fixo |
+| Instrumento pessoal | **Bússola** (Parar / Começar / Continuar) — card impresso no kit do Kickoff | ✅ fixo |
+| Método pedagógico | **Método 4D** (adaptado do AI Fluency Framework — atribuição obrigatória a Dakan, Feller & Anthropic sempre que aparecer; validação da licença na pauta P4) | ✅ fixo |
+| Artefatos impressos do Kickoff | Card da Bússola · Semáforo de Dados · Esqueleto de Prompt · Lente de Oportunidade · Solution Canvas · Ficha Primeira Vitória | ✅ fixo |
 | Instrumentos internos do método | Lente (tarefa) · Canvas (solução) · Brief (departamento) · Bússola (pessoa) | ✅ fixo — só a Bússola é vocabulário externo |
 | Metodologia de avaliação | **Avaliação em 25 dimensões** (externa) / assessment-brain (interna, nome de ferramenta) | ✅ fixo |
 | Plataforma de capacitação | **Plataforma ABBA** (externa) / abba-portal (interna) | ✅ fixo |
@@ -25,7 +27,7 @@
 ## Regras
 
 1. **Nome externo ≠ nome de ferramenta.** Cliente nunca ouve "assessment-brain", "abba-portal", "scout", "tenant" — ouve os nomes da coluna oficial.
-2. **Domínio único** em toda assinatura, rodapé e material (pendência P2). Proibido usar URLs `*.vercel.app` com prospect.
+2. **Domínio único: `abbaservices.com.br`** em toda assinatura, rodapé e material. Proibido usar URLs `*.vercel.app` com prospect.
 3. **Idioma:** tudo externo em pt-BR. Termos em inglês só quando consagrados (Shadow AI, kickoff, sprint).
 4. Identidade visual (logo, cores, fontes): a definir; arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
 

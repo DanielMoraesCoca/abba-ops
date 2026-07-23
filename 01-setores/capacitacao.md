@@ -6,7 +6,7 @@
 ## Responsabilidades
 
 - Plano de capacitação por cliente (do [template](../04-entrega/plano-de-capacitacao.md)): trilhas, cadência, sessões presenciais
-- Conteúdo: manter e evoluir as lições da plataforma — prioridade atual: **gravar/completar os vídeos das 8 lições Foundation** (hoje com marcador pendente) e revisão pt-BR nativa; níveis Praticante+ conforme demanda do cliente real
+- Conteúdo: os materiais finais da Academy estão prontos ([catálogo](../08-materiais/README.md)) — prioridade atual: **gravar os 3 vídeos de maior alavancagem (1.3.3, 1.3.1, 2.1.2), imprimir os 6 cards do Kickoff e carregar as trilhas no portal**; personalização [PERSONALIZAR] com dados do 1º cliente
 - Sessões presenciais: preparar, conduzir, colher presença e feedback
 - Progressão: acompanhar adoção por cliente (níveis, desafios, Bússola) e agir sobre departamentos travados
 - Graduação: certificados, campeões formados, cerimônia de encerramento

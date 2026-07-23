@@ -22,11 +22,13 @@ ABBA (Drive compartilhado)
 │       └── 07 Conselho/              (atas do ritual trimestral, metas declaradas)
 │
 ├── 03 Modelos/                       ← exports DOCX/PPTX dos templates do git — SOMENTE LEITURA
+│   ├── Academy/                      (PDF dos materiais finais de treinamento + artes dos cards)
 │   └── (cada arquivo com sufixo "(v1 — fonte: git)")
 │
 ├── 04 Interno/
 │   ├── Societario/                   (contrato social, CNPJ, atas de sócios)
 │   ├── Financeiro/                   (fluxo de caixa, contratos de fornecedores, impostos)
+│   ├── Estrategia historica/         (planos v1–v3 e docs superados — só consulta)
 │   └── Reunioes de socios/           (pautas e registros — decisões vão pro git!)
 │
 └── 05 Marketing/

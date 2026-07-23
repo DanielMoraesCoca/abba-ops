@@ -35,7 +35,7 @@ Meta: {{N}} entradas de Bússola por participante ao longo do plano — é o ter
 
 | Sessão | Quando | Duração | Conteúdo |
 |---|---|---|---|
-| Abertura | semana {{ }} | 2h | Patrocinador abre · o programa · Bússola ao vivo · primeiro acesso guiado |
+| Abertura (Kickoff Academy) | semana {{ }} | meio dia | Kit do Facilitador Tier 1C ([catálogo](../08-materiais/README.md)): patrocinador abre · Autópsia de Tarefa/Demo Theater · Clínica da Primeira Vitória · Bússola em papel (cards impressos) · primeiro acesso guiado |
 | Workshop de marco 1 | semana {{ }} | 3h | Mão na massa com os agentes implantados · casos do próprio trabalho |
 | Workshop de marco 2 | semana {{ }} | 3h | {{tema conforme progresso — ex.: desafios avançados, construção supervisionada}} |
 | Encerramento / graduação | semana {{ }} | 2h | Campeões apresentam · certificados · roadmap ano-2 co-escrito |
