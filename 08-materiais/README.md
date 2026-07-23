@@ -52,7 +52,19 @@
 
 **Onde vive:** Drive → `04 Interno/Estrategia historica/`. Decisões dele que seguem vigentes já estão absorvidas neste repo; o resto é histórico.
 
-## 4. O que ainda NÃO existe (fila de produção de materiais)
+## 4. Modelos de entregáveis (Drive legado — inventariados em 2026-07-23)
+
+A pasta antiga do Drive contém **os modelos dos entregáveis que a proposta promete**, todos com dados de exemplo (nunca enviar como estão). Mapa completo de migração: [estrutura-drive](../07-drive/estrutura-drive.md#mapa-de-migração-arquivo-a-arquivo-inventário-de-2026-07-23). Destaques:
+
+- **Termo de Aceite** → já transcrito: [`../04-entrega/termo-de-aceite.md`](../04-entrega/termo-de-aceite.md)
+- **Relatório de Maturidade** (6 dimensões, escala 1–5 Exploratório→Transformacional) · **Mapa de Casos de Uso** (matriz de priorização + ROI) · **Plano Diretor** (24 meses) — os três entregáveis do Assessment
+- **Relatório de Protótipo** (sprints, métricas, decisão GO/NO-GO) e **Relatório de Deployment** (testes de aceite, SLAs, rollback, handover, hypercare)
+- **Relatório Mensal de Operação** (serviços gerenciados)
+- Proposta anterior **com os preços reais emitidos** (R$ 150K — registrado na [planilha de precificação](../03-comercial/precificacao-planilha.md))
+
+Nota de nomenclatura: os docs legados usam "ABBA Intelligence" / "AI Consulting & Platform" / "ABBA Consulting" — o nome comercial vigente é **ABBA Consultoria de IA** ([marca](../00-identidade/marca-e-nomenclatura.md)); padronizar na migração.
+
+## 5. O que ainda NÃO existe (fila de produção de materiais)
 
 Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [padrão visual](../00-identidade/identidade-visual.md):
 
@@ -62,7 +74,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Modelo de deck de kickoff (PPTX) | [roteiro já existe](../04-entrega/kickoff-roteiro.md) | a criar |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | Modelos DOCX das 3 propostas de entrada | derivar do modelo canônico | a criar |
-| Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | a criar |
+| Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | base existe (Relatório de Maturidade no Drive legado) — padronizar |
 | Certificados (participante e campeão) | graduação | a criar |
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
