@@ -48,4 +48,4 @@ O modelo-mestre de proposta já existe: [`../08-materiais/modelos/proposta-comer
 1. Material novo **sempre** parte de um modelo-mestre — se o modelo não existe, criar o modelo primeiro, depois a instância.
 2. Nome externo ≠ nome interno ([nomenclatura](marca-e-nomenclatura.md)); URLs só `abbaservices.com.br`.
 3. Um documento por versão enviada, congelado em PDF no Drive.
-4. Logo: existe uma marca-símbolo (grafo dourado de rede neural) embutida no modelo-mestre de proposta — é o logo vigente. Extrair o PNG para `05 Marketing/Marca/` no Drive e reutilizar em todo material. Evolução profissional da marca pode vir depois; até lá, símbolo dourado + "ABBA" tipográfico navy.
+4. Logo: a marca-símbolo (grafo dourado) está versionada em [`../08-materiais/marca/abba-logo.png`](../08-materiais/marca/abba-logo.png) — usada nos decks e certificados. Cópia no Drive `05 Marketing/Marca/`. Evolução profissional da marca pode vir depois.

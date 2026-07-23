@@ -88,11 +88,11 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Material | Uso | Status |
 |---|---|---|
 | Deck institucional (PPTX, 12 slides) | 1ª reunião / apresentação da ABBA | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
-| Modelo de deck de kickoff (PPTX) | [roteiro já existe](../04-entrega/kickoff-roteiro.md) | a criar |
+| Deck de kickoff (PPTX, 12 slides, com logo) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
-| Modelos DOCX das 3 propostas de entrada | derivar do modelo canônico | a criar |
+| 3 propostas de entrada (DOCX) | workshop · avaliação · sprint LGPD | ✅ em [`modelos/`](modelos/) (`proposta-*-modelo.docx`) |
 | Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | ✅ regularizado (`modelos/relatorio-maturidade-modelo.docx` + oportunidades + plano diretor) |
-| Certificados (participante e campeão) | graduação | a criar |
+| Certificados (participante e campeão, PPTX com logo) | graduação | ✅ [`modelos/certificados-modelo.pptx`](modelos/certificados-modelo.pptx) |
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
-| Papel timbrado / modelo de documento geral | tudo | a criar |
+| Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
