@@ -14,7 +14,7 @@
 | Workshop | **Workshop de Descoberta de Shadow AI** | ✅ fixo |
 | Sprint | **Sprint LGPD + Governança de IA** | ✅ fixo |
 | Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) | ✅ fixo |
-| Níveis da plataforma | ⚠️ TRÊS escalas coexistem: portal (Explorador→Praticante→Especialista→Arquiteto) · materiais Academy (Nível 1→Praticante→Integrador→Multiplicador) · proposta (Fases 1–4: Fundamentos→Aplicação→Autonomia→Multiplicação) | ⏳ decisão **P7** |
+| Níveis da plataforma | **Nível 1 — Explorador** (Fundamentos) · **Nível 2 — Praticante** (Aplicação) · **Nível 3 — Especialista** (Autonomia) · **Nível 4 — Arquiteto** (Multiplicação). O TÍTULO (Explorador→Arquiteto) é a identidade do participante — usado em certificados, portal e discurso; o tema entre parênteses descreve o foco da fase. Concilia as três escalas anteriores sem retrabalho no portal | ✅ fixo (P7, 2026-07-23) |
 | Guia de IA do portal | **Iris** (único nome, também externo; nunca "AI Concierge") | ✅ fixo |
 | Instrumento pessoal | **Bússola** — card com colunas PARAR / COMEÇAR / CONTINUAR. No discurso, as três perguntas: "o que posso parar de fazer? o que posso começar a fazer? **o que ainda preciso fazer?**" (card e discurso são a mesma coisa, registrados assim para não divergirem) | ✅ fixo |
 | Método pedagógico | **Método 4D** (adaptado do AI Fluency Framework — atribuição obrigatória a Dakan, Feller & Anthropic sempre que aparecer; validação da licença na pauta P4) | ✅ fixo |

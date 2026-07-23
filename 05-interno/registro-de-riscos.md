@@ -17,8 +17,8 @@
 | R11 | **Dependência de suboperadores** (LLM, nuvem) | Mudança de preço/termos dos provedores afeta margem e LGPD | Anexo II do contrato mantido atualizado; revisão semestral de alternativas | Tecnologia |
 | R12 | **Promessas históricas nos docs antigos** (preços, "29 semanas", URLs) circulando | Prospect encontra material desatualizado/contraditório | Banners de HISTÓRICO aplicados nos repos; todo material novo nasce deste repo | Comercial |
 
-| R13 | **Promessas de SLA acima da capacidade** — proposta emitida promete 24/7, 99,5% uptime e resposta em 4h com uma equipe de 2 pessoas | Quebra de promessa contratual no 1º incidente fora de horário | Pendência P9: definir SLA sustentável (ex.: horário comercial + plantão crítico) e corrigir proposta + SLA antes da próxima emissão | Entrega |
-| R14 | **Parcerias citadas em proposta sem confirmação formal** (CrewAI, Microsoft, AWS, plataforma de educação) | Prospect verifica e a credibilidade cai | Pendência P8: mapear o que é contrato assinado vs. uso-de-stack vs. intenção; ajustar o texto ("parceiros tecnológicos" vs. "stack utilizada") | Comercial |
+| R13 | ~~Promessas de SLA acima da capacidade~~ **RESOLVIDO 2026-07-23:** modelo honesto definido no [SLA](../04-entrega/sla-manutencao.md) — monitoramento automatizado 24/7 + suporte humano 9h–18h úteis + canal de emergência S1 (4h corridas, 8h–22h). Frase proibida em proposta: "suporte 24/7" | — | Fraseado correto propagado nos modelos na próxima revisão | Entrega |
+| R14 | ~~Parcerias sem confirmação~~ **RESOLVIDO 2026-07-23:** os sócios confirmam parceria oficial com uso gratuito dos serviços — a menção em proposta é legítima. Guardar os comprovantes/termos em `04 Interno/` no Drive (procurement de cliente pode pedir) | — | Comprovantes arquivados | Comercial |
 | R15 | **Método 4D sob licença CC BY-NC-SA** (cláusula não-comercial) usado em programa pago | Risco de violação de licença do material pedagógico central | Validação jurídica na pauta do advogado (P4); manter atribuição obrigatória em todo material até lá | Fin-Admin |
 
 ## Processo

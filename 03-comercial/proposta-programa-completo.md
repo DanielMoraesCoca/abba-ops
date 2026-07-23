@@ -30,14 +30,14 @@ As três perguntas (espinha pedagógica): **O que posso parar de fazer? O que po
 ### 5. Portal de Capacitação em IA
 Aprendizado contínuo e gamificado para todos os colaboradores. **Aprender desbloqueia ferramentas** — o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
 
-| Fase | Foco | Desbloqueia |
+| Nível | Foco | Desbloqueia |
 |---|---|---|
-| 1 — Fundamentos | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
-| 2 — Aplicação | IA em tarefas reais da própria função | Ferramentas por área |
-| 3 — Autonomia | Construir e ajustar fluxos com IA | Ferramentas avançadas |
-| 4 — Multiplicação | Ser referência interna | Recursos de criação + papel de multiplicador |
+| 1 — Explorador (Fundamentos) | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
+| 2 — Praticante (Aplicação) | IA em tarefas reais da própria função | Ferramentas por área |
+| 3 — Especialista (Autonomia) | Construir e ajustar fluxos com IA | Ferramentas avançadas |
+| 4 — Arquiteto (Multiplicação) | Ser referência interna | Criação de agentes (CrewAI) + papel de multiplicador |
 
-Conteúdo próprio (ABBA Academy — [materiais finais](../08-materiais/README.md)) {{+ recursos de parceiros — texto conforme P8}}. Kickoff e marcos **presenciais** com os fundadores. *(Nomes das fases: unificação pendente — P7.)*
+Conteúdo próprio (ABBA Academy — [materiais finais](../08-materiais/README.md)) + recursos das parcerias oficiais. Kickoff e marcos **presenciais** com os fundadores.
 
 ### 6. Metodologia de Entrega (5 fases com gates de qualidade)
 **Discovery → Analysis → Design → Build → Deploy.** Princípios: valor incremental · transparência total (dashboards + reports semanais) · flexibilidade controlada entre fases · knowledge transfer contínuo · gate formal de qualidade entre fases. A capacitação corre em paralelo a todas.

@@ -1,4 +1,6 @@
-# Estrutura do Google Drive — ABBA
+# Estrutura do Drive — ABBA
+
+> **Suíte oficial: Microsoft 365** (e-mail já ativo). O armazenamento recomendado é **SharePoint/OneDrive do tenant** — mesma assinatura, contas da empresa. A árvore abaixo aplica-se identicamente (foi escrita para Google Drive; os nomes de pasta não mudam). A pasta legada no Google Drive pessoal migra para cá com o mapa arquivo a arquivo abaixo.
 
 > O Drive guarda **instâncias** (documentos vivos, específicos de cliente); o git guarda **templates e processos canônicos**. Ver regra de ouro no [`../README.md`](../README.md).
 

@@ -16,12 +16,19 @@
 
 | Sev. | Definição | Primeira resposta | Solução-alvo |
 |---|---|---|---|
-| **S1** | Agente parado ou produzindo saída errada com impacto operacional | {{4h úteis}} | {{1 dia útil}} (workaround) · {{3 dias}} (definitiva) |
-| **S2** | Degradação parcial (lentidão, falhas intermitentes, aprovações travadas) | {{8h úteis}} | {{3 dias úteis}} |
-| **S3** | Incômodo sem impacto operacional; dúvidas; ajustes estéticos | {{1 dia útil}} | {{10 dias úteis}} ou próximo ciclo |
+| **S1** | Agente parado ou saída errada com impacto operacional | **4h corridas** (canal de emergência, 8h–22h todos os dias; fora disso, melhor esforço) | 1 dia útil (workaround) · 3 dias úteis (definitiva) |
+| **S2** | Degradação parcial (lentidão, falhas intermitentes, aprovações travadas) | 8h úteis | 3 dias úteis |
+| **S3** | Incômodo sem impacto; dúvidas; ajustes | 1 dia útil | 10 dias úteis ou próximo ciclo |
 | **Incidente de dados** | Qualquer suspeita envolvendo dados pessoais | **imediata ao tomar ciência** | conforme Cláusula 9.7 do contrato (Art. 48 LGPD) |
 
-**Janela de suporte:** dias úteis, {{9h–18h}} (horário de Brasília). Canal de abertura: {{e-mail dedicado / canal do projeto}} — WhatsApp **não** abre chamado ([política de comunicação](../05-interno/comunicacao.md)).
+**O modelo honesto para uma equipe de 2 (padrão recomendado, confirmado em P9):**
+- **Monitoramento automatizado 24/7** — alertas de máquina vigiam os agentes o tempo todo (isso PODE ser prometido)
+- **Suporte humano em dias úteis, 9h–18h** (Brasília) — janela padrão de atendimento
+- **Canal de emergência S1**: telefone/WhatsApp dedicado, resposta em 4h corridas entre 8h–22h todos os dias; fora disso, melhor esforço
+- **Disponibilidade-alvo da plataforma: 99,5%/mês** (sustentada pela infraestrutura gerenciada de nuvem — não por plantão humano)
+- **Nunca prometer "suporte 24/7"** — a frase correta em proposta: *"monitoramento automatizado 24/7 com canal de emergência para incidentes críticos"*
+
+Canal de abertura: e-mail `suporte@abbaservices.com.br` / canal do projeto — WhatsApp **não** abre chamado ([política](../05-interno/comunicacao.md)), exceto o canal de emergência S1.
 
 ## 3. Relatório mensal
 

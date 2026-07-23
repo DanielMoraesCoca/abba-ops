@@ -8,7 +8,7 @@
 |---|---|---|
 | Trilhas gamificadas com desafios avaliados por IA, Bússola e Iris (guia em português) | Fase 1 (Fundamentos): conteúdo FINAL, **vídeos em produção** — até a gravação, prometer trilha com leitura + desafios + kickoff presencial cobrindo o início ({{CONFIRMAR prazo de gravação}}) | SSO corporativo / requisitos de procurement enterprise (autenticação interina — R3) |
 | Acesso individual por colaborador, progresso e adoção visíveis ao patrocinador | Fases 2–4: estrutura pronta, conteúdo produzido sob demanda do 1º cliente — prometer "trilha do seu departamento", não "catálogo completo" | Fórum/comunidade entre clientes (aposta futura 4) |
-| Pré-trabalho da avaliação (reflexões, mapas de fluxo, Bússola) | Nome dos níveis em unificação (P7) — usar "4 fases de progressão" em material novo até a decisão | Marketplace de agentes |
+| Pré-trabalho da avaliação (reflexões, mapas de fluxo, Bússola) | Níveis oficiais (P7 ✅): Explorador → Praticante → Especialista → Arquiteto — Academy e proposta seguem esta escala; portal já implementa | Marketplace de agentes |
 | Fluxos LGPD do titular (acesso, exportação, eliminação) | | CrewAI embutido no portal ({{CONFIRMAR estado da integração}} — a licença CrewAI de 12 meses ao graduar é promessa OK) |
 
 ## Setup de cliente

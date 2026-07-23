@@ -3,8 +3,9 @@
 ## Com o cliente
 
 ### E-mail (canal oficial)
-- **Domínio oficial: `abbaservices.com.br`** (decidido 2026-07-23). Falta contratar o Google Workspace e criar as contas (pendência P2). Até as contas existirem, **proibido enviar proposta ou contrato** de e-mail pessoal.
-- Endereços: `nome@abbaservices.com.br` (cada sócio) · `contato@abbaservices.com.br` (entrada geral) · `comercial@abbaservices.com.br` (propostas) · futuro `suporte@abbaservices.com.br` (SLA)
+- **Domínio oficial: `abbaservices.com.br`** — e-mail corporativo ATIVO via **Microsoft 365 (Outlook)** (2026-07-23). ✅ Liberado o envio profissional de propostas. Regra mantida: nada sai de e-mail pessoal.
+- Endereços: `nome@abbaservices.com.br` (cada sócio) · criar aliases `contato@` (entrada geral) e `comercial@` (propostas) no admin do M365 · futuro `suporte@` (SLA)
+- **Armazenamento oficial: SharePoint/OneDrive do tenant M365** (recomendado — já incluído na assinatura, mesma suíte do e-mail, contas da empresa e não pessoais). A árvore de pastas da [estrutura](../07-drive/estrutura-drive.md) aplica-se igual; migrar a pasta legada do Google Drive para lá.
 - Tudo que é **decisão, escopo, valor ou anexo confidencial vai por e-mail** — trilha auditável.
 
 ### WhatsApp (canal de conveniência — norma brasileira, com regras)
