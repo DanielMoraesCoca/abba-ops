@@ -28,7 +28,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 | P7 | Nome único dos 4 níveis | 3 escalas coexistem; a 1ª turma cristaliza o que estiver de pé | Decidir antes do 1º kickoff |
 | P4/P5 | Advogado (contrato + licença 4D) e contador (regime) | Maiores prazos externos — iniciar já, correm em paralelo | Começar os contatos esta semana |
 | P3 | Nome oficial do programa | Só bloqueia o site — pode esperar | Decidir junto com o site |
-| — | Confirmar as linhas `{{CONFIRMAR}}` das [fichas de capacidade](../06-ferramentas/README.md) | É o que separa promessa segura de promessa quebrada | 30 min, juntos |
+| — | Confirmar as linhas `{{CONFIRMAR}}` das [fichas de capacidade](../06-ferramentas/mapa-jornada-ferramentas.md) | É o que separa promessa segura de promessa quebrada | 30 min, juntos |
 
 ## Frente B — Produzir (eu produzo; vocês revisam)
 
