@@ -13,7 +13,12 @@
 
 ## Superfície web (assessment.abbaservices.com.br)
 
-O assessment público no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). {{CONFIRMAR: qual engine o alimenta, se captura e-mail do visitante antes do resultado, e custo por execução}}. Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md): visual (navy/dourado), nomes (tabela oficial), CTA final e gating.
+O assessment público no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). **Consistência verificada em 3 execuções** (Brasal/deep 42p · Grupo Santa/quick 30p · ABC DataSaúde/quick 31p): mesma estrutura e qualidade, com consciência regulatória por setor. {{CONFIRMAR: qual engine o alimenta, se captura e-mail do visitante antes do resultado, e custo por execução}}.
+
+Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md): visual (navy/dourado) · nomes (tabela oficial) · CTA final · gating. Achados adicionais das 3 amostras:
+- **Nunca enviar PDFs gerados na versão de preview** — o rodapé de execuções antigas traz URL de staging (`amber-summit-taak.here.now`) em todas as páginas; só circular PDFs com `assessment.abbaservices.com.br` no rodapé
+- Modo *quick* ocasionalmente puxa fonte irrelevante ("Rede Santa Catarina" num assessment do Grupo Santa, confiança baixa) — revisão humana de fontes antes de qualquer uso comercial do PDF
+- Mesmo o modo *quick* entrega ~30 páginas — reforça a decisão de gating (teaser público, completo na apresentação)
 
 ## Setup de cliente (executar no [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
 
