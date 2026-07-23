@@ -33,7 +33,7 @@
 
 | # | Decisão a tomar | Onde está o contexto | Prazo sugerido |
 |---|---|---|---|
-| P1 | Preencher a planilha de precificação e fixar a tabela v1 | [`../03-comercial/precificacao-planilha.md`](../03-comercial/precificacao-planilha.md) | Antes da 1ª proposta |
+| P1 | **Proposta do especialista PRONTA** ([`precificacao-proposta-especialista.md`](../03-comercial/precificacao-proposta-especialista.md)): tributos pesquisados (Simples III via Fator R, ~12% provisão), mercado (R$ 200–450/h sênior), esforço por pacote e tabela-rascunho. Falta: sócios escolherem cenário A/B/C + resposta da Galápagos + contador confirmar | [`../03-comercial/precificacao-proposta-especialista.md`](../03-comercial/precificacao-proposta-especialista.md) | Travar tabela v1 esta semana |
 | P2 | ~~E-mail~~ ✅ **ativo (Microsoft 365)** → falta: aliases `contato@`/`comercial@`, SharePoint/OneDrive montado com a árvore oficial e migração da pasta legada | [`comunicacao.md`](comunicacao.md) | Esta semana |
 | P3 | Nome oficial pt-BR do programa principal (proposta: "Programa de Instalação de Capacidade em IA") | [`../00-identidade/marca-e-nomenclatura.md`](../00-identidade/marca-e-nomenclatura.md) | Antes do site |
 | P4 | Contratar advogado (LGPD + tech): revisar contrato-esqueleto + validar uso comercial do Método 4D (licença CC BY-NC-SA — cláusula não-comercial) + lição O-JUR | [`../03-comercial/contrato-sow-esqueleto.md`](../03-comercial/contrato-sow-esqueleto.md), [`../08-materiais/README.md`](../08-materiais/README.md) | Antes da 1ª assinatura |
