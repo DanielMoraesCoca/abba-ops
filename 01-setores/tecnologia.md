@@ -1,7 +1,7 @@
 # Setor Tecnologia
 
 **Missão:** manter as ferramentas proprietárias e o stack de construção confiáveis, seguros e prontos para cliente.
-**Dono:** {{SOCIO}} (matriz no [README](README.md))
+**Dono:** Pedro · suplente: Daniel (matriz no [README](README.md))
 
 ## Ferramentas e stack
 

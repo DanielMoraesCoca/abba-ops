@@ -45,6 +45,6 @@ Regras que decorrem disso:
 
 ## 🚦 Comece por aqui
 
-1. **Pendências dos sócios (P1–P6):** [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md) — domínio/Workspace e planilha de precificação vêm primeiro.
+1. **Pendências dos sócios:** [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md) — P1/P2/P6–P9 resolvidas; restam P3 (nome do programa), P4 (advogado) e P5 (contador).
 2. **Um cliente apareceu?** [`02-jornada-do-cliente/README.md`](02-jornada-do-cliente/README.md) — siga o funil estágio a estágio.
 3. **O que a ABBA é, em uma leitura:** [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).

@@ -22,7 +22,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 |---|---|---|---|
 | P2 | Workspace + e-mail @abbaservices.com.br + Drive oficial + migração da pasta legada ([mapa pronto](../07-drive/estrutura-drive.md)) | Bloqueia QUALQUER envio profissional | Fazer HOJE — 1h + custo baixo |
 | P1 | [Planilha de precificação](../03-comercial/precificacao-planilha.md) numa sentada | Sem tabela v1, não existe proposta | Ancorar na referência real: R$ 150K emitidos em jun/2026 — e registrar como o prospect reagiu |
-| P6 | Divisão dos 5 chapéus | Sem dono, checklist não roda | 30 min na próxima reunião |
+| P6 | ✅ **Divisão dos 5 chapéus (2026-07-24):** Daniel = Comercial + Entrega + Fin-Admin · Pedro = Tecnologia + Capacitação | Sem dono, checklist não roda | — |
 | P9 | SLA sustentável p/ 2 pessoas | Congela a promessa 24/7 antes que ela entre em outra proposta | Horário comercial + plantão crítico definido; revisar quando houver time |
 | P8 | Status real das parcerias | Uma checagem do prospect derruba a credibilidade | "Stack orquestrada" (verdadeiro) até haver contrato assinado |
 | P7 | Nome único dos 4 níveis | 3 escalas coexistem; a 1ª turma cristaliza o que estiver de pé | Decidir antes do 1º kickoff |
@@ -77,7 +77,7 @@ Números baixos não são fracasso — são diagnóstico: contato→aceite baixo
 ## Critério final: "pronto para receber um cliente"
 
 - [ ] E-mail @abbaservices.com.br ativo + Drive oficial montado e migrado (P2)
-- [ ] Tabela de preços v1 fixada (P1) · chapéus divididos (P6)
+- [x] Tabela de preços v1 fixada (P1) · chapéus divididos (P6 — 2026-07-24)
 - [ ] SLA realista publicado (P9) · parcerias com texto honesto (P8) · fichas de capacidade confirmadas
 - [ ] Família de materiais completa (frente B, itens 1–3)
 - [ ] Ensaios feitos + **Cliente Zero percorrido sem improviso**

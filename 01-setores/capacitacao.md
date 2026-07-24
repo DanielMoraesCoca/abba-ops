@@ -1,7 +1,7 @@
 # Setor Capacitação
 
 **Missão:** mudar como as pessoas do cliente trabalham — plataforma, conteúdo e presencial ([estágio 08](../02-jornada-do-cliente/08-capacitacao-e-transformacao.md)).
-**Dono:** {{SOCIO}} (matriz no [README](README.md))
+**Dono:** Pedro · suplente: Daniel (matriz no [README](README.md))
 
 ## Responsabilidades
 

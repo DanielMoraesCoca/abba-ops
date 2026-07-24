@@ -2,15 +2,15 @@
 
 > A ABBA tem 2 pessoas e 5 setores. Setor aqui não é departamento — é um **chapéu**: um conjunto nomeado de responsabilidades com UM dono. O dono não faz tudo sozinho; ele **responde** por aquilo (decide, cobra, não deixa cair). Quando a empresa contratar, cada chapéu está pronto para virar função e depois departamento — a descrição de cargo já existe: é o doc do setor.
 
-## Matriz setor × dono (pendência P6 — sócios preenchem)
+## Matriz setor × dono (P6 ✅ decidida em 2026-07-24)
 
 | Setor | Dono | Suplente |
 |---|---|---|
-| [Comercial](comercial.md) — vender: funil, propostas, marketing | {{SOCIO}} | o outro |
-| [Entrega](entrega.md) — entregar: avaliação, construção, operação | {{SOCIO}} | o outro |
-| [Capacitação](capacitacao.md) — transformar: plataforma, conteúdo, presencial | {{SOCIO}} | o outro |
-| [Tecnologia](tecnologia.md) — manter as ferramentas: 3 repos, infra, segurança | {{SOCIO}} | o outro |
-| [Financeiro-Admin](financeiro-admin.md) — sustentar: caixa, NF, jurídico, LGPD interna | {{SOCIO}} | o outro |
+| [Comercial](comercial.md) — vender: funil, propostas, marketing | **Daniel** | Pedro |
+| [Entrega](entrega.md) — entregar: avaliação, construção, operação | **Daniel** | Pedro |
+| [Capacitação](capacitacao.md) — transformar: plataforma, conteúdo, presencial | **Pedro** | Daniel |
+| [Tecnologia](tecnologia.md) — manter as ferramentas: 3 repos, infra, segurança | **Pedro** | Daniel |
+| [Financeiro-Admin](financeiro-admin.md) — sustentar: caixa, NF, jurídico, LGPD interna | **Daniel** | Pedro |
 
 **Regras do modelo:**
 1. Todo setor tem exatamente **um** dono. Empate = o dono decide; discordância forte = [registro de decisões](../05-interno/registro-de-decisoes.md) e segue.

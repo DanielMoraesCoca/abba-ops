@@ -1,7 +1,7 @@
 # Setor Entrega
 
 **Missão:** transformar contrato em resultado verificado — onboarding, avaliação, construção, operação.
-**Dono:** {{SOCIO}} (matriz no [README](README.md))
+**Dono:** Daniel · suplente: Pedro (matriz no [README](README.md))
 
 ## Responsabilidades
 

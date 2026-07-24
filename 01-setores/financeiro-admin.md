@@ -1,7 +1,7 @@
 # Setor Financeiro-Admin
 
 **Missão:** manter a empresa legal, líquida e organizada — caixa, notas, impostos, jurídico, societário.
-**Dono:** {{SOCIO}} (matriz no [README](README.md))
+**Dono:** Daniel · suplente: Pedro (matriz no [README](README.md))
 
 ## Responsabilidades
 
