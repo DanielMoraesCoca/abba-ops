@@ -8,12 +8,18 @@
 |---|---|---|
 | Análise por informação pública (scout) apresentada em 5 dias úteis | Prazo da avaliação profunda: 2–3 semanas (depende da agenda de entrevistas DO CLIENTE — deixar explícito) | Benchmarks entre clientes (exige 3+ clientes no vault) |
 | Avaliação em 25 dimensões com entrevistas do conselho à linha de frente | Primeira execução com dados reais — enquadrar como charter: método validado, primeira aplicação real com escopo controlado (risco R1) | "Método certificado em clientes reais" — ainda não é verdade |
-| Relatórios editados pelos sócios + one-pager + quantificação rastreável | Assessment web público (no ar — ver abaixo): usar como porta, mas com o gating/CTA pendentes do Caminho Crítico | |
+| Relatórios editados pelos sócios + one-pager + quantificação rastreável | Assessment web (no ar em URL própria, **ainda não aberto ao público** — ver abaixo): alinhamento visual/CTA/gating entra ANTES do lançamento | |
 | Compartilhamento seguro: só o one-pager anonimizado, link com expiração | | |
 
 ## Superfície web (assessment.abbaservices.com.br)
 
-O assessment público no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). **Consistência verificada em 3 execuções** (Brasal/deep 42p · Grupo Santa/quick 30p · ABC DataSaúde/quick 31p): mesma estrutura e qualidade, com consciência regulatória por setor. {{CONFIRMAR: qual engine o alimenta, se captura e-mail do visitante antes do resultado, e custo por execução}}.
+O assessment no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). **Consistência verificada em 3 execuções** (Brasal/deep 42p · Grupo Santa/quick 30p · ABC DataSaúde/quick 31p): mesma estrutura e qualidade, com consciência regulatória por setor.
+
+**Confirmado pelos sócios (2026-07-24):**
+- **Motor:** assessment-brain — **porém a produção roda mudanças que NÃO estão no repositório** → risco [R16](../05-interno/registro-de-riscos.md): sincronizar o repo antes de qualquer evolução (inclusive a spec de alinhamento)
+- **Ainda não aberto ao público** — vantagem estratégica: captura de e-mail, gating e visual entram ANTES do lançamento, sem retrofit
+- **Captura de e-mail antes do resultado:** indefinida no fluxo atual → requisito obrigatório da [spec de alinhamento](spec-alinhamento-assessment-web.md) (seção 4)
+- **Custo por execução:** não medido — {{MEDIR na próxima execução e registrar na planilha}}
 
 Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md): visual (navy/dourado) · nomes (tabela oficial) · CTA final · gating. Achados adicionais das 3 amostras:
 - **Nunca enviar PDFs gerados na versão de preview** — o rodapé de execuções antigas traz URL de staging (`amber-summit-taak.here.now`) em todas as páginas; só circular PDFs com `assessment.abbaservices.com.br` no rodapé
@@ -23,7 +29,7 @@ Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md)
 ## Setup de cliente (executar no [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
 
 - [ ] Criar cliente + engajamento na ferramenta
-- [ ] Provedor de busca real configurado para o scout ({{CONFIRMAR: qual provedor está ativo?}}) — **nunca** enviar brief marcado como pesquisa sintética
+- [ ] Provedor de busca real configurado para o scout ({{PEDRO VERIFICAR: qual provedor está ativo — sócios não souberam responder em 2026-07-24}}) — **nunca** enviar brief marcado como pesquisa sintética
 - [ ] Convenção de ingestão acordada entre os sócios: níveis (conselho → linha de frente) e fases desde a 1ª entrevista
 - [ ] Modelo de nível cliente selecionado para o entregável (nunca o modelo barato)
 - [ ] Ao encerrar: feedback/outcome registrados (alimenta o vault) e ciclo de retenção de dados iniciado
@@ -34,7 +40,7 @@ Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md)
 |---|---|---|
 | Scout (degustação) | {{MEDIR na 1ª execução real}} | Planilha, linha overhead API |
 | Avaliação completa (modelo econômico, uso interno) | ~R$ 5 (referência da ferramenta) | idem |
-| Avaliação completa (modelo de nível cliente) | ~R$ 130 (referência) — {{CONFIRMAR na 1ª execução}} | idem |
+| Avaliação completa (modelo de nível cliente) | ~R$ 130 (referência) — {{MEDIR na 1ª execução}} | idem |
 
 Regra: anotar o custo real de CADA engajamento — é o número que protege a margem.
 

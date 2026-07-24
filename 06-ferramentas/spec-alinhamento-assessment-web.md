@@ -1,6 +1,10 @@
 # Spec — Alinhamento do Assessment Web (para execução dev)
 
-> Ticket pronto para o chapéu Tecnologia. Objetivo: o assessment (`assessment.abbaservices.com.br`) vestir a marca da casa, falar a língua oficial e converter para conversa. Contexto na [ficha da avaliação](ferramenta-avaliacao.md).
+> Ticket pronto para o chapéu Tecnologia. Objetivo: o assessment (`assessment.abbaservices.com.br`) vestir a marca da casa, falar a língua oficial e converter para conversa. Contexto na [ficha da avaliação](ferramenta-avaliacao.md). **O site ainda não está aberto ao público** (confirmado 2026-07-24) — este ticket inteiro executa ANTES do lançamento.
+
+## 0. Pré-requisito (bloqueante — risco R16)
+- A produção roda mudanças que **não estão** no repo assessment-brain. Antes de tocar em qualquer item abaixo: commitar/sincronizar o estado de produção no repo (branch própria, PR normal). Regra daqui em diante: produção só roda código versionado
+- Aproveitar a sincronização para responder as 2 pendências da [ficha](ferramenta-avaliacao.md): qual provedor de busca alimenta o scout + custo real por execução (anotar na planilha de precificação)
 
 ## 1. Visual (padrão da [identidade](../00-identidade/identidade-visual.md))
 - Paleta: primária `#1B2A4A` (navy) · acento `#C2A35B` (dourado) · neutros `#5A6472`/`#E8E8E8` · fundo branco. Substituir o gradiente teal/verde atual dos cards de recomendação por navy com acento dourado

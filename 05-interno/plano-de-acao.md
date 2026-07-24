@@ -28,7 +28,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 | P7 | Nome único dos 4 níveis | 3 escalas coexistem; a 1ª turma cristaliza o que estiver de pé | Decidir antes do 1º kickoff |
 | P4/P5 | Advogado (contrato + licença 4D) e contador (regime) | Maiores prazos externos — iniciar já, correm em paralelo | Começar os contatos esta semana |
 | P3 | Nome oficial do programa | Só bloqueia o site — pode esperar | Decidir junto com o site |
-| — | Confirmar as linhas `{{CONFIRMAR}}` das [fichas de capacidade](../06-ferramentas/mapa-jornada-ferramentas.md) | É o que separa promessa segura de promessa quebrada | 30 min, juntos |
+| — | ✅ **Linhas `{{CONFIRMAR}}` respondidas (2026-07-24** — [registro](registro-de-decisoes.md)). Restam 2 verificações do Pedro: provedor de busca do scout + custo por execução ({{MEDIR}}) | É o que separa promessa segura de promessa quebrada | Pedro, junto com a spec |
 
 ## Frente B — Produzir (eu produzo; vocês revisam)
 
@@ -38,7 +38,7 @@ Fila restante do [catálogo](../08-materiais/README.md), em ordem de impacto no 
 2. **3 propostas de entrada em DOCX** (workshop, avaliação, sprint — md prontos, derivar do kit) → T3 para qualquer porta de entrada
 3. **Certificados + papel timbrado** → graduação e correspondência no padrão
 4. **Gravação dos 3 vídeos de maior alavancagem + cards na gráfica** (vocês executam; roteiros word-for-word prontos) → trilha do 1º cliente
-5. **Alinhar o assessment web** (`assessment.abbaservices.com.br` — está NO AR e é forte): (a) visual no padrão navy/dourado; (b) nomes da tabela oficial ("Análise ABBA"; recomendação final apontando para "Avaliação de Prontidão para IA", nunca nomes avulsos como "Discovery de IA"); (c) página final de CTA com o limite honesto + "apresentamos ao vivo em 45 min" + contato; (d) decisão de gating: teaser público (5–8 págs) e relatório completo entregue NA apresentação — protege o momento T2 da coreografia
+5. **Alinhar o assessment web** (`assessment.abbaservices.com.br` — no ar, **ainda não público**; **passo 0 obrigatório: sincronizar as mudanças de produção no repo assessment-brain — risco R16**): (a) visual no padrão navy/dourado; (b) nomes da tabela oficial ("Análise ABBA"; recomendação final apontando para "Avaliação de Prontidão para IA", nunca nomes avulsos como "Discovery de IA"); (c) página final de CTA com o limite honesto + "apresentamos ao vivo em 45 min" + contato; (d) decisão de gating: teaser público (5–8 págs) e relatório completo entregue NA apresentação — protege o momento T2 da coreografia
 6. Site de marketing completo → **depois** do 1º charter (o assessment já cumpre o papel de porta digital)
 
 ## Frente C — Ensaiar (a fluência que impressiona; ~1 semana)

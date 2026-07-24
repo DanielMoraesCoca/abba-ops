@@ -20,4 +20,4 @@ Card da Bússola · Semáforo de Dados · Esqueleto de Prompt · Lente de Oportu
 
 **Especificação de gráfica:** cards A5/A6 em couché fosco 300g, laminação fosca (sobrevivem a workshop) · Solution Canvas em A3 · cores da [identidade](../00-identidade/identidade-visual.md) (navy #1B2A4A + dourado #C2A35B) · logo dourada em todos · tiragem inicial: 40 de cada (uma turma de 30 + reserva) · incluir a atribuição obrigatória do Método 4D onde o 4D aparecer.
 
-**Depois da gravação:** atualizar a linha de vídeos no [catálogo](README.md) e o {{CONFIRMAR prazo}} na [ficha do portal](../06-ferramentas/ferramenta-portal.md).
+**Prazo confirmado pelos sócios (2026-07-24): tudo pronto em agosto/2026.** Depois da gravação: atualizar a linha de vídeos no [catálogo](README.md) e a ficha do [portal](../06-ferramentas/ferramenta-portal.md) (⚠️ dos vídeos vira ✅).
