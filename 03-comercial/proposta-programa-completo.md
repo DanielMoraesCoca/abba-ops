@@ -67,4 +67,4 @@ A ABBA **orquestra** o ecossistema, sem vendor lock-in: roteamento de LLMs (Clau
 Diferenciais (tabela): consultoria que produz produto · capacitação que gera adoção · AI Native nos 3 níveis · ecossistema orquestrado · serviços gerenciados · deploy flexível. **Posicionamento competitivo:** vs. grandes consultorias (velocidade, custo, produto próprio) · vs. boutiques (profundidade técnica + plataforma + recorrência) · vs. ferramentas genéricas (verticalização + implementação + capacitação) · vs. TI interna (velocidade + metodologia pronta).
 
 ## Investimento (seção 10 ou anexo)
-{{PRECO_PROGRAMA}} conforme [tabela](tabela-de-precos.md) — 30/30/40 por marco (assinatura / protótipo validado / go-live) ou mensalizado. Serviços gerenciados: {{PRECO_MANUTENCAO}}/mês após o go-live. Crédito de 100% de produto de entrada contratado nos últimos 90 dias.
+**R$ 185.000** (faixa R$ 165–240 mil por porte e escopo — [tabela v1](tabela-de-precos.md)) — 30/30/40 por marco (assinatura / protótipo validado / go-live) ou mensalizado. Serviços gerenciados: **R$ 9.500/mês** após o go-live. Crédito de 100% de produto de entrada contratado nos últimos 90 dias.

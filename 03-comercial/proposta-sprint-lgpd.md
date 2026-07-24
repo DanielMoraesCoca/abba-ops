@@ -49,7 +49,7 @@ Revisões LGPD genéricas não capturam nada disso. Este sprint é o produto de 
 
 ## 5. Investimento
 
-**Engajamento padrão: {{PRECO_SPRINT_LGPD}}** — inclui as seções 1 e 3, entregue por consultor sênior com domínio LGPD + IA.
+**Engajamento padrão: R$ 24.000** (faixa R$ 20–32 mil conforme escopo — [tabela v1](tabela-de-precos.md)) — inclui as seções 1 e 3, entregue por consultor sênior com domínio LGPD + IA.
 
 Ajustes: sem inventário de IA existente (inclui descoberta de 2 dias): {{AJUSTE_DESCOBERTA}} · regulações adjacentes no escopo (BACEN, CVM, OAB, setoriais): {{AJUSTE_REGULACOES}} · segundo sprint para outra divisão em até 120 dias: {{PRECO_SEGUNDO_SPRINT}} · entrega remota: sem desconto.
 

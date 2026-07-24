@@ -43,6 +43,8 @@ Fila restante do [catálogo](../08-materiais/README.md), em ordem de impacto no 
 
 ## Frente C — Ensaiar (a fluência que impressiona; ~1 semana)
 
+**Runbook executável pronto: [`cliente-zero-runbook.md`](cliente-zero-runbook.md)** (dia a dia, com critério de aprovação).
+
 Regime completo na [coreografia da conversão](../03-comercial/coreografia-da-conversao.md):
 
 1. **3 ensaios de T1+T2** gravados e revistos (um sócio faz o prospect difícil)
@@ -54,7 +56,7 @@ Por quê isso importa mais que qualquer documento: o prospect não lê o repo �
 
 ## Frente D — Prospectar (só quando A+B+C = ✅)
 
-1. **Lista de 20 alvos nomeados** (perfil do [plano de negócio](../00-identidade/plano-de-negocio.md): mid-market BR, 50–500 colab., dor de IA visível; começar pela rede real dos sócios + setor jurídico/serviços profissionais)
+1. **Lista de 20 alvos nomeados** — tracker pronto: [`pipeline-modelo.md`](../03-comercial/pipeline-modelo.md) (perfil do [plano de negócio](../00-identidade/plano-de-negocio.md): mid-market BR, 50–500 colab., dor de IA visível; começar pela rede real dos sócios + setor jurídico/serviços profissionais)
 2. **Cadência:** {{N}} contatos novos/semana (sócios fixam — sugestão: 10) · toda degustação aceita entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo
 3. **Meta do trimestre:** 1 cliente charter assinado (Avaliação de Prontidão como porta, programa como conversão)
 4. **Retrospectiva de 10 min após cada conversa real** — o funil melhora a cada repetição

@@ -64,7 +64,7 @@ Este workshop produz o retrato compartilhado em uma sala, em 90 minutos. O relat
 
 ## 5. Investimento
 
-**Engajamento padrão: {{PRECO_WORKSHOP}}** — inclui tudo da seção 3, até 30 participantes, uma sessão.
+**Engajamento padrão: R$ 14.000** (faixa R$ 12–16 mil conforme porte — [tabela v1](tabela-de-precos.md)) — inclui tudo da seção 3, até 30 participantes, uma sessão.
 
 Ajustes: 30–45 participantes (dois blocos de trabalho em grupo): {{AJUSTE_GRUPO_GRANDE}} · segunda sessão para outra divisão em até 60 dias: {{PRECO_SEGUNDA_SESSAO}} · entrega remota: sem desconto (mesmas horas de facilitação) · pré-revisão do relatório pelo seu Jurídico antes da publicação interna: {{AJUSTE_REVISAO_JURIDICA}}.
 

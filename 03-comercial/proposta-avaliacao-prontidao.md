@@ -34,7 +34,7 @@ Você está aqui porque uma destas três situações se aplica:
 2. **Já sabe que vai investir em IA**, mas precisa que conselho / patrocinador / controller vejam o caso na linguagem da sua organização, não num deck genérico de fornecedor
 3. **Tem vários fornecedores de IA na mesa** e precisa de uma avaliação independente de prontidão antes de escolher — algo verdadeiro para a sua empresa, não para o pipeline de vendas deles
 
-Se você já sabe que quer a transformação completa, é mais barato ir direto ao programa (a avaliação está incluída). Se está em dúvida, 2 semanas e {{PRECO_AVALIACAO}} são o caminho mais barato para ter certeza.
+Se você já sabe que quer a transformação completa, é mais barato ir direto ao programa (a avaliação está incluída). Se está em dúvida, 2 semanas e R$ 28.000 são o caminho mais barato para ter certeza.
 
 ## 3. As cinco dimensões de prontidão
 
@@ -84,7 +84,7 @@ Cada tabela e gráfico deriva de dados reais que o seu time registrou. Você pod
 
 ## 7. Investimento
 
-**Engajamento padrão: {{PRECO_AVALIACAO}}** — inclui tudo da seção 4, até 25 participantes.
+**Engajamento padrão: R$ 28.000** (faixa R$ 24–35 mil conforme porte — [tabela v1](tabela-de-precos.md)) — inclui tudo da seção 4, até 25 participantes.
 
 Ajustes: organização pequena (<50 colaboradores, até 12 participantes): {{PRECO_AVALIACAO_PEQUENA}} · organização grande (100+, 25–50 participantes, multi-site): {{PRECO_AVALIACAO_GRANDE}} · segunda avaliação para outra divisão em até 90 dias: {{PRECO_SEGUNDA_AVALIACAO}} · entrega remota: sem desconto · pré-revisão jurídica do relatório: {{AJUSTE_REVISAO_JURIDICA}}.
 
