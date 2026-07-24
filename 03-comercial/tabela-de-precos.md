@@ -1,28 +1,31 @@
-# Tabela de Preços — ABBA (v1 pendente)
+# Tabela de Preços — ABBA (v1 · 2026-07-23)
 
-> ⚠️ **Esta tabela está vazia de propósito.** Os preços v1 serão fixados quando os sócios preencherem a [planilha de precificação](precificacao-planilha.md) (pendência P1 do [registro de decisões](../05-interno/registro-de-decisoes.md)). **Nenhuma proposta pode ser enviada antes disso.** As propostas referenciam os placeholders abaixo.
+> **Tabela vigente**, calculada no cenário C da [proposta do especialista](precificacao-proposta-especialista.md): renda-alvo R$ 20 mil/sócio/mês, 35h/semana cada, utilização 55% → **piso R$ 331/h**; hora-alvo de posicionamento **~R$ 400/h** (banda alta do mercado sênior R$ 200–450/h, justificada por método proprietário + ferramentas próprias + entrega de sistemas). Provisão tributária: 12% (Simples Anexo III via Fator R). Alterações → [registro de decisões](../05-interno/registro-de-decisoes.md).
 
-## Tabela vigente (v1 — a preencher)
+## Tabela vigente (v1)
 
-| Placeholder | Produto | Faixa (BRL) | Condição de pagamento |
+| Produto | Preço-alvo | Faixa (por porte/escopo) | Pagamento |
 |---|---|---|---|
-| `{{PRECO_WORKSHOP}}` | Workshop de Descoberta de Shadow AI (90 min + relatório 48h) | R$ — | 50/50 |
-| `{{PRECO_AVALIACAO}}` | Avaliação de Prontidão para IA (2 semanas) | R$ — | 50/50 |
-| `{{PRECO_SPRINT_LGPD}}` | Sprint LGPD + Governança de IA (2–3 semanas) | R$ — | 50/50 |
-| `{{PRECO_PROGRAMA}}` | Programa completo de transformação (avaliação → construção → capacitação híbrida → operação) | R$ — | 30/30/40 por marco |
-| `{{PRECO_MANUTENCAO}}` | Manutenção mensal (agentes em produção + relatório) | R$ —/mês | mensal; anual −{{DESCONTO_ANUAL}}% |
-| `{{PRECO_MINI_CICLO}}` | Mini-ciclo por caso de uso adicional | R$ — | 50/50 |
+| Workshop de Descoberta de Shadow AI | **R$ 14.000** | R$ 12–16 mil | 50/50 |
+| Avaliação de Prontidão para IA | **R$ 28.000** | R$ 24–35 mil | 50/50 |
+| Sprint LGPD + Governança de IA | **R$ 24.000** | R$ 20–32 mil | 50/50 |
+| **Programa completo de transformação (16 sem)** | **R$ 185.000** | R$ 165–240 mil | 30/30/40 por marco |
+| Manutenção mensal (agentes + plataforma + ritual) | **R$ 9.500/mês** | R$ 8–13 mil/mês | mensal; anual −8% |
+| Mini-ciclo (caso de uso adicional) | **R$ 42.000** | R$ 35–60 mil | 50/50 |
 
-Regras comerciais (fixadas na [metodologia](precificacao-metodologia.md)):
-- Produto de entrada credita 100% no programa completo se convertido em até 90 dias (exceção: Sprint LGPD não credita).
-- Desconto charter só com contrapartidas formais (Cláusula 5.3 do [contrato-esqueleto](contrato-sow-esqueleto.md)).
-- Reajuste anual IPCA em recorrentes.
+**Cheques de sanidade:** hora implícita de cada pacote entre R$ 357–475 ✓ dentro/acima da banda-alvo · programa a R$ 185K = 1,24× o custo no piso C (colchão) · charter máximo −20% → programa charter R$ 148K, ainda ≈ piso ✓.
+
+Regras comerciais:
+- Produto de entrada credita 100% no programa em até 90 dias (exceção: Sprint LGPD não credita)
+- Desconto **só** via charter com contrapartidas (Anexo III do [contrato](contrato-sow-esqueleto.md)), máx. 20%
+- Abaixo do piso do pacote = não vender · reajuste anual IPCA nos recorrentes
+- Disciplina de descoberta: registrar TODA reação a preço na [planilha](precificacao-planilha.md) — 2 sustos = revisar comunicação de valor; 2 "razoável" fácil = subir 15% na próxima
 
 ## Histórico de versões
 
 | Versão | Data | Mudança |
 |---|---|---|
-| v1 | — | (pendente preenchimento da planilha) |
+| v1 | 2026-07-23 | Primeira tabela vigente — cenário C, hora-alvo R$ 400, pesquisa tributária e de mercado citada na proposta do especialista |
 
 ---
 

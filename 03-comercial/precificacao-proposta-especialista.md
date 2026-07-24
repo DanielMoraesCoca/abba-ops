@@ -1,6 +1,6 @@
 # Precificação — Proposta do Especialista (pesquisa + modelo + tabela-rascunho)
 
-> Elaborada em 2026-07-23 com pesquisa de mercado e tributária citada. **Falta apenas 2 insumos dos sócios** (renda-alvo e horas/semana) para travar a tabela v1 — as tabelas de cenários abaixo permitem se localizar imediatamente. Complementa a [metodologia](precificacao-metodologia.md) e alimenta a [planilha](precificacao-planilha.md).
+> Elaborada em 2026-07-23. **DECIDIDO: cenário C** (R$ 20 mil/sócio/mês, 35h/sem) → [tabela v1 vigente](tabela-de-precos.md). Correção importante: o valor de R$ 150K da proposta Galápagos NÃO foi comunicado ao prospect — não há dado de mercado próprio ainda; a validação vem das 3 primeiras conversas com a tabela v1. Este doc permanece como memória de cálculo.
 
 ## 1. Tributos — o número real para Brasília/DF (pesquisado)
 

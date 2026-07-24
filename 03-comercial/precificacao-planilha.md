@@ -78,6 +78,6 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 
 | Data | Prospect | Pacote | Preço dito | Reação (susto / neutro / fácil demais) | Ajuste? |
 |---|---|---|---|---|---|
-| 2026-06 | Galápagos Capital (ref ABBA-2026-001) | Assessment R$ 45K + Protótipo R$ 65K + Deployment R$ 40K = **R$ 150K** (30/30/30/10) | R$ 150.000 | {{REGISTRAR: qual foi a resposta?}} | — |
+| 2026-06 | Galápagos Capital (ref ABBA-2026-001) | proposta apresentada **SEM valor** — os R$ 150K constavam do documento interno mas não foram comunicados | — | (sem dado de preço) | — |
 
-> ⚠️ Único dado real de mercado até agora: a proposta emitida em jun/2026 a **R$ 150K** pelo engajamento de 12–16 semanas. Registrar a reação do prospect acima — é o primeiro teste da disciplina de descoberta de preço.
+> ⚠️ Correção 2026-07-23: **nenhum preço foi testado em mercado ainda** — o valor da proposta Galápagos não chegou ao prospect. As primeiras 3 conversas reais com a tabela v1 são o primeiro teste de descoberta de preço. Registrar TODAS.
