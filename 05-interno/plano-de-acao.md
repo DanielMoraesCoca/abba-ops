@@ -26,7 +26,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 | P9 | SLA sustentável p/ 2 pessoas | Congela a promessa 24/7 antes que ela entre em outra proposta | Horário comercial + plantão crítico definido; revisar quando houver time |
 | P8 | Status real das parcerias | Uma checagem do prospect derruba a credibilidade | "Stack orquestrada" (verdadeiro) até haver contrato assinado |
 | P7 | Nome único dos 4 níveis | 3 escalas coexistem; a 1ª turma cristaliza o que estiver de pé | Decidir antes do 1º kickoff |
-| P4/P5 | Advogado (contrato + licença 4D) e contador (regime) | Maiores prazos externos — iniciar já, correm em paralelo | Começar os contatos esta semana |
+| P4/P5 | 🔄 **Acionados (2026-07-25)** — advogado (contrato + licença 4D) e contador (regime) trabalhando; gates mantidos: assinatura só com contrato revisado, NF só com regime confirmado | Maiores prazos externos — correm em paralelo | Cobrar retorno em 1 semana |
 | P3 | Nome oficial do programa | Só bloqueia o site — pode esperar | Decidir junto com o site |
 | — | ✅ **Linhas `{{CONFIRMAR}}` respondidas (2026-07-24** — [registro](registro-de-decisoes.md)). Restam 2 verificações do Pedro: provedor de busca do scout + custo por execução ({{MEDIR}}) | É o que separa promessa segura de promessa quebrada | Pedro, junto com a spec |
 
@@ -76,7 +76,7 @@ Números baixos não são fracasso — são diagnóstico: contato→aceite baixo
 
 ## Critério final: "pronto para receber um cliente"
 
-- [ ] E-mail ✅ ativo com `contato@`/`comercial@` testadas (2026-07-25) · Drive oficial montado e migrado — **pendente**
+- [x] E-mail ativo com `contato@`/`comercial@` testadas · Drive oficial montado e migrado (P2 — 2026-07-25)
 - [x] Tabela de preços v1 fixada (P1) · chapéus divididos (P6 — 2026-07-24)
 - [ ] SLA realista publicado (P9) · parcerias com texto honesto (P8) · fichas de capacidade confirmadas
 - [ ] Família de materiais completa (frente B, itens 1–3)
