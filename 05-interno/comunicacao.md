@@ -4,7 +4,7 @@
 
 ### E-mail (canal oficial)
 - **Domínio oficial: `abbaservices.com.br`** — e-mail corporativo ATIVO via **Microsoft 365 (Outlook)** (2026-07-23). ✅ Liberado o envio profissional de propostas. Regra mantida: nada sai de e-mail pessoal.
-- Endereços: `nome@abbaservices.com.br` (cada sócio) · criar aliases `contato@` (entrada geral) e `comercial@` (propostas) no admin do M365 · futuro `suporte@` (SLA)
+- Endereços: `nome@abbaservices.com.br` (cada sócio) · ✅ caixas compartilhadas `contato@` (entrada geral) e `comercial@` (propostas) ativas com os dois sócios como membros (2026-07-25) · futuro `suporte@` (SLA)
 - **Armazenamento interino: Google Drive** com a árvore oficial da [estrutura](../07-drive/estrutura-drive.md) (o plano M365 atual é só e-mail). Organizar a pasta existente pela árvore + mapa de migração. Upgrade futuro para Business Basic (SharePoint/OneDrive) registrado como decisão de baixa prioridade.
 - Tudo que é **decisão, escopo, valor ou anexo confidencial vai por e-mail** — trilha auditável.
 

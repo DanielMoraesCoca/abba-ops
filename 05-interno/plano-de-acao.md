@@ -20,7 +20,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 
 | # | Decisão | Por quê primeiro | Recomendação |
 |---|---|---|---|
-| P2 | Workspace + e-mail @abbaservices.com.br + Drive oficial + migração da pasta legada ([mapa pronto](../07-drive/estrutura-drive.md)) | Bloqueia QUALQUER envio profissional | Fazer HOJE — 1h + custo baixo |
+| P2 | ✅ **E-mail concluído (2026-07-25):** caixas `contato@`/`comercial@` ativas e testadas · resta o Drive: árvore oficial + migração ([mapa pronto](../07-drive/estrutura-drive.md)) | Bloqueia QUALQUER envio profissional | Drive: 1h com o mapa |
 | P1 | [Planilha de precificação](../03-comercial/precificacao-planilha.md) numa sentada | Sem tabela v1, não existe proposta | Ancorar na referência real: R$ 150K emitidos em jun/2026 — e registrar como o prospect reagiu |
 | P6 | ✅ **Divisão dos 5 chapéus (2026-07-24):** Daniel = Comercial + Entrega + Fin-Admin · Pedro = Tecnologia + Capacitação | Sem dono, checklist não roda | — |
 | P9 | SLA sustentável p/ 2 pessoas | Congela a promessa 24/7 antes que ela entre em outra proposta | Horário comercial + plantão crítico definido; revisar quando houver time |
@@ -76,7 +76,7 @@ Números baixos não são fracasso — são diagnóstico: contato→aceite baixo
 
 ## Critério final: "pronto para receber um cliente"
 
-- [ ] E-mail @abbaservices.com.br ativo + Drive oficial montado e migrado (P2)
+- [ ] E-mail ✅ ativo com `contato@`/`comercial@` testadas (2026-07-25) · Drive oficial montado e migrado — **pendente**
 - [x] Tabela de preços v1 fixada (P1) · chapéus divididos (P6 — 2026-07-24)
 - [ ] SLA realista publicado (P9) · parcerias com texto honesto (P8) · fichas de capacidade confirmadas
 - [ ] Família de materiais completa (frente B, itens 1–3)
