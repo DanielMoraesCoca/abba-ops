@@ -16,7 +16,7 @@
 O assessment no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). **Consistência verificada em 3 execuções** (Brasal/deep 42p · Grupo Santa/quick 30p · ABC DataSaúde/quick 31p): mesma estrutura e qualidade, com consciência regulatória por setor.
 
 **Confirmado pelos sócios (2026-07-24):**
-- **Motor:** assessment-brain — **porém a produção roda mudanças que NÃO estão no repositório** → risco [R16](../05-interno/registro-de-riscos.md): sincronizar o repo antes de qualquer evolução (inclusive a spec de alinhamento)
+- **Motor:** assessment-brain — **porém o site público NÃO está no repositório** (inspeção 2026-07-25: sem página de visitante, sem captura; o `web/` do repo é o console interno) → risco [R16](../05-interno/registro-de-riscos.md): Pedro commita o site inteiro antes de qualquer evolução. Guia pronto no próprio repo: `docs/ALINHAMENTO-WEB.md`
 - **Ainda não aberto ao público** — vantagem estratégica: captura de e-mail, gating e visual entram ANTES do lançamento, sem retrofit
 - **Captura de e-mail antes do resultado:** indefinida no fluxo atual → requisito obrigatório da [spec de alinhamento](spec-alinhamento-assessment-web.md) (seção 4)
 - **Custo por execução:** não medido — {{MEDIR na próxima execução e registrar na planilha}}

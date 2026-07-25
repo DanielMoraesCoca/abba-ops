@@ -2,6 +2,8 @@
 
 > Ticket pronto para o chapéu Tecnologia. Objetivo: o assessment (`assessment.abbaservices.com.br`) vestir a marca da casa, falar a língua oficial e converter para conversa. Contexto na [ficha da avaliação](ferramenta-avaliacao.md). **O site ainda não está aberto ao público** (confirmado 2026-07-24) — este ticket inteiro executa ANTES do lançamento.
 
+> **Execução pavimentada (2026-07-25):** este ticket foi transposto para dentro do repo da ferramenta — [`docs/ALINHAMENTO-WEB.md`](https://github.com/DanielMoraesCoca/assessment-brain/blob/claude/abba-consulting-structure-kdyfga/docs/ALINHAMENTO-WEB.md) — com tokens CSS prontos, logo em `web/public/brand/` e checklist. Pedro executa sem sair do repo dele. **Achado da inspeção: o site público não está no repo de forma alguma** (o `web/` é o console interno) — o passo 0 é commitar o site inteiro, não só "mudanças".
+
 ## 0. Pré-requisito (bloqueante — risco R16)
 - A produção roda mudanças que **não estão** no repo assessment-brain. Antes de tocar em qualquer item abaixo: commitar/sincronizar o estado de produção no repo (branch própria, PR normal). Regra daqui em diante: produção só roda código versionado
 - Aproveitar a sincronização para responder as 2 pendências da [ficha](ferramenta-avaliacao.md): qual provedor de busca alimenta o scout + custo real por execução (anotar na planilha de precificação)
