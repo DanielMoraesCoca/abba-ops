@@ -14,6 +14,8 @@
 
 Camada contratada neste anexo: **{{CAMADA_CONTRATADA}}**.
 
+**Transição entre camadas** (regras contratuais — [detalhe comercial](../03-comercial/proposta-continuidade.md)): upgrade a qualquer momento com aprovação por escrito (pró-rata no ciclo corrente); downgrade só no aniversário da renovação, aviso de 30 dias; horas de evolução não cumulativas — aviso obrigatório ao cliente aos 80% de consumo do mês; excedente vira mini-ciclo cotado, nunca fatura-surpresa. Faturamento mensal pelo valor da camada vigente.
+
 ## 1b. Escopo coberto
 
 - Monitoramento dos agentes em produção listados: {{LISTA_AGENTES}}

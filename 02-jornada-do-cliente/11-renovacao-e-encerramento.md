@@ -8,7 +8,7 @@ Programa chegando ao fim, ou aniversário de contrato de manutenção se aproxim
 ## Caminho A — Renovação / expansão
 
 - [ ] 30 dias antes: revisar com o outro sócio o histórico (rituais do conselho, resultados, incidentes) — argumento de renovação pronto
-- [ ] Proposta de continuidade apresentada NO ritual do conselho (nunca por e-mail frio): manutenção, mini-ciclos, novo programa em outra área
+- [ ] [Proposta de continuidade](../03-comercial/proposta-continuidade.md) apresentada NO ritual do conselho (nunca por e-mail frio): as 3 camadas com **recomendação baseada em uso** ("pelos seus números, a camada certa é a {{X}}") + mini-ciclos ou novo programa em outra área
 - [ ] Renovado → aditivo/novo Anexo I ([04-contrato](04-contrato.md) simplificado) · reajuste IPCA aplicado
 
 ## Caminho B — Encerramento limpo
