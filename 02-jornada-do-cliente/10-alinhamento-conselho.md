@@ -3,6 +3,8 @@
 **Dono:** chapéu Entrega (prepara e conduz) · **Cadência:** ao final de cada etapa durante o programa; **trimestral** na manutenção
 
 ## O que é
+**Como produto vendável, este estágio é o [Conselheiro de IA ABBA](../03-comercial/conselheiro-de-ia.md)** (CAIO fracionário) — com **duas entradas**: pós-programa (embutido na manutenção-Estratégia ou avulso na renovação) e **venda direta** para empresa que já tem IA rodando sem quem dirija (não exige programa anterior).
+
 O sistema de direção do relacionamento: um ritual estruturado onde os resultados são apresentados **contra os objetivos que a própria diretoria declarou**, a ABBA recomenda o próximo movimento, e **eles decidem**. É o que transforma a ABBA de fornecedor em parceiro — e o motor de renovação e expansão.
 
 **Princípio inegociável:** nós recomendamos com convicção; a visão deles dirige. Registrado desde o kickoff (os objetivos declarados na abertura são o baseline eterno).

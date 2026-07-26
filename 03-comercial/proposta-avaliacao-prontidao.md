@@ -84,6 +84,7 @@ Cada tabela e gráfico deriva de dados reais que o seu time registrou. Você pod
 
 ## 7. Investimento
 
+<!-- ATIVAR QUANDO {{N_PADROES_SETOR}} ≥ 3: "Nosso método já acumulou {{N_PADROES_SETOR}} padrões validados no seu setor — sua avaliação começa na frente." (fonte: vault, E3) -->
 **Engajamento padrão: R$ 28.000** (faixa R$ 24–35 mil conforme porte — [tabela v1](tabela-de-precos.md)) — inclui tudo da seção 4, até 25 participantes.
 
 Ajustes: organização pequena (<50 colaboradores, até 12 participantes): {{PRECO_AVALIACAO_PEQUENA}} · organização grande (100+, 25–50 participantes, multi-site): {{PRECO_AVALIACAO_GRANDE}} · segunda avaliação para outra divisão em até 90 dias: {{PRECO_SEGUNDA_AVALIACAO}} · entrega remota: sem desconto · pré-revisão jurídica do relatório: {{AJUSTE_REVISAO_JURIDICA}}.

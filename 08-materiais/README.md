@@ -96,3 +96,4 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
+| One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |

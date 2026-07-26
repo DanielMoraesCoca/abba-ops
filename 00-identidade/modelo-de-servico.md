@@ -44,7 +44,7 @@ Mudar todos os níveis da organização, não só os processos:
 Os agentes implantados viram responsabilidade contínua: monitoramento, ajuste fino, evolução, relatório mensal de impacto — sob [SLA](../04-entrega/sla-manutencao.md). Receita recorrente da ABBA; tranquilidade do cliente.
 
 ### 6. Alinhamento com a diretoria (a constante)
-Não é uma etapa final — é o **sistema de direção** que atravessa todas as outras. Ritual estruturado ([pauta](../04-entrega/pauta-conselho.md)): resultados contra os objetivos **declarados pela diretoria** → recomendações da ABBA → decisão do cliente → registro. Nós recomendamos com convicção; eles decidem. A cada trimestre, o plano se realinha à visão de onde eles querem levar a empresa.
+Não é uma etapa final — é o **sistema de direção** que atravessa todas as outras. Como produto vendável, tem nome próprio: **[Conselheiro de IA ABBA](../03-comercial/conselheiro-de-ia.md)** (CAIO fracionário) — contratável na renovação ou direto por empresas que já têm IA rodando. Ritual estruturado ([pauta](../04-entrega/pauta-conselho.md)): resultados contra os objetivos **declarados pela diretoria** → recomendações da ABBA → decisão do cliente → registro. Nós recomendamos com convicção; eles decidem. A cada trimestre, o plano se realinha à visão de onde eles querem levar a empresa.
 
 ## Mapeamento com os frames anteriores
 

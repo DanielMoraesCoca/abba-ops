@@ -2,13 +2,17 @@
 
 > **Camada:** processo interno. **O documento do cliente é o modelo Word:** [`../08-materiais/modelos/plano-capacitacao-modelo.docx`](../08-materiais/modelos/plano-capacitacao-modelo.docx). Executado pelo [estágio 08](../02-jornada-do-cliente/08-capacitacao-e-transformacao.md); conteúdo didático nos [materiais da Academy](../08-materiais/README.md).
 
+## Formato único: turma nomeada (decisão E4)
+
+A capacitação **sempre** roda como **"Turma {{N}} da {{Empresa}}"** — grupo nomeado, kickoff presencial de abertura, semanas com início e fim, desafios coletivos e **graduação com certificado**. Nunca vender ou operar como "acesso à plataforma": cohort com identidade e ritmo conclui; biblioteca self-service vira login esquecido. A turma é criada no portal já com esse nome ([ficha](../06-ferramentas/ferramenta-portal.md)).
+
 ## Quando e quem
 Preenchido pelo chapéu [Capacitação](../01-setores/capacitacao.md) na semana do kickoff; aprovado pelo patrocinador antes do lançamento.
 
 ## Checklist de montagem
 - [ ] Objetivo declarado da diretoria transcrito do kickoff (slide 5) — é o norte do plano
 - [ ] Participantes mapeados por papel (executivos / gestores / operacionais / candidatos a campeão)
-- [ ] Trilhas × papéis definidas com metas de fase (as 4 fases da progressão; nomes finais na pendência P7)
+- [ ] Trilhas × papéis definidas com metas de fase (escala oficial P7: Explorador → Praticante → Especialista → Arquiteto)
 - [ ] Datas das sessões presenciais fechadas: **Kickoff Academy (meio dia, kit do facilitador)** + workshops de marco + graduação
 - [ ] Conexão com os agentes reais do cliente explícita (capacitação nunca é genérica)
 - [ ] Metas de sucesso acordadas — incluindo **horas reinvestidas por pessoa/semana** (a métrica que muda o plano)

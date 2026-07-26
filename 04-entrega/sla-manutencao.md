@@ -2,7 +2,19 @@
 
 > Anexado ao contrato de continuidade (Anexo I da manutenção). Preencher os `{{ }}`, revisar com advogado junto do contrato (pendência P4). Operado pelo [estágio 09](../02-jornada-do-cliente/09-manutencao.md).
 
-## 1. Escopo coberto
+## 1. Camadas de serviço
+
+> A manutenção é vendida em 3 camadas ([tabela — preços v2 em rascunho](../03-comercial/tabela-de-precos.md)). **As severidades e tempos da seção 2 são idênticos nas três** — o que muda é escopo de evolução e presença estratégica, nunca a segurança.
+
+| | **Camada 1 · Operação** | **Camada 2 · Evolução** | **Camada 3 · Estratégia** |
+|---|---|---|---|
+| Monitoramento 24/7 + SLA S1–S3 + relatório mensal | ✅ | ✅ | ✅ |
+| Horas de evolução ({{HORAS_MES}}h/mês) + plataforma de capacitação ativa | — | ✅ | ✅ |
+| [Conselheiro de IA](../03-comercial/conselheiro-de-ia.md) trimestral embutido | — | — | ✅ |
+
+Camada contratada neste anexo: **{{CAMADA_CONTRATADA}}**.
+
+## 1b. Escopo coberto
 
 - Monitoramento dos agentes em produção listados: {{LISTA_AGENTES}}
 - Correção de defeitos e ajuste fino de comportamento

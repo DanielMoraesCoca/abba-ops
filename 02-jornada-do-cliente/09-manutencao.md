@@ -6,7 +6,7 @@
 Fim da operação assistida do programa (ou contratação avulsa de manutenção). Contrato de continuidade assinado (Anexo I próprio) OU decisão registrada do cliente de operar sozinho (aí este estágio não existe — pular para [11](11-renovacao-e-encerramento.md)).
 
 ## O que a manutenção cobre
-Monitoramento dos agentes em produção · correções e ajuste fino · pequenas evoluções (até {{HORAS_MES}}h/mês; acima vira [mini-ciclo](../03-comercial/tabela-de-precos.md) cotado à parte) · continuidade do acesso à plataforma de capacitação · relatório mensal de impacto · ritual trimestral com a diretoria ([10](10-alinhamento-conselho.md)).
+Conforme a **camada contratada** — Operação, Evolução ou Estratégia ([SLA, seção 1](../04-entrega/sla-manutencao.md)). No escopo máximo: monitoramento dos agentes em produção · correções e ajuste fino · pequenas evoluções (até {{HORAS_MES}}h/mês; acima vira [mini-ciclo](../03-comercial/tabela-de-precos.md) cotado à parte) · continuidade do acesso à plataforma de capacitação · relatório mensal de impacto · ritual trimestral com a diretoria ([10](10-alinhamento-conselho.md)).
 
 ## Checklist mensal
 

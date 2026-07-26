@@ -13,7 +13,7 @@
 
 ## Setup de cliente
 
-- [ ] Tenant criado + contas dos participantes (lista do [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
+- [ ] Tenant criado como **"Turma {{N}} da {{Empresa}}"** (formato único E4 — nunca "acesso à plataforma") + contas dos participantes (lista do [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
 - [ ] Handoff da avaliação importado (quando estágio 06 concluído)
 - [ ] Trilha do departamento configurada conforme o [plano de capacitação](../04-entrega/plano-de-capacitacao.md)
 - [ ] Slots [PERSONALIZAR] do conteúdo preenchidos com dados do cliente

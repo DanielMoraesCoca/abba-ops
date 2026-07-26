@@ -61,7 +61,9 @@ Por quê isso importa mais que qualquer documento: o prospect não lê o repo �
 3. **Meta do trimestre:** 1 cliente charter assinado (Avaliação de Prontidão como porta, programa como conversão)
 4. **Retrospectiva de 10 min após cada conversa real** — o funil melhora a cada repetição
 
-## Métricas do caminho (revisão semanal)
+## Métricas do caminho (revisão semanal — obrigatória, PRINCIPALMENTE quando estiver ruim)
+
+> São métricas de **INPUT** (controláveis por vocês), não de output: faturamento não se controla; contatos/semana, prazo de entrega e registro de reações, sim (E5, kit Bezos).
 
 | Indicador | Meta inicial |
 |---|---|

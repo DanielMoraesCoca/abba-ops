@@ -1,5 +1,7 @@
 # Análise Estratégica — o ecossistema ABBA × o que o mundo prova que funciona
 
+> **Status: APROVADA em 2026-07-25 (todas as recomendações) e implementada — ver [registro](registro-de-decisoes.md). Preços novos em regime rascunho v2.**
+>
 > **Data:** 2026-07-25 · **Método:** cruzamento do estado completo da ABBA (6 etapas, 3 ferramentas, tabela v1, mercado DF, estágio pré-primeiro-cliente) com pesquisa sobre boutiques de IA vencedoras, o modelo Palantir, CAIO fracionário, receita recorrente em consultorias, funis de assessment e falhas típicas do 1º ano. Fontes ao final. Decisões propostas viram pauta de sócios — nada aqui muda a operação sem passar pelo [registro](registro-de-decisoes.md).
 
 ## 1. O que o mundo confirma que JÁ fazemos certo (não mexer — aprofundar)

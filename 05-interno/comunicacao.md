@@ -27,7 +27,7 @@
 
 ## Entre os sócios
 
-- **Reunião semanal de sócios** (60–90 min, dia fixo): pauta imutável → (1) funil comercial · (2) engajamentos ativos · (3) caixa e runway (número em voz alta) · (4) checklists dos 5 setores (5 min cada) · (5) decisões → direto no [registro](registro-de-decisoes.md) · (6) pendências abertas do [registro](registro-de-decisoes.md) (hoje: P3–P5).
+- **Reunião semanal de sócios** (60–90 min, dia fixo): pauta imutável → **(0) saúde societária — "algo entre nós precisa de conversa?"** (2 min, antes de tudo; decisão E5) · (1) funil comercial — **métricas de INPUT, revisadas TODA semana, principalmente quando estiverem ruins** · (2) engajamentos ativos · (3) caixa e runway (número em voz alta) · (4) checklists dos 5 setores (5 min cada) · (5) decisões → direto no [registro](registro-de-decisoes.md) · (6) pendências abertas do [registro](registro-de-decisoes.md) · **(7) "o que compôs esta semana?"** — vault, método, materiais (15 min; princípio Day 1, decisão E3).
 - **Check-in assíncrono diário** (2 linhas cada, no canal interno): o que fiz / o que travou.
 - **Regra:** decisão relevante fora da reunião → registrada no mesmo dia, senão não existe.
 

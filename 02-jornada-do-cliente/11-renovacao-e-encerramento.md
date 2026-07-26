@@ -22,7 +22,7 @@ Programa chegando ao fim, ou aniversário de contrato de manutenção se aproxim
 - [ ] Pedir **depoimento** (e, se charter, cobrar as contrapartidas do Anexo III: métricas, logo, estudo de caso)
 - [ ] Pedir **2 indicações** — explícito, sem vergonha: "quem mais deveria ter essa conversa?"
 - [ ] Retrospectiva interna dos sócios (1h): o que o engajamento ensinou → [registro de decisões](../05-interno/registro-de-decisoes.md) e ajustes nos templates
-- [ ] Padrões anonimizados registrados no vault do assessment-brain (`abba outcome`)
+- [ ] **Padrões anonimizados registrados no vault** (`abba outcome`) — **mínimo 3 por engajamento** (o que funcionou · o que travou · benchmark setorial). **Item bloqueante: encerramento sem vault = encerramento não concluído** (decisão E3 — o vault é o volante da ABBA: cada engajamento torna o próximo melhor e mais vendável)
 
 ## Saída
 Cliente renovado (→ [09](09-manutencao.md)/[10](10-alinhamento-conselho.md)) ou encerrado com handover completo, depoimento e indicações no funil.

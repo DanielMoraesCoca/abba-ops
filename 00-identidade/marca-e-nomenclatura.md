@@ -13,7 +13,9 @@
 | Avaliação paga | **Avaliação de Prontidão para IA** | ✅ fixo |
 | Workshop | **Workshop de Descoberta de Shadow AI** | ✅ fixo |
 | Sprint | **Sprint LGPD + Governança de IA** | ✅ fixo |
-| Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) | ✅ fixo |
+| Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) — em 3 camadas: **Operação · Evolução · Estratégia** | ✅ fixo (camadas: E2, 2026-07-25; preços v2 em rascunho) |
+| Alinhamento com conselho (produto) | **Conselheiro de IA ABBA** (externa) / estágio 10, CAIO fracionário (interna) | ✅ fixo (E1, 2026-07-25) |
+| Formato da capacitação | **Turma {{N}} da {{Empresa}}** — sempre turma nomeada com kickoff, semanas definidas e graduação; nunca "acesso à plataforma" | ✅ fixo (E4, 2026-07-25) |
 | Níveis da plataforma | **Nível 1 — Explorador** (Fundamentos) · **Nível 2 — Praticante** (Aplicação) · **Nível 3 — Especialista** (Autonomia) · **Nível 4 — Arquiteto** (Multiplicação). O TÍTULO (Explorador→Arquiteto) é a identidade do participante — usado em certificados, portal e discurso; o tema entre parênteses descreve o foco da fase. Concilia as três escalas anteriores sem retrabalho no portal | ✅ fixo (P7, 2026-07-23) |
 | Guia de IA do portal | **Iris** (único nome, também externo; nunca "AI Concierge") | ✅ fixo |
 | Instrumento pessoal | **Bússola** — card com colunas PARAR / COMEÇAR / CONTINUAR. No discurso, as três perguntas: "o que posso parar de fazer? o que posso começar a fazer? **o que ainda preciso fazer?**" (card e discurso são a mesma coisa, registrados assim para não divergirem) | ✅ fixo |

@@ -4,7 +4,7 @@
 
 ## Os 6 princípios da maestria
 
-1. **O produto É a demonstração.** Nunca dizemos "somos organizados e profundos" — o prospect *experimenta* isso: a Análise da empresa dele feita com o nosso método, a proposta impecável em 3 dias, a resposta em menos de 24h. Cada artefato que ele toca é prova do serviço que vai comprar.
+1. **O produto É a demonstração.** Nunca dizemos "somos organizados e profundos" — o prospect *experimenta* isso: a Análise da empresa dele feita com o nosso método, a proposta impecável em 3 dias, a resposta em menos de 24h. Cada artefato que ele toca é prova do serviço que vai comprar. *(A partir do 3º engajamento no mesmo setor, soma-se a prova do volante: "já acumulamos {{N_PADROES_SETOR}} padrões validados no seu setor" — só usar com N real do vault, nunca inflar.)*
 2. **Mostrar > afirmar.** Afirmação gera ceticismo; demonstração gera desejo. Regra prática: em toda reunião, pelo menos um momento em que o prospect vê o método aplicado À EMPRESA DELE — nunca um exemplo genérico.
 3. **Insight antes de preço.** Preço só entra depois que o valor foi ancorado com um número DELES (horas desperdiçadas, risco, oportunidade). Preço sem âncora vira custo; com âncora vira investimento.
 4. **Honestidade como arma.** O "limite honesto" da Análise ("isto foi feito de fora") gera mais confiança que qualquer promessa inflada. Nunca prometer além das [fichas de capacidade](../06-ferramentas/mapa-jornada-ferramentas.md) — a promessa quebrada no estágio 07 custa mais que a venda perdida no estágio 03.
