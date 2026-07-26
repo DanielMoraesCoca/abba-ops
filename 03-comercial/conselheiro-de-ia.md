@@ -1,6 +1,6 @@
 # Conselheiro de IA ABBA — produto (CAIO fracionário)
 
-> **Camada:** processo + definição comercial. O material enviável deriva do modelo: [`../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx`](../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx). Operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Origem: decisão E1 da [análise estratégica](../05-interno/analise-estrategica-2026-07.md).
+> **Camada:** processo + definição comercial. Materiais: one-pager [`../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx`](../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx) · [proposta completa](proposta-conselheiro-de-ia.md) · [arbitragem](../04-entrega/arbitragem-de-fornecedores.md) · anexo contratual no [contrato](contrato-sow-esqueleto.md). Operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Origem: decisão E1 da [análise estratégica](../05-interno/analise-estrategica-2026-07.md).
 
 ## O depoimento que queremos ouvir em 12 meses (working backwards)
 
@@ -16,7 +16,7 @@ A cadeira de estrategista de IA da empresa, ocupada pela ABBA em regime fracion�
 |---|---|
 | **Presença no conselho** | Participação estruturada na reunião de diretoria (ritual da [pauta do conselho](../04-entrega/pauta-conselho.md)): resultados vs. objetivos declarados, recomendações priorizadas (máx. 3), decisões registradas |
 | **Roadmap vivo de IA** | O plano diretor deixa de ser documento e vira instrumento revisado a cada ciclo — realinhado à visão da diretoria |
-| **Arbitragem de fornecedores** | Análise independente de qualquer proposta de IA que chegar à empresa ("isso é real? é para nós? qual o preço justo?") — sem conflito de interesse, registrado por escrito |
+| **Arbitragem de fornecedores** | Análise independente de qualquer proposta de IA que chegar à empresa ("isso é real? é para nós? qual o preço justo?") — sem conflito de interesse, registrado por escrito ([processo e modelo](../04-entrega/arbitragem-de-fornecedores.md)) |
 | **Governança e LGPD de IA** | Vigilância contínua da política de IA: novos usos, novos riscos, adequação regulatória (mantém vivo o que o Sprint LGPD instala) |
 | **Antena de oportunidades** | O que aprendemos em todos os engajamentos (padrões anonimizados do vault) chega ao cliente antes do mercado |
 

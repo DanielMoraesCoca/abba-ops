@@ -2,7 +2,7 @@
 
 > ⚠️ **AVISO OBRIGATÓRIO:** esta minuta é um ponto de partida (~70% pronta). **Enviar a advogado brasileiro com experiência em LGPD + tecnologia ANTES de qualquer assinatura** (pendência P4 do [registro de decisões](../05-interno/registro-de-decisoes.md)). As cláusulas de LGPD (9), PI (7) e responsabilidade (11) exigem olhos especializados.
 >
-> **Como usar:** este é o contrato-mãe genérico. O escopo de cada venda entra no **Anexo I** (um por produto — workshop, avaliação, sprint, programa). Condições charter (desconto por contrapartidas) entram apenas se aplicáveis, via **Anexo III**. Preencher todos os `[campos]`, revisar com advogado, colher assinaturas, arquivar em `02 Clientes/<Nome>/01 Contrato/` no Drive.
+> **Como usar:** este é o contrato-mãe genérico. O escopo de cada venda entra no **Anexo I** (um por produto — workshop, avaliação, sprint, programa, manutenção por camada, **retainer do Conselheiro de IA — ver bloco no fim deste doc**). Condições charter (desconto por contrapartidas) entram apenas se aplicáveis, via **Anexo III**. Preencher todos os `[campos]`, revisar com advogado, colher assinaturas, arquivar em `02 Clientes/<Nome>/01 Contrato/` no Drive.
 
 ---
 
@@ -85,6 +85,19 @@ Sigilo mútuo sobre informações confidenciais, subsistindo por **5 anos** apó
 **9.5. Decisões automatizadas (Art. 20):** documentadas em inventário com checkpoint humano identificado.
 
 **9.6. Suboperadores:** listados no **Anexo II**; a ABBA mantém responsabilidade integral. **A ABBA não treina modelos de IA com dados do Cliente.**
+
+---
+
+## Bloco para Anexo I — Retainer do Conselheiro de IA (usar quando o produto for o [Conselheiro](conselheiro-de-ia.md))
+
+*Para a pauta do advogado (P4) junto com o contrato-mãe.*
+
+- **Objeto:** serviços continuados de direção estratégica de IA — presença na diretoria na cadência [trimestral/mensal], roadmap vivo, arbitragem de fornecedores ([formato](../04-entrega/arbitragem-de-fornecedores.md), prazo ≤5 dias úteis, cota [2/trimestre · ilimitada]), vigilância de governança/LGPD
+- **Primeiros 90 dias:** baseline de objetivos (dia 15) · roadmap v1 + baseline de governança (dia 45) · primeiro ritual completo + decisão de escalar/continuar/parar (dia 90)
+- **Vigência:** 12 meses · fatura mensal · reajuste IPCA no aniversário · rescisão por qualquer parte com aviso de 60 dias
+- **Independência (cláusula):** a ABBA declara não receber comissão, revenda ou remuneração de fornecedores analisados
+- **Não incluído:** execução de projetos (aditivo/novo Anexo I; credita 1 mês do retainer), suporte técnico de agentes (contrato de manutenção), parecer jurídico ou representação perante a ANPD
+- **PI:** pareceres, roadmaps e frameworks produzidos são do Cliente; metodologia e templates são da ABBA
 
 **9.7. Incidentes:** comunicação ao Cliente em prazo razoável e cooperação na resposta (Art. 48).
 

@@ -25,6 +25,14 @@ Direto ao patrocinador: como estamos indo? o que faríamos melhor? (NPS informal
 ### 6. Próximos passos (5 min)
 Ações com dono e data · próximo ritual agendado antes de sair da sala.
 
+## Variante — Conselheiro de IA avulso (cliente que não fez o programa)
+
+Mesma estrutura, com duas adaptações no **primeiro ritual**:
+- A seção 1 vira **sessão de baseline** (30 min): os objetivos declarados são capturados ali — não existe kickoff anterior para citar. Sem baseline registrado não há ritual 2: é o documento-norte do retainer ([proposta](../03-comercial/proposta-conselheiro-de-ia.md), entrega do dia 15)
+- A seção 2 usa o que existir (dados do próprio cliente, arbitragens já entregues) — sem inventar métrica de programa que não houve
+
+Dos rituais seguintes em diante, a pauta padrão vale integralmente.
+
 ## Modelo de ata (preencher e arquivar)
 
 | Campo | |

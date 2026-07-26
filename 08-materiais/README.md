@@ -97,3 +97,5 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
 | One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
+| Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
+| Parecer de Arbitragem de Fornecedores (DOCX) | [processo](../04-entrega/arbitragem-de-fornecedores.md) — entregável do Conselheiro | ✅ [`modelos/arbitragem-fornecedores-modelo.docx`](modelos/arbitragem-fornecedores-modelo.docx) |
