@@ -21,7 +21,7 @@ Camada contratada neste anexo: **{{CAMADA_CONTRATADA}}**.
 - Monitoramento dos agentes em produção listados: {{LISTA_AGENTES}}
 - Correção de defeitos e ajuste fino de comportamento
 - Pequenas evoluções: até **{{HORAS_MES}}h/mês** somadas (não cumulativas); acima disso, mini-ciclo cotado à parte
-- Continuidade do acesso à plataforma de capacitação para {{N_USUARIOS}} usuários (inclui onboarding de novos colaboradores)
+- Acesso à plataforma de capacitação conforme a camada (seção 1): **Evolução/Estratégia** — acesso completo para {{N_USUARIOS}} usuários, com onboarding de novos colaboradores; **Operação** — modo consulta (conteúdo concluído e certificados permanecem acessíveis; sem trilhas ativas nem onboarding)
 - Relatório mensal de impacto + ritual trimestral com a diretoria
 
 **Fora do escopo:** novos agentes (mini-ciclo) · mudanças de infraestrutura do cliente · incidentes causados por alteração não comunicada nos sistemas integrados · suporte a usuário final fora da plataforma.

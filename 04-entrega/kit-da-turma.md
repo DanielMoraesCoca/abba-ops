@@ -1,6 +1,6 @@
 # Kit da Turma — operação do formato único da capacitação
 
-> **Decisão E4:** capacitação só existe como **"Turma {{N}} da {{Empresa}}"** — identidade, calendário e graduação; nunca "acesso à plataforma". Executado pelo [estágio 08](../02-jornada-do-cliente/08-capacitacao-e-transformacao.md) conforme o [plano de capacitação](plano-de-capacitacao.md). Suporte em código: tela `/admin/turmas` do portal (branch `claude/abba-consulting-structure-kdyfga`, pendente merge do Pedro).
+> **Decisão E4:** capacitação só existe como **"Turma {{N}} da {{Empresa}}"** — identidade, calendário e graduação; nunca "acesso à plataforma". Executado pelo [estágio 08](../02-jornada-do-cliente/08-capacitacao-e-transformacao.md) conforme o [plano de capacitação](plano-de-capacitacao.md). Suporte em código: tela `/admin/turmas` do portal (branch `claude/abba-consulting-structure-kdyfga`, pendente merge do Pedro). Estado atual: 1 turma ativa por cliente (a turma vale para o elenco inteiro do tenant); vincular matrícula individual à turma (`turma_id`) é evolução futura — só importa quando houver 2ª turma simultânea no mesmo cliente.
 
 ## Regra de nomeação
 

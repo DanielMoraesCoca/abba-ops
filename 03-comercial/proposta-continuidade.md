@@ -18,6 +18,8 @@
 | [Conselheiro de IA](conselheiro-de-ia.md) trimestral embutido | — | — | ✅ |
 | Preço [RASCUNHO v2] | R$ 6.000/mês | R$ 9.500/mês | R$ 15.000–18.000/mês |
 
+**Nota da camada Operação (honestidade que evita ressentimento):** o acesso à plataforma não some — vira modo consulta: certificados e conteúdo já concluído permanecem visíveis para sempre; o que pausa são trilhas ativas e onboarding de novos colaboradores. Downgrade nunca apaga a história da turma.
+
 ## Regras de transição (escrever na proposta — zero vagueza)
 
 1. **Upgrade: a qualquer momento**, com aprovação por escrito do patrocinador; pró-rata no ciclo corrente, novo valor no ciclo seguinte

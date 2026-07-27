@@ -48,7 +48,7 @@ Fila restante do [catálogo](../08-materiais/README.md), em ordem de impacto no 
 Regime completo na [coreografia da conversão](../03-comercial/coreografia-da-conversao.md):
 
 1. **3 ensaios de T1+T2** gravados e revistos (um sócio faz o prospect difícil)
-2. **Drill das 8 objeções** — resposta natural em ≤30s
+2. **Drill das 9 objeções** — resposta natural em ≤30s
 3. **Dry-run da Análise** numa empresa real, cronometrado
 4. **Cliente Zero** (o descobridor de gaps): percorrer a jornada INTEIRA internamente — scout → Análise → proposta preenchida → contrato preenchido → kickoff montado → setup das 3 ferramentas executado. Cada travada = gap corrigido em ambiente seguro. Critério de saída: jornada completa sem improviso.
 

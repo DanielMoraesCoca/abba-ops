@@ -23,7 +23,7 @@
 | **T5 — Assinatura** ([estágio 04](../02-jornada-do-cliente/04-contrato.md)) | [E-mail 5](emails-follow-up.md) no mesmo dia + NF em 2 dias + kickoff em ≤10 dias úteis — **a primeira prova de entrega** | — |
 | **T6 — Kickoff** ([roteiro](../04-entrega/kickoff-roteiro.md)) | O slide 5: os objetivos DELES escritos ao vivo. O cliente se sente ouvido no primeiro dia — e nasce o baseline do ritual do conselho | — |
 
-## As 8 objeções — resposta preparada, nunca improvisada
+## As 9 objeções — resposta preparada, nunca improvisada
 
 | Objeção | Resposta (essência) |
 |---|---|
@@ -35,6 +35,7 @@
 | "E se não funcionar?" | "Por isso o programa é modular com gates: cada fase tem critério de aceite formal ANTES da fatura do marco. O protótipo mede com dados reais antes de escalar. Vocês decidem GO/NO-GO com números." |
 | "Quanto tempo da minha equipe isso toma?" | Números exatos por papel (da proposta): executivos {{X}}h, gestores {{Y}}h, operacionais {{Z}}h — "e devolvemos múltiplos disso; é a métrica que medimos: horas reinvestidas por pessoa/semana." |
 | "Por que vocês e não uma grande consultoria?" | "As grandes entregam slides e terceirizam a execução. Nós entregamos sistemas funcionando e pessoas capacitadas — com os fundadores na sala. E custamos uma fração." |
+| "Já temos IA / já compramos uma solução" | **A porta lateral do [Conselheiro de IA](conselheiro-de-ia.md):** "Ótimo — e quem senta do SEU lado da mesa quando o fornecedor apresenta a fatura? Não viemos substituir o que existe: o Conselheiro dirige o que vocês já têm — roadmap, governança, arbitragem independente de fornecedores. E se um dia decidirem construir, o retainer credita." |
 
 Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) até saírem naturais — decoradas soam decoradas.
 

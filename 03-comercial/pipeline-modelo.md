@@ -7,6 +7,7 @@
 2. **Setor jurídico/serviços profissionais em Brasília** (o beachhead do plano de negócio — material setorial existe)
 3. Empresas que já apareceram no radar (ex.: os alvos das análises de teste — Brasal, Grupo Santa, ABC DataSaúde — JÁ TÊM análise pronta: T0 quente)
 4. Mid-market DF/GO com sinal de dor: vagas de "analista de processos", notícias de expansão, concorrente adotando IA
+5. **Porta lateral do [Conselheiro de IA](conselheiro-de-ia.md):** empresas que JÁ anunciaram adoção de IA (imprensa, LinkedIn, vagas de "IA") — não precisam do programa; a oferta é a cadeira de direção. Objeção "já temos IA" deixa de desqualificar o lead: reclassificar como alvo do Conselheiro
 
 ## O tracker (colunas)
 

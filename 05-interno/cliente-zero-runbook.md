@@ -19,7 +19,7 @@
 
 ## Dia 3 — T2 (o momento da maestria)
 - [ ] Apresentação da Análise ao vivo, 45 min cronometrados, gravada · prospect pergunta o preço no meio (treinar a resposta-faixa)
-- [ ] Drill das 8 objeções em ordem aleatória, ≤30s cada
+- [ ] Drill das 9 objeções em ordem aleatória, ≤30s cada
 - [ ] Rever a gravação juntos: 3 ajustes máximos, anotados
 
 ## Dia 4 — T3/T4/T5 (proposta → contrato)
