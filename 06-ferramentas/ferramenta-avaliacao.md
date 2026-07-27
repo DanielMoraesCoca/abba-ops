@@ -32,7 +32,7 @@ Pendências de alinhamento no [Caminho Crítico](../05-interno/plano-de-acao.md)
 - [ ] Provedor de busca real configurado para o scout ({{PEDRO VERIFICAR: qual provedor está ativo — sócios não souberam responder em 2026-07-24}}) — **nunca** enviar brief marcado como pesquisa sintética
 - [ ] Convenção de ingestão acordada entre os sócios: níveis (conselho → linha de frente) e fases desde a 1ª entrevista
 - [ ] Modelo de nível cliente selecionado para o entregável (nunca o modelo barato)
-- [ ] Ao encerrar: feedback/outcome + **mín. 3 padrões anonimizados** registrados no vault (E3 — bloqueante no [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md)) e ciclo de retenção de dados iniciado. Métrica viva: nº de padrões por setor — citável em proposta quando ≥ 3 ({{N_PADROES_SETOR}})
+- [ ] Ao encerrar: feedback/outcome + **mín. 3 padrões anonimizados** registrados no vault (E3 — bloqueante no [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md)) e ciclo de retenção de dados iniciado. Métrica viva: nº de padrões por setor via `abba vault --stats --json` — citável em proposta quando ≥ 3 ([playbook](../05-interno/playbook-vault.md))
 
 ## Custo por uso (alimenta a [planilha de precificação](../03-comercial/precificacao-planilha.md))
 
