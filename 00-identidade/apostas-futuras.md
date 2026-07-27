@@ -29,6 +29,18 @@
 
 **Gatilhos:** 3+ clientes com campeões graduados · consentimento de compartilhamento entre empresas resolvido juridicamente.
 
+## Aposta 5 — Conselheiro Digital (o "JARVIS por cliente")
+
+**O que é:** um cérebro de IA por cliente — Dossiê Vivo (assessment + plano diretor + relatórios + telemetria) + análise proativa mensal + interface de consulta (evolução da Iris) — que abastece o Conselheiro de IA humano e aprende com os resultados reais via loop de outcomes. **Modelo centauro obrigatório:** a IA gera, o Conselheiro cura e assina, a diretoria decide. Estudo completo com pesquisa, riscos (PL 2338, alucinação, LGPD) e arquitetura: [estudo](../05-interno/estudo-conselheiro-digital.md).
+
+**Por que não agora:** o núcleo já existe (vault com aprendizado por outcomes, Iris, assessment 25-dim) mas o insumo — dados reais de cliente em manutenção — ainda não. Construir antes seria encanamento sem água.
+
+**Gatilhos de reavaliação:**
+- [ ] Fase 1: 1º cliente em manutenção → Dossiê Vivo interno + brief mensal curado
+- [ ] Fase 2: 1º cliente na camada Estratégia → insights proativos no ritual, co-assinados
+- [ ] Fase 3: 3+ clientes → interface Iris-Empresa no portal
+- [ ] Cláusula de consentimento para destilação anonimizada ao vault na pauta do advogado (P4) antes da Fase 1
+
 ## Regra
 
 Aposta futura não recebe investimento de tempo além de: (a) manter este registro atualizado; (b) não tomar decisões hoje que **impossibilitem** a aposta amanhã (ex.: contratos que proíbam comunidade entre clientes sem necessidade).

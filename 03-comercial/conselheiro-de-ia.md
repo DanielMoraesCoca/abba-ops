@@ -54,3 +54,5 @@ O papel de Chief AI Officer é o cargo executivo que mais cresce (76% das organi
 - A arbitragem de fornecedores é por escrito e vai para o Drive do cliente (`07 Conselho/`) — é o rastro de valor que justifica a renovação
 - Cliente de Conselheiro avulso que decidir construir → o mini-ciclo/programa credita 1 mês do retainer (gesto, não desconto)
 - Métrica de saúde do produto: decisões do conselho registradas por trimestre (≥3) e arbitragens entregues no prazo (≤5 dias úteis)
+
+**Evolução planejada (aposta futura 5):** o [Conselheiro Digital](../05-interno/estudo-conselheiro-digital.md) — o cérebro por cliente que abastece esta cadeira (modelo centauro: IA gera, ABBA cura e assina). Ativa por gatilho a partir do 1º cliente em manutenção; nada muda no produto vendido hoje.
