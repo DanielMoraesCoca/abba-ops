@@ -13,7 +13,7 @@
 
 ## Setup de cliente
 
-- [ ] Tenant criado como **"Turma {{N}} da {{Empresa}}"** (formato único E4 — nunca "acesso à plataforma") + contas dos participantes (lista do [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
+- [ ] Turma criada em `/admin/turmas` como **"Turma {{N}} da {{Empresa}}"** com datas de início e graduação (formato único E4 — suporte em código na branch, pendente merge; [kit da turma](../04-entrega/kit-da-turma.md)) + contas dos participantes (lista do [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
 - [ ] Handoff da avaliação importado (quando estágio 06 concluído)
 - [ ] Trilha do departamento configurada conforme o [plano de capacitação](../04-entrega/plano-de-capacitacao.md)
 - [ ] Slots [PERSONALIZAR] do conteúdo preenchidos com dados do cliente

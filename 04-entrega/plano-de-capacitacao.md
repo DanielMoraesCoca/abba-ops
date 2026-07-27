@@ -4,7 +4,7 @@
 
 ## Formato único: turma nomeada (decisão E4)
 
-A capacitação **sempre** roda como **"Turma {{N}} da {{Empresa}}"** — grupo nomeado, kickoff presencial de abertura, semanas com início e fim, desafios coletivos e **graduação com certificado**. Nunca vender ou operar como "acesso à plataforma": cohort com identidade e ritmo conclui; biblioteca self-service vira login esquecido. A turma é criada no portal já com esse nome ([ficha](../06-ferramentas/ferramenta-portal.md)).
+A capacitação **sempre** roda como **"Turma {{N}} da {{Empresa}}"** — grupo nomeado, kickoff presencial de abertura, semanas com início e fim, desafios coletivos e **graduação com certificado**. Nunca vender ou operar como "acesso à plataforma": cohort com identidade e ritmo conclui; biblioteca self-service vira login esquecido. A turma é criada no portal já com esse nome, com cronograma e cerimônia do [kit da turma](kit-da-turma.md) ([ficha](../06-ferramentas/ferramenta-portal.md)).
 
 ## Quando e quem
 Preenchido pelo chapéu [Capacitação](../01-setores/capacitacao.md) na semana do kickoff; aprovado pelo patrocinador antes do lançamento.
