@@ -41,7 +41,7 @@ Mudar todos os níveis da organização, não só os processos:
 - **Topo da progressão:** acesso a ferramentas de criação de agentes (CrewAI) para o colaborador construir as próprias soluções do dia a dia.
 
 ### 5. Manutenção
-Os agentes implantados viram responsabilidade contínua: monitoramento, ajuste fino, evolução, relatório mensal de impacto — sob [SLA](../04-entrega/sla-manutencao.md). Receita recorrente da ABBA; tranquilidade do cliente.
+Os agentes implantados viram responsabilidade contínua: monitoramento, ajuste fino, evolução, relatório mensal de impacto — sob [SLA](../04-entrega/sla-manutencao.md), em **3 camadas** (Operação · Evolução · Estratégia, esta com o Conselheiro de IA embutido). Receita recorrente da ABBA; tranquilidade do cliente.
 
 ### 6. Alinhamento com a diretoria (a constante)
 Não é uma etapa final — é o **sistema de direção** que atravessa todas as outras. Como produto vendável, tem nome próprio: **[Conselheiro de IA ABBA](../03-comercial/conselheiro-de-ia.md)** (CAIO fracionário) — contratável na renovação ou direto por empresas que já têm IA rodando. Ritual estruturado ([pauta](../04-entrega/pauta-conselho.md)): resultados contra os objetivos **declarados pela diretoria** → recomendações da ABBA → decisão do cliente → registro. Nós recomendamos com convicção; eles decidem. A cada trimestre, o plano se realinha à visão de onde eles querem levar a empresa.

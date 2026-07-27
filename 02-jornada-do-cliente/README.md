@@ -30,6 +30,20 @@
 | [10](10-alinhamento-conselho.md) | Alinhamento com o conselho | Entrega | trimestral (mínimo) |
 | [11](11-renovacao-e-encerramento.md) | Renovação e encerramento | Comercial + Entrega | 30 dias antes do fim |
 
+## Mapa de encaixe das ofertas (o que se vende, onde, e por quê)
+
+> Validação externa de cada encaixe na [análise estratégica](../05-interno/analise-estrategica-2026-07.md). A escada de entrada tem 4 degraus e **não cresce** — as ofertas novas vivem nas pontas do funil, não no meio.
+
+| Oferta | Onde se encaixa | Como é oferecida | Por quê aqui |
+|---|---|---|---|
+| Análise ABBA (gratuita) | 01–02 | Porta digital + prospecção ativa | O produto É a demonstração |
+| Workshop Shadow AI · Avaliação de Prontidão · Sprint LGPD | 03 | Propostas de entrada (T3) | Degraus de prova antes do compromisso grande |
+| Programa completo | 03, após entrada | Conversão do produto de entrada (crédito 100%) | Nunca vender o programa de cara — erro clássico de boutique |
+| **[Conselheiro de IA](../03-comercial/conselheiro-de-ia.md)** | **10 — duas portas** | (a) Na renovação (11), como evolução do ritual já vivido; (b) **venda direta em T0/T1** quando o prospect diz "já temos IA" (9ª objeção da [coreografia](../03-comercial/coreografia-da-conversao.md)) | Continuidade de algo vivido converte mais que promessa; e a porta lateral transforma lead desqualificado em cliente |
+| **Manutenção em 3 camadas** | **11 — nunca antes** | [Proposta de continuidade](../03-comercial/proposta-continuidade.md) NO ritual do conselho, com recomendação baseada no uso real | Camada escolhida com os dados do próprio cliente parece diagnóstico, não upsell |
+| **Turma nomeada** | 05 (criação) → 08 (operação) | Único formato da capacitação — [kit da turma](../04-entrega/kit-da-turma.md) | Prazo coletivo + graduação pública = conclusão; biblioteca self-service = login esquecido |
+| **Vault (volante)** | 11 (alimenta) → 02/03 (colhe) | [Playbook](../05-interno/playbook-vault.md): 3 padrões no encerramento; "N padrões no seu setor" na proposta a partir do 3º engajamento do setor | Cada engajamento torna o próximo melhor — e o cliente sabe disso |
+
 ## Métricas de funil (revisão mensal na reunião de sócios)
 
 | Transição | Métrica |
