@@ -63,7 +63,7 @@ Por quê isso importa mais que qualquer documento: o prospect não lê o repo �
 
 ## Métricas do caminho (revisão semanal — obrigatória, PRINCIPALMENTE quando estiver ruim)
 
-> São métricas de **INPUT** (controláveis por vocês), não de output: faturamento não se controla; contatos/semana, prazo de entrega e registro de reações, sim (E5, kit Bezos).
+> São métricas de **INPUT** (controláveis por vocês), não de output: faturamento não se controla; contatos/semana, prazo de entrega e registro de reações, sim (E5, kit Bezos). **O log semanal vive na [pauta da reunião](pauta-reuniao-semanal.md)** — preenchido na reunião, nunca de memória depois.
 
 | Indicador | Meta inicial |
 |---|---|
