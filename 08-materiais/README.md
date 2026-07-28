@@ -100,3 +100,4 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
 | Parecer de Arbitragem de Fornecedores (DOCX) | [processo](../04-entrega/arbitragem-de-fornecedores.md) — entregável do Conselheiro | ✅ [`modelos/arbitragem-fornecedores-modelo.docx`](modelos/arbitragem-fornecedores-modelo.docx) |
 | Proposta de Continuidade (DOCX) | [processo](../03-comercial/proposta-continuidade.md) — renovação em 3 camadas, estágio 11 | ✅ [`modelos/proposta-continuidade-modelo.docx`](modelos/proposta-continuidade-modelo.docx) |
+| Kit Óculos HUD (guia + 8 roteiros de teleprompter) | [guia de uso](guia-oculos-hud.md) — ensaios, T1/T2, kickoff, ritual | ✅ [`teleprompter/`](teleprompter/) |
