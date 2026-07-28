@@ -1,0 +1,54 @@
+(ABBA v1 - cartao 8: SISTEMAS GERENCIADOS)
+
+O QUE
+Operacao continua dos agentes
+em producao, por contrato,
+em 3 CAMADAS.
+
+POR QUE
+Agente em producao e
+responsabilidade continua.
+Agentes que nao evoluem
+envelhecem.
+
+AS 3 CAMADAS
+OPERACAO: monitoramento +
+SLA + relatorio mensal
+EVOLUCAO: + horas mensais
+de melhoria + plataforma
+ativa (a atual, R$ 9,5k)
+ESTRATEGIA: + Conselheiro
+de IA trimestral embutido
+
+O SLA (DECORAR)
+- Monitoramento AUTOMATIZADO
+  24/7 (maquina, nao plantao)
+- Suporte humano 9h-18h uteis
+- S1 critico: resposta em
+  4H CORRIDAS (8h-22h)
+- Disponibilidade-alvo 99,5%
+- Relatorio mensal SEMPRE com
+  projetado vs realizado
+
+FRASE PROIBIDA
+"suporte 24/7" - NUNCA.
+Frase certa: "monitoramento
+automatizado 24/7 com canal
+de emergencia para incidentes
+criticos".
+
+QUANDO
+Estagio 09, pos go-live.
+Renovacao: recomendacao de
+camada baseada no USO REAL.
+
+NUMEROS
+Vigente (v1): R$ 9.500/mes
+(faixa 8-13k). Anual -8%.
+Reajuste IPCA.
+Aviso aos 80% das horas -
+NUNCA fatura-surpresa.
+
+FRASE-CHAVE
+"Assinamos a responsabilidade
+por escrito - com numeros.

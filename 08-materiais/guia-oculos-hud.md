@@ -19,19 +19,27 @@
 3. **Regra do ensaio (a mais importante):** o teleprompter é ferramenta de ENSAIO e rede de segurança — não muleta permanente. O critério do [Cliente Zero](../05-interno/cliente-zero-runbook.md) ("jornada sem consultar material") **se prova com o óculos desligado**. A fluência que impressiona é a que vive na cabeça; o óculos garante que um branco momentâneo nunca vire silêncio na sala.
 4. **Nada de conteúdo confidencial de UM cliente no HUD em sala de OUTRO** — os roteiros do pack são genéricos por desenho; dados de cliente entram só via prep note do dia, apagada depois.
 
-## O pack de roteiros ([`teleprompter/`](teleprompter/))
+## Os Cartões de Domínio ([`teleprompter/`](teleprompter/))
 
-| Arquivo | Momento | Fonte no repo |
+13 cartões que quebram o serviço inteiro — cada um no esqueleto fixo: **O QUE · POR QUE · COMO · ONDE · QUANDO · NÚMEROS · FRASE-CHAVE · SE OBJETAREM · NUNCA PROMETER**. São os slides do deck com as camadas a mais que geram valor — para dominar de cabeça e carregar no óculos.
+
+| # | Cartão | Cobre |
 |---|---|---|
-| `pitch-45s.txt` · `pitch-90s.txt` | Qualquer conversa | [posicionamento](../00-identidade/posicionamento.md) |
-| `objecoes-9.txt` | T1/T2/T4 + drills | [coreografia](../03-comercial/coreografia-da-conversao.md) |
-| `pauta-t1-descoberta.txt` | Primeira call (30 min) | [pautas](../03-comercial/pautas-de-reuniao.md) §1 |
-| `pauta-t2-apresentacao.txt` | Apresentação da Análise (45 min) | [pautas](../03-comercial/pautas-de-reuniao.md) §2 |
-| `kickoff-abertura.txt` | Kickoff (60–90 min) | [roteiro do kickoff](../04-entrega/kickoff-roteiro.md) |
-| `ritual-conselho.txt` | Ritual trimestral | [pauta do conselho](../04-entrega/pauta-conselho.md) |
-| `cliente-zero-drill.txt` | Semana de ensaio | [runbook](../05-interno/cliente-zero-runbook.md) |
+| 00 | A Tese | 70/30, mercado BR, as 6 etapas, o que oferecer a quem |
+| 01 | Análise ABBA | degustação, 5 dias úteis, gating, CTA |
+| 02 | Workshop Shadow AI | 90 min, anistia, R$ 14k, condição do patrocinador |
+| 03 | Avaliação de Prontidão | 25 dimensões, os 4 entregáveis, R$ 28k, saída limpa |
+| 04 | Sprint LGPD | Art. 48/20, framework 7 seções, R$ 24k, limite honesto |
+| 05 | Programa completo | 16 sem, 3 frentes, 30/30/40, gates, R$ 185k |
+| 06 | Construção de agentes | CrewAI, on-prem/nuvem, aprovação humana, GO/NO-GO |
+| 07 | Transformação / Turma | 4 níveis, Iris, Bússola, 4D, fundadores na sala, licença CrewAI |
+| 08 | Sistemas gerenciados | 3 camadas, SLA decorado, frase proibida |
+| 09 | Conselheiro de IA | 5 entregas, 90 dias, arbitragem, 2 portas |
+| 10 | Números e preços | tabela v1 inteira, âncoras, regras comerciais |
+| 11 | Segurança e LGPD | os 6 pontos decorados, suboperadores, resposta de fundo |
+| 12 | NUNCA prometer | o guarda-corpo consolidado das fichas de capacidade |
 
-**Formato dos arquivos:** linhas ≤ ~40 caracteres, blocos separados por linha em branco (rolagem natural no display), GATILHOS EM CAPS, sem formatação. Atualizou o doc-fonte? Atualiza o roteiro — o par (doc, roteiro) anda junto.
+**Formato:** linhas ≤ 42 caracteres, blocos com linha em branco (rolagem natural), GATILHOS EM CAPS, sem formatação. Preços = tabela v1 vigente. Atualizou o doc-fonte? Atualiza o cartão — o par anda junto.
 
 ## G1 × G2 (para decisão futura de upgrade)
 

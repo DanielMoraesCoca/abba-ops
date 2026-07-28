@@ -1,0 +1,53 @@
+(ABBA v1 - c6: CONSTRUCAO)
+
+O QUE
+Agentes de IA sob medida,
+construidos com CrewAI
+(PARCERIA OFICIAL, uso
+gratuito da plataforma).
+
+POR QUE
+Agente generico nao conhece
+o processo do cliente.
+Sob medida + aprovacao humana
+= confianca operacional.
+
+COMO
+1 Diretoria aprova o caminho
+  (da Avaliacao)
+2 Spec por agente com pontos
+  de APROVACAO HUMANA
+3 Prototipo medido com
+  dados reais
+4 Gate GO/NO-GO formal
+5 Go-live com testes, rollback
+  e hypercare
+
+ONDE - CLIENTE ESCOLHE
+On-premises (infra deles)
+OU nuvem gerenciada por nos.
+
+QUANDO
+Estagio 07, pos-avaliacao.
+Prazo por Anexo I.
+Agente adicional depois:
+mini-ciclo R$ 42k (35-60k).
+
+SEGURANCA (DECOR)
+- NUNCA treinamos modelos
+  com dados do cliente
+- LGPD por desenho:
+  Controlador/Operador
+- Ambiente segregado
+- Audit trail
+
+FRASE-CHAVE
+"Implantamos onde VOCES
+quiserem - na sua infra
+ou na nossa nuvem."
+
+SE OBJETAREM
+"Time interno faz" ->
+otimo, vao precisar dele.
+Interno + ABBA > interno
+sozinho. Metodo + velocidade.

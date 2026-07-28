@@ -1,0 +1,51 @@
+(ABBA v1 - cartao 10: NUMEROS E PRECOS)
+
+TABELA V1 (VIGENTE)
+Workshop Shadow AI
+  R$ 14k (12-16k)
+Avaliacao de Prontidao
+  R$ 28k (24-35k)
+Sprint LGPD
+  R$ 24k (20-32k)
+PROGRAMA COMPLETO
+  R$ 185k (165-240k)
+Manutencao
+  R$ 9,5k/mes (8-13k)
+Mini-ciclo (agente extra)
+  R$ 42k (35-60k)
+
+FATURAMENTO
+Entradas: 50% / 50%
+Programa: 30/30/40 por marco
+Recorrentes: mensal, anual -8%
+
+REGRAS COMERCIAIS (DECORAR)
+- Entrada credita 100% no
+  programa em ate 90 dias
+  (EXCETO Sprint LGPD)
+- Desconto SO via charter
+  com contrapartidas, MAX -20%
+- Abaixo do piso = NAO VENDER
+- Reajuste anual IPCA
+
+ANCORAS DE VALOR
+Sempre preco + ancora:
+"R$ X - contra um custo de
+R$ Y/ano do problema"
+Programa charter R$ 148k
+ainda cobre o piso.
+
+MERCADO (para contexto)
+84% das medias/grandes usam IA
+72% no estagio experimental
+77% investem pouco
+IA no BR: ~US$ 4,2 bi em 2026
+
+SE PERGUNTAREM PRECO NO T2
+Faixa + "proposta formal em
+3 dias com o escopo certo".
+NUNCA negociar na hora.
+
+SEMPRE
+Registrar TODA reacao a preco
+na planilha. E disciplina.
