@@ -53,7 +53,7 @@ Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) a
 
 Documento não vende — fluência vende. Antes do primeiro T1 real:
 
-1. **3 ensaios completos de T1 + T2** entre os sócios (um faz o prospect difícil), gravados e revistos. Critério de pronto: 45s de elevator sem hesitar, transições naturais, nenhuma consulta a material. *Óculos HUD ([guia](../08-materiais/guia-oculos-hud.md)): permitido nos primeiros ensaios como apoio; a fluência se prova com ele DESLIGADO — em jogo real, é rede de segurança, não leitura.*
+1. **3 ensaios completos de T1 + T2** entre os sócios (um faz o prospect difícil), gravados e revistos. Critério de pronto: 45s de elevator sem hesitar, transições naturais, nenhuma consulta a material. *Óculos HUD ([guia](../08-materiais/guia-oculos-hud.md)): permitido nos primeiros ensaios como apoio; a fluência se prova com ele DESLIGADO — em jogo real, é rede de segurança, não leitura. Os drills usam as DUAS séries de cartões: Domínio (fatos) e Conversa (condução psicológica — rapport, perguntas, aikido de objeções, fechamento).*
 2. **Drill de objeções:** as 8 acima, ordem aleatória, resposta em ≤30s cada.
 3. **Dry-run da Análise:** rodar o scout numa empresa real, montar o PDF no modelo, apresentar ao outro sócio como se fosse o prospect. Cronometrar: 45 min com folga para conversa.
 4. Depois de CADA conversa real: 10 min de retrospectiva a dois (o que travou → ajuste no material ou no ensaio) — o funil melhora a cada repetição.
