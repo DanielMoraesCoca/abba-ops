@@ -47,6 +47,26 @@ Dossiê Vivo (assessment + plano diretor + atas + relatórios + telemetria) → 
 
 **Custo real:** infra modesta; o trabalho é o encanamento de dados (~80%). **Retorno:** justifica a camada Estratégia, cria lock-in legítimo (o cérebro acumulado), diferencia de qualquer CAIO humano-só, e realiza tecnicamente a frase 18 da Visão 2029.
 
+## Adendo (2026-07-27): investigação profunda do Meta-ANN do repo legado
+
+Pergunta do sócio: usar o Meta-ANN (a rede meta-agêntica do repo ABBA) como o cérebro por cliente, no lugar do desenho acima? **Investigação completa executada** (varredura do master + 3 branches, ~200k linhas na área meta-ann/enterprise/ann/cognitive).
+
+**Veredito: NÃO usar o Meta-ANN como plataforma — SIM para absorver 3 peças comprovadas dele no desenho do Conselheiro Digital.**
+
+O que a investigação encontrou (verificado no código, não nos docs):
+- **O loop de aprendizado nunca fecha:** `autoApply: false`; as funções de aplicar melhorias existem mas nunca são chamadas; o aplicador de feedback (559 linhas) não é importado por arquivo nenhum. Gera críticas; não aprende.
+- **A memória MIRIX é write-only:** grava no Postgres mas NÃO tem caminho de leitura/hidratação — ao reiniciar, esquece tudo (as tabelas viram trilha de auditoria que o próprio sistema nunca relê).
+- **Validação-teatro:** o validador da rede "mede" com `Math.random()` (taxa de sucesso hardcoded 0,996). O próprio repo criou o teste `no-theater` que PROÍBE o servidor real de importar esses módulos — o time quarentenou o Meta-ANN.
+- **Nunca rodou em produção:** o deploy real sobe outro servidor, sem nenhuma rota Meta-ANN; a rota principal de geração nem existe como endpoint; K8s por cliente é template com imagem nunca construída; multi-tenancy instanciada só no próprio teste (e com API de MongoDB num codebase Postgres).
+- **A decisão de 2026-07-22 (construção = CrewAI direto; ABBA = legado) fica CONFIRMADA pela evidência.**
+
+As 3 peças reais que valem ser portadas (para o runtime CrewAI, nos gatilhos das fases):
+1. **Loop de versão de prompt com aprovação humana e uplift medido** (`src/core/learning-*` — real, testado ponta a ponta): é exatamente o mecanismo de "aprimoramento" honesto e compatível com PL 2338 para a Fase 2 do Conselheiro Digital — propor → sócio aprova → medir.
+2. **Pesos hebbianos de roteamento** (loop fechado real: recompensa → força de conexão → roteamento 70/30): padrão útil quando houver múltiplos agentes por cliente em produção (Fase 3+).
+3. **A taxonomia de memória em 6 tipos do MIRIX** (migração 117 — schema de nível de produção): informa o desenho do Dossiê Vivo (com a lição: persistência SÓ com caminho de leitura implementado e testado).
+
+Pendências operacionais derivadas: (a) cherry-pick do doc `ABBA_COMPLETE_ASSESSMENT_FRAMEWORK.md` (1.469 linhas, só existe na branch `claude/meta-agentic-networks-vMbKU`, commit `4fa6814f`) — preservar o IP; (b) avisar Pedro: o master do ABBA carrega `/api/backprop` quebrado e MIRIX sem hidratação montados no servidor legado (não deployado — risco baixo, mas decidir consertar ou desmontar).
+
 ## Fontes
 
 - [Y Combinator/Company Brain — a camada de dados decide tudo](https://colrows.com/blogs/company-brain-for-enterprise-ai/) · [Enterprise AI 2026 — TechRadar](https://www.techradar.com/pro/2026-the-year-enterprise-ai-finally-gets-to-work) · [Previsões CIO 2026 — InformationWeek](https://www.informationweek.com/machine-learning-ai/2026-enterprise-ai-predictions-fragmentation-commodification-and-the-agent-push-facing-cios)
