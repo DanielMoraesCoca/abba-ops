@@ -41,9 +41,9 @@
 
 **Formato:** linhas ≤ 42 caracteres, blocos com linha em branco (rolagem natural), GATILHOS EM CAPS, sem formatação. Preços = tabela v1 vigente. Atualizou o doc-fonte? Atualiza o cartão — o par anda junto.
 
-## Os Cartões de Conversa (20–27) — psicologia para o presencial
+## Os Cartões de Conversa (20–28) — psicologia para o presencial
 
-A segunda série responde à outra metade da maestria: **Domínio (00–12) = o que dizer · Conversa (20–27) = como conduzir o humano do outro lado.** Cada cartão mistura `[FAÇA]` (micro-instrução física), falas prontas entre aspas e `[PRINCÍPIO]` (o porquê psicológico em 1 linha). Fundamentos: empatia tática, perguntas calibradas, rótulos e espelhos (Chris Voss, *Never Split the Difference*), princípios de influência (Cialdini: reciprocidade, prova social, compromisso, contraste) e a escada SPIN de descoberta (Rackham).
+A segunda série responde à outra metade da maestria: **Domínio (00–12) = o que dizer · Conversa (20–28) = como conduzir o humano do outro lado.** Cada cartão mistura `[FAÇA]` (micro-instrução física), falas prontas entre aspas e `[PRINCÍPIO]` (o porquê psicológico em 1 linha). Fundamentos: empatia tática, perguntas calibradas, rótulos e espelhos (Chris Voss, *Never Split the Difference*), princípios de influência (Cialdini: reciprocidade, prova social, compromisso, contraste) e a escada SPIN de descoberta (Rackham).
 
 | # | Cartão | O momento |
 |---|---|---|
@@ -55,6 +55,7 @@ A segunda série responde à outra metade da maestria: **Domínio (00–12) = o 
 | 25 | Objeções — o aikido | Validar → rotular → reframe → devolver, com os movimentos prontos |
 | 26 | Fechamento | Resumo-eco, pergunta de destravamento, próxima data NA SALA, saída elegante |
 | 27 | Momentos difíceis | Não sei responder, sala hostil, silêncio, concorrente, "me convence", branco |
+| 28 | Pitch da análise pronta | O padrão do T0: chegar com a Análise FEITA — reciprocidade, escada do sim, limite honesto |
 
 **Guarda-corpo ético (inegociável):** psicologia aqui ORGANIZA a verdade — nunca a substitui. Todo gatilho aponta para um fato real da ABBA (os cartões de Domínio são a fonte); urgência só quando a agenda é real; prova social só com número do vault; e a saída elegante quando não é fit faz parte do método. Manipulação quebraria o único ativo que não se recompra: a marca da honestidade.
 
