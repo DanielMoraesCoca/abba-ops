@@ -67,6 +67,10 @@ As 3 peças reais que valem ser portadas (para o runtime CrewAI, nos gatilhos da
 
 Pendências operacionais derivadas: (a) cherry-pick do doc `ABBA_COMPLETE_ASSESSMENT_FRAMEWORK.md` (1.469 linhas, só existe na branch `claude/meta-agentic-networks-vMbKU`, commit `4fa6814f`) — preservar o IP; (b) avisar Pedro: o master do ABBA carrega `/api/backprop` quebrado e MIRIX sem hidratação montados no servidor legado (não deployado — risco baixo, mas decidir consertar ou desmontar).
 
+## Adendo 2 (2026-07-29): a arquitetura completa do cérebro
+
+Pergunta seguinte do sócio: os 4 quebrados podem ser reconstruídos certos? o que mais o Conselheiro precisa para ser o mais disruptivo possível — "um cérebro constantemente alimentado, aprendendo e descansando, num ciclo sem fim"? Três frentes de pesquisa profunda executadas (memória/sleep-time compute, auto-melhoria segura, mercado/moat). **Resposta consolidada em [`arquitetura-cerebro-conselheiro.md`](arquitetura-cerebro-conselheiro.md)** — o desenho-alvo do ciclo dia/noite (com base científica: sleep-time compute, ~5× mais barato e +13–18% de acurácia), a escada de melhoria em 4 degraus com 5 salvaguardas, os 7 stores de memória em Postgres, o custo (~US$ 10–40/mês por cérebro) e o veredito honesto de mercado ("ninguém tem" é falso como dito; a interseção operador-responsável + diário de resultados + assinatura humana + preço de cadeira de conselheiro está desocupada no mid-market BR). O faseamento por gatilho deste estudo permanece o mesmo.
+
 ## Fontes
 
 - [Y Combinator/Company Brain — a camada de dados decide tudo](https://colrows.com/blogs/company-brain-for-enterprise-ai/) · [Enterprise AI 2026 — TechRadar](https://www.techradar.com/pro/2026-the-year-enterprise-ai-finally-gets-to-work) · [Previsões CIO 2026 — InformationWeek](https://www.informationweek.com/machine-learning-ai/2026-enterprise-ai-predictions-fragmentation-commodification-and-the-agent-push-facing-cios)
