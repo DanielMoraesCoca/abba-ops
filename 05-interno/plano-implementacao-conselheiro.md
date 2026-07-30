@@ -12,7 +12,7 @@ O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/c
 |---|---|---|
 | 0 | — (agora) | ✅ **FEITA (2026-07-29)** — fundações no assessment-brain, ver §4 |
 | 1 | ~~1º cliente em manutenção~~ **ANTECIPADA por decisão do sócio** | ✅ **FEITA (2026-07-30)** — Dossiê Vivo v1 construído e testado (ver §5); o gatilho original passa a marcar a ATIVAÇÃO com dados reais, não a construção |
-| 2 | 1º cliente na camada Estratégia | Loop de aprendizado completo (port do legado consertado) + golden set |
+| 2 | ~~1º cliente na camada Estratégia~~ **ANTECIPADA por decisão do sócio** | ✅ **FEITA (2026-07-30)** — loop de aprendizado + soul construídos (ver §6); a CALIBRAÇÃO do golden set (notas dos sócios sobre saídas reais) continua gateada no cliente real |
 | 3 | 3+ clientes | Iris-Empresa lê o cérebro; otimizador semanal em envelope |
 | 4 | 10+ clientes | Produto nomeado; diário de calibração como ativo comercial |
 
@@ -55,7 +55,9 @@ Critério de pronto: ✅ suíte 332/332 · ✅ migrações reversíveis (down/up
 - **Ponto de decisão Postgres**: o `connection.js` foi escrito para essa troca (convenção async). Migrar quando o Dossiê nascer OU adiar — decidir no gatilho. **Busca** (✅ pesquisa resolvida): FTS5 atual até o corpus real provar insuficiente; aí, híbrido pgvector+FTS com RRF, **config de português obrigatória** (unaccent + stemmer pt — receita documentada no GBrain), SEM reranker cross-encoder até a escala exigir.
 - **Cadência de extração de fatos** (✅ pesquisa resolvida): noturna em batch (API 50% off) + disparo por importância — evento de decisão consolida na mesma noite; KPI de rotina espera o passe (padrão Memory Bank event-sourced + dream cycle).
 
-## 6. Fase 2 — o loop de aprendizado completo (gatilho: camada Estratégia; ~2–3 sprints)
+## 6. Fase 2 — o loop de aprendizado completo — ✅ ENTREGUE ANTECIPADA (2026-07-30, commits `795013f` + `611595c`)
+
+> Decisão do sócio (porta de 2 vias). Construído: `learning_feedback` (verdicts nomeados; reject produz DRAFT de addendum no seam da Fase 0 + eval case de regressão), `run_scores` (reward determinístico da telemetria do run — conserta o "score empurrado à mão"), `uplift` por proveniência (runs com o addendum × runs antes dele), `soul` por cliente (sanitizado anti-injeção, injetado no brief). CLI `abba learn feedback|scores|uplift|cases|soul`. **E a re-análise adversarial das Fases 0–2 encontrou e corrigiu 13 defeitos confirmados** (fato antigo sobrescrevendo verdade atual, KPI reconfirmado expirando, abort de budget re-pagando chunks, approve de brief sem efeito, vazamento de addendum entre firmas, mutação cross-cliente de decisão, etc.) — todos com trava de regressão em `review-regressions.test.js`. Suíte 361/361 nos 2 modos. O que RESTA gateado no cliente real: calibração do golden set com notas dos sócios.
 
 Port do legado COM os consertos (padrão, não código literal — SQLite/convenções da casa):
 
