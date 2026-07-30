@@ -11,7 +11,7 @@ O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/c
 | Fase | Gatilho | Entrega |
 |---|---|---|
 | 0 | — (agora) | ✅ **FEITA (2026-07-29)** — fundações no assessment-brain, ver §4 |
-| 1 | 1º cliente em manutenção | Dossiê Vivo v1: episódios→fatos, brief mensal rascunhado pela noite |
+| 1 | ~~1º cliente em manutenção~~ **ANTECIPADA por decisão do sócio** | ✅ **FEITA (2026-07-30)** — Dossiê Vivo v1 construído e testado (ver §5); o gatilho original passa a marcar a ATIVAÇÃO com dados reais, não a construção |
 | 2 | 1º cliente na camada Estratégia | Loop de aprendizado completo (port do legado consertado) + golden set |
 | 3 | 3+ clientes | Iris-Empresa lê o cérebro; otimizador semanal em envelope |
 | 4 | 10+ clientes | Produto nomeado; diário de calibração como ativo comercial |
@@ -41,7 +41,9 @@ O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/c
 
 Critério de pronto: ✅ suíte 332/332 · ✅ migrações reversíveis (down/up) · ✅ ranking-regression intocado · ✅ zero diff em `prompts.js`.
 
-## 5. Fase 1 — Dossiê Vivo v1 (gatilho: 1º cliente em manutenção; ~2 sprints)
+## 5. Fase 1 — Dossiê Vivo v1 — ✅ ENTREGUE ANTECIPADA (2026-07-30, commit `28f85f6` na branch)
+
+> Decisão do sócio (porta de 2 vias): construir antes do gatilho — o código não depende de cliente para existir, só para gerar valor; será exercitado no Cliente Zero e ativado com dados reais no 1º cliente em manutenção. Tudo abaixo está construído, testado (suíte 348/348 em modo mock E com criptografia at rest) e com smoke de CLI completo (ingest → sleep → facts → decision → health → brief → forget).
 
 - **`facts` bitemporais** (mig. futura): `(sujeito, predicado, objeto, valid_at, invalid_at, learned_at, source_episode_ids, confidence)` + supersessão determinística (fato novo invalida o antigo, nunca apaga). Extractor noturno v1: job batch (LLM médio, 50% off) lê os episódios do dia → extrai fatos atômicos → dedupe → contradição → TTL por tipo (KPI mensal expira no mês seguinte).
 - **`profile_blocks`**: JSONB versionado (perfil, estado das 25 dimensões, decisões abertas, recomendações ativas) — só a noite e o sócio escrevem.
