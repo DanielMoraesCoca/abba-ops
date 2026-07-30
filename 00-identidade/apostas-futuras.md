@@ -33,7 +33,7 @@
 
 **O que é:** um cérebro de IA por cliente — Dossiê Vivo (assessment + plano diretor + relatórios + telemetria) + análise proativa mensal + interface de consulta (evolução da Iris) — que abastece o Conselheiro de IA humano e aprende com os resultados reais via loop de outcomes. **Modelo centauro obrigatório:** a IA gera, o Conselheiro cura e assina, a diretoria decide. Estudo completo com pesquisa, riscos (PL 2338, alucinação, LGPD) e arquitetura: [estudo](../05-interno/estudo-conselheiro-digital.md).
 
-**Por que não agora:** o núcleo já existe (vault com aprendizado por outcomes, Iris, assessment 25-dim) mas o insumo — dados reais de cliente em manutenção — ainda não. Construir antes seria encanamento sem água.
+**Status (2026-07-30): CONSTRUÍDO ANTECIPADAMENTE por decisão do sócio** — Fases 0–2 entregues em código no assessment-brain (memória bitemporal, ciclo noturno, diário de decisões, loop de aprendizado com gate humano), duas vezes auditadas por revisão adversarial (32 defeitos corrigidos). Operação descrita em [`../04-entrega/dossie-vivo-conselheiro-digital.md`](../04-entrega/dossie-vivo-conselheiro-digital.md). O que continua gateado no cliente real: ATIVAÇÃO com dados de verdade e calibração do golden set. Nome comercial do produto = decisão de sócios (Fase 4).
 
 **Gatilhos de reavaliação:**
 - [ ] Fase 1: 1º cliente em manutenção → Dossiê Vivo interno + brief mensal curado
