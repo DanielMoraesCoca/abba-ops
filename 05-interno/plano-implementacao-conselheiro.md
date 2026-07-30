@@ -77,6 +77,16 @@ Port do legado COM os consertos (padrão, não código literal — SQLite/conven
 - **Onboarding botmaster** (✅ merge, prática GBrain): nunca dar acesso frio a usuário do cliente — pré-popular a fatia dele + conduzir 3 fluxos-uau ao vivo antes de liberar ("vira a taxa de conversão"; e é exatamente o formato de entrega de uma consultoria).
 - **Compactação de profile_blocks** (✅ pesquisa resolvida): split `compiled_truth` × `timeline` (a melhor ideia de schema do GBrain) — a crença atual compilada separada da evidência append-only; decaimento gradual, nunca deleção.
 
+## 7b. As Ondas de Memória — merge do [estudo de memória agêntica](estudo-memoria-agentica.md) (2026-07-30)
+
+A estratégia de adoção das melhorias de memória, casada com os gatilhos para nunca construir produtor sem consumidor:
+
+| Onda | Gatilho | Itens | Status |
+|---|---|---|---|
+| **1 — Blindagem** | AGORA (antes do 1º cliente: docs de cliente = input não-confiável) | **Autoridade de origem** (origem fraca nunca superseda verdade forte; claim vira 'contested' p/ revisão; corroboração forte upgrada) + **certificado de deleção comprovável** no `abba forget` (resíduo zero atestado no tombstone — artefato LGPD/ANPD e argumento comercial) | ✅ **ENTREGUE (2026-07-30, commit `b4f0aa1`, migração 039, suíte 370/370)** |
+| **2 — Fortalecimento** | Ativação (1º cliente em manutenção) | Score de consolidação do `memory-system.js` do repo legado (quente OU duradouro, gate duplo idade+score, ledger de promoção) + filtro de information-gain na escrita + **reforço uso+outcome** (uso bem-sucedido re-seta TTL e sobe confiança — o mecanismo concreto do "mais forte a cada dia") | ⏳ gateado |
+| **3 — Prova** | Escala (3+ clientes) | Probe-QA na escrita + auto-auditoria as-of noturna + tier procedural (playbook gateado) + **benchmark longitudinal próprio** (curvas de tenure publicáveis — o artefato de marketing que ninguém tem) | ⏳ gateado |
+
 ## 8. Fase 4 — parqueado até precisar
 
 **Hebbiano**: só se houver roteamento multi-agente real em produção — e portando o CONSERTO (fechar a aresta pesos→roteamento, o lado morto do legado). Produto nomeado + curva de calibração (Brier) como ativo de marketing = decisão de sócios.
