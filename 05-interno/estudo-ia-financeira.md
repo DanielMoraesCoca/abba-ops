@@ -29,6 +29,29 @@
 
 ---
 
+## 1b. Custos não operacionais — o dinheiro abaixo da linha (extensão 2026-07-31)
+
+As 10 famílias acima atacam a operação. Abaixo do resultado operacional existe uma segunda camada de sangria — **quase sempre sem "dono" dentro da empresa** — que é ainda mais adequada a diagnóstico via LLM: cada real está documentado em extratos, contratos e CCBs. Contexto macro que sustenta tudo: **Selic a 15% a.a., spread bancário médio ~17,8 p.p. (um dos maiores do mundo) e IOF-crédito PJ dobrado em 2025**.
+
+| # | Linha | Tamanho do vazamento (fonte/ano) | O que a IA faz | Dinheiro | Viabilidade |
+|---|---|---|---|---|---|
+| N1 | **Custo da dívida** ⭐ | Capital de giro PJ médio 18,6% a.a., mas o ranking BCB mostra dispersão de **3,5% a 313% a.a. entre bancos** para a mesma modalidade; antecipação de cartão a 1,5–3,5% a.m. usada como funding permanente = CET de 20–50% a.a.; IOF PJ foi de 1,88% para ~3,95% a.a. (2025) | LLM lê CCBs/contratos/extratos → "mapa da dívida" com CET real recalculado; compara cada linha contra a taxa média BCB (dado público); detecta rotativo estrutural e antecipação crônica; simula troca de mix | **HARD** — 2 p.p. renegociados em R$ 10 mi = R$ 200k/ano no extrato | **ALTA** — nenhum player isento (marketplaces ganham vendendo crédito novo); diagnóstico não é atividade regulada |
+| N2 | **Tarifas bancárias** | Casuístico mas abundante; restituição em dobro pós-2021 (STJ, Res. CMN 4.196) | Parser multi-banco de extratos → classifica tarifas, cruza com contrato, detecta venda casada e serviços não solicitados → dossiê de estorno administrativo | HARD (estorno) | MÉDIA — ticket pequeno; módulo do N1, não produto. Via judicial (revisional) = OAB, evitar |
+| N3 | **Multas e juros por atraso (autoinfligido)** | Mora tributária: 0,33%/dia até 20% + Selic — a dívida mais cara e mais burra da empresa; o razão do cliente revela o número em 1h | Classifica 24 meses de mora por causa-raiz (caixa vs. processo vs. guia não emitida); monitor de calendário fiscal; otimizador de fila de pagamento sob restrição | **HARD e imediato** — a conta "multas e juros passivos" vai a ~zero, comparável mês a mês | **ALTA**, zero risco regulatório — **quick win da 1ª semana do diagnóstico** |
+| N4 | **Contingências trabalhistas** | 3,6 mi de novas ações em 2024 (recorde em 15 anos); custo médio R$ 8–25k/ação + mora 1% a.m. por ~3 anos de tramitação; provisões mal calibradas distorcem EBITDA/covenants | Jurimetria: probabilidade de perda e valor esperado por processo → acordo no preço certo + provisão recalibrada (CPC 25). Mercado validado: Pact Insights acerta 73% das previsões de acordo (iFood, Magalu, Raízen) | MÉDIO-HARD (acordos abaixo do valor esperado = mensurável; provisão é "papel") | MÉDIA-ALTA — ferramentas (Predictus, Data Lawyer, JUDIT) vendem para advogados; **o assento ao lado do CFO está vago**. Sempre em parceria com o jurídico do cliente (sem OAB não se aconselha) |
+| N5 | **Câmbio (spread + hedge)** | Fintechs cobram 0,5–1,5% de spread; bancões 2–4% para mid-market — importador de US$ 5 mi/ano com 2% desnecessários perde ~R$ 500k/ano | Auditoria retroativa: cada câmbio fechado vs. PTAX pública → spread efetivo pago por banco, em R$ (retrovisor de 24 meses = número incontestável); política de hedge por regra + leilão de cotações | HARD no spread; MÉDIO no hedge (evita perda) | ALTA na auditoria (dados públicos + contratos); só para o recorte com exposição cambial. Derivativo específico = risco CVM, ficar na política |
+| N6 | **Seguros** | Mercado opaco (corretor comissionado); coberturas duplicadas, subseguro, sinistros nunca reclamados | LLM lê apólices (documento longo e padronizado — caso perfeito) → matriz cobertura × ativo; cruza sinistros ocorridos com coberturas não acionadas | MÉDIO — economia de 10–20% do prêmio, raramente transformadora | Módulo secundário; recotar exige SUSEP (auditar sim, intermediar não) |
+| N7 | **Ativos ociosos** | Case ADM: ~R$ 30 mi em leilões de ativos obsoletos | Cruza imobilizado × manutenção × telemetria → ociosidade; prioriza venda vs. sucata; corrige base de IPTU/seguro/depreciação | HARD mas **one-off** | MÉDIA — depende de dados de chão de fábrica; oportunidade pontual em indústria |
+| N8 | **Upside não capturado** | Recovery audit comercial: 0,05–0,1% do volume de compras recuperável (rebates, descontos contratuais e créditos de fornecedor nunca cobrados); precatórios: estoque R$ 310 bi, deságio 30–50% | LLM cruza contratos de fornecimento (cláusulas de rebate/bonificação) contra NF-e/pagamentos realizados — **quase virgem no Brasil** | **HARD** — dinheiro novo no caixa, success-fee se vende sozinho | ALTA no recovery comercial; precatórios = só avaliar/organizar (intermediação exige OAB/CVM) |
+
+**Ranking não operacional (dinheiro visível × viabilidade):** 1º diagnóstico do custo da dívida (com tarifas N2 e mora N3 embutidas como módulos) · 2º auditoria de spread cambial · 3º inteligência de contingências trabalhistas para o CFO · 4º recovery audit comercial com LLM.
+
+**Por que isso fortalece a Caça ao Dinheiro (§4):** os quatro usam os MESMOS dados de entrada do diagnóstico operacional (extratos, contratos, razão, NF-e) ou dados públicos (taxas BCB, PTAX, tribunais). O custo da dívida em particular é candidato a **capítulo padrão do diagnóstico** — dor universal com Selic a 15%, dado documental perfeito para LLM e espaço sem player isento: todo mundo que olha a dívida do cliente está tentando vender crédito novo.
+
+**Armadilhas regulatórias (nunca como produto principal):** revisional de juros e recuperação judicial de tarifas (OAB, STJ desfavorável a PJ — só via administrativa); intermediação de precatórios (OAB/CVM); recomendação de derivativos (CVM); corretagem de seguros (SUSEP); intermediação de crédito sem convênio de correspondente (Res. CMN 4.935). Em todos: **a ABBA diagnostica, simula e organiza; quem executa é o cliente com seu banco/advogado/corretor.**
+
+---
+
 ## 2. Como o CFO VÊ o dinheiro — a mecânica da prova
 
 ### 2.1 Hard vs. soft savings (a taxonomia que decide a venda)
@@ -113,7 +136,7 @@ A pesquisa das 3 frentes converge num único desenho: **entrar pelo dinheiro do 
 
 **"Caça ao Dinheiro"** (nome de trabalho) — variante financeira da Avaliação de Prontidão:
 
-1. **Diagnóstico (2–3 semanas, preço fixo)** sobre dados que a empresa é obrigada a ter (XML/SPED/ERP/extratos/adquirentes/aging de títulos): duplicatas pagas, taxas de adquirente cobradas a maior, tributo pago a maior (com parceiro taxtech ou tese simples), carteira de inadimplência recuperável, giro preso em DSO. Entregável: **"Encontramos R$ X"** — mapa de vazamentos com base legal/documental, priorizado.
+1. **Diagnóstico (2–3 semanas, preço fixo)** sobre dados que a empresa é obrigada a ter (XML/SPED/ERP/extratos/adquirentes/aging de títulos): duplicatas pagas, taxas de adquirente cobradas a maior, tributo pago a maior (com parceiro taxtech ou tese simples), carteira de inadimplência recuperável, giro preso em DSO — **mais o capítulo abaixo da linha (§1b)**: mapa da dívida com CET real vs. taxa média BCB, mora autoinfligida no razão (quick win da 1ª semana), spread cambial vs. PTAX quando houver exposição. Entregável: **"Encontramos R$ X"** — mapa de vazamentos com base legal/documental, priorizado.
 2. **Builds de estancamento (fixo + êxito 10–20% verificado)**: cobrança preventiva com IA, conciliação+conferência de taxas, automação de AP com trava de duplicidade, forecast de caixa — cada build ancorado num vazamento do diagnóstico, com **baseline assinado antes** (modelo MASC).
 3. **Prova contínua (recorrência)**: ritual mensal de "savings sign-off" com o financeiro do cliente validando o número + dashboard "R$ economizado até hoje" que reconcilia com o razão. **Quem apresenta o número ao conselho é o CFO — como número dele.**
 
@@ -144,6 +167,8 @@ Ou seja: taxtech acha dinheiro mas não corrige processo; SaaS corrige função 
 - [ ] Avaliar parceiro taxtech (white-label ou indicação com fee) para a tese tributária.
 - [ ] Conselheiro: brief mensal ganha seção "R$ verificado no período" (consulta em `decision_outcomes` — só engenharia de relatório, o dado já existe).
 - [ ] Prontidão IBS/CBS (W2) como oferta-satélite ou capítulo do diagnóstico — decidir escopo.
+- [ ] Roteiro do capítulo não operacional (§1b): checklist de coleta (extratos OFX 24m, CCBs, contratos de câmbio, razão de despesas financeiras, lista de processos CNJ) + calculadoras CET-vs-BCB e spread-vs-PTAX.
+- [ ] Validar as fronteiras regulatórias do §1b com advogado (junto da P4): texto padrão "diagnosticamos e simulamos; a execução é do cliente" em proposta e contrato.
 
 ---
 
