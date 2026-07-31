@@ -13,6 +13,7 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 | Durante o dia | Ingerir o que chegou do cliente (atas, KPIs, docs) — a ingestão re-renderiza o brief do mês sozinha | `abba ingest <eng> <arquivos>` |
 | Noite (cron ou manual) | O cérebro dorme: extrai fatos, resolve contradições, expira KPIs vencidos, pontua runs, recompila o dossiê, rascunha o brief — tudo com teto de gasto (US$ 1 default) | `abba brain sleep <eng> [--max-usd]` |
 | Manhã | Ler o brief rascunhado (SEMPRE marcado RASCUNHO até você aprovar) | `abba brain brief <eng>` |
+| Manhã (30s) | Revisar claims CONTESTADOS: documento contradisse verdade mais forte — o sleep avisa quando houver. Aceitar = afirmar você mesmo o valor; ignorar = claim fica inerte | `abba brain facts <eng> --contested` · aceitar: `abba brain fact <eng> --subject ... --predicate ... --object ... --by "Nome"` |
 | Curadoria | Aprovar com nome (congela o mês; snapshot imutável `*-aprovado.md`) — OU corrigir | `abba brain brief <eng> --approve --by "Nome"` |
 | Correção (o cérebro aprende) | Rejeitar uma saída com motivo → vira rascunho de melhoria + caso de regressão | `abba learn feedback <eng> --verdict reject --reason "..." --purpose dimension --by "Nome"` |
 | Ativar a lição | Aprovar a melhoria proposta (gate humano nomeado; vale a partir do próximo run) | `abba addenda approve <pad_id> --by "Nome"` |
