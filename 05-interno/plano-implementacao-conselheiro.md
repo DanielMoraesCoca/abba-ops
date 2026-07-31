@@ -119,6 +119,11 @@ Fase 0: **1 sprint — entregue**. Fase 1: 2 sprints. Fase 2: 2–3 sprints. Fas
 - **Nunca fine-tuning por cliente**; modelo-base congelado, aprendizado só em artefatos versionados.
 - **Nunca mutação de memória mediada por LLM** (✅ confirmado pela pesquisa: o Mem0 recuou publicamente de update/delete-via-LLM para ADD-only — corrompia em silêncio): append + invalidação temporal + consolidação em batch com promoção gateada.
 
-## 12. Protocolo de merge do estudo das big techs — ✅ EXECUTADO (2026-07-29)
+## 12. To-do de oferta — "Resgate de IA" (decisão do sócio, 2026-07-31)
+
+- [ ] **Lançar o "Resgate de IA"** — a única mudança de empacotamento aprovada por ora, vinda do [estudo de mercado](estudo-mercado-ofertas.md): auditoria forense do piloto de IA que falhou (preço fixo, 2–3 semanas) → sprint de reconstrução. Reusa a máquina das 25 dimensões com o frame "por que falhou"; pitch pronto (externo acerta 2× — MIT); zero concorrência empacotada no BR. Passos: (1) one-pager comercial em `03-comercial/`, (2) roteiro de auditoria forense mapeado sobre as 25 dimensões, (3) preço na tabela (proposta v2, sócios), (4) alimentar o Conselheiro com cada resgate (episódios `run.completed` + facts de "por que falhou").
+- As **outras 4 mudanças de empacotamento** do estudo (portas avulsas, máx. 3 visíveis, recorrência como centro, governança/Conselheiro re-precificado) permanecem **candidatas — pauta de sócios**, sem execução por ora.
+
+## 13. Protocolo de merge do estudo das big techs — ✅ EXECUTADO (2026-07-29)
 
 Os 4 marcadores `⏳PESQUISA` foram resolvidos e 8 adições entraram nas fases (marcadas "✅ merge" acima), por decisão do sócio. A tabela completa de candidatos — incluindo os 3 **rejeitados conscientemente** (markdown-em-git como system of record, embedding fine-tunado por cliente, conectores live) e o porquê — está na seção final do [estudo](estudo-big-techs-company-brain.md). Zero marcador pendente.
