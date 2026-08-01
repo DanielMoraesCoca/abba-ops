@@ -27,7 +27,7 @@ Ciclos seguintes de 90 dias repetem o ritmo: ritual → recomendações → deci
 | Formato | Cadência | Investimento |
 |---|---|---|
 | **Trimestral** | 1 ritual/trimestre + até 2 arbitragens/trimestre | R$ 6.000/mês |
-| **Mensal** | presença mensal + arbitragens ilimitadas + linha direta | R$ 9.000/mês |
+| **Mensal** | presença mensal + ritual semanal de 20 min + arbitragens ilimitadas + linha direta | R$ 9.000/mês |
 
 Preços em regime rascunho ([tabela](tabela-de-precos.md)); em proposta real antes da ativação da v2, apresentar como condição de lançamento com transparência.
 

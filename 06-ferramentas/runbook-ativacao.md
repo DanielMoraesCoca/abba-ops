@@ -2,7 +2,7 @@
 
 > **Camada:** ferramenta/infraestrutura. Cobre o que o [dossiê vivo](../04-entrega/dossie-vivo-conselheiro-digital.md) não cobre: o dossiê ensina a **operar** o cérebro; este ensina a **ligá-lo e a não perdê-lo**.
 >
-> **Por que existe:** o cérebro está construído e testado (414/414), mas até 2026-08-01 não havia nada escrito sobre cron, custódia de chave, backup ou contingência de API — e o próprio dossiê chamava o agendamento de *"cron do sono (1 linha)"*, o que é uma subestimativa perigosa. Um cron ingênuo roda **sem chave nenhuma e contra um segundo banco vazio**, sem erro visível.
+> **Por que existe:** o cérebro está construído e testado (429/429), mas até 2026-08-01 não havia nada escrito sobre cron, custódia de chave, backup ou contingência de API — e o próprio dossiê chamava o agendamento de *"cron do sono (1 linha)"*, o que é uma subestimativa perigosa. Um cron ingênuo roda **sem chave nenhuma e contra um segundo banco vazio**, sem erro visível.
 >
 > Dono: Tecnologia (Pedro). Revisar a cada ativação de cliente novo.
 

@@ -57,7 +57,7 @@
 A pasta antiga do Drive contém **os modelos dos entregáveis que a proposta promete**, todos com dados de exemplo (nunca enviar como estão). Mapa completo de migração: [estrutura-drive](../07-drive/estrutura-drive.md#mapa-de-migração-arquivo-a-arquivo-inventário-de-2026-07-23). Destaques:
 
 - **Termo de Aceite** → já transcrito: [`../04-entrega/termo-de-aceite.md`](../04-entrega/termo-de-aceite.md)
-- **Relatório de Maturidade** (6 dimensões, escala 1–5 Exploratório→Transformacional — **escala do legado**; o método vigente tem 25 dimensões) · **Mapa de Casos de Uso** (matriz de priorização + ROI) · **Plano Diretor** (24 meses) — os três entregáveis do Assessment
+- **Relatório de Maturidade** (6 dimensões, escala 1–5 Exploratório→Transformacional — **este é o arquivo legado do Drive, não o modelo vigente**; o modelo regenerado em `modelos/` já diz 25 dimensões, conferido no DOCX em 2026-08-01) · **Mapa de Casos de Uso** (matriz de priorização + ROI) · **Plano Diretor** (24 meses) — os três entregáveis do Assessment
 - **Relatório de Protótipo** (sprints, métricas, decisão GO/NO-GO) e **Relatório de Deployment** (testes de aceite, SLAs, rollback, handover, hypercare)
 - **Relatório Mensal de Operação** (serviços gerenciados)
 - Proposta anterior **com os preços reais emitidos** (R$ 150K — registrado na [planilha de precificação](../03-comercial/precificacao-planilha.md))

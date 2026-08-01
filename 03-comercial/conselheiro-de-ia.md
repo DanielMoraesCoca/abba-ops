@@ -34,10 +34,12 @@ A cadeira de estrategista de IA da empresa, ocupada pela ABBA em regime fracion�
 | Formato | Cadência | Preço [RASCUNHO v2] |
 |---|---|---|
 | **Conselheiro Trimestral** | Ritual trimestral + arbitragens sob demanda (até 2/trimestre) | R$ 6.000/mês |
-| **Conselheiro Mensal** | Presença mensal na diretoria + arbitragens ilimitadas + linha direta com os sócios | R$ 9.000/mês |
+| **Conselheiro Mensal** | Presença mensal na diretoria + **[ritual semanal de 20 min](../04-entrega/ritual-semanal.md)** + arbitragens ilimitadas + linha direta com os sócios | R$ 9.000/mês |
 | **Embutido na Manutenção-Estratégia** | Camada 3 da manutenção ([SLA](../04-entrega/sla-manutencao.md)) | ver [tabela](tabela-de-precos.md) |
 
 Contrato de 12 meses, reajuste IPCA, saída com aviso de 60 dias. Fatura mensal.
+
+> **Pendência de sócios (rascunho v2):** se e como o [ritual semanal](../04-entrega/ritual-semanal.md) entra no **Trimestral** — a cadência semanal custa presença de sócio e o preço de R$ 6.000/mês foi calculado sem ela. Até a decisão, a semanal pertence ao Mensal e às camadas Evolução/Estratégia da manutenção; no Trimestral, a cadência é a do produto (ritual trimestral + arbitragens).
 
 ## Duas portas de entrada
 

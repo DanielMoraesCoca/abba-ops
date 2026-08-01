@@ -40,6 +40,7 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 - Consentimento de transcrição/ingestão segue o [guia LGPD](../08-materiais/guia-oculos-hud.md) e o contrato
 - **A auditoria não se auto-elogia** — as sondas grátis medem COERÊNCIA da linha do tempo, não acurácia; só a sonda paga (contra o texto-fonte) mede fidelidade. Nunca apresentar uma como a outra
 - **Resultado ruim não rebaixa verdade em silêncio** — abre dúvida para o humano decidir (`abba brain reconfirm`)
+- **Previsão declarada não se reescreve** — a probabilidade registrada numa recomendação é imutável (trava no código, rodada 6): reescrever a aposta quando os números melhoram lavaria o placar de calibração, que é o ativo que a imutabilidade protege
 
 ## O que falta para ligar em produção (gatilho: 1º cliente em manutenção)
 

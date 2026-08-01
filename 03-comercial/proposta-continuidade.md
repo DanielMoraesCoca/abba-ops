@@ -13,6 +13,7 @@
 | | **Operação** | **Evolução** | **Estratégia** |
 |---|---|---|---|
 | Monitoramento automatizado 24/7 + SLA S1–S3 + relatório mensal | ✅ | ✅ | ✅ |
+| **[Ritual semanal de 20 min](../04-entrega/ritual-semanal.md)** — presença de sócio em cadência: o que venceu, gatilhos, decisões, o que vamos medir | — | ✅ | ✅ |
 | Horas de evolução ({{HORAS_MES}}h/mês) nos agentes | — | ✅ | ✅ |
 | Plataforma de capacitação ativa (novos colaboradores onboardados) | — | ✅ | ✅ |
 | [Conselheiro de IA](conselheiro-de-ia.md) trimestral embutido | — | — | ✅ |
@@ -31,7 +32,7 @@
 ## Argumento por camada (para a conversa, não para o papel)
 
 - **Operação:** "seus agentes não podem parar — este é o mínimo responsável" (quem só quer 'manter vivo')
-- **Evolução:** "agentes que não evoluem envelhecem: cada mês traz ajustes do mundo real e novos colaboradores na plataforma" (a escolha natural — âncora)
+- **Evolução:** "agentes que não evoluem envelhecem: cada mês traz ajustes do mundo real e novos colaboradores na plataforma — e a gente aparece toda semana, 20 minutos, com a fila do que precisa de atenção na mão" (a escolha natural — âncora)
 - **Estratégia:** "tudo da Evolução + a cadeira de estrategista: a cada trimestre, a diretoria decide o próximo movimento com a gente na mesa" (quem já usa o ritual do conselho como instrumento)
 
 ## Depois do sim

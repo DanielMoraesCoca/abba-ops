@@ -8,7 +8,8 @@
 
 | | **Camada 1 · Operação** | **Camada 2 · Evolução** | **Camada 3 · Estratégia** |
 |---|---|---|---|
-| Monitoramento 24/7 + SLA S1–S3 + relatório mensal + **[ritual semanal de 20 min](ritual-semanal.md)** | ✅ | ✅ | ✅ |
+| Monitoramento 24/7 + SLA S1–S3 + relatório mensal | ✅ | ✅ | ✅ |
+| **[Ritual semanal de 20 min](ritual-semanal.md)** (presença de sócio em cadência) | — | ✅ | ✅ |
 | Horas de evolução ({{HORAS_MES}}h/mês) + plataforma de capacitação ativa | — | ✅ | ✅ |
 | [Conselheiro de IA](../03-comercial/conselheiro-de-ia.md) trimestral embutido | — | — | ✅ |
 

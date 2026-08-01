@@ -8,7 +8,7 @@
 
 ## Quando começa e quando não se aplica
 
-- **Começa** quando o cliente entra no degrau 3 (primeiro mês de manutenção) — nunca antes: sem sistema vivo e sem diário, a semanal vira conversa vazia e mata a percepção de valor.
+- **Começa** quando o cliente entra no degrau 3, **camadas Evolução ou Estratégia** (a camada Operação não inclui presença semanal de sócio — é o que diferencia as camadas, e é o que protege o teto de capacidade abaixo). Nunca antes do primeiro mês de manutenção: sem sistema vivo e sem diário, a semanal vira conversa vazia e mata a percepção de valor.
 - **Não se aplica** a Workshop, Avaliação e Sprint LGPD (têm começo, meio e fim).
 - **Durante o Programa** (16 semanas) vale a reunião de projeto, que é outra coisa e mais longa. A semanal assume quando o programa termina — e é exatamente a ponte que impede o "acabou, obrigado".
 

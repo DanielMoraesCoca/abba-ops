@@ -47,7 +47,7 @@ Regras que decorrem disso:
 
 1. **Pendências dos sócios:** [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md) — P1/P2/P6–P9 resolvidas; restam P3 (nome do programa), P4 (advogado) e P5 (contador).
 2. **Um cliente apareceu?** [`02-jornada-do-cliente/README.md`](02-jornada-do-cliente/README.md) — siga o funil estágio a estágio.
-3. **O que a ABBA é, em uma leitura:** [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).
+3. **A empresa inteira em uma página (estado real de cada peça):** [`00-identidade/mapa-da-abba.md`](00-identidade/mapa-da-abba.md). O modelo de entrega em detalhe: [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).
 4. **Antes de qualquer decisão grande:** [`00-identidade/visao-2029.md`](00-identidade/visao-2029.md) — a paisagem competitiva, o fosso, os inegociáveis e as tensões que não têm resposta pronta.
 5. **Vai falar com um prospect?** Três documentos, nesta ordem, e você conduz a reunião inteira: [`00-identidade/alvo.md`](00-identidade/alvo.md) (qualificar e quando recusar) → [`03-comercial/escada-abba.md`](03-comercial/escada-abba.md) (o que exatamente se compra) → [`04-entrega/protocolo-de-prova.md`](04-entrega/protocolo-de-prova.md) (como a gente prova). Falas prontas em [`03-comercial/kit-de-presenca.md`](03-comercial/kit-de-presenca.md); postura em [`00-identidade/manifesto.md`](00-identidade/manifesto.md).
 6. **Como o cliente vira parte, e não só compra:** [`00-identidade/ecossistema.md`](00-identidade/ecossistema.md) — as 3 camadas, o que já está construído e desligado, e a cláusula de contrato que não pode esperar.

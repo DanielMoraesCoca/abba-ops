@@ -85,10 +85,10 @@ A régua para decidir onde investir hora: o insumo (inteligência bruta) despenc
 
 | Data | O quê | A conversa que abre |
 |---|---|---|
+| **já em vigor** | **LGPD Art. 20** com poder de auditoria da ANPD + **IA como eixo de fiscalização 2026–27** (Mapa de Temas Prioritários, dez/2025) | Governança auditável **hoje**, sem esperar o PL 2338 |
+| **02/08/2026** | **EU AI Act Art. 50** (transparência) em aplicação — extraterritorial via *output usado na UE*; chega ao exportador **como cláusula contratual** ("a multa europeia não chega ao Brasil; a cláusula sim" — Conjur, jul/2026) | Qualquer cliente que exporta ou fornece para quem exporta |
 | **03/08/2026** | Campos IBS/CBS **validados em produção** — sem preenchimento correto, **a nota não sai** | Toda empresa do regime regular, agora. Grandes estão ~89% prontas [CONS — Deloitte]; a nossa faixa, entre 11% e 40% [fontes conflitam — o conflito É o insight: a despreparação está concentrada no R$ 50–500 mi] |
 | set/2026 | Prazo de decisão de regime tributário | CFO |
-| 2026–27 | **ANPD: IA como eixo de fiscalização** (Mapa de Temas Prioritários, dez/2025) + Art. 20 da LGPD **já em vigor** com poder de auditoria | Governança auditável **hoje**, sem esperar o PL 2338 |
-| **02/08/2026** | **EU AI Act Art. 50** (transparência) em aplicação — extraterritorial via *output usado na UE*; chega ao exportador **como cláusula contratual** ("a multa europeia não chega ao Brasil; a cláusula sim" — Conjur, jul/2026) | Qualquer cliente que exporta ou fornece para quem exporta |
 | 2027 | CBS plena; PIS/Cofins extintos · EU AI Act alto risco (dez/2027) | Reprecificação, margem, modelo operacional |
 | 2028–29 | Vigência plena esperada do PL 2338 (aprovado no Senado dez/2024; na Câmara; até R$ 50 mi/violação; explicação em 15 dias; revisão humana) | O dossiê que satisfaz o regulador — que já construímos por convicção |
 | até 2032 | Convivência dos dois sistemas tributários | Anos de complexidade dobrada = anos de demanda |
@@ -105,8 +105,8 @@ Migração 046 no assessment-brain + doutrina. Tudo determinístico, custo zero 
 |---|---|---|
 | **Gatilho por decisão** | "Se [indicador] cruzar [limiar], revisamos em N dias." A decisão acorda sozinha — na fila, com conferência humana. Nada dispara no mundo real | `abba decision trigger <eng> <id> --metric dso --threshold 45 --direction above --review-in 30` |
 | **Probabilidade declarada** | Quem recomenda diz quanto acredita (0–1), com nome, **antes** — prever depois de medir é bloqueado no código | `abba decision predict <eng> <id> --probability 0.7 --by "Nome"` |
-| **Placar de calibração** | Brier + baldes (dissemos 70% → aconteceu ~70%?). Abaixo de 20 pares medidos: **"indisponível"**, nunca um número instável. Em dois anos: *"nossas recomendações acertam X%"* com histórico, não com adjetivo | `abba brain calibration <eng>` |
-| **Fila de antecipação** | A tela da manhã: o que venceu · o que vai vencer · gatilho disparado · decisão parada · claim contestado · obsolescência projetada (aritmética sobre TTLs, **não previsão**). Ordenada por prazo, nunca por "importância" | `abba brain next <eng>` |
+| **Placar de calibração** | Brier + baldes (dissemos 70% → aconteceu ~70%?). Abaixo de 20 pares medidos: **"indisponível"**, nunca um número instável. O placar consolidado da firma ("nossas recomendações acertam X%") exige massa de decisões medidas — gatilho de 10+ clientes; por engajamento ele serve ao ritual, não ao marketing | `abba brain calibration <eng>` |
+| **Fila de antecipação** | A tela da manhã: o que venceu · o que vai vencer (horizonte padrão de **14 dias**, ajustável com `--horizon`) · gatilho disparado (baixa com `--checked`) · decisão parada (30 dias) · claim contestado · obsolescência projetada (aritmética sobre TTLs, **não previsão**). Ordenada por prazo, nunca por "importância" | `abba brain next <eng>` |
 | **Seção "Antecipação" no brief** | A mesma fila entra no brief mensal rascunhado pelo ciclo noturno | automático |
 | **Ritual semanal de 20 min** | O formato humano que a evidência do §3 sustenta — roteiro de 4 itens | [ritual-semanal.md](../04-entrega/ritual-semanal.md) |
 | **Pré-mortem no kickoff** | Obrigatório, 30 min | [kickoff-roteiro.md](../04-entrega/kickoff-roteiro.md) |

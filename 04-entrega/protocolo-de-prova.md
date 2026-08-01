@@ -67,7 +67,7 @@ Honestidade obrigatória — e este quadro precisa ser atualizado, não apagado,
 
 | Afirmação | Estado em 2026-08-01 |
 |---|---|
-| "Temos um método de registro decisão → resultado, em produção, auditável" | ✅ **Verdade.** Construído, testado (414/414), cinco rodadas de revisão adversarial |
+| "Temos um método de registro decisão → resultado, em produção, auditável" | ✅ **Verdade.** Construído, testado (429/429 nos dois modos), seis rodadas de revisão adversarial |
 | "A avaliação em 25 dimensões captura o que promete" | ⚠️ **Validado em dados sintéticos.** A validação com LLM real ainda não foi rodada ([R1](../05-interno/registro-de-riscos.md), [runbook §6](../06-ferramentas/runbook-ativacao.md)) |
 | "Temos padrões acumulados entre clientes que aceleram o próximo diagnóstico" | ❌ **Ainda não.** A mecânica do cofre existe; o cofre está **vazio** — nenhum engajamento real ainda |
 | "Temos casos com resultado medido" | ❌ **Ainda não.** O molde do primeiro está pronto ([caso publicável](../05-interno/caso-publicavel-modelo.md)); falta o cliente real |

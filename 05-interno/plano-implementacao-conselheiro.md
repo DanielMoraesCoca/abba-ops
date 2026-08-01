@@ -18,7 +18,7 @@ O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/c
 
 ## 3. Estado atual (verificado no código, 2026-07-29)
 
-**assessment-brain (vivo, testado — a base):** loop de outcome do vault JÁ real (`src/feedback/outcome-reconciler.js` → confiança empírica Laplace → piso 0,25 em `src/knowledge-vault/query.js`; proveniência `run_pattern_injections`). Ingestão whole-document com FTS5, dedupe SHA-256, redação PII one-way. Runs com `trace_id`/`heartbeat`. **Sem embeddings/chunking** (suficiente até a Fase 1). *(Estado de 2026-07-29. Hoje: suíte 414/414 nos 2 modos, migrações 029–045, Fases 0–2 + Ondas 1–3 entregues.)*
+**assessment-brain (vivo, testado — a base):** loop de outcome do vault JÁ real (`src/feedback/outcome-reconciler.js` → confiança empírica Laplace → piso 0,25 em `src/knowledge-vault/query.js`; proveniência `run_pattern_injections`). Ingestão whole-document com FTS5, dedupe SHA-256, redação PII one-way. Runs com `trace_id`/`heartbeat`. **Sem embeddings/chunking** (suficiente até a Fase 1). *(Estado de 2026-07-29. Hoje: suíte 429/429 nos 2 modos, migrações 029–047, Fases 0–2 + Ondas 1–3 entregues.)*
 
 **ABBA legado (fonte de ports — congelado, nunca modificado):**
 

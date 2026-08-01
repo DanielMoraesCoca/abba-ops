@@ -59,7 +59,7 @@ Por quê isso importa mais que qualquer documento: o prospect não lê o repo �
 
 ## Frente D — Prospectar (só quando A+B+C = ✅)
 
-1. **Lista de 20 alvos nomeados** — tracker pronto: [`pipeline-modelo.md`](../03-comercial/pipeline-modelo.md). Qualificar pelo **[teste de 5 perguntas](../00-identidade/alvo.md)**, não por setor (decisão de 2026-08-01: densidade por forma, não por indústria); registrar o placar 0–5 de cada alvo. Começar pela rede real dos sócios
+1. **Lista de 20 alvos nomeados** — tracker pronto: [`pipeline-modelo.md`](../03-comercial/pipeline-modelo.md). Qualificar pelo **[teste de 5 perguntas](../00-identidade/alvo.md)**, não por setor (decisão de 2026-08-01: densidade por forma, não por indústria); registrar o placar 0–6 de cada alvo. Começar pela rede real dos sócios
 2. **Cadência:** {{N}} contatos novos/semana (sócios fixam — sugestão: 10) · toda degustação aceita entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo
 3. **Meta do trimestre:** 1 cliente charter assinado (Avaliação de Prontidão como porta, programa como conversão)
 4. **Retrospectiva de 10 min após cada conversa real** — o funil melhora a cada repetição

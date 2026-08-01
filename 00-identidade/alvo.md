@@ -42,7 +42,7 @@ Aplicável em qualquer conversa de descoberta, em qualquer setor, em ~10 minutos
 
 A pergunta 6 não elimina — ela **ordena a fila**: entre dois alvos iguais, o que tem prazo externo compra primeiro.
 
-A pergunta 3 é a mais importante das cinco. Sem um número medido, não existe [protocolo de prova](../04-entrega/protocolo-de-prova.md) — e sem prova, o engajamento vira depoimento em vez de evidência.
+A pergunta 3 é a mais importante das seis. Sem um número medido, não existe [protocolo de prova](../04-entrega/protocolo-de-prova.md) — e sem prova, o engajamento vira depoimento em vez de evidência.
 
 ---
 
