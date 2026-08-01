@@ -67,6 +67,8 @@ flowchart TD
 
 ## O que é só de vocês (ninguém mais destrava)
 
+> **Execução guiada:** cada item abaixo está transformado em tarefa executável — texto pronto, comandos, pauta — no [kit de execução dos sócios](../05-interno/kit-de-execucao-socios.md).
+
 | # | Pendência | Por que importa | Onde |
 |---|---|---|---|
 | 1 | **P4 + P4b — advogado** (contrato + Anexo IV + licença 4D) | **Porta de uma via**: cliente assinado sem o Anexo IV fica fora do ecossistema para sempre | [riscos R2, R15, R22](../05-interno/registro-de-riscos.md) |

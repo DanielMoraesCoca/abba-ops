@@ -45,7 +45,7 @@ Regras que decorrem disso:
 
 ## 🚦 Comece por aqui
 
-1. **Pendências dos sócios:** [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md) — P1/P2/P6–P9 resolvidas; restam P3 (nome do programa), P4 (advogado) e P5 (contador).
+1. **Pendências dos sócios, prontas para executar:** [`05-interno/kit-de-execucao-socios.md`](05-interno/kit-de-execucao-socios.md) — e-mail do advogado pronto, cerimônia da passphrase, pauta da reunião das 5 decisões, checklist do Pedro, semana do Cliente Zero, a rua. Registro completo: [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md).
 2. **Um cliente apareceu?** [`02-jornada-do-cliente/README.md`](02-jornada-do-cliente/README.md) — siga o funil estágio a estágio.
 3. **A empresa inteira em uma página (estado real de cada peça):** [`00-identidade/mapa-da-abba.md`](00-identidade/mapa-da-abba.md). O modelo de entrega em detalhe: [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).
 4. **Antes de qualquer decisão grande:** [`00-identidade/visao-2029.md`](00-identidade/visao-2029.md) — a paisagem competitiva, o fosso, os inegociáveis e as tensões que não têm resposta pronta.
