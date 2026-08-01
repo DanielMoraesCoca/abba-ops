@@ -9,6 +9,8 @@
 ### 1. Onde dissemos que íamos chegar (10 min)
 Reapresentar os **objetivos declarados** (slide 5 do kickoff + atualizações de rituais anteriores). Pergunta aberta antes de seguir: **"Isso ainda é verdade? Algo mudou na visão de vocês?"** — se mudou, o resto da pauta se ajusta ao novo norte.
 
+Fechar a seção com o **calendário de obrigações com data** do cliente (IBS/CBS, decisão de regime, ANPD, cláusulas de exportação — [estudo de antecipação](../05-interno/estudo-antecipacao.md) §5): o que vence antes do próximo ritual entra na pauta de hoje, não na do próximo.
+
 ### 2. Resultados do período (20 min)
 - **Projetado vs. realizado, por agente** — a tabela central; sem enfeite: o número que prometemos e o número que aconteceu
 - Adoção da capacitação: ativos, níveis, campeões, Bússola
@@ -16,10 +18,10 @@ Reapresentar os **objetivos declarados** (slide 5 do kickoff + atualizações de
 - O que aprendemos sobre a operação de vocês neste período
 
 ### 3. Recomendações da ABBA (15 min)
-Máximo **3 recomendações**, priorizadas, cada uma com: o quê · por quê (ligado aos objetivos declarados) · esforço/investimento · o que acontece se não fizermos.
+Máximo **3 recomendações**, priorizadas, cada uma com: o quê · por quê (ligado aos objetivos declarados) · esforço/investimento · o que acontece se não fizermos · **a probabilidade declarada** — *"nós damos 70% de chance de isto mover a métrica"*, registrada com nome (`abba decision predict ... --by`). Quando o resultado for medido, o par entra no placar (`abba brain calibration`) — é o que transforma a nossa convicção de retórica em histórico auditável. Dito em voz alta quando houver placar: *"das recomendações que fizemos com essa confiança, X% se confirmaram."*
 
 ### 4. Decisões do cliente (15 min)
-Para cada recomendação: **aprovar / adaptar / recusar / adiar** — registrado ao vivo, com dono e prazo quando aprovado. **Registre cada uma no diário** (`abba decision add <eng> --title "..."` → `advance --to decided --by "<quem decidiu>"`): é esse diário que, meses depois, permite dizer com número o que a recomendação produziu — e é ele que faz a memória do cliente ficar mais forte a cada resultado medido. A regra dita em voz alta quando preciso: *"nós recomendamos com convicção; a decisão é de vocês — e vamos executar bem qualquer uma delas."*
+Para cada recomendação: **aprovar / adaptar / recusar / adiar** — registrado ao vivo, com dono e prazo quando aprovado. **Registre cada uma no diário** (`abba decision add <eng> --title "..."` → `advance --to decided --by "<quem decidiu>"`), **e combine o gatilho quando houver indicador**: *"se [métrica] cruzar [limiar], a gente revisa em N dias"* (`abba decision trigger`) — a decisão passa a acordar sozinha na fila da manhã em vez de esperar o próximo trimestre: é esse diário que, meses depois, permite dizer com número o que a recomendação produziu — e é ele que faz a memória do cliente ficar mais forte a cada resultado medido. A regra dita em voz alta quando preciso: *"nós recomendamos com convicção; a decisão é de vocês — e vamos executar bem qualquer uma delas."*
 
 ### 5. Saúde da parceria (5 min)
 Direto ao patrocinador: como estamos indo? o que faríamos melhor? (NPS informal — registrar)

@@ -35,6 +35,8 @@ Regras comerciais:
 
 Detalhe das camadas no [SLA](../04-entrega/sla-manutencao.md); produto do Conselheiro em [conselheiro-de-ia.md](conselheiro-de-ia.md).
 
+> **Insumo novo para a decisão da v2 (2026-08-01, sócios decidem — nada muda até lá):** o [ritual semanal de 20 min](../04-entrega/ritual-semanal.md) entrou nas camadas de manutenção, e o mercado dá duas âncoras: o IBGC registra que 61,9% dos conselheiros consultivos de capital fechado no Brasil ganham até R$ 15 mil/mês, e a Gartner projeta >30% das empresas de médio porte com ao menos um executivo fracionário em retainer até 2027 ([estudo de antecipação](../05-interno/estudo-antecipacao.md) §1). A camada 3 com semanal + placar de calibração conversa com essa âncora.
+
 ## Histórico de versões
 
 | Versão | Data | Mudança |

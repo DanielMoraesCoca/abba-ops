@@ -12,6 +12,7 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 |---|---|---|
 | Durante o dia | Ingerir o que chegou do cliente (atas, KPIs, docs) — a ingestão re-renderiza o brief do mês sozinha | `abba ingest <eng> <arquivos>` |
 | Noite (cron ou manual) | O cérebro dorme: extrai fatos, resolve contradições, expira KPIs vencidos, pontua runs, recompila o dossiê, rascunha o brief — tudo com teto de gasto (US$ 1 default) | `abba brain sleep <eng> [--max-usd]` |
+| Manhã (1º comando) | **A fila de antecipação**: o que venceu, gatilho disparado, decisão parada, claim contestado — ordenada por prazo. É a tela da manhã | `abba brain next <eng>` |
 | Manhã | Ler o brief rascunhado (SEMPRE marcado RASCUNHO até você aprovar) | `abba brain brief <eng>` |
 | Manhã (30s) | **Reconfirmar o que vai vencer**: verdades perto do TTL ou contrariadas por um resultado medido. Perguntar ao cliente e reafirmar — é isso que mantém a memória viva | `abba brain reconfirm <eng>` |
 | Mensal (opcional, custa) | Auditoria de fidelidade: compara os fatos com o texto-fonte de onde saíram. A auditoria de coerência já roda grátis toda noite | `abba brain audit <eng> --max-usd 0.10` |
@@ -42,4 +43,4 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 
 ## O que falta para ligar em produção (gatilho: 1º cliente em manutenção)
 
-1. Dados reais entrando (a disciplina de ingestão desde o kickoff) · 2. Calibração do golden set (20–50 saídas notadas pelos sócios) · 3. Cron do sono (1 linha) · 4. Decisões de sócios pendentes: nome comercial e se/como o cérebro entra no discurso comercial (hoje: diferencial interno da cadeira de Conselheiro, nunca prometido como produto avulso).
+1. Dados reais entrando (a disciplina de ingestão desde o kickoff) · 2. Calibração do golden set (20–50 saídas notadas pelos sócios) · 3. **Cron do sono via [runbook de ativação](../06-ferramentas/runbook-ativacao.md)** — NÃO é "1 linha": um cron ingênuo roda sem chave e contra um segundo banco vazio, em silêncio; o runbook existe para isso · 4. Decisões de sócios pendentes: nome comercial e se/como o cérebro entra no discurso comercial (hoje: diferencial interno da cadeira de Conselheiro, nunca prometido como produto avulso).

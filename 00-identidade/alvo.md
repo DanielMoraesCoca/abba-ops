@@ -21,7 +21,7 @@ Essa decisão tem um custo conhecido, e ele fica registrado aqui em vez de escon
 
 ---
 
-## O teste de 5 perguntas
+## O teste de 5 perguntas (+1 de calendário)
 
 Aplicável em qualquer conversa de descoberta, em qualquer setor, em ~10 minutos. **Não é um formulário para o cliente** — é o que o sócio precisa saber ao desligar a chamada.
 
@@ -32,12 +32,15 @@ Aplicável em qualquer conversa de descoberta, em qualquer setor, em ~10 minutos
 | 3 | *"Tem algum número em reais que dói hoje e que vocês já medem?"* | Existe dor **medida** — não percebida | Só dores qualitativas ("queremos ser inovadores") |
 | 4 | *"Quem, aí dentro, ficaria dono disso depois que a gente sair?"* | Existe candidato a campeão | "Vocês tocam tudo" |
 | 5 | *"Esse número está em sistema ou está na cabeça das pessoas?"* | O dado existe em ERP/fiscal/CRM e é extraível | Planilha pessoal, sem histórico |
+| 6 | *"Que obrigação com data vocês têm pela frente — reforma tributária, fiscalização, cláusula de cliente grande?"* | Existe um prazo externo que converte "um dia" em "agora" ([calendário](../05-interno/estudo-antecipacao.md) §5) | "Nada nos pressiona" (o ciclo de venda será longo) |
 
 **Leitura do resultado:**
 
-- **5 sins** → alvo cheio. Programa completo é conversa legítima já na segunda reunião.
+- **5–6 sins** → alvo cheio. Programa completo é conversa legítima já na segunda reunião.
 - **3–4 sins** → alvo real, entrada por porta menor ([escada](../03-comercial/escada-abba.md), degraus 0–1) para transformar o "não" em "sim".
 - **≤2 sins** → não é alvo hoje. Follow-up em 90 dias, sem investimento de proposta.
+
+A pergunta 6 não elimina — ela **ordena a fila**: entre dois alvos iguais, o que tem prazo externo compra primeiro.
 
 A pergunta 3 é a mais importante das cinco. Sem um número medido, não existe [protocolo de prova](../04-entrega/protocolo-de-prova.md) — e sem prova, o engajamento vira depoimento em vez de evidência.
 

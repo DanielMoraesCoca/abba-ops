@@ -28,6 +28,9 @@ Guardamos a linha do tempo inteira: o que se acreditava, quando, com base em qu�
 **6. Nosso sucesso é o cliente precisar menos de nós no operacional.**
 Instalamos capacidade. Se ao final do programa a empresa depende da ABBA para operar, nós falhamos — mesmo que o contrato continue.
 
+**7. Prevemos onde há base para prever — e dizemos onde não há.**
+Declaramos probabilidade com nome em cada recomendação e mantemos o placar do nosso próprio acerto. E recusamos, por escrito, prever o que a evidência diz que a IA prevê mal: mudança de regime, cauda, "o que acontece se fizermos X". Num mercado onde todos prometem prever, publicar o limite é o que torna o resto crível.
+
 ---
 
 ## O que recusamos
@@ -41,6 +44,7 @@ Instalamos capacidade. Se ao final do programa a empresa depende da ABBA para op
 | **Cruzar dado entre clientes** | Um cérebro por cliente, segregado. Só o agregado anonimizado circula — e com piso de privacidade no código |
 | **Apagar histórico** | Nada se deleta fora do caminho sancionado, que emite certificado. Verdade que some não era verdade |
 | **Virar agência generalista** | Uma espinha, um método. Toda oferta é um contêiner do mesmo IP |
+| **Prever mudança de regime e contrafactual causal** | A evidência é dura: modelos mais capazes preveem PIOR em séries com quebra de regime, e "o que acontece se fizermos X" está fora do alcance ([estudo](../05-interno/estudo-antecipacao.md) §2). Vender isso é ser desmentido pelo primeiro trimestre ruim |
 | **Preço 100% por resultado** | Vira disputa de atribuição, não parceria |
 | **Crescer para a zona da morte** | Entre 30 e 300 pessoas, firmas de serviço perdem a margem sem ganhar a escala |
 

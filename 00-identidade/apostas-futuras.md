@@ -50,6 +50,17 @@
 - [ ] Cláusula de consentimento para destilação anonimizada ao vault na pauta do advogado (P4) antes da ativação
 - [ ] **ATIVAÇÃO com dados reais** — o que de fato falta: validação com LLM real, golden set calibrado pelos sócios e cron do sono ligado ([runbook](../06-ferramentas/runbook-ativacao.md))
 
+## Aposta 6 — O Radar (varredura regulatória e de sinal fraco por cliente)
+
+**O que é:** varredura mensal por cliente — mudança regulatória com data (reforma tributária, ANPD, cláusulas de exportação), movimento de concorrente e sinal fraco setorial — entrando como seção do brief mensal, com curadoria humana. A fase de varredura ficou barata com LLM; a curadoria continua sendo o serviço. Especificado no [estudo de antecipação](../05-interno/estudo-antecipacao.md) §6.
+
+**Por que não agora:** custo de API recorrente por cliente antes de existir cliente; risco de virar ruído sem calibração; e depende de resolver qual provedor de busca está ativo em produção (pendência do Pedro, [mapa de ferramentas](../06-ferramentas/mapa-jornada-ferramentas.md)).
+
+**Gatilhos:**
+- [ ] 1º cliente pagante em manutenção (degrau 3)
+- [ ] Provedor de busca do scout confirmado e configurado
+- [ ] Custo estimado por cliente/mês medido em ensaio interno
+
 ## Regra
 
 Aposta futura não recebe investimento de tempo além de: (a) manter este registro atualizado; (b) não tomar decisões hoje que **impossibilitem** a aposta amanhã (ex.: contratos que proíbam comunidade entre clientes sem necessidade).
