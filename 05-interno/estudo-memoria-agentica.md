@@ -1,6 +1,6 @@
 # Estudo — Memória agêntica: onde o nosso cérebro está na fronteira (e o tesouro no repo ABBA)
 
-> **Status: ESTUDO CONCLUÍDO (2026-07-30) — melhorias são CANDIDATAS para as fases do [plano do Conselheiro](plano-implementacao-conselheiro.md), pendentes de decisão do sócio.** Duas frentes: fronteira acadêmica/produto (papers até jul/2026) + varredura profunda de memória no repo ABBA legado (desta vez incluindo um sistema inteiro nunca catalogado).
+> **Status: ESTUDO CONCLUÍDO (2026-07-30) — e as 6 melhorias ranqueadas foram TODAS ENTREGUES (2026-08-01)**: nº 1 e 2 na Onda 1 (autoridade de origem + certificado de deleção), nº 3 e 4 na Onda 2 (reforço uso+outcome + score de consolidação), nº 5 e 6 na Onda 3 (auditoria e tier procedural). Ver [plano §7b](plano-implementacao-conselheiro.md). Duas frentes: fronteira acadêmica/produto (papers até jul/2026) + varredura profunda de memória no repo ABBA legado (desta vez incluindo um sistema inteiro nunca catalogado).
 
 ## O veredito honesto: a fronteira convergiu para o NOSSO desenho
 
@@ -12,7 +12,7 @@ A pesquisa de 2026 reinventou, em vários papers independentes (Eywa "evidência
 
 **À frente:** (1) correção temporal — consulta "as of" nativa, supersessão determinística no banco, o formato vencedor do benchmark de longo prazo; (2) verdade verificada — gate humano nomeado + uplift medido é uma classe de confiança acima dos juízes-LLM do campo; (3) **deleção comprovável** — forget em cascata + tombstone + criptografia é mais perto de LGPD-provável que qualquer sistema pesquisado (a literatura jurídica diz que NINGUÉM oferece; a ANPD colocou agentes de IA na fiscalização 2026-27).
 
-**Atrás:** (1) sofisticação de retrieval em escala (sem multi-rota semântica+grafo+temporal; FTS5 não testado em 100k+ fatos); (2) **robustez adversarial** — docs de cliente são input não-confiável e não temos autoridade de origem nem defesas anti-poisoning (MINJA: >95% de sucesso de injeção por queries; detectores LLM perdem 66%); (3) controle de memória aprendido + prontidão multi-agente (sem tier procedural, sem política RL, sem propagação escopada entre agentes).
+**Atrás (avaliação de 2026-07-30) — e o que mudou desde então:** (1) sofisticação de retrieval em escala (sem multi-rota semântica+grafo+temporal; FTS5 não testado em 100k+ fatos) — **CONTINUA ATRÁS, é o único**; (2) ~~robustez adversarial — docs de cliente são input não-confiável e não temos autoridade de origem nem defesas anti-poisoning~~ → **RESOLVIDO na Onda 1 + rodada 4**: autoridade de origem com gate no presente, no passado e na era expirada; claims fracos viram linhas `contested` inertes, revisáveis por humano; (3) ~~sem tier procedural~~ → **RESOLVIDO na Onda 3** (playbooks só de vitórias medidas, com gate humano nomeado). Política RL e propagação multi-agente seguem deliberadamente fora de escopo.
 
 ## O tesouro no repo ABBA: um SEGUNDO sistema de memória nunca catalogado
 

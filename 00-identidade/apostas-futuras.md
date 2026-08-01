@@ -33,13 +33,14 @@
 
 **O que é:** um cérebro de IA por cliente — Dossiê Vivo (assessment + plano diretor + relatórios + telemetria) + análise proativa mensal + interface de consulta (evolução da Iris) — que abastece o Conselheiro de IA humano e aprende com os resultados reais via loop de outcomes. **Modelo centauro obrigatório:** a IA gera, o Conselheiro cura e assina, a diretoria decide. Estudo completo com pesquisa, riscos (PL 2338, alucinação, LGPD) e arquitetura: [estudo](../05-interno/estudo-conselheiro-digital.md).
 
-**Status (2026-07-30): CONSTRUÍDO ANTECIPADAMENTE por decisão do sócio** — Fases 0–2 entregues em código no assessment-brain (memória bitemporal, ciclo noturno, diário de decisões, loop de aprendizado com gate humano), duas vezes auditadas por revisão adversarial (32 defeitos corrigidos). Operação descrita em [`../04-entrega/dossie-vivo-conselheiro-digital.md`](../04-entrega/dossie-vivo-conselheiro-digital.md). O que continua gateado no cliente real: ATIVAÇÃO com dados de verdade e calibração do golden set. Nome comercial do produto = decisão de sócios (Fase 4).
+**Status (2026-08-01): CONSTRUÍDO ANTECIPADAMENTE por decisão do sócio — esta aposta deixou de ser aposta.** Fases 0–2 **+ Ondas 1–3 de memória** entregues em código no assessment-brain: memória bitemporal com autoridade de origem, ciclo noturno com teto de gasto, diário de decisões, loop de aprendizado com gate humano, reforço por resultado medido, consolidação em tiers, auditoria noturna da própria memória, playbooks procedurais e benchmark longitudinal. **Cinco rodadas de revisão adversarial independente (50 defeitos corrigidos), suíte 414/414 nos dois modos, migrações 029–045.** Operação em [`../04-entrega/dossie-vivo-conselheiro-digital.md`](../04-entrega/dossie-vivo-conselheiro-digital.md); estratégia de longo prazo em [`visao-2029.md`](visao-2029.md).
 
 **Gatilhos de reavaliação:**
-- [ ] Fase 1: 1º cliente em manutenção → Dossiê Vivo interno + brief mensal curado
-- [ ] Fase 2: 1º cliente na camada Estratégia → insights proativos no ritual, co-assinados
-- [ ] Fase 3: 3+ clientes → interface Iris-Empresa no portal
-- [ ] Cláusula de consentimento para destilação anonimizada ao vault na pauta do advogado (P4) antes da Fase 1
+- [x] ~~Fase 1: 1º cliente em manutenção~~ → **construída antes do gatilho** (Dossiê Vivo + brief mensal curado)
+- [x] ~~Fase 2: 1º cliente na camada Estratégia~~ → **construída antes do gatilho** (loop de aprendizado + soul por cliente)
+- [ ] Fase 3: 3+ clientes → interface Iris-Empresa no portal (**parcialmente antecipada**: tier procedural e benchmark entregues na Onda 3; a interface segue gateada)
+- [ ] Cláusula de consentimento para destilação anonimizada ao vault na pauta do advogado (P4) antes da ativação
+- [ ] **ATIVAÇÃO com dados reais** — o que de fato falta: validação com LLM real, golden set calibrado pelos sócios e cron do sono ligado ([runbook](../06-ferramentas/runbook-ativacao.md))
 
 ## Regra
 

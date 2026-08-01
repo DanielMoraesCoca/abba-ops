@@ -165,7 +165,7 @@ Ou seja: taxtech acha dinheiro mas não corrige processo; SaaS corrige função 
 - [ ] Modelo de "termo de baseline" (MASC ABBA, 1–2 páginas): métrica, valor, fórmula, janela, ajustes, assinatura nomeada — vira anexo padrão de proposta.
 - [ ] Preço na proposta v2 (fixo do diagnóstico + faixas de êxito por família, escalonado pela dificuldade).
 - [ ] Avaliar parceiro taxtech (white-label ou indicação com fee) para a tese tributária.
-- [ ] Conselheiro: brief mensal ganha seção "R$ verificado no período" (consulta em `decision_outcomes` — só engenharia de relatório, o dado já existe).
+- [x] ~~Conselheiro: brief mensal ganha seção "R$ verificado no período"~~ — **ENTREGUE 2026-08-01**: a seção soma apenas métricas monetárias (dias e horas aparecem na lista, fora do total, porque somar R$ com dias produz um número que o CFO rasga na primeira leitura).
 - [ ] Prontidão IBS/CBS (W2) como oferta-satélite ou capítulo do diagnóstico — decidir escopo.
 - [ ] Roteiro do capítulo não operacional (§1b): checklist de coleta (extratos OFX 24m, CCBs, contratos de câmbio, razão de despesas financeiras, lista de processos CNJ) + calculadoras CET-vs-BCB e spread-vs-PTAX.
 - [ ] Validar as fronteiras regulatórias do §1b com advogado (junto da P4): texto padrão "diagnosticamos e simulamos; a execução é do cliente" em proposta e contrato.

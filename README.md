@@ -48,3 +48,5 @@ Regras que decorrem disso:
 1. **Pendências dos sócios:** [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md) — P1/P2/P6–P9 resolvidas; restam P3 (nome do programa), P4 (advogado) e P5 (contador).
 2. **Um cliente apareceu?** [`02-jornada-do-cliente/README.md`](02-jornada-do-cliente/README.md) — siga o funil estágio a estágio.
 3. **O que a ABBA é, em uma leitura:** [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).
+4. **Antes de qualquer decisão grande:** [`00-identidade/visao-2029.md`](00-identidade/visao-2029.md) — a paisagem competitiva, o fosso, os inegociáveis e as tensões que não têm resposta pronta.
+5. **O Conselheiro Digital** (o maior ativo de engenharia da empresa): o que é e como operar em [`04-entrega/dossie-vivo-conselheiro-digital.md`](04-entrega/dossie-vivo-conselheiro-digital.md) · como ligar em produção em [`06-ferramentas/runbook-ativacao.md`](06-ferramentas/runbook-ativacao.md) · o plano por fases em [`05-interno/plano-implementacao-conselheiro.md`](05-interno/plano-implementacao-conselheiro.md).

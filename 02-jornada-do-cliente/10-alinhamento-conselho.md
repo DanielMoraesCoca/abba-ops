@@ -15,6 +15,7 @@ Data trimestral chegando (agendar sempre a próxima ao fim da atual) ou etapa do
 ## Checklist
 
 **Preparação (1 semana antes)**
+- [ ] **Puxar o rascunho do Conselheiro Digital** (quando ativado): `abba brain brief <eng>` (período + R$ verificado + pontos de atenção) · `abba brain health <eng>` (a memória está fresca?) · `abba brain benchmark <eng>` (a prova de tenure, se já houver série)
 - [ ] Montar o material pela [pauta do conselho](../04-entrega/pauta-conselho.md): resultados vs. objetivos declarados · projetado vs. realizado por agente · adoção da capacitação · incidentes e riscos · recomendações da ABBA (máx. 3, priorizadas)
 - [ ] Revisão cruzada do outro sócio
 - [ ] Material enviado ao patrocinador 2 dias antes (sem surpresas na sala)
@@ -26,6 +27,7 @@ Data trimestral chegando (agendar sempre a próxima ao fim da atual) ou etapa do
 
 **Depois (48h)**
 - [ ] Ata com decisões em `02 Clientes/<Nome>/07 Conselho/` + resumo por e-mail
+- [ ] **Registrar cada decisão no diário** (`abba decision add/advance --by "<quem decidiu>"`) — e, quando o resultado for medido, `abba decision outcome`. É o que transforma o ritual em memória que compõe, em vez de uma reunião que passou
 - [ ] Decisões viram ações nos estágios respectivos (nova construção → 07; ajuste de trilha → 08; expansão → proposta)
 - [ ] Próximo ritual agendado
 

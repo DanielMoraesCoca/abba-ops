@@ -51,6 +51,7 @@ Regime completo na [coreografia da conversão](../03-comercial/coreografia-da-co
 2. **Drill das 9 objeções** — resposta natural em ≤30s
 3. **Dry-run da Análise** numa empresa real, cronometrado
 4. **Cliente Zero** (o descobridor de gaps): percorrer a jornada INTEIRA internamente — scout → Análise → proposta preenchida → contrato preenchido → kickoff montado → setup das 3 ferramentas executado. Cada travada = gap corrigido em ambiente seguro. Critério de saída: jornada completa sem improviso.
+5. **Ensaio do Conselheiro Digital** (novo, 2026-08-01): o cérebro está construído e nunca rodou com dados reais. No Cliente Zero, ligar o ciclo noturno de verdade e percorrer o [ritual diário](../04-entrega/dossie-vivo-conselheiro-digital.md) — ingestão → `brain sleep` → ler o brief → reconfirmar → registrar uma decisão → medir um resultado. Passo a passo de infraestrutura no [runbook de ativação](../06-ferramentas/runbook-ativacao.md). **É a única forma de descobrir os gaps do cérebro sem um cliente pagando por eles.**
 
 Por quê isso importa mais que qualquer documento: o prospect não lê o repo — ele sente a fluência. Maestria percebida = preparo × naturalidade. Documento dá o preparo; ensaio dá a naturalidade.
 
@@ -84,5 +85,6 @@ Números baixos não são fracasso — são diagnóstico: contato→aceite baixo
 - [ ] Família de materiais completa (frente B, itens 1–3)
 - [ ] Ensaios feitos + **Cliente Zero percorrido sem improviso**
 - [ ] Contrato revisado por advogado OU alçada ativa (P4)
+- [ ] **Conselheiro Digital ativado**: validação com LLM real + golden set calibrado + cron do sono ligado ([runbook](../06-ferramentas/runbook-ativacao.md)) — o maior ativo da empresa não pode chegar ao 1º cliente sem nunca ter rodado
 
-**Seis caixas marcadas = a ABBA não recebe um cliente "pronta no papel" — recebe pronta de verdade, porque já percorreu o caminho uma vez.**
+**Sete caixas marcadas = a ABBA não recebe um cliente "pronta no papel" — recebe pronta de verdade, porque já percorreu o caminho uma vez.**

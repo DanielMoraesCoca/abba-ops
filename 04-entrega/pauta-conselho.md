@@ -1,6 +1,8 @@
 # Pauta do Ritual do Conselho — template
 
 > Usada no [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Reunião de 60–90 min com diretoria/conselho do cliente. Material enviado ao patrocinador 2 dias antes. Ata em 48h em `02 Clientes/<Nome>/07 Conselho/`.
+>
+> **Preparação com o Conselheiro Digital** (quando ativado — ver [dossiê vivo](dossie-vivo-conselheiro-digital.md)): `abba brain brief <eng>` traz o rascunho do período já com **R$ verificado**, KPIs vigentes e pontos de atenção · `abba brain facts <eng> --as-of <data>` responde "o que valia quando decidimos isso?" · `abba brain health <eng>` avisa se a memória está defasada antes de você entrar na sala. **O rascunho nunca vai ao cliente sem curadoria e assinatura do sócio.**
 
 ## Estrutura (60–90 min)
 
@@ -17,13 +19,16 @@ Reapresentar os **objetivos declarados** (slide 5 do kickoff + atualizações de
 Máximo **3 recomendações**, priorizadas, cada uma com: o quê · por quê (ligado aos objetivos declarados) · esforço/investimento · o que acontece se não fizermos.
 
 ### 4. Decisões do cliente (15 min)
-Para cada recomendação: **aprovar / adaptar / recusar / adiar** — registrado ao vivo, com dono e prazo quando aprovado. A regra dita em voz alta quando preciso: *"nós recomendamos com convicção; a decisão é de vocês — e vamos executar bem qualquer uma delas."*
+Para cada recomendação: **aprovar / adaptar / recusar / adiar** — registrado ao vivo, com dono e prazo quando aprovado. **Registre cada uma no diário** (`abba decision add <eng> --title "..."` → `advance --to decided --by "<quem decidiu>"`): é esse diário que, meses depois, permite dizer com número o que a recomendação produziu — e é ele que faz a memória do cliente ficar mais forte a cada resultado medido. A regra dita em voz alta quando preciso: *"nós recomendamos com convicção; a decisão é de vocês — e vamos executar bem qualquer uma delas."*
 
 ### 5. Saúde da parceria (5 min)
 Direto ao patrocinador: como estamos indo? o que faríamos melhor? (NPS informal — registrar)
 
 ### 6. Próximos passos (5 min)
 Ações com dono e data · próximo ritual agendado antes de sair da sala.
+
+### 7. A prova que compõe (5 min — quando houver histórico)
+`abba brain benchmark <eng>`: o acerto da memória do cliente contra o tempo de casa. É o argumento que nenhum concorrente tem — **mostra, com número, que a parceria fica melhor quanto mais dura**. Só apresentar quando houver ao menos alguns meses de série; e apresentar pelo que é (coerência da linha do tempo verificada + fidelidade à fonte quando auditada), **nunca como "acurácia" genérica**.
 
 ## Variante — Conselheiro de IA avulso (cliente que não fez o programa)
 

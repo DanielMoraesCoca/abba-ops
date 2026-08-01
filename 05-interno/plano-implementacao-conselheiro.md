@@ -4,7 +4,7 @@
 
 ## 1. Sumário executivo
 
-O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/conselheiro-de-ia.md)) não muda. Este plano constrói, por gatilho, o **cérebro que abastece a cadeira**: modelo centauro (IA rascunha → sócio assina → diretoria decide), ciclo dia/noite (ingestão de dia, consolidação/"sonho" de noite, fila de curadoria de manhã), memória em 7 stores sobre Postgres, e a escada de melhoria com gates humanos. Custo-alvo por cérebro: ~US$ 10–40/mês.
+O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/conselheiro-de-ia.md)) não muda. Este plano constrói, por gatilho, o **cérebro que abastece a cadeira**: modelo centauro (IA rascunha → sócio assina → diretoria decide), ciclo dia/noite (ingestão de dia, consolidação/"sonho" de noite, fila de curadoria de manhã), memória bitemporal com autoridade de origem e consolidação em tiers, e a escada de melhoria com gates humanos. Custo-alvo por cérebro: ~US$ 10–40/mês.
 
 ## 2. Gatilhos de fase (inalterados — nada se constrói antes)
 
@@ -18,7 +18,7 @@ O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/c
 
 ## 3. Estado atual (verificado no código, 2026-07-29)
 
-**assessment-brain (vivo, testado — a base):** loop de outcome do vault JÁ real (`src/feedback/outcome-reconciler.js` → confiança empírica Laplace → piso 0,25 em `src/knowledge-vault/query.js`; proveniência `run_pattern_injections`). Ingestão whole-document com FTS5, dedupe SHA-256, redação PII one-way. Runs com `trace_id`/`heartbeat`. **Sem embeddings/chunking** (suficiente até a Fase 1). Suíte 332 testes.
+**assessment-brain (vivo, testado — a base):** loop de outcome do vault JÁ real (`src/feedback/outcome-reconciler.js` → confiança empírica Laplace → piso 0,25 em `src/knowledge-vault/query.js`; proveniência `run_pattern_injections`). Ingestão whole-document com FTS5, dedupe SHA-256, redação PII one-way. Runs com `trace_id`/`heartbeat`. **Sem embeddings/chunking** (suficiente até a Fase 1). *(Estado de 2026-07-29. Hoje: suíte 414/414 nos 2 modos, migrações 029–045, Fases 0–2 + Ondas 1–3 entregues.)*
 
 **ABBA legado (fonte de ports — congelado, nunca modificado):**
 
@@ -39,13 +39,13 @@ O Conselheiro de IA vendido hoje (CAIO fracionário, [produto](../03-comercial/c
 2. **Migração 030 `prompt_addenda`** — **a costura de consumo que conserta o gap do legado ANTES do port**: orientação aprovada por cliente é anexada DEPOIS dos prompts canônicos (IP travado jamais tocado — teste de byte-equality garante prompt idêntico com zero addenda). Gate humano: ativar exige nome do aprovador. CLI `abba addenda list|add|approve|retire`. Proveniência: ids ativos gravados no episódio `run.started`. Na Fase 2, o proposer portado vira PRODUTOR de drafts desta tabela — o anti-padrão "produtor-sem-consumidor" fica estruturalmente impossível.
 3. **IP preservado**: `docs/ABBA_COMPLETE_ASSESSMENT_FRAMEWORK.md` (1.469 linhas) copiado por conteúdo da branch órfã do ABBA (commit de origem `4fa6814f` no cabeçalho de proveniência).
 
-Critério de pronto: ✅ suíte 332/332 · ✅ migrações reversíveis (down/up) · ✅ ranking-regression intocado · ✅ zero diff em `prompts.js`.
+Critério de pronto: ✅ suíte 332/332 (à época) · ✅ migrações reversíveis (down/up) · ✅ ranking-regression intocado · ✅ zero diff em `prompts.js`.
 
 ## 5. Fase 1 — Dossiê Vivo v1 — ✅ ENTREGUE ANTECIPADA (2026-07-30, commit `28f85f6` na branch)
 
 > Decisão do sócio (porta de 2 vias): construir antes do gatilho — o código não depende de cliente para existir, só para gerar valor; será exercitado no Cliente Zero e ativado com dados reais no 1º cliente em manutenção. Tudo abaixo está construído, testado (suíte 348/348 em modo mock E com criptografia at rest) e com smoke de CLI completo (ingest → sleep → facts → decision → health → brief → forget).
 
-- **`facts` bitemporais** (mig. futura): `(sujeito, predicado, objeto, valid_at, invalid_at, learned_at, source_episode_ids, confidence)` + supersessão determinística (fato novo invalida o antigo, nunca apaga). Extractor noturno v1: job batch (LLM médio, 50% off) lê os episódios do dia → extrai fatos atômicos → dedupe → contradição → TTL por tipo (KPI mensal expira no mês seguinte).
+- **`facts` bitemporais** (migrações 032/038/040/041, entregues): `(sujeito, predicado, objeto, valid_at, invalid_at, learned_at, source_episode_ids, confidence)` + supersessão determinística (fato novo invalida o antigo, nunca apaga). Extractor noturno v1: job batch (LLM médio, 50% off) lê os episódios do dia → extrai fatos atômicos → dedupe → contradição → TTL por tipo (KPI mensal expira no mês seguinte).
 - **`profile_blocks`**: JSONB versionado (perfil, estado das 25 dimensões, decisões abertas, recomendações ativas) — só a noite e o sócio escrevem.
 - **Brief mensal rascunhado pela noite**, curado pelo sócio (o handoff centauro) — reutiliza `src/report/` como renderizador.
 - **`decisions` + `outcomes` como tabelas de 1ª classe** (✅ merge 2026-07-29, padrão action-log da Palantir): recomendado → decidido → implementado → medido, no mesmo substrato dos dados — é o white space que nenhuma empresa da pesquisa cobre, e o alicerce do lock-in legítimo.

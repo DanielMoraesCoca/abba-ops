@@ -1,6 +1,6 @@
 # Estudo — Conselheiro Digital (o "JARVIS por cliente")
 
-> **Status: ESTUDO + APOSTA FUTURA 5 — nenhuma construção antes do gatilho.** Ideia do sócio (2026-07-27): um assessor de IA por cliente que entende tudo da empresa, de nós e de si mesmo; aprende com os resultados reais ao longo do tempo; identifica melhorias proativamente; disponível ao cliente e à ABBA. Pesquisa diligente executada; veredito e faseamento abaixo. Registrado em [apostas-futuras](../00-identidade/apostas-futuras.md) (aposta 5) e no [registro de decisões](registro-de-decisoes.md).
+> **Status: ESTUDO CUMPRIDO (atualizado 2026-08-01)** — a aposta 5 foi construída (Fases 0–2 + Ondas 1–3). O inventário e o faseamento abaixo viraram **registro histórico de como decidimos**; o estado atual está no [plano](plano-implementacao-conselheiro.md). Banner original: *"estudo + aposta futura 5 — nenhuma construção antes do gatilho"*. Ideia do sócio (2026-07-27): um assessor de IA por cliente que entende tudo da empresa, de nós e de si mesmo; aprende com os resultados reais ao longo do tempo; identifica melhorias proativamente; disponível ao cliente e à ABBA. Pesquisa diligente executada; veredito e faseamento abaixo. Registrado em [apostas-futuras](../00-identidade/apostas-futuras.md) (aposta 5) e no [registro de decisões](registro-de-decisoes.md).
 
 ## Veredito
 
@@ -21,7 +21,7 @@
 | Dados reais contínuos | ⚠️ existem (relatório mensal projetado×realizado, telemetria CrewAI, adoção no portal) — falta unificar no **Dossiê Vivo** por cliente (base RAG) |
 | Aprendizado com resultados | ✅ loop de outcomes do vault — falta a versão por-cliente |
 | Interface de consulta para o cliente | ⚠️ embrião = **Iris** (já tem contexto por tenant no portal) |
-| Identificação proativa de melhorias | ❌ construir: rotina periódica que compara metas×realizado e rascunha candidatos a insight |
+| Identificação proativa de melhorias | ✅ **ENTREGUE** (2026-08-01): o ciclo noturno compara, consolida e rascunha o brief; playbooks nascem de vitórias medidas |
 | Canal para a diretoria | ✅ o ritual do conselho (máx. 3 recomendações) — a IA abastece, nunca substitui |
 
 ## O ciclo em operação (desenho-alvo)
@@ -39,7 +39,7 @@ Dossiê Vivo (assessment + plano diretor + atas + relatórios + telemetria) → 
 
 | Fase | Gatilho | O que ativa |
 |---|---|---|
-| 0 (agora) | — | Nada a construir; disciplina: estruturar todo dado de engajamento desde o 1º cliente pensando no Dossiê |
+| 0 (agora) | — | ~~Nada a construir~~ → **antecipado**: Fases 0–2 + Ondas 1–3 construídas em jul-ago/2026 por decisão do sócio. A disciplina segue valendo: estruturar todo dado de engajamento pensando no Dossiê |
 | 1 | 1º cliente em manutenção | Dossiê Vivo interno + brief mensal gerado por IA, curado pelo sócio (uso interno; custo ~centenas de R$/mês) |
 | 2 | 1º cliente na camada Estratégia | Insights proativos formais no ritual, co-assinados |
 | 3 | 3+ clientes | Interface Iris-Empresa no portal, por tenant, com guardrails |
