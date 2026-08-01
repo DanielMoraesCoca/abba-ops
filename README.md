@@ -10,10 +10,10 @@
 
 | Diretório | O que contém | Quando consultar |
 |---|---|---|
-| [`00-identidade/`](00-identidade/) | Plano de negócio, posicionamento, modelo de serviço, marca, apostas futuras | Antes de qualquer material externo novo; dúvida sobre "o que a ABBA é" |
+| [`00-identidade/`](00-identidade/) | Plano de negócio, posicionamento, **manifesto**, **alvo**, **ecossistema**, modelo de serviço, marca, apostas futuras, Visão 2029 | Antes de qualquer material externo novo; dúvida sobre "o que a ABBA é" ou "para quem é" |
 | [`01-setores/`](01-setores/README.md) | Os 5 setores da empresa como "chapéus" com dono e checklist | Divisão de responsabilidades; entrada de novo sócio/funcionário |
 | [`02-jornada-do-cliente/`](02-jornada-do-cliente/README.md) | O funil completo em 11 estágios, um doc por estágio | Sempre que um cliente muda de estágio; onboarding de quem vai atender cliente |
-| [`03-comercial/`](03-comercial/) | Propostas prontas, contrato-esqueleto, precificação, pautas, e-mails | Da primeira conversa até a assinatura |
+| [`03-comercial/`](03-comercial/) | **Escada**, **kit de presença**, **Mapa de Vazamento**, propostas prontas, contrato-esqueleto, precificação, pautas, e-mails | Da primeira conversa até a assinatura |
 | [`04-entrega/`](04-entrega/) | Kickoff, relatório de avaliação, plano de capacitação, SLA, pauta do conselho | Da assinatura até a renovação |
 | [`05-interno/`](05-interno/) | Decisões, riscos, finanças, comunicação, societário | Reunião semanal de sócios; qualquer decisão relevante |
 | [`06-ferramentas/`](06-ferramentas/mapa-jornada-ferramentas.md) | Mapa jornada × ferramenta + fichas de negócio (o que prometer, setup, custo, dono) | Antes de prometer qualquer coisa técnica; setup de cliente novo |
@@ -49,4 +49,6 @@ Regras que decorrem disso:
 2. **Um cliente apareceu?** [`02-jornada-do-cliente/README.md`](02-jornada-do-cliente/README.md) — siga o funil estágio a estágio.
 3. **O que a ABBA é, em uma leitura:** [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).
 4. **Antes de qualquer decisão grande:** [`00-identidade/visao-2029.md`](00-identidade/visao-2029.md) — a paisagem competitiva, o fosso, os inegociáveis e as tensões que não têm resposta pronta.
-5. **O Conselheiro Digital** (o maior ativo de engenharia da empresa): o que é e como operar em [`04-entrega/dossie-vivo-conselheiro-digital.md`](04-entrega/dossie-vivo-conselheiro-digital.md) · como ligar em produção em [`06-ferramentas/runbook-ativacao.md`](06-ferramentas/runbook-ativacao.md) · o plano por fases em [`05-interno/plano-implementacao-conselheiro.md`](05-interno/plano-implementacao-conselheiro.md).
+5. **Vai falar com um prospect?** Três documentos, nesta ordem, e você conduz a reunião inteira: [`00-identidade/alvo.md`](00-identidade/alvo.md) (qualificar e quando recusar) → [`03-comercial/escada-abba.md`](03-comercial/escada-abba.md) (o que exatamente se compra) → [`04-entrega/protocolo-de-prova.md`](04-entrega/protocolo-de-prova.md) (como a gente prova). Falas prontas em [`03-comercial/kit-de-presenca.md`](03-comercial/kit-de-presenca.md); postura em [`00-identidade/manifesto.md`](00-identidade/manifesto.md).
+6. **Como o cliente vira parte, e não só compra:** [`00-identidade/ecossistema.md`](00-identidade/ecossistema.md) — as 3 camadas, o que já está construído e desligado, e a cláusula de contrato que não pode esperar.
+7. **O Conselheiro Digital** (o maior ativo de engenharia da empresa): o que é e como operar em [`04-entrega/dossie-vivo-conselheiro-digital.md`](04-entrega/dossie-vivo-conselheiro-digital.md) · como ligar em produção em [`06-ferramentas/runbook-ativacao.md`](06-ferramentas/runbook-ativacao.md) · o plano por fases em [`05-interno/plano-implementacao-conselheiro.md`](05-interno/plano-implementacao-conselheiro.md).

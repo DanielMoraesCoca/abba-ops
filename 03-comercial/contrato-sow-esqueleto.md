@@ -2,7 +2,7 @@
 
 > ⚠️ **AVISO OBRIGATÓRIO:** esta minuta é um ponto de partida (~70% pronta). **Enviar a advogado brasileiro com experiência em LGPD + tecnologia ANTES de qualquer assinatura** (pendência P4 do [registro de decisões](../05-interno/registro-de-decisoes.md)). As cláusulas de LGPD (9), PI (7) e responsabilidade (11) exigem olhos especializados.
 >
-> **Como usar:** este é o contrato-mãe genérico. O escopo de cada venda entra no **Anexo I** (um por produto — workshop, avaliação, sprint, programa, manutenção por camada, **retainer do Conselheiro de IA — ver bloco no fim deste doc**). Condições charter (desconto por contrapartidas) entram apenas se aplicáveis, via **Anexo III**. Preencher todos os `[campos]`, revisar com advogado, colher assinaturas, arquivar em `02 Clientes/<Nome>/01 Contrato/` no Drive.
+> **Como usar:** este é o contrato-mãe genérico. O escopo de cada venda entra no **Anexo I** (um por produto — workshop, avaliação, sprint, programa, manutenção por camada, **retainer do Conselheiro de IA — ver bloco no fim deste doc**). Condições charter (desconto por contrapartidas) entram apenas se aplicáveis, via **Anexo III**. O **Anexo IV** (contribuição anonimizada e rede) é de uso obrigatório em **todo** contrato — ver o alerta no próprio anexo. Preencher todos os `[campos]`, revisar com advogado, colher assinaturas, arquivar em `02 Clientes/<Nome>/01 Contrato/` no Drive.
 
 ---
 
@@ -86,6 +86,8 @@ Sigilo mútuo sobre informações confidenciais, subsistindo por **5 anos** apó
 
 **9.6. Suboperadores:** listados no **Anexo II**; a ABBA mantém responsabilidade integral. **A ABBA não treina modelos de IA com dados do Cliente.**
 
+**9.7. Contribuição anonimizada e rede:** condições no **Anexo IV**, de uso obrigatório em todo contrato — inclusive quando o Cliente optar por não contribuir, hipótese que fica registrada ali.
+
 ---
 
 ## Bloco para Anexo I — Retainer do Conselheiro de IA (usar quando o produto for o [Conselheiro](conselheiro-de-ia.md))
@@ -158,3 +160,23 @@ _______________________________          _______________________________
 ## Anexo III — Condições Charter (usar apenas quando aplicável)
 
 Em contrapartida a desconto de [X]% sobre a tabela vigente, o Cliente fornece, ao final do engajamento, com vigência de 24 meses: (i) depoimento escrito de até 250 palavras; (ii) métricas publicáveis acordadas no kickoff; (iii) estudo de caso com aprovação prévia do Cliente antes de publicação; (iv) uso de nome e logotipo mediante aprovação escrita por uso; (v) até 2 chamadas de referência por trimestre, máx. 30 min, agendadas com 7 dias úteis de antecedência.
+
+## Anexo IV — Contribuição Anonimizada e Rede ABBA (usar SEMPRE — minuta para o advogado, P4)
+
+> **Por que este anexo é o item mais urgente da pauta do advogado:** a plataforma da ABBA já opera um comparativo entre clientes cuja premissa declarada é que **a contribuição anonimizada é divulgada em contrato** ([ecossistema](../00-identidade/ecossistema.md)). Sem este anexo, ou a funcionalidade fica indefensável perante um DPO, ou o cliente assinado fica fora do ecossistema **para sempre** — consentimento não se retroage. Assinar o primeiro contrato sem ele é uma porta de uma via.
+
+**IV.1. Contribuição anonimizada.** O Cliente autoriza a ABBA a incorporar, a partir dos dados do engajamento, **indicadores agregados e anonimizados** (medianas de coorte, taxas de adoção, taxas de durabilidade de comportamento, padrões de oportunidade) a uma base comparativa entre clientes.
+
+**IV.2. Garantias de anonimização.** A ABBA garante que nenhum indicador é incorporado ou exibido que permita identificar o Cliente, direta ou indiretamente. Especificamente: (i) a base comparativa só é apurada com no mínimo **5 organizações qualificadas**; (ii) uma organização só integra a base com no mínimo **5 pessoas pontuadas**; (iii) o resultado exibido a qualquer participante consiste em **percentil, limiares de quartil e contagem de organizações** — jamais nome, contagem exata ou valor bruto de outra organização; (iv) nenhum dado pessoal, configuração, documento ou métrica bruta do Cliente é compartilhado com terceiros.
+
+**IV.3. Reciprocidade.** A participação é recíproca: o Cliente que contribui **acessa** sua posição comparativa; o Cliente que opta por não contribuir é excluído da base **e** não acessa a comparação. A recusa não afeta nenhum outro serviço, entregável ou condição comercial deste Contrato.
+
+**IV.4. Rede ABBA (opcional, por pessoa).** Colaboradores do Cliente que concluírem a capacitação poderão, **a critério individual e revogável a qualquer tempo**, (i) integrar a rede de campeões entre clientes da ABBA e (ii) emitir credencial verificável de capacidade, de titularidade da própria pessoa, que **não identifica o Cliente** e permanece válida após eventual desligamento. A adesão é da pessoa, não do Cliente, e sua recusa não gera consequência.
+
+**IV.5. Revogação.** O Cliente pode revogar a autorização da cláusula IV.1 a qualquer tempo, por comunicação escrita, sem justificativa e sem ônus. A revogação produz efeitos em até **30 dias**, com exclusão da contribuição do Cliente das apurações seguintes. Indicadores agregados já publicados de forma anonimizada e irreversível não são reconstituíveis e permanecem publicados.
+
+**IV.6. Caso publicável.** A eventual publicação de estudo de caso segue o Anexo III quando aplicável e, em qualquer hipótese, depende de **aprovação escrita e nominal do Cliente sobre o texto final**, com **direito de despublicação a qualquer tempo, sem justificativa**.
+
+**IV.7. Bases legais e papéis.** A contribuição da cláusula IV.1 tem por fundamento o legítimo interesse (Art. 7º, IX, LGPD) em dado agregado e anonimizado — que, uma vez anonimizado nos termos do Art. 12, deixa de ser dado pessoal. A adesão individual da cláusula IV.4 tem por fundamento o **consentimento do titular** (Art. 7º, I), colhido diretamente da pessoa e revogável por ela.
+
+> **Pontos a submeter ao advogado:** (a) se o legítimo interesse basta para IV.1 ou se convém consentimento expresso do Cliente; (b) se o padrão de sistema "contribui, salvo recusa" é sustentável ou deve ser invertido para adesão ativa; (c) redação de IV.5 sobre o que é irreversível após a agregação; (d) compatibilidade de IV.4 com as políticas de RH do Cliente.

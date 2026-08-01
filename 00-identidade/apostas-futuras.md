@@ -21,13 +21,21 @@
 
 **O que é:** pacotes por vertical (jurídico, saúde, financeiro) com material, benchmarks e agentes de prateleira por setor. Material de jurídico/serviços profissionais já existe (histórico em `abba-portal/docs/industry/`).
 
-**Gatilhos:** 3+ clientes no mesmo setor · padrões repetidos no vault do assessment-brain.
+**Decisão dos sócios (2026-08-01): não verticalizar agora.** O eixo de densidade escolhido é **forma, não indústria** — maturidade de adoção + moldura regulatória brasileira, que é o que os benchmarks do portal já calculam sem olhar setor e o que a lei fiscal padroniza em qualquer ramo ([alvo](alvo.md)). O custo dessa escolha fica registrado no próprio [alvo](alvo.md): sem densidade setorial, o cofre demora mais a virar produto de setor.
 
-## Aposta 4 — Rede de campeões entre clientes (comunidade)
+**Gatilhos (mantidos):** 3+ clientes no mesmo setor · padrões repetidos no vault do assessment-brain. Se acenderem por acaso, a decisão é reavaliada com dado.
 
-**O que é:** alumni/comunidade cruzando campeões formados em clientes diferentes — efeito de rede e retenção.
+## Aposta 4 — Ecossistema entre clientes (rede + benchmark) — **infraestrutura CONSTRUÍDA, ativação gateada**
 
-**Gatilhos:** 3+ clientes com campeões graduados · consentimento de compartilhamento entre empresas resolvido juridicamente.
+**O que é:** as três camadas do [ecossistema](ecossistema.md) — benchmark recíproco entre empresas, rede de campeões e credencial portátil entre pessoas, cofre de padrões virando boletim de mercado.
+
+**Status (2026-08-01): deixou de ser aposta de papel.** O levantamento do `abba-portal` mostrou que o mecanismo está em código e apenas invisível: benchmarks de fluência e durabilidade entre clientes (com pisos de privacidade de 5 clientes/5 pessoas), opt-in **recíproco** de contribuição em banco, credenciais verificáveis portáteis e um plano de ativação da rede em três estágios. O benchmark hoje renderiza **só para a equipe ABBA**. O que falta não é engenharia — é contrato, doutrina e clientes.
+
+**Gatilhos:**
+- [ ] **Anexo IV do [contrato](../03-comercial/contrato-sow-esqueleto.md)** validado pelo advogado (P4) — **caminho crítico irreversível**: consentimento não se retroage
+- [ ] 3+ clientes com campeões graduados → rede de campeões (Estágio 1: grupo facilitado)
+- [ ] 5+ clientes qualificados → benchmark deixa de ser interno e aparece ao patrocinador
+- [ ] 8+ clientes → primeiro boletim público de mercado
 
 ## Aposta 5 — Conselheiro Digital (o "JARVIS por cliente")
 

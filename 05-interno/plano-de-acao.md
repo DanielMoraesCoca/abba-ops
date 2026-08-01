@@ -27,6 +27,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 | P8 | Status real das parcerias | Uma checagem do prospect derruba a credibilidade | "Stack orquestrada" (verdadeiro) até haver contrato assinado |
 | P7 | Nome único dos 4 níveis | 3 escalas coexistem; a 1ª turma cristaliza o que estiver de pé | Decidir antes do 1º kickoff |
 | P4/P5 | 🔄 **Acionados (2026-07-25)** — advogado (contrato + licença 4D) e contador (regime) trabalhando; gates mantidos: assinatura só com contrato revisado, NF só com regime confirmado | Maiores prazos externos — correm em paralelo | Cobrar retorno em 1 semana |
+| P4b | 🆕 **Anexo IV — contribuição anonimizada e Rede ABBA** ([minuta pronta](../03-comercial/contrato-sow-esqueleto.md)) na mesma pauta do advogado | **Porta de uma via:** consentimento não se retroage — cliente assinado sem o anexo fica fora do [ecossistema](../00-identidade/ecossistema.md) para sempre, e o padrão "contribui salvo recusa" do sistema fica indefensável ([R22](registro-de-riscos.md)) | Enviar junto com o contrato-mãe |
 | P3 | Nome oficial do programa | Só bloqueia o site — pode esperar | Decidir junto com o site |
 | — | ✅ **Linhas `{{CONFIRMAR}}` respondidas (2026-07-24** — [registro](registro-de-decisoes.md)). Restam 2 verificações do Pedro: provedor de busca do scout + custo por execução ({{MEDIR}}) | É o que separa promessa segura de promessa quebrada | Pedro, junto com a spec |
 
@@ -34,6 +35,7 @@ Por quê nessa ordem: prospectar antes de decidir preço = improvisar na frente 
 
 Fila restante do [catálogo](../08-materiais/README.md), em ordem de impacto no funil:
 
+0. ✅ **Os quatro artefatos de posicionamento (2026-08-01)** — o que faltava para "ter algo apresentável e sólido" quando uma porta abre: a peça de abertura ([Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md), já na seção 1 do modelo da Análise ABBA) · a prova ([protocolo de prova](../04-entrega/protocolo-de-prova.md) + [modelo de caso publicável](caso-publicavel-modelo.md)) · a clareza do que se compra ([escada ABBA](../03-comercial/escada-abba.md)) · a cara da empresa ([manifesto](../00-identidade/manifesto.md) + [kit de presença](../03-comercial/kit-de-presenca.md)). Qualificação e recusa em [alvo](../00-identidade/alvo.md)
 1. **Deck de kickoff** (PPTX — roteiro pronto) → primeiro dia de cliente impecável
 2. **3 propostas de entrada em DOCX** (workshop, avaliação, sprint — md prontos, derivar do kit) → T3 para qualquer porta de entrada
 3. **Certificados + papel timbrado** → graduação e correspondência no padrão
@@ -57,7 +59,7 @@ Por quê isso importa mais que qualquer documento: o prospect não lê o repo �
 
 ## Frente D — Prospectar (só quando A+B+C = ✅)
 
-1. **Lista de 20 alvos nomeados** — tracker pronto: [`pipeline-modelo.md`](../03-comercial/pipeline-modelo.md) (perfil do [plano de negócio](../00-identidade/plano-de-negocio.md): mid-market BR, 50–500 colab., dor de IA visível; começar pela rede real dos sócios + setor jurídico/serviços profissionais)
+1. **Lista de 20 alvos nomeados** — tracker pronto: [`pipeline-modelo.md`](../03-comercial/pipeline-modelo.md). Qualificar pelo **[teste de 5 perguntas](../00-identidade/alvo.md)**, não por setor (decisão de 2026-08-01: densidade por forma, não por indústria); registrar o placar 0–5 de cada alvo. Começar pela rede real dos sócios
 2. **Cadência:** {{N}} contatos novos/semana (sócios fixam — sugestão: 10) · toda degustação aceita entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo
 3. **Meta do trimestre:** 1 cliente charter assinado (Avaliação de Prontidão como porta, programa como conversão)
 4. **Retrospectiva de 10 min após cada conversa real** — o funil melhora a cada repetição
@@ -84,7 +86,7 @@ Números baixos não são fracasso — são diagnóstico: contato→aceite baixo
 - [ ] SLA realista publicado (P9) · parcerias com texto honesto (P8) · fichas de capacidade confirmadas
 - [ ] Família de materiais completa (frente B, itens 1–3)
 - [ ] Ensaios feitos + **Cliente Zero percorrido sem improviso**
-- [ ] Contrato revisado por advogado OU alçada ativa (P4)
+- [ ] Contrato revisado por advogado OU alçada ativa (P4) — **incluindo o Anexo IV** (P4b)
 - [ ] **Conselheiro Digital ativado**: validação com LLM real + golden set calibrado + cron do sono ligado ([runbook](../06-ferramentas/runbook-ativacao.md)) — o maior ativo da empresa não pode chegar ao 1º cliente sem nunca ter rodado
 
-**Sete caixas marcadas = a ABBA não recebe um cliente "pronta no papel" — recebe pronta de verdade, porque já percorreu o caminho uma vez.**
+**Todas as caixas marcadas = a ABBA não recebe um cliente "pronta no papel" — recebe pronta de verdade, porque já percorreu o caminho uma vez.**

@@ -1,6 +1,8 @@
 # Posicionamento — ABBA (pt-BR canônico)
 
 > Fonte única do que a ABBA diz de si para fora. Adaptado do copy EN anterior (`EXTERNAL_POSITIONING_COPY.md` no abba-portal, agora histórico). Toda peça externa nova nasce daqui.
+>
+> **Companheiros:** o [manifesto](manifesto.md) dá a postura (o que acreditamos e recusamos); o [kit de presença](../03-comercial/kit-de-presenca.md) dá as falas prontas de 30s/3min/1 página; a [escada](../03-comercial/escada-abba.md) dá o que exatamente se compra em cada degrau. Este documento continua sendo a fonte do **vocabulário**.
 
 ## Headline (site, deck, tudo)
 
@@ -43,6 +45,6 @@
 1. Toda peça externa nova cita o modelo de 6 etapas ou a tese dos 70% no primeiro parágrafo.
 2. Nunca parear "ABBA" + "treinamento" como produto em material externo — treinamento é COMO entregamos a etapa 4, não O QUE vendemos.
 3. Ao listar entregáveis, liderar com o que é **verificado** (resultado projetado vs. realizado, portfólio quantificado) — é o diferencial.
-4. **O volante ABBA** (usar a partir do 3º engajamento por setor): cada cliente alimenta um cofre de padrões anonimizados — mais clientes → mais padrões → avaliações mais rápidas e certeiras → mais valor para o próximo cliente. Consultoria comum não compõe conhecimento; a ABBA compõe. É o fosso que cresce sozinho.
+4. **O volante ABBA** (usar a partir do 3º engajamento — por **forma**, não por setor): cada cliente alimenta um cofre de padrões anonimizados e uma régua comparativa entre clientes — mais clientes → mais padrões → avaliações mais rápidas e certeiras → mais valor para o próximo. Consultoria comum não compõe conhecimento; a ABBA compõe. É o fosso que cresce sozinho. **Enquanto o cofre estiver vazio, isto é tese, não prova** — falar como visão, nunca como resultado ([ecossistema](ecossistema.md)).
 4. Preço externo: sempre programa primeiro, produtos de entrada depois ("se ainda não for o momento…").
 5. Assinaturas e rodapés usam somente **abbaservices.com.br** — nunca URLs de ferramenta interna.

@@ -18,6 +18,7 @@
 | 10 Conselho | **Conselheiro Digital** (`abba brain brief` rascunha o material; `benchmark` é a prova para a diretoria) + relatórios | Funcional | O brief nasce rascunhado pelo ciclo noturno e **exige curadoria e assinatura do sócio** antes de qualquer uso com o cliente |
 | Transversal | **Conselheiro Digital / Dossiê Vivo** (`src/brain/` no assessment-brain) — memória bitemporal por cliente, ciclo noturno com teto de gasto, diário de decisões→resultados, auditoria da própria memória, playbooks e benchmark de tenure | **Construído (Fases 0–2 + Ondas 1–3), suíte 414/414** | **Não ativado**: falta validação com LLM real, golden set calibrado e cron ligado — ver [runbook de ativação](runbook-ativacao.md). Operação diária no [dossiê vivo](../04-entrega/dossie-vivo-conselheiro-digital.md) |
 | 11 Encerramento | Pacote de handover + vault (`abba outcome`) | Funcional | — |
+| Transversal (ecossistema) | **Portal**: benchmark de fluência/durabilidade entre clientes, credencial verificável portátil, opt-in recíproco de contribuição | **Construído e desligado** — o benchmark só renderiza para equipe ABBA | Pisos de privacidade de 5 clientes/5 pessoas; **depende do Anexo IV do [contrato](../03-comercial/contrato-sow-esqueleto.md)** ([ecossistema](../00-identidade/ecossistema.md)) |
 
 ## Leitura executiva
 

@@ -20,9 +20,11 @@
 
 ## 3. Mercado-alvo
 
-- **Perfil:** empresas brasileiras de médio porte (50–500 colaboradores), faturamento {{FAIXA_FATURAMENTO_ALVO}}, que já tentaram algo com IA e não escalou, ou sentem urgência do tema no conselho.
-- **Setores iniciais (beachhead):** jurídico e serviços profissionais (material setorial já existente), expandindo por indicação.
-- **Comprador:** CEO/diretoria (programa) · Jurídico/DPO (sprint LGPD) · o dono da dor (produtos de entrada).
+- **Perfil:** empresas brasileiras de médio porte (50–500 colaboradores), faturamento **R$ 50–500 milhões/ano** (proposta, sócios confirmam), que já tentaram algo com IA e não escalou, ou sentem urgência do tema no conselho.
+- **Beachhead — por forma, não por setor** (decisão dos sócios, 2026-08-01): empresa que já tentou e não escalou **+** tem uma dor financeira já medida. O eixo de densidade é maturidade de adoção + moldura regulatória brasileira, não indústria. Material setorial de jurídico/serviços profissionais segue como ativo reutilizável, não como estratégia de entrada.
+- **Comprador:** CEO/diretoria (programa) · CFO/Controladoria (porta financeira) · Jurídico/DPO (sprint LGPD) · o dono da dor (produtos de entrada).
+
+> **Qualificação e critérios de recusa:** [`alvo.md`](alvo.md) — o teste de 5 perguntas e as sete situações em que a resposta é não.
 
 ## 4. Oferta e receita
 
