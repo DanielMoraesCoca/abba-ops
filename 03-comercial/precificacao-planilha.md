@@ -1,4 +1,6 @@
-# Planilha de Precificação — preencher pelos sócios
+# Planilha de Precificação
+
+> **Status (2026-08-02):** os §1–§5 foram efetivamente preenchidos e decididos na [proposta do especialista](precificacao-proposta-especialista.md) (cenário C → tabela v1); os `{{ }}` abaixo ficam como molde para a v2. **A seção 6 (registro de reações a preço) é a parte VIVA deste arquivo** — preencher a cada conversa real. — preencher pelos sócios
 
 > Preencher **numa sentada, juntos**. Seguir a [metodologia](precificacao-metodologia.md). Ao final: transcrever para [`tabela-de-precos.md`](tabela-de-precos.md), registrar no [registro de decisões](../05-interno/registro-de-decisoes.md) (pendência P1). Campos `{{ }}` = só os sócios podem responder.
 
@@ -40,7 +42,7 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 | Workshop Shadow AI (prep + sessão 90min + relatório 48h + follow-up) | {{ }} | R$ {{ }} | R$ {{ }} |
 | Avaliação de Prontidão (2 semanas: kickoff, pré-trabalho, entrevista, briefing, relatório) | {{ }} | R$ {{ }} | R$ {{ }} |
 | Sprint LGPD + IA (2–3 semanas) | {{ }} | R$ {{ }} | R$ {{ }} |
-| Programa completo (avaliação + construção de 1–3 agentes + capacitação híbrida + 30d operação) | {{ }} | R$ {{ }} | R$ {{ }} |
+| Programa completo (avaliação + protótipo validado + construção de 1–3 agentes + capacitação híbrida + 30d operação) | {{ }} | R$ {{ }} | R$ {{ }} |
 | Manutenção mensal (monitoramento + ajustes + relatório) | {{ }}/mês | R$ {{ }}/mês | R$ {{ }}/mês |
 | Mini-ciclo por caso de uso adicional | {{ }} | R$ {{ }} | R$ {{ }} |
 

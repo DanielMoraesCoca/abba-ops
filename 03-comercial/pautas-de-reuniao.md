@@ -11,7 +11,7 @@
 | 0–3 | Abertura | Agradecimento + "para eu aproveitar bem seus 30 minutos, posso fazer perguntas antes de falar da ABBA?" |
 | 3–15 | Descoberta | · O que a empresa faz e onde dói hoje? · Já pilotaram IA? O que aconteceu depois do piloto? · Quem decide um investimento desse tipo? · Existe meta declarada da diretoria para IA? · Prazo/orçamento em mente? |
 | 15–22 | ABBA em 45s + espelho | Elevator de 45s (ver posicionamento) + conectar 2 achados da descoberta ao nosso modelo de 6 etapas |
-| 22–28 | Próximo passo | Propor a degustação gratuita (análise por informação pública) OU o produto de entrada adequado: dor difusa → Workshop Shadow AI · decisão de investimento → Avaliação de Prontidão · risco/compliance → Sprint LGPD |
+| 22–28 | Próximo passo | **Nunca "oferecer" a análise gratuita — chegar com ela FEITA** (decisão 2026-07-27): agendar a apresentação do [Mapa de Vazamento](mapa-de-vazamento.md) já pronto, OU o produto de entrada adequado: dor difusa → Workshop Shadow AI · decisão de investimento → Avaliação de Prontidão · risco/compliance → Sprint LGPD · **já tem IA rodando → Conselheiro de IA** |
 | 28–30 | Fechamento | Confirmar próximo passo com data. Registrar tudo na pasta do lead no Drive |
 
 **Depois:** e-mail de follow-up nº 1 ([sequência](emails-follow-up.md)) no mesmo dia.
@@ -20,7 +20,7 @@
 
 **Objetivo:** entregar valor real de graça, demonstrar o método, e converter para produto pago.
 
-1. (5) Reenquadrar: "isto foi feito só com informação pública — imagine com os dados de dentro"
+1. (5) **Abrir pela primeira página: o Mapa de Vazamento** — a faixa em R$, o vetor, as 3 premissas com fonte. Reenquadrar: "isto foi feito só com informação pública — imagine com os dados de dentro"
 2. (20) Percorrer o brief: hipóteses de oportunidade, perguntas que faríamos, o que o método de 25 dimensões olharia
 3. (10) Reação deles: quais hipóteses acertamos? o que surpreendeu?
 4. (7) Ponte: o que a avaliação profunda revelaria que isto não pode revelar

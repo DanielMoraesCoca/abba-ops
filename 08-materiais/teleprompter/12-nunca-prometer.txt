@@ -28,9 +28,12 @@ X SSO corporativo /
   procurement enterprise
   (autenticacao interina)
 X Benchmarks entre clientes
-  (exige 3+ no vault)
-X Forum/comunidade entre
-  clientes (aposta futura)
+  (piso: 5 clientes com 5+
+  pessoas cada - construido,
+  liga com massa)
+X Rede entre clientes ANTES
+  do 3o cliente (mecanismo
+  pronto; sem data)
 X CrewAI embutido no portal
   (a licenca de 12 meses ao
   graduar E promessa ok)

@@ -16,7 +16,8 @@ OPERACAO: monitoramento +
 SLA + relatorio mensal
 EVOLUCAO: + horas mensais
 de melhoria + plataforma
-ativa (a atual, R$ 9,5k)
+ativa + RITUAL SEMANAL de
+20 min (a atual, R$ 9,5k)
 ESTRATEGIA: + Conselheiro
 de IA trimestral embutido
 
@@ -36,6 +37,12 @@ Frase certa: "monitoramento
 automatizado 24/7 com canal
 de emergencia para incidentes
 criticos".
+
+O RITUAL SEMANAL (Evolucao+)
+20 min, 4 itens: o que venceu,
+qual gatilho disparou, o que
+decidimos, o que vamos medir.
+A gente APARECE toda semana.
 
 QUANDO
 Estagio 09, pos go-live.

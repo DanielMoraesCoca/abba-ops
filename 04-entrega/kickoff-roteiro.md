@@ -1,4 +1,4 @@
-# Roteiro do Kickoff (deck de 10–12 slides)
+# Roteiro do Kickoff (deck de 12–13 slides)
 
 > Preparar a partir deste outline para cada cliente (60–90 min de reunião). Exportar o deck preenchido para `02 Clientes/<Nome>/02 Onboarding/`. O momento mais importante é o **slide 5** — os objetivos declarados pela diretoria viram o baseline de todo o relacionamento.
 

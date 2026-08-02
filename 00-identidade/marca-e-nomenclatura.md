@@ -31,7 +31,7 @@
 1. **Nome externo ≠ nome de ferramenta.** Cliente nunca ouve "assessment-brain", "abba-portal", "scout", "tenant" — ouve os nomes da coluna oficial.
 2. **Domínio único: `abbaservices.com.br`** em toda assinatura, rodapé e material. Proibido usar URLs `*.vercel.app` com prospect.
 3. **Idioma:** tudo externo em pt-BR. Termos em inglês só quando consagrados (Shadow AI, kickoff, sprint).
-4. Identidade visual (logo, cores, fontes): a definir; arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
+4. Identidade visual: **definida** (navy `#1B2A4A` + dourado `#C2A35B` — [identidade-visual](identidade-visual.md); logo em [`../08-materiais/marca/`](../08-materiais/README.md)); arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
 
 ## Histórico
 

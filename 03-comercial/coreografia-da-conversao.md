@@ -47,7 +47,7 @@ Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) a
 
 **3. Presencial vs. remoto?** T0/T1 remotos (baixo atrito). **T2 presencial sempre que viável** — a apresentação da Análise é o momento de maior conversão e o presencial multiplica o impacto. Kickoff: sempre presencial (o kit da Academy foi desenhado para isso).
 
-**4. Site antes de prospectar?** Não (já decidido — aposta futura 2). A degustação manual apresentada ao vivo converte melhor que um widget, e aprendemos o que funciona antes de automatizar. O que precisa existir antes de prospectar não é o site — é o e-mail @abbaservices.com.br (P2).
+**4. Site antes de prospectar?** Não — e a aposta 2 já foi ✅ realizada em outra forma: o **assessment web está no ar** (`assessment.abbaservices.com.br`) como porta digital, faltando só o alinhamento de marca/gating (R4/R16) antes de abrir ao público. A apresentação AO VIVO continua sendo onde a conversão acontece. E-mail @abbaservices.com.br: ✅ ativo (P2, 2026-07-25).
 
 ## Ser o melhor nisso: o regime de ensaio
 

@@ -8,7 +8,7 @@ Lead qualificado pediu proposta, ou a apresentação da degustação ([estágio 
 ## Checklist
 
 - [ ] Escolher o produto certo: dor difusa/curiosidade → **Workshop Shadow AI** · decisão de investimento em IA → **Avaliação de Prontidão** · dor jurídica/compliance → **Sprint LGPD** · avaliação já feita + apetite confirmado → **Programa Completo**
-- [ ] Confirmar que a [tabela de preços](../03-comercial/tabela-de-precos.md) v1 existe — **sem tabela, não há proposta** (pendência P1)
+- [ ] Preços SOMENTE da [tabela v1 vigente](../03-comercial/tabela-de-precos.md) (fixada 2026-07-23) — nunca improvisar valor
 - [ ] Copiar o template correspondente de [`03-comercial/`](../03-comercial/) e preencher TODOS os `{{CAMPOS}}` (nada de placeholder sobrando)
 - [ ] Personalizar com as dores anotadas na descoberta (palavras do prospect, não as nossas)
 - [ ] Revisão cruzada: o outro sócio lê antes do envio (4 olhos em tudo que sai)

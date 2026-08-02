@@ -5,7 +5,7 @@
 ## Estrutura (11 seções) e conteúdo-base
 
 ### 1. Sumário Executivo
-Programa estruturado de transformação em IA que conduz a organização do diagnóstico à operação **AI Native em todos os níveis hierárquicos**, combinando três frentes que se retroalimentam: **consultoria de implementação, plataforma de agentes e portal de capacitação contínua**. Diferente de consultorias que entregam relatórios e slides: a ABBA entrega **sistemas funcionando e pessoas capacitadas**. Stat-cards: `{{12–16}} semanas · 3 frentes · 3 níveis · {{SLA — ver P9}}`.
+Programa estruturado de transformação em IA que conduz a organização do diagnóstico à operação **AI Native em todos os níveis hierárquicos**, combinando três frentes que se retroalimentam: **consultoria de implementação, plataforma de agentes e portal de capacitação contínua**. Diferente de consultorias que entregam relatórios e slides: a ABBA entrega **sistemas funcionando e pessoas capacitadas**. Stat-cards: `{{12–16}} semanas · 3 frentes · 3 níveis · monitoramento automatizado 24/7 + S1 em 4h corridas` (o SLA honesto de [sla-manutencao](../04-entrega/sla-manutencao.md)).
 
 ### 2. Contexto e Desafios (personalizar com a degustação/descoberta)
 **Situação** → **Complicação** (custo da inação: cada mês sem implementação é produtividade desperdiçada e distância ampliada) → **Desafios identificados** (tabela: maturidade digital, dados fragmentados, adoção e cultura, competitividade) → **Resolução:** *a ABBA encontra a empresa onde ela está na jornada e conduz a transformação inteira, com entrega tangível em cada etapa. IA não como ferramenta isolada, mas como remodelação da organização.*
@@ -21,14 +21,16 @@ Programa estruturado de transformação em IA que conduz a organização do diag
 As três perguntas (espinha pedagógica): **O que posso parar de fazer? O que posso começar a fazer? O que ainda preciso fazer?** Resultado: não uma empresa que usa IA pontualmente — uma empresa remodelada.
 
 ### 4. A Jornada ABBA (modular — cada etapa justifica o próprio investimento)
+- **4.0 Análise ABBA / Mapa de Vazamento (gratuita, já entregue):** a porta de entrada — 2 páginas com uma faixa em R$, feitas com informação pública; esta proposta personaliza as seções 1–2 com o que ela encontrou.
 - **4.1 Assessment Profundo ({{4–5}} semanas):** diagnóstico ativo com a ferramenta proprietária em **25 dimensões** organizadas em 9 grupos (do conselho à linha de frente: processos, dados, pessoas, tecnologia, governança, estratégia e mais). Entregáveis: Relatório de Maturidade (scoring por dimensão + espectro de 5 estágios) · Mapa de Oportunidades com ROI · Arquitetura de Referência · Plano Diretor 6–12 meses · Business Case + change management. *(Nunca prometer "benchmarks de mercado" neste entregável — a comparação entre clientes só liga com 5+ clientes; [ecossistema](../00-identidade/ecossistema.md).)*
 - **4.2 Protótipo de Caso de Uso ({{6–8}} semanas):** agente funcional em produção limitada, com dados reais, validado com usuários-chave — reduz o risco antes do deployment total.
 - **4.3 Deployment Completo:** expansão para a organização em **ABBA Cloud** (gerenciada: menor custo de entrada, atualizações automáticas) ou **On-Premise** (soberania de dados: saúde, financeiro, governo), treinamento operacional, monitoramento, handover formal com SLAs.
 - **4.4 Portal de Capacitação (contínuo):** seção 5.
-- **4.5 Serviços Gerenciados:** a ABBA opera e evolui a solução — camada de inteligência gerenciada, sem exigir time interno especializado.
+- **4.5 Serviços Gerenciados (com a nossa presença):** a ABBA opera e evolui a solução em **3 camadas** (Operação · Evolução · Estratégia) — nas camadas Evolução+, **ritual semanal de 20 minutos** com sócio (o que venceu · gatilhos · decisões · o que vamos medir) além do relatório mensal e do conselho trimestral.
+- **4.6 Conselheiro de IA (a criação nova):** a cadeira do estrategista de IA do lado do cliente da mesa — presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](conselheiro-de-ia.md)); embutido na camada Estratégia ou contratável avulso.
 
-### 5. Portal de Capacitação em IA
-Aprendizado contínuo e gamificado para todos os colaboradores. **Aprender desbloqueia ferramentas** — o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
+### 5. Capacitação híbrida — plataforma + presencial
+A capacitação é **híbrida por desenho**: kickoff e workshops de marco **presenciais com os fundadores** + aprendizado contínuo e gamificado na plataforma para todos os colaboradores. **Aprender desbloqueia ferramentas** — o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
 
 | Nível | Foco | Desbloqueia |
 |---|---|---|
@@ -56,10 +58,10 @@ Conteúdo próprio (ABBA Academy — [materiais finais](../08-materiais/README.m
 Papéis ABBA: **Engagement Lead · AI Architect · Data Engineer · Agent Developer · Enablement Lead** *(nota interna: hoje são chapéus dos 2 sócios + rede de especialistas — apresentar como papéis, jamais como headcount)*. Governança: Status Report semanal · Steering Committee quinzenal · War Room técnico sob demanda · Dashboard de KPIs contínuo.
 
 ### 9. Arquitetura e Ecossistema
-A ABBA **orquestra** o ecossistema, sem vendor lock-in: roteamento de LLMs (Claude/OpenAI/Gemini) por custo e performance · CrewAI para orquestração multi-agente · infraestrutura {{Azure/AWS}} · camada de dados · portal de capacitação. **Agentes com conhecimento institucional:** o operador pergunta sobre processo, o gestor pede análise de indicadores, o executivo pede impacto estratégico — o mesmo cérebro responde nas três altitudes. Treinamento deixa de ser evento e vira serviço contínuo. {{Parcerias: texto conforme P8.}}
+A ABBA **orquestra** o ecossistema, sem vendor lock-in: roteamento de LLMs (Claude/OpenAI/Gemini) por custo e performance · CrewAI para orquestração multi-agente · infraestrutura {{Azure/AWS}} · camada de dados · portal de capacitação. **Agentes com conhecimento institucional:** o operador pergunta sobre processo, o gestor pede análise de indicadores, o executivo pede impacto estratégico — o mesmo cérebro responde nas três altitudes. Treinamento deixa de ser evento e vira serviço contínuo. Parcerias: **stack orquestrada com parceiros oficiais e uso confirmado** (texto aprovado em P8, 2026-07-23) — nunca afirmar contrato formal onde houver apenas parceria de uso; comprovantes em `04 Interno/` no Drive.
 
-### 10. Termos, SLAs e Garantias
-⚠️ **Prometer apenas o que o [SLA vigente](../04-entrega/sla-manutencao.md) sustenta — pendência P9 alinha estes números à capacidade real.** Estrutura: disponibilidade {{%}} · janela de suporte {{ }} · resposta a incidente crítico {{ }} · garantia de {{30}} dias do protótipo · ciclo formal de revisão dos entregáveis · documentação completa · **Segurança:** LGPD total, NDA, ambiente segregado com audit trail, opção on-premise · **PI:** metodologia, frameworks e plataforma são da ABBA; outputs (relatórios, diagnósticos, agentes treinados com dados do cliente, documentação) são do cliente; dados devolvidos ou destruídos ao final · **Validade:** 30 dias, valores em BRL, impostos conforme regime aplicável.
+### 10. Termos e SLAs
+Prometer apenas o que o [SLA vigente](../04-entrega/sla-manutencao.md) sustenta (P9 resolvida em 2026-07-23): monitoramento automatizado 24/7 · suporte humano 9h–18h úteis · S1 crítico em 4h corridas (8h–22h) · disponibilidade-alvo 99,5%/mês · **ciclo de correção de {{30}} dias do protótipo** (defeito coberto — nunca usar a palavra "garantia" em material: E6 não ativada; a frase certa é a do [kit](kit-de-presenca.md): "garantimos o método") · ciclo formal de revisão dos entregáveis · documentação completa · **Segurança:** LGPD total, NDA, ambiente segregado com audit trail, opção on-premise · **PI:** metodologia, frameworks e plataforma são da ABBA; outputs (relatórios, diagnósticos, agentes treinados com dados do cliente, documentação) são do cliente; dados devolvidos ou destruídos ao final · **Validade:** 30 dias, valores em BRL, impostos conforme regime aplicável.
 
 ### 11. Por Que a ABBA
 > A maioria das consultorias de IA entrega slides. A ABBA entrega sistemas funcionando e pessoas capacitadas.

@@ -21,7 +21,8 @@ flowchart TD
     end
     subgraph FUNIL["ABERTURA E ESCADA"]
         MV[Mapa de Vazamento — grátis, um número em R$] --> AV[Avaliação 25 dimensões — R$ 28k]
-        AV --> PR[Programa 16 semanas — R$ 185k]
+        AV --> PT[Protótipo validado — GO/NO-GO com dados reais]
+        PT --> PR[Programa 16 semanas — R$ 185k]
         PR --> MA[Manutenção — R$ 9,5k/mês]
         MA --> CO[Conselheiro de IA / Estratégia]
     end

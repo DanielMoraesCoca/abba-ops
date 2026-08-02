@@ -26,7 +26,7 @@ Em conjunto, **"Partes"**.
 
 ## Cláusula 2 — Serviços
 
-**2.1.** Os serviços da ABBA são prestados segundo sua metodologia proprietária, podendo compreender, conforme o Anexo I: (i) diagnóstico e avaliação de oportunidades de IA (análise em 25 dimensões, entrevistas, revisão documental); (ii) capacitação via plataforma proprietária e sessões presenciais; (iii) construção, integração e implantação de agentes de IA; (iv) operação gerenciada e manutenção; (v) governança e alinhamento executivo.
+**2.1.** Os serviços da ABBA são prestados segundo sua metodologia proprietária, podendo compreender, conforme o Anexo I: (i) diagnóstico e avaliação de oportunidades de IA (análise em 25 dimensões, entrevistas, revisão documental); (ii) protótipo de validação de caso de uso, com dados reais e critério de aceite definido previamente (decisão GO/NO-GO); (iii) capacitação via plataforma proprietária e sessões presenciais; (iv) construção, integração e implantação de agentes de IA; (v) operação gerenciada e manutenção com presença recorrente; (vi) governança e alinhamento executivo.
 
 **2.2.** Todo agente de IA implantado conta com pontos de aprovação humana definidos e inventário de decisões automatizadas mapeado aos requisitos do Art. 20 da LGPD.
 

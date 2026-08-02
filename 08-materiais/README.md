@@ -22,7 +22,7 @@
 
 **Fundamentos embutidos:** casos reais de alucinação (Mata v. Avianca + precedentes brasileiros TJSC/TST/STJ/OAB Rec. 001/2024) · LGPD/Shadow AI com o Semáforo de Dados como espinha de privacidade · normas de microlearning (1 objetivo/vídeo, gancho em 8s, ação de 60s no FAÇA AGORA).
 
-**Recompensa de conclusão:** certificado ABBA + **licença CrewAI de 12 meses** (consistente com o modelo de serviço).
+**Recompensa de conclusão:** certificado ABBA + **licença CrewAI de 12 meses** (consistente com o modelo de serviço; *condicionada à via de contratação CrewAI ativa — R9: não prometer em proposta antes do setup*).
 
 **⚠️ Atribuição obrigatória (compliance):** o Método 4D é adaptado do *AI Fluency Framework* (Rick Dakan, Joseph Feller e Anthropic), licenciado **CC BY-NC-SA 4.0**. O texto de atribuição está no próprio material e deve aparecer sempre que o 4D aparecer. **A cláusula NC (não-comercial) precisa de validação do advogado para uso em programa pago — incluída na pauta P4.**
 
@@ -42,7 +42,7 @@
 - **Estrutura e conteúdo de referência (markdown):** [`../03-comercial/proposta-programa-completo.md`](../03-comercial/proposta-programa-completo.md) (reescrita sobre esta estrutura)
 - **Instância original (com nome do cliente):** Drive → `01 Comercial/Propostas enviadas/` — **nunca em git**
 
-**Estrutura (11 seções):** Sumário Executivo (com stat-cards) → Contexto e Desafios (situação/complicação/desafios/resolução) → Transformação AI Native em 3 Níveis (estratégia/workflows/pessoas + as 3 perguntas) → A Jornada ABBA (modular: Assessment 4–5 sem → Protótipo 6–8 sem → Deployment → Portal → Serviços Gerenciados) → Portal de Capacitação (4 fases com desbloqueio de ferramentas) → Metodologia (5 fases com gates) → Cronograma (16 semanas, critérios de aceite) → Equipe e Governança → Arquitetura e Ecossistema → Termos/SLAs/Garantias → Por Que a ABBA.
+**Estrutura (11 seções):** Sumário Executivo (com stat-cards) → Contexto e Desafios (situação/complicação/desafios/resolução) → Transformação AI Native em 3 Níveis (estratégia/workflows/pessoas + as 3 perguntas) → A Jornada ABBA (modular: Assessment 4–5 sem → Protótipo 6–8 sem → Deployment → Portal → Serviços Gerenciados com presença semanal → Conselheiro de IA) → Portal de Capacitação (4 fases com desbloqueio de ferramentas) → Metodologia (5 fases com gates) → Cronograma (16 semanas, critérios de aceite) → Equipe e Governança → Arquitetura e Ecossistema → Termos e SLAs → Por Que a ABBA.
 
 **Numeração de referência:** `ABBA-AAAA-NNN` sequencial (próxima: ABBA-2026-002). Registrar cada emissão na pasta do lead.
 
@@ -81,14 +81,14 @@ Os modelos legados foram **regenerados do zero** no padrão vigente — mesma id
 
 **Regra:** os DOCX legados do Drive viram ARQUIVO após a migração — quem vale são estes. Os markdown correspondentes em `04-entrega/` são a documentação do processo; os DOCX são o que o cliente vê.
 
-## 6. O que ainda NÃO existe (fila de produção de materiais)
+## 6. Inventário de materiais e fila restante (2 pendências reais: vídeos e cards — o resto ✅)
 
 Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [padrão visual](../00-identidade/identidade-visual.md):
 
 | Material | Uso | Status |
 |---|---|---|
 | Deck institucional (PPTX, **13 slides** — regenerado 2026-08-01: escada com artefatos, diário de decisões, slide "promessas × recusas", CTA do Mapa de Vazamento) | 2ª reunião em diante — roteiro slide a slide no [kit de presença](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
-| Deck de kickoff (PPTX, 12 slides, com logo) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) |
+| Deck de kickoff (PPTX, 12–13 slides com o pré-mortem 6b, com logo) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | 3 propostas de entrada (DOCX) | workshop · avaliação · sprint LGPD | ✅ em [`modelos/`](modelos/) (`proposta-*-modelo.docx`) |
 | Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | ✅ regularizado (`modelos/relatorio-maturidade-modelo.docx` + oportunidades + plano diretor) |

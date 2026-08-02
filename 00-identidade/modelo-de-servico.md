@@ -4,7 +4,7 @@
 
 ## O que a ABBA é
 
-A ABBA é uma **consultoria de transformação em IA para empresas brasileiras**. Não vendemos treinamento, não vendemos ferramenta, não vendemos piloto: instalamos capacidade de IA — soluções funcionando em produção E uma organização que sabe trabalhar com elas — sempre dirigida pelos objetivos da diretoria do cliente.
+A ABBA é uma **consultoria de transformação em IA para empresas brasileiras**. Não vendemos treinamento, não vendemos ferramenta, não vendemos piloto solto que morre em slide: validamos com protótipo real (GO/NO-GO com números) e instalamos capacidade de IA — soluções funcionando em produção E uma organização que sabe trabalhar com elas — sempre dirigida pelos objetivos da diretoria do cliente.
 
 **A tese:** 70% do valor da transformação em IA vive em pessoas, processos e cultura. Fornecedores vendem os outros 30%. Nós instalamos os 70% — e provamos com resultado verificado.
 
@@ -15,7 +15,7 @@ A ABBA é uma **consultoria de transformação em IA para empresas brasileiras**
       ↓
 2. AVALIAÇÃO PROFUNDA  paga — 25 dimensões, do conselho à linha de frente
       ↓
-3. CONSTRUÇÃO          agentes de IA sob medida, on-premises ou nuvem
+3. CONSTRUÇÃO          protótipo validado (GO/NO-GO) → agentes sob medida, on-prem ou nuvem
       ↓
 4. TRANSFORMAÇÃO       capacitação híbrida: plataforma + presencial, todos os níveis
       ↓
@@ -26,13 +26,13 @@ A ABBA é uma **consultoria de transformação em IA para empresas brasileiras**
 ```
 
 ### 1. Degustação (gratuita)
-A pessoa acessa o site e recebe uma amostra real do nosso método: uma análise da empresa dela feita **apenas com informação pública** (hoje: gerada internamente com a ferramenta de scout e enviada em PDF; futuro: widget público no site). O gancho honesto: *"isto foi feito de fora — imagine com os dados de dentro."*
+A pessoa acessa o site e recebe uma amostra real do nosso método: uma análise da empresa dela feita **apenas com informação pública** (o **assessment web já está no ar** — `assessment.abbaservices.com.br`, aposta 2 ✅ —, com curadoria dos sócios; a primeira página é o [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md), uma faixa em R$). O gancho honesto: *"isto foi feito de fora — imagine com os dados de dentro."*
 
 ### 2. Avaliação profunda (o produto-porta)
 Análise da empresa em **25 dimensões proprietárias**: entrevistas em todos os níveis (conselho → C-level → gestores → linha de frente), revisão documental, quantificação financeira. Sai um portfólio ranqueado de oportunidades de IA e um caminho recomendado — defensável, com dado por trás de cada afirmação.
 
 ### 3. Construção e implantação
-Construímos os agentes de IA aprovados pela diretoria — sob medida, **diretamente com CrewAI**, com pontos de aprovação humana e integrados aos sistemas do cliente — e implantamos **onde o cliente quiser**: na infraestrutura dele (on-premises) ou em nuvem gerenciada por nós.
+**Começa com um protótipo de validação**: um agente funcional com dados reais, validado com usuários-chave — e a diretoria decide GO/NO-GO com números antes de escalar. É o que separa o nosso caminho do piloto solto do mercado: o protótipo tem métrica combinada antes e é um marco de aceite (e de pagamento) do programa. Aprovado o GO, construímos os agentes de IA aprovados pela diretoria — sob medida, **diretamente com CrewAI** (via de contratação em setup — prazo de construção combinado após a conta ativa, risco R9), com pontos de aprovação humana e integrados aos sistemas do cliente — e implantamos **onde o cliente quiser**: na infraestrutura dele (on-premises) ou em nuvem gerenciada por nós.
 
 ### 4. Transformação (capacitação híbrida)
 Mudar todos os níveis da organização, não só os processos:
@@ -41,7 +41,7 @@ Mudar todos os níveis da organização, não só os processos:
 - **Topo da progressão:** acesso a ferramentas de criação de agentes (CrewAI) para o colaborador construir as próprias soluções do dia a dia.
 
 ### 5. Manutenção
-Os agentes implantados viram responsabilidade contínua: monitoramento, ajuste fino, evolução, relatório mensal de impacto — sob [SLA](../04-entrega/sla-manutencao.md), em **3 camadas** (Operação · Evolução · Estratégia, esta com o Conselheiro de IA embutido). Receita recorrente da ABBA; tranquilidade do cliente.
+Os agentes implantados viram responsabilidade contínua **com a nossa presença**: monitoramento, ajuste fino, evolução, relatório mensal de impacto e o **[ritual semanal de 20 minutos](../04-entrega/ritual-semanal.md)** (camadas Evolução/Estratégia) — sob [SLA](../04-entrega/sla-manutencao.md), em **3 camadas** (Operação · Evolução · Estratégia, esta com o Conselheiro de IA embutido). Receita recorrente da ABBA; tranquilidade do cliente.
 
 ### 6. Alinhamento com a diretoria (a constante)
 Não é uma etapa final — é o **sistema de direção** que atravessa todas as outras. Como produto vendável, tem nome próprio: **[Conselheiro de IA ABBA](../03-comercial/conselheiro-de-ia.md)** (CAIO fracionário) — contratável na renovação ou direto por empresas que já têm IA rodando. Ritual estruturado ([pauta](../04-entrega/pauta-conselho.md)): resultados contra os objetivos **declarados pela diretoria** → recomendações da ABBA → decisão do cliente → registro. Nós recomendamos com convicção; eles decidem. A cada trimestre, o plano se realinha à visão de onde eles querem levar a empresa.

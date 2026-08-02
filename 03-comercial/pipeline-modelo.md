@@ -4,7 +4,7 @@
 
 ## Onde achar os 20 primeiros (em ordem de conversão esperada)
 1. **Rede real dos sócios** (ex-colegas, FRP, clientes de trabalhos passados) — indicação morna converte 5× mais que frio
-2. **Setor jurídico/serviços profissionais em Brasília** (o beachhead do plano de negócio — material setorial existe)
+2. **Beachhead por FORMA, não por setor** (decisão 2026-08-01, [alvo](../00-identidade/alvo.md)): já tentou IA e não escalou + dor financeira medida + obrigação com data. Registrar o **placar 0–6** do teste de alvo por lead (sem placar, não avança). Material de jurídico segue como ativo, não como filtro
 3. Empresas que já apareceram no radar (ex.: os alvos das análises de teste — Brasal, Grupo Santa, ABC DataSaúde — JÁ TÊM análise pronta: T0 quente)
 4. Mid-market DF/GO com sinal de dor: vagas de "analista de processos", notícias de expansão, concorrente adotando IA
 5. **Porta lateral do [Conselheiro de IA](conselheiro-de-ia.md):** empresas que JÁ anunciaram adoção de IA (imprensa, LinkedIn, vagas de "IA") — não precisam do programa; a oferta é a cadeira de direção. Objeção "já temos IA" deixa de desqualificar o lead: reclassificar como alvo do Conselheiro

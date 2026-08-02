@@ -4,11 +4,11 @@
 
 ## 1. Tese
 
-**O problema:** 70–80% dos projetos de IA corporativa falham — e as falhas não são técnicas, são de adoção. O valor está 70% em pessoas, processos, cultura e governança; o mercado vende os outros 30% (ferramentas, pilotos, cursos).
+**O problema:** 70–80% dos projetos de IA corporativa falham — e as falhas não são técnicas, são de adoção. O valor está 70% em pessoas, processos, cultura e governança; o mercado vende os outros 30% (ferramentas, pilotos sem métrica, cursos).
 
 **A lacuna de mercado:** a Fortune 500 é atendida por alianças de elite (consultorias globais + laboratórios de IA) a milhões de dólares por engajamento. O mid-market brasileiro é atendido por vendedores de ferramenta e consultorias de slide. **Ninguém instala os 70% no mid-market brasileiro.** Essa é a cunha.
 
-**A solução:** o [modelo de 6 etapas](modelo-de-servico.md) — degustação → avaliação profunda → construção → transformação híbrida → manutenção → alinhamento com a diretoria.
+**A solução:** o [modelo de 6 etapas](modelo-de-servico.md) — degustação gratuita → avaliação profunda → protótipo validado (GO/NO-GO) → construção → transformação híbrida (plataforma + presencial) → manutenção com presença semanal → Conselheiro com a diretoria.
 
 ## 2. Diferenciais (por que a ABBA e não outro)
 
@@ -24,7 +24,7 @@
 - **Beachhead — por forma, não por setor** (decisão dos sócios, 2026-08-01): empresa que já tentou e não escalou **+** tem uma dor financeira já medida. O eixo de densidade é maturidade de adoção + moldura regulatória brasileira, não indústria. Material setorial de jurídico/serviços profissionais segue como ativo reutilizável, não como estratégia de entrada.
 - **Comprador:** CEO/diretoria (programa) · CFO/Controladoria (porta financeira) · Jurídico/DPO (sprint LGPD) · o dono da dor (produtos de entrada).
 
-> **Qualificação e critérios de recusa:** [`alvo.md`](alvo.md) — o teste de 5 perguntas e as sete situações em que a resposta é não.
+> **Qualificação e critérios de recusa:** [`alvo.md`](alvo.md) — o teste de 6 perguntas (5 + a de calendário) e as sete situações em que a resposta é não.
 
 ## 4. Oferta e receita
 
@@ -32,9 +32,10 @@
 |---|---|---|
 | Entrada | Workshop Shadow AI · Avaliação de Prontidão · Sprint LGPD | Pontual, baixo atrito, converte para o programa |
 | Herói | Programa Completo de Transformação | Projeto, alto valor |
-| Recorrente | Manutenção + continuidade da plataforma + ritual trimestral · mini-ciclos por caso de uso | Assinatura — o objetivo de longo prazo é a base recorrente pagar os custos fixos |
+| Recorrente | Manutenção em **3 camadas** (Operação · Evolução · Estratégia) com **ritual semanal de 20 min** nas camadas Evolução+ e conselho trimestral · mini-ciclos por caso de uso | Assinatura — o objetivo de longo prazo é a base recorrente pagar os custos fixos |
+| **Conselheiro de IA** | A criação nova: CAIO fracionário — presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](../03-comercial/conselheiro-de-ia.md)) | Recorrente; 2 portas: pós-programa ou venda direta a quem já tem IA rodando |
 
-Preços: em reconstrução pela [metodologia](../03-comercial/precificacao-metodologia.md) (pendência P1).
+Preços: **tabela v1 vigente desde 2026-07-23** ([tabela](../03-comercial/tabela-de-precos.md)); a [metodologia](../03-comercial/precificacao-metodologia.md) rege a construção da v2.
 
 ## 5. Operação
 
@@ -49,7 +50,7 @@ Preços: em reconstrução pela [metodologia](../03-comercial/precificacao-metod
 3. **LinkedIn dos fundadores** + material setorial (jurídico) para prospecção dirigida.
 4. **Indicação estruturada:** cada encerramento pede 2 indicações (embutido no [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md)).
 
-## 7. Metas do ano 1 (proposta — sócios confirmam)
+## 7. Metas do ano 1 (BLOCO DE DECISÃO DOS SÓCIOS — vazio de propósito: número de meta é decisão de sócio, não de consultor; âncoras da pesquisa na [Visão 2029](visao-2029.md) §7)
 
 | Métrica | Meta |
 |---|---|

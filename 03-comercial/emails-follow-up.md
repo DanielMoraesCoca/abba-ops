@@ -1,6 +1,6 @@
 # Sequência de E-mails — ABBA
 
-> Modelos prontos para os momentos-chave do funil. Enviar **sempre de `@abbaservices.com.br`** (contas pendentes na P2 — até existirem, não enviar proposta). Assinatura padrão no rodapé deste doc. Prazos contam a partir do evento anterior.
+> Modelos prontos para os momentos-chave do funil. Enviar **sempre de `@abbaservices.com.br`** (contas ativas — P2 ✅ 2026-07-25). Assinatura padrão no rodapé deste doc. Prazos contam a partir do evento anterior.
 
 ## E-mail 0 — Prospecção fria (quando não há indicação)
 
@@ -12,7 +12,7 @@
 >
 > Os dados de mercado dizem que não: 70–80% dos projetos de IA corporativa falham na adoção, não na tecnologia. É exatamente isso que a ABBA resolve — avaliamos a empresa a fundo, construímos as soluções certas e treinamos todos os níveis da equipe para trabalhar com elas, sempre alinhados com os objetivos da diretoria.
 >
-> Como primeiro passo, oferecemos uma análise gratuita da [Empresa] feita com informação pública — uma amostra real do nosso método. 15 minutos na próxima semana para eu mostrar?
+> Já preparamos uma análise gratuita da [Empresa], feita com informação pública — a primeira página traz uma estimativa em reais do que pode estar vazando. 15 minutos na próxima semana para eu apresentar? (Nunca "oferecer": a análise chega FEITA — decisão 2026-07-27.)
 >
 > [Assinatura]
 

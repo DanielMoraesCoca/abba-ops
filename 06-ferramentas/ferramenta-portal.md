@@ -40,4 +40,4 @@ Levantado em 2026-08-01 — o portal tem três capacidades de ecossistema pronta
 
 ## Dono e lacunas
 
-**Operação:** chapéu [Capacitação](../01-setores/capacitacao.md) · **Saúde:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R3 (auth interina), R5 (vídeos), P7 (níveis). Status no [mapa](mapa-jornada-ferramentas.md).
+**Operação:** chapéu [Capacitação](../01-setores/capacitacao.md) · **Saúde:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R3 (auth interina), R5 (vídeos). P7: ✅ resolvida 2026-07-23. Status no [mapa](mapa-jornada-ferramentas.md).

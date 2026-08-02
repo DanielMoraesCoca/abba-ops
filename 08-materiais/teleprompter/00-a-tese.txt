@@ -19,7 +19,8 @@ e cultura. NOSSA CUNHA.
 COMO - 6 ETAPAS
 1 Degustacao gratis
 2 Avaliacao profunda (25 dim)
-3 Construcao (agentes)
+3 Construcao (prototipo
+  GO/NO-GO -> agentes)
 4 Transformacao (Turma)
 5 Manutencao (3 camadas)
 6 Conselheiro (a constante)

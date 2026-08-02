@@ -1,6 +1,6 @@
 # Estágio 02 — Degustação Gratuita (Análise ABBA)
 
-**Dono:** chapéu Comercial · **Prazo-alvo:** brief entregue em **5 dias úteis** após o aceite
+**Dono:** chapéu Comercial · **Prazo-alvo:** documento (Mapa de Vazamento + análise) pronto em **48h**; apresentação ao vivo em até **5 dias úteis** após o aceite
 
 ## O que é
 A amostra do método: uma análise da empresa do prospect feita **apenas com informação pública**, usando o scout do assessment-brain + curadoria dos sócios. De graça, com limite honesto declarado. Objetivo: provar competência e converter para a Avaliação de Prontidão paga.
@@ -12,7 +12,7 @@ Lead aceitou a degustação na call de descoberta — **ou chegou pelo assessmen
 
 ## Checklist
 
-- [ ] Conversa de 45 min com as **5 perguntas do [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md)** — as três primeiras são o [teste de alvo](../00-identidade/alvo.md), então a qualificação sai de graça. **Não apresentar nada nessa conversa**
+- [ ] Conversa de 45 min com as **5 perguntas de descoberta do [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md)** — as três primeiras são o [teste de alvo](../00-identidade/alvo.md), então a qualificação sai de graça. **Não apresentar nada nessa conversa**
 - [ ] Registrar o placar do teste de alvo (0–5) na pasta do lead — lead sem placar não avança de estágio
 - [ ] Rodar o scout: `abba scout "NomeEmpresa" --industry X --create` (com provedor de busca real configurado — **nunca** enviar brief marcado como pesquisa sintética)
 - [ ] Curadoria dos sócios sobre o brief bruto (1–2h): cortar o que estiver fraco, fortalecer as 2–3 hipóteses mais fortes, adicionar contexto de setor que só humano tem

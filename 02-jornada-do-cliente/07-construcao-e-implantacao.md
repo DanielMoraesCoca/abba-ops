@@ -13,8 +13,15 @@ Plano aprovado pela diretoria ([06](06-avaliacao-profunda.md) + sessão de alinh
 - [ ] Decisão de hospedagem registrada: on-premises do cliente OU nuvem gerenciada ABBA (Anexo II atualizado se muda suboperador)
 - [ ] Spec arquivada em `02 Clientes/<Nome>/04 Construcao/`
 
-**Construção**
-- [ ] Agente construído **diretamente com CrewAI**, sob medida, com pontos de aprovação humana e limites de custo configurados
+**Protótipo de validação (o marco que destrava o GO/NO-GO e a parcela de 30%)**
+- [ ] Protótipo do caso de uso prioritário construído: agente funcional em produção limitada, **com dados reais**, validado com usuários-chave
+- [ ] Métricas do protótipo medidas contra o critério de sucesso combinado no kickoff (nunca "impressão" — número)
+- [ ] [Relatório de Protótipo](../08-materiais/modelos/relatorio-prototipo-modelo.docx) emitido com a recomendação GO/NO-GO
+- [ ] **Decisão GO/NO-GO da diretoria registrada** (`abba decision advance ... --by`) + [Termo de Aceite](../04-entrega/termo-de-aceite.md) do marco → **faturar a parcela do protótipo validado** — avisar Fin-Admin
+- [ ] NO-GO não é fracasso: é o método funcionando — registrar o porquê e re-priorizar com o portfólio da avaliação
+
+**Construção (após o GO)**
+- [ ] Agente construído **diretamente com CrewAI** (conta/via contratada no setup — risco R9: não assinar cronograma de construção antes disso), sob medida, com pontos de aprovação humana e limites de custo configurados
 - [ ] Teste com dados de homologação (**nunca** dados reais em teste)
 - [ ] Demonstração ao dono do processo → ajustes → aceite registrado por escrito
 

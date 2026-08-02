@@ -26,7 +26,7 @@
 | # | Cartão | Cobre |
 |---|---|---|
 | 00 | A Tese | 70/30, mercado BR, as 6 etapas, o que oferecer a quem |
-| 01 | Análise ABBA | degustação, 5 dias úteis, gating, CTA |
+| 01 | Análise ABBA / Mapa de Vazamento | faixa em R$, 48h, gating, CTA |
 | 02 | Workshop Shadow AI | 90 min, anistia, R$ 14k, condição do patrocinador |
 | 03 | Avaliação de Prontidão | 25 dimensões, os 4 entregáveis, R$ 28k, saída limpa |
 | 04 | Sprint LGPD | Art. 48/20, framework 7 seções, R$ 24k, limite honesto |

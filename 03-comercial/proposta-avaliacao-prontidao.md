@@ -1,6 +1,6 @@
 # Proposta — Avaliação de Prontidão para IA
 
-> **Uso interno:** proposta da avaliação standalone de 2 semanas — o produto de entrada mais importante (é a porta natural para o programa completo). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), congelar PDF no Drive, enviar. Nota: o relatório é entregue em **português** (a cláusula antiga de relatório apenas em inglês foi descartada).
+> **Uso interno:** proposta da avaliação standalone (2 semanas de campo + semana de entrega) — o produto de entrada mais importante (é a porta natural para o programa completo). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), congelar PDF no Drive, enviar. Nota: o relatório é entregue em **português** (a cláusula antiga de relatório apenas em inglês foi descartada).
 
 ---
 
@@ -15,11 +15,11 @@
 
 ## 1. O que você está contratando
 
-Um **engajamento standalone de 2 semanas** que produz uma resposta defensável para uma única pergunta: *esta organização está pronta para implantar capacidade de IA em escala?*
+Um **engajamento standalone de 2 semanas de campo (+ semana de entrega)** que produz uma resposta defensável para uma única pergunta: *esta organização está pronta para implantar capacidade de IA em escala?*
 
 Você recebe:
 
-- **Uma pontuação de prontidão** (0–100) aberta em cinco dimensões ponderadas
+- **Uma pontuação de prontidão** (0–100) aberta em cinco eixos ponderados de pontuação — *não confundir com as 25 dimensões de análise: as 25 são o que investigamos; os 5 eixos são como a nota se organiza para a diretoria*
 - **Um portfólio de oportunidades** — os casos de uso específicos e ranqueados em que IA produziria mais valor nos próximos 90 dias
 - **Um caminho de solução recomendado** — até 3 agentes de IA concretos, dimensionados para a sua realidade operacional, com propósito e justificativa
 - **O Relatório de Avaliação** — deck executivo com marca ABBA, em português, pronto para levar ao conselho, à diretoria ou a investidores
@@ -34,9 +34,9 @@ Você está aqui porque uma destas três situações se aplica:
 2. **Já sabe que vai investir em IA**, mas precisa que conselho / patrocinador / controller vejam o caso na linguagem da sua organização, não num deck genérico de fornecedor
 3. **Tem vários fornecedores de IA na mesa** e precisa de uma avaliação independente de prontidão antes de escolher — algo verdadeiro para a sua empresa, não para o pipeline de vendas deles
 
-Se você já sabe que quer a transformação completa, é mais barato ir direto ao programa (a avaliação está incluída). Se está em dúvida, 2 semanas e R$ 28.000 são o caminho mais barato para ter certeza.
+Se você já sabe que quer a transformação completa, é mais barato ir direto ao programa (a avaliação está incluída). Se está em dúvida, duas semanas de campo e R$ 28.000 são o caminho mais barato para ter certeza.
 
-## 3. As cinco dimensões de prontidão
+## 3. Os cinco eixos da pontuação (as 25 dimensões de análise se consolidam neles)
 
 | Dimensão | Peso | O que olhamos |
 |---|---|---|

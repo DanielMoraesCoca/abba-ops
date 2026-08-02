@@ -12,7 +12,10 @@ O SANDUICHE
 1 Valor: o que resolve
 2 PRECO: um numero, limpo,
   sem pedir desculpa
-3 O que inclui + garantia
+3 O que inclui + a promessa
+  ("garantimos o METODO" -
+  nunca a palavra garantia
+  solta: E6 nao ativada)
 "Sao 28 mil - com os 4
 entregaveis, ate 25 pessoas
 entrevistadas, e os

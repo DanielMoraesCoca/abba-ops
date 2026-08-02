@@ -6,8 +6,8 @@
 
 | ✅ Prometer | ⚠️ Com cuidado | ❌ Não prometer (ainda) |
 |---|---|---|
-| Agentes sob medida com **pontos de aprovação humana** e limites de custo, integrados aos sistemas do cliente | Prazo de construção: só após a conta/via CrewAI ativa (R9) — até lá, cronograma com folga de setup explícita | **24/7 / 99,5% / resposta em 4h** — congelado até a P9 definir o SLA sustentável |
-| Deploy em nuvem gerenciada OU on-premise (a escolha é do cliente) | "Orquestramos o ecossistema (CrewAI, principais LLMs)" = uso de stack, verdadeiro | "Parceria formal com Microsoft/AWS/CrewAI" — congelado até a P8 confirmar o que existe assinado |
+| Agentes sob medida com **pontos de aprovação humana** e limites de custo, integrados aos sistemas do cliente | Prazo de construção: só após a conta/via CrewAI ativa (R9) — até lá, cronograma com folga de setup explícita | "suporte 24/7" — o SLA honesto (P9 ✅ 2026-07-23) é: monitoramento automatizado 24/7 + humano 9h–18h + S1 em 4h corridas ([SLA](../04-entrega/sla-manutencao.md)) |
+| Deploy em nuvem gerenciada OU on-premise (a escolha é do cliente) | "Orquestramos o ecossistema (CrewAI, principais LLMs)" = uso de stack, verdadeiro | "Parceria formal" onde houver só parceria de uso — P8 ✅ (2026-07-23): dizer "stack orquestrada com parceiros oficiais"; comprovantes no Drive. Nunca afirmar contrato assinado |
 | Inventário de decisões automatizadas mapeado ao Art. 20 LGPD | Operação assistida de 30 dias pós go-live | Garantias de resultado — o que prometemos é medição honesta (projetado vs. realizado) |
 | Manifesto de handoff: da avaliação sai o scaffold dos agentes (demonstrável) | | |
 
@@ -29,4 +29,4 @@
 
 ## Dono e lacunas
 
-**Operação:** chapéu [Entrega](../01-setores/entrega.md) · **Stack:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R9 (conta CrewAI), R13 (SLA vs. capacidade — P9), R14 (parcerias — P8). Status no [mapa](mapa-jornada-ferramentas.md).
+**Operação:** chapéu [Entrega](../01-setores/entrega.md) · **Stack:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R9 (conta CrewAI). R13 e R14: ✅ resolvidas 2026-07-23. Status no [mapa](mapa-jornada-ferramentas.md).

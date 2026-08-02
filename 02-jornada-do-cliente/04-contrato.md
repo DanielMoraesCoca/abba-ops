@@ -7,7 +7,7 @@ Aceite verbal da proposta (ou fim da negociação da [pauta nº 4](../03-comerci
 
 ## Checklist
 
-- [ ] Preencher o [contrato-esqueleto](../03-comercial/contrato-sow-esqueleto.md): Anexo I copiado da proposta congelada (escopo, entregáveis, cronograma, valor); Anexo II (suboperadores) atualizado; Anexo III só se houver condição charter
+- [ ] Preencher o [contrato-esqueleto](../03-comercial/contrato-sow-esqueleto.md): Anexo I copiado da proposta congelada (escopo, entregáveis, cronograma, valor); Anexo II (suboperadores) atualizado; Anexo III só se houver condição charter; **Anexo IV (contribuição anonimizada + Rede) SEMPRE — obrigatório em todo contrato: sem ele o cliente fica fora do ecossistema PARA SEMPRE (consentimento não se retroage; P4b/R22)**
 - [ ] **Regra de alçada:** valor acima do limite definido na [planilha](../03-comercial/precificacao-planilha.md) (seção 5) → revisão de advogado ANTES do envio (pendência P4). Enquanto não houver advogado contratado, TODA assinatura passa por revisão externa pontual
 - [ ] Revisão cruzada pelo outro sócio
 - [ ] Enviar para assinatura eletrônica (plataforma a definir — Clicksign/DocuSign/gov.br)

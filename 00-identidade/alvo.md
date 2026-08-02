@@ -95,6 +95,6 @@ Cada material da ABBA precisa responder a pelo menos uma dessas quatro cabeças 
 
 ## Onde este documento é usado
 
-- [Estágio 01 — visitante e lead](../02-jornada-do-cliente/01-visitante-e-lead.md) e [02 — degustação](../02-jornada-do-cliente/02-diagnostico-gratuito.md): o teste de 5 perguntas é o filtro
+- [Estágio 01 — visitante e lead](../02-jornada-do-cliente/01-visitante-e-lead.md) e [02 — degustação](../02-jornada-do-cliente/02-diagnostico-gratuito.md): o teste de 6 perguntas é o filtro
 - [Escada ABBA](../03-comercial/escada-abba.md): qual degrau oferecer depende do placar do teste
 - [Pipeline](../03-comercial/pipeline-modelo.md): lead sem placar registrado não avança de estágio

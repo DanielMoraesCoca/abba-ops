@@ -1,4 +1,6 @@
-# Metodologia de Precificação — ABBA
+# Metodologia de Precificação
+
+> **Status (2026-08-02): a v1 já foi derivada por este método em 2026-07-23** ([tabela vigente](tabela-de-precos.md)). Este documento passa a reger a construção da **v2** (após as 3 primeiras reações reais de preço). — ABBA
 
 > **Status:** os preços antigos (R$ 280–450K programa; R$ 8–35K produtos de entrada) foram **descartados por decisão dos sócios** (ver [registro de decisões](../05-interno/registro-de-decisoes.md)) e sobrevivem apenas como referência histórica no anexo da [tabela de preços](tabela-de-precos.md). Esta metodologia reconstrói a precificação do zero. O preenchimento é feito na [planilha de precificação](precificacao-planilha.md).
 
@@ -91,4 +93,4 @@ Preço não se valida internamente — se valida em conversa:
 
 ## Saída
 
-Planilha preenchida → [`tabela-de-precos.md`](tabela-de-precos.md) v1 fixada → decisão registrada. As propostas em `03-comercial/` referenciam a tabela por placeholder (`{{PRECO_*}}`) e só podem ser enviadas depois da tabela v1 existir.
+Planilha preenchida → [`tabela-de-precos.md`](tabela-de-precos.md) v1 fixada → decisão registrada. As propostas em `03-comercial/` referenciam a [tabela v1 vigente](tabela-de-precos.md) (fixada em 2026-07-23).

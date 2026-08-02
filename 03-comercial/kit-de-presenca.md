@@ -10,7 +10,7 @@
 
 ## 30 segundos (elevador, evento, apresentação de terceiro)
 
-> *"A ABBA instala capacidade de IA em empresas de médio porte. Não é curso nem piloto: a gente avalia a empresa a fundo, constrói o que precisa ser construído, treina o time inteiro — e registra cada decisão com o número que ela precisa mover, medido depois. No fim, a diretoria tem prova, não impressão."*
+> *"A ABBA instala capacidade de IA em empresas de médio porte. Não é curso nem piloto de slide: a gente avalia a empresa a fundo, constrói o que precisa ser construído, treina o time inteiro — e registra cada decisão com o número que ela precisa mover, medido depois. No fim, a diretoria tem prova, não impressão."*
 
 **O gancho, se houver espaço para mais uma frase:**
 > *"Sabe por que a maioria dos projetos de IA falha? Não é a tecnologia. É que ninguém combinou antes o que seria dar certo."*
@@ -27,10 +27,10 @@ Quatro movimentos. **Nesta ordem** — a ordem é o que faz funcionar.
 > *"A maioria das empresas que investe em IA não consegue dizer o que mudou. Não porque não mudou — porque ninguém definiu antes o que seria mudança. É a razão dominante de fracasso, e é organizacional, não técnica."*
 
 **2. A cunha (30s)**
-> *"Setenta por cento do valor de uma transformação de IA está em pessoas, processo e cultura. O mercado vende os outros trinta: ferramenta, piloto, curso. Ninguém instala os setenta no médio porte brasileiro. É onde a gente vive."*
+> *"Setenta por cento do valor de uma transformação de IA está em pessoas, processo e cultura. O mercado vende os outros trinta: ferramenta, piloto sem métrica, curso. Ninguém instala os setenta no médio porte brasileiro. É onde a gente vive."*
 
 **3. Como funciona, em uma frase por degrau (60s)**
-> *"Começa com um mapa do que estimamos estar vazando, feito de fora e de graça. Se fizer sentido, a avaliação profunda olha a empresa em 25 dimensões e devolve um portfólio ranqueado. Aí a gente constrói e treina. E daí em diante toda decisão entra num registro: métrica combinada antes, resultado medido depois, assinado por gente."*
+> *"Começa com um mapa do que estimamos estar vazando, feito de fora e de graça. Se fizer sentido, a avaliação profunda olha a empresa em 25 dimensões e devolve um portfólio ranqueado. Aí a gente prototipa um caso com dados reais e vocês decidem GO/NO-GO com números — só então constrói e treina, plataforma mais presencial. E daí em diante a gente fica: presença semanal, toda decisão num registro — métrica combinada antes, resultado medido depois, assinado por gente. E quando vocês quiserem a cadeira do estrategista do lado de vocês da mesa, isso tem nome: Conselheiro de IA."*
 
 **4. A pergunta que devolve a palavra (30s)**
 > *"Me conta uma coisa: tem algum número em reais aí dentro que dói hoje e que vocês já medem?"*
