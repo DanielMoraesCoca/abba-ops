@@ -47,6 +47,7 @@ flowchart TD
 | Manifesto, posicionamento, kit de presença | ✅ | [manifesto](manifesto.md) · [kit](../03-comercial/kit-de-presenca.md) | — |
 | Alvo por forma + critérios de recusa | ✅ (faixa de faturamento é ⬜ proposta) | [alvo](alvo.md) | Sócios confirmam R$ 50–500 mi |
 | Mapa de Vazamento (peça de abertura) | ✅ | [processo](../03-comercial/mapa-de-vazamento.md) + seção 1 do modelo DOCX | — |
+| Deck institucional (13 slides, posicionamento vigente) | ✅ regenerado 2026-08-01 | [modelo PPTX](../08-materiais/modelos/abba-deck-institucional.pptx) · roteiro no [kit](../03-comercial/kit-de-presenca.md) | — |
 | Escada com preços v1 | ✅ travada | [escada](../03-comercial/escada-abba.md) · [tabela](../03-comercial/tabela-de-precos.md) | v2 = ⬜ após 3 reações reais de preço |
 | Protocolo de prova + caso publicável | ✅ | [protocolo](../04-entrega/protocolo-de-prova.md) · [molde](../05-interno/caso-publicavel-modelo.md) | Primeiro caso = 1º cliente real |
 | Ritual semanal de 20 min | ✅ processo (camadas Evolução+) | [ritual](../04-entrega/ritual-semanal.md) | Começa no 1º cliente de manutenção |

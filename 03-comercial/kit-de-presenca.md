@@ -62,6 +62,30 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 
 ---
 
+## A apresentação de 13 slides (o deck institucional)
+
+**Quando usar:** da **segunda** reunião em diante, ou quando o cliente pedir "manda o material". A primeira reunião é conversa, nunca projeção ([coreografia](coreografia-da-conversao.md)). Arquivo: [`abba-deck-institucional.pptx`](../08-materiais/modelos/abba-deck-institucional.pptx) — atualizado em 2026-08-01 para o posicionamento vigente (escada com artefatos, diário de decisões, promessas × recusas, CTA do Mapa de Vazamento).
+
+**~20 minutos de apresentação + conversa.** A fala-âncora de cada slide:
+
+| # | Slide | A fala-âncora (1 linha) |
+|---|---|---|
+| 1 | Capa | *"Prometo que este é o único deck — o resto é conversa."* |
+| 2 | O problema | *"A tecnologia funciona. O que falha é a adoção — e isso é organizacional, não técnico."* |
+| 3 | A lacuna | *"A Fortune 500 tem quem a atenda. O médio porte brasileiro, não."* |
+| 4 | Quem somos | A frase inteira, pausada: *"...número combinado antes, medido depois, assinado por gente."* |
+| 5 | 6 etapas | *"Começa de graça, com um número em reais — já explico."* |
+| 6 | AI Native | *"Três níveis ao mesmo tempo — porque transformar só um cria atrito com os outros dois."* |
+| 7 | A escada | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nessa escada hoje?"* (quase sempre se colocam um degrau acima do real) |
+| 8 | Portal | *"Aprender desbloqueia ferramenta — o aprendizado vira produtividade no mesmo dia."* |
+| 9 | Como sabemos | *"Repare no terceiro item: nenhuma decisão entra sem métrica combinada antes. Isso é raro no nosso mercado."* |
+| 10 | **Promessas × recusas** | *"Este slide é o que nenhum concorrente nosso consegue copiar — porque copiar exigiria parar de vender o que eles vendem."* Deixar 30s de silêncio para lerem |
+| 11 | Governança | *"Nós recomendamos com convicção. Quem decide são vocês — e fica registrado quem decidiu o quê."* |
+| 12 | Por que a ABBA | Ler a citação em voz alta, devagar |
+| 13 | CTA | *"O próximo passo não custa nada e cabe em 45 minutos: o Mapa de Vazamento."* Sair da sala com a data marcada |
+
+**Regras:** nunca enviar o PDF antes da apresentação ao vivo (a conversa é onde a conversão acontece) · o slide 7 é o único onde a apresentação vira diálogo — não atropelar a resposta · se perguntarem preço no meio, *"chego lá no fim — antes quero que vocês saibam exatamente o que se compra"* (e usar a [escada](escada-abba.md)).
+
 ## O que nunca dizemos
 
 | Nunca | Em vez disso |
