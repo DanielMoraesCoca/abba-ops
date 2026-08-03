@@ -1,6 +1,6 @@
 # Conselheiro de IA ABBA — produto (CAIO fracionário)
 
-> **Camada:** processo + definição comercial. Materiais: one-pager [`../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx`](../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx) · [proposta completa](proposta-conselheiro-de-ia.md) · [arbitragem](../04-entrega/arbitragem-de-fornecedores.md) · anexo contratual no [contrato](contrato-sow-esqueleto.md). Operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Origem: decisão E1 da [análise estratégica](../05-interno/analise-estrategica-2026-07.md).
+> **Camada:** processo + definição comercial. Materiais: one-pager [`../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx`](../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx) · **deck de 10 slides** [`../08-materiais/modelos/conselheiro-de-ia-deck.pptx`](../08-materiais/modelos/conselheiro-de-ia-deck.pptx) (sem preços — apresentar, nunca enviar antes da conversa) · [proposta completa](proposta-conselheiro-de-ia.md) · [arbitragem](../04-entrega/arbitragem-de-fornecedores.md) · anexo contratual no [contrato](contrato-sow-esqueleto.md). Operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Origem: decisão E1 da [análise estratégica](../05-interno/analise-estrategica-2026-07.md).
 
 ## O depoimento que queremos ouvir em 12 meses (working backwards)
 
