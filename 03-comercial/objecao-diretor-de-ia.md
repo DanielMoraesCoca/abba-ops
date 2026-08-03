@@ -5,6 +5,8 @@
 > **A tese em uma linha: o diretor de IA não é nosso concorrente — é nosso melhor comprador. A empresa que tem um está MAIS qualificada, não menos. E onde ele não existe, o custo de tê-lo é o nosso melhor argumento de venda.**
 >
 > Dono: chapéu Comercial. Revisar após as 3 primeiras vezes que a objeção aparecer de verdade (registrar a reação real aqui, como se faz com preço).
+>
+> **O fundamento deste discurso** — o inventário honesto do que temos que um diretor interno estruturalmente não consegue ter, onde morreríamos, e as melhorias para a objeção parar de existir — está no [estudo de imunidade](../05-interno/estudo-imunidade-diretor-de-ia.md). Este documento é o lado de mesa; aquele é o entendimento.
 
 ---
 
