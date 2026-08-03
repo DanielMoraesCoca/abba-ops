@@ -37,11 +37,12 @@ Quatro movimentos. **Nesta ordem** — a ordem é o que faz funcionar.
 
 Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-abba.md) e preenche metade do [teste de alvo](../00-identidade/alvo.md).
 
-### As três objeções que sempre vêm
+### As quatro objeções que sempre vêm
 
 | Objeção | Resposta |
 |---|---|
 | *"Já temos gente de TI/dados fazendo isso."* | *"Ótimo — a gente não substitui. Eles constroem; o que costuma faltar é o registro de decisão que prova para a diretoria que valeu. Isso não é trabalho de TI."* |
+| *"Já temos um diretor de IA."* | *"Que bom — isso coloca vocês na frente. O que ele mediu no último trimestre? E quantas pessoas ele tem para a fila de casos que já mapeou?"* — ele é o campeão, nunca o rival; discurso completo (custo da cadeira, o que ele não compra dentro de casa) na [objeção: diretor de IA](objecao-diretor-de-ia.md) |
 | *"Vocês já fizeram isso em quantas empresas?"* | *"Somos novos como firma, e não vou inventar média de mercado. O que posso te mostrar é o método e o sistema por trás dele, que estão prontos e testados — e o registro de tudo que a gente decidir junto, incluindo o que der errado. É mais do que a maioria consegue mostrar depois de dez clientes."* |
 | *"Quanto custa?"* | Nunca improvisar. [Tabela v1](tabela-de-precos.md), sempre programa primeiro: *"o programa completo fica em R$ 185 mil; se ainda não for o momento, tem três portas de entrada a partir de R$ 14 mil, e o valor da entrada credita 100% no programa em 90 dias."* |
 

@@ -23,7 +23,7 @@
 | **T5 — Assinatura** ([estágio 04](../02-jornada-do-cliente/04-contrato.md)) | [E-mail 5](emails-follow-up.md) no mesmo dia + NF em 2 dias + kickoff em ≤10 dias úteis — **a primeira prova de entrega** | — |
 | **T6 — Kickoff** ([roteiro](../04-entrega/kickoff-roteiro.md)) | O slide 5: os objetivos DELES escritos ao vivo. O cliente se sente ouvido no primeiro dia — e nasce o baseline do ritual do conselho | — |
 
-## As 9 objeções — resposta preparada, nunca improvisada
+## As 10 objeções — resposta preparada, nunca improvisada
 
 | Objeção | Resposta (essência) |
 |---|---|
@@ -36,6 +36,7 @@
 | "Quanto tempo da minha equipe isso toma?" | Números exatos por papel (da proposta): executivos {{X}}h, gestores {{Y}}h, operacionais {{Z}}h — "e devolvemos múltiplos disso; é a métrica que medimos: horas reinvestidas por pessoa/semana." |
 | "Por que vocês e não uma grande consultoria?" | "As grandes entregam slides e terceirizam a execução. Nós entregamos sistemas funcionando e pessoas capacitadas — com os fundadores na sala. E custamos uma fração." |
 | "Já temos IA / já compramos uma solução" | **A porta lateral do [Conselheiro de IA](conselheiro-de-ia.md):** "Ótimo — e quem senta do SEU lado da mesa quando o fornecedor apresenta a fatura? Não viemos substituir o que existe: o Conselheiro dirige o que vocês já têm — roadmap, governança, arbitragem independente de fornecedores. E se um dia decidirem construir, o retainer credita." |
+| "Já temos um diretor/head de IA" | **Nunca competir com ele — ele é o campeão.** "Que bom — isso coloca vocês na frente. O que ele mediu no último trimestre? E quantas pessoas ele tem para a fila de casos que já mapeou?" As perguntas fazem o trabalho; o discurso completo (custo da cadeira, o que ele não compra dentro de casa, o que nunca dizer) está em [objeção: diretor de IA](objecao-diretor-de-ia.md). |
 
 Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) até saírem naturais — decoradas soam decoradas.
 
@@ -54,7 +55,7 @@ Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) a
 Documento não vende — fluência vende. Antes do primeiro T1 real:
 
 1. **3 ensaios completos de T1 + T2** entre os sócios (um faz o prospect difícil), gravados e revistos. Critério de pronto: 45s de elevator sem hesitar, transições naturais, nenhuma consulta a material. *Óculos HUD ([guia](../08-materiais/guia-oculos-hud.md)): permitido nos primeiros ensaios como apoio; a fluência se prova com ele DESLIGADO — em jogo real, é rede de segurança, não leitura. Os drills usam as DUAS séries de cartões: Domínio (fatos) e Conversa (condução psicológica — rapport, perguntas, aikido de objeções, fechamento).*
-2. **Drill de objeções:** as 8 acima, ordem aleatória, resposta em ≤30s cada.
+2. **Drill de objeções:** as 10 acima, ordem aleatória, resposta em ≤30s cada.
 3. **Dry-run da Análise:** rodar o scout numa empresa real, montar o PDF no modelo, apresentar ao outro sócio como se fosse o prospect. Cronometrar: 45 min com folga para conversa.
 4. Depois de CADA conversa real: 10 min de retrospectiva a dois (o que travou → ajuste no material ou no ensaio) — o funil melhora a cada repetição.
 
