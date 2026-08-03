@@ -68,6 +68,10 @@ flowchart TD
 | O Radar (varredura regulatória/sinal fraco) | 📋 aposta 6 | [apostas](apostas-futuras.md) | 1º cliente pagante + provedor de busca + custo medido |
 | Caça ao Dinheiro · Resgate de IA | 📋 candidatas | [estudo financeiro](../05-interno/estudo-ia-financeira.md) · [plano](../05-interno/plano-implementacao-conselheiro.md) §12 | Pauta de sócios |
 | Recomendador loop-native · framework v2 (D26–D28) | 🔒 | assessment-brain | Validação com LLM real (runbook §6) |
+| Prateleira nova: camada independente de prova (1ª frase de tudo) | ✅ V3c | [posicionamento](posicionamento.md) "A prateleira" | — |
+| Defesa "já temos diretor de IA" (discurso + fundamento) | ✅ | [objeção](../03-comercial/objecao-diretor-de-ia.md) · [estudo](../05-interno/estudo-imunidade-diretor-de-ia.md) | Registrar reação real nas 3 primeiras mesas |
+| Prontidão regulatória ISO 42001 + PL 2338 na avaliação | ✅ manual (mapa + 10 perguntas) | [mapa](../06-ferramentas/mapa-avaliacao-iso42001-pl2338.md) | Texto ABNT p/ conferência · sanção do PL |
+| Parecer do conselho consultivo (7 lentes) | ✅ entregue | [parecer](../05-interno/parecer-conselho-2026-08.md) | ⬜ Sócios: pauta da reunião |
 
 ## O que é só de vocês (ninguém mais destrava)
 
@@ -84,7 +88,7 @@ flowchart TD
 
 ## Os números que resumem o momento
 
-**429** testes verdes nos dois modos · **6** rodadas de revisão adversarial independente (**73** defeitos achados e corrigidos antes de qualquer cliente) · **0** links quebrados em ~760 · **0** clientes reais — e é exatamente por isso que a ordem é: fechar P4b → ensaiar o Cliente Zero → prospectar com os 4 artefatos ([plano de ação](../05-interno/plano-de-acao.md)).
+**429** testes verdes nos dois modos · **7** rodadas de revisão adversarial independente (**137** defeitos achados e corrigidos antes de qualquer cliente) + o **conselho de 7 lentes** · **0** links quebrados em ~920 · **0** clientes reais — e é exatamente por isso que a ordem é: fechar P4b → ensaiar o Cliente Zero → prospectar com os 4 artefatos ([plano de ação](../05-interno/plano-de-acao.md)).
 
 ## O que o conselho consultivo disse (2026-08)
 
