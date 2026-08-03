@@ -83,3 +83,7 @@ flowchart TD
 ## Os números que resumem o momento
 
 **429** testes verdes nos dois modos · **6** rodadas de revisão adversarial independente (**73** defeitos achados e corrigidos antes de qualquer cliente) · **0** links quebrados em ~760 · **0** clientes reais — e é exatamente por isso que a ordem é: fechar P4b → ensaiar o Cliente Zero → prospectar com os 4 artefatos ([plano de ação](../05-interno/plano-de-acao.md)).
+
+## O que o conselho consultivo disse (2026-08)
+
+Sete conselheiros-agentes independentes analisaram a empresa inteira por lentes adversariais (dono, CFO, CTO, concorrente, investidor, DPO, vendedor). Placar: **3 sim-com-ressalvas · 3 talvez · 1 não** — o único "não" é ao modelo como investimento, não à oferta. A frase-síntese: *"parem de escrever a firma e comecem a vendê-la — mas não assinem nada antes do advogado"*. Parecer completo, gargalos ranqueados e plano de 60 dias: [parecer do conselho](../05-interno/parecer-conselho-2026-08.md).

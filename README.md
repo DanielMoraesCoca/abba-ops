@@ -46,6 +46,7 @@ Regras que decorrem disso:
 ## 🚦 Comece por aqui
 
 1. **Pendências dos sócios, prontas para executar:** [`05-interno/kit-de-execucao-socios.md`](05-interno/kit-de-execucao-socios.md) — e-mail do advogado pronto, cerimônia da passphrase, pauta da reunião das 5 decisões, checklist do Pedro, semana do Cliente Zero, a rua. Registro completo: [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md).
+1b. **O que 7 lentes externas acham de tudo isso:** [`05-interno/parecer-conselho-2026-08.md`](05-interno/parecer-conselho-2026-08.md) — o parecer do conselho consultivo (dono, CFO, CTO, concorrente, investidor, DPO, vendedor): placar, gargalos ranqueados e o plano de 60 dias. Leitura obrigatória antes da próxima reunião de sócios.
 2. **Um cliente apareceu?** [`02-jornada-do-cliente/README.md`](02-jornada-do-cliente/README.md) — siga o funil estágio a estágio.
 3. **A empresa inteira em uma página (estado real de cada peça):** [`00-identidade/mapa-da-abba.md`](00-identidade/mapa-da-abba.md). O modelo de entrega em detalhe: [`00-identidade/modelo-de-servico.md`](00-identidade/modelo-de-servico.md).
 4. **Antes de qualquer decisão grande:** [`00-identidade/visao-2029.md`](00-identidade/visao-2029.md) — a paisagem competitiva, o fosso, os inegociáveis e as tensões que não têm resposta pronta.
