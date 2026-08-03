@@ -17,6 +17,7 @@
 3. **Construção de verdade** — entregamos agentes em produção, construídos sob medida com CrewAI e com pontos de aprovação humana, não relatórios que morrem na gaveta.
 4. **Alinhamento como produto** — o ritual com a diretoria transforma consultoria pontual em parceria contínua (e receita recorrente).
 5. **Aprendizado composto** — cada engajamento alimenta o vault anonimizado de padrões; a ABBA fica melhor a cada cliente.
+6. **Independência com trava de engenharia** — a prova é de terceiro por construção: probabilidade declarada imutável, resultado só entra medido e assinado por humano nomeado, histórico que nunca se apaga. Nenhum time interno (nem o melhor diretor de IA) pode ser a própria prova — é a razão pela qual empresa com CFO ainda contrata auditoria. Doutrina: [posicionamento](posicionamento.md) "A prateleira" · [estudo de imunidade](../05-interno/estudo-imunidade-diretor-de-ia.md).
 
 ## 3. Mercado-alvo
 

@@ -10,7 +10,7 @@
 
 ## 30 segundos (elevador, evento, apresentação de terceiro)
 
-> *"A ABBA instala capacidade de IA em empresas de médio porte. Não é curso nem piloto de slide: a gente avalia a empresa a fundo, constrói o que precisa ser construído, treina o time inteiro — e registra cada decisão com o número que ela precisa mover, medido depois. No fim, a diretoria tem prova, não impressão."*
+> *"A ABBA faz duas coisas que não dá para fazer de dentro de uma empresa: constrói capacidade de IA em escala — sistemas e time inteiro treinado — e prova, como terceiro, o que mudou: cada decisão com o número que ela precisa mover, combinado antes, medido depois. No fim, a diretoria tem prova, não impressão."*
 
 **O gancho, se houver espaço para mais uma frase:**
 > *"Sabe por que a maioria dos projetos de IA falha? Não é a tecnologia. É que ninguém combinou antes o que seria dar certo."*
@@ -27,7 +27,7 @@ Quatro movimentos. **Nesta ordem** — a ordem é o que faz funcionar.
 > *"A maioria das empresas que investe em IA não consegue dizer o que mudou. Não porque não mudou — porque ninguém definiu antes o que seria mudança. É a razão dominante de fracasso, e é organizacional, não técnica."*
 
 **2. A cunha (30s)**
-> *"Setenta por cento do valor de uma transformação de IA está em pessoas, processo e cultura. O mercado vende os outros trinta: ferramenta, piloto sem métrica, curso. Ninguém instala os setenta no médio porte brasileiro. É onde a gente vive."*
+> *"Setenta por cento do valor de uma transformação de IA está em pessoas, processo e cultura. O mercado vende os outros trinta: ferramenta, piloto sem métrica, curso. Ninguém instala os setenta no médio porte brasileiro — e ninguém prova de fora o que mudou. Funciona como uma auditoria: mesmo quem tem um ótimo CFO contrata auditor, porque a prova só vale vindo de terceiro. É onde a gente vive."*
 
 **3. Como funciona, em uma frase por degrau (60s)**
 > *"Começa com um mapa do que estimamos estar vazando, feito de fora e de graça. Se fizer sentido, a avaliação profunda olha a empresa em 25 dimensões e devolve um portfólio ranqueado. Aí a gente prototipa um caso com dados reais e vocês decidem GO/NO-GO com números — só então constrói e treina, plataforma mais presencial. E daí em diante a gente fica: presença semanal, toda decisão num registro — métrica combinada antes, resultado medido depois, assinado por gente. E quando vocês quiserem a cadeira do estrategista do lado de vocês da mesa, isso tem nome: Conselheiro de IA."*
@@ -74,7 +74,7 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 | 1 | Capa | *"Prometo que este é o único deck — o resto é conversa."* |
 | 2 | O problema | *"A tecnologia funciona. O que falha é a adoção — e isso é organizacional, não técnico."* |
 | 3 | A lacuna | *"A Fortune 500 tem quem a atenda. O médio porte brasileiro, não."* |
-| 4 | Quem somos | A frase inteira, pausada: *"...número combinado antes, medido depois, assinado por gente."* |
+| 4 | Quem somos | A frase inteira, pausada: *"...número combinado antes, medido depois, assinado por gente."* E a âncora da prateleira: *"fazemos o que não dá para fazer de dentro — estratégia de IA é de vocês; prova independente, por definição, não pode ser."* |
 | 5 | 6 etapas | *"Começa de graça, com um número em reais — já explico."* |
 | 6 | AI Native | *"Três níveis ao mesmo tempo — porque transformar só um cria atrito com os outros dois."* |
 | 7 | A escada | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nessa escada hoje?"* (quase sempre se colocam um degrau acima do real) |
@@ -95,6 +95,7 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 | "X% de acurácia" (sem termos medido) | "A gente mede coerência da linha do tempo; fidelidade à fonte é uma medição separada e a gente diz quando fez" |
 | "Garantimos o resultado" | "Garantimos o método: métrica combinada antes, medida depois, e você vê o registro inteiro" |
 | "Curso de IA" / "treinamento" (como produto) | "Instalação de capacidade" |
+| "Somos a auditoria de IA" / "auditamos" | "Camada independente de prova" — a analogia *"funciona como uma auditoria"* pode; a categoria não ([posicionamento](../00-identidade/posicionamento.md), "A prateleira") |
 | "Nossos clientes dizem que…" (não temos ainda) | "Ainda não temos casos publicados — e é por isso que o primeiro contrato tem condição de charter" |
 | "A gente resolve tudo" | O escopo, nomeado, e o que fica de fora |
 | "Suporte 24/7" | O modelo real do [SLA](../04-entrega/sla-manutencao.md) |

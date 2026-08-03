@@ -12,6 +12,8 @@
 
 A aposta estratégica por trás: virar **a régua, o cartório e o radar** da adoção de IA na média empresa brasileira (R$ 50–500 mi). Régua = benchmark; cartório = diário decisão→resultado; radar = a camada de antecipação. Fundamentos em [Visão 2029](visao-2029.md), [estudo de antecipação](../05-interno/estudo-antecipacao.md) e [ecossistema](ecossistema.md).
 
+**A prateleira (V3c):** a primeira frase em qualquer mesa diz **o que não dá para fazer de dentro** — construção em escala + prova de terceiro. Nunca "mais uma consultoria de IA", nunca disputa com o diretor de IA do cliente, e nunca a categoria "auditoria" — a analogia pode; a categoria criaria conflito com construir e treinar (regra completa no [posicionamento](posicionamento.md)).
+
 ## O organismo
 
 ```mermaid
