@@ -11,6 +11,10 @@
 | Relatórios editados pelos sócios + one-pager + quantificação rastreável | Assessment web (no ar em URL própria, **ainda não aberto ao público** — ver abaixo): alinhamento visual/CTA/gating entra ANTES do lançamento | |
 | Compartilhamento seguro: só o one-pager anonimizado, link com expiração | | |
 
+## Prontidão regulatória (ISO/IEC 42001 + PL 2338)
+
+A avaliação pode entregar, sem campo adicional, uma seção de **prontidão regulatória**: o [mapa 25 dimensões × ISO 42001 × PL 2338](mapa-avaliacao-iso42001-pl2338.md) mostra qual evidência as entrevistas já coletam e as 10 perguntas suplementares que fecham o resto. Travas: é leitura de prontidão, **nunca certificação** (não somos organismo acreditado); PL 2338 ainda em tramitação — conferir o mapa antes de prometer.
+
 ## Superfície web (assessment.abbaservices.com.br)
 
 O assessment no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). **Consistência verificada em 3 execuções** (Brasal/deep 42p · Grupo Santa/quick 30p · ABC DataSaúde/quick 31p): mesma estrutura e qualidade, com consciência regulatória por setor.
