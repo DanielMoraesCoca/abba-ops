@@ -129,3 +129,18 @@ Fase 0: **1 sprint — entregue**. Fase 1: 2 sprints. Fase 2: 2–3 sprints. Fas
 ## 13. Protocolo de merge do estudo das big techs — ✅ EXECUTADO (2026-07-29)
 
 Os 4 marcadores `⏳PESQUISA` foram resolvidos e 8 adições entraram nas fases (marcadas "✅ merge" acima), por decisão do sócio. A tabela completa de candidatos — incluindo os 3 **rejeitados conscientemente** (markdown-em-git como system of record, embedding fine-tunado por cliente, conectores live) e o porquê — está na seção final do [estudo](estudo-big-techs-company-brain.md). Zero marcador pendente.
+
+## 14. Conselheiro Vertical — ✅ SPRINT 1–3 ENTREGUES (2026-08-04, decisão do sócio "tudo agora", V3g)
+
+O upgrade que unifica a visão do Conselheiro sobre TUDO o que a ABBA produz — construído fora da sequência de gatilhos por decisão explícita do sócio (contrariando conscientemente a moratória de engenharia do conselho consultivo; registrado em V3g).
+
+| Bloco | O que é | Estado |
+|---|---|---|
+| **A — O Revisor** | Gate determinístico de doutrina ([régua](../06-ferramentas/regua-do-revisor.md)) + pass LLM de coerência com a memória (consultivo, nunca bloqueia sozinho). `abba revise` + `abba report --revise` + episódio `revisor.reviewed` (migração 048) | ✅ código + testes |
+| **B — Instância ABBA** | O Cliente Zero do próprio produto: nossas decisões viram diário com gatilho, ciclo noturno com LLM real mede custo (R20) e valida extração (R17) | ✅ [runbook](abba-interna-runbook.md) · ⬜ sócios rodam 4 semanas |
+| **C — Portal→cérebro** | Snapshot AGREGADO do portal (rota staff nova) → `abba portal import` → fatos `tool_output` com TTL mensal (snapshot velho expira e cobra re-sync). Autoridade de origem preservada (humano nunca é sobrescrito — testado) | ✅ código + testes nos 2 repos |
+| **D — Outside view** | Vault semeado com 10 padrões curados DOS NOSSOS estudos (`scripts/seed-market-patterns.js`), tags `market_research`+fonte — o Stage 0 já injeta como priors desde o cliente 1, declarado como pesquisa | ✅ |
+| **E — Memória→análise** | `formatFactsBlock` atrás de `ABBA_INJECT_FACTS` (default OFF): fatos human_stated/client_doc ≥0,8, máx 10, byte-equality preservada com flag off (testado) | ✅ construído · 🔒 ligar só após eval com flag |
+| **Gateado (3+ clientes)** | Voz visível "O que o Conselheiro observa" nos relatórios (decisão do sócio: interna primeiro) + verbos search/think da Fase 3 | 🔒 |
+
+Suíte: **443/443 nos dois modos** (429 + 14 novos). Guard-rails intocados: segregação por engajamento, prompts canônicos byte-idênticos, gate humano nomeado, pisos 5/5 do benchmark, nunca dado bruto entre clientes — o "topo da montanha" vê os dados DA ABBA + agregados anonimizados + doutrina.

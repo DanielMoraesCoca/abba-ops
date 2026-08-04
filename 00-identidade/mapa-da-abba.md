@@ -73,6 +73,7 @@ flowchart TD
 | Prontidão regulatória ISO 42001 + PL 2338 na avaliação | ✅ manual (mapa + 10 perguntas) | [mapa](../06-ferramentas/mapa-avaliacao-iso42001-pl2338.md) | Texto ABNT p/ conferência · sanção do PL |
 | Parecer do conselho consultivo (7 lentes) | ✅ entregue | [parecer](../05-interno/parecer-conselho-2026-08.md) | ⬜ Sócios: pauta da reunião |
 | "O Assento" — Conselheiro presente (reuniões, voz, integrações) | 📋 desenhado em 5 camadas · **só a camada 0 é vendável hoje** | [estudo](../05-interno/estudo-conselheiro-presente.md) | Onda 1 = ABBA usa em si (30 dias) → anexo de captura no advogado (P4) |
+| **Conselheiro Vertical** — Revisor de doutrina + instância ABBA + ponte portal→cérebro + outside view no vault | ✅ em código (443/443, migração 048) · V3g | [plano §14](../05-interno/plano-implementacao-conselheiro.md) · [régua](../06-ferramentas/regua-do-revisor.md) · [runbook](../05-interno/abba-interna-runbook.md) | ⬜ Sócios: rodar a instância ABBA 4 semanas · 🔒 injeção memória→análise (eval) · 🔒 voz visível (3+ clientes) |
 
 ## O que é só de vocês (ninguém mais destrava)
 

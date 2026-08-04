@@ -1,0 +1,260 @@
+{
+  "version": "1.0.0",
+  "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
+  "rules": [
+    {
+      "id": "garantia",
+      "kind": "regex",
+      "pattern": "\\bgarantias?\\b",
+      "flags": "gi",
+      "unless": [
+        "garantimos\\s+o\\s+m[ée]todo",
+        "sem\\s+garantia",
+        "n[ãa]o\\s+garantimos",
+        "[Nn]unca\\s*\\|",
+        "frase\\s+proibida",
+        "o\\s+que\\s+nunca\\s+dizemos",
+        "n[ãa]o\\s+dizemos",
+        "Em\\s+vez\\s+disso",
+        "garantir\\s+hoje",
+        "cl[áa]usula",
+        "contrato"
+      ],
+      "severity": "block",
+      "reason": "A palavra 'garantia' é banida de material comercial: E6 (garantia 3×) NÃO foi ativada pelos sócios. A frase permitida é 'garantimos o método'.",
+      "doc": "05-interno/registro-de-decisoes.md (E6)",
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "vinte-quatro-sete",
+      "kind": "regex",
+      "pattern": "24\\s*/\\s*7|24x7|vinte\\s+e\\s+quatro\\s+por\\s+sete",
+      "flags": "gi",
+      "unless": [
+        "monitoramento\\s+(automatizado\\s+)?24/7",
+        "[Nn]unca\\s*\\|",
+        "frase\\s+proibida",
+        "o\\s+que\\s+nunca\\s+dizemos",
+        "n[ãa]o\\s+dizemos",
+        "Em\\s+vez\\s+disso"
+      ],
+      "severity": "block",
+      "reason": "'Suporte 24/7' é frase proibida (P9): SLA honesto para equipe de 2 = monitoramento automatizado 24/7 + suporte humano 9h–18h úteis.",
+      "doc": "04-entrega/sla-manutencao.md",
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "somos-auditoria",
+      "kind": "regex",
+      "pattern": "somos\\s+(a\\s+)?auditor\\w*|n[óo]s\\s+auditamos|a\\s+abba\\s+audita",
+      "flags": "gi",
+      "unless": [
+        "funciona\\s+como\\s+uma\\s+auditoria",
+        "[Nn]unca\\s*\\|",
+        "frase\\s+proibida",
+        "o\\s+que\\s+nunca\\s+dizemos",
+        "n[ãa]o\\s+dizemos",
+        "Em\\s+vez\\s+disso"
+      ],
+      "severity": "block",
+      "reason": "'Auditoria' como categoria é proibida (V3c): auditor estrito não pode construir nem treinar o que audita. A analogia 'funciona como uma auditoria' é permitida; a categoria não.",
+      "doc": "00-identidade/posicionamento.md (A prateleira)",
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "certificado-clientes-reais",
+      "kind": "regex",
+      "pattern": "certificad\\w*\\s+em\\s+clientes|validad\\w*\\s+em\\s+clientes\\s+reais|comprovad\\w*\\s+em\\s+clientes",
+      "flags": "gi",
+      "severity": "block",
+      "reason": "R1: o método foi validado só em dados sintéticos. 'Certificado/validado em clientes reais' é mentira até o primeiro engajamento real.",
+      "doc": "05-interno/registro-de-riscos.md (R1)",
+      "unless": []
+    },
+    {
+      "id": "curva-de-tenure",
+      "kind": "regex",
+      "pattern": "curva\\s+de\\s+tenure|tenure\\s+curve",
+      "flags": "gi",
+      "severity": "block",
+      "reason": "A curva de tenure como argumento comercial está gateada por decisão de sócios (conselheiro-de-ia.md) — e o termo em inglês fere o manifesto (pt-BR sempre).",
+      "doc": "03-comercial/conselheiro-de-ia.md",
+      "unless": []
+    },
+    {
+      "id": "benchmark-presente",
+      "kind": "regex",
+      "pattern": "benchmark",
+      "flags": "gi",
+      "unless": [
+        "quando\\s+houver",
+        "piso\\s+de",
+        "a\\s+partir\\s+d[eo]",
+        "5\\s+clientes",
+        "constru[íi]d[oa]\\s+e\\s+desligad",
+        "gatilho"
+      ],
+      "severity": "warn",
+      "reason": "Benchmark entre clientes existe mas está DESLIGADO (piso de 5 clientes). Só pode aparecer como capacidade futura declarada, nunca presente. Conferir o tempo verbal.",
+      "doc": "00-identidade/ecossistema.md §3"
+    },
+    {
+      "id": "acuracia",
+      "kind": "regex",
+      "pattern": "acur[áa]cia",
+      "flags": "gi",
+      "unless": [
+        "recus\\w*",
+        "n[ãa]o\\s+prometemos",
+        "sem\\s+acur[áa]cia",
+        "coer[êe]ncia,?\\s+n[ãa]o\\s+acur[áa]cia",
+        "nunca\\s+chamad[oa]\\s+de",
+        "[Nn]unca\\s*\\|",
+        "frase\\s+proibida",
+        "o\\s+que\\s+nunca\\s+dizemos",
+        "n[ãa]o\\s+dizemos",
+        "Em\\s+vez\\s+disso"
+      ],
+      "severity": "warn",
+      "reason": "'Acurácia' só pode aparecer dentro da própria recusa (medimos coerência; fidelidade à fonte é medição separada e paga). Fora disso, é promessa que não sustentamos.",
+      "doc": "00-identidade/manifesto.md (recusa 1)",
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "cinco-papeis",
+      "kind": "regex",
+      "pattern": "(cinco|5)\\s+pap[ée]is",
+      "flags": "gi",
+      "severity": "block",
+      "reason": "A seção '5 papéis, jamais headcount' foi apontada por 4 lentes do conselho como a única mentira num material que vende honestidade. Nomear os dois sócios, nunca inventar papéis.",
+      "doc": "05-interno/parecer-conselho-2026-08.md (melhoria nº 1)",
+      "unless": []
+    },
+    {
+      "id": "sso-corporativo",
+      "kind": "regex",
+      "pattern": "\\bSSO\\b|single\\s+sign[- ]on",
+      "flags": "gi",
+      "unless": [
+        "n[ãa]o\\s+(oferecemos|suportamos|prometemos)",
+        "interin"
+      ],
+      "severity": "block",
+      "reason": "R3: a autenticação do portal é interina. Prometer SSO corporativo é quebrar depois — é inclusive critério de recusa de cliente.",
+      "doc": "05-interno/registro-de-riscos.md (R3) · 00-identidade/alvo.md"
+    },
+    {
+      "id": "ia-decide",
+      "kind": "regex",
+      "pattern": "(a\\s+ia|nossa\\s+ia)\\s+decide|ia\\s+aut[ôo]noma",
+      "flags": "gi",
+      "unless": [
+        "nunca",
+        "n[ãa]o\\s+dizemos",
+        "recusamos",
+        "[Nn]unca\\s*\\|",
+        "frase\\s+proibida",
+        "o\\s+que\\s+nunca\\s+dizemos",
+        "Em\\s+vez\\s+disso"
+      ],
+      "severity": "block",
+      "reason": "Modelo centauro inegociável: a IA rascunha, um humano assina, a diretoria decide. 'Nossa IA decide' é frase proibida do kit.",
+      "doc": "03-comercial/kit-de-presenca.md (o que nunca dizemos)",
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "presenca-total",
+      "kind": "regex",
+      "pattern": "presente\\s+em\\s+todos\\s+os\\s+lugares|ouve\\s+tudo|escuta\\s+tudo|monitora\\s+(o\\s+)?(seu\\s+)?time",
+      "flags": "gi",
+      "severity": "block",
+      "reason": "As 8 recusas do Assento: nunca captura ambiente permanente, nunca medir pessoas. É a frase que faz o DPO encerrar a reunião.",
+      "doc": "05-interno/estudo-conselheiro-presente.md §5",
+      "unless": [],
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "prever-regime",
+      "kind": "regex",
+      "pattern": "prevemos\\s+(qualquer|tudo|mudan[çc]as?\\s+de\\s+regime)|prever\\s+o\\s+futuro",
+      "flags": "gi",
+      "unless": [
+        "recusamos",
+        "n[ãa]o\\s+prevemos"
+      ],
+      "severity": "block",
+      "reason": "Recusa 8 do manifesto: modelos preveem PIOR em quebra de regime. Prometer isso é ser desmentido pelo primeiro trimestre ruim.",
+      "doc": "00-identidade/manifesto.md · 05-interno/estudo-antecipacao.md §2",
+      "allowQuotedInTables": true
+    },
+    {
+      "id": "precos-travados",
+      "kind": "price-table",
+      "products": [
+        {
+          "name": "workshop",
+          "aliases": [
+            "workshop\\s+shadow\\s*ai",
+            "workshop"
+          ],
+          "priceBRL": 14000
+        },
+        {
+          "name": "avaliacao",
+          "aliases": [
+            "avalia[çc][ãa]o\\s+de\\s+prontid[ãa]o",
+            "avalia[çc][ãa]o\\s+profunda"
+          ],
+          "priceBRL": 28000
+        },
+        {
+          "name": "sprint-lgpd",
+          "aliases": [
+            "sprint\\s+lgpd"
+          ],
+          "priceBRL": 24000
+        },
+        {
+          "name": "programa",
+          "aliases": [
+            "programa\\s+(completo|de\\s+transforma[çc][ãa]o)"
+          ],
+          "priceBRL": 185000
+        },
+        {
+          "name": "manutencao",
+          "aliases": [
+            "manuten[çc][ãa]o"
+          ],
+          "priceBRL": 9500
+        },
+        {
+          "name": "mini-ciclo",
+          "aliases": [
+            "mini[- ]ciclo"
+          ],
+          "priceBRL": 42000
+        }
+      ],
+      "severity": "block",
+      "reason": "Tabela v1 travada (P1, 2026-07-23): Workshop 14k · Avaliação 28k · Sprint 24k · Programa 185k · Manutenção 9,5k/mês · Mini-ciclo 42k. Preço divergente num material é a violação mais cara possível. Escopo: material que SAI para cliente — docs internos de precificação citam âncoras e rascunhos legitimamente.",
+      "doc": "03-comercial/tabela-de-precos.md",
+      "maxAliasDistance": 80,
+      "exemptSanctionedPrices": true,
+      "unless": [],
+      "skipContexts": [
+        "rascunho",
+        "\\bv2\\b",
+        "por\\s+ano",
+        "/\\s*ano",
+        "anuali",
+        "hist[óo]ric",
+        "[âa]ncora",
+        "exemplo",
+        "cen[áa]rio",
+        "custo[- ]base",
+        "metodologia"
+      ]
+    }
+  ]
+}
