@@ -72,6 +72,7 @@ flowchart TD
 | Defesa "já temos diretor de IA" (discurso + fundamento) | ✅ | [objeção](../03-comercial/objecao-diretor-de-ia.md) · [estudo](../05-interno/estudo-imunidade-diretor-de-ia.md) | Registrar reação real nas 3 primeiras mesas |
 | Prontidão regulatória ISO 42001 + PL 2338 na avaliação | ✅ manual (mapa + 10 perguntas) | [mapa](../06-ferramentas/mapa-avaliacao-iso42001-pl2338.md) | Texto ABNT p/ conferência · sanção do PL |
 | Parecer do conselho consultivo (7 lentes) | ✅ entregue | [parecer](../05-interno/parecer-conselho-2026-08.md) | ⬜ Sócios: pauta da reunião |
+| "O Assento" — Conselheiro presente (reuniões, voz, integrações) | 📋 desenhado em 5 camadas · **só a camada 0 é vendável hoje** | [estudo](../05-interno/estudo-conselheiro-presente.md) | Onda 1 = ABBA usa em si (30 dias) → anexo de captura no advogado (P4) |
 
 ## O que é só de vocês (ninguém mais destrava)
 
