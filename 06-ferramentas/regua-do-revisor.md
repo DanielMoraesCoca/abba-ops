@@ -32,7 +32,10 @@ abba report <eng> --revise                     # o relatório só grava se passa
 | "a IA decide"/"IA autônoma" | block | centauro inegociável |
 | "presente em todos os lugares"/"ouve tudo"/"monitora o time" | block | 8 recusas do Assento |
 | prever regime/futuro | block | recusa 8 do manifesto |
+| "primeiro café" (a forma aprovada é "da primeira conversa") | block | V3n — veto do sócio |
 | "benchmark" (conferir tempo verbal) · "acurácia" (fora da recusa) | warn | ecossistema §3 · manifesto |
+| "firma nova" (é doutrina de conversa, não texto de material) | warn | V3o — padrão editorial |
+| "25 dimensões" (ok em proposta/contrato/entrega; não em material de envio) | warn | V3l — [padrão editorial §0](../08-materiais/README.md) |
 
 **Exceções embutidas no motor:** frase proibida **citada entre aspas em tabela** (as tabelas "o que nunca dizemos") não flagra; contexto de **rascunho/âncora/anualização** não flagra preço; valor **sancionado da tabela** nunca flagra.
 

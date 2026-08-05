@@ -2,6 +2,22 @@
 
 > Inventário dos materiais reais da ABBA (treinamento, comerciais, estratégia), com onde cada um vive e o que falta produzir. Regra: **modelos genéricos e canônicos → este repo · arquivos finais pesados e instâncias de cliente → Drive** ([estrutura](../07-drive/estrutura-drive.md)).
 
+## 0. O padrão editorial (decisão do sócio, 2026-08-05)
+
+**[`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) é o documento-padrão** — todo material novo (e toda revisão de material existente) segue a entonação e os termos dele. Não precisa ser igual; precisa estar na mesma linha:
+
+- **Abre direto na ABBA** — sem parágrafos de contexto de mercado (70/30) antes de dizer quem somos
+- **Conta a história em ordem** — a jornada na sequência real, cada etapa em "o quê · por quê · como"
+- **Sem preços** em material de primeiro contato — preço é conversa
+- **Sem "25 dimensões"** em material de envio — vira "mergulho profundo, do conselho à linha de frente" (em proposta/contrato/relatório de entrega o número é escopo e permanece)
+- **Sem "somos uma firma nova"** em material — a honestidade sobre histórico é doutrina de **conversa** ([kit, 3ª objeção](../03-comercial/kit-de-presenca.md))
+- **Engenharia, não só agentes** — "arquitetura, integrações e agentes de IA trabalhando em conjunto"
+- **Raízes sem nomear árvore** nas seções especiais; **"da primeira conversa"**, nunca "do primeiro café"
+- **E-mail externo = contato@abbaservices.com.br** · **logos Microsoft e CrewAI** discretas onde a parceria é citada
+- Visual: o sistema editorial do próprio documento (branco, Cambria/Calibri, versaletes dourados, filetes — sem cartões nem decoração)
+
+O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíveis com regex; o resto é julgamento contra o documento-padrão.
+
 ## 1. ABBA Academy — Materiais Finais de Treinamento (PT-BR)
 
 **O que é:** o pacote FINAL do conteúdo de capacitação (PDF, 23 páginas), pronto para gravar/imprimir/facilitar. **Este é o maior ativo de conteúdo da empresa.**
@@ -98,7 +114,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
 | One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
 | Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
-| **Apresentação enviável** (PDF A4, 2 págs — o que fazemos + a escada com preços v1; termina no CTA do Mapa de Vazamento; **é o que se manda quando o prospect pede "conteúdo antes da reunião"**) | pós-ligação / pré-reunião — [ordem de envio no kit](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) (fonte: `.pptx` ao lado) |
+| **Apresentação enviável** (PDF A4, 3 págs — **o documento-padrão, §0**: a história em ordem, jornada 1–7 em "o quê · por quê · como", **sem preços**, logos Microsoft/CrewAI; termina no CTA do Mapa de Vazamento; **é o que se manda quando o prospect pede "conteúdo antes da reunião"**; versão-relâmpago de 1 pág para WhatsApp: `abba-um-minuto.pdf`) | pós-ligação / pré-reunião — [ordem de envio no kit](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) (fonte: `.pptx` ao lado) |
 | **Deck do Conselheiro de IA** (PPTX, 10 slides — a arma de bolso: funções, arbitragem, diferencial da memória, o que NÃO é, duas portas; **sem preços** — v2 é rascunho) | venda direta do [produto](../03-comercial/conselheiro-de-ia.md) — porta lateral "já temos IA" e estágio 10 | ✅ [`modelos/conselheiro-de-ia-deck.pptx`](modelos/conselheiro-de-ia-deck.pptx) |
 | Parecer de Arbitragem de Fornecedores (DOCX) | [processo](../04-entrega/arbitragem-de-fornecedores.md) — entregável do Conselheiro | ✅ [`modelos/arbitragem-fornecedores-modelo.docx`](modelos/arbitragem-fornecedores-modelo.docx) |
 | Proposta de Continuidade (DOCX) | [processo](../03-comercial/proposta-continuidade.md) — renovação em 3 camadas, estágio 11 | ✅ [`modelos/proposta-continuidade-modelo.docx`](modelos/proposta-continuidade-modelo.docx) |

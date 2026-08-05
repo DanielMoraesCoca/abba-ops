@@ -1,7 +1,40 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
+    {
+      "id": "primeiro-cafe",
+      "kind": "regex",
+      "pattern": "primeiro\\s+caf[ée]",
+      "flags": "gi",
+      "severity": "block",
+      "unless": [],
+      "allowQuotedInTables": true,
+      "reason": "Expressão vetada pelo sócio (V3n, 2026-08-05): 'do primeiro café' é inapropriada em material. A forma aprovada é 'da primeira conversa'.",
+      "doc": "05-interno/registro-de-decisoes.md (V3n)"
+    },
+    {
+      "id": "firma-nova-em-material",
+      "kind": "regex",
+      "pattern": "firma\\s+nova",
+      "flags": "gi",
+      "severity": "warn",
+      "unless": [],
+      "allowQuotedInTables": true,
+      "reason": "V3o (2026-08-05): 'somos uma firma nova' saiu dos materiais de envio. A honestidade sobre histórico é doutrina de CONVERSA (kit, 3ª objeção) — conferir se o documento é material que sai.",
+      "doc": "05-interno/registro-de-decisoes.md (V3o)"
+    },
+    {
+      "id": "vinte-e-cinco-dimensoes",
+      "kind": "regex",
+      "pattern": "25\\s+dimens[õo]es|vinte\\s+e\\s+cinco\\s+dimens[õo]es",
+      "flags": "gi",
+      "severity": "warn",
+      "unless": [],
+      "allowQuotedInTables": true,
+      "reason": "V3l (2026-08-04): '25 dimensões' saiu dos materiais de primeiro contato (vira 'mergulho profundo, do conselho à linha de frente'). Permanece legítimo em documento de ESCOPO (proposta, contrato, relatório de entrega) — conferir o tipo do documento.",
+      "doc": "05-interno/registro-de-decisoes.md (V3l) · 08-materiais/README.md §0"
+    },
     {
       "id": "garantia",
       "kind": "regex",

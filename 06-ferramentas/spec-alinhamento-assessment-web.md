@@ -20,9 +20,9 @@
 
 ## 3. Página final de CTA (nova — copy pronta, usar como está)
 > ## Isto foi feito de fora. Imagine com os dados de dentro.
-> Esta análise usou apenas informação pública. A **Avaliação de Prontidão para IA** entrevista do conselho à linha de frente, quantifica cada oportunidade em reais e entrega um caminho recomendado de até 3 agentes de IA — em 2 semanas.
+> Esta análise usou apenas informação pública. A **Avaliação de Prontidão para IA** entrevista do conselho à linha de frente, quantifica cada oportunidade em reais e entrega um caminho recomendado de até 3 soluções de IA — arquitetura, integrações e agentes trabalhando em conjunto — em 2 semanas.
 > **O próximo passo é gratuito:** apresentamos esta análise ao vivo, em 45 minutos, e mostramos o que a avaliação profunda revelaria no seu caso.
-> **comercial@abbaservices.com.br** · abbaservices.com.br
+> **contato@abbaservices.com.br** · abbaservices.com.br
 > *ABBA · Consultoria de IA · Confidencial — elaborado exclusivamente com informação pública; não constitui consultoria formal.*
 
 ## 4. Gating (decisão estratégica da [coreografia](../03-comercial/coreografia-da-conversao.md))
