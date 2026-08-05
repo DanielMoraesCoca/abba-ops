@@ -55,9 +55,9 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 **Ordem de preferência do que se manda depois de uma conversa:**
 
 1. **[Mapa de Vazamento](mapa-de-vazamento.md)** — se houve conversa de descoberta. É o que mais converte, porque tem um número dentro.
-2. **[Escada ABBA](escada-abba.md)** — se a conversa foi sobre "o que exatamente vocês fazem".
+2. **[A apresentação em PDF](../08-materiais/modelos/abba-apresentacao.pdf)** — quando pedirem "manda o que vocês fazem" antes da reunião. 2 páginas: o que fazemos + a escada com preços. Passou no Revisor; termina no CTA do Mapa de Vazamento.
 3. **[Manifesto](../00-identidade/manifesto.md)** — se a conversa foi sobre confiança, governança ou risco. É o documento para o guardião (jurídico/DPO).
-4. **Institucional** ([deck](../08-materiais/modelos/abba-deck-institucional.pptx)) — só quando pedirem "material da empresa". É o mais fraco dos quatro, porque não pede nada de volta.
+4. **Institucional** ([deck](../08-materiais/modelos/abba-deck-institucional.pptx)) — **apresentar ao vivo, nunca enviar antes** (a conversa é onde a conversão acontece).
 
 **Regra:** todo envio tem **uma** pergunta ou próximo passo no corpo do e-mail. Material enviado sem pedido é material arquivado ([e-mails de follow-up](emails-follow-up.md)).
 
