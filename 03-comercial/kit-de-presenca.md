@@ -55,7 +55,7 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 **Ordem de preferência do que se manda depois de uma conversa:**
 
 1. **[Mapa de Vazamento](mapa-de-vazamento.md)** — se houve conversa de descoberta. É o que mais converte, porque tem um número dentro.
-2. **[A apresentação em PDF](../08-materiais/modelos/abba-apresentacao.pdf)** — quando pedirem "manda o que vocês fazem" antes da reunião. 3 páginas na voz do sócio (AI native, a árvore, as 3 perguntas, os 6 serviços, parceiros, investimento). Passou no Revisor; termina no CTA do Mapa de Vazamento. Versão-relâmpago para WhatsApp: [1 página](../08-materiais/modelos/abba-um-minuto.pdf).
+2. **[A apresentação em PDF](../08-materiais/modelos/abba-apresentacao.pdf)** — quando pedirem "manda o que vocês fazem" antes da reunião. 3 páginas em NARRATIVA (decisão do sócio, V3j): pág. 1 conta a história (AI native, a árvore, a regra do número); págs. 2–3 a jornada NA ORDEM (conversa → Assessment → protótipo → construção → treinamento com as 3 perguntas → gerenciados → Conselheiro), cada etapa em "o quê · por quê · como". **Sem preços — preço é conversa.** Passou no Revisor. Versão-relâmpago para WhatsApp: [1 página](../08-materiais/modelos/abba-um-minuto.pdf).
 3. **[Manifesto](../00-identidade/manifesto.md)** — se a conversa foi sobre confiança, governança ou risco. É o documento para o guardião (jurídico/DPO).
 4. **Institucional** ([deck](../08-materiais/modelos/abba-deck-institucional.pptx)) — **apresentar ao vivo, nunca enviar antes** (a conversa é onde a conversão acontece).
 
