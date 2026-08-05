@@ -7,6 +7,7 @@
 | Item | Nome oficial (pt-BR) | Status |
 |---|---|---|
 | Empresa (marca) | **ABBA** | ✅ fixo |
+| E-mail oficial de contato | **`contato@abbaservices.com.br`** (decisão do sócio, 2026-08-04 — é o que vai em TODO material externo; `comercial@` existe como caixa interna, nunca em material) |
 | Empresa (assinatura comercial) | **ABBA Consultoria de IA** | ✅ fixo (era "ABBA AI Consulting" — traduzido; razão social definitiva pende do CNPJ, pendência do [societário](../05-interno/acordo-societario.md)) |
 | Programa principal | **Programa de Transformação em IA** (proposta alternativa: "Programa de Instalação de Capacidade em IA") | ⏳ decisão P3 |
 | Degustação gratuita | **Análise ABBA** (externa) / "scout" (interna) | ✅ fixo |
