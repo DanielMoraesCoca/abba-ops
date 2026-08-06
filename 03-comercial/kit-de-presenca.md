@@ -115,4 +115,4 @@ Se, ao final de um engajamento, é isso que o patrocinador diz para um par, o po
 
 ## Ligações
 
-[Manifesto](../00-identidade/manifesto.md) · [Posicionamento](../00-identidade/posicionamento.md) · [Escada](escada-abba.md) · [Mapa de Vazamento](mapa-de-vazamento.md) · [Alvo](../00-identidade/alvo.md) · [Coreografia da conversão](coreografia-da-conversao.md) · [Cartões de conversa](../08-materiais/README.md)
+[Manifesto](../00-identidade/manifesto.md) · [Posicionamento](../00-identidade/posicionamento.md) · [Escada](escada-abba.md) · [Mapa de Vazamento](mapa-de-vazamento.md) · [Alvo](../00-identidade/alvo.md) · [Coreografia da conversão](coreografia-da-conversao.md) · [Cartões de conversa](../08-materiais/README.md) · [Roteiro de descoberta do protótipo](roteiro-descoberta-prototipo.md) — o instrumento oficial da reunião técnica, para qualquer pessoa da ABBA
