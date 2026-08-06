@@ -115,7 +115,7 @@ Regras de ouro: **pedir para MOSTRAREM, não só contarem** (5 min vendo a tela 
 
 ## Depois da reunião (mesmo dia, 15 min)
 
-Preencher e mandar ao time o **registro de descoberta** (estrutura = os 7 blocos + checklist; uma mensagem longa no canal do projeto resolve). O que faltou vira pergunta ao ponto focal — **não segunda reunião**. Os critérios do Bloco 2 entram como "Critérios de sucesso acordados" no [relatório do protótipo](../08-materiais/modelos/relatorio-prototipo-modelo.docx), seção 2. Se surgiu reação a preço, registrar na [planilha de precificação](precificacao-planilha.md) §6.
+Preencher e mandar ao time o **[registro de descoberta](registro-de-descoberta-modelo.md)** (modelo pronto; a instância com nome do cliente vai para o Drive, **nunca para o git**). O que faltou vira pergunta ao ponto focal — **não segunda reunião**. Os critérios do Bloco 2 entram como "Critérios de sucesso acordados" no [relatório do protótipo](../08-materiais/modelos/relatorio-prototipo-modelo.docx), seção 2. Se surgiu reação a preço, registrar na [planilha de precificação](precificacao-planilha.md) §6.
 
 ## Ligações
 
