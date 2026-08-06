@@ -46,7 +46,7 @@ Consenso 2026: pgvector + FTS dão conta até milhões de vetores; um cérebro p
 
 ## 3. O que o cérebro acessa e o que ele cria
 
-**Acessa (alimentação diária):** assessment + plano diretor (a fotografia inicial — já temos) · atas e decisões do conselho · KPI mensal projetado×realizado · transcrições de reuniões do engajamento (com consentimento; regra LGPD do [guia HUD](../08-materiais/guia-oculos-hud.md) vale aqui) · telemetria dos agentes CrewAI em produção · adoção no portal · edições do sócio (o sinal de ouro) · padrões anonimizados do setor vindos do vault.
+**Acessa (alimentação diária):** assessment + plano diretor (a fotografia inicial — já temos) · atas e decisões do conselho · KPI mensal projetado×realizado · transcrições de reuniões do engajamento (com consentimento; as 8 recusas do [estudo do Conselheiro presente](estudo-conselheiro-presente.md) valem aqui) · telemetria dos agentes CrewAI em produção · adoção no portal · edições do sócio (o sinal de ouro) · padrões anonimizados do setor vindos do vault.
 
 **Cria (a produção da noite):** o brief mensal com fonte citada · estado vivo das 25 dimensões · radar de recomendações on/off-track · candidatos a insight para o ritual (máx. 3, curados) · rascunho de pauta do conselho · alertas de fato vencido ("o churn que você vai citar é de maio") · o diário de decisões (recomendado → decidido → implementado → medido) — e, anonimizado e consentido, o alimento do vault.
 

@@ -1,6 +1,6 @@
 # Estudo — Memória agêntica: onde o nosso cérebro está na fronteira (e o tesouro no repo ABBA)
 
-> **Status: ESTUDO CONCLUÍDO (2026-07-30) — e as 6 melhorias ranqueadas foram TODAS ENTREGUES (2026-08-01)**: nº 1 e 2 na Onda 1 (autoridade de origem + certificado de deleção), nº 3 e 4 na Onda 2 (reforço uso+outcome + score de consolidação), nº 5 e 6 na Onda 3 (auditoria e tier procedural). Ver [plano §7b](plano-implementacao-conselheiro.md). Duas frentes: fronteira acadêmica/produto (papers até jul/2026) + varredura profunda de memória no repo ABBA legado (desta vez incluindo um sistema inteiro nunca catalogado).
+> **Status: ESTUDO CONCLUÍDO (2026-07-30) — e as 6 melhorias ranqueadas foram TODAS ENTREGUES (2026-08-01)**: nº 1 e 2 na Onda 1 (autoridade de origem + certificado de deleção), nº 3 e 4 na Onda 2 (reforço uso+outcome + score de consolidação), nº 5 e 6 na Onda 3 (auditoria e tier procedural). Ver [plano §7b](../plano-implementacao-conselheiro.md). Duas frentes: fronteira acadêmica/produto (papers até jul/2026) + varredura profunda de memória no repo ABBA legado (desta vez incluindo um sistema inteiro nunca catalogado).
 
 ## O veredito honesto: a fronteira convergiu para o NOSSO desenho
 

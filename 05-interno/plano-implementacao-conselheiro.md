@@ -1,6 +1,6 @@
 # Plano de Implementação — Conselheiro Digital (do produto de hoje ao cérebro)
 
-> **Status: PLANO APROVADO EM EXECUÇÃO FASEADA — construção estritamente por gatilho.** Origem (2026-07-29): pedido do sócio — plano real de implementação incorporando as inspirações do Meta-ANN (portar o que funciona; reconstruir certo o que não funciona). Base: [arquitetura do cérebro](arquitetura-cerebro-conselheiro.md) (aprovada) + [estudo](estudo-conselheiro-digital.md) + varredura de código dos 3 repositórios. Pesquisa das big techs consolidada em [estudo-big-techs-company-brain.md](estudo-big-techs-company-brain.md) e **mergeada neste plano em 2026-07-29** (§12: 4 marcadores resolvidos, 8 adições, 3 rejeições conscientes).
+> **Status: PLANO APROVADO EM EXECUÇÃO FASEADA — construção estritamente por gatilho.** Origem (2026-07-29): pedido do sócio — plano real de implementação incorporando as inspirações do Meta-ANN (portar o que funciona; reconstruir certo o que não funciona). Base: [arquitetura do cérebro](arquitetura-cerebro-conselheiro.md) (aprovada) + [estudo](estudo-conselheiro-digital.md) + varredura de código dos 3 repositórios. Pesquisa das big techs consolidada em [arquivo/estudo-big-techs-company-brain.md](arquivo/estudo-big-techs-company-brain.md) e **mergeada neste plano em 2026-07-29** (§12: 4 marcadores resolvidos, 8 adições, 3 rejeições conscientes).
 
 ## 1. Sumário executivo
 
@@ -77,7 +77,7 @@ Port do legado COM os consertos (padrão, não código literal — SQLite/conven
 - **Onboarding botmaster** (✅ merge, prática GBrain): nunca dar acesso frio a usuário do cliente — pré-popular a fatia dele + conduzir 3 fluxos-uau ao vivo antes de liberar ("vira a taxa de conversão"; e é exatamente o formato de entrega de uma consultoria).
 - **Compactação de profile_blocks** (✅ pesquisa resolvida): split `compiled_truth` × `timeline` (a melhor ideia de schema do GBrain) — a crença atual compilada separada da evidência append-only; decaimento gradual, nunca deleção.
 
-## 7b. As Ondas de Memória — merge do [estudo de memória agêntica](estudo-memoria-agentica.md) (2026-07-30)
+## 7b. As Ondas de Memória — merge do [estudo de memória agêntica](arquivo/estudo-memoria-agentica.md) (2026-07-30)
 
 A estratégia de adoção das melhorias de memória, casada com os gatilhos para nunca construir produtor sem consumidor:
 
@@ -123,12 +123,12 @@ Fase 0: **1 sprint — entregue**. Fase 1: 2 sprints. Fase 2: 2–3 sprints. Fas
 
 ## 12. To-do de oferta — "Resgate de IA" (decisão do sócio, 2026-07-31)
 
-- [ ] **Lançar o "Resgate de IA"** — a única mudança de empacotamento aprovada por ora, vinda do [estudo de mercado](estudo-mercado-ofertas.md): auditoria forense do piloto de IA que falhou (preço fixo, 2–3 semanas) → sprint de reconstrução. Reusa a máquina das 25 dimensões com o frame "por que falhou"; pitch pronto (externo acerta 2× — MIT); zero concorrência empacotada no BR. Passos: (1) one-pager comercial em `03-comercial/`, (2) roteiro de auditoria forense mapeado sobre as 25 dimensões, (3) preço na tabela (proposta v2, sócios), (4) alimentar o Conselheiro com cada resgate (episódios `run.completed` + facts de "por que falhou").
+- [ ] **Lançar o "Resgate de IA"** — a única mudança de empacotamento aprovada por ora, vinda do [estudo de mercado](arquivo/estudo-mercado-ofertas.md): auditoria forense do piloto de IA que falhou (preço fixo, 2–3 semanas) → sprint de reconstrução. Reusa a máquina das 25 dimensões com o frame "por que falhou"; pitch pronto (externo acerta 2× — MIT); zero concorrência empacotada no BR. Passos: (1) one-pager comercial em `03-comercial/`, (2) roteiro de auditoria forense mapeado sobre as 25 dimensões, (3) preço na tabela (proposta v2, sócios), (4) alimentar o Conselheiro com cada resgate (episódios `run.completed` + facts de "por que falhou").
 - As **outras 4 mudanças de empacotamento** do estudo (portas avulsas, máx. 3 visíveis, recorrência como centro, governança/Conselheiro re-precificado) permanecem **candidatas — pauta de sócios**, sem execução por ora.
 
 ## 13. Protocolo de merge do estudo das big techs — ✅ EXECUTADO (2026-07-29)
 
-Os 4 marcadores `⏳PESQUISA` foram resolvidos e 8 adições entraram nas fases (marcadas "✅ merge" acima), por decisão do sócio. A tabela completa de candidatos — incluindo os 3 **rejeitados conscientemente** (markdown-em-git como system of record, embedding fine-tunado por cliente, conectores live) e o porquê — está na seção final do [estudo](estudo-big-techs-company-brain.md). Zero marcador pendente.
+Os 4 marcadores `⏳PESQUISA` foram resolvidos e 8 adições entraram nas fases (marcadas "✅ merge" acima), por decisão do sócio. A tabela completa de candidatos — incluindo os 3 **rejeitados conscientemente** (markdown-em-git como system of record, embedding fine-tunado por cliente, conectores live) e o porquê — está na seção final do [estudo](arquivo/estudo-big-techs-company-brain.md). Zero marcador pendente.
 
 ## 14. Conselheiro Vertical — ✅ SPRINT 1–3 ENTREGUES (2026-08-04, decisão do sócio "tudo agora", V3g)
 

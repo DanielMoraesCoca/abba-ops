@@ -73,7 +73,7 @@ Contra ([tabela v1](tabela-de-precos.md)):
 
 ## 4. As três perguntas de descoberta (fazem o trabalho sozinhas)
 
-Quando a objeção vier, não rebater — perguntar ([aikido](../08-materiais/teleprompter/25-objecoes-aikido.txt)). As três perguntas, nesta ordem:
+Quando a objeção vier, não rebater — perguntar. As três perguntas, nesta ordem:
 
 1. *"Que bom — isso coloca vocês na frente. **O que ele mediu no último trimestre?**"* — separa diretor de verdade de diretor de título. Se houver número, ótimo: a conversa vira protocolo de prova e benchmark. Se não houver, a porta abriu sozinha — sem que a gente tenha atacado ninguém.
 2. *"**Quantas pessoas ele tem** para construir a fila de casos que ele já mapeou?"* — quase sempre a resposta é "ele e mais um, quando muito". É a deixa dos braços de construção.

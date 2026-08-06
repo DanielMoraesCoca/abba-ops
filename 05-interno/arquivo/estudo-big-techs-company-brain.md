@@ -1,6 +1,6 @@
 # Estudo — Como as big techs constroem o "cérebro da empresa" (engenharia por dentro)
 
-> **Status: ESTUDO CONCLUÍDO (2026-07-29) — achados já mergeados no [plano de implementação](plano-implementacao-conselheiro.md) por decisão do sócio.** Três frentes de pesquisa profunda: Glean+Palantir · Microsoft/Google/OpenAI · onda YC "Company Brain" + open source (o GBrain foi clonado e lido no código-fonte, não em press release). Foco: engenharia de produto — o que eles constroem, como, o que é imitável com 2 sócios e onde estão os vazios.
+> **Status: ESTUDO CONCLUÍDO (2026-07-29) — achados já mergeados no [plano de implementação](../plano-implementacao-conselheiro.md) por decisão do sócio.** Três frentes de pesquisa profunda: Glean+Palantir · Microsoft/Google/OpenAI · onda YC "Company Brain" + open source (o GBrain foi clonado e lido no código-fonte, não em press release). Foco: engenharia de produto — o que eles constroem, como, o que é imitável com 2 sócios e onde estão os vazios.
 
 ## O veredito em um parágrafo
 

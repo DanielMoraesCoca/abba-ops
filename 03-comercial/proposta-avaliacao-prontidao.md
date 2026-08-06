@@ -34,7 +34,7 @@ Você está aqui porque uma destas três situações se aplica:
 2. **Já sabe que vai investir em IA**, mas precisa que conselho / patrocinador / controller vejam o caso na linguagem da sua organização, não num deck genérico de fornecedor
 3. **Tem vários fornecedores de IA na mesa** e precisa de uma avaliação independente de prontidão antes de escolher — algo verdadeiro para a sua empresa, não para o pipeline de vendas deles
 
-Se você já sabe que quer a transformação completa, é mais barato ir direto ao programa (a avaliação está incluída). Se está em dúvida, duas semanas de campo e R$ 28.000 são o caminho mais barato para ter certeza.
+Se você já sabe que quer a transformação completa, é mais barato fechar a jornada de uma vez (o Assessment está incluído). Se está em dúvida, o Assessment é o caminho mais barato para ter certeza — R$ 45.000 para saber exatamente o que fazer, em que ordem, e por quê.
 
 ## 3. Os cinco eixos da pontuação (as 25 dimensões de análise se consolidam neles)
 
@@ -85,7 +85,7 @@ Cada tabela e gráfico deriva de dados reais que o seu time registrou. Você pod
 ## 7. Investimento
 
 <!-- ATIVAR QUANDO {{N_PADROES_SETOR}} ≥ 3: "Nosso método já acumulou {{N_PADROES_SETOR}} padrões validados no seu setor — sua avaliação começa na frente." (fonte: vault, E3) -->
-**Engajamento padrão: R$ 28.000** (faixa R$ 24–35 mil conforme porte — [tabela v1](tabela-de-precos.md)) — inclui tudo da seção 4, até 25 participantes.
+**Engajamento padrão: R$ 45.000** (faixa R$ 35–60 mil conforme porte — [tabela v2](tabela-de-precos.md); na v2 este serviço é o **Assessment com dados internos**) — inclui tudo da seção 4, até 25 participantes.
 
 Ajustes: organização pequena (<50 colaboradores, até 12 participantes): {{PRECO_AVALIACAO_PEQUENA}} · organização grande (100+, 25–50 participantes, multi-site): {{PRECO_AVALIACAO_GRANDE}} · segunda avaliação para outra divisão em até 90 dias: {{PRECO_SEGUNDA_AVALIACAO}} · entrega remota: sem desconto · pré-revisão jurídica do relatório: {{AJUSTE_REVISAO_JURIDICA}}.
 

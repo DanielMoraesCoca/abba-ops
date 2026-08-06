@@ -37,7 +37,7 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 - **Nada se deleta fora do `abba forget`** — episódios são append-only; fatos supersedem, nunca somem
 - **Todo job autônomo tem teto de gasto** (`--max-usd` / `ABBA_BRAIN_MAX_USD`) e deixa linha auditável (`brain_runs`)
 - **O avaliador é intocável** — golden sets e gates ficam fora do alcance de qualquer loop de melhoria
-- Consentimento de transcrição/ingestão segue o [guia LGPD](../08-materiais/guia-oculos-hud.md) e o contrato
+- Consentimento de transcrição/ingestão segue as 8 recusas do [estudo do Conselheiro presente](../05-interno/estudo-conselheiro-presente.md) (nunca sem aviso, nunca captura permanente) e o contrato
 - **A auditoria não se auto-elogia** — as sondas grátis medem COERÊNCIA da linha do tempo, não acurácia; só a sonda paga (contra o texto-fonte) mede fidelidade. Nunca apresentar uma como a outra
 - **Resultado ruim não rebaixa verdade em silêncio** — abre dúvida para o humano decidir (`abba brain reconfirm`)
 - **Previsão declarada não se reescreve** — a probabilidade registrada numa recomendação é imutável (trava no código, rodada 6): reescrever a aposta quando os números melhoram lavaria o placar de calibração, que é o ativo que a imutabilidade protege

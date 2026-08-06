@@ -32,7 +32,7 @@
 | Caixa | Fluxo | ❌ planilha manual |
 | Log de INPUT | Métricas da semana | ❌ markdown, preenchido na reunião |
 
-**Leitura fria:** hoje, um painel em tempo real mostraria zeros em tempo real. O dado que mais importa nesta fase (funil) é manual por natureza, e a cadência certa dele é semanal — exatamente o que a [pauta](pauta-reuniao-semanal.md) já cobre.
+**Leitura fria:** hoje, um painel em tempo real mostraria zeros em tempo real. O dado que mais importa nesta fase (funil) é manual por natureza, e a cadência certa dele é semanal — exatamente o que a [pauta](../pauta-reuniao-semanal.md) já cobre.
 
 ## 4. Recomendação (faseada — o gatilho é cliente, não vontade)
 

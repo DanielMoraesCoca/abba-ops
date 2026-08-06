@@ -71,7 +71,7 @@ Pendências operacionais derivadas: (a) cherry-pick do doc `ABBA_COMPLETE_ASSESS
 
 Pergunta seguinte do sócio: os 4 quebrados podem ser reconstruídos certos? o que mais o Conselheiro precisa para ser o mais disruptivo possível — "um cérebro constantemente alimentado, aprendendo e descansando, num ciclo sem fim"? Três frentes de pesquisa profunda executadas (memória/sleep-time compute, auto-melhoria segura, mercado/moat). **Resposta consolidada em [`arquitetura-cerebro-conselheiro.md`](arquitetura-cerebro-conselheiro.md)** — o desenho-alvo do ciclo dia/noite (com base científica: sleep-time compute, ~5× mais barato e +13–18% de acurácia), a escada de melhoria em 4 degraus com 5 salvaguardas, os 7 stores de memória em Postgres, o custo (~US$ 10–40/mês por cérebro) e o veredito honesto de mercado ("ninguém tem" é falso como dito; a interseção operador-responsável + diário de resultados + assinatura humana + preço de cadeira de conselheiro está desocupada no mid-market BR). O faseamento por gatilho deste estudo permanece o mesmo.
 
-**Sequência (2026-07-29):** o [plano de implementação](plano-implementacao-conselheiro.md) foi escrito e a Fase 0 entregue em código; o [estudo de engenharia das big techs](estudo-big-techs-company-brain.md) foi consolidado e mergeado no plano (4 marcadores resolvidos, 8 adições, 3 rejeições conscientes).
+**Sequência (2026-07-29):** o [plano de implementação](plano-implementacao-conselheiro.md) foi escrito e a Fase 0 entregue em código; o [estudo de engenharia das big techs](arquivo/estudo-big-techs-company-brain.md) foi consolidado e mergeado no plano (4 marcadores resolvidos, 8 adições, 3 rejeições conscientes).
 
 ## Fontes
 
