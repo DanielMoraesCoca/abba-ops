@@ -27,14 +27,15 @@ A cadeira de estrategista de IA da empresa, ocupada pela ABBA em regime fracion�
 - **Não é parecer jurídico nem representação perante a ANPD** — mesma honestidade do Sprint LGPD
 - **Não é terceirização da decisão** — o princípio de sempre: nós recomendamos com convicção; **eles decidem**
 
-## Formatos e preços — [RASCUNHO v2 — NÃO vigente]
+## Formatos e preços — vigentes (tabela v2, V3t 2026-08-06)
 
-> Preços em regime de rascunho por decisão dos sócios (2026-07-25): a [tabela v1](tabela-de-precos.md) segue vigente; ativação da v2 após as 3 primeiras reações reais de preço.
+> Preços vigentes na [tabela v2](tabela-de-precos.md). O racional do valor: senioridade recorrente + **a memória que melhora a cada ciclo, alimentada pelo aprendizado de todos os engajamentos** (padrões anonimizados — nunca dado bruto de um cliente em outro). Âncora de mercado: 61,9% dos conselheiros consultivos de capital fechado ganham até R$ 15 mil/mês (IBGC).
 
-| Formato | Cadência | Preço [RASCUNHO v2] |
+| Formato | Cadência | Preço (v2) |
 |---|---|---|
-| **Conselheiro Trimestral** | Ritual trimestral + arbitragens sob demanda (até 2/trimestre) | R$ 6.000/mês |
-| **Conselheiro Mensal** | Presença mensal na diretoria + **[ritual semanal de 20 min](../04-entrega/ritual-semanal.md)** + arbitragens ilimitadas + linha direta com os sócios | R$ 9.000/mês |
+| **Conselheiro Trimestral** | Ritual trimestral + arbitragens sob demanda (até 2/trimestre) | R$ 7.500/mês |
+| **Conselheiro Mensal** | Presença mensal na diretoria + **[ritual semanal de 20 min](../04-entrega/ritual-semanal.md)** + arbitragens ilimitadas + linha direta com os sócios | R$ 12.000/mês |
+| **Venda direta (sem jornada)** | Qualquer formato acima + **instalação da memória** (ingestão, perfil da empresa, primeiro dossiê) | + R$ 15.000 (única vez) |
 | **Embutido na Manutenção-Estratégia** | Camada 3 da manutenção ([SLA](../04-entrega/sla-manutencao.md)) | ver [tabela](tabela-de-precos.md) |
 
 Contrato de 12 meses, reajuste IPCA, saída com aviso de 60 dias. Fatura mensal.

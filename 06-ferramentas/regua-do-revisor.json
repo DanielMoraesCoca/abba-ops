@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
     {
@@ -233,14 +233,6 @@
           "priceBRL": 14000
         },
         {
-          "name": "avaliacao",
-          "aliases": [
-            "avalia[çc][ãa]o\\s+de\\s+prontid[ãa]o",
-            "avalia[çc][ãa]o\\s+profunda"
-          ],
-          "priceBRL": 28000
-        },
-        {
           "name": "sprint-lgpd",
           "aliases": [
             "sprint\\s+lgpd"
@@ -248,30 +240,127 @@
           "priceBRL": 24000
         },
         {
-          "name": "programa",
-          "aliases": [
-            "programa\\s+(completo|de\\s+transforma[çc][ãa]o)"
-          ],
-          "priceBRL": 185000
-        },
-        {
-          "name": "manutencao",
-          "aliases": [
-            "manuten[çc][ãa]o"
-          ],
-          "priceBRL": 9500
-        },
-        {
           "name": "mini-ciclo",
           "aliases": [
             "mini[- ]ciclo"
           ],
           "priceBRL": 42000
+        },
+        {
+          "name": "assessment",
+          "aliases": [
+            "assessment",
+            "avalia[çc][ãa]o\\s+de\\s+prontid[ãa]o",
+            "avalia[çc][ãa]o\\s+profunda",
+            "mergulho"
+          ],
+          "priceBRL": 45000
+        },
+        {
+          "name": "prototipo",
+          "aliases": [
+            "prot[óo]tipo"
+          ],
+          "priceBRL": 26000
+        },
+        {
+          "name": "pacote-prototipos",
+          "aliases": [
+            "pacote\\s+de\\s+3",
+            "3\\s+prot[óo]tipos",
+            "3\\s+casos"
+          ],
+          "priceBRL": 65000
+        },
+        {
+          "name": "treinamento-online",
+          "aliases": [
+            "online",
+            "plataforma",
+            "treinamento",
+            "turma"
+          ],
+          "priceBRL": 15000
+        },
+        {
+          "name": "treinamento-hibrido",
+          "aliases": [
+            "h[íi]brid\\w*",
+            "presencial"
+          ],
+          "priceBRL": 35000
+        },
+        {
+          "name": "manutencao-operacao",
+          "aliases": [
+            "opera[çc][ãa]o"
+          ],
+          "priceBRL": 6000
+        },
+        {
+          "name": "manutencao-evolucao",
+          "aliases": [
+            "manuten[çc][ãa]o",
+            "evolu[çc][ãa]o"
+          ],
+          "priceBRL": 9500
+        },
+        {
+          "name": "manutencao-estrategia",
+          "aliases": [
+            "estrat[ée]gia"
+          ],
+          "priceBRL": 15000
+        },
+        {
+          "name": "conselheiro-mensal",
+          "aliases": [
+            "conselheiro"
+          ],
+          "priceBRL": 12000
+        },
+        {
+          "name": "conselheiro-trimestral",
+          "aliases": [
+            "trimestral"
+          ],
+          "priceBRL": 7500
+        },
+        {
+          "name": "jornada-completa",
+          "aliases": [
+            "jornada\\s+completa",
+            "programa\\s+(completo|de\\s+transforma[çc][ãa]o)"
+          ],
+          "priceBRL": 260000
+        },
+        {
+          "name": "adicional-operacao",
+          "aliases": [
+            "solu[çc][ãa]o\\s+adicional",
+            "adicional"
+          ],
+          "priceBRL": 1500
+        },
+        {
+          "name": "adicional-evolucao",
+          "aliases": [
+            "solu[çc][ãa]o\\s+adicional",
+            "por\\s+solu[çc][ãa]o"
+          ],
+          "priceBRL": 2500
+        },
+        {
+          "name": "adicional-estrategia",
+          "aliases": [
+            "solu[çc][ãa]o\\s+adicional"
+          ],
+          "priceBRL": 3500
         }
       ],
       "severity": "block",
-      "reason": "Tabela v1 travada (P1, 2026-07-23): Workshop 14k · Avaliação 28k · Sprint 24k · Programa 185k · Manutenção 9,5k/mês · Mini-ciclo 42k. Preço divergente num material é a violação mais cara possível. Escopo: material que SAI para cliente — docs internos de precificação citam âncoras e rascunhos legitimamente.",
-      "doc": "03-comercial/tabela-de-precos.md",
+      "reason": "Tabela v2 travada (V3t, 2026-08-06, por serviço da jornada): Assessment 45k · Protótipo 26k (3 por 65k) · Treinamento 15k online/35k híbrido · Gerenciados 6k/9,5k/15k por camada · Conselheiro 12k mensal/7,5k trimestral · Jornada 260k · portas laterais 14k/24k/42k. Construção sai da calculadora (faixa P/M/G — sem valor único). Preço divergente num material que sai é a violação mais cara possível. Preços da v1 descontinuados (28k avaliação, 185k programa) BLOQUEIAM — é o objetivo.",
+      "doc": "03-comercial/tabela-de-precos.md (v2) · 06-ferramentas/calculadora-construcao.md",
       "maxAliasDistance": 80,
       "exemptSanctionedPrices": true,
       "unless": [],

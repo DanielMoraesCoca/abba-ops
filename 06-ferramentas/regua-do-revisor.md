@@ -26,7 +26,7 @@ abba report <eng> --revise                     # o relatório só grava se passa
 | "somos a auditoria"/"auditamos" (analogia "funciona como" pode) | block | V3c — a prateleira |
 | "certificado/validado em clientes reais" | block | R1 — só sintético |
 | "curva de tenure" | block | gateada + anglicismo |
-| preço divergente da tabela v1 (14k·28k·24k·185k·9,5k·42k) | block | P1 travada |
+| preço divergente da tabela v2 (45k·26k/65k·15k/35k·6k/9,5k/15k·12k/7,5k·260k · portas 14k/24k/42k — construção via calculadora, sem valor único; **28k e 185k da v1 bloqueiam**) | block | V3t — tabela v2 por serviço |
 | "5 papéis" | block | parecer do conselho, melhoria nº 1 |
 | SSO prometido | block | R3 — autenticação interina |
 | "a IA decide"/"IA autônoma" | block | centauro inegociável |

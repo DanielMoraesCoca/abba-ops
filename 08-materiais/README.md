@@ -112,6 +112,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
 | Card da Bússola do portal em pt-BR | o card existente ("My Week With AI") está em inglês — não pode aparecer em material pt-BR | pendência de tradução (Pedro/portal) |
+| **Re-emissão das propostas na tabela v2** | as 3 propostas de entrada (DOCX) e a proposta do programa citam preços da v1 (28k/185k) — **descontinuados; o Revisor bloqueia se forem enviadas como estão** (é o comportamento desejado) | atualizar cada DOCX na primeira emissão real pós-v2 |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
 | One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
 | Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
