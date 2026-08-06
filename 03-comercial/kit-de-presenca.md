@@ -65,27 +65,27 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 
 ## A apresentação de 13 slides (o deck institucional)
 
-**Quando usar:** da **segunda** reunião em diante, ou quando o cliente pedir "manda o material". A primeira reunião é conversa, nunca projeção ([coreografia](coreografia-da-conversao.md)). Arquivo: [`abba-deck-institucional.pptx`](../08-materiais/modelos/abba-deck-institucional.pptx) — atualizado em 2026-08-01 para o posicionamento vigente (escada com artefatos, diário de decisões, promessas × recusas, CTA do Mapa de Vazamento).
+**Quando usar:** da **segunda** reunião em diante, ou quando o cliente pedir "manda o material". A primeira reunião é conversa, nunca projeção ([coreografia](coreografia-da-conversao.md)). Arquivo: [`abba-deck-institucional.pptx`](../08-materiais/modelos/abba-deck-institucional.pptx) — **reescrito em 2026-08-06 no padrão editorial (V3q)**: a mesma história, ordem e voz da [apresentação enviável](../08-materiais/modelos/abba-apresentacao.pdf), no formato ao vivo.
 
 **~20 minutos de apresentação + conversa.** A fala-âncora de cada slide:
 
 | # | Slide | A fala-âncora (1 linha) |
 |---|---|---|
-| 1 | Capa | *"Prometo que este é o único deck — o resto é conversa."* |
-| 2 | O problema | *"A tecnologia funciona. O que falha é a adoção — e isso é organizacional, não técnico."* |
-| 3 | A lacuna | *"A Fortune 500 tem quem a atenda. O médio porte brasileiro, não."* |
-| 4 | Quem somos | A frase inteira, pausada: *"...número combinado antes, medido depois, assinado por gente."* E a âncora da prateleira: *"fazemos o que não dá para fazer de dentro — estratégia de IA é de vocês; prova independente, por definição, não pode ser."* |
-| 5 | 6 etapas | *"Começa de graça, com um número em reais — já explico."* |
-| 6 | AI Native | *"Três níveis ao mesmo tempo — porque transformar só um cria atrito com os outros dois."* |
-| 7 | A escada | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nessa escada hoje?"* (quase sempre se colocam um degrau acima do real) |
-| 8 | Portal | *"Aprender desbloqueia ferramenta — o aprendizado vira produtividade no mesmo dia."* |
-| 9 | Como sabemos | *"Repare no terceiro item: nenhuma decisão entra sem métrica combinada antes. Isso é raro no nosso mercado."* |
-| 10 | **Promessas × recusas** | *"Este slide é o que nenhum concorrente nosso consegue copiar — porque copiar exigiria parar de vender o que eles vendem."* Deixar 30s de silêncio para lerem |
-| 11 | Governança | *"Nós recomendamos com convicção. Quem decide são vocês — e fica registrado quem decidiu o quê."* |
-| 12 | Por que a ABBA | Ler a citação em voz alta, devagar |
+| 1 | Capa — "Tornamos a sua empresa AI native." | *"Prometo que este é o único deck — o resto é conversa."* |
+| 2 | Quem somos | Ler a frase inteira, com calma — é a mesma abertura do PDF que eles talvez já tenham recebido; a repetição constrói identidade |
+| 3 | As duas frentes | *"Sistemas e pessoas ao mesmo tempo — porque de nada adiantam sistemas novos com a empresa pensando do jeito antigo."* |
+| 4 | O nosso processo (raízes) | **Pausa.** Deixar a frase dourada ser lida em silêncio — não explicar |
+| 5 | A jornada em 7 passos | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nesse caminho hoje?"* (quase sempre se colocam adiante do real) |
+| 6 | Etapas 1–3 | *"Começa de graça, com um número em reais na mesa — e a prova vem antes de qualquer investimento pesado."* |
+| 7 | Etapa 4 — a engenharia | *"Existe uma arquitetura, uma engenharia, uma lógica — e os agentes de IA já estão inseridos nisso."* |
+| 8 | Etapa 5 — as 3 perguntas | Ler as três perguntas em voz alta, devagar — é o coração do treinamento |
+| 9 | Etapas 6–7 | *"Todo fornecedor de IA tem um vendedor. A sua mesa merece alguém do seu lado quando a fatura chega."* |
+| 10 | Como trabalhamos | *"Repare: nenhuma decisão entra sem métrica combinada antes. Isso é raro no nosso mercado."* |
+| 11 | **Promessas × recusas** | *"Este slide é o que nenhum concorrente nosso consegue copiar — porque copiar exigiria parar de vender o que eles vendem."* Deixar 30s de silêncio para lerem |
+| 12 | Parceiros oficiais | *"Durante a capacitação, a equipe de vocês usa ferramentas dos nossos parceiros para construir as próprias soluções."* |
 | 13 | CTA | *"O próximo passo não custa nada e cabe em 45 minutos: o Mapa de Vazamento."* Sair da sala com a data marcada |
 
-**Regras:** nunca enviar o PDF antes da apresentação ao vivo (a conversa é onde a conversão acontece) · o slide 7 é o único onde a apresentação vira diálogo — não atropelar a resposta · se perguntarem preço no meio, *"chego lá no fim — antes quero que vocês saibam exatamente o que se compra"* (e usar a [escada](escada-abba.md)).
+**Regras:** nunca enviar o PDF antes da apresentação ao vivo (a conversa é onde a conversão acontece) · o slide 5 é o único onde a apresentação vira diálogo — não atropelar a resposta · se perguntarem preço no meio, *"chego lá no fim — antes quero que vocês saibam exatamente o que se compra"* (e usar a [escada](escada-abba.md)).
 
 ## O que nunca dizemos
 

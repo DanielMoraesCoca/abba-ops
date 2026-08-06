@@ -103,7 +103,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 
 | Material | Uso | Status |
 |---|---|---|
-| Deck institucional (PPTX, **13 slides** — regenerado 2026-08-01: escada com artefatos, diário de decisões, slide "promessas × recusas", CTA do Mapa de Vazamento) | 2ª reunião em diante — roteiro slide a slide no [kit de presença](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
+| Deck institucional (PPTX, **13 slides** — **reescrito 2026-08-06 no padrão editorial §0**: a história da apresentação enviável no formato ao vivo — quem somos, duas frentes, raízes, jornada 1–7, prova não impressão, promessas × recusas, parceiros com logos, CTA) | 2ª reunião em diante — roteiro slide a slide no [kit de presença](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
 | Deck de kickoff (PPTX, 12–13 slides com o pré-mortem 6b, com logo) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | 3 propostas de entrada (DOCX) | workshop · avaliação · sprint LGPD | ✅ em [`modelos/`](modelos/) (`proposta-*-modelo.docx`) |
