@@ -111,7 +111,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Certificados (participante e campeão, PPTX com logo) | graduação | ✅ [`modelos/certificados-modelo.pptx`](modelos/certificados-modelo.pptx) |
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
-| Foto do portal real no deck 5 (Treinamento) | o único deck de serviço ainda sem foto | aguardando print do portal **como arquivo** (o card da Bússola existente está em inglês — pendência de tradução pt-BR) |
+| Card da Bússola do portal em pt-BR | o card existente ("My Week With AI") está em inglês — não pode aparecer em material pt-BR | pendência de tradução (Pedro/portal) |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
 | One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
 | Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
