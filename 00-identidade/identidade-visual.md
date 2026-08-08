@@ -50,11 +50,12 @@ O modelo-mestre de proposta já existe: [`../08-materiais/modelos/proposta-comer
 3. Um documento por versão enviada, congelado em PDF no Drive.
 4. Logo: a marca-símbolo (grafo dourado) está versionada em [`../08-materiais/marca/abba-logo.png`](../08-materiais/marca/abba-logo.png) — usada nos decks e certificados. Cópia no Drive `05 Marketing/Marca/`. Evolução profissional da marca pode vir depois.
 
-## Kit digital (v1, 2026-08-08)
+## Kit digital (v2, 2026-08-08)
 
 A marca ganhou a família vetorizada e os ativos de rede social — inventário e regras em [`../08-materiais/marca/manual-de-marca.md`](../08-materiais/marca/manual-de-marca.md):
 
-- **Logo em SVG**: símbolo em 3 cores (dourado / branco / navy) + lockups horizontal e empilhado, claro e escuro. O PNG original permanece como histórico.
+- **Símbolo novo — "a fonte"** (decisão do fundador, 2026-08-08): nó-origem na base com jorros que sobem e se ramificam em rede. Substitui o cérebro-grafo em todo material novo; o PNG original permanece como histórico.
+- **Logo em SVG**: símbolo em 3 cores (dourado / branco / navy) + lockups horizontal e empilhado, claro e escuro.
 - **Ativos de rede**: avatar 1:1, banner da página LinkedIn (com a headline), capa de perfil pessoal.
 - **Templates de post** (LinkedIn/Instagram): capa de carrossel, slide interno, slide-CTA, card de citação, card de número — no padrão editorial (versaletes dourados, filetes, serifada).
 - **Tipografia digital**: pilha serifada Cambria → Georgia (social); **Source Serif 4** aprovada como equivalente livre para web. Nenhuma cor nova foi introduzida.

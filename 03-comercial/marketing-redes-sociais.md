@@ -62,7 +62,7 @@ Objetivo: quando alguém checar o perfil, encontrar uma vitrine coerente — nã
 | # | Template | Conteúdo |
 |---|---|---|
 | 1 | Capa navy | A headline canônica |
-| 2 | Card de citação | "A IA rascunhou; alguém assinou. Ninguém aqui fala 'a IA decidiu'." — Manifesto ABBA |
+| 2 | Card de citação | "A IA rascunhou; alguém assinou. Ninguém aqui fala 'a IA decidiu'." — sem autor, só o rodapé ABBA (regra: citação institucional nunca assina "Manifesto ABBA") |
 | 3 | Card de número | 63% das empresas brasileiras não têm política de IA; 47% dos profissionais usam IA sem aprovação (fontes no card — [visão 2029](../00-identidade/visao-2029.md) §5) |
 | 4 | Carrossel 5 slides | As 3 perguntas da Bússola: o que posso parar · o que posso começar · o que ainda preciso fazer |
 | 5 | Card de citação | "Sabe por que a maioria dos projetos de IA falha? Não é a tecnologia. É que ninguém combinou antes o que seria dar certo." |

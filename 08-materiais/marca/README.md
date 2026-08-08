@@ -4,8 +4,8 @@
 
 ## Inventário
 
-- `abba-logo.png` — o símbolo original (histórico; preservar).
-- `abba-logo-*.svg` — a família vetorizada v1 (símbolo em 3 cores, horizontal e empilhado em claro/escuro). Gerada por script determinístico; a fonte do gerador está no histórico da sessão de criação — para variações novas, editar os SVGs diretamente ou refazer o gerador.
+- `abba-logo.png` — o símbolo original, cérebro-grafo (histórico; preservar, não usar em material novo).
+- `abba-logo-*.svg` — a família vetorizada v2, símbolo "a fonte": nó-origem na base, jorros que sobem e se ramificam em rede (3 cores, horizontal e empilhado em claro/escuro). Gerada por script determinístico; para variações novas, editar os SVGs diretamente ou refazer o gerador.
 - `abba-avatar-1080.svg`, `abba-banner-linkedin-empresa.svg`, `abba-capa-linkedin-pessoal.svg` — ativos de rede social prontos.
 - `templates-posts.html` — os 5 templates de post editáveis (instruções no topo do arquivo).
 

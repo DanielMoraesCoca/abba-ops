@@ -6,7 +6,9 @@
 
 ## O símbolo
 
-O cérebro-grafo: dois hemisférios de nós conectados, em dourado. É a marca-símbolo desde o início ([abba-logo.png](abba-logo.png), preservado como original). Agora existe **vetorizado**, em variações:
+**A fonte** (v2, 2026-08-08 — decisão do fundador): um nó-origem único na base, do qual jorros sobem em curvas e se ramificam numa rede de nós dourados que se espalha. Três leituras convivem de propósito: uma fonte jorrando, uma raiz invertida (a metáfora das raízes que já é da casa — "começa na diretoria e se estende até alcançar cada pessoa") e uma rede de nós. O símbolo carrega a ideia sozinho; nenhum material explica o nome.
+
+O cérebro-grafo anterior ([abba-logo.png](abba-logo.png)) fica preservado como histórico — não usar em material novo. Arquivos vigentes:
 
 | Arquivo | Uso |
 |---|---|
@@ -22,9 +24,10 @@ O cérebro-grafo: dois hemisférios de nós conectados, em dourado. É a marca-s
 
 Regras do símbolo:
 1. Nunca recolorir fora das três versões (dourado, branco, navy). Nunca gradiente.
-2. Margem de respiro mínima: a altura de um nó grande em volta de todo o logo.
+2. Margem de respiro mínima: a altura do nó-origem em volta de todo o logo.
 3. Sobre foto: só a versão branca, e só se a foto for escura e calma.
 4. O wordmark "ABBA" sem símbolo é permitido em contexto onde o símbolo já apareceu (rodapé de carrossel).
+5. O símbolo aponta para cima e o nó-origem fica embaixo — nunca rotacionar nem espelhar verticalmente.
 
 ## Paleta (a mesma da identidade visual — nenhuma cor nova)
 
