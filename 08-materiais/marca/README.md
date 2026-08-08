@@ -8,6 +8,9 @@
 - `abba-logo-*.svg` — a família vetorizada v2, símbolo "a fonte": nó-origem na base, jorros que sobem e se ramificam em rede (3 cores, horizontal e empilhado em claro/escuro). Gerada por script determinístico; para variações novas, editar os SVGs diretamente ou refazer o gerador.
 - `abba-avatar-1080.svg`, `abba-banner-linkedin-empresa.svg`, `abba-capa-linkedin-pessoal.svg` — ativos de rede social prontos.
 - `templates-posts.html` — os 5 templates de post editáveis (instruções no topo do arquivo).
+- `grade-vitrine.html` — os 9 posts de lançamento do Instagram com conteúdo real (16 quadros; fonte editável).
+- `export/` — os PNGs finais prontos para subir: 6 ativos de marca + as 16 imagens da grade. Regenerar a partir dos SVGs/HTML quando o texto mudar.
+- `abba-kit-social.pdf` — o kit completo em um documento (marca + grade com legendas + ordem de publicação), para revisão e envio.
 
 ## Como exportar PNG
 
