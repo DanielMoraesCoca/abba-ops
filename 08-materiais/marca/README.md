@@ -1,5 +1,7 @@
 # Marca — arquivos-fonte
 
+> **DIREÇÃO VIGENTE (v3, 2026-08-09, pendente aval do Pedro): WORDMARK "ponto-fonte"** — ABBA em Cormorant Garamond com um ponto dourado sobre o eixo central do palíndromo; sem símbolo pictórico (padrão das consultorias premium: McKinsey/BCG são só tipografia). Fontes e ativos em [`wordmark/`](wordmark/); o documento consolidado é [`abba-kit-inicial.pdf`](abba-kit-inicial.pdf). Os símbolos anteriores (fonte v2 e cérebro) permanecem arquivados abaixo como histórico de exploração.
+
 > O kit visual da ABBA. Regras de uso no [manual de marca](manual-de-marca.md); a doutrina de cores/tipografia na [identidade visual](../../00-identidade/identidade-visual.md). Cópias finais pesadas → Drive `05 Marketing/Marca/`.
 
 ## Inventário
@@ -10,7 +12,9 @@
 - `templates-posts.html` — os 5 templates de post editáveis (instruções no topo do arquivo).
 - `grade-vitrine.html` — os 9 posts de lançamento do Instagram com conteúdo real (16 quadros; fonte editável).
 - `export/` — os PNGs finais prontos para subir: 6 ativos de marca + as 16 imagens da grade. Regenerar a partir dos SVGs/HTML quando o texto mudar.
-- `abba-kit-social.pdf` — o kit completo em um documento (marca + grade com legendas + ordem de publicação), para revisão e envio.
+- `abba-kit-social.pdf` — kit da era "símbolo fonte" (histórico).
+- **`abba-kit-inicial.pdf` — O DOCUMENTO: kit inicial consolidado da ABBA** (marca wordmark + ativos + perfis + grade com legendas + estratégia + checklist + brief para designer + fontes da pesquisa). É o que se manda para o Pedro aprovar e o que se entrega à agência.
+- `wordmark/` — a marca vigente: `wm_assets.html` (ativos), `wordmarks.html` (5 estudos), `fonts/` (OFL) e `export/` com os PNGs (avatar, lockups, banner, capa, estudos).
 - `variante-cerebro/` — o MESMO kit inteiro com o símbolo cérebro: **vetorização fiel do abba-logo.png original** (68 nós e 112 conexões extraídos por análise de imagem; desvio médio de posição 0,1%), com as correções de um parecer de design independente: aresta perdida restaurada, linhas em dourado a 50% de opacidade (recuam; nós lideram — a hierarquia do original), traço engrossado para sobreviver em 48px, marca a 65% do canvas no avatar. SVGs, grade, `export/` com os 22 PNGs e `abba-kit-social-cerebro.pdf`. Existe para os sócios compararem e decidirem o símbolo definitivo; a decisão deve ser registrada aqui quando tomada.
 
 ## Como exportar PNG

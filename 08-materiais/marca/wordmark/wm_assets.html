@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — Ativos wordmark E1</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #333; }
+  .frame { position: relative; margin: 24px auto; display: flex; flex-direction: column;
+           align-items: center; justify-content: center; overflow: hidden; }
+  .navy { background: #1B2A4A; } .branco { background: #FFFFFF; }
+  .mark { font-family: 'Cormorant', serif; font-weight: 600; line-height: 1; }
+  .tag  { font-family: 'EBGaramond', serif; }
+  .dot  { border-radius: 50%; background: #C2A35B; }
+
+  /* avatar 1080 */
+  #avatar { width: 1080px; height: 1080px; }
+  #avatar .dot { width: 44px; height: 44px; margin-bottom: 44px; }
+  #avatar .mark { font-size: 300px; letter-spacing: 0.12em; text-indent: 0.12em; color: #FFFFFF; }
+  #avatar .tag { font-size: 40px; letter-spacing: 0.5em; text-indent: 0.5em; color: #C2A35B; margin-top: 40px; }
+
+  /* horizontal claro/escuro 1080x400 */
+  .horiz { width: 1080px; height: 400px; }
+  .horiz .dot { width: 22px; height: 22px; margin-bottom: 16px; }
+  .horiz .mark { font-size: 180px; letter-spacing: 0.12em; text-indent: 0.12em; }
+  .horiz .tag { font-size: 27px; letter-spacing: 0.52em; text-indent: 0.52em; margin-top: 18px; }
+  #horiz-claro .mark { color: #1B2A4A; } #horiz-claro .tag { color: #5A6472; }
+  #horiz-escuro .mark { color: #FFFFFF; } #horiz-escuro .tag { color: #C2A35B; }
+
+  /* banner LinkedIn empresa 2256x382 */
+  #banner { width: 2256px; height: 382px; align-items: flex-start; justify-content: center;
+            padding-left: 150px; }
+  #banner .head { font-family: 'EBGaramond', serif; font-weight: 600; font-size: 62px;
+                  line-height: 1.25; color: #FFFFFF; }
+  #banner .filete { width: 520px; height: 3px; background: #C2A35B; margin: 26px 0 20px; }
+  #banner .sub { font-family: 'EBGaramond', serif; font-size: 30px; letter-spacing: 0.24em;
+                 color: #C2A35B; }
+  #banner .markside { position: absolute; right: 170px; top: 50%; transform: translateY(-50%);
+                      display: flex; flex-direction: column; align-items: center; }
+  #banner .markside .dot { width: 16px; height: 16px; margin-bottom: 12px; }
+  #banner .markside .mark { font-size: 120px; letter-spacing: 0.12em; text-indent: 0.12em; color: #FFFFFF; }
+
+  /* capa pessoal 1584x396 */
+  #capa { width: 1584px; height: 396px; }
+  #capa .dot { width: 18px; height: 18px; margin-bottom: 16px; }
+  #capa .mark { font-size: 150px; letter-spacing: 0.14em; text-indent: 0.14em; color: #FFFFFF; }
+  #capa .tag { font-size: 26px; letter-spacing: 0.5em; text-indent: 0.5em; color: #C2A35B; margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<div class="frame navy" id="avatar">
+  <div class="dot"></div>
+  <div class="mark">ABBA</div>
+  <div class="tag">CONSULTORIA DE IA</div>
+</div>
+
+<div class="frame branco horiz" id="horiz-claro">
+  <div class="dot"></div>
+  <div class="mark">ABBA</div>
+  <div class="tag">CONSULTORIA DE IA</div>
+</div>
+
+<div class="frame navy horiz" id="horiz-escuro">
+  <div class="dot"></div>
+  <div class="mark">ABBA</div>
+  <div class="tag">CONSULTORIA DE IA</div>
+</div>
+
+<div class="frame navy" id="banner">
+  <div class="head">Instalamos capacidade de IA —<br>e provamos, de fora, o que ela mudou.</div>
+  <div class="filete"></div>
+  <div class="sub">ABBASERVICES.COM.BR</div>
+  <div class="markside">
+    <div class="dot"></div>
+    <div class="mark">ABBA</div>
+  </div>
+</div>
+
+<div class="frame navy" id="capa">
+  <div class="dot"></div>
+  <div class="mark">ABBA</div>
+  <div class="tag">CONSULTORIA DE IA</div>
+</div>
+
+</body>
+</html>
