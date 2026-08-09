@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — Grade-vitrine (variante cérebro)</title>
+<!--
+  GRADE-VITRINE — os 9 posts do plano (marketing-redes-sociais.md §3), prontos.
+  16 quadros no total (dois são carrosséis). Exportar cada <div class="frame">
+  em zoom 100% (ids p1 … p9-cta); legendas de publicação no próprio plano.
+  Regras aplicadas: sem emoji, sem preços, sem "25 dimensões", número com
+  premissa, citação institucional sem autor, rodapé ABBA · abbaservices.com.br.
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #333; font-family: Cambria, Georgia, 'Times New Roman', serif; }
+  .frame { position: relative; overflow: hidden; margin: 24px auto; }
+  .f45 { width: 1080px; height: 1350px; }
+  .f11 { width: 1080px; height: 1080px; }
+  .eyebrow { font-size: 30px; letter-spacing: 10px; color: #C2A35B; text-transform: uppercase; }
+  .filete { height: 3px; background: #C2A35B; border: 0; }
+  .rodape { position: absolute; left: 96px; right: 96px; bottom: 72px;
+            display: flex; justify-content: space-between; align-items: baseline;
+            font-size: 26px; letter-spacing: 4px; text-transform: uppercase; }
+
+  .navy  { background: #1B2A4A; color: #FFFFFF; padding: 120px 96px; }
+  .navy .simbolo { position: absolute; right: -110px; bottom: -60px; width: 520px; opacity: 0.16; }
+  .navy h1 { font-size: 84px; line-height: 1.16; font-weight: 600; max-width: 860px; margin: 48px 0 56px; }
+  .navy h1 em { font-style: normal; color: #C2A35B; }
+  .navy .filete { width: 220px; margin-bottom: 40px; }
+  .navy .sub { font-size: 38px; line-height: 1.45; color: #B9C0CE; max-width: 780px; }
+  .navy .rodape { color: #8C96A8; } .navy .rodape .m { color: #C2A35B; }
+
+  .branco { background: #FFFFFF; color: #1B2A4A; padding: 120px 96px; }
+  .branco .num { font-size: 44px; color: #C2A35B; margin-bottom: 24px; font-variant-numeric: tabular-nums; }
+  .branco h2 { font-size: 62px; line-height: 1.2; font-weight: 600; margin-bottom: 48px; max-width: 860px; }
+  .branco .filete { width: 160px; margin-bottom: 56px; }
+  .branco p { font-size: 40px; line-height: 1.55; color: #3A4356; max-width: 870px; margin-bottom: 36px; }
+  .branco p strong { color: #1B2A4A; }
+  .branco .rodape { color: #9AA1AD; }
+
+  .citacao { background: #1B2A4A; color: #FFFFFF; padding: 110px 96px; display: flex; flex-direction: column; }
+  .citacao .aspas { font-size: 200px; line-height: 0.6; color: #C2A35B; margin-bottom: 20px; }
+  .citacao blockquote { font-size: 60px; line-height: 1.32; font-weight: 600; max-width: 880px; flex: 1; }
+  .citacao .rodape { color: #8C96A8; } .citacao .rodape .m { color: #C2A35B; }
+
+  .numero { background: #FFFFFF; color: #1B2A4A; padding: 110px 96px; display: flex; flex-direction: column; }
+  .numero .eyebrow { margin-bottom: 64px; }
+  .numero .big { font-size: 250px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .numero .big small { font-size: 110px; color: #C2A35B; }
+  .numero .filete { width: 180px; margin: 44px 0; }
+  .numero p { font-size: 41px; line-height: 1.5; color: #3A4356; max-width: 850px; }
+  .numero .rodape { color: #9AA1AD; }
+
+  .lista { counter-reset: j; }
+  .lista .item { display: flex; gap: 30px; align-items: baseline; padding: 15px 0; border-bottom: 1px solid #E8E8E8; }
+  .lista .item:last-child { border-bottom: 0; }
+  .lista .item .n { font-size: 32px; color: #C2A35B; min-width: 48px; font-variant-numeric: tabular-nums; }
+  .lista .item .t { font-size: 34px; line-height: 1.25; color: #1B2A4A; font-weight: 600; }
+  .lista .item .d { font-size: 25px; color: #5A6472; }
+
+  .compass { font-size: 34px; letter-spacing: 12px; color: #C2A35B; text-transform: uppercase; margin-bottom: 40px; }
+</style>
+</head>
+<body>
+
+<!-- P1 · capa — a headline -->
+<div class="frame f45 navy" id="p1">
+  <img class="simbolo" src="abba-logo-simbolo.svg" alt="">
+  <div class="eyebrow">ABBA · Consultoria de IA</div>
+  <h1>Instalamos capacidade de IA — e provamos, <em>de fora</em>, o que ela mudou.</h1>
+  <hr class="filete">
+  <p class="sub">Avaliação a fundo, construção sob medida, equipe inteira treinada — e o resultado provado como terceiro: número combinado antes, medido depois.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P2 · citação — centauro -->
+<div class="frame f11 citacao" id="p2">
+  <div class="aspas">&ldquo;</div>
+  <blockquote>A IA rascunhou; alguém assinou. Ninguém aqui fala "a IA decidiu".</blockquote>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P3 · número — política de IA -->
+<div class="frame f11 numero" id="p3">
+  <div class="eyebrow">IA nas empresas brasileiras</div>
+  <div class="big">63<small>%</small></div>
+  <hr class="filete">
+  <p>das empresas brasileiras não têm política de IA — enquanto <strong>47% dos profissionais</strong> já usam IA no trabalho sem aprovação oficial. A distância entre esses dois números é onde mora o risco.</p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P4 · carrossel Bússola — 5 quadros -->
+<div class="frame f45 navy" id="p4a">
+  <img class="simbolo" src="abba-logo-simbolo.svg" alt="">
+  <div class="eyebrow">As três perguntas</div>
+  <h1>As três perguntas que a gente instala em <em>cada pessoa</em> da empresa.</h1>
+  <hr class="filete">
+  <p class="sub">Do estagiário à diretoria. Quando a organização inteira pensa assim, a transformação para de depender de consultor.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 branco" id="p4b">
+  <div class="num">01/03</div>
+  <div class="compass">Parar</div>
+  <h2>O que eu posso parar de fazer — porque a IA agora faz?</h2>
+  <hr class="filete">
+  <p>Consolidar planilha, transcrever reunião, cruzar documento com cadastro. <strong>Trabalho que consome gente e não exige gente.</strong> É o primeiro dinheiro que aparece.</p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 branco" id="p4c">
+  <div class="num">02/03</div>
+  <div class="compass">Começar</div>
+  <h2>O que eu posso começar a fazer — porque a IA agora permite?</h2>
+  <hr class="filete">
+  <p>Chegar na reunião sabendo o histórico do cliente. Pesquisar o que nunca havia tempo de pesquisar. <strong>Capacidade nova, não só a antiga mais rápido.</strong></p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 branco" id="p4d">
+  <div class="num">03/03</div>
+  <div class="compass">Continuar</div>
+  <h2>O que ainda preciso fazer — e devo fazer ainda melhor?</h2>
+  <hr class="filete">
+  <p>A decisão de fechar ou não fechar. O relacionamento. A responsabilidade. <strong>O que é insubstituivelmente humano fica com o humano</strong> — com mais tempo para ser bem feito.</p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 navy" id="p4e">
+  <img class="simbolo" src="abba-logo-simbolo.svg" alt="">
+  <h1 style="margin-top:0">Quer ver essas três perguntas aplicadas à sua operação?</h1>
+  <hr class="filete">
+  <p class="sub">Peça o <strong style="color:#C2A35B">Mapa de Vazamento gratuito</strong>: uma análise da sua empresa por informação pública, entregue em 48 horas. contato@abbaservices.com.br</p>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P5 · citação — o gancho -->
+<div class="frame f11 citacao" id="p5">
+  <div class="aspas">&ldquo;</div>
+  <blockquote>Sabe por que a maioria dos projetos de IA falha? Não é a tecnologia. É que ninguém combinou antes o que seria dar certo.</blockquote>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P6 · a jornada em 7 passos -->
+<div class="frame f45 branco" id="p6" style="padding:96px 96px 150px">
+  <h2 style="margin-bottom:14px;font-size:52px">Do primeiro diagnóstico à cadeira do seu lado da mesa.</h2>
+  <p style="font-size:28px;margin-bottom:26px">Cada passo entrega valor sozinho — e produz o insumo do passo seguinte.</p>
+  <hr class="filete" style="margin-bottom:22px">
+  <div class="lista">
+    <div class="item"><span class="n">1</span><div><div class="t">Mapa de Vazamento</div><div class="d">gratuito, por informação pública, em 48 horas</div></div></div>
+    <div class="item"><span class="n">2</span><div><div class="t">Assessment</div><div class="d">mergulho profundo, do conselho à linha de frente</div></div></div>
+    <div class="item"><span class="n">3</span><div><div class="t">Protótipo de caso de uso</div><div class="d">a prova antes do investimento — GO/NO-GO com números</div></div></div>
+    <div class="item"><span class="n">4</span><div><div class="t">Construção e implantação</div><div class="d">agentes sob medida, com aprovação humana</div></div></div>
+    <div class="item"><span class="n">5</span><div><div class="t">Treinamento + Plataforma ABBA</div><div class="d">todos os níveis da equipe, híbrido</div></div></div>
+    <div class="item"><span class="n">6</span><div><div class="t">Sistemas gerenciados</div><div class="d">operação com presença semanal</div></div></div>
+    <div class="item"><span class="n">7</span><div><div class="t">Conselheiro de IA</div><div class="d">a direção estratégica, do seu lado da mesa</div></div></div>
+  </div>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P7 · número — 48h -->
+<div class="frame f11 numero" id="p7">
+  <div class="eyebrow">Mapa de Vazamento</div>
+  <div class="big">48<small>h</small></div>
+  <hr class="filete">
+  <p>da primeira conversa ao documento: uma análise da sua empresa feita por informação pública, apontando onde pode haver dinheiro vazando — em faixas, nunca em promessas. <strong>Sem custo e sem compromisso.</strong></p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P8 · carrossel recusas — 4 quadros -->
+<div class="frame f45 navy" id="p8a">
+  <img class="simbolo" src="abba-logo-simbolo.svg" alt="">
+  <div class="eyebrow">Como a gente trabalha</div>
+  <h1>Três coisas que a gente <em>se recusa</em> a vender.</h1>
+  <hr class="filete">
+  <p class="sub">Uma consultoria também se define pelo que não faz.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 branco" id="p8b">
+  <div class="num">01/03</div>
+  <h2>Piloto sem métrica.</h2>
+  <hr class="filete">
+  <p>Um projeto que começa sem definição do que seria "dar certo" não pode dar certo. <strong>É a receita documentada do fracasso</strong> — e aceitar seria vender uma derrota com nota fiscal.</p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 branco" id="p8c">
+  <div class="num">02/03</div>
+  <h2>Slide sem caminho até produção.</h2>
+  <hr class="filete">
+  <p>Estratégia que nunca chega a rodar é entretenimento caro. <strong>Todo plano nosso termina em sistema funcionando</strong> — ou diz, por escrito, por que não deveria ser construído.</p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<div class="frame f45 branco" id="p8d">
+  <div class="num">03/03</div>
+  <h2>Número que não medimos.</h2>
+  <hr class="filete">
+  <p>Não prometemos acurácia onde só se mede coerência, e todo número publicado carrega a própria premissa. <strong>Credibilidade técnica é a única coisa que não se recompra.</strong></p>
+  <div class="rodape"><span>ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+<!-- P9 · capa CTA -->
+<div class="frame f45 navy" id="p9">
+  <img class="simbolo" src="abba-logo-simbolo.svg" alt="">
+  <div class="eyebrow">Por onde começar</div>
+  <h1>Comece pelo <em>Mapa de Vazamento</em>.</h1>
+  <hr class="filete">
+  <p class="sub">Você manda o nome da empresa. A gente devolve, em 48 horas, uma análise por informação pública com as faixas de onde pode haver dinheiro vazando — e o que faríamos primeiro. Gratuito. contato@abbaservices.com.br</p>
+  <div class="rodape"><span class="m">ABBA</span><span>abbaservices.com.br</span></div>
+</div>
+
+</body>
+</html>

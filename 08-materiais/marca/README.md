@@ -11,6 +11,7 @@
 - `grade-vitrine.html` — os 9 posts de lançamento do Instagram com conteúdo real (16 quadros; fonte editável).
 - `export/` — os PNGs finais prontos para subir: 6 ativos de marca + as 16 imagens da grade. Regenerar a partir dos SVGs/HTML quando o texto mudar.
 - `abba-kit-social.pdf` — o kit completo em um documento (marca + grade com legendas + ordem de publicação), para revisão e envio.
+- `variante-cerebro/` — o MESMO kit inteiro com o símbolo cérebro (duas metades vistas de cima, só pontos conectados, fissura central — redesenho v5 do original): SVGs, grade, `export/` com os 22 PNGs e `abba-kit-social-cerebro.pdf`. Existe para os sócios compararem e decidirem o símbolo definitivo; a decisão deve ser registrada aqui quando tomada.
 
 ## Como exportar PNG
 
