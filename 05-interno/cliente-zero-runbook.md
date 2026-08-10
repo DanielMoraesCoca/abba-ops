@@ -1,6 +1,6 @@
 # Cliente Zero — runbook de execução (1 semana)
 
-> O ensaio geral: percorrer a jornada INTEIRA internamente, com a [tabela v1](../03-comercial/tabela-de-precos.md) real nos documentos, num alvo real (sem contato). Cada travada = gap corrigido em ambiente seguro. Saída: "já fizemos uma vez". Dono: os dois sócios. Eu (Claude) rodo junto — me chamem em cada dia.
+> O ensaio geral: percorrer a jornada INTEIRA internamente, com a [tabela v2 vigente](../03-comercial/tabela-de-precos.md) real nos documentos (a v1 foi descontinuada pela V3t; o Revisor bloqueia preços v1), num alvo real (sem contato). Cada travada = gap corrigido em ambiente seguro. Saída: "já fizemos uma vez". Dono: os dois sócios. Eu (Claude) rodo junto — me chamem em cada dia.
 
 ## Preparação (30 min, antes do Dia 1)
 - [ ] Escolher o alvo: empresa real do perfil (mid-market BR, 50–500 colab.), de preferência uma que PODERIA virar prospect depois — o material produzido não se perde
