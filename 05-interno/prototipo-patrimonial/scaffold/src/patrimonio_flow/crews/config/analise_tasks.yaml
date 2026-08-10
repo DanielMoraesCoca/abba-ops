@@ -1,0 +1,32 @@
+task_analise_tributaria:
+  description: >
+    Analise o perfil estruturado a seguir e liste os fatos tributários e de reporte
+    aplicáveis: regime de controladas no exterior (Lei 14.754), transparência de trust,
+    obrigações DCBE, implicações CRS/FATCA, ITCMD da UF do perfil.
+    Use a tool consulta_corpus_juridico para fundamentar CADA claim com chunk_ids.
+    NÃO proponha estruturas. Perfil: {perfil_json}
+  expected_output: >
+    AnaliseTributaria com claims — cada uma com text objetivo e source_ids válidos,
+    ou nao_coberto=true com a lacuna descrita.
+  agent: analista_tributario_br
+
+task_analise_sucessoria:
+  description: >
+    Mapeie a situação sucessória do perfil: legítima e parte disponível, efeito do regime
+    de bens, herdeiros no exterior (probate/multi-jurisdição), instrumentos já existentes.
+    Sinalize restrições de ordem pública. Fundamente cada claim com chunk_ids da tool.
+    NÃO proponha estruturas. Perfil: {perfil_json}
+  expected_output: >
+    AnaliseSucessoria com claims citadas (ou nao_coberto=true com lacuna).
+  agent: analista_sucessorio
+
+task_analise_jurisdicoes:
+  description: >
+    Com base APENAS nas fichas de jurisdição do corpus (tool consulta_corpus_juridico,
+    filtro_tipo=ficha_jurisdicao), avalie a aderência de cada jurisdição ao perfil:
+    veículos disponíveis, tributação para não-residentes, CRS, convenção com o Brasil,
+    observações de listas (GAFI/IN 1.037). Pressuposto fixo: estrutura 100% declarada
+    no Brasil. Perfil: {perfil_json}
+  expected_output: >
+    AnaliseJurisdicoes com claims citadas por ficha (ou nao_coberto=true com lacuna).
+  agent: analista_jurisdicoes
