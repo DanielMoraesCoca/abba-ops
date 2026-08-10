@@ -21,6 +21,18 @@ Não é "IA que faz planejamento patrimonial". É a ferramenta que faz o especia
 3. **A regulação criou o mercado**: a Lei 14.754/2023 acabou com diferimento e sigilo (15% anual, trusts transparentes, CRS com 100+ jurisdições, DCBE) — o que matou o produto antigo ("não aparecer") e criou demanda por um novo: **planejamento declarado, complexo e recorrente**. ITCMD progressivo (EC 132) + PLP 108 são o segundo gatilho, em curso.
 4. **Demanda mensurável**: ~386 mil milionários no Brasil; investimento de PF no exterior mais que dobrou em 2024; mercado de grandes fortunas > R$ 3 tri.
 
+### O mapa competitivo em três camadas (onde este produto vive)
+
+Os dois exemplos citados pelo parceiro de domínio na conversa de origem (confirmados em 2026-08-10) desenham os dois polos do mercado — e mostram a camada vazia entre eles:
+
+| Camada | Quem está lá | O que vende |
+|---|---|---|
+| **Boutiques de confiança** | TelliCoJus e similares (jovens, marketing forte, sede offshore, sem âncora regulatória pública) | Desenho + execução artesanais, na base da confiança pessoal no fundador ("trust me") |
+| **→ A camada de inteligência (VAZIA — este produto)** | ninguém encontrado no Brasil | O desenho fundamentado e verificável: perfil → red flags → alternativas com fonte citada → pacote de obrigações → minuta para advogado assinar ("show me") |
+| **Executores fiduciários** | Amicorp Group (1992, dezenas de escritórios) e similares | Implantação e administração contínua de estruturas já desenhadas (trusts, fundos, societário) |
+
+Consequências: (a) executores tipo Amicorp **não são concorrentes — são jusante**: a minuta aprovada é exatamente o input que eles recebem, o que abre parceria de encaminhamento; (b) o contraste comercial com as boutiques é o próprio produto: onde pedem confiança, entregamos verificabilidade; (c) a camada de inteligência é defensável pelo que as outras duas não têm — corpus citável, red flags automáticos, trilha de auditoria e a métrica de prova do nosso eval.
+
 ## 3. Princípios de desenho (invioláveis)
 
 1. **Conformidade-primeiro** — o sistema otimiza o melhor caminho LEGAL; red flags duros bloqueiam o desenho (fraude a credores, não-declaração, interposta pessoa, supressão de legítima, KYC falho, recusa de transparência). Comercialmente, isso é o diferencial de confiança, não uma limitação.
