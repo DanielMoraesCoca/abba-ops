@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
     {
@@ -83,6 +83,7 @@
       "flags": "gi",
       "unless": [
         "funciona\\s+como\\s+uma\\s+auditoria",
+        "n[ãa]o\\s+somos\\s+(a\\s+)?auditor",
         "[Nn]unca\\s*\\|",
         "frase\\s+proibida",
         "o\\s+que\\s+nunca\\s+dizemos",

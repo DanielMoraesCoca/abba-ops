@@ -45,6 +45,8 @@ abba report <eng> --revise                     # o relatório só grava se passa
 2. Falso positivo em material que sai → ajustar `unless`/exceção **no mesmo commit** que o registra.
 3. A versão (`version`) sobe a cada mudança; o episódio `revisor.reviewed` grava com qual versão o material foi conferido.
 
+**v1.2.1 (2026-08-10)** — falso positivo corrigido: a negação `não somos auditoria` — que é a própria doutrina sendo afirmada — bloqueava. A exceção exige a negação **colada** ao termo (`não\s+somos\s+(a\s+)?auditor`), para que "não somos apenas X, somos auditoria" continue bloqueando.
+
 ## Ligações
 
 [Posicionamento](../00-identidade/posicionamento.md) · [Manifesto](../00-identidade/manifesto.md) · [Tabela de preços](../03-comercial/tabela-de-precos.md) · [Registro de riscos](../05-interno/registro-de-riscos.md) · [Runbook da instância ABBA](../05-interno/abba-interna-runbook.md) — onde o Revisor vira rotina
