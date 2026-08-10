@@ -10,282 +10,274 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'EBGaramond', Georgia, serif; }
 
+  /* ============ o sistema editorial ABBA: navy + dourado sobre branco ============ */
   .slide { width: 1280px; height: 720px; position: relative; overflow: hidden;
-           background: #131F38; color: #E9EDF5; page-break-after: always;
-           padding: 64px 84px 56px; display: flex; flex-direction: column; }
+           background: #FFFFFF; color: #1B2A4A; page-break-after: always;
+           padding: 72px 96px 64px; display: flex; flex-direction: column; }
 
-  .eyebrow { font-size: 15px; letter-spacing: 5px; color: #C2A35B; text-transform: uppercase;
-             display: flex; align-items: center; gap: 14px; margin-bottom: 26px; }
-  .eyebrow::before { content: ''; width: 34px; height: 2px; background: #C2A35B; }
+  .eyebrow { font-family: 'EBGaramond', serif; font-size: 15px; letter-spacing: 6px;
+             color: #C2A35B; text-transform: uppercase; margin-bottom: 22px; }
 
-  h1 { font-family: 'Cormorant', serif; font-weight: 600; font-size: 54px; line-height: 1.14;
-       color: #FFFFFF; max-width: 900px; }
+  h1 { font-family: 'Cormorant', serif; font-weight: 600; font-size: 56px; line-height: 1.12;
+       color: #1B2A4A; max-width: 940px; }
   h1 .g { color: #C2A35B; }
-  .lead { font-size: 19px; line-height: 1.6; color: #B9C2D4; max-width: 760px; margin-top: 22px; }
-  .lead b, .lead strong { color: #E9EDF5; font-weight: 600; }
 
-  .panel { background: #1D2A49; border: 1px solid #2E3F63; border-radius: 4px; padding: 22px 26px; }
-  .panel h4 { font-size: 17px; color: #FFFFFF; margin-bottom: 8px; font-weight: 600; }
-  .panel p { font-size: 14.5px; line-height: 1.55; color: #9AA6BD; }
-  .panel p b { color: #C2A35B; font-weight: 600; }
+  .filete { height: 2px; background: #C2A35B; width: 72px; border: 0; margin: 26px 0 24px; }
 
-  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .lead { font-size: 20px; line-height: 1.62; color: #3A4356; max-width: 820px; }
+  .lead b { color: #1B2A4A; font-weight: 600; }
 
-  .quote { font-family: 'Cormorant', serif; font-size: 26px; line-height: 1.35; color: #C2A35B;
-           font-weight: 600; max-width: 460px; }
+  /* listas com fio — o padrão da casa (sem cartões) */
+  .rows { margin-top: 8px; }
+  .row { display: flex; gap: 26px; align-items: baseline; padding: 17px 0;
+         border-bottom: 1px solid #E8E8E8; }
+  .row:last-child { border-bottom: 0; }
+  .row .n { font-family: 'Cormorant', serif; font-size: 27px; color: #C2A35B;
+            min-width: 34px; font-weight: 600; }
+  .row .t { font-size: 19px; color: #1B2A4A; font-weight: 600; min-width: 300px; }
+  .row .d { font-size: 16px; color: #5A6472; line-height: 1.5; }
 
-  .bignum { font-family: 'Cormorant', serif; font-weight: 600; font-size: 84px; color: #C2A35B; line-height: 1; }
-  .bignum small { font-size: 40px; }
+  /* colunas tipográficas (sem caixas): fio dourado no topo */
+  .cols { display: grid; gap: 44px; margin-top: 36px; }
+  .c3 { grid-template-columns: 1fr 1fr 1fr; }
+  .c2 { grid-template-columns: 1fr 1fr; }
+  .col { border-top: 2px solid #C2A35B; padding-top: 18px; }
+  .col h4 { font-family: 'Cormorant', serif; font-size: 24px; font-weight: 600;
+            color: #1B2A4A; margin-bottom: 10px; }
+  .col p { font-size: 15.5px; line-height: 1.58; color: #5A6472; }
+  .col p b { color: #1B2A4A; font-weight: 600; }
 
-  .footer { position: absolute; left: 84px; right: 84px; bottom: 30px;
-            display: flex; justify-content: space-between; align-items: center;
-            border-top: 1px solid #24314F; padding-top: 14px; }
-  .footer .wm { font-family: 'Cormorant', serif; font-weight: 600; font-size: 17px;
-                letter-spacing: 5px; color: #8C96A8; display: flex; align-items: center; gap: 9px; }
-  .footer .wm i { width: 7px; height: 7px; border-radius: 50%; background: #C2A35B; display: inline-block; }
-  .footer .pg { font-size: 12px; letter-spacing: 3px; color: #5A6885; }
+  .quote { font-family: 'Cormorant', serif; font-size: 31px; line-height: 1.34; font-weight: 600;
+           color: #1B2A4A; font-style: italic; border-left: 3px solid #C2A35B; padding-left: 28px; }
+  .quote .g { color: #C2A35B; }
 
-  .strip { border: 1px solid #C2A35B55; border-radius: 4px; padding: 14px 24px; font-size: 14.5px;
-           color: #B9C2D4; display: flex; gap: 10px; justify-content: space-between; }
-  .strip b { color: #C2A35B; font-weight: 600; }
+  .bignum { font-family: 'Cormorant', serif; font-weight: 600; font-size: 120px;
+            color: #1B2A4A; line-height: 0.95; }
+  .bignum small { font-size: 56px; color: #C2A35B; }
 
-  /* decoração: o eixo com o ponto-fonte e ondulações */
-  .axis-art { position: absolute; pointer-events: none; }
-  .dotgrid { position: absolute; pointer-events: none; opacity: 0.55; }
+  .footer { position: absolute; left: 96px; right: 96px; bottom: 34px;
+            display: flex; justify-content: space-between; align-items: baseline;
+            border-top: 1px solid #E8E8E8; padding-top: 14px; }
+  .footer .wm { font-family: 'Cormorant', serif; font-weight: 600; font-size: 16px;
+                letter-spacing: 5px; color: #5A6472; }
+  .footer .wm i { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+                  background: #C2A35B; vertical-align: middle; margin-right: 10px; margin-top: -3px; }
+  .footer .pg { font-size: 12px; letter-spacing: 3px; color: #9AA1AD; }
 
-  /* capa / fecho */
-  .cover { justify-content: center; }
-  .cover .brand { position: absolute; top: 58px; left: 84px; display: flex; align-items: center; gap: 14px; }
-  .cover .brand .dot { width: 10px; height: 10px; border-radius: 50%; background: #C2A35B; }
-  .cover .brand .name { font-family: 'Cormorant', serif; font-weight: 600; font-size: 30px;
-                        letter-spacing: 8px; color: #FFFFFF; }
-  .cover h1 { font-size: 64px; max-width: 720px; }
-  .cover .rule { width: 64px; height: 3px; background: #C2A35B; margin: 26px 0 22px; }
-  .cover .sub { font-size: 20px; color: #B9C2D4; max-width: 640px; line-height: 1.55; }
-  .cover .contact { margin-top: 44px; display: inline-flex; border: 1px solid #2E3F63; border-radius: 4px; }
-  .cover .contact div { padding: 14px 26px; font-size: 14px; letter-spacing: 3px; }
-  .cover .contact div:first-child { color: #C2A35B; border-right: 1px solid #2E3F63; font-weight: 600; }
-  .cover .contact div:last-child { color: #8C96A8; }
+  /* capa e fecho */
+  .cover { justify-content: center; padding-left: 110px; }
+  .cover .markblock { display: flex; flex-direction: column; margin-bottom: 54px; }
+  .cover .dot { width: 15px; height: 15px; border-radius: 50%; background: #C2A35B;
+                margin: 0 0 16px 4px; }
+  .cover .name { font-family: 'Cormorant', serif; font-weight: 600; font-size: 92px;
+                 letter-spacing: 0.13em; color: #1B2A4A; line-height: 1; }
+  .cover .tagline { font-size: 19px; letter-spacing: 0.5em; color: #5A6472;
+                    text-transform: uppercase; margin-top: 16px; }
+  .cover h1 { font-size: 44px; font-weight: 500; max-width: 780px; }
+  .cover .sub { font-size: 19px; color: #5A6472; max-width: 700px; line-height: 1.6; margin-top: 20px; }
+  .cover .meta { margin-top: 56px; font-size: 14px; letter-spacing: 4px; color: #9AA1AD;
+                 text-transform: uppercase; }
+  .cover .meta b { color: #C2A35B; font-weight: 600; }
 
-  .num-row { display: flex; gap: 20px; align-items: stretch; }
-  .journey { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 36px; margin-top: 8px; }
-  .jitem { display: flex; gap: 16px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #24314F; }
-  .jitem .n { font-family: 'Cormorant', serif; font-size: 24px; color: #C2A35B; min-width: 26px; font-weight: 600; }
-  .jitem .t { font-size: 16.5px; color: #E9EDF5; font-weight: 600; }
-  .jitem .d { font-size: 13.5px; color: #9AA6BD; }
-
-  .founder { display: flex; gap: 22px; align-items: flex-start; }
-  .founder .ph { width: 118px; height: 118px; border-radius: 4px; background: #1D2A49;
-                 border: 1px solid #2E3F63; display: flex; align-items: center; justify-content: center;
-                 font-size: 11px; letter-spacing: 2px; color: #5A6885; text-align: center; flex: none; }
+  /* marca d'água da capa: o eixo do palíndromo com o ponto-fonte */
+  .axis-art { position: absolute; right: 0; top: 0; pointer-events: none; }
 </style>
 </head>
 <body>
 
 <!-- 01 · CAPA -->
 <section class="slide cover">
-  <svg class="axis-art" style="right:0;top:0" width="560" height="720" viewBox="0 0 560 720">
-    <line x1="400" y1="0" x2="400" y2="720" stroke="#2E3F63" stroke-width="2"/>
-    <circle cx="400" cy="330" r="70"  fill="none" stroke="#2E3F63" stroke-width="1.5"/>
-    <circle cx="400" cy="330" r="130" fill="none" stroke="#26334F" stroke-width="1.2"/>
-    <circle cx="400" cy="330" r="200" fill="none" stroke="#1F2B45" stroke-width="1"/>
-    <circle cx="400" cy="330" r="280" fill="none" stroke="#C2A35B" stroke-width="1.6" opacity="0.85"/>
-    <circle cx="400" cy="330" r="9" fill="#C2A35B"/>
+  <svg class="axis-art" width="460" height="720" viewBox="0 0 460 720">
+    <line x1="330" y1="0" x2="330" y2="720" stroke="#E8E8E8" stroke-width="2"/>
+    <circle cx="330" cy="330" r="64"  fill="none" stroke="#EEE7D8" stroke-width="1.6"/>
+    <circle cx="330" cy="330" r="126" fill="none" stroke="#F2EDE2" stroke-width="1.3"/>
+    <circle cx="330" cy="330" r="196" fill="none" stroke="#F6F3EB" stroke-width="1.1"/>
+    <circle cx="330" cy="330" r="272" fill="none" stroke="#C2A35B" stroke-width="1.4" opacity="0.55"/>
+    <circle cx="330" cy="330" r="8" fill="#C2A35B"/>
   </svg>
-  <div class="brand"><span class="dot"></span><span class="name">ABBA</span></div>
-  <div class="eyebrow" style="margin-bottom:20px">Apresentação para O Conselho</div>
-  <h1>A camada de prova da transformação em IA.</h1>
-  <div class="rule"></div>
-  <p class="sub">Instalamos capacidade de IA em empresas brasileiras de médio porte — e provamos, de fora, o que ela mudou. Número combinado antes, medido depois, assinado por gente.</p>
-  <div class="contact"><div>ABBASERVICES.COM.BR</div><div>BRASIL · 2026</div></div>
+  <div class="markblock">
+    <div class="dot"></div>
+    <div class="name">ABBA</div>
+    <div class="tagline">Consultoria de IA</div>
+  </div>
+  <h1>Instalamos capacidade de inteligência artificial — e provamos, de fora, o que ela mudou.</h1>
+  <div class="filete"></div>
+  <p class="sub">Número combinado antes. Medido depois. Assinado por gente.</p>
+  <div class="meta">Apresentação preparada para <b>O CONSELHO</b> · Brasil · 2026</div>
 </section>
 
 <!-- 02 · A TESE -->
 <section class="slide">
-  <svg class="dotgrid" style="right:84px;top:64px" width="120" height="72" viewBox="0 0 120 72">
-    <g fill="#C2A35B">
-    <circle cx="4" cy="4" r="2.2"/><circle cx="24" cy="4" r="2.2"/><circle cx="44" cy="4" r="2.2"/><circle cx="64" cy="4" r="2.2"/><circle cx="84" cy="4" r="2.2"/><circle cx="104" cy="4" r="2.2"/>
-    <circle cx="4" cy="24" r="2.2"/><circle cx="24" cy="24" r="2.2"/><circle cx="44" cy="24" r="2.2"/><circle cx="64" cy="24" r="2.2"/><circle cx="84" cy="24" r="2.2"/><circle cx="104" cy="24" r="2.2"/>
-    <circle cx="4" cy="44" r="2.2"/><circle cx="24" cy="44" r="2.2"/><circle cx="44" cy="44" r="2.2"/><circle cx="64" cy="44" r="2.2"/><circle cx="84" cy="44" r="2.2"/><circle cx="104" cy="44" r="2.2"/>
-    </g>
-  </svg>
   <div class="eyebrow">A tese</div>
-  <h1>A IA não é o risco.<br>Adoção sem prova é.</h1>
+  <h1>A inteligência artificial não é o risco.<br>Adoção sem prova é.</h1>
+  <hr class="filete">
   <p class="lead">Setenta por cento do valor de uma transformação em IA vive em <b>pessoas, processos e cultura</b>. O mercado inteiro vende os outros trinta: ferramenta, piloto, curso. Ninguém instala os setenta no médio porte brasileiro — e ninguém prova, de fora, o que mudou.</p>
-  <div style="display:flex;gap:40px;margin-top:44px;align-items:center">
-    <div class="quote">"A maioria dos projetos de IA não falha na tecnologia. Falha porque ninguém combinou antes o que seria dar certo."</div>
-    <div class="panel" style="flex:1">
-      <p style="font-size:15px">É a primeira coisa que dizemos em qualquer sala — e a razão de a ABBA existir: alguém precisa ser <b>a camada independente de prova</b>, com músculo para construir o que promete.</p>
-    </div>
+  <div style="margin-top:56px;max-width:860px">
+    <div class="quote">"A maioria dos projetos de IA não falha na tecnologia. Falha porque ninguém combinou antes <span class="g">o que seria dar certo</span>."</div>
+    <p style="font-size:15.5px;color:#9AA1AD;margin-top:16px;padding-left:31px">É a primeira coisa que dizemos em qualquer sala — e a razão de a ABBA existir.</p>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">02</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">02 · 12</div></div>
 </section>
 
 <!-- 03 · O PROBLEMA -->
 <section class="slide">
   <div class="eyebrow">O problema</div>
   <h1>O padrão que vemos nas empresas — inclusive nas melhores.</h1>
-  <div class="grid3" style="margin-top:36px">
-    <div class="panel"><h4>Pilotos que morrem em demo</h4><p>A prova de conceito impressiona a diretoria e nunca atravessa para a operação. Um ano depois, o investimento virou aprendizado — do fornecedor.</p></div>
-    <div class="panel"><h4>Treinamento que não muda comportamento</h4><p>A equipe assiste, elogia e volta a trabalhar como antes. Conhecimento subiu; o processo continua o mesmo.</p></div>
-    <div class="panel"><h4>Responsabilidade sem visibilidade</h4><p>A diretoria responde pelas decisões automatizadas (LGPD, Art. 20) — sem enxergar o que os sistemas decidem, com quais dados, e onde um humano revisa.</p></div>
+  <div class="cols c3">
+    <div class="col"><h4>Pilotos que morrem em demonstração</h4><p>A prova de conceito impressiona a diretoria e nunca atravessa para a operação. Um ano depois, o investimento virou aprendizado — <b>do fornecedor</b>.</p></div>
+    <div class="col"><h4>Treinamento que não muda comportamento</h4><p>A equipe assiste, elogia e volta a trabalhar como antes. O conhecimento subiu; <b>o processo continua o mesmo</b>.</p></div>
+    <div class="col"><h4>Responsabilidade sem visibilidade</h4><p>A diretoria responde pelas decisões automatizadas (LGPD, Art.&nbsp;20) — <b>sem enxergar</b> o que os sistemas decidem, com quais dados, e onde um humano revisa.</p></div>
   </div>
-  <div class="num-row" style="margin-top:34px">
-    <div class="panel" style="display:flex;align-items:center;gap:24px;flex:1">
-      <div class="bignum">63<small>%</small></div>
-      <p style="font-size:14.5px;color:#9AA6BD">das empresas brasileiras não têm política de IA — enquanto <b style="color:#C2A35B">47% dos profissionais</b> já usam IA no trabalho sem aprovação oficial. A distância entre os dois números tem nome: Shadow AI.</p>
-    </div>
+  <div style="display:flex;align-items:baseline;gap:36px;margin-top:52px">
+    <div class="bignum">63<small>%</small></div>
+    <p class="lead" style="font-size:17.5px;max-width:760px">das empresas brasileiras não têm política de IA — enquanto <b>47% dos profissionais</b> já usam IA no trabalho sem aprovação oficial. A distância entre os dois números tem nome: Shadow&nbsp;AI.</p>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">03</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">03 · 12</div></div>
 </section>
 
 <!-- 04 · O QUE FAZEMOS -->
 <section class="slide">
   <div class="eyebrow">O que fazemos</div>
   <h1>Duas coisas que não dá para fazer de dentro.</h1>
-  <div class="grid2" style="margin-top:36px">
-    <div class="panel" style="padding:28px 30px">
-      <h4 style="font-size:20px;color:#C2A35B">1 · Construção em escala</h4>
-      <p style="font-size:15.5px;margin-top:10px">Avaliamos a empresa a fundo, do conselho à linha de frente. Construímos agentes de IA sob medida — com aprovação humana nas ações que importam — e formamos <b>todos os níveis da equipe</b>, numa plataforma própria com sessões presenciais.</p>
+  <div class="cols c2" style="margin-top:44px;gap:64px">
+    <div class="col">
+      <h4 style="font-size:28px"><span style="color:#C2A35B">1 ·</span> Construção em escala</h4>
+      <p style="font-size:16.5px">Avaliamos a empresa a fundo, do conselho à linha de frente. Construímos agentes de IA sob medida — com aprovação humana nas ações que importam — e formamos <b>todos os níveis da equipe</b>, numa plataforma própria com sessões presenciais.</p>
     </div>
-    <div class="panel" style="padding:28px 30px">
-      <h4 style="font-size:20px;color:#C2A35B">2 · Prova de terceiro</h4>
-      <p style="font-size:15.5px;margin-top:10px">Cada intervenção nasce com uma métrica combinada <b>antes</b>, com humano nomeado do cliente — e é medida <b>depois</b>, contra o baseline acordado. Quem valida o número é gente da própria empresa. O que deu errado entra no relatório na mesma tipografia do que deu certo.</p>
+    <div class="col">
+      <h4 style="font-size:28px"><span style="color:#C2A35B">2 ·</span> Prova de terceiro</h4>
+      <p style="font-size:16.5px">Cada intervenção nasce com uma métrica combinada <b>antes</b>, com humano nomeado do cliente — e é medida <b>depois</b>, contra o baseline acordado. O que deu errado entra no relatório <b>na mesma tipografia</b> do que deu certo.</p>
     </div>
   </div>
-  <p class="lead" style="margin-top:32px;max-width:900px">Funciona como uma auditoria: mesmo quem tem um ótimo CFO contrata auditor, <b>porque a prova só vale vindo de terceiro</b>. É onde a ABBA vive — com a diferença de que também construímos e treinamos o que depois provamos.</p>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">04</div></div>
+  <p class="lead" style="margin-top:52px;max-width:940px;font-size:18px">Funciona como uma auditoria: mesmo quem tem um ótimo CFO contrata auditor, <b>porque a prova só vale vindo de terceiro</b>. É onde a ABBA vive — com a diferença de que também construímos e treinamos o que depois provamos.</p>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">04 · 12</div></div>
 </section>
 
 <!-- 05 · COMO -->
 <section class="slide">
   <div class="eyebrow">Como trabalhamos</div>
   <h1>Do primeiro diagnóstico à cadeira do seu lado da mesa.</h1>
-  <p class="lead" style="margin-top:14px">Cada passo entrega valor inteiro sozinho — e produz o insumo do passo seguinte.</p>
-  <div class="journey" style="margin-top:24px">
-    <div class="jitem"><span class="n">1</span><div><div class="t">Mapa de Vazamento</div><div class="d">gratuito, por informação pública, em 48 horas</div></div></div>
-    <div class="jitem"><span class="n">2</span><div><div class="t">Assessment</div><div class="d">mergulho profundo, do conselho à linha de frente</div></div></div>
-    <div class="jitem"><span class="n">3</span><div><div class="t">Protótipo de caso de uso</div><div class="d">a prova antes do investimento — GO/NO-GO com números</div></div></div>
-    <div class="jitem"><span class="n">4</span><div><div class="t">Construção e implantação</div><div class="d">agentes sob medida, aprovação humana</div></div></div>
-    <div class="jitem"><span class="n">5</span><div><div class="t">Capacitação híbrida</div><div class="d">plataforma própria + presença, todos os níveis</div></div></div>
-    <div class="jitem"><span class="n">6</span><div><div class="t">Sistemas gerenciados</div><div class="d">operação com presença semanal</div></div></div>
-    <div class="jitem"><span class="n">7</span><div><div class="t">Conselheiro de IA</div><div class="d">a direção estratégica, fracionária, do seu lado da mesa</div></div></div>
-    <div class="jitem" style="border-bottom:0"><span class="n" style="color:#5A6885">—</span><div><div class="d" style="font-size:14px">Alinhamento permanente com a diretoria: os objetivos de quem decide dirigem o plano — sempre.</div></div></div>
+  <p class="lead" style="margin-top:14px;font-size:17px">Cada passo entrega valor inteiro sozinho — e produz o insumo do passo seguinte.</p>
+  <div class="rows" style="margin-top:22px">
+    <div class="row"><span class="n">1</span><span class="t">Mapa de Vazamento</span><span class="d">gratuito, por informação pública, em 48 horas</span></div>
+    <div class="row"><span class="n">2</span><span class="t">Assessment</span><span class="d">mergulho profundo, do conselho à linha de frente</span></div>
+    <div class="row"><span class="n">3</span><span class="t">Protótipo de caso de uso</span><span class="d">a prova antes do investimento — GO/NO-GO com números</span></div>
+    <div class="row"><span class="n">4</span><span class="t">Construção e implantação</span><span class="d">agentes sob medida, aprovação humana</span></div>
+    <div class="row"><span class="n">5</span><span class="t">Capacitação híbrida</span><span class="d">plataforma própria + presença, todos os níveis</span></div>
+    <div class="row"><span class="n">6</span><span class="t">Sistemas gerenciados</span><span class="d">operação com presença semanal</span></div>
+    <div class="row"><span class="n">7</span><span class="t">Conselheiro de IA</span><span class="d">a direção estratégica, fracionária, do seu lado da mesa</span></div>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">05</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">05 · 12</div></div>
 </section>
 
 <!-- 06 · A PROVA -->
 <section class="slide">
   <div class="eyebrow">O protocolo da prova</div>
-  <h1>Prova, não impressão.</h1>
-  <div class="grid2" style="margin-top:34px">
-    <div class="panel"><h4>O número se combina antes</h4><p>Nenhum projeto começa sem métrica de sucesso acordada por escrito, com um humano nomeado do cliente. Registrar antes não é burocracia — é a intervenção que mais move o resultado.</p></div>
-    <div class="panel"><h4>Quem valida é gente do cliente</h4><p>Projetado versus realizado, medido contra o baseline combinado. O sistema tem travas contra maquiagem do próprio placar.</p></div>
-    <div class="panel"><h4>A IA gera; o humano assina</h4><p>Modelo centauro, sem exceção. Nenhum documento chega ao cliente sem um nome respondendo por ele. Ninguém aqui fala "a IA decidiu".</p></div>
-    <div class="panel"><h4>Auditável por padrão</h4><p>Guardamos a linha do tempo inteira: o que se acreditava, quando, com base em quê, e quem decidiu. Quando o conselho ou o regulador perguntar — a resposta existe.</p></div>
+  <h1>Prova, <span class="g">não impressão</span>.</h1>
+  <div class="cols c2" style="margin-top:40px;gap:40px 64px">
+    <div class="col"><h4>O número se combina antes</h4><p>Nenhum projeto começa sem métrica de sucesso acordada por escrito, com um humano nomeado do cliente. Registrar antes não é burocracia — <b>é a intervenção que mais move o resultado</b>.</p></div>
+    <div class="col"><h4>Quem valida é gente do cliente</h4><p>Projetado versus realizado, medido contra o baseline combinado. O sistema tem travas contra maquiagem do próprio placar.</p></div>
+    <div class="col"><h4>A IA gera; o humano assina</h4><p>Modelo centauro, sem exceção. Nenhum documento chega ao cliente sem um nome respondendo por ele. <b>Ninguém aqui fala "a IA decidiu".</b></p></div>
+    <div class="col"><h4>Auditável por padrão</h4><p>Guardamos a linha do tempo inteira: o que se acreditava, quando, com base em quê, e quem decidiu. Quando o conselho ou o regulador perguntar — <b>a resposta existe</b>.</p></div>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">06</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">06 · 12</div></div>
 </section>
 
 <!-- 07 · RECUSAS -->
 <section class="slide">
   <div class="eyebrow">O que recusamos</div>
   <h1>Uma consultoria também se define pelo que <span class="g">não vende</span>.</h1>
-  <div class="grid2" style="margin-top:34px">
-    <div class="panel"><h4>Piloto sem métrica</h4><p>É a receita documentada do fracasso. Aceitar seria vender uma derrota com nota fiscal.</p></div>
-    <div class="panel"><h4>Slide sem caminho até produção</h4><p>Estratégia que não chega a rodar é entretenimento caro. Todo plano nosso termina em sistema funcionando — ou diz, por escrito, por que não deveria existir.</p></div>
-    <div class="panel"><h4>Prometer acurácia onde só se mede coerência</h4><p>Vender um número que não temos destrói a única coisa que não se recompra: credibilidade técnica.</p></div>
-    <div class="panel"><h4>Ser dono da decisão do cliente</h4><p>Recomendamos com convicção e assinamos a recomendação. Quem decide é quem responde pela empresa.</p></div>
+  <div class="rows" style="margin-top:36px">
+    <div class="row"><span class="n">I</span><span class="t">Piloto sem métrica</span><span class="d">é a receita documentada do fracasso — aceitar seria vender uma derrota com nota fiscal</span></div>
+    <div class="row"><span class="n">II</span><span class="t">Slide sem caminho até produção</span><span class="d">estratégia que não roda é entretenimento caro; todo plano nosso termina em sistema funcionando</span></div>
+    <div class="row"><span class="n">III</span><span class="t">Acurácia onde só se mede coerência</span><span class="d">vender número que não temos destrói a única coisa que não se recompra: credibilidade</span></div>
+    <div class="row"><span class="n">IV</span><span class="t">Ser dono da decisão do cliente</span><span class="d">recomendamos com convicção e assinamos; quem decide é quem responde pela empresa</span></div>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">07</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">07 · 12</div></div>
 </section>
 
 <!-- 08 · FUNDADORES -->
 <section class="slide">
   <div class="eyebrow">Quem assina</div>
   <h1>Dois sócios. Nome no que entregam.</h1>
-  <div class="grid2" style="margin-top:32px">
-    <div class="panel founder" style="padding:24px">
-      <div class="ph">FOTO<br>DANIEL</div>
-      <div><h4 style="font-size:19px">Daniel Moraes Coca</h4>
-      <p style="margin-top:6px">Sócio-fundador. Conduz o comercial e a entrega — é dele a relação semanal com cada cliente e a responsabilidade pelo resultado combinado chegar medido ao fim.</p></div>
+  <div class="cols c2" style="margin-top:38px;gap:64px">
+    <div class="col">
+      <h4 style="font-size:26px">Daniel Moraes Coca</h4>
+      <p style="font-size:16px">Sócio-fundador. Conduz o comercial e a entrega — é dele a relação semanal com cada cliente e a responsabilidade pelo resultado combinado chegar medido ao fim.</p>
     </div>
-    <div class="panel founder" style="padding:24px">
-      <div class="ph">FOTO<br>PEDRO</div>
-      <div><h4 style="font-size:19px">Pedro Moura</h4>
-      <p style="margin-top:6px">Sócio-fundador. Conduz tecnologia e capacitação — a arquitetura dos agentes, a plataforma de formação e o método que transforma equipe inteira, do estagiário à diretoria.</p></div>
+    <div class="col">
+      <h4 style="font-size:26px">Pedro Moura</h4>
+      <p style="font-size:16px">Sócio-fundador. Conduz tecnologia e capacitação — a arquitetura dos agentes, a plataforma de formação e o método que transforma a equipe inteira, do estagiário à diretoria.</p>
     </div>
   </div>
-  <div class="panel" style="margin-top:22px;border-color:#C2A35B55">
-    <p style="font-size:15px"><b>A ponte com a fronteira.</b> A stack de agentes da ABBA é construída sobre <b>CrewAI</b> — o framework criado pelo brasileiro João Moura, irmão de Pedro. A CrewAI captou R$ 100 milhões com investidores como Insight Partners, Andrew Ng e o fundo da família de Sam Altman; cerca de 150 empresas da Fortune 500 usam a tecnologia, de PepsiCo e PwC ao Departamento de Defesa dos EUA. <span style="color:#5A6885">(Bloomberg Línea, 2025)</span></p>
+  <div style="margin-top:48px;max-width:1040px">
+    <div class="quote" style="font-size:24px;font-style:normal">A stack de agentes da ABBA é construída sobre <span class="g">CrewAI</span> — o framework criado pelo brasileiro João Moura, irmão de Pedro.</div>
+    <p style="font-size:15.5px;color:#5A6472;margin-top:16px;padding-left:31px;line-height:1.6">R$ 100 milhões captados com investidores como Insight Partners, Andrew Ng e o fundo da família de Sam Altman · cerca de 150 empresas da Fortune 500 usam a tecnologia, de PepsiCo e PwC ao Departamento de Defesa dos EUA. <span style="color:#9AA1AD">(Bloomberg Línea, 2025)</span></p>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">08</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">08 · 12</div></div>
 </section>
 
 <!-- 09 · POR QUE AGORA -->
 <section class="slide">
   <div class="eyebrow">Por que agora</div>
   <h1>Entre 2026 e 2029, IA auditável deixa de ser sofisticação — <span class="g">e vira requisito legal</span>.</h1>
-  <div class="grid3" style="margin-top:34px">
-    <div class="panel"><h4>ANPD em campo</h4><p>75 ações de fiscalização previstas para 2026–27 — 20 delas sobre IA. A responsabilidade por decisão automatizada já está na LGPD.</p></div>
-    <div class="panel"><h4>PL 2338</h4><p>Avaliação de impacto algorítmico obrigatória e multa de até 2% do faturamento para sistemas de alto risco.</p></div>
-    <div class="panel"><h4>O efeito exportador</h4><p>O EU AI Act (2027) chega à empresa brasileira como cláusula contratual de quem compra dela. Quem prova, vende; quem não prova, explica.</p></div>
+  <div class="cols c3" style="margin-top:40px">
+    <div class="col"><h4>ANPD em campo</h4><p>75 ações de fiscalização previstas para 2026–27 — 20 delas sobre IA. A responsabilidade por decisão automatizada já está na LGPD.</p></div>
+    <div class="col"><h4>PL 2338</h4><p>Avaliação de impacto algorítmico obrigatória e multa de até <b>2% do faturamento</b> para sistemas de alto risco.</p></div>
+    <div class="col"><h4>O efeito exportador</h4><p>O EU AI Act (2027) chega à empresa brasileira como cláusula contratual de quem compra dela. <b>Quem prova, vende; quem não prova, explica.</b></p></div>
   </div>
-  <p class="lead" style="margin-top:30px">Cada peça do nosso método — métrica assinada, trilha de decisão, registro do que mudou — <b>vira artefato de conformidade</b> nesse cenário. Construímos a coisa certa antes de ela ser exigida.</p>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">09</div></div>
+  <p class="lead" style="margin-top:48px;max-width:960px">Cada peça do nosso método — métrica assinada, trilha de decisão, registro do que mudou — <b>vira artefato de conformidade</b> nesse cenário. Construímos a coisa certa antes de ela ser exigida.</p>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">09 · 12</div></div>
 </section>
 
 <!-- 10 · EMPRESAS FAMILIARES -->
 <section class="slide">
   <div class="eyebrow">Para empresas de família</div>
   <h1>O que fica para a próxima geração.</h1>
-  <div class="grid3" style="margin-top:36px">
-    <div class="panel"><h4>Governança que se herda</h4><p>Decisões de IA com dono, métrica e linha do tempo. Quem assume a empresa amanhã lê exatamente o que foi decidido, por quem, e o que rendeu — em reais.</p></div>
-    <div class="panel"><h4>Memória que não pede demissão</h4><p>O conhecimento do negócio — processos, decisões, aprendizados — registrado e vivo, em vez de morar na cabeça de três pessoas-chave.</p></div>
-    <div class="panel"><h4>Gente formada, não dependência</h4><p>Nosso contrato mais honesto: se ao final a empresa depender da ABBA para operar, nós falhamos. Instalamos capacidade — e ela fica.</p></div>
+  <div class="cols c3" style="margin-top:40px">
+    <div class="col"><h4>Governança que se herda</h4><p>Decisões de IA com dono, métrica e linha do tempo. Quem assume a empresa amanhã lê exatamente o que foi decidido, por quem — e o que rendeu, <b>em reais</b>.</p></div>
+    <div class="col"><h4>Memória que não pede demissão</h4><p>O conhecimento do negócio — processos, decisões, aprendizados — registrado e vivo, em vez de morar na cabeça de três pessoas-chave.</p></div>
+    <div class="col"><h4>Gente formada, não dependência</h4><p>Nosso contrato mais honesto: se ao final a empresa depender da ABBA para operar, <b>nós falhamos</b>. Instalamos capacidade — e ela fica.</p></div>
   </div>
-  <div style="display:flex;justify-content:center;margin-top:40px">
-    <div class="quote" style="max-width:700px;text-align:center">"Nosso sucesso é o cliente precisar menos de nós no operacional — e mais no direcionamento."</div>
+  <div style="margin-top:56px;max-width:900px">
+    <div class="quote">"Nosso sucesso é o cliente precisar menos de nós no operacional — <span class="g">e mais no direcionamento</span>."</div>
   </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">10</div></div>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">10 · 12</div></div>
 </section>
 
 <!-- 11 · COMO COMEÇAR -->
 <section class="slide">
   <div class="eyebrow">Como começar</div>
   <h1>Uma empresa. 48 horas. Um mapa.</h1>
-  <p class="lead" style="margin-top:14px">Sem sistema, sem integração, sem contrato. Você indica uma empresa — a sua, ou uma do grupo — e recebe a análise. Decide depois.</p>
-  <div class="grid3" style="margin-top:32px">
-    <div class="panel"><h4 style="color:#C2A35B">01 · Você indica</h4><p>O nome da empresa. Só isso — trabalhamos por informação pública.</p></div>
-    <div class="panel"><h4 style="color:#C2A35B">02 · Nós analisamos</h4><p>Onde pode haver dinheiro vazando e o que faríamos primeiro — em faixas, com premissa citada, nunca em promessa.</p></div>
-    <div class="panel"><h4 style="color:#C2A35B">03 · Você recebe</h4><p>O Mapa de Vazamento — inclusive o que não foi possível verificar de fora.</p></div>
+  <p class="lead" style="margin-top:16px">Sem sistema, sem integração, sem contrato. Você indica uma empresa — a sua, ou uma do grupo — e recebe a análise. Decide depois.</p>
+  <div class="rows" style="margin-top:30px;max-width:1000px">
+    <div class="row"><span class="n">01</span><span class="t">Você indica</span><span class="d">o nome da empresa — só isso; trabalhamos por informação pública</span></div>
+    <div class="row"><span class="n">02</span><span class="t">Nós analisamos</span><span class="d">onde pode haver dinheiro vazando e o que faríamos primeiro — em faixas, com premissa citada, nunca em promessa</span></div>
+    <div class="row"><span class="n">03</span><span class="t">Você recebe</span><span class="d">o Mapa de Vazamento — inclusive o que não foi possível verificar de fora</span></div>
   </div>
-  <div class="strip" style="margin-top:34px">
-    <span>Prazo: <b>48 horas</b></span><span>·</span>
-    <span>Custo: <b>zero</b></span><span>·</span>
-    <span>Compromisso: <b>nenhum</b></span><span>·</span>
-    <span>Faixa sem premissa citada: <b>não publicamos</b></span>
-  </div>
-  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">11</div></div>
+  <p style="margin-top:44px;font-size:16px;letter-spacing:2px;color:#5A6472">PRAZO <b style="color:#C2A35B">48 HORAS</b> &nbsp;·&nbsp; CUSTO <b style="color:#C2A35B">ZERO</b> &nbsp;·&nbsp; COMPROMISSO <b style="color:#C2A35B">NENHUM</b></p>
+  <div class="footer"><div class="wm"><i></i>ABBA</div><div class="pg">11 · 12</div></div>
 </section>
 
 <!-- 12 · FECHO -->
 <section class="slide cover">
-  <svg class="axis-art" style="right:0;top:0" width="560" height="720" viewBox="0 0 560 720">
-    <line x1="400" y1="0" x2="400" y2="720" stroke="#2E3F63" stroke-width="2"/>
-    <circle cx="400" cy="390" r="70"  fill="none" stroke="#2E3F63" stroke-width="1.5"/>
-    <circle cx="400" cy="390" r="130" fill="none" stroke="#26334F" stroke-width="1.2"/>
-    <circle cx="400" cy="390" r="200" fill="none" stroke="#1F2B45" stroke-width="1"/>
-    <circle cx="400" cy="390" r="280" fill="none" stroke="#C2A35B" stroke-width="1.6" opacity="0.85"/>
-    <circle cx="400" cy="390" r="9" fill="#C2A35B"/>
+  <svg class="axis-art" width="460" height="720" viewBox="0 0 460 720">
+    <line x1="330" y1="0" x2="330" y2="720" stroke="#E8E8E8" stroke-width="2"/>
+    <circle cx="330" cy="390" r="64"  fill="none" stroke="#EEE7D8" stroke-width="1.6"/>
+    <circle cx="330" cy="390" r="126" fill="none" stroke="#F2EDE2" stroke-width="1.3"/>
+    <circle cx="330" cy="390" r="196" fill="none" stroke="#F6F3EB" stroke-width="1.1"/>
+    <circle cx="330" cy="390" r="272" fill="none" stroke="#C2A35B" stroke-width="1.4" opacity="0.55"/>
+    <circle cx="330" cy="390" r="8" fill="#C2A35B"/>
   </svg>
-  <div class="brand"><span class="dot"></span><span class="name">ABBA</span></div>
-  <h1>Instalamos capacidade de IA — <span class="g">e provamos o que mudou</span>.</h1>
-  <div class="rule"></div>
-  <p class="sub">Obrigado pela oportunidade de nos apresentarmos ao Conselho.<br>Daniel Moraes Coca · Pedro Moura</p>
-  <div class="contact"><div>ABBASERVICES.COM.BR</div><div>CONTATO@ABBASERVICES.COM.BR</div></div>
+  <div class="markblock">
+    <div class="dot"></div>
+    <div class="name">ABBA</div>
+    <div class="tagline">Consultoria de IA</div>
+  </div>
+  <h1>Obrigado pela oportunidade de nos apresentarmos ao Conselho.</h1>
+  <div class="filete"></div>
+  <p class="sub">Daniel Moraes Coca · Pedro Moura</p>
+  <div class="meta"><b>ABBASERVICES.COM.BR</b> · CONTATO@ABBASERVICES.COM.BR</div>
 </section>
 
 </body>
