@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — ativos oficiais de marketing (wordmark limpo)</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('../wordmark/fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('../wordmark/fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #4a4a4a; }
+  .asset { margin: 20px auto; }
+  .mark { font-family: 'Cormorant', serif; font-weight: 600; line-height: 1;
+          letter-spacing: 0.12em; text-indent: 0.12em; }
+  .vers { font-family: 'EBGaramond', serif; letter-spacing: 0.42em; text-indent: 0.42em;
+          text-transform: uppercase; }
+
+  /* ---- 1. Avatar 1080 ---- */
+  #avatar { width: 1080px; height: 1080px; background: #1B2A4A;
+            display: flex; align-items: center; justify-content: center; }
+  #avatar .mark { font-size: 296px; color: #FFFFFF; }
+
+  /* ---- 2/3. Lockups horizontais 1600x520 ---- */
+  .horiz { width: 1600px; height: 520px; display: flex; align-items: center; justify-content: center; }
+  #horiz-claro { background: #FFFFFF; }
+  #horiz-claro .mark { font-size: 300px; color: #1B2A4A; }
+  #horiz-escuro { background: #1B2A4A; }
+  #horiz-escuro .mark { font-size: 300px; color: #FFFFFF; }
+
+  /* ---- 4. Banner LinkedIn empresa 2256x382 (editorial branco) ---- */
+  #banner { width: 2256px; height: 382px; background: #FFFFFF; display: flex; align-items: center; }
+  #banner .esq { width: 700px; display: flex; align-items: center; justify-content: center; }
+  #banner .esq .mark { font-size: 150px; color: #1B2A4A; }
+  #banner .filete-v { width: 2px; height: 190px; background: #C2A35B; }
+  #banner .dir { flex: 1; padding: 0 110px 0 90px; }
+  #banner .dir .frase { font-family: 'EBGaramond', serif; font-size: 55px; line-height: 1.28;
+                        color: #1B2A4A; }
+  #banner .dir .frase b { color: #C2A35B; font-weight: 400; }
+  #banner .dir .site { font-size: 24px; color: #C2A35B; margin-top: 28px; }
+
+  /* ---- 5. Capa LinkedIn pessoal 1584x396 ---- */
+  #capa { width: 1584px; height: 396px; background: #1B2A4A; display: flex; align-items: center; }
+  #capa .esq { padding-left: 120px; }
+  #capa .esq .mark { font-size: 170px; color: #FFFFFF; }
+  #capa .dir { flex: 1; display: flex; flex-direction: column; align-items: flex-end;
+               padding-right: 120px; gap: 20px; }
+  #capa .dir .filete-h { width: 260px; height: 2px; background: #C2A35B; }
+  #capa .dir .site { font-size: 25px; color: #C2A35B; }
+
+  /* ---- 6/7. Cartão de visita 1050x600 (9x5cm @300dpi ~) ---- */
+  .cartao { width: 1050px; height: 600px; }
+  #cartao-frente { background: #1B2A4A; display: flex; align-items: center; justify-content: center; }
+  #cartao-frente .mark { font-size: 190px; color: #C2A35B; }
+  #cartao-verso { background: #FFFFFF; padding: 70px 80px; display: flex;
+                  flex-direction: column; justify-content: space-between; }
+  #cartao-verso .topo .mark { font-size: 74px; color: #1B2A4A; }
+  #cartao-verso .meio { display: flex; flex-direction: column; gap: 8px; }
+  #cartao-verso .meio .filete-h { width: 120px; height: 2px; background: #C2A35B; margin-bottom: 18px; }
+  #cartao-verso .meio .nome { font-family: 'Cormorant', serif; font-weight: 600; font-size: 52px;
+                              color: #1B2A4A; }
+  #cartao-verso .meio .cargo { font-size: 21px; color: #C2A35B; letter-spacing: 0.3em; }
+  #cartao-verso .base { font-family: 'EBGaramond', serif; font-size: 26px; color: #5A6472;
+                        display: flex; justify-content: space-between; }
+
+  /* ---- 8. Timbrado A4 1240x1754 ---- */
+  #timbrado { width: 1240px; height: 1754px; background: #FFFFFF; padding: 90px 110px;
+              display: flex; flex-direction: column; }
+  #timbrado .cab { display: flex; justify-content: space-between; align-items: flex-end;
+                   padding-bottom: 28px; border-bottom: 2px solid #C2A35B; }
+  #timbrado .cab .mark { font-size: 88px; color: #1B2A4A; }
+  #timbrado .cab .site { font-size: 17px; color: #5A6472; }
+  #timbrado .corpo { flex: 1; }
+  #timbrado .pe { border-top: 1px solid #E2E0D8; padding-top: 22px;
+                  font-family: 'EBGaramond', serif; font-size: 16px; color: #5A6472;
+                  display: flex; justify-content: space-between; }
+  #timbrado .pe .d { color: #C2A35B; }
+
+  /* ---- 9. Assinatura de e-mail 700x230 ---- */
+  #assinatura { width: 700px; height: 230px; background: #FFFFFF; display: flex; align-items: center;
+                padding: 0 40px; gap: 36px; }
+  #assinatura .mark { font-size: 84px; color: #1B2A4A; }
+  #assinatura .filete-v { width: 2px; height: 120px; background: #C2A35B; }
+  #assinatura .info { display: flex; flex-direction: column; gap: 6px; }
+  #assinatura .info .nome { font-family: 'Cormorant', serif; font-weight: 600; font-size: 34px; color: #1B2A4A; }
+  #assinatura .info .cargo { font-family: 'EBGaramond', serif; font-size: 16px; color: #C2A35B;
+                             letter-spacing: 0.22em; text-transform: uppercase; }
+  #assinatura .info .site { font-family: 'EBGaramond', serif; font-size: 18px; color: #5A6472; margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<div class="asset" id="avatar"><span class="mark">ABBA</span></div>
+
+<div class="asset horiz" id="horiz-claro"><span class="mark">ABBA</span></div>
+<div class="asset horiz" id="horiz-escuro"><span class="mark">ABBA</span></div>
+
+<div class="asset" id="banner">
+  <div class="esq"><span class="mark">ABBA</span></div>
+  <div class="filete-v"></div>
+  <div class="dir">
+    <div class="frase">Instalamos capacidade de IA — <b>e provamos, de fora, o que ela mudou.</b></div>
+    <div class="site vers">abbaservices.com.br</div>
+  </div>
+</div>
+
+<div class="asset" id="capa">
+  <div class="esq"><span class="mark">ABBA</span></div>
+  <div class="dir">
+    <div class="filete-h"></div>
+    <div class="site vers">abbaservices.com.br</div>
+  </div>
+</div>
+
+<div class="asset cartao" id="cartao-frente"><span class="mark">ABBA</span></div>
+
+<div class="asset cartao" id="cartao-verso">
+  <div class="topo"><span class="mark">ABBA</span></div>
+  <div class="meio">
+    <div class="filete-h"></div>
+    <div class="nome">Nome Sobrenome</div>
+    <div class="cargo vers">Sócio-fundador</div>
+  </div>
+  <div class="base">
+    <span>nome@abbaservices.com.br</span>
+    <span>abbaservices.com.br</span>
+  </div>
+</div>
+
+<div class="asset" id="timbrado">
+  <div class="cab">
+    <span class="mark">ABBA</span>
+    <span class="site vers">abbaservices.com.br</span>
+  </div>
+  <div class="corpo"></div>
+  <div class="pe">
+    <span>ABBA — consultoria de inteligência artificial</span>
+    <span class="d">abbaservices.com.br</span>
+  </div>
+</div>
+
+<div class="asset" id="assinatura">
+  <span class="mark">ABBA</span>
+  <div class="filete-v"></div>
+  <div class="info">
+    <div class="nome">Nome Sobrenome</div>
+    <div class="cargo">Sócio-fundador</div>
+    <div class="site">nome@abbaservices.com.br · abbaservices.com.br</div>
+  </div>
+</div>
+
+</body>
+</html>
