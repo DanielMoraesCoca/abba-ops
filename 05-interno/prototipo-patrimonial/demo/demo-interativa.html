@@ -90,6 +90,11 @@
   .bigblock h2{color:var(--block)}
   .why{background:var(--navy);color:#fff;border-radius:8px;padding:16px 18px;font-size:14.5px}
   .why b{color:var(--gold)}
+  .how{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+  @media(max-width:760px){.how{grid-template-columns:1fr}}
+  .howstep{display:flex;gap:10px;align-items:flex-start;background:var(--ice);border-radius:8px;padding:12px 14px}
+  .howstep .hn{flex:none;width:26px;height:26px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .howstep b{color:var(--navy);font-size:14px} .howstep span{font-size:12.5px;color:var(--slate)}
   footer{max-width:1180px;margin:10px auto 30px;padding:0 20px;font-size:12.5px;color:var(--slate)}
   .hidden{display:none}
   a{color:var(--petrol)}
@@ -122,7 +127,22 @@
         <div class="kick">O princípio</div>
         <h1>A IA propõe. O advogado assina. A família decide.</h1>
         <p class="lead">Este sistema transforma o perfil completo de uma família num conjunto de alternativas de planejamento patrimonial — <b>100% declaradas e tributadas</b>, com fundamento citado e riscos atacados antes de chegarem à sua mesa. A primeira coisa que ele faz é dizer <b>não</b> para o caso errado.</p>
-        <h3>Teste com um caso pronto (ou preencha o perfil abaixo):</h3>
+        <div class="how">
+          <div class="howstep"><span class="hn">1</span><div><b>Você preenche o perfil do cliente</b><br><span>Nome, família, patrimônio, passivos — como numa entrevista de admissão do caso.</span></div></div>
+          <div class="howstep"><span class="hn">2</span><div><b>O sistema tria e desenha</b><br><span>Verifica a conformidade (bloqueia o caso errado), analisa e propõe 2–3 estruturas com trade-offs.</span></div></div>
+          <div class="howstep"><span class="hn">3</span><div><b>Sai uma minuta para o advogado</b><br><span>Documento com fontes citadas e obrigações — para o advogado nomeado revisar e assinar.</span></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="kick">Comece aqui</div>
+        <h2>Identificação do caso</h2>
+        <p class="note" style="margin-top:0">No produto real, o dado do cliente é pseudonimizado antes de ir a qualquer modelo de IA. Nesta demonstração, você digita o nome para o caso ficar concreto — nada é enviado para fora.</p>
+        <div class="grid2" style="margin-top:12px">
+          <label>Nome do cliente / família <input type="text" id="cliente_nome" placeholder="ex.: Família Andrade" autocomplete="off"></label>
+          <label>Preparado por (advogado responsável) <input type="text" id="advogado_nome" placeholder="ex.: Dr. Gil Vicente Gama" autocomplete="off"></label>
+        </div>
+        <h3>Ou carregue um caso de exemplo em 1 clique:</h3>
         <div class="personas" id="personas"></div>
       </div>
 
@@ -184,7 +204,7 @@
     <section id="s1" class="hidden">
       <div class="card">
         <div class="kick">Etapa 2 · lógica real, executada agora</div>
-        <h2>Triagem de conformidade (red flags)</h2>
+        <h2>Triagem de conformidade — <span class="caso-nome" style="color:var(--gold)"></span></h2>
         <div id="flags"></div>
         <div id="gateverdict"></div>
         <div class="btnrow" id="gatebtns"></div>
@@ -253,25 +273,29 @@ const N=["idade","filhos","pat_total","pat_ext","passivo"];
 
 const PERSONAS=[
  {id:"P06",nome:"Empresária pós-venda da empresa",desc:"R$ 80 mi de liquidez, 2 filhos, tudo declarado — sucessão a organizar.",tag:"g",tagtxt:"Segue para desenho",
-  v:{idade:54,uf:"SP",regime:"separacao_total",filhos:2,pat_total:80,pat_ext:8,evento_liquidez:1,origem_ok:1,aceite:1}},
+  v:{nome:"Helena Marques (exemplo)",idade:54,uf:"SP",regime:"separacao_total",filhos:2,pat_total:80,pat_ext:8,evento_liquidez:1,origem_ok:1,aceite:1}},
  {id:"P07",nome:"Viúva com imóveis nos EUA",desc:"US$ 8 mi em Miami, filhos no Brasil — exposição ao estate tax americano.",tag:"g",tagtxt:"Segue para desenho",
-  v:{idade:67,uf:"DF",regime:"nao_aplicavel",filhos:3,pat_total:70,pat_ext:40,imovel_eua:1,origem_ok:1,aceite:1}},
+  v:{nome:"Beatriz Nogueira (exemplo)",idade:67,uf:"DF",regime:"nao_aplicavel",filhos:3,pat_total:70,pat_ext:40,imovel_eua:1,origem_ok:1,aceite:1}},
  {id:"P01",nome:"Empresário querendo \"blindar\"",desc:"R$ 2,5 mi em processos trabalhistas — e quer proteger os bens disso.",tag:"b",tagtxt:"Bloqueado pela triagem",
-  v:{idade:49,uf:"GO",regime:"comunhao_parcial",filhos:3,pat_total:45,passivo:2.5,blindar:1,origem_ok:1,aceite:1}},
+  v:{nome:"Ronaldo Prado (exemplo)",idade:49,uf:"GO",regime:"comunhao_parcial",filhos:3,pat_total:45,passivo:2.5,blindar:1,origem_ok:1,aceite:1}},
  {id:"P02",nome:"Família com offshore antiga",desc:"Empresa nas BVI desde 2015 — nunca declarada no IRPF/DCBE.",tag:"b",tagtxt:"Bloqueado pela triagem",
-  v:{idade:61,uf:"RJ",regime:"comunhao_universal",filhos:2,pat_total:120,pat_ext:35,ext_nao_declarado:1,origem_ok:1,aceite:1}},
+  v:{nome:"Família Tavares (exemplo)",idade:61,uf:"RJ",regime:"comunhao_universal",filhos:2,pat_total:120,pat_ext:35,ext_nao_declarado:1,origem_ok:1,aceite:1}},
  {id:"P12",nome:"Jovem herdeira, tudo no Brasil",desc:"Sem urgência, sem exterior — o caso em que MENOS é mais.",tag:"g",tagtxt:"Segue para desenho",
-  v:{idade:31,uf:"DF",regime:"nao_aplicavel",filhos:0,pat_total:25,origem_ok:1,aceite:1}},
+  v:{nome:"Marina Costa (exemplo)",idade:31,uf:"DF",regime:"nao_aplicavel",filhos:0,pat_total:25,origem_ok:1,aceite:1}},
 ];
 
 function setForm(v){
   F.forEach(k=>$(k).checked=!!v[k]);
   N.forEach(k=>$(k).value=(v[k]!==undefined?v[k]:0));
   if(v.uf)$("uf").value=v.uf; if(v.regime)$("regime").value=v.regime;
+  if(v.nome)$("cliente_nome").value=v.nome;
 }
 function readForm(){
   const p={}; F.forEach(k=>p[k]=$(k).checked); N.forEach(k=>p[k]=parseFloat($(k).value)||0);
-  p.uf=$("uf").value; p.regime=$("regime").value; return p;
+  p.uf=$("uf").value; p.regime=$("regime").value;
+  p.cliente=($("cliente_nome").value||"").trim()||"Cliente sem nome";
+  p.advogado=($("advogado_nome").value||"").trim();
+  return p;
 }
 
 // ---- GATE 1: lógica REAL (espelha gates.py do protótipo)
@@ -387,6 +411,7 @@ PERSONAS.forEach(x=>{
 
 $("run").addEventListener("click",()=>{
   const p=readForm(); state.p=p;
+  document.querySelectorAll(".caso-nome").forEach(el=>el.textContent=p.cliente);
   const flags=triagem(p); state.flags=flags;
   const hard=flags.filter(f=>f.sev==="duro"), soft=flags.filter(f=>f.sev==="brando");
   state.blocked=hard.length>0;
@@ -397,7 +422,7 @@ $("run").addEventListener("click",()=>{
   });
   const v=$("gateverdict"), btns=$("gatebtns");
   if(state.blocked){
-    v.innerHTML=`<div class="bigblock"><h2>Caso bloqueado para desenho automático</h2><p style="margin-top:6px">O sistema encaminha este caso ao advogado com o relatório acima — <b>sem desenhar estrutura nenhuma</b>. Não é recusa do cliente: é o reconhecimento de que o caso começa por regularização e aconselhamento humano.</p></div>`;
+    v.innerHTML=`<div class="bigblock"><h2>Caso de ${p.cliente} bloqueado para desenho automático</h2><p style="margin-top:6px">O sistema encaminha este caso ao advogado com o relatório acima — <b>sem desenhar estrutura nenhuma</b>. Não é recusa do cliente: é o reconhecimento de que o caso começa por regularização e aconselhamento humano.</p></div>`;
     btns.innerHTML=`<button class="btn ghost" id="rb">↺ Testar outro caso</button>`;
     $("whyblock").style.display="block";
     $("rb").addEventListener("click",()=>{state.blocked=false;go(0);});
@@ -448,8 +473,10 @@ function renderMinuta(){
   const srcs=[...new Set([].concat(...analise(p).map(c=>c.src)))];
   $("minuta").innerHTML=`
   <div style="text-align:center;font-family:var(--sans);font-size:11px;letter-spacing:2px;color:var(--slate)">MINUTA PARA REVISÃO DO ADVOGADO RESPONSÁVEL — NÃO É DOCUMENTO FINAL</div>
+  <div style="text-align:center;font-family:var(--serif);font-size:19px;color:var(--navy);font-weight:bold;margin:6px 0 2px">Minuta preparada para: ${p.cliente}</div>
+  ${p.advogado?`<div style="text-align:center;font-family:var(--sans);font-size:12.5px;color:var(--slate);margin-bottom:4px">Advogado responsável: ${p.advogado}</div>`:""}
   <h2>Sumário executivo</h2>
-  <p>Perfil com patrimônio total da ordem de R$ ${p.pat_total} mi${p.pat_ext?` (R$ ${p.pat_ext} mi no exterior)`:""}, ${p.filhos} herdeiro(s) necessário(s), domicílio fiscal em ${p.uf}. A triagem de conformidade não encontrou impedimentos; ${soft.length? soft.length+" condicionante(s) obrigatória(s) integram os desenhos.":"não há condicionantes."} São apresentadas ${state.designs.length} alternativas, cada uma com crítica adversarial e pacote completo de obrigações.</p>
+  <p>${p.cliente} — perfil com patrimônio total da ordem de R$ ${p.pat_total} mi${p.pat_ext?` (R$ ${p.pat_ext} mi no exterior)`:""}, ${p.filhos} herdeiro(s) necessário(s), domicílio fiscal em ${p.uf}. A triagem de conformidade não encontrou impedimentos; ${soft.length? soft.length+" condicionante(s) obrigatória(s) integram os desenhos.":"não há condicionantes."} São apresentadas ${state.designs.length} alternativas, cada uma com crítica adversarial e pacote completo de obrigações.</p>
   <h2>Alternativas e recomendação preliminar</h2>
   <p>${state.designs.map(d=>d.nome).join(" · ")}. A recomendação preliminar e o dimensionamento final são reservados à revisão do advogado responsável — o sistema propõe; o profissional assina.</p>
   <h2>Obrigações assumidas em qualquer cenário</h2>
