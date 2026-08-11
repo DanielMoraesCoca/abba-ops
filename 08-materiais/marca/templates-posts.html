@@ -21,7 +21,11 @@
 -->
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #333; font-family: Cambria, Georgia, 'Times New Roman', serif; }
+  @font-face { font-family: 'Cormorant'; src: url('wordmark/fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('wordmark/fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  body { background: #333; font-family: 'EBGaramond', Georgia, serif; }
+  .wmark { font-family: 'Cormorant', serif; font-weight: 600; letter-spacing: 0.12em;
+           text-indent: 0.12em; line-height: 1; }
   .frame { position: relative; overflow: hidden; margin: 24px auto; }
   .f-1080x1350 { width: 1080px; height: 1350px; }
   .f-1080x1080 { width: 1080px; height: 1080px; }
@@ -36,6 +40,7 @@
     display: flex; justify-content: space-between; align-items: baseline;
     font-size: 26px; letter-spacing: 4px; text-transform: uppercase;
   }
+  .rodape span:first-child { font-family: 'Cormorant', serif; font-weight: 600; font-size: 32px; letter-spacing: 0.12em; }
 
   /* ---------- 1. CAPA DE CARROSSEL (navy) ---------- */
   .capa { background: #1B2A4A; color: #FFFFFF; padding: 120px 96px; }
@@ -98,7 +103,7 @@
 
 <!-- ============ 1. CAPA DE CARROSSEL — 1080×1350 ============ -->
 <div class="frame f-1080x1350 capa" id="t1-capa">
-  <img class="simbolo" src="abba-logo-simbolo.svg" alt="">
+  <div class="wmark" style="font-size:120px;color:#FFFFFF;margin-bottom:56px">ABBA</div>
   <div class="eyebrow">[Série ou pilar — ex.: Prova, não impressão]</div>
   <h1>[Afirmação forte em uma frase, com <em>o termo-chave</em> em dourado]</h1>
   <hr class="filete">
@@ -118,7 +123,7 @@
 
 <!-- ============ 3. SLIDE-CTA — 1080×1350 ============ -->
 <div class="frame f-1080x1350 cta" id="t3-cta">
-  <img class="simbolo" src="abba-logo-simbolo.svg" alt="ABBA">
+  <div class="wmark" style="font-size:110px;color:#1B2A4A;margin-bottom:56px">ABBA</div>
   <h2>[Fecho: a conclusão que o leitor leva embora]</h2>
   <hr class="filete">
   <p>[Convite concreto e único — ex.: <b>peça o Mapa de Vazamento gratuito</b>: uma análise da sua empresa por informação pública, entregue em 48 horas.]</p>

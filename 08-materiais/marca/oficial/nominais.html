@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — cartões e assinaturas nominais</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('../wordmark/fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('../wordmark/fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #4a4a4a; }
+  .asset { margin: 20px auto; }
+  .mark { font-family: 'Cormorant', serif; font-weight: 600; line-height: 1;
+          letter-spacing: 0.12em; text-indent: 0.12em; }
+  .vers { font-family: 'EBGaramond', serif; letter-spacing: 0.3em; text-indent: 0.3em;
+          text-transform: uppercase; }
+
+  .cartao { width: 1050px; height: 600px; background: #FFFFFF; padding: 70px 80px;
+            display: flex; flex-direction: column; justify-content: space-between; }
+  .cartao .topo .mark { font-size: 74px; color: #1B2A4A; }
+  .cartao .meio { display: flex; flex-direction: column; gap: 8px; }
+  .cartao .meio .filete-h { width: 120px; height: 2px; background: #C2A35B; margin-bottom: 18px; }
+  .cartao .meio .nome { font-family: 'Cormorant', serif; font-weight: 600; font-size: 52px;
+                        color: #1B2A4A; }
+  .cartao .meio .cargo { font-size: 21px; color: #C2A35B; }
+  .cartao .base { font-family: 'EBGaramond', serif; font-size: 26px; color: #5A6472;
+                  display: flex; justify-content: space-between; }
+
+  .ass { width: 700px; height: 230px; background: #FFFFFF; display: flex; align-items: center;
+         padding: 0 40px; gap: 36px; }
+  .ass .mark { font-size: 84px; color: #1B2A4A; }
+  .ass .filete-v { width: 2px; height: 120px; background: #C2A35B; }
+  .ass .info { display: flex; flex-direction: column; gap: 6px; }
+  .ass .info .nome { font-family: 'Cormorant', serif; font-weight: 600; font-size: 34px; color: #1B2A4A; }
+  .ass .info .cargo { font-family: 'EBGaramond', serif; font-size: 16px; color: #C2A35B;
+                      letter-spacing: 0.22em; text-transform: uppercase; }
+  .ass .info .site { font-family: 'EBGaramond', serif; font-size: 18px; color: #5A6472; margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<div class="asset cartao" id="cartao-daniel">
+  <div class="topo"><span class="mark">ABBA</span></div>
+  <div class="meio">
+    <div class="filete-h"></div>
+    <div class="nome">Daniel Moraes Coca</div>
+    <div class="cargo vers">Sócio-fundador</div>
+  </div>
+  <div class="base">
+    <span>daniel.coca@abbaservices.com.br</span>
+    <span>abbaservices.com.br</span>
+  </div>
+</div>
+
+<div class="asset cartao" id="cartao-pedro">
+  <div class="topo"><span class="mark">ABBA</span></div>
+  <div class="meio">
+    <div class="filete-h"></div>
+    <div class="nome">Pedro Moura Durães</div>
+    <div class="cargo vers">Sócio-fundador</div>
+  </div>
+  <div class="base">
+    <span>pedro.duraes@abbaservices.com.br</span>
+    <span>abbaservices.com.br</span>
+  </div>
+</div>
+
+<div class="asset ass" id="ass-daniel">
+  <span class="mark">ABBA</span>
+  <div class="filete-v"></div>
+  <div class="info">
+    <div class="nome">Daniel Moraes Coca</div>
+    <div class="cargo">Sócio-fundador</div>
+    <div class="site">daniel.coca@abbaservices.com.br · abbaservices.com.br</div>
+  </div>
+</div>
+
+<div class="asset ass" id="ass-pedro">
+  <span class="mark">ABBA</span>
+  <div class="filete-v"></div>
+  <div class="info">
+    <div class="nome">Pedro Moura Durães</div>
+    <div class="cargo">Sócio-fundador</div>
+    <div class="site">pedro.duraes@abbaservices.com.br · abbaservices.com.br</div>
+  </div>
+</div>
+
+</body>
+</html>
