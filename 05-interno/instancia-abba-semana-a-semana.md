@@ -4,6 +4,8 @@
 >
 > **Por que agora:** os dois números que faltam para precificar a recorrência com honestidade — custo/noite e minutos de curadoria/semana (gargalo nº 3 do parecer do conselho) — só nascem desta rodada. E cada semana rodada vira material honesto para as conversas comerciais (inclusive a [palestra de Brasília](../03-comercial/palestra-direito-e-ia.md)): *"nós rodamos o produto em nós mesmos; estes são os números"*.
 >
+> **✓ Pré-flight (2026-08-11):** a sequência completa do Dia 0 + rotina foi executada em modo simulado (mock, banco isolado, passphrase de teste) — todos os comandos funcionam como escritos; custo de noite em mock: $0; saúde 100/100. O Dia 0 REAL continua sendo na máquina dos sócios, com passphrase e dados reais.
+>
 > **Dono:** os dois sócios (curadoria é humana por doutrina). **Entrada:** máquina com assessment-brain + `ABBA_DB_PASSPHRASE` ativa (cerimônia da passphrase feita — kit §2). **Saída:** 4 semanas sem falha + folha de medição preenchida + gaps registrados.
 
 ---
@@ -22,32 +24,32 @@ abba ingest "abba-interna" <caminho>/abba-ops/00-identidade/plano-de-negocio.md
 abba ingest "abba-interna" <caminho>/abba-ops/00-identidade/visao-2029.md
 ```
 
-**2. As decisões reais pendentes, com gatilho** (cada uma enche a fila da manhã com coisa verdadeira — anotar o `<id>` que cada `add` imprime):
+**2. As decisões reais pendentes, com gatilho** — nota de sintaxe (pré-flight 2026-08-11): a pergunta do gatilho usa comparação ESTRITA ("metric > threshold?"), então métrica binária usa `--threshold 0` (">0" = aconteceu), a meta de 8 reuniões usa `--threshold 7` (">7" = 8+) e a de 3 vídeos usa `--threshold 2` (cada uma enche a fila da manhã com coisa verdadeira — anotar o `<id>` que cada `add` imprime):
 
 ```bash
 # P4/P4b — advogado (contrato + Anexo IV) — acionado em 2026-07-25, aguardando
 abba decision add "abba-interna" --title "P4/P4b: advogado (contrato + Anexo IV)" --recommended-by consultant
-abba decision trigger "abba-interna" <id> --metric advogado_contratado --threshold 1 --direction above --review-in 7
+abba decision trigger "abba-interna" <id> --metric advogado_contratado --threshold 0 --direction above --review-in 7
 
 # P5 — contador confirma enquadramento — acionado em 2026-07-25, aguardando
 abba decision add "abba-interna" --title "P5: contador confirma enquadramento" --recommended-by consultant
-abba decision trigger "abba-interna" <id> --metric contador_ok --threshold 1 --direction above --review-in 14
+abba decision trigger "abba-interna" <id> --metric contador_ok --threshold 0 --direction above --review-in 14
 
 # Meta binária do conselho — 8 reuniões em 30 dias (plano de 60 dias, item 5)
 abba decision add "abba-interna" --title "Meta binária: 8 reunioes marcadas em 30 dias" --recommended-by consultant
-abba decision trigger "abba-interna" <id> --metric reunioes_marcadas --threshold 8 --direction above --review-in 30
+abba decision trigger "abba-interna" <id> --metric reunioes_marcadas --threshold 7 --direction above --review-in 30
 
 # R23/R16 — checklist do Pedro (cron do portal · código do assessment web no repositório)
 abba decision add "abba-interna" --title "R23+R16: cron verificado e assessment web versionado" --recommended-by consultant
-abba decision trigger "abba-interna" <id> --metric checklist_pedro_ok --threshold 1 --direction above --review-in 14
+abba decision trigger "abba-interna" <id> --metric checklist_pedro_ok --threshold 0 --direction above --review-in 14
 
 # R5 — vídeos de maior alavancagem (1.3.3, 1.3.1, 2.1.2)
 abba decision add "abba-interna" --title "R5: 3 videos de maior alavancagem gravados" --recommended-by consultant
-abba decision trigger "abba-interna" <id> --metric videos_gravados --threshold 3 --direction above --review-in 21
+abba decision trigger "abba-interna" <id> --metric videos_gravados --threshold 2 --direction above --review-in 21
 
 # P10 — overlay jurídico: decidir direção A/B/C antes da palestra
 abba decision add "abba-interna" --title "P10: overlay juridico A/B/C antes da palestra" --recommended-by consultant
-abba decision trigger "abba-interna" <id> --metric overlay_decidido --threshold 1 --direction above --review-in 10
+abba decision trigger "abba-interna" <id> --metric overlay_decidido --threshold 0 --direction above --review-in 10
 ```
 
 **3. Decisões já tomadas entram como tomadas** (dão história ao diário — ex.: V3c prateleira, V2z discurso, faixa de faturamento confirmada no kit §3): `abba decision add ... ` seguido do fluxo `decided --by "Nome"`, com outcome quando o efeito for medível.

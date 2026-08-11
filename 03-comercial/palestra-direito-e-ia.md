@@ -26,6 +26,21 @@ Uma ligação de 15 minutos com o contato do escritório. Sem estas respostas, o
 
 **Registrar as respostas no [pipeline](pipeline-modelo.md)** como lead em estágio 01, com o placar do teste de alvo preenchido no que já der.
 
+### §1b — A ligação, na prática (script de ~15 min)
+
+A tabela acima diz O QUE saber; este script diz COMO conduzir sem virar interrogatório. Ordem conversacional ≠ ordem da tabela.
+
+1. **Abertura (2 min)** — agradecer pelo canal que trouxe o convite (o irmão/a anfitriã) e posicionar a ligação: *"antes de montar qualquer coisa, eu queria entender o que seria mais útil para vocês — a gente prepara sob medida, não palestra de prateleira."* (Isso já demonstra o método.)
+2. **Começar pela expectativa (pergunta 4 da tabela)** — *"o que vocês gostariam que a equipe saísse sabendo ou fazendo diferente?"* É a pergunta mais generosa e a que faz o interlocutor falar. O resto da conversa se pendura nela.
+3. **Deixar a ferramenta emergir (pergunta 1)** — não perguntar seco "qual ferramenta motivou?"; usar: *"teve algum episódio ou novidade que acendeu o tema aí dentro?"* Se citarem a Enter, anotar e NÃO corrigir nada na hora — o contraste (ela atende as empresas, não os escritórios) é conteúdo do palco, não da ligação.
+4. **A sala e o formato (perguntas 2 e 3)** — quem estará presente, quanto tempo, palestra + perguntas ou conversa à mesa. Anotar os nomes dos sócios de comitê que estarão lá (o placar do alvo começa aqui).
+5. **Os dois combinados que garantem a colheita (perguntas 5 e 6)** — pedir permissão para o material de mesa (*"posso deixar um relatório setorial impresso com o grupo?"*) e combinar o fecho com o anfitrião (*"no final eu ofereço uma análise gratuita do próprio escritório para quem tiver interesse — faz sentido para vocês?"*). Anfitrião que diz sim vira endossante do convite.
+6. **Logística (pergunta 7) e despedida** — projeção/TV, gravação, e a frase de saída: *"até {{data}} eu te mando um resumo do que combinamos em 5 linhas."* (E mandar. Uma pergunta por e-mail, regra do kit.)
+
+**Depois de desligar (10 min, no mesmo dia):** registrar tudo no [pipeline](pipeline-modelo.md); ajustar o deck ao que se ouviu (tempo, plateia, ferramenta citada); avisar o outro sócio.
+
+**Não fazer na ligação:** falar preço · descrever a escada · "corrigir" percepções sobre IA · prometer conteúdo que o roteiro não cobre sem revisar o roteiro antes.
+
 ## 2. O roteiro em 5 blocos (40–45 min)
 
 Detalhe slide a slide (com falas-âncora) em [palestra-direito-e-ia-slides.md](palestra-direito-e-ia-slides.md). A espinha:

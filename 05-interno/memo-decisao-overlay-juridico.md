@@ -34,6 +34,20 @@ Quando um cliente do Sprint LGPD + Governança de IA (ou um cliente de programa)
 - **Depois do evento**, se houver química com o escritório anfitrião (ou outro), abrir a conversa de canal formal (B): fronteira de escopo por escrito, confidencialidade, zero repasse — reversível e simples.
 - **C fica explicitamente adiada** até: advogado próprio contratado (P4) + primeira indicação real nos dois sentidos + desenho de independência validado. Reavaliar com dado, não com pressa.
 
+## 4b. Pauta de 5 minutos — reunião semanal de sócios (decisão do sócio 2026-08-10: levar ao Pedro)
+
+**A pergunta única:** quando perguntarem "vocês trabalham com escritórios como parceiros?", qual é o modelo — A, B ou C?
+
+| Opção em 1 linha | Consequência prática |
+|---|---|
+| **A** — indicamos sem vínculo | Zero obrigação; zero canal; resposta "recomendamos escritórios, vocês contratam direto" |
+| **B** — canal formal nomeado, sem repasse (recomendada) | Experiência inteira para o cliente + canal recíproco; exige escolher o parceiro e assinar acordo simples; até lá opera-se em A |
+| **C** — comercial compartilhado | Receita de indicação; exige contrato (trava no P4) e desenho de independência; adiada por recomendação |
+
+**O que muda em cada mesa se a decisão for B:** na mesa do FRP — a palestra pode terminar com duas conversas separadas (cliente E parceria), nunca na mesma reunião; na mesa do Gil — a reunião de design do protótipo fica limpa de conversa de canal até o GO.
+
+**Texto pronto do registro (colar na Tabela 1 quando decidido):** `**Overlay jurídico: direção B, operando em A até acordo assinado** (porta de 1 via, dormida desde 2026-08-10). C adiada até: P4 concluído + primeira indicação real nos dois sentidos + desenho de independência validado. Nenhum parceiro nomeado em material sem acordo assinado. | Memo com 3 opções analisadas; candidatos a parceiro: 2 na mesa (FRP, especialista da conversa de 2026-08-10) | Sócios`
+
 ## 5. O que NÃO fazer (qualquer que seja a decisão)
 
 - Não citar nome de escritório parceiro em material sem acordo assinado.
