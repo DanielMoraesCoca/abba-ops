@@ -41,7 +41,35 @@ A tabela acima diz O QUE saber; este script diz COMO conduzir sem virar interrog
 
 **Não fazer na ligação:** falar preço · descrever a escada · "corrigir" percepções sobre IA · prometer conteúdo que o roteiro não cobre sem revisar o roteiro antes.
 
-## 2. O roteiro em 5 blocos (40–45 min)
+## 2. O EVENTO CONFIRMADO — roteiro da noite (formato definido em 2026-08-12)
+
+> **O que mudou:** o evento está confirmado — noturno, comes e bebes, no escritório do anfitrião (irmão do sócio), com lista curada de advogados de vários escritórios. **Formato escolhido: conversa, não palestra** — o Pedro como autoridade entrevistada, não como apresentador de slides. Os 5 blocos da §2b viram o RESERVATÓRIO de conteúdo (respostas, demonstração e material de mesa), não o roteiro do palco.
+
+**Os três atos (total de conteúdo formal: ~35 min — num evento de 2h30–3h):**
+
+| Ato | Duração | O quê |
+|---|---|---|
+| **1. Recepção** | 40–50 min | Comes e bebes, zero conteúdo. Anfitrião e sócios circulam; o trabalho aqui é ouvir, não falar |
+| **2. O momento** | 30–35 min | (a) Anfitrião abre — 2 min, por que este encontro; (b) **fireside**: sócio-moderador entrevista o Pedro — 15–18 min, 6 perguntas roteirizadas (§2a); (c) **demonstração ao vivo** — 5–7 min; (d) perguntas da plateia — 8–10 min, moderadas; (e) fecho + convite da análise gratuita — 1 min, e só |
+| **3. Colheita** | Resto da noite | Volta ao social — onde a venda real acontece, 1:1. Os dois sócios se dividem; o anfitrião apresenta pessoas; nenhum pitch em grupo |
+
+**§2a — As 6 perguntas do fireside (moderador → Pedro):**
+1. *"Pedro, você viu essa indústria nascer por dentro. O unicórnio jurídico brasileiro captou meio bilhão este ano — o que isso significa para quem está nesta sala?"* (a onda + o detalhe: a ferramenta atende as empresas, não os escritórios)
+2. *"77% dos advogados já usam IA. O que você vê quando olha para como usam?"* (shadow AI, sigilo, a política de papel × a prática real)
+3. *"O que um escritório NÃO deveria fazer com IA agora?"* (os 4 modos de fracasso — piloto solto, opt-out de sócio, política de gaveta, seminário ≠ transformação)
+4. *"E o que fazer segunda-feira de manhã?"* (os 3 passos que não dependem de ninguém: mapear uso real com anistia, patrocinador com poder, número combinado antes)
+5. *"IA substitui advogado?"* (a Bússola: parar / começar / o que só o humano faz — a resposta que a sala quer ouvir dita com honestidade)
+6. *"Como vocês, da ABBA, decidem o que construir para um cliente?"* (a ÚNICA pergunta-ponte para a ABBA: método, métrica antes, prova — 90 segundos, sem pitch)
+
+**§2c — A demonstração ao vivo (o momento uau):** mostrar, não contar. Opção recomendada: a Análise ABBA de um escritório FICTÍCIO (rodada antes, apresentada como "isto foi feito só com informação pública — imagine com os dados de dentro"), encerrando no convite natural. Alternativa: 3 minutos de um agente lendo um contrato com fonte citada. Regra: ensaiada 2×, com plano B offline (vídeo gravado) se a internet falhar.
+
+**Telão:** sem deck conduzindo. Loop discreto da marca durante o social; durante o fireside, no máximo 5 cartões de apoio (1 dado por cartão: o unicórnio · 77% · o calendário regulatório · a Bússola · o convite com QR). O deck completo de 12 slides fica de reserva para quem pedir aprofundamento depois.
+
+**Convidado terceiro?** Nesta 1ª edição, não — dilui a autoridade do Pedro. A voz extra certa é o PRÓPRIO anfitrião contando em 3 min como ele usou IA no escritório dele (prova social de advogado para advogado, que nenhum slide compra). Terceiros ficam para a edição 2 — e nomear a série ("Encontros Direito & IA — 1ª edição") já planta a continuidade.
+
+**Material de mesa:** o [relatório setorial](../08-materiais/relatorio-setorial-juridico.md) impresso com capa "Preparado para os convidados de {{DATA}}" + QR do convite. **Follow-up:** e-mail individualizado em 48h, UMA pergunta, por quem conversou com a pessoa (dividir a lista entre os sócios).
+
+## 2b. O reservatório de conteúdo — os 5 blocos (usar nas respostas, no material e em palestras formais futuras)
 
 Detalhe slide a slide (com falas-âncora) em [palestra-direito-e-ia-slides.md](palestra-direito-e-ia-slides.md). A espinha:
 
