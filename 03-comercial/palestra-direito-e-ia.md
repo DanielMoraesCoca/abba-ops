@@ -41,19 +41,21 @@ A tabela acima diz O QUE saber; este script diz COMO conduzir sem virar interrog
 
 **Não fazer na ligação:** falar preço · descrever a escada · "corrigir" percepções sobre IA · prometer conteúdo que o roteiro não cobre sem revisar o roteiro antes.
 
-## 2. O EVENTO CONFIRMADO — roteiro da noite (formato definido em 2026-08-12)
+## 2. O EVENTO CONFIRMADO — roteiro da noite (formato v2, definido em 2026-08-12)
 
-> **O que mudou:** o evento está confirmado — noturno, comes e bebes, no escritório do anfitrião (irmão do sócio), com lista curada de advogados de vários escritórios. **Formato escolhido: conversa, não palestra** — o Pedro como autoridade entrevistada, não como apresentador de slides. Os 5 blocos da §2b viram o RESERVATÓRIO de conteúdo (respostas, demonstração e material de mesa), não o roteiro do palco.
+> **Formato decidido (v2, decisão do sócio): palestra curta + perguntas e respostas.** A v1 propunha fireside; o sócio apontou o limite certo — *numa conversa você não une a sala inteira* — e num ambiente de comes e bebes o telão com um apresentador é o que unifica a atenção e dá palco à autoridade do Pedro. O que a palestra precisa ter para não virar aula (as salvaguardas que a v1 protegia): **curta (20–25 min), visual (1 ideia por slide — o deck de 12 já é assim), ensaiada 2×, com a demonstração ao vivo no meio e o Q&A devolvendo a interação no fim.** Os 5 blocos da §2b seguem como reservatório de conteúdo.
 
-**Os três atos (total de conteúdo formal: ~35 min — num evento de 2h30–3h):**
+**Os três atos (conteúdo formal: ~40 min — num evento de 2h30–3h):**
 
 | Ato | Duração | O quê |
 |---|---|---|
 | **1. Recepção** | 40–50 min | Comes e bebes, zero conteúdo. Anfitrião e sócios circulam; o trabalho aqui é ouvir, não falar |
-| **2. O momento** | 30–35 min | (a) Anfitrião abre — 2 min, por que este encontro; (b) **fireside**: sócio-moderador entrevista o Pedro — 15–18 min, 6 perguntas roteirizadas (§2a); (c) **demonstração ao vivo** — 5–7 min; (d) perguntas da plateia — 8–10 min, moderadas; (e) fecho + convite da análise gratuita — 1 min, e só |
+| **2. O momento** | 38–42 min | (a) **Anfitrião abre** — 2–3 min, o porquê deste encontro (texto pronto na §2d); (b) **palestra do Pedro** — 20–25 min com o [deck de 12 slides](../08-materiais/modelos/palestra-direito-e-ia-deck.pptx), guia de ritmo abaixo; (c) **Q&A moderado pelo outro sócio** — 10–12 min, com o banco da §2a para aquecer e as 4 objeções (§3) como respostas ensaiadas; (d) fecho + convite da análise gratuita — 1 min, e só |
 | **3. Colheita** | Resto da noite | Volta ao social — onde a venda real acontece, 1:1. Os dois sócios se dividem; o anfitrião apresenta pessoas; nenhum pitch em grupo |
 
-**§2a — As 6 perguntas do fireside (moderador → Pedro):**
+**Guia de ritmo da palestra (os 12 slides em 20–25 min):** slides 1–3 em ritmo rápido (~4 min: capa, a onda, o detalhe do unicórnio) · desacelerar nos slides 4–7 (~8 min: shadow AI, calendário, por que ferramenta não resolve, a conta da hora faturada — é onde a sala se reconhece) · slide 8–9 (~4 min) e, entre o 9 e o 10, a **demonstração ao vivo de 5–7 min** (a Análise ABBA de um escritório fictício — ensaiada 2×, com vídeo gravado de reserva se a internet falhar) · slides 10–12 (~4 min: sigilo em arquitetura, quem somos em 30 segundos, a Bússola + convite). Regra de ouro do ambiente: ninguém apaga as luzes nem pede silêncio de auditório — o anfitrião convida para se aproximar, as taças continuam nas mãos.
+
+**§2a — Banco de perguntas do Q&A (o moderador usa para aquecer se a plateia demorar — "plantadas" legítimas, prática padrão de moderação):**
 1. *"Pedro, você viu essa indústria nascer por dentro. O unicórnio jurídico brasileiro captou meio bilhão este ano — o que isso significa para quem está nesta sala?"* (a onda + o detalhe: a ferramenta atende as empresas, não os escritórios)
 2. *"77% dos advogados já usam IA. O que você vê quando olha para como usam?"* (shadow AI, sigilo, a política de papel × a prática real)
 3. *"O que um escritório NÃO deveria fazer com IA agora?"* (os 4 modos de fracasso — piloto solto, opt-out de sócio, política de gaveta, seminário ≠ transformação)
@@ -63,11 +65,29 @@ A tabela acima diz O QUE saber; este script diz COMO conduzir sem virar interrog
 
 **§2c — A demonstração ao vivo (o momento uau):** mostrar, não contar. Opção recomendada: a Análise ABBA de um escritório FICTÍCIO (rodada antes, apresentada como "isto foi feito só com informação pública — imagine com os dados de dentro"), encerrando no convite natural. Alternativa: 3 minutos de um agente lendo um contrato com fonte citada. Regra: ensaiada 2×, com plano B offline (vídeo gravado) se a internet falhar.
 
-**Telão:** sem deck conduzindo. Loop discreto da marca durante o social; durante o fireside, no máximo 5 cartões de apoio (1 dado por cartão: o unicórnio · 77% · o calendário regulatório · a Bússola · o convite com QR). O deck completo de 12 slides fica de reserva para quem pedir aprofundamento depois.
+**Telão:** loop discreto da marca durante o social (atos 1 e 3); durante o momento, o deck de 12 slides conduz a palestra. Ajustes pendentes no PPTX para a versão-evento: subtítulo da capa vira "{{NOME DA SÉRIE}} — 1ª edição · {{DATA}}" e o guia de ritmo entra nas notas do apresentador (regenerar quando os sócios validarem o conjunto).
 
 **Convidado terceiro?** Nesta 1ª edição, não — dilui a autoridade do Pedro. A voz extra certa é o PRÓPRIO anfitrião contando em 3 min como ele usou IA no escritório dele (prova social de advogado para advogado, que nenhum slide compra). Terceiros ficam para a edição 2 — e nomear a série ("Encontros Direito & IA — 1ª edição") já planta a continuidade.
 
 **Material de mesa:** o [relatório setorial](../08-materiais/relatorio-setorial-juridico.md) impresso com capa "Preparado para os convidados de {{DATA}}" + QR do convite. **Follow-up:** e-mail individualizado em 48h, UMA pergunta, por quem conversou com a pessoa (dividir a lista entre os sócios).
+
+### §2d — A abertura do anfitrião: por que ESTE escritório promove ESTE encontro (texto pronto, ~2 min)
+
+A pergunta que todo convidado traz sem fazer — *"por que um escritório de advocacia está me convidando para uma noite sobre IA?"* — é respondida pelo anfitrião na abertura, e a resposta é a alma do evento. Texto-base (o anfitrião adapta às palavras dele):
+
+> *"Boa noite, e obrigado por estarem aqui. Eu queria começar explicando por que esta casa resolveu promover este encontro. A nossa profissão está mudando mais rápido do que a nossa agenda permite acompanhar — e eu acredito que um escritório sério tem duas opções: esperar a mudança chegar, ou trazer as pessoas que ele respeita para a frente da curva. Nós escolhemos a segunda.*
+>
+> *Falo também por experiência própria: aqui dentro, nós já usamos inteligência artificial para resolver problemas reais do escritório — e eu vi de perto o que funciona e o que é promessa. E vi de mais perto ainda porque o assunto entrou pela minha família: o {{NOME DO SÓCIO}}, meu irmão, fundou uma consultoria de IA, e o sócio dele é uma das pessoas que mais entende disso no país. Quando percebi a qualidade das conversas que eu estava tendo em casa, pensei: as pessoas que eu respeito nesta cidade precisam ouvir isso também.*
+>
+> *Por isso esta noite — a primeira edição do que queremos que vire um encontro recorrente. O combinado é simples: ninguém aqui vai tentar vender nada a vocês; a ideia é sair desta sala sabendo mais do que entrou, com pelo menos uma coisa para aplicar amanhã. Com vocês, {{PEDRO}}."*
+
+Três regras desta fala: o anfitrião fala como anfitrião (generosidade, não venda) · a história pessoal dele com IA entra AQUI (é a prova social de advogado para advogado — não precisa de terceiro palestrante) · a promessa "ninguém vai vender nada" é feita em voz alta — e é ela que obriga a nossa disciplina o resto da noite.
+
+### §2e — O convite (em nome do anfitrião, não da ABBA)
+
+> *"{{NOME}}, quero te convidar para uma noite diferente aqui no escritório: a 1ª edição do {{NOME DA SÉRIE}} — um encontro fechado, para poucas pessoas que eu escolhi a dedo, sobre o assunto que vai definir a advocacia nos próximos anos: inteligência artificial na prática jurídica. Teremos {{PEDRO}}, uma das maiores autoridades do país no tema, comes e bebes, e uma conversa do nível que esse grupo merece. {{DATA}}, {{HORA}}, aqui no {{ESCRITÓRIO}}. Posso contar com você?"*
+
+Regras: convite pessoal (WhatsApp/ligação do anfitrião), nunca convite de massa · exclusividade dita com naturalidade ("escolhi a dedo") · a ABBA não aparece no convite — aparece na noite, pelo conteúdo · confirmar presença nominalmente (a lista É o pipeline) · avisar registro fotográfico discreto na confirmação.
 
 ## 2b. O reservatório de conteúdo — os 5 blocos (usar nas respostas, no material e em palestras formais futuras)
 
