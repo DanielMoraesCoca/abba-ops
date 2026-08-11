@@ -1,0 +1,465 @@
+<title>Arquitetura Patrimonial — Demonstração ABBA</title>
+<style>
+  :root{
+    --navy:#1B2A4A; --navy-2:#223354; --gold:#C2A35B; --gold-soft:#F4EDDD;
+    --paper:#FFFFFF; --ice:#EEF1F6; --ink:#222833; --slate:#5A6472; --line:#D8DEE9;
+    --block:#B0392E; --block-soft:#F9ECEA; --warn:#B07C1F; --warn-soft:#FAF3E3;
+    --ok:#2F7D5B; --ok-soft:#EAF4EF; --petrol:#2E8B9A;
+    --serif:Cambria,Georgia,'Times New Roman',serif;
+    --sans:Calibri,'Segoe UI',-apple-system,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--ice)}
+  body{background:var(--ice);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5}
+  .top{background:var(--navy);color:#fff;padding:14px 28px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .top .brand{font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:.5px}
+  .top .sep{color:var(--gold)}
+  .top .prod{font-size:15px;color:#CDD6E4}
+  .badge{margin-left:auto;background:var(--gold);color:var(--navy);font-weight:700;font-size:12px;letter-spacing:1.5px;padding:4px 10px;border-radius:3px;text-transform:uppercase}
+  .honest{background:var(--gold-soft);border-bottom:1px solid var(--line);padding:10px 28px;font-size:13.5px;color:var(--ink)}
+  .honest b{color:var(--navy)}
+  .wrap{display:grid;grid-template-columns:230px 1fr;gap:24px;max-width:1180px;margin:24px auto;padding:0 20px}
+  @media(max-width:860px){.wrap{grid-template-columns:1fr}}
+  .rail{align-self:start;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .rail .step{display:flex;gap:10px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line);font-size:14px;color:var(--slate)}
+  .rail .step:last-child{border-bottom:none}
+  .rail .dot{width:22px;height:22px;border-radius:50%;background:var(--ice);color:var(--slate);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex:none}
+  .rail .step.on{background:var(--navy);color:#fff}
+  .rail .step.on .dot{background:var(--gold);color:var(--navy)}
+  .rail .step.done .dot{background:var(--ok);color:#fff}
+  .rail .step.blocked .dot{background:var(--block);color:#fff}
+  main{min-width:0}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px 26px;margin-bottom:18px}
+  h1{font-family:var(--serif);font-size:30px;color:var(--navy);text-wrap:balance;margin-bottom:6px}
+  h2{font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:10px;text-wrap:balance}
+  h3{font-size:15px;color:var(--navy);margin:14px 0 6px}
+  .kick{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  p.lead{font-size:16.5px;color:var(--slate);max-width:62ch}
+  .personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+  .persona{border:1px solid var(--line);border-radius:8px;padding:14px;cursor:pointer;background:var(--paper);text-align:left;font-family:var(--sans)}
+  .persona:hover{border-color:var(--gold)}
+  .persona b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:4px}
+  .persona span{font-size:12.5px;color:var(--slate)}
+  .persona .tag{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:10px}
+  .tag.b{background:var(--block-soft);color:var(--block)} .tag.g{background:var(--ok-soft);color:var(--ok)}
+  form .sec{margin-bottom:18px}
+  .sec .sechead{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--petrol);border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:10px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+  @media(max-width:700px){.grid2{grid-template-columns:1fr}}
+  label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--slate)}
+  input[type=text],input[type=number],select{padding:8px 10px;border:1px solid var(--line);border-radius:6px;font-family:var(--sans);font-size:14.5px;color:var(--ink);background:var(--paper)}
+  .check{flex-direction:row;align-items:flex-start;gap:8px;font-size:14px;color:var(--ink);padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--paper)}
+  .check input{margin-top:3px}
+  .check.hot{border-color:var(--gold)}
+  .btn{display:inline-block;background:var(--navy);color:#fff;font-family:var(--sans);font-weight:700;font-size:15px;border:none;border-radius:6px;padding:11px 22px;cursor:pointer}
+  .btn:hover{background:var(--navy-2)} .btn.gold{background:var(--gold);color:var(--navy)}
+  .btn.ghost{background:var(--paper);color:var(--navy);border:1px solid var(--line)}
+  .btnrow{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+  .flag{border-left:4px solid var(--warn);background:var(--warn-soft);border-radius:0 8px 8px 0;padding:12px 14px;margin-bottom:10px}
+  .flag.hard{border-left-color:var(--block);background:var(--block-soft)}
+  .flag b{color:var(--navy);font-size:14.5px}
+  .flag .base{font-size:12px;color:var(--slate);font-family:var(--serif);font-style:italic}
+  .flag p{font-size:13.5px;margin-top:3px}
+  .chip{display:inline-block;background:var(--ice);border:1px solid var(--line);color:var(--navy);font-size:11.5px;font-weight:700;padding:1px 8px;border-radius:10px;margin:0 2px;font-variant-numeric:tabular-nums}
+  .claim{padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+  .claim:last-child{border-bottom:none}
+  .claim .nc{color:var(--warn);font-weight:700;font-size:12px;letter-spacing:1px}
+  .design{border:1px solid var(--line);border-radius:8px;margin-bottom:14px;overflow:hidden}
+  .design .dhead{background:var(--navy);color:#fff;padding:12px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .design .dhead b{font-family:var(--serif);font-size:17px}
+  .design .dhead .cost{margin-left:auto;font-size:13px;color:var(--gold);font-variant-numeric:tabular-nums}
+  .design .dbody{padding:14px 16px}
+  .design ul{list-style:none}
+  .design li{padding:5px 0;font-size:14px;border-bottom:1px dashed var(--line)}
+  .design li:last-child{border-bottom:none}
+  .attack{font-size:13px;padding:7px 10px;border-radius:6px;margin-top:6px}
+  .attack.mit{background:var(--warn-soft)} .attack.min{background:var(--ice)}
+  .attack .sev{font-weight:700;font-size:11px;letter-spacing:1px;text-transform:uppercase}
+  .attack.mit .sev{color:var(--warn)} .attack.min .sev{color:var(--slate)}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th{background:var(--navy);color:#fff;text-align:left;padding:8px 10px;font-size:12.5px;letter-spacing:.5px}
+  td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:nth-child(even) td{background:var(--ice)}
+  .tablewrap{overflow-x:auto}
+  .doc{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:34px 38px;font-family:var(--serif);font-size:15.5px;line-height:1.65;box-shadow:0 2px 10px rgba(27,42,74,.08)}
+  .doc h2{font-size:20px;border-bottom:2px solid var(--gold);padding-bottom:6px;margin:18px 0 8px}
+  .doc h2:first-child{margin-top:0}
+  .doc .foot{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--slate);font-family:var(--sans)}
+  .note{font-size:12.5px;color:var(--slate);margin-top:10px}
+  .bigblock{background:var(--block-soft);border:1px solid var(--block);border-radius:8px;padding:20px;margin-bottom:16px}
+  .bigblock h2{color:var(--block)}
+  .why{background:var(--navy);color:#fff;border-radius:8px;padding:16px 18px;font-size:14.5px}
+  .why b{color:var(--gold)}
+  footer{max-width:1180px;margin:10px auto 30px;padding:0 20px;font-size:12.5px;color:var(--slate)}
+  .hidden{display:none}
+  a{color:var(--petrol)}
+  button:focus-visible,.persona:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+</style>
+
+<div class="top">
+  <span class="brand">ABBA</span><span class="sep">·</span>
+  <span class="prod">Arquitetura Patrimonial Internacional — apoio ao advogado</span>
+  <span class="badge">Demonstração</span>
+</div>
+<div class="honest">
+  <b>O que é real nesta demonstração:</b> a triagem de conformidade (red flags) e o pacote de obrigações executam a lógica verdadeira do protótipo, ao vivo, conforme suas respostas. <b>O que é ilustrativo:</b> os textos de análise e os desenhos de estrutura são gerados por regras de demonstração — no produto, são produzidos por agentes de IA com fonte citada de um corpus jurídico versionado, e revisados por advogado nomeado antes de qualquer uso.
+</div>
+
+<div class="wrap">
+  <nav class="rail" id="rail" aria-label="Etapas">
+    <div class="step" data-s="0"><span class="dot">1</span>Perfil</div>
+    <div class="step" data-s="1"><span class="dot">2</span>Triagem</div>
+    <div class="step" data-s="2"><span class="dot">3</span>Análise</div>
+    <div class="step" data-s="3"><span class="dot">4</span>Desenhos</div>
+    <div class="step" data-s="4"><span class="dot">5</span>Obrigações</div>
+    <div class="step" data-s="5"><span class="dot">6</span>Minuta</div>
+  </nav>
+
+  <main>
+    <!-- ETAPA 0: intro + personas + form -->
+    <section id="s0">
+      <div class="card">
+        <div class="kick">O princípio</div>
+        <h1>A IA propõe. O advogado assina. A família decide.</h1>
+        <p class="lead">Este sistema transforma o perfil completo de uma família num conjunto de alternativas de planejamento patrimonial — <b>100% declaradas e tributadas</b>, com fundamento citado e riscos atacados antes de chegarem à sua mesa. A primeira coisa que ele faz é dizer <b>não</b> para o caso errado.</p>
+        <h3>Teste com um caso pronto (ou preencha o perfil abaixo):</h3>
+        <div class="personas" id="personas"></div>
+      </div>
+
+      <div class="card">
+        <h2>Perfil do cliente</h2>
+        <form id="f" onsubmit="return false">
+          <div class="sec"><div class="sechead">A · Identificação e residência</div>
+            <div class="grid2">
+              <label>Idade <input type="number" id="idade" value="52" min="18" max="99"></label>
+              <label>UF de domicílio fiscal
+                <select id="uf"><option>DF</option><option>SP</option><option>RJ</option><option>MG</option><option>GO</option><option>Outra</option></select></label>
+              <label>Regime de bens
+                <select id="regime"><option value="separacao_total">Separação total</option><option value="comunhao_parcial">Comunhão parcial</option><option value="comunhao_universal">Comunhão universal</option><option value="nao_aplicavel">Não casado(a)</option></select></label>
+              <label class="check"><input type="checkbox" id="us_person"> É "US person" (cidadania/green card EUA)</label>
+            </div>
+          </div>
+          <div class="sec"><div class="sechead">B · Família e sucessão</div>
+            <div class="grid2">
+              <label>Filhos (quantos) <input type="number" id="filhos" value="2" min="0" max="15"></label>
+              <label class="check"><input type="checkbox" id="herdeiro_ext"> Há herdeiro residente no exterior</label>
+              <label class="check"><input type="checkbox" id="conflito"> Há conflito familiar relevante</label>
+              <label class="check hot"><input type="checkbox" id="suprimir_legitima"> Deseja excluir herdeiro necessário além da parte disponível</label>
+            </div>
+          </div>
+          <div class="sec"><div class="sechead">C · Patrimônio e veículos</div>
+            <div class="grid2">
+              <label>Patrimônio total (R$ mi) <input type="number" id="pat_total" value="60" min="0"></label>
+              <label>Sendo no exterior (R$ mi) <input type="number" id="pat_ext" value="0" min="0"></label>
+              <label class="check"><input type="checkbox" id="tem_holding"> Já existe holding familiar</label>
+              <label class="check"><input type="checkbox" id="uso_pessoal"> Há bens de uso pessoal dentro da PJ</label>
+              <label class="check"><input type="checkbox" id="imovel_eua"> Possui imóveis nos EUA</label>
+              <label class="check hot"><input type="checkbox" id="ext_nao_declarado"> Estruturas/contas no exterior NÃO declaradas (IRPF/DCBE)</label>
+              <label class="check hot"><input type="checkbox" id="laranja"> Bens em nome de terceiros (interpostas pessoas)</label>
+              <label class="check"><input type="checkbox" id="evento_liquidez"> Evento de liquidez recente ou à vista (venda de empresa etc.)</label>
+            </div>
+          </div>
+          <div class="sec"><div class="sechead">D · Passivos e litígios</div>
+            <div class="grid2">
+              <label>Processos como réu — valor somado (R$ mi) <input type="number" id="passivo" value="0" min="0" step="0.1"></label>
+              <label class="check hot"><input type="checkbox" id="blindar"> A motivação inclui "proteger os bens" desses passivos atuais</label>
+              <label class="check"><input type="checkbox" id="fiscal_aberto"> Execução fiscal / dívida ativa em aberto</label>
+              <label class="check"><input type="checkbox" id="avais"> Avais ou fianças pessoais relevantes</label>
+            </div>
+          </div>
+          <div class="sec"><div class="sechead">F · Conformidade</div>
+            <div class="grid2">
+              <label class="check hot"><input type="checkbox" id="origem_ok" checked> Origem do patrimônio documentável (venda, herança, atividade)</label>
+              <label class="check hot"><input type="checkbox" id="aceite" checked> O cliente confirma: toda estrutura será integralmente declarada ao fisco brasileiro e tributada conforme a lei</label>
+            </div>
+          </div>
+          <div class="btnrow">
+            <button class="btn gold" id="run">Executar triagem de conformidade →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ETAPA 1: triagem -->
+    <section id="s1" class="hidden">
+      <div class="card">
+        <div class="kick">Etapa 2 · lógica real, executada agora</div>
+        <h2>Triagem de conformidade (red flags)</h2>
+        <div id="flags"></div>
+        <div id="gateverdict"></div>
+        <div class="btnrow" id="gatebtns"></div>
+      </div>
+      <div class="why" id="whyblock" style="display:none">
+        <b>Por que o sistema recusa em vez de "dar um jeito"?</b> Porque estrutura montada sobre passivo existente cai por fraude a credores; ativo não declarado é crime de evasão de divisas; e a legítima é ordem pública. Um sistema que diz não ao caso errado é o que protege o advogado que assina — e o próprio cliente.
+      </div>
+    </section>
+
+    <!-- ETAPA 2: análise -->
+    <section id="s2" class="hidden">
+      <div class="card">
+        <div class="kick">Etapa 3 · ilustrativa — no produto: agentes com fonte citada</div>
+        <h2>Análise jurídica do perfil</h2>
+        <p class="note">Cada afirmação carrega a fonte (documento#artigo do corpus). No produto, afirmação sem fonte recuperada não passa — a regra é <i>citação ou abstenção</i>.</p>
+        <div id="claims"></div>
+        <div class="btnrow"><button class="btn" data-go="3">Ver os desenhos de estrutura →</button></div>
+      </div>
+    </section>
+
+    <!-- ETAPA 3: desenhos -->
+    <section id="s3" class="hidden">
+      <div class="card">
+        <div class="kick">Etapa 4 · ilustrativa — cada desenho é atacado antes de chegar a você</div>
+        <h2>Alternativas de estrutura</h2>
+        <p class="note">O crítico adversarial (um segundo agente, pago para derrubar) ataca cada desenho: ataque <b>fatal</b> descarta a alternativa; <b>mitigável</b> vira condicionante explícita.</p>
+        <div id="designs"></div>
+        <div class="btnrow"><button class="btn" data-go="4">Ver o pacote de obrigações →</button></div>
+      </div>
+    </section>
+
+    <!-- ETAPA 4: obrigações -->
+    <section id="s4" class="hidden">
+      <div class="card">
+        <div class="kick">Etapa 5 · lógica real — o diferencial pós-2024</div>
+        <h2>O que cada desenho obriga (transparência total)</h2>
+        <p class="note">Gerado por regras determinísticas, ao vivo, a partir das suas respostas. É a parte que ninguém entrega junto com a promessa: cada estrutura nasce com a conta das suas obrigações.</p>
+        <div id="oblig"></div>
+        <div class="btnrow"><button class="btn" data-go="5">Montar a minuta para o advogado →</button></div>
+      </div>
+    </section>
+
+    <!-- ETAPA 5: minuta -->
+    <section id="s5" class="hidden">
+      <div class="card" style="background:var(--ice);border:none;padding:0">
+        <div class="doc" id="minuta"></div>
+      </div>
+      <div class="card">
+        <h3>O que aconteceria no produto real, daqui em diante</h3>
+        <p style="font-size:14.5px">Esta minuta chegaria à fila de revisão do <b>advogado nomeado</b> — que aprova, rejeita ou pede revisão. Só depois da assinatura dele ela vira documento. Todo o caminho fica auditável: versão do corpus, fontes consultadas, quem aprovou, quando.</p>
+        <div class="btnrow">
+          <button class="btn ghost" id="restart">↺ Testar outro caso</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>ABBA · abbaservices.com.br · Demonstração interativa do protótipo de apoio a planejamento patrimonial — não constitui parecer jurídico nem oferta de serviço jurídico. Estruturas sempre lícitas, declaradas e transparentes, sujeitas a análise individual por advogado.</footer>
+
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const F=["us_person","herdeiro_ext","conflito","suprimir_legitima","tem_holding","uso_pessoal","imovel_eua","ext_nao_declarado","laranja","evento_liquidez","blindar","fiscal_aberto","avais","origem_ok","aceite"];
+const N=["idade","filhos","pat_total","pat_ext","passivo"];
+
+const PERSONAS=[
+ {id:"P06",nome:"Empresária pós-venda da empresa",desc:"R$ 80 mi de liquidez, 2 filhos, tudo declarado — sucessão a organizar.",tag:"g",tagtxt:"Segue para desenho",
+  v:{idade:54,uf:"SP",regime:"separacao_total",filhos:2,pat_total:80,pat_ext:8,evento_liquidez:1,origem_ok:1,aceite:1}},
+ {id:"P07",nome:"Viúva com imóveis nos EUA",desc:"US$ 8 mi em Miami, filhos no Brasil — exposição ao estate tax americano.",tag:"g",tagtxt:"Segue para desenho",
+  v:{idade:67,uf:"DF",regime:"nao_aplicavel",filhos:3,pat_total:70,pat_ext:40,imovel_eua:1,origem_ok:1,aceite:1}},
+ {id:"P01",nome:"Empresário querendo \"blindar\"",desc:"R$ 2,5 mi em processos trabalhistas — e quer proteger os bens disso.",tag:"b",tagtxt:"Bloqueado pela triagem",
+  v:{idade:49,uf:"GO",regime:"comunhao_parcial",filhos:3,pat_total:45,passivo:2.5,blindar:1,origem_ok:1,aceite:1}},
+ {id:"P02",nome:"Família com offshore antiga",desc:"Empresa nas BVI desde 2015 — nunca declarada no IRPF/DCBE.",tag:"b",tagtxt:"Bloqueado pela triagem",
+  v:{idade:61,uf:"RJ",regime:"comunhao_universal",filhos:2,pat_total:120,pat_ext:35,ext_nao_declarado:1,origem_ok:1,aceite:1}},
+ {id:"P12",nome:"Jovem herdeira, tudo no Brasil",desc:"Sem urgência, sem exterior — o caso em que MENOS é mais.",tag:"g",tagtxt:"Segue para desenho",
+  v:{idade:31,uf:"DF",regime:"nao_aplicavel",filhos:0,pat_total:25,origem_ok:1,aceite:1}},
+];
+
+function setForm(v){
+  F.forEach(k=>$(k).checked=!!v[k]);
+  N.forEach(k=>$(k).value=(v[k]!==undefined?v[k]:0));
+  if(v.uf)$("uf").value=v.uf; if(v.regime)$("regime").value=v.regime;
+}
+function readForm(){
+  const p={}; F.forEach(k=>p[k]=$(k).checked); N.forEach(k=>p[k]=parseFloat($(k).value)||0);
+  p.uf=$("uf").value; p.regime=$("regime").value; return p;
+}
+
+// ---- GATE 1: lógica REAL (espelha gates.py do protótipo)
+const LIMIAR_PASSIVO_MI=0.1; // limiar de passivo relevante, em milhões (cem mil reais)
+function triagem(p){
+  const flags=[];
+  const duro=(c,base,ex,prox)=>flags.push({c,sev:"duro",base,ex,prox});
+  const brando=(c,base,ex,prox)=>flags.push({c,sev:"brando",base,ex,prox});
+  if(p.ext_nao_declarado) duro("RF1 · Exterior não declarado","Lei 7.492/86, art. 22, § único","Manter ativo no exterior sem declarar (IRPF/DCBE) é crime de evasão de divisas — crime permanente enquanto durar a omissão.","Regularização com advogado e contador ANTES de qualquer desenho.");
+  if(p.laranja) duro("RF2 · Interposta pessoa","Lei 9.613/98","Bens em nome de terceiros: o sistema não desenha sobre interposição.","Regularização assistida por advogado.");
+  if(p.blindar&&(p.passivo>=LIMIAR_PASSIVO_MI||p.fiscal_aberto)) duro("RF3 · Fraude a credores","CC arts. 158–165 · CPC art. 792","Transferir bens com passivo exigível e motivação de blindagem contra ele é atacável por fraude contra credores / à execução.","Parecer humano; desenho vedado neste cenário.");
+  if(p.suprimir_legitima) duro("RF4 · Legítima","CC arts. 1.845–1.846","A legítima dos herdeiros necessários é ordem pública: planejamento lícito otimiza a parte disponível, jamais a suprime.","Reenquadrar o objetivo com o advogado.");
+  if(!p.origem_ok) duro("RF5 · Origem não documentável","Lei 9.613/98 (KYC)","Origem do patrimônio principal não documentável.","O caso não entra.");
+  if(!p.aceite) duro("RF6 · Sem aceite de transparência","Lei 14.754/2023","Sem o compromisso de declaração integral, o sistema não desenha — este produto não faz ocultação.","O caso não entra sem o aceite.");
+  if(p.uso_pessoal) brando("Confusão patrimonial","CC art. 50","Bens de uso pessoal dentro da PJ elevam o risco de desconsideração da personalidade jurídica.","O desenho deve segregar o uso pessoal.");
+  if(p.avais) brando("Avais e fianças","CC arts. 158–165","Passivo contingente relevante fora do balanço pessoal.","Dimensionar a exposição antes da implantação.");
+  if(p.us_person) brando("US person","FATCA (Dec. 8.506/2015)","Obrigações americanas correm em paralelo às brasileiras.","Coordenar com assessor fiscal nos EUA.");
+  if(p.conflito) brando("Conflito familiar","CC — sucessões","Sucessão litigiosa em curso muda a ordem das medidas.","Endereçar governança familiar primeiro.");
+  return flags;
+}
+
+// ---- OBRIGAÇÕES: lógica REAL (espelha obrigacoes.py)
+function obrigacoes(p,design){
+  const it=[]; const extUsd=(p.pat_ext*1e6)/5.0; // câmbio ilustrativo declarado
+  const temExt=design.el.some(e=>e.jur!=="Brasil");
+  const temTrust=design.el.some(e=>/trust/i.test(e.v));
+  const temCtrl=design.el.some(e=>/holding|LLC|empresa/i.test(e.v)&&e.jur!=="Brasil");
+  if(temExt){
+    it.push(["Declaração dos ativos no exterior no IRPF (regime da Lei 14.754)","lei-14754","anual (DAA)"]);
+    if(extUsd>=1e6) it.push(["DCBE anual ao Banco Central (patrimônio externo ≥ US$ 1 mi)","dcbe-bacen","anual (fev–abr)"]);
+    if(extUsd>=1e8) it.push(["DCBE trimestral (≥ US$ 100 mi)","dcbe-bacen","trimestral"]);
+  }
+  if(temCtrl){
+    it.push(["Tributação anual de 15% sobre lucros da controlada — fim do diferimento — e balanço anual da entidade","lei-14754#art-5","anual (31/12)"]);
+    it.push(["Avaliar opção pelo regime de transparência fiscal da controlada","in-2180","na primeira DAA"]);
+  }
+  if(temTrust) it.push(["Trust: patrimônio permanece na declaração do instituidor; distribuição em vida = doação (ITCMD); na morte = transmissão causa mortis","lei-14754#art-10","por evento"]);
+  it.push([`ITCMD (${p.uf}) nas doações e transmissões previstas no plano — atenção à progressividade da EC 132`,"itcmd-uf · ec132","por evento"]);
+  return it;
+}
+
+// ---- ANÁLISE ilustrativa (regras de demonstração; no produto: agentes + corpus)
+function analise(p){
+  const c=[];
+  const claim=(t,src)=>c.push({t,src});
+  if(p.pat_ext>0||p.imovel_eua) claim("Há patrimônio no exterior: aplica-se o regime da Lei 14.754/2023 — tributação anual de 15% sobre rendimentos e lucros de controladas, sem diferimento, com opção de transparência fiscal.",["lei-14754#art-2","in-2180"]);
+  claim("O Brasil participa da troca automática de informações (CRS) com mais de 100 jurisdições: a existência de contas e estruturas no exterior chega à Receita anualmente. O desenho parte de transparência como fato.",["crs-in-2298"]);
+  if(p.filhos>0) claim(`Com ${p.filhos} herdeiro(s) necessário(s), 50% do patrimônio compõe a legítima (indisponível); o planejamento organiza a parte disponível e a governança da sucessão.`,["cc-sucessao#art-1846"]);
+  if(p.regime==="comunhao_universal") claim("Regime de comunhão universal: a meação alcança a totalidade dos bens — qualquer reorganização precisa tratar a posição do cônjuge antes das demais camadas.",["cc-sucessao"]);
+  if(p.imovel_eua) claim("Imóveis nos EUA detidos por pessoa física não residente expõem o espólio ao estate tax federal americano (alíquotas de até 40% acima da isenção reduzida para estrangeiros) — é o ponto de maior urgência sucessória do perfil.",["ficha-eua"]);
+  if(p.herdeiro_ext) claim("Herdeiro residente no exterior: a sucessão tende a exigir procedimentos em mais de uma jurisdição (probate); estruturas de continuidade reduzem custo e prazo para a família.",["ficha-eua","cc-sucessao"]);
+  if(p.tem_holding&&p.uso_pessoal) claim("A holding existente carrega bens de uso pessoal — padrão que a jurisprudência associa a confusão patrimonial (CC art. 50). Recomenda-se segregação antes de qualquer camada internacional.",["cc-art50","stj-selec"]);
+  if(p.evento_liquidez) claim("Evento de liquidez recente: janela adequada para definir a arquitetura ANTES da alocação — mover ativos é mais caro e mais arriscado do que constituí-los já no veículo certo.",["doutrina"]);
+  if(p.pat_ext===0&&!p.imovel_eua) claim("Não há patrimônio no exterior: a camada internacional é OPCIONAL neste perfil. A alternativa doméstica simples é legítima e deve ser apresentada — complexidade sem necessidade é custo sem retorno.",["doutrina"]);
+  c.push({t:"Tributação de heranças e doações com elemento estrangeiro (PLP 108) está em evolução legislativa — o cenário de longo prazo é declarado como instável, não como certeza.",src:["ec132-plp108"],nc:true});
+  return c;
+}
+
+// ---- DESENHOS ilustrativos (regras de demonstração)
+function desenhos(p,flagsBrandos){
+  const d=[];
+  const cond=flagsBrandos.map(f=>f.c);
+  const dom={nome:"Alternativa A — Consolidação doméstica",el:[
+      {v:"Holding familiar patrimonial (revisada ou nova)",jur:"Brasil"},
+      {v:"Acordo de sócios + protocolo familiar",jur:"Brasil"},
+      {v:"Doação planejada da parte disponível com reserva de usufruto",jur:"Brasil"}],
+    custo:"R$ 30–60 mil/ano",trade:"Menor custo e complexidade; sem proteção cambial nem eficiência sucessória internacional.",
+    at:[{s:"mit",t:"Se bens de uso pessoal permanecerem na PJ, risco de desconsideração (CC art. 50) — condicionante: segregar.",b:"cc-art50"},
+        {s:"min",t:"ITCMD progressivo (EC 132) pode encarecer doações futuras — antecipar o calendário.",b:"ec132-plp108"}]};
+  const intl={nome:"Alternativa B — Camada internacional declarada",el:[
+      {v:"Holding no exterior (controlada declarada, regime 14.754)",jur:"Jurisdição a definir (fichas: Uruguai · Luxemburgo)"},
+      {v:"Trust declarado para continuidade sucessória",jur:"Common law (fichas: Cayman · BVI)"},
+      {v:"Conta de investimento internacional em custódia regulada",jur:"Suíça/EUA"}],
+    custo:"R$ 120–250 mil/ano + implantação",trade:"Continuidade sucessória sem probate, diversificação cambial; custo recorrente alto e obrigações anuais adicionais.",
+    at:[{s:"mit",t:"Trust é fiscalmente transparente no Brasil (Lei 14.754): sem ganho de diferimento — o valor é sucessório e de governança, e o desenho deve dizer isso ao cliente com clareza.",b:"lei-14754#art-10"},
+        {s:"mit",t:"Custo anual pode superar o benefício se o patrimônio externo for pequeno — condicionante: limiar mínimo de alocação.",b:"doutrina"}]};
+  const eua={nome:"Alternativa B — Solução para o imóvel americano",el:[
+      {v:"Reestruturação da detenção dos imóveis EUA (estrutura não-transparente para estate tax)",jur:"EUA (Delaware/ficha-eua)"},
+      {v:"Seguro de vida internacional dimensionado para a exposição remanescente",jur:"Internacional"},
+      {v:"Testamento coordenado BR/EUA",jur:"Brasil + EUA"}],
+    custo:"R$ 90–180 mil/ano + implantação",trade:"Ataca diretamente o estate tax e o probate; exige coordenação com assessor fiscal americano.",
+    at:[{s:"mit",t:"Reestruturar detenção de imóvel existente pode gerar tributo na transferência — condicionante: cálculo prévio do custo de migração.",b:"ficha-eua"},
+        {s:"min",t:"FATCA/CRS: reporte em duas pontas — rotina anual mais pesada.",b:"crs-in-2298"}]};
+  d.push(dom);
+  if(p.imovel_eua) d.push(eua); else if(p.pat_ext>0||p.herdeiro_ext||p.evento_liquidez) d.push(intl);
+  d.forEach(x=>x.cond=cond);
+  return d;
+}
+
+// ---- fluxo de telas
+let state={p:null,flags:[],designs:[],step:0};
+function go(n){
+  state.step=n;
+  for(let i=0;i<=5;i++){$("s"+i).classList.toggle("hidden",i!==n);}
+  document.querySelectorAll("#rail .step").forEach(el=>{
+    const s=+el.dataset.s;
+    el.classList.toggle("on",s===n);
+    el.classList.toggle("done",s<n&&!(state.blocked&&s>=1));
+    el.classList.toggle("blocked",state.blocked&&s===1);
+  });
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(+b.dataset.go)));
+
+// personas
+const pe=$("personas");
+PERSONAS.forEach(x=>{
+  const b=document.createElement("button");b.className="persona";b.type="button";
+  b.innerHTML=`<b>${x.nome}</b><span>${x.desc}</span><br><span class="tag ${x.tag}">${x.tagtxt}</span>`;
+  b.addEventListener("click",()=>{setForm(x.v);$("run").scrollIntoView({behavior:"smooth",block:"center"});});
+  pe.appendChild(b);
+});
+
+$("run").addEventListener("click",()=>{
+  const p=readForm(); state.p=p;
+  const flags=triagem(p); state.flags=flags;
+  const hard=flags.filter(f=>f.sev==="duro"), soft=flags.filter(f=>f.sev==="brando");
+  state.blocked=hard.length>0;
+  const fl=$("flags"); fl.innerHTML="";
+  if(!flags.length) fl.innerHTML=`<div class="flag" style="border-left-color:var(--ok);background:var(--ok-soft)"><b>Nenhum red flag.</b><p>O caso segue limpo para a análise.</p></div>`;
+  flags.forEach(f=>{
+    fl.innerHTML+=`<div class="flag ${f.sev==="duro"?"hard":""}"><b>${f.sev==="duro"?"⛔":"⚠️"} ${f.c}</b> <span class="base">· ${f.base}</span><p>${f.ex}</p><p><b>Próximo passo:</b> ${f.prox}</p></div>`;
+  });
+  const v=$("gateverdict"), btns=$("gatebtns");
+  if(state.blocked){
+    v.innerHTML=`<div class="bigblock"><h2>Caso bloqueado para desenho automático</h2><p style="margin-top:6px">O sistema encaminha este caso ao advogado com o relatório acima — <b>sem desenhar estrutura nenhuma</b>. Não é recusa do cliente: é o reconhecimento de que o caso começa por regularização e aconselhamento humano.</p></div>`;
+    btns.innerHTML=`<button class="btn ghost" id="rb">↺ Testar outro caso</button>`;
+    $("whyblock").style.display="block";
+    $("rb").addEventListener("click",()=>{state.blocked=false;go(0);});
+  } else {
+    v.innerHTML=soft.length?`<p class="note" style="font-size:14px">✅ Sem bloqueios. Os ${soft.length} alerta(s) acima viram <b>condicionantes obrigatórias</b>: cada desenho terá de endereçá-los explicitamente.</p>`:"";
+    btns.innerHTML=`<button class="btn gold" id="toA">Prosseguir para a análise →</button>`;
+    $("whyblock").style.display="none";
+    $("toA").addEventListener("click",()=>{renderAnalise();go(2);});
+  }
+  go(1);
+});
+
+function chip(list){return list.map(s=>`<span class="chip">${s}</span>`).join("");}
+
+function renderAnalise(){
+  const cl=$("claims"); cl.innerHTML="";
+  analise(state.p).forEach(c=>{
+    cl.innerHTML+=`<div class="claim">${c.nc?'<span class="nc">ÁREA INSTÁVEL — DECLARADA, NÃO CRAVADA · </span>':""}${c.t} ${chip(c.src)}</div>`;
+  });
+  renderDesigns();
+}
+function renderDesigns(){
+  const soft=state.flags.filter(f=>f.sev==="brando");
+  const ds=desenhos(state.p,soft); state.designs=ds;
+  const el=$("designs"); el.innerHTML="";
+  ds.forEach(d=>{
+    el.innerHTML+=`<div class="design"><div class="dhead"><b>${d.nome}</b><span class="cost">manutenção: ${d.custo}</span></div>
+    <div class="dbody"><ul>${d.el.map(e=>`<li><b>${e.v}</b> — ${e.jur}</li>`).join("")}</ul>
+    <p class="note"><b>Trade-off honesto:</b> ${d.trade}</p>
+    ${d.cond.length?`<p class="note"><b>Condicionantes (dos alertas da triagem):</b> ${d.cond.join(" · ")}</p>`:""}
+    <h3>Crítica adversarial</h3>
+    ${d.at.map(a=>`<div class="attack ${a.s}"><span class="sev">${a.s==="mit"?"Mitigável":"Menor"}</span> — ${a.t} <span class="chip">${a.b}</span></div>`).join("")}
+    </div></div>`;
+  });
+  renderOblig();
+}
+function renderOblig(){
+  const el=$("oblig"); el.innerHTML="";
+  state.designs.forEach(d=>{
+    const rows=obrigacoes(state.p,d).map(o=>`<tr><td>${o[0]}</td><td><span class="chip">${o[1]}</span></td><td>${o[2]}</td></tr>`).join("");
+    el.innerHTML+=`<h3>${d.nome}</h3><div class="tablewrap"><table><tr><th>Obrigação</th><th>Fundamento</th><th>Quando</th></tr>${rows}</table></div>`;
+  });
+  renderMinuta();
+}
+function renderMinuta(){
+  const p=state.p, soft=state.flags.filter(f=>f.sev==="brando");
+  const dt=new Date().toLocaleDateString("pt-BR");
+  const srcs=[...new Set([].concat(...analise(p).map(c=>c.src)))];
+  $("minuta").innerHTML=`
+  <div style="text-align:center;font-family:var(--sans);font-size:11px;letter-spacing:2px;color:var(--slate)">MINUTA PARA REVISÃO DO ADVOGADO RESPONSÁVEL — NÃO É DOCUMENTO FINAL</div>
+  <h2>Sumário executivo</h2>
+  <p>Perfil com patrimônio total da ordem de R$ ${p.pat_total} mi${p.pat_ext?` (R$ ${p.pat_ext} mi no exterior)`:""}, ${p.filhos} herdeiro(s) necessário(s), domicílio fiscal em ${p.uf}. A triagem de conformidade não encontrou impedimentos; ${soft.length? soft.length+" condicionante(s) obrigatória(s) integram os desenhos.":"não há condicionantes."} São apresentadas ${state.designs.length} alternativas, cada uma com crítica adversarial e pacote completo de obrigações.</p>
+  <h2>Alternativas e recomendação preliminar</h2>
+  <p>${state.designs.map(d=>d.nome).join(" · ")}. A recomendação preliminar e o dimensionamento final são reservados à revisão do advogado responsável — o sistema propõe; o profissional assina.</p>
+  <h2>Obrigações assumidas em qualquer cenário</h2>
+  <p>Declaração integral no IRPF sob o regime da Lei 14.754/2023; DCBE ao Banco Central quando aplicável; ITCMD de ${p.uf} nas transmissões do plano. Nenhum elemento do desenho depende de não-declaração — transparência é premissa, não opção.</p>
+  <h2>Limites desta análise</h2>
+  <p>Tributação internacional de heranças (PLP 108) declarada como instável; valores de manutenção são faixas indicativas; a demonstração usa análise ilustrativa por regras — no produto, cada afirmação sai de um corpus jurídico versionado, com abstenção quando a fonte não cobre.</p>
+  <h2>Fontes</h2>
+  <p style="font-family:var(--sans);font-size:13px">${srcs.map(s=>`<span class="chip">${s}</span>`).join(" ")}</p>
+  <div class="foot"><b>Minuta gerada por sistema de apoio; não constitui parecer jurídico. Revisão e assinatura: [advogado nomeado, OAB].</b><br>Trilha: demonstração · corpus-v0 · ${dt} · triagem e obrigações executadas por lógica determinística; análise ilustrativa.</div>`;
+}
+$("restart").addEventListener("click",()=>{state.blocked=false;go(0);});
+go(0);
+</script>
