@@ -12,7 +12,7 @@
 - `templates-posts.html` — os 5 templates de post editáveis (instruções no topo do arquivo), na tipografia da marca e com o wordmark limpo.
 - `export/` — os PNGs finais prontos para subir: 5 ativos de marca (cópias de `oficial/`) + as 16 imagens da grade. Regenerar a partir de `oficial/assets-oficiais.html` e `grade-vitrine.html` quando o texto mudar.
 - `fonts/` — Cormorant Garamond e EB Garamond (OFL; licença em `LICENCA.md`).
-- Pendência: regenerar o **kit inicial consolidado** (PDF para o Pedro/agência) na identidade v4 — a versão v3 foi removida com o material superado.
+- **`abba-kit-inicial.pdf` — O DOCUMENTO (v4, 14 páginas)**: marca + regras, cores e tipografia, ativos, papelaria nominal, timbrado e kit de brindes, perfis prontos (LinkedIn empresa/pessoais/Instagram), grade-vitrine, estratégia de conteúdo, briefing para agência, checklist de lançamento e brief para designer. É o que se manda para o Pedro aprovar e o que se entrega à agência. Fonte editável: `kit-inicial-v4.html` (regenerar o PDF via Playwright `page.pdf`, 1240×1754).
 
 ## Como exportar PNG
 

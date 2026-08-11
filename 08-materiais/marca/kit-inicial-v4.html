@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — Kit Inicial v4</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: 1240px 1754px; margin: 0; }
+  body { font-family: 'EBGaramond', Georgia, serif; color: #1B2A4A; }
+  .pg { width: 1240px; height: 1754px; background: #FFFFFF; padding: 110px 120px 90px;
+        page-break-after: always; position: relative; display: flex; flex-direction: column; }
+  .pg.navy { background: #1B2A4A; color: #FFFFFF; }
+
+  .mark { font-family: 'Cormorant', serif; font-weight: 600; letter-spacing: 0.12em;
+          text-indent: 0.12em; line-height: 1; }
+  .vers { letter-spacing: 0.4em; text-indent: 0.4em; text-transform: uppercase; }
+  .eyebrow { font-size: 22px; letter-spacing: 0.4em; text-transform: uppercase; color: #C2A35B;
+             margin-bottom: 26px; }
+  h1 { font-family: 'Cormorant', serif; font-weight: 600; font-size: 64px; line-height: 1.12;
+       margin-bottom: 30px; }
+  h2 { font-family: 'Cormorant', serif; font-weight: 600; font-size: 34px; margin: 34px 0 14px; }
+  p, li { font-size: 25px; line-height: 1.5; color: #3A4356; }
+  .navy p { color: #C9CFDA; }
+  b { color: #1B2A4A; } .navy b { color: #FFFFFF; }
+  .gold { color: #C2A35B; }
+  .filete { height: 2px; background: #C2A35B; border: 0; width: 180px; margin: 26px 0 30px; }
+  .rodape { position: absolute; left: 120px; right: 120px; bottom: 56px; display: flex;
+            justify-content: space-between; align-items: baseline; font-size: 19px;
+            letter-spacing: 3px; text-transform: uppercase; color: #9AA1AD; }
+  .rodape .m { font-family: 'Cormorant', serif; font-weight: 600; font-size: 26px;
+               letter-spacing: 0.12em; color: #1B2A4A; }
+  .navy .rodape { color: #8C96A8; } .navy .rodape .m { color: #C2A35B; }
+
+  table { border-collapse: collapse; width: 100%; margin: 18px 0; }
+  th, td { text-align: left; font-size: 23px; line-height: 1.4; padding: 14px 18px 14px 0;
+           border-bottom: 1px solid #E8E8E8; vertical-align: top; color: #3A4356; }
+  th { font-size: 19px; letter-spacing: 2.5px; text-transform: uppercase; color: #C2A35B;
+       border-bottom: 2px solid #C2A35B; }
+  td b { color: #1B2A4A; }
+
+  ol, ul { margin: 14px 0 14px 34px; }
+  li { margin-bottom: 12px; }
+
+  .quote { border-left: 3px solid #C2A35B; padding: 8px 0 8px 30px; margin: 20px 0;
+           font-size: 24px; line-height: 1.55; color: #3A4356; }
+
+  .img-card { border: 1px solid #E2E0D8; border-radius: 6px; overflow: hidden; background: #FAFAF8; }
+  .img-card img { display: block; width: 100%; }
+  .img-cap { font-size: 18px; letter-spacing: 2px; text-transform: uppercase; color: #9AA1AD;
+             padding: 12px 16px; border-top: 1px solid #EEECE6; }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 20px 0; }
+  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin: 20px 0; }
+
+  .sw { display: flex; gap: 22px; margin: 24px 0; }
+  .sw .c { flex: 1; border-radius: 6px; border: 1px solid #E2E0D8; overflow: hidden; }
+  .sw .c .chip { height: 130px; }
+  .sw .c .lbl { padding: 12px 16px; font-size: 20px; color: #3A4356; }
+  .sw .c .lbl b { display: block; font-size: 22px; }
+</style>
+</head>
+<body>
+
+<!-- ============ 1 · CAPA ============ -->
+<div class="pg navy" style="justify-content:center; align-items:center; text-align:center">
+  <div class="mark" style="font-size:200px; color:#FFFFFF">ABBA</div>
+  <hr class="filete" style="margin:56px auto 48px">
+  <div class="vers" style="font-size:30px; color:#C2A35B; margin-bottom:22px">Kit inicial · v4</div>
+  <p style="font-size:27px; max-width:640px; color:#C9CFDA">Identidade, ativos e presença pública — o documento
+  para o aval do Pedro e para a agência que assumir depois.</p>
+  <div style="position:absolute; bottom:70px; left:0; right:0; text-align:center; font-size:20px;
+              letter-spacing:3px; color:#8C96A8">AGOSTO 2026 · ABBASERVICES.COM.BR</div>
+</div>
+
+<!-- ============ 2 · SUMÁRIO ============ -->
+<div class="pg">
+  <div class="eyebrow">O que há neste documento</div>
+  <h1>Sumário</h1>
+  <hr class="filete">
+  <table>
+    <tr><td style="width:70px"><b>03</b></td><td><b>A marca</b> — o wordmark limpo e as regras de uso</td></tr>
+    <tr><td><b>04</b></td><td><b>Cores e tipografia</b> — a paleta e as duas fontes</td></tr>
+    <tr><td><b>05</b></td><td><b>Ativos digitais</b> — avatar, lockups, banner e capa</td></tr>
+    <tr><td><b>06</b></td><td><b>Papelaria</b> — cartões nominais e assinaturas de e-mail</td></tr>
+    <tr><td><b>07</b></td><td><b>Timbrado e kit de produção</b> — documentos e brindes</td></tr>
+    <tr><td><b>08</b></td><td><b>Perfil LinkedIn da empresa</b> — pronto para publicar</td></tr>
+    <tr><td><b>09</b></td><td><b>Perfis pessoais e Instagram</b></td></tr>
+    <tr><td><b>10</b></td><td><b>A grade-vitrine</b> — os 9 posts de lançamento</td></tr>
+    <tr><td><b>11</b></td><td><b>Estratégia LinkedIn</b> — os 4 pilares e as regras</td></tr>
+    <tr><td><b>12</b></td><td><b>Briefing para a agência</b> — o negociável e o inegociável</td></tr>
+    <tr><td><b>13</b></td><td><b>Checklist de lançamento e pendências dos sócios</b></td></tr>
+    <tr><td><b>14</b></td><td><b>Brief para o designer</b> — o refino que pode vir depois</td></tr>
+  </table>
+  <p style="margin-top:26px">Tudo aqui deriva da doutrina registrada no repositório interno (posicionamento,
+  manifesto, identidade visual, plano de redes). Este PDF é o retrato consolidado — os arquivos-fonte editáveis
+  vivem em <b>08-materiais/marca/</b>.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>02 · 14</span></div>
+</div>
+
+<!-- ============ 3 · A MARCA ============ -->
+<div class="pg">
+  <div class="eyebrow">A marca</div>
+  <h1>Só a palavra. Nada mais.</h1>
+  <hr class="filete">
+  <div class="img-card" style="margin:10px 0 30px"><img src="oficial/horiz-claro.png" alt=""></div>
+  <p><b>Wordmark limpo (v4, decisão de 2026-08-11):</b> a palavra ABBA em <b>Cormorant Garamond
+  SemiBold</b>, com 12% de espaçamento entre letras. Sem símbolo, sem ponto, sem tagline — o padrão
+  das consultorias premium: McKinsey, BCG e Bain são só tipografia. O nome é um palíndromo;
+  a tipografia carrega a marca sozinha.</p>
+  <h2>As cinco regras</h2>
+  <ol>
+    <li>Nunca recolorir fora das três cores oficiais (navy, dourado, branco). Nunca gradiente, sombra ou contorno.</li>
+    <li>Nunca esticar, inclinar ou espelhar.</li>
+    <li>Margem de respiro mínima: metade da altura do A em volta de toda a marca.</li>
+    <li>Sobre foto: só branco ou dourado, e só se a foto for escura e calma.</li>
+    <li>Não recompor a marca em outra fonte — usar sempre os arquivos prontos.</li>
+  </ol>
+  <div class="rodape"><span class="m">ABBA</span><span>03 · 14</span></div>
+</div>
+
+<!-- ============ 4 · CORES E TIPOGRAFIA ============ -->
+<div class="pg">
+  <div class="eyebrow">Cores e tipografia</div>
+  <h1>Navy, dourado e a serifa</h1>
+  <hr class="filete">
+  <div class="sw">
+    <div class="c"><div class="chip" style="background:#1B2A4A"></div><div class="lbl"><b>Navy · #1B2A4A</b>Fundos escuros, títulos sobre claro</div></div>
+    <div class="c"><div class="chip" style="background:#C2A35B"></div><div class="lbl"><b>Dourado · #C2A35B</b>Filetes, eyebrows, destaques — com parcimônia</div></div>
+    <div class="c"><div class="chip" style="background:#FFFFFF; border-bottom:1px solid #EEE"></div><div class="lbl"><b>Branco · #FFFFFF</b>O fundo padrão do padrão editorial</div></div>
+    <div class="c"><div class="chip" style="background:#5A6472"></div><div class="lbl"><b>Ardósia · #5A6472</b>Texto secundário</div></div>
+    <div class="c"><div class="chip" style="background:#E8E8E8"></div><div class="lbl"><b>Gelo · #E8E8E8</b>Divisores e blocos</div></div>
+  </div>
+  <p><b>Regra de contraste:</b> dourado como texto só sobre navy, e só em destaque grande (eyebrow, número).
+  Sobre branco, o dourado é elemento gráfico — filete, número gigante — nunca texto corrido.</p>
+  <h2>As duas fontes (livres, licença OFL)</h2>
+  <table>
+    <tr><th style="width:340px">Fonte</th><th>Papel</th></tr>
+    <tr><td style="font-family:'Cormorant'; font-weight:600; font-size:34px"><b>Cormorant Garamond</b></td>
+        <td>A marca e os títulos — display, sempre SemiBold</td></tr>
+    <tr><td style="font-size:30px"><b>EB Garamond</b></td>
+        <td>Corpo de texto, legendas, tabelas</td></tr>
+  </table>
+  <p>Versaletes dourados com espaçamento largo (≥ 0.3em) são a assinatura tipográfica dos eyebrows.
+  Fallback quando as fontes não estiverem instaladas: Georgia.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>04 · 14</span></div>
+</div>
+
+<!-- ============ 5 · ATIVOS DIGITAIS ============ -->
+<div class="pg">
+  <div class="eyebrow">Ativos digitais</div>
+  <h1>Perfis prontos para subir</h1>
+  <hr class="filete">
+  <div class="duo" style="grid-template-columns: 300px 1fr; align-items:start">
+    <div class="img-card"><img src="oficial/avatar.png" alt=""><div class="img-cap">Avatar 1080 — LinkedIn · Instagram · WhatsApp</div></div>
+    <div style="display:flex; flex-direction:column; gap:24px">
+      <div class="img-card"><img src="oficial/horiz-escuro.png" alt=""><div class="img-cap">Lockup horizontal escuro</div></div>
+      <div class="img-card"><img src="oficial/horiz-claro.png" alt=""><div class="img-cap">Lockup horizontal claro</div></div>
+    </div>
+  </div>
+  <div class="img-card" style="margin-top:6px"><img src="oficial/banner.png" alt="">
+    <div class="img-cap">Banner da página LinkedIn (2256×382) — editorial branco com a headline</div></div>
+  <div class="img-card" style="margin-top:26px"><img src="oficial/capa.png" alt="">
+    <div class="img-cap">Capa dos perfis pessoais (1584×396)</div></div>
+  <div class="rodape"><span class="m">ABBA</span><span>05 · 14</span></div>
+</div>
+
+<!-- ============ 6 · PAPELARIA ============ -->
+<div class="pg">
+  <div class="eyebrow">Papelaria</div>
+  <h1>Cartões e assinaturas</h1>
+  <hr class="filete">
+  <div class="trio" style="grid-template-columns: 1fr 1fr; ">
+    <div class="img-card"><img src="oficial/cartao-frente.png" alt=""><div class="img-cap">Frente (comum aos sócios)</div></div>
+    <div class="img-card"><img src="oficial/nominais/cartao-daniel.png" alt=""><div class="img-cap">Verso · Daniel</div></div>
+    <div class="img-card"><img src="oficial/nominais/cartao-pedro.png" alt=""><div class="img-cap">Verso · Pedro</div></div>
+    <div style="display:flex; flex-direction:column; gap:22px">
+      <div class="img-card"><img src="oficial/nominais/ass-daniel.png" alt=""><div class="img-cap">Assinatura de e-mail · Daniel</div></div>
+      <div class="img-card"><img src="oficial/nominais/ass-pedro.png" alt=""><div class="img-cap">Assinatura de e-mail · Pedro</div></div>
+    </div>
+  </div>
+  <p style="margin-top:12px">Formato do cartão: 9×5 cm (arquivos a 300 dpi). Para gráfica, o fornecedor
+  extrai as curvas do PDF vetorial do kit de produção (página 07).</p>
+  <div class="rodape"><span class="m">ABBA</span><span>06 · 14</span></div>
+</div>
+
+<!-- ============ 7 · TIMBRADO + EVENTO ============ -->
+<div class="pg">
+  <div class="eyebrow">Documentos e produção</div>
+  <h1>Timbrado e kit de brindes</h1>
+  <hr class="filete">
+  <div class="duo" style="grid-template-columns: 420px 1fr; align-items:start">
+    <div class="img-card"><img src="oficial/timbrado.png" alt=""><div class="img-cap">Timbrado A4 — propostas e documentos</div></div>
+    <div>
+      <h2 style="margin-top:0">O kit de produção (pasta <span class="gold">evento/</span>)</h2>
+      <p>O pacote que se manda para qualquer fornecedor de brindes, gráfica ou serigrafia:</p>
+      <ul>
+        <li><b>PNGs transparentes</b> em alta resolução, um por cor oficial (azul, dourado, branco) — para impressão, bordado, adesivo e gravação;</li>
+        <li><b>6 combinações com fundo</b> — as cores entre si, para peças onde o fundo vem do material;</li>
+        <li><b>PDF vetorial</b> (3 páginas) — curvas escaláveis para qualquer tamanho;</li>
+        <li><b>LEIA-ME</b> com códigos de cor (HEX + CMYK), fonte e regras rápidas.</li>
+      </ul>
+      <p>Para gravação a laser, relevo seco ou metal, qualquer arquivo transparente serve — a cor vem do
+      próprio material. Em brinde premium, a combinação mais forte é <b>dourado sobre navy</b>.</p>
+    </div>
+  </div>
+  <div class="rodape"><span class="m">ABBA</span><span>07 · 14</span></div>
+</div>
+
+<!-- ============ 8 · LINKEDIN EMPRESA ============ -->
+<div class="pg">
+  <div class="eyebrow">Presença · LinkedIn</div>
+  <h1>A página da empresa</h1>
+  <hr class="filete">
+  <table>
+    <tr><th style="width:260px">Campo</th><th>Conteúdo</th></tr>
+    <tr><td><b>Nome</b></td><td>ABBA Consultoria de IA</td></tr>
+    <tr><td><b>Tagline</b></td><td>Instalamos capacidade de IA — e provamos, de fora, o que ela mudou. Consultoria para o mid-market brasileiro.</td></tr>
+    <tr><td><b>Site</b></td><td>abbaservices.com.br</td></tr>
+    <tr><td><b>Setor</b></td><td>Consultoria e serviços empresariais · 2–10 pessoas</td></tr>
+    <tr><td><b>Especialidades</b></td><td>Transformação em IA · Agentes de IA · Avaliação de oportunidades de IA · Capacitação executiva em IA · Governança e LGPD</td></tr>
+    <tr><td><b>Avatar / capa</b></td><td>oficial/avatar.png · oficial/banner.png</td></tr>
+  </table>
+  <h2>O texto "Sobre" (canônico)</h2>
+  <div class="quote">A ABBA instala capacidade de IA em organizações — e prova, como terceiro, o que mudou.
+  Não treinamento. Não piloto sem métrica. Não ferramentas. A instalação completa: análise gratuita por
+  informação pública → avaliação profunda → protótipo validado com dados reais (GO/NO-GO) → construção de
+  agentes sob medida → capacitação híbrida de todos os níveis → manutenção com presença semanal →
+  Conselheiro de IA — tudo dirigido pelos objetivos da diretoria do cliente, num ritual permanente de
+  alinhamento. Atendemos empresas brasileiras de médio porte.<br><br>
+  Comece pelo Mapa de Vazamento: uma análise gratuita da sua empresa, feita por informação pública,
+  entregue em 48 horas. Peça em contato@abbaservices.com.br.</div>
+  <div class="rodape"><span class="m">ABBA</span><span>08 · 14</span></div>
+</div>
+
+<!-- ============ 9 · PERFIS PESSOAIS + INSTAGRAM ============ -->
+<div class="pg">
+  <div class="eyebrow">Presença · sócios e Instagram</div>
+  <h1>Perfis pessoais e o Instagram</h1>
+  <hr class="filete">
+  <h2 style="margin-top:0">Perfis pessoais (Daniel e Pedro)</h2>
+  <p><b>Headline pronta:</b> Sócio-fundador, ABBA · Consultoria de transformação em IA para o mid-market
+  brasileiro · Instalamos os 70% que todo fornecedor de IA ignora.</p>
+  <p><b>Estrutura do "Sobre"</b> (1ª pessoa, 5 blocos): a tese em uma frase · o que a ABBA faz em 2 frases ·
+  trajetória com 2–3 marcos reais <span class="gold">[preencher — prioridade]</span> · a divisão de chapéus
+  (Daniel: comercial, entrega, financeiro; Pedro: capacitação e tecnologia) · CTA do Mapa de Vazamento.</p>
+  <p><b>Capa:</b> oficial/capa.png. <b>Foto:</b> real, fundo limpo, luz natural — nunca avatar de IA.</p>
+  <h2>Instagram (presença-vitrine)</h2>
+  <table>
+    <tr><th style="width:260px">Campo</th><th>Conteúdo</th></tr>
+    <tr><td><b>Handle</b></td><td>@abba.consultoria — verificar disponibilidade (alternativas: @abbaconsultoria, @abba.ia)</td></tr>
+    <tr><td><b>Nome</b></td><td>ABBA · Consultoria de IA</td></tr>
+    <tr><td><b>Bio</b></td><td>Instalamos capacidade de IA — e provamos o que mudou. Consultoria para empresas de médio porte. ↓ Mapa de Vazamento gratuito</td></tr>
+    <tr><td><b>Destaques</b></td><td>Método · Perguntas · Quem somos (capas navy + detalhe dourado)</td></tr>
+  </table>
+  <p>Decisão registrada: o Instagram é vitrine — o esforço recorrente fica no LinkedIn.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>09 · 14</span></div>
+</div>
+
+<!-- ============ 10 · GRADE ============ -->
+<div class="pg">
+  <div class="eyebrow">Presença · Instagram</div>
+  <h1>A grade-vitrine: 9 posts prontos</h1>
+  <hr class="filete">
+  <div class="trio">
+    <div class="img-card"><img src="export/grade-p1.png" alt=""><div class="img-cap">1 · A headline</div></div>
+    <div class="img-card"><img src="export/grade-p2.png" alt=""><div class="img-cap">2 · Citação</div></div>
+    <div class="img-card"><img src="export/grade-p3.png" alt=""><div class="img-cap">3 · Número com fonte</div></div>
+    <div class="img-card"><img src="export/grade-p4a.png" alt=""><div class="img-cap">4 · Carrossel Bússola</div></div>
+    <div class="img-card"><img src="export/grade-p5.png" alt=""><div class="img-cap">5 · Citação</div></div>
+    <div class="img-card"><img src="export/grade-p6.png" alt=""><div class="img-cap">6 · A jornada em 7 passos</div></div>
+    <div class="img-card"><img src="export/grade-p7.png" alt=""><div class="img-cap">7 · 48 horas</div></div>
+    <div class="img-card"><img src="export/grade-p8a.png" alt=""><div class="img-cap">8 · Carrossel recusas</div></div>
+    <div class="img-card"><img src="export/grade-p9.png" alt=""><div class="img-cap">9 · CTA Mapa de Vazamento</div></div>
+  </div>
+  <p>16 quadros no total (posts 4 e 8 são carrosséis). Publicar em 3 lotes de 3; legendas prontas no plano
+  de redes. Sem obrigação de cadência depois — a grade existe para o perfil nunca parecer um deserto.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>10 · 14</span></div>
+</div>
+
+<!-- ============ 11 · ESTRATÉGIA ============ -->
+<div class="pg">
+  <div class="eyebrow">Presença · LinkedIn</div>
+  <h1>Estratégia de conteúdo</h1>
+  <hr class="filete">
+  <p><b>Cadência:</b> 2 posts por semana no total (1 por sócio); a página republica. Constância vale mais
+  que volume. Todo post pertence a um dos 4 pilares — se não pertence, não publica:</p>
+  <table>
+    <tr><th style="width:330px">Pilar</th><th>O que é</th><th style="width:170px">Assina</th></tr>
+    <tr><td><b>A · Prova, não impressão</b></td><td>O método: número combinado antes, medição depois, registro</td><td>Daniel</td></tr>
+    <tr><td><b>B · As perguntas que doem</b></td><td>Perguntas de diagnóstico que o dono não se fez</td><td>Pedro</td></tr>
+    <tr><td><b>C · O calendário que não espera</b></td><td>Regulação e mercado com data: ANPD, LGPD, PL 2338</td><td>Daniel</td></tr>
+    <tr><td><b>D · Como a gente trabalha</b></td><td>Bastidores honestos: anatomia de uma Análise, as recusas</td><td>Os dois</td></tr>
+  </table>
+  <h2>As regras que valem mais que o calendário</h2>
+  <ol>
+    <li>Linguagem de dono, sem jargão de tese: <i>"você vai saber, em reais, o que cada decisão de IA rendeu — assinado."</i></li>
+    <li>Nenhum cliente nomeado e nenhum case até existir caso publicável aprovado.</li>
+    <li>Post de sócio &gt; post de página — a página dá lastro e recebe o clique.</li>
+    <li>CTA sempre o mesmo: <b>Mapa de Vazamento gratuito</b>. Um funil, uma porta.</li>
+    <li>Sem emoji, sem "jornada", sem superlativo sem número; número só com premissa citada.</li>
+  </ol>
+  <p><b>Primeiro post recomendado</b> (pilar D, os dois sócios): "por que existimos" — a tese de que ninguém
+  combinou antes o que seria dar certo, e o compromisso de publicar a anatomia de uma Análise real.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>11 · 14</span></div>
+</div>
+
+<!-- ============ 12 · BRIEFING AGÊNCIA ============ -->
+<div class="pg">
+  <div class="eyebrow">Briefing</div>
+  <h1>Para a agência que assumir</h1>
+  <hr class="filete">
+  <p>Entregar este documento + manual de marca, posicionamento e manifesto. O resumo do que pode e do que
+  não pode mudar:</p>
+  <h2>Inegociável (doutrina — muda só com decisão registrada dos sócios)</h2>
+  <ul>
+    <li>Headline e prateleira: "camada independente de prova, com músculo de execução"; "auditoria" só como analogia.</li>
+    <li>Tabela de vocabulário; pt-BR; sem emoji, sem "jornada", sem superlativo sem número.</li>
+    <li>Paleta navy+dourado e o <b>wordmark ABBA limpo (v4)</b>; domínio único abbaservices.com.br; e-mail único contato@.</li>
+    <li>Zero clientes inventados; número só com premissa; o que deu errado se publica na mesma tipografia do que deu certo.</li>
+    <li>CTA único: Mapa de Vazamento.</li>
+  </ul>
+  <h2>Aberto (a agência pode propor)</h2>
+  <ul>
+    <li>Cadência, formatos (vídeo, newsletter), distribuição paga.</li>
+    <li>Refinamento profissional do logo (grid, ajuste óptico, tipografia proprietária).</li>
+    <li>Setor-farol de fachada comercial, playbook de WhatsApp, site institucional.</li>
+  </ul>
+  <p><b>Lacuna registrada:</b> o playbook de WhatsApp — no mid-market brasileiro a venda acontece lá; é o
+  candidato natural à v2 do plano de redes.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>12 · 14</span></div>
+</div>
+
+<!-- ============ 13 · CHECKLIST ============ -->
+<div class="pg">
+  <div class="eyebrow">Execução</div>
+  <h1>Checklist de lançamento</h1>
+  <hr class="filete">
+  <ol>
+    <li>Aval do Pedro: headline, marca v4 e este documento.</li>
+    <li>Criar a página LinkedIn (pág. 08) → conferir preview em desktop e mobile.</li>
+    <li>Atualizar os dois perfis pessoais — headline + capa no mínimo; "Sobre" quando as trajetórias estiverem escritas.</li>
+    <li>Criar o Instagram e publicar a grade-vitrine em 3 lotes (3 posts/semana).</li>
+    <li>Primeiro post dos sócios no LinkedIn; a página republica.</li>
+    <li>Adicionar os links das redes na assinatura de e-mail e nos materiais enviáveis.</li>
+    <li>Registrar handles e senhas no cofre — nunca em git.</li>
+  </ol>
+  <h2>Pendências que só os sócios destravam</h2>
+  <ul>
+    <li>Fotos profissionais dos dois (real, fundo limpo, luz natural).</li>
+    <li>Bios com trajetória real (2–3 marcos com nome e ano) — o ataque mais barato de um concorrente é sócio sem bio.</li>
+    <li>Aval do Pedro na headline e na menção pública a João Moura / CrewAI.</li>
+    <li>Escolha e reserva do handle de Instagram.</li>
+    <li>Decisão sobre setor-farol antes de publicar.</li>
+  </ul>
+  <div class="rodape"><span class="m">ABBA</span><span>13 · 14</span></div>
+</div>
+
+<!-- ============ 14 · BRIEF DESIGNER ============ -->
+<div class="pg">
+  <div class="eyebrow">Evolução</div>
+  <h1>Brief para o designer</h1>
+  <hr class="filete">
+  <p>A marca v4 é utilizável hoje. Quando houver orçamento, um designer tipográfico pode elevar o acabamento
+  sem mudar a decisão. Escopo do refino:</p>
+  <ol>
+    <li><b>Kerning óptico</b> do wordmark — ajustar par a par (A·B, B·B, B·A) em vez do espaçamento uniforme de 12%.</li>
+    <li><b>Versão em curvas</b> — converter o wordmark final em vetor próprio (deixar de depender da fonte instalada).</li>
+    <li><b>Grid de construção e área de proteção</b> formalizados em página de manual.</li>
+    <li><b>Teste de redução</b> — garantir leitura perfeita em 24 px (favicon, avatar pequeno).</li>
+    <li>Opcional: dígrafo/monograma "A" para favicon, derivado do próprio wordmark.</li>
+  </ol>
+  <h2>Referências do padrão (pesquisa registrada)</h2>
+  <ul>
+    <li>Consultorias premium usam wordmark puro — McKinsey, BCG, Bain: só tipografia, sem símbolo.</li>
+    <li>O clichê a evitar: cérebro de pontos conectados e circuitos — o logotipo nº 1 mais saturado em IA.</li>
+    <li>A identidade está no contraste navy + dourado + serifa humanista, não em um pictograma.</li>
+  </ul>
+  <p style="margin-top:30px">Arquivos-fonte: <b>08-materiais/marca/</b> (oficial/, evento/, fonts/, grade e
+  templates). Este documento: <b>abba-kit-inicial.pdf</b>, gerado de <b>kit-inicial-v4.html</b>.</p>
+  <div class="rodape"><span class="m">ABBA</span><span>14 · 14</span></div>
+</div>
+
+</body>
+</html>
