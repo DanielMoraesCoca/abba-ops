@@ -1,0 +1,36 @@
+ABBA — logo para producao (lembrancinhas / brindes)
+====================================================
+
+A marca e somente a palavra ABBA (sem ponto, sem tagline).
+Fonte: Cormorant Garamond SemiBold (600), espacamento de 12% entre letras.
+
+PASTAS
+------
+transparente/  -> PNG com fundo transparente, alta resolucao (2260x820 px).
+                  E o que se manda para impressao, gravacao, bordado, corte.
+                  abba-azul-navy.png  (letras azuis)
+                  abba-dourado.png    (letras douradas)
+                  abba-branco.png     (letras brancas - parece vazio no
+                                       visualizador, e normal: e branco
+                                       sobre transparente)
+com-fundo/     -> as 6 combinacoes das cores entre si, para referencia
+                  e para usos onde o fundo ja vem da peca.
+abba-logo-vetor.pdf -> versao vetorial (3 paginas: azul, dourado, branco
+                  sobre azul). Grafica/serigrafia consegue extrair as
+                  curvas daqui em qualquer tamanho sem perder qualidade.
+
+CORES OFICIAIS
+--------------
+Azul (navy):  #1B2A4A   | CMYK aprox. 88 / 74 / 38 / 32
+Dourado:      #C2A35B   | CMYK aprox. 24 / 32 / 74 / 4
+Branco:       #FFFFFF
+Para gravacao a laser / relevo seco / metal: usar qualquer arquivo
+transparente; a cor vem do material.
+
+REGRAS RAPIDAS
+--------------
+1. Nao esticar, nao inclinar, nao aplicar sombra ou contorno.
+2. Nao usar outras cores alem das tres oficiais.
+3. Sobre fotos ou fundos escuros: usar a versao branca ou dourada.
+4. Margem de respiro: deixar ao redor da logo um espaco de pelo menos
+   metade da altura da letra A.
