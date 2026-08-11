@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — Fusões: as palavras desmontadas</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('../wordmark/fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('../wordmark/fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'FrankRuhl'; src: url('../wordmark/fonts/FrankRuhlLibre.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'DavidLibre'; src: url('../wordmark/fonts/DavidLibre.ttf'); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #4a4a4a; font-family: 'EBGaramond', serif; }
+
+  .sheet { width: 1500px; height: 1000px; background: #F2F1ED; margin: 24px auto;
+           padding: 52px 64px; display: flex; flex-direction: column; }
+  .sheet .head { display: flex; justify-content: space-between; align-items: baseline;
+                 border-bottom: 2px solid #1B2A4A; padding-bottom: 12px; margin-bottom: 12px; }
+  .sheet .head .rt { font-family: 'Cormorant', serif; font-size: 32px; font-weight: 600; color: #1B2A4A; }
+  .sheet .head .rt b { color: #C2A35B; }
+  .sheet .head .lbl { font-size: 13px; letter-spacing: 4px; color: #5A6472; text-transform: uppercase; }
+  .sheet .intro { font-size: 15px; color: #5A6472; margin-bottom: 20px; }
+  .sheet .intro b { color: #1B2A4A; }
+  .sheet .intro .he { font-family: 'FrankRuhl'; font-size: 19px; color: #1B2A4A; }
+
+  .grid { flex: 1; display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: 1fr 1fr; gap: 20px; }
+  .tile { background: #1B2A4A; border-radius: 6px; position: relative; overflow: hidden;
+          display: flex; align-items: center; justify-content: center;
+          box-shadow: 0 6px 20px rgba(27,42,74,.16); }
+  .tile.light { background: #FFFFFF; border: 1px solid #E2E0D8; }
+  .tile .n { position: absolute; top: 10px; left: 14px; font-size: 12px; letter-spacing: 2px;
+             color: rgba(255,255,255,.4); }
+  .tile.light .n { color: #B9B6AC; }
+  .tile .cap { position: absolute; bottom: 22px; left: 14px; right: 14px; font-size: 10.5px;
+               letter-spacing: 1.6px; color: rgba(255,255,255,.55); text-transform: uppercase; }
+  .tile.light .cap { color: #8A93A2; }
+  .tile .des { position: absolute; bottom: 8px; left: 14px; right: 14px; font-size: 9.5px;
+               letter-spacing: .6px; color: rgba(255,255,255,.32); font-style: italic; }
+  .tile.light .des { color: #B4B9C2; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+
+<!-- ================= FOLHA · FUSÕES ================= -->
+<div class="sheet" id="fusoes">
+  <div class="head"><div class="rt">Fusões · <b>as palavras desmontadas</b></div><div class="lbl">ABBA · rodada 3B · 2026</div></div>
+  <p class="intro">O jogo: pegar as sete letras de <span class="he">אבא</span> (<b>aba</b>, pai) e <span class="he">מקור</span> (<b>makor</b>, fonte), misturar a ordem, sobrepor, girar e disfarçar — até virar um símbolo que <b>não se lê como hebraico à primeira vista</b>, mas que, desmanchado, devolve as duas palavras. Cada peça diz embaixo em que se desmancha.</p>
+  <div class="grid">
+
+    <!-- 01 A roseta: as 7 letras em círculo, entrelaçadas -->
+    <div class="tile"><span class="n">01</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <circle cx="120" cy="72" r="5.5" fill="#C2A35B"/>
+        <g font-family="FrankRuhl" font-size="32" text-anchor="middle">
+          <text x="120" y="36" fill="#C2A35B">א</text>
+          <text x="156" y="54" fill="#FFFFFF" opacity=".62">מ</text>
+          <text x="165" y="93" fill="#C2A35B">ב</text>
+          <text x="140" y="124" fill="#FFFFFF" opacity=".62">ק</text>
+          <text x="100" y="124" fill="#C2A35B">א</text>
+          <text x="75" y="93" fill="#FFFFFF" opacity=".62">ו</text>
+          <text x="84" y="54" fill="#FFFFFF" opacity=".62">ר</text>
+        </g>
+      </svg>
+      <span class="cap">A roseta</span>
+      <span class="des">desmancha: אבא em ouro, מקור em branco</span>
+    </div>
+
+    <!-- 02 A fusão total: as duas palavras sobrepostas no mesmo centro -->
+    <div class="tile light"><span class="n">02</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <text x="120" y="100" text-anchor="middle" font-family="FrankRuhl" font-size="84" fill="#1B2A4A" opacity=".85">אבא</text>
+        <text x="120" y="100" text-anchor="middle" font-family="FrankRuhl" font-size="62" fill="#C2A35B" opacity=".55">מקור</text>
+      </svg>
+      <span class="cap">A fusão</span>
+      <span class="des">pai por cima, fonte por dentro</span>
+    </div>
+
+    <!-- 03 A gota entre pais: alephs de אבא + vav de מקור -->
+    <div class="tile"><span class="n">03</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <text x="120" y="104" text-anchor="middle" font-family="FrankRuhl" font-size="88" fill="#FFFFFF">א<tspan fill="#C2A35B">ו</tspan>א</text>
+      </svg>
+      <span class="cap">A gota entre pais · אוא</span>
+      <span class="des">os א de אבא + o ו de מקור</span>
+    </div>
+
+    <!-- 04 O totem: אבא empilhada na vertical, sobreposição leve -->
+    <div class="tile light"><span class="n">04</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <text x="120" y="62" text-anchor="middle" font-family="FrankRuhl" font-size="52" fill="#1B2A4A">א</text>
+        <text x="120" y="98" text-anchor="middle" font-family="FrankRuhl" font-size="52" fill="#C2A35B">ב</text>
+        <text x="120" y="134" text-anchor="middle" font-family="FrankRuhl" font-size="52" fill="#1B2A4A">א</text>
+      </svg>
+      <span class="cap">O totem</span>
+      <span class="des">אבא lida de cima para baixo</span>
+    </div>
+
+    <!-- 05 As rotações: cada letra de אבא girada — deixa de ler como hebraico -->
+    <div class="tile"><span class="n">05</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <g font-family="FrankRuhl" font-size="62" text-anchor="middle">
+          <g transform="rotate(90 66 78)"><text x="66" y="100" fill="#C2A35B">א</text></g>
+          <text x="120" y="100" fill="#FFFFFF">ב</text>
+          <g transform="rotate(-90 174 78)"><text x="174" y="100" fill="#C2A35B">א</text></g>
+        </g>
+      </svg>
+      <span class="cap">As rotações</span>
+      <span class="des">אבא com os alephs deitados</span>
+    </div>
+
+    <!-- 06 A trança: as duas palavras intercaladas letra a letra -->
+    <div class="tile light"><span class="n">06</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <text x="120" y="94" text-anchor="middle" font-family="FrankRuhl" font-size="40" letter-spacing="2">
+          <tspan fill="#C2A35B">א</tspan><tspan fill="#1B2A4A">מ</tspan><tspan fill="#C2A35B">ב</tspan><tspan fill="#1B2A4A">ק</tspan><tspan fill="#C2A35B">א</tspan><tspan fill="#1B2A4A">ו</tspan><tspan fill="#1B2A4A">ר</tspan>
+        </text>
+      </svg>
+      <span class="cap">A trança</span>
+      <span class="des">o ouro soletra אבא; o navy, מקור</span>
+    </div>
+
+    <!-- 07 O carimbo: bloco quadrado tipo selo -->
+    <div class="tile"><span class="n">07</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <rect x="76" y="24" width="88" height="100" fill="none" stroke="#C2A35B" stroke-width="2"/>
+        <text x="98" y="66" text-anchor="middle" font-family="FrankRuhl" font-size="38" fill="#FFFFFF">ב</text>
+        <text x="142" y="66" text-anchor="middle" font-family="FrankRuhl" font-size="38" fill="#FFFFFF">א</text>
+        <circle cx="98" cy="100" r="5" fill="#C2A35B"/>
+        <text x="142" y="112" text-anchor="middle" font-family="FrankRuhl" font-size="38" fill="#FFFFFF">א</text>
+      </svg>
+      <span class="cap">O carimbo</span>
+      <span class="des">אבא em bloco + o ponto-fonte</span>
+    </div>
+
+    <!-- 08 Aleph = A: o esqueleto comum -->
+    <div class="tile light"><span class="n">08</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <text x="120" y="116" text-anchor="middle" font-family="FrankRuhl" font-size="112" fill="#C2A35B" opacity=".9">א</text>
+        <text x="120" y="112" text-anchor="middle" font-family="Cormorant" font-weight="600" font-size="104" fill="none" stroke="#1B2A4A" stroke-width="1.1" opacity=".55">A</text>
+      </svg>
+      <span class="cap">Aleph = A</span>
+      <span class="des">aleph e A, uma sobre a outra</span>
+    </div>
+
+    <!-- 09 Meio-submersa: clipada na linha d'água -->
+    <div class="tile"><span class="n">09</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <defs>
+          <clipPath id="agua-cima"><rect x="0" y="0" width="240" height="86"/></clipPath>
+          <clipPath id="agua-baixo"><rect x="0" y="90" width="240" height="60"/></clipPath>
+        </defs>
+        <text x="120" y="108" text-anchor="middle" font-family="FrankRuhl" font-size="88" fill="#FFFFFF" clip-path="url(#agua-cima)">אבא</text>
+        <text x="120" y="108" text-anchor="middle" font-family="FrankRuhl" font-size="88" fill="#C2A35B" opacity=".3" clip-path="url(#agua-baixo)">אבא</text>
+        <line x1="46" y1="88" x2="194" y2="88" stroke="#C2A35B" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="cap">Meio-submersa</span>
+      <span class="des">אבא na linha d'água da fonte</span>
+    </div>
+
+    <!-- 10 O espelho: אבא + o próprio reflexo horizontal, vira ornamento -->
+    <div class="tile light"><span class="n">10</span>
+      <svg width="240" height="150" viewBox="0 0 240 150">
+        <text x="120" y="98" text-anchor="middle" font-family="FrankRuhl" font-size="72" fill="#1B2A4A" opacity=".8">אבא</text>
+        <text x="120" y="98" text-anchor="middle" font-family="FrankRuhl" font-size="72" fill="#C2A35B" opacity=".5" transform="scale(-1,1) translate(-240,0)">אבא</text>
+      </svg>
+      <span class="cap">O espelho</span>
+      <span class="des">o palíndromo sobre o próprio reflexo</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
