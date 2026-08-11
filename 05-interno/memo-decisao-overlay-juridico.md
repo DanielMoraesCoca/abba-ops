@@ -44,7 +44,7 @@ Quando um cliente do Sprint LGPD + Governança de IA (ou um cliente de programa)
 | **B** — canal formal nomeado, sem repasse (recomendada) | Experiência inteira para o cliente + canal recíproco; exige escolher o parceiro e assinar acordo simples; até lá opera-se em A |
 | **C** — comercial compartilhado | Receita de indicação; exige contrato (trava no P4) e desenho de independência; adiada por recomendação |
 
-**O que muda em cada mesa se a decisão for B:** na mesa do FRP — a palestra pode terminar com duas conversas separadas (cliente E parceria), nunca na mesma reunião; na mesa do Gil — a reunião de design do protótipo fica limpa de conversa de canal até o GO.
+**O que muda em cada mesa se a decisão for B:** na mesa do FRP — a palestra pode terminar com duas conversas separadas (cliente E parceria), nunca na mesma reunião. (O outro candidato a parceiro que existia — o contato Gil — saiu de cena: relação encerrada em 2026-08-12, ver [registro](registro-de-decisoes.md).)
 
 **Texto pronto do registro (colar na Tabela 1 quando decidido):** `**Overlay jurídico: direção B, operando em A até acordo assinado** (porta de 1 via, dormida desde 2026-08-10). C adiada até: P4 concluído + primeira indicação real nos dois sentidos + desenho de independência validado. Nenhum parceiro nomeado em material sem acordo assinado. | Memo com 3 opções analisadas; candidatos a parceiro: 2 na mesa (FRP, especialista da conversa de 2026-08-10) | Sócios`
 
