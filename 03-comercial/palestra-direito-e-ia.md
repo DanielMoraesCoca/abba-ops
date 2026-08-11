@@ -89,6 +89,22 @@ Três regras desta fala: o anfitrião fala como anfitrião (generosidade, não v
 
 Regras: convite pessoal (WhatsApp/ligação do anfitrião), nunca convite de massa · exclusividade dita com naturalidade ("escolhi a dedo") · a ABBA não aparece no convite — aparece na noite, pelo conteúdo · confirmar presença nominalmente (a lista É o pipeline) · avisar registro fotográfico discreto na confirmação.
 
+### §2f — Cronograma de preparação (evento: segunda-feira, 17/08/2026 — travado em 2026-08-11)
+
+> O Pedro chega a Brasília no próprio dia 17 (viagem 17–20) — ensaios com ele são REMOTOS até domingo; a única passada presencial é na tarde do evento.
+
+| Quando | O quê | Dono |
+|---|---|---|
+| **Qua 12/08 (amanhã)** | 🔴 **Convites saem** — pessoais, do anfitrião (texto §2e); 5 dias é apertado para agenda de sócio, então lista ~30% maior que a meta de presentes · Confirmar com o anfitrião: nome da série (proposta: "Encontros Direito & IA"), horário, telão/som/HDMI, catering, área sem foto · Alinhar P10 com o Pedro por chamada (a resposta de parceria precisa existir antes da noite) | Anfitrião + sócios |
+| **Qui 13/08** | Ensaio remoto 1 com o Pedro: passada dos 12 slides com o guia de ritmo nas notas + a demo (4 lâminas Meridiano) · ajustes de texto que ele pedir voltam para regeneração no mesmo dia | Sócios (+ ajustes: regenerar deck) |
+| **Sex 14/08** | Ensaio remoto 2 CRONOMETRADO (meta: palestra ≤ 25 min) + Q&A simulado com as 4 objeções e o banco §2a · **gravar o vídeo-backup da demo** · fechar lista de confirmados no pipeline · mandar imprimir o [relatório setorial](../08-materiais/relatorio-setorial-juridico.md) (gráfica rápida, capa "Preparado para os convidados de 17/08/2026") + QR do convite à análise | Sócios |
+| **Sáb–Dom** | Folga de conteúdo (mexer no deck no fim de semana = erro clássico); só confirmações de presença pingando | Anfitrião |
+| **Seg 17/08 — tarde (16h)** | Montagem e teste técnico NO local: telão, som, HDMI/adaptadores, wi-fi (e o vídeo-backup no pendrive), disposição das cadeiras "sala de estar" · passada presencial rápida Pedro + moderador (30 min) · impressos na mesa de saída | Todos |
+| **Seg 17/08 — noite** | O evento (roteiro §2) · durante: um dos dois anota QUEM demonstrou interesse (a lista da colheita) | Todos |
+| **Ter 18/08–Qua 19/08** | Follow-up individualizado em 48h (uma pergunta por e-mail, de quem conversou com a pessoa) · registrar todas as conversas no [pipeline](pipeline-modelo.md) · retrospectiva de 30 min: o que repetir na 2ª edição | Sócios |
+
+**Materiais prontos:** deck 12 slides versão-evento ([`palestra-direito-e-ia-deck.pptx`](../08-materiais/modelos/palestra-direito-e-ia-deck.pptx), capa "1ª edição · 17/08", ritmo nas notas) · demo da Análise fictícia ([`demo-analise-meridiano.pptx`](../08-materiais/modelos/demo-analise-meridiano.pptx), 4 lâminas com notas) · abertura do anfitrião (§2d) · convite (§2e) · relatório de mesa · banco de Q&A (§2a) + objeções (§3).
+
 ## 2b. O reservatório de conteúdo — os 5 blocos (usar nas respostas, no material e em palestras formais futuras)
 
 Detalhe slide a slide (com falas-âncora) em [palestra-direito-e-ia-slides.md](palestra-direito-e-ia-slides.md). A espinha:
