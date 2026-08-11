@@ -10,7 +10,7 @@
 
 ## 1. Visual (padrão da [identidade](../00-identidade/identidade-visual.md))
 - Paleta: primária `#1B2A4A` (navy) · acento `#C2A35B` (dourado) · neutros `#5A6472`/`#E8E8E8` · fundo branco. Substituir o gradiente teal/verde atual dos cards de recomendação por navy com acento dourado
-- Logo: usar a marca-símbolo dourada ([PNG no repo](../08-materiais/marca/abba-logo.png)) no cabeçalho
+- Logo: usar o wordmark ABBA limpo (v4) no cabeçalho — ativos em [`../08-materiais/marca/oficial/`](../08-materiais/marca/oficial/)
 - Cabeçalho: "ABBA · Análise" (não "ABBA · Assessment")
 
 ## 2. Nomes (tabela da [marca](../00-identidade/marca-e-nomenclatura.md))

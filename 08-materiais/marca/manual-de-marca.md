@@ -1,33 +1,32 @@
-# Manual de Marca — ABBA (v1, uso digital)
+# Manual de Marca — ABBA (v2, uso digital)
 
 > **O que é:** as regras mínimas para qualquer pessoa (sócio, freelancer ou agência) produzir uma peça digital que pareça da ABBA. Complementa a [identidade visual](../../00-identidade/identidade-visual.md) (documentos impressos/Office) — este manual cobre o **digital**: redes sociais, avatares, banners. Em conflito, a identidade visual manda.
 >
-> Dono: chapéu Comercial (Daniel). Evolução profissional da marca (naming de estúdio, ajuste óptico do símbolo) pode vir depois — estes arquivos são a **v1 utilizável**, e já substituem o PNG único.
+> Dono: chapéu Comercial (Daniel). Refino óptico por designer (kerning fino) pode vir depois — estes arquivos são a **versão utilizável e vigente**.
 
-## O símbolo
+## A marca
 
-**A fonte** (v2, 2026-08-08 — decisão do fundador): um nó-origem único na base, do qual jorros sobem em curvas e se ramificam numa rede de nós dourados que se espalha. Três leituras convivem de propósito: uma fonte jorrando, uma raiz invertida (a metáfora das raízes que já é da casa — "começa na diretoria e se estende até alcançar cada pessoa") e uma rede de nós. O símbolo carrega a ideia sozinho; nenhum material explica o nome.
+**Wordmark limpo (v4, 2026-08-11 — decisão do Daniel, pendente aval do Pedro):** só a palavra **ABBA** em Cormorant Garamond SemiBold (600), espaçamento de 12% entre letras (0.12em). Sem ponto, sem tagline, sem símbolo pictórico — o padrão das consultorias premium. O nome é um palíndromo; a tipografia carrega a marca sozinha.
 
-O cérebro-grafo anterior ([abba-logo.png](abba-logo.png)) fica preservado como histórico — não usar em material novo. Arquivos vigentes:
+Arquivos vigentes (pasta [`oficial/`](oficial/)):
 
 | Arquivo | Uso |
 |---|---|
-| `abba-logo-simbolo.svg` | Símbolo dourado, fundo transparente — sobre branco ou navy |
-| `abba-logo-simbolo-branco.svg` | Monocromático branco — sobre foto escura ou navy quando o dourado competir |
-| `abba-logo-simbolo-navy.svg` | Monocromático navy — impressão 1 cor, fundos claros |
-| `abba-logo-horizontal-claro.svg` | Símbolo + ABBA + "Consultoria de IA" — cabeçalhos sobre fundo claro |
-| `abba-logo-horizontal-escuro.svg` | Idem, sobre navy — rodapé de slide escuro, assinatura de vídeo |
-| `abba-logo-empilhado-claro.svg` / `-escuro.svg` | Capa de documento, certificado, encerramento de deck |
-| `abba-avatar-1080.svg` | Avatar 1:1 — LinkedIn, Instagram, WhatsApp Business (o símbolo centrado com margem para recorte circular) |
-| `abba-banner-linkedin-empresa.svg` | Capa da página LinkedIn (2256×382 = 1128×191 @2x), com a headline canônica |
-| `abba-capa-linkedin-pessoal.svg` | Capa de perfil pessoal dos sócios (1584×396), sem headline — o perfil fala por si |
+| `oficial/avatar.png` | Avatar 1080×1080 navy — LinkedIn, Instagram, WhatsApp Business |
+| `oficial/horiz-claro.png` / `horiz-escuro.png` | Lockup horizontal sobre branco / sobre navy |
+| `oficial/banner.png` | Capa da página LinkedIn empresa (2256×382), editorial branco com a headline |
+| `oficial/capa.png` | Capa de perfil pessoal dos sócios (1584×396), navy |
+| `oficial/cartao-frente.png` + `nominais/cartao-*.png` | Cartão de visita 9×5 (frente comum + verso nominal) |
+| `oficial/nominais/ass-*.png` | Assinaturas de e-mail nominais |
+| `oficial/timbrado.png` | Papel timbrado A4 |
+| `evento/` | Kit de produção para brindes: PNGs transparentes nas 3 cores, combinações e PDF vetorial |
 
-Regras do símbolo:
-1. Nunca recolorir fora das três versões (dourado, branco, navy). Nunca gradiente.
-2. Margem de respiro mínima: a altura do nó-origem em volta de todo o logo.
-3. Sobre foto: só a versão branca, e só se a foto for escura e calma.
-4. O wordmark "ABBA" sem símbolo é permitido em contexto onde o símbolo já apareceu (rodapé de carrossel).
-5. O símbolo aponta para cima e o nó-origem fica embaixo — nunca rotacionar nem espelhar verticalmente.
+Regras da marca:
+1. Nunca recolorir fora das três cores (navy, dourado, branco). Nunca gradiente, sombra ou contorno.
+2. Nunca esticar, inclinar ou espelhar.
+3. Margem de respiro mínima: metade da altura do A em volta de toda a marca.
+4. Sobre foto: só branco ou dourado, e só se a foto for escura e calma.
+5. A fonte da marca é Cormorant Garamond 600 com 0.12em — não recompor em outra fonte.
 
 ## Paleta (a mesma da identidade visual — nenhuma cor nova)
 
@@ -45,7 +44,7 @@ Contraste (verificado): navy sobre branco 12,6:1 ✅ · branco sobre navy 12,6:1
 ## Tipografia
 
 - **Office/impresso:** Aptos / Aptos Display (já definido na identidade visual).
-- **Digital/social (este manual):** serifada **Cambria → Georgia → Times New Roman** (pilha com fallback universal; Cambria é a serifada do padrão editorial). Para web futura: **Source Serif 4** (livre, Google Fonts) é a equivalente aprovada — já é a serifada do design system do portal.
+- **Digital/social (este manual):** display e marca em **Cormorant Garamond** (OFL, em [`fonts/`](fonts/)); corpo de texto em **EB Garamond**. Fallback quando as fontes não estiverem instaladas: Georgia. Para web futura: as mesmas, via Google Fonts.
 - Sans-serif de apoio (legendas de UI, se precisar): Inter ou a do sistema.
 - Versaletes dourados com letter-spacing largo (≥ 0.3em) para eyebrows — a assinatura tipográfica do padrão editorial.
 

@@ -24,8 +24,8 @@ Existem duas famílias em uso: a canônica ("Instalamos capacidade de IA — e p
 | Setor | Consultoria e serviços empresariais |
 | Tamanho | 2–10 |
 | Especialidades | Transformação em IA · Agentes de IA · Avaliação de oportunidades de IA · Capacitação executiva em IA · Governança e LGPD |
-| Avatar | `abba-avatar-1080` (exportar PNG do kit) |
-| Capa | `abba-banner-linkedin-empresa` |
+| Avatar | `marca/oficial/avatar.png` |
+| Capa | `marca/oficial/banner.png` |
 
 **Sobre** (o texto canônico do posicionamento, já aprovado em doutrina):
 
@@ -46,7 +46,7 @@ Existem duas famílias em uso: a canônica ("Instalamos capacidade de IA — e p
 4. Divisão de chapéus: Daniel — comercial, entrega e financeiro; Pedro — capacitação e tecnologia (stack CrewAI).
 5. CTA: "Quer ver o método na sua empresa? Peça o Mapa de Vazamento gratuito."
 
-**Capa:** `abba-capa-linkedin-pessoal`. **Foto:** `[PREENCHER]` — foto real, fundo limpo, luz natural; nunca avatar de IA (coerência: quem vende prova não usa rosto sintético).
+**Capa:** `marca/oficial/capa.png`. **Foto:** `[PREENCHER]` — foto real, fundo limpo, luz natural; nunca avatar de IA (coerência: quem vende prova não usa rosto sintético).
 
 ### 2.3 Instagram (@abba.consultoria — verificar disponibilidade; alternativas: @abbaconsultoria, @abba.ia)
 
@@ -105,7 +105,7 @@ Quando contratarem uma agência/profissional de marketing, entregar este documen
 **Inegociável (doutrina, muda só com decisão registrada dos sócios):**
 - Headline e prateleira ("camada independente de prova, com músculo de execução"); a palavra "auditoria" só como analogia, nunca como categoria.
 - Tabela de vocabulário (as palavras escolhem o comprador); pt-BR; sem emoji, sem "jornada", sem superlativo sem número.
-- Paleta navy+dourado e o símbolo cérebro-grafo; domínio único abbaservices.com.br; e-mail único contato@.
+- Paleta navy+dourado e o wordmark ABBA limpo (v4); domínio único abbaservices.com.br; e-mail único contato@.
 - Zero clientes inventados; número só com premissa; o que deu errado se publica na mesma tipografia do que deu certo.
 - CTA único: Mapa de Vazamento.
 
