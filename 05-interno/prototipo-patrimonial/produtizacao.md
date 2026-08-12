@@ -1,6 +1,6 @@
 # Arquiteto Patrimonial — Plano de Produtização (protótipo → SaaS B2B)
 
-> **Camada:** interno (estratégia + engenharia). Fonte de verdade de negócio da produtização do [protótipo patrimonial](plano-de-construcao.md). O código do produto destina-se a um **repositório próprio** (`arquiteto-patrimonial`) — hoje **staged** em [`arquiteto-patrimonial/`](arquiteto-patrimonial/README.md) dentro do abba-ops (a criação do repo no GitHub é o próximo gatilho — ver §10). Este documento é o porquê e o quê.
+> **Camada:** interno (estratégia + engenharia). Fonte de verdade de negócio da produtização do [protótipo patrimonial](plano-de-construcao.md). O código do produto vive no **repositório próprio no ar** — `github.com/DanielMoraesCoca/arquiteto-patrimonial` (privado, publicado 2026-08-12) — com uma cópia-espelho staged em [`arquiteto-patrimonial/`](arquiteto-patrimonial/README.md) neste abba-ops. Este documento é o porquê e o quê (ver §10 para o estado da Fase 0).
 >
 > **Decisão-âncora do sócio (2026-08-12):** o usuário do produto é **o PROFISSIONAL** (advogado / contador / planejador patrimonial), não o consumidor final. "Disponível a qualquer um" = qualquer profissional assina e usa com os clientes dele. Preserva EOAB + modelo centauro. Produto **B2B SaaS**.
 >
@@ -71,20 +71,20 @@ CrewAI Factory/VPC, login federado corporativo, versionamento em grafo do corpus
 
 ## 10. Estado da Fase 0 (2026-08-12) — o que foi feito nesta rodada
 
-**Bundle do produto montado e versionado** em [`arquiteto-patrimonial/`](arquiteto-patrimonial/README.md) (38 arquivos), pronto para ser levantado para o repo próprio quando ele existir. O que entrou:
+**Bundle do produto montado, versionado e publicado** (38 arquivos). Vive em dois lugares: a cópia-espelho staged em [`arquiteto-patrimonial/`](arquiteto-patrimonial/README.md) neste abba-ops, e agora também no **repo próprio no ar** — `github.com/DanielMoraesCoca/arquiteto-patrimonial` (privado), populado 1:1 em 2026-08-12 por uma sessão-irmã do Claude Code escopada nos dois repos. A raiz do repo é `README.md`/`flow/`/`app/`/`docs/`/`deploy/`, como o deploy do AMP espera. O que entrou:
 
 - **Flow (runtime CrewAI):** o scaffold + os stubs sem-infra **implementados** — aritmética real dos cenários ([`obrigacoes.py`](arquiteto-patrimonial/flow/src/patrimonio_flow/tools/obrigacoes.py): alíquota controlada 15%, rendimento estimado, câmbio e ITCMD por UF, custo tributário × sucessório em horizontes de 5/10 anos com premissas declaradas); **hook de PII pré-LLM** ([`pii.py`](arquiteto-patrimonial/flow/src/patrimonio_flow/pii.py): mascara CPF/CNPJ/e-mail/telefone/RG antes do modelo, de-para só no backend); **metadados de corpus vivo** (`FrescorDoc`: `is_current`/`supersedes`/`last_verified`/`ttl_dias` em `rag_corpus.py`); campos de produto nos schemas (`tenant_id`/`profissional_id`/`teto_usd_caso`). `python -m compileall` limpo.
 - **App (Next.js + BFF), esqueleto:** cliente AMP só-backend (`amp-client.ts`, Bearer no servidor), rotas BFF `kickoff`/`status`/`hitl/webhook`/`hitl/resume`, `schema.sql` Postgres com **RLS por `tenant_id`** (via `current_setting('app.tenant_id')`) + nome do cliente cifrado + `expira_em` (TTL LGPD), guarda de orçamento, telas stub de intake e revisão, tipos de domínio.
 - **Docs do repo:** `README.md` (fronteira EOAB, guarda-corpos), `docs/ARCHITECTURE.md` (as costuras ponta a ponta), `deploy/amp.md` (deploy do Flow no AMP), `.gitignore` (exclui `.env`/`*.key`/`*.db`/`uploads/`).
 - **Guardas:** nada roda com LLM real nem segredo; nenhum PII no bundle; docs passaram no **Revisor** (régua v1.2.1).
 
-**Bloqueio conhecido (próximo gatilho imediato):** a criação do repo `arquiteto-patrimonial` no GitHub **falhou por permissão** — o app de integração desta sessão não tem escopo de criação de repositório (403). O bundle está preservado no abba-ops. Para destravar, o sócio cria o repo vazio (privado, `DanielMoraesCoca/arquiteto-patrimonial`) em um clique **ou** me dá acesso a ele; então a árvore é levantada 1:1 (o bundle já é a raiz esperada pelo deploy do AMP).
+**Bloqueio resolvido (2026-08-12):** a criação do repo pela integração desta sessão havia falhado por permissão (403, sem escopo de criar repo); o sócio criou o repo vazio no GitHub e uma **sessão-irmã** (escopada em `arquiteto-patrimonial` + `abba-ops`) subiu o bundle 1:1 para a branch `main`. A cópia-espelho segue aqui no abba-ops como fonte-verdade de negócio; a partir de agora, mudanças no **código** do produto vão no repo próprio, e este pacote de doutrina permanece a referência.
 
 **Demais gatilhos da Fase 0 (dependem de gente/chaves):** ingerir o corpus real (precisa do advogado curando as fontes — caminho crítico) · deploy no AMP staging (precisa das credenciais) · rodar um caso ponta a ponta com LLM e corpus reais.
 
 ## Ligações
 
-[Plano do protótipo](plano-de-construcao.md) · [Especificação dos agentes](especificacao-agentes.md) · [Questionário](questionario-perfil.md) · [Corpus](corpus-conhecimento.md) · [Avaliação e métrica](avaliacao-e-metrica.md) · [Bundle do produto](arquiteto-patrimonial/README.md) · [Scaffold (degrau-2)](scaffold/README.md) · Repo de produto: `arquiteto-patrimonial` (a criar) · [Registro de decisões](../registro-de-decisoes.md)
+[Plano do protótipo](plano-de-construcao.md) · [Especificação dos agentes](especificacao-agentes.md) · [Questionário](questionario-perfil.md) · [Corpus](corpus-conhecimento.md) · [Avaliação e métrica](avaliacao-e-metrica.md) · [Bundle do produto (espelho)](arquiteto-patrimonial/README.md) · [Scaffold (degrau-2)](scaffold/README.md) · Repo de produto (no ar): `github.com/DanielMoraesCoca/arquiteto-patrimonial` · [Registro de decisões](../registro-de-decisoes.md)
 
 ## Fontes da pesquisa (2026-08-12)
 
