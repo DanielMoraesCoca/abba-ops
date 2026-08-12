@@ -1,4 +1,0 @@
-[console_scripts]
-kickoff = patrimonio_flow.main:kickoff
-plot = patrimonio_flow.main:plot
-run_crew = patrimonio_flow.main:kickoff

@@ -21,3 +21,7 @@ dist/
 *.db
 data/
 uploads/
+
+# build artifacts (setuptools/uv)
+build/
+*.egg-info/

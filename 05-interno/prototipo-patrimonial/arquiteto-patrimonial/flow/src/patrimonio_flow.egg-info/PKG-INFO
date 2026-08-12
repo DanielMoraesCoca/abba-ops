@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: patrimonio-flow
-Version: 0.1.0
-Summary: Prototipo ABBA — apoio a planejamento patrimonial internacional (ferramenta do advogado; conformidade-primeiro)
-Requires-Python: >=3.11
-Requires-Dist: crewai>=1.15.0
-Requires-Dist: pydantic>=2.7
-Provides-Extra: dev
-Requires-Dist: pytest; extra == "dev"
