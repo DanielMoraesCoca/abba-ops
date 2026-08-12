@@ -12,6 +12,8 @@
 
 Existem duas famílias em uso: a canônica ("Instalamos capacidade de IA — e provamos, de fora, o que ela mudou") e a dos materiais enviáveis ("Tornamos a sua empresa AI native"). **Default desta v1: a canônica** — é a que obedece à regra §1 do posicionamento (a primeira frase diz o que não dá para fazer de dentro) e é a que nenhum concorrente pode copiar sem mudar de negócio. A alternativa em camadas ("Tornamos a sua empresa AI native — e provamos, com número, o que mudou") fica registrada caso os sócios prefiram a promessa-fim na frente. **Uma escolha, todos os canais** — banner, bio, site futuro.
 
+**Variantes com a linguagem do Pedro (registradas 2026-08-12, da reunião com a incorporadora):** a fala do Pedro em reunião real já vende a canônica com outras palavras — "a produtividade da ponta fica com a pessoa, não volta pra empresa; o que a gente quer materializar é o embedded" e a mesa de três pés (tecnologia, processos, pessoas em paralelo). Duas taglines candidatas derivadas, para o aval conjunto: **A)** "IA embutida no processo, não na ponta: instalamos capacidade de IA — e provamos, de fora, o que ela mudou." **B)** "Pessoas, processos e tecnologia na mesma raiz: instalamos capacidade de IA — e provamos, de fora, o que mudou." Ambas cabem nos 220 caracteres do LinkedIn; a decisão continua sendo uma só para todos os canais.
+
 ## 2. Perfis — prontos para publicar
 
 ### 2.1 Página LinkedIn da empresa
