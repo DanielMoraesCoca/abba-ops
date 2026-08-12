@@ -1,0 +1,23 @@
+# segredos — NUNCA commitar
+.env
+.env.*
+*.pem
+*.key
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+storage/          # CREWAI_STORAGE_DIR local
+
+# node
+node_modules/
+.next/
+dist/
+*.log
+
+# dados de caso / PII — jamais no git
+*.db
+data/
+uploads/

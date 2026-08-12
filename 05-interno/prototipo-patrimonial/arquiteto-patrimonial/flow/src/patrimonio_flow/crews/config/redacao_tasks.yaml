@@ -1,0 +1,14 @@
+task_redigir_minuta:
+  description: >
+    Redija a minuta final em pt-BR para revisão do advogado responsável, consolidando
+    todo o material do caso. Estrutura FIXA do corpo (markdown):
+    1. Sumário executivo · 2. Perfil (síntese) · 3. Red flags e condicionantes ·
+    4. Alternativas de estrutura com trade-offs · 5. Pacote de obrigações por alternativa ·
+    6. Cenários projetados · 7. Limites desta análise · 8. Fontes.
+    Incorpore o feedback do advogado quando houver. Não invente fontes: use apenas os
+    doc_ids/chunk_ids presentes no material recebido.
+    Material do caso: {caso_json} · Feedback do advogado: {feedback}
+  expected_output: >
+    MinutaFinal completa, com corpo_markdown na estrutura fixa, fontes_doc_ids,
+    limites_da_analise não vazio e o rodapé obrigatório inalterado.
+  agent: redator_juridico

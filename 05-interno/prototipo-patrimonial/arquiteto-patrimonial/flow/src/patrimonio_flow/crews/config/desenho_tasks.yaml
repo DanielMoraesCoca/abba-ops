@@ -1,0 +1,22 @@
+task_desenhar_alternativas:
+  description: >
+    Com a análise jurídica a seguir como contexto, proponha 2 a 3 desenhos ALTERNATIVOS
+    de estrutura patrimonial para o perfil — veículos, jurisdições, sequência de
+    implantação, custo anual de manutenção estimado, trade-offs. Cada elemento com
+    source_ids do corpus. Endereço obrigatório de cada red flag brando listado.
+    Pressuposto inegociável: tudo declarado e tributado no Brasil.
+    Análise: {analise_json} · Red flags brandos: {flags_brandos} · Perfil: {perfil_json}
+  expected_output: >
+    Lista de DesenhoEstrutura completos (2-3), com elementos citados e trade-offs honestos.
+  agent: arquiteto_estruturas
+
+task_critica_adversarial:
+  description: >
+    Ataque cada desenho a seguir como advogado de contraparte e como auditor fiscal.
+    Produza os 3 ataques mais fortes por desenho, classificados (fatal | mitigavel | menor),
+    cada um com base citada (chunk_ids) e mitigação quando existir.
+    Desenhos: {desenhos_json} · Perfil: {perfil_json}
+  expected_output: >
+    CriticaAdversarial por desenho, na mesma ordem dos desenhos recebidos.
+  agent: critico_adversarial
+  context: [task_desenhar_alternativas]
