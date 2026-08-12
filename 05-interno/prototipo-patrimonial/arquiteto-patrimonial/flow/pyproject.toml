@@ -11,6 +11,17 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest"]
 
+# Entrypoints que o CrewAI AMP espera de um projeto Flow (detecção + run).
+[project.scripts]
+kickoff = "patrimonio_flow.main:kickoff"
+run_crew = "patrimonio_flow.main:kickoff"
+plot = "patrimonio_flow.main:plot"
+
+# Marca o projeto como Flow para a validação de deploy do AMP
+# (sem isto o detector procura o layout de Crew — src/<pkg>/crew.py + config/).
+[tool.crewai]
+type = "flow"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

@@ -154,3 +154,18 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
 def kickoff_exemplo(perfil: S.PerfilEstruturado) -> str:
     flow = PatrimonioFlow()
     return flow.kickoff(inputs={"perfil": perfil.model_dump()})
+
+
+# --- Entrypoints padrão do CrewAI (registrados em [project.scripts]) --------
+# A API do AMP injeta os inputs em runtime (POST /kickoff {"inputs": {...}});
+# estas funções existem para a detecção do projeto e o run local via CLI.
+
+def kickoff():
+    """Entrypoint padrão. Sem inputs, o intake falha o assert de propósito —
+    um caso sempre chega com PerfilEstruturado via a API do AMP."""
+    PatrimonioFlow().kickoff()
+
+
+def plot():
+    """Gera o diagrama do Flow (crewai plot)."""
+    PatrimonioFlow().plot()
