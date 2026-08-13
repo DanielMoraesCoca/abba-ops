@@ -88,7 +88,15 @@ CrewAI Factory/VPC, login federado corporativo, versionamento em grafo do corpus
 3. **Imports absolutos, não relativos:** o runtime do AMP carrega o módulo sem contexto de pacote → `from .` quebra com `ImportError: attempted relative import`. Todo import intra-pacote é `from patrimonio_flow.X import Y`. Verificável instalando o pacote num venv isolado (`uv pip install .`) e importando o entrypoint de fora do `src`.
 4. **Kickoff pela rede:** a UI "Test Endpoints" do AMP (formulário de checkbox) **não** expressa objeto aninhado no `perfil` → "Invalid JSON syntax". Usar `POST /kickoff` com corpo `{"inputs":{"perfil":{…}}}` via `curl`. **As sessões Claude não alcançam `*.crewai.com`** (egress da org bloqueia) — disparar do laptop do sócio ou liberar o host na allowlist do environment.
 
-**Único gatilho restante da Fase 0 (caminho crítico):** ingerir o **corpus real** — precisa do **advogado nomeado (Héctor)** curando as fontes. Sem ele, um caso *liberado* (`aceite_transparencia:true`, sem red flags) para no RAG stub (`NotImplementedError`). Depois: rodar um caso liberado ponta a ponta com LLM + corpus reais.
+**Onda 1 de solidez (2026-08-13) — melhorias sem dependência de corpus/chave, verificadas localmente (19 testes pytest verdes, zero LLM):**
+- **Corpus vivo/bitemporal:** `FrescorDoc` ganhou vigência (`valid_from`/`valid_to`/`superseded_by`) + `desatualizado()`/`vigente_em()`; `_buscar` implementado sobre corpus por arquivo (`flow/corpus/` — vazio, curadoria do advogado) com filtro `as_of` (lei revogada só com `incluir_historico`).
+- **Guardrail de citação** passou a checar **sustentação a nível de trecho** (o texto citado precisa amparar a claim, não só o `chunk_id` existir) + abstenção estrutural.
+- **Guarda de custo** dentro do Flow (`_cobrar_custo` aborta ao estourar `teto_usd_caso`) + `max_rpm`.
+- **Gate humano não-burlável** (render exige `gate_humano_ok`).
+- **Eval determinístico completo:** o gate bate **12/12 personas** do golden set (portão de CI, zero LLM) — antes só 1 caso vivo.
+- `data_caso` (as_of) e `tenant_id` propagados como contexto do caso. O RAG real (embeddings) e a extração de documento do cliente seguem para Fase 1.
+
+**Único gatilho restante da Fase 0 (caminho crítico):** ingerir o **corpus real** — precisa do **advogado nomeado (Héctor)** curando as fontes ([briefing-corpus-hector.md](briefing-corpus-hector.md)). Sem ele, um caso *liberado* (`aceite_transparencia:true`, sem red flags) roda até a Crew de Análise e se **abstém** (corpus vazio → nada a citar). Depois: rodar um caso liberado ponta a ponta com LLM + corpus reais.
 
 ## Ligações
 
