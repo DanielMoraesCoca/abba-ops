@@ -106,6 +106,17 @@ def _tokens(texto: str) -> list[str]:
     return [t for t in re.split(r"[^0-9a-zà-ú]+", texto.lower()) if len(t) > 2]
 
 
+def carregar_fichas(corpus_dir: Optional[str] = None) -> dict[str, "FrescorDoc"]:
+    """Lê só as fichas FrescorDoc do manifest (sem os chunks). Alimenta o
+    monitoramento de obsolescência do corpus."""
+    base = Path(corpus_dir) if corpus_dir else _CORPUS_DIR_DEFAULT
+    manifest = base / "manifest.json"
+    if not manifest.exists():
+        return {}
+    dados = json.loads(manifest.read_text(encoding="utf-8"))
+    return {d["doc_id"]: FrescorDoc(**d) for d in dados.get("docs", [])}
+
+
 def carregar_corpus(corpus_dir: Optional[str] = None) -> list[ChunkRecuperado]:
     """Lê o corpus curado do disco: manifest.json (fichas FrescorDoc por doc) +
     chunks/<doc_id>.jsonl (uma linha por chunk: {chunk_id, artigo, texto, tipo}).
