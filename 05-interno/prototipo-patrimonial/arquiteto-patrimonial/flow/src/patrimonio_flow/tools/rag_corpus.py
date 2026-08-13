@@ -26,6 +26,7 @@ nada e o desenho se abstém (citação-ou-abstenção). Sprint futuro: busca hí
 from __future__ import annotations
 
 import json
+import os
 import re
 from datetime import date, timedelta
 from pathlib import Path
@@ -34,9 +35,20 @@ from typing import Callable, Optional
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 
-# Diretório default do corpus curado (relativo ao pacote flow/). Sobrescrevível
-# por env CORPUS_DIR no deploy. Vazio até o advogado curar (briefing-corpus-hector.md).
-_CORPUS_DIR_DEFAULT = Path(__file__).resolve().parents[3] / "corpus"
+# Raiz do projeto flow/ e corpus default (curado, vazio até o advogado — ver
+# briefing-corpus-hector.md). A env CORPUS_DIR aponta para outro corpus (ex.:
+# 'corpus-demo' para testar o pipeline completo sem o advogado); caminho relativo
+# resolve contra a raiz do flow/.
+_FLOW_ROOT = Path(__file__).resolve().parents[3]
+_CORPUS_DIR_DEFAULT = _FLOW_ROOT / "corpus"
+
+
+def _resolver_corpus_dir(corpus_dir: Optional[str]) -> Path:
+    d = corpus_dir or os.environ.get("CORPUS_DIR")
+    if not d:
+        return _CORPUS_DIR_DEFAULT
+    p = Path(d)
+    return p if p.is_absolute() else (_FLOW_ROOT / p)
 
 
 def _parse_iso(s: Optional[str]) -> Optional[date]:
@@ -109,7 +121,7 @@ def _tokens(texto: str) -> list[str]:
 def carregar_fichas(corpus_dir: Optional[str] = None) -> dict[str, "FrescorDoc"]:
     """Lê só as fichas FrescorDoc do manifest (sem os chunks). Alimenta o
     monitoramento de obsolescência do corpus."""
-    base = Path(corpus_dir) if corpus_dir else _CORPUS_DIR_DEFAULT
+    base = _resolver_corpus_dir(corpus_dir)
     manifest = base / "manifest.json"
     if not manifest.exists():
         return {}
@@ -122,7 +134,7 @@ def carregar_corpus(corpus_dir: Optional[str] = None) -> list[ChunkRecuperado]:
     chunks/<doc_id>.jsonl (uma linha por chunk: {chunk_id, artigo, texto, tipo}).
     Corpus vazio → lista vazia → o sistema se abstém. Sem cache global de
     propósito: o corpus é pequeno e o determinismo dos testes vem primeiro."""
-    base = Path(corpus_dir) if corpus_dir else _CORPUS_DIR_DEFAULT
+    base = _resolver_corpus_dir(corpus_dir)
     manifest = base / "manifest.json"
     if not manifest.exists():
         return []

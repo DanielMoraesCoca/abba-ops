@@ -1,0 +1,18 @@
+{
+  "corpus_version": "demo-v1-FICTICIO",
+  "note": "LEIS FICTICIAS para teste do pipeline. NAO E AUTORIDADE JURIDICA. Nunca usar em caso real. O corpus real e curado por advogado (corpus/).",
+  "docs": [
+    {"doc_id": "demo-lei-exterior", "tipo": "lei", "valid_from": "2024-01-01",
+     "last_verified": "2026-08-01", "ttl_dias": 180, "fonte_url": "DEMO"},
+    {"doc_id": "demo-dcbe", "tipo": "regulamento", "valid_from": "2024-01-01",
+     "last_verified": "2026-08-01", "ttl_dias": 180, "fonte_url": "DEMO"},
+    {"doc_id": "demo-cc-sucessao", "tipo": "lei", "valid_from": "2003-01-01",
+     "last_verified": "2026-08-01", "ttl_dias": 180, "fonte_url": "DEMO"},
+    {"doc_id": "demo-ficha-eua", "tipo": "ficha_jurisdicao", "valid_from": "2024-01-01",
+     "last_verified": "2026-08-01", "ttl_dias": 180, "fonte_url": "DEMO"},
+    {"doc_id": "demo-fatca", "tipo": "regulamento", "valid_from": "2015-01-01",
+     "last_verified": "2026-08-01", "ttl_dias": 180, "fonte_url": "DEMO"},
+    {"doc_id": "demo-itcmd", "tipo": "oficial", "valid_from": "2024-01-01",
+     "last_verified": "2026-08-01", "ttl_dias": 90, "fonte_url": "DEMO"}
+  ]
+}
