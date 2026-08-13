@@ -27,4 +27,5 @@ class RedacaoCrew:
     @crew
     def crew(self) -> Crew:
         return Crew(agents=self.agents, tasks=self.tasks,
-                    process=Process.sequential, memory=False, verbose=True)
+                    process=Process.sequential, memory=False, verbose=True,
+                    max_rpm=30)  # rate-limit: defesa a mais de custo (o teto duro é _cobrar_custo)

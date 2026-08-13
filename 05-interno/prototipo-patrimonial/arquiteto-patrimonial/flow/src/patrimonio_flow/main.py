@@ -12,6 +12,7 @@ teto de gasto por caso; PII direta nunca vai ao provedor (hook de redação).
 from __future__ import annotations
 
 import json
+from datetime import date
 
 from crewai.flow.flow import Flow, listen, or_, router, start
 from crewai.flow.human_feedback import human_feedback
@@ -26,6 +27,18 @@ TETO_USD_POR_CASO = 5.0
 MAX_CICLOS_REDESENHO = 2
 VERSAO_CORPUS = "corpus-v0"  # TODO(Sprint 1): ler do manifesto do corpus
 
+# Estimativa de custo por caso (ordem de grandeza — calibrar no eval com preços
+# reais do provedor). Guarda o teto declarado em teto_usd_caso; o Flow aborta ao
+# estourar. Mesmo padrão do --max-usd do cérebro.
+PRECO_USD_1K_PROMPT = 0.003
+PRECO_USD_1K_COMPLETION = 0.015
+
+
+def estimar_custo_usd(prompt_tokens: int, completion_tokens: int) -> float:
+    """Custo estimado em USD a partir de tokens. Pura — testável sem LLM."""
+    return (max(prompt_tokens, 0) / 1000.0) * PRECO_USD_1K_PROMPT + \
+           (max(completion_tokens, 0) / 1000.0) * PRECO_USD_1K_COMPLETION
+
 
 @persist()
 class PatrimonioFlow(Flow[S.EstadoCaso]):
@@ -35,7 +48,26 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
     def _rag_tool(self) -> RagCorpusTool:
         # callback registra no estado todo chunk entregue aos agentes —
         # é o que torna o guardrail anti-citação-órfã verificável.
-        return RagCorpusTool(on_retrieve=lambda ids: self.state.chunks_recuperados.extend(ids))
+        # as_of/tenant_id são setados aqui (contexto do caso), NÃO pelo agente:
+        # o corpus é filtrado pela data do caso (vigência) e pelo tenant.
+        return RagCorpusTool(
+            on_retrieve=lambda ids: self.state.chunks_recuperados.extend(ids),
+            as_of=self.state.data_caso or None,
+            tenant_id=self.state.tenant_id)
+
+    def _cobrar_custo(self, resultado) -> None:
+        """Acumula o custo estimado do crew no estado e ABORTA se estourar o teto
+        do caso. Guarda de orçamento dentro do Flow (defesa a mais além do BFF)."""
+        uso = getattr(resultado, "token_usage", None)
+        if uso is None:
+            return
+        pt = getattr(uso, "prompt_tokens", 0) or 0
+        ct = getattr(uso, "completion_tokens", 0) or 0
+        self.state.custo_acumulado_usd += estimar_custo_usd(pt, ct)
+        if self.state.custo_acumulado_usd > self.state.teto_usd_caso:
+            raise RuntimeError(
+                f"Teto de custo do caso excedido: "
+                f"US$ {self.state.custo_acumulado_usd:.2f} > US$ {self.state.teto_usd_caso:.2f}")
 
     # ------------------------------------------------------------ etapas
 
@@ -44,6 +76,10 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         """Parser determinístico: respostas do questionário → PerfilEstruturado.
         No protótipo, o perfil chega pronto via kickoff(inputs=...)."""
         self.state.versao_corpus = VERSAO_CORPUS
+        # data-de-referência do caso: filtra o corpus por vigência (as_of). Sem
+        # data explícita, usa hoje — o caso é sempre avaliado contra a lei vigente.
+        if not self.state.data_caso:
+            self.state.data_caso = date.today().isoformat()
         assert self.state.perfil is not None, "kickoff exige inputs com o PerfilEstruturado"
         return self.state.perfil
 
@@ -69,6 +105,7 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         resultado = crew.crew().kickoff(inputs={
             "perfil_json": self.state.perfil.model_dump_json(),
         })
+        self._cobrar_custo(resultado)
         # tasks sequenciais: tributária, sucessória, jurisdições
         outs = [t.pydantic for t in resultado.tasks_output]
         self.state.analise = S.AnaliseJuridica(
@@ -88,6 +125,7 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
                 "perfil_json": self.state.perfil.model_dump_json(),
                 "desenhos_json": "",  # preenchido pelo context da 2ª task em runtime
             })
+            self._cobrar_custo(resultado)
             desenhos: list[S.DesenhoEstrutura] = resultado.tasks_output[0].pydantic.desenhos
             criticas: list[S.CriticaAdversarial] = resultado.tasks_output[1].pydantic.criticas
             for d, c in zip(desenhos, criticas):
@@ -119,6 +157,9 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         """Gate humano obrigatório. Protótipo: console; piloto: provider assíncrono
         (HumanFeedbackPending + Flow.from_pending/resume). Histórico completo em
         self.human_feedback_history → trilha de auditoria da minuta."""
+        # marca que o gate humano foi ALCANÇADO — render_final exige isto (o
+        # gate é não-burlável: nenhuma minuta sai sem passar por aqui).
+        self.state.gate_humano_ok = True
         return {
             "desenhos": [d.model_dump() for d in self.state.desenhos],
             "obrigacoes": [o.model_dump() for o in self.state.obrigacoes],
@@ -137,6 +178,7 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
                          "obrigacoes", "cenarios", "versao_corpus"}),
             "feedback": json.dumps(self.state.feedback_advogado),
         })
+        self._cobrar_custo(resultado)
         self.state.minuta = resultado.tasks_output[0].pydantic
         return self.state.minuta
 
@@ -144,6 +186,11 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
     def render_final(self):
         """Determinístico: minuta + trilha (versão do corpus, chunks usados,
         histórico de feedback humano). TODO(Sprint 3): DOCX padrão visual ABBA."""
+        # gate não-burlável: nenhuma minuta é renderizada sem o gate humano ter
+        # sido alcançado (controle anti-UPL/EOAB). Topologia já garante isto
+        # (render_final ← crew_redacao ← "aprovado" ← gate2); a asserção é a trava.
+        assert self.state.gate_humano_ok, (
+            "Minuta sem gate humano — bloqueado. A saída exige revisão do advogado.")
         m = self.state.minuta
         trilha = (f"\n\n---\nTrilha: corpus {self.state.versao_corpus} · "
                   f"{len(set(self.state.chunks_recuperados))} chunks consultados · "

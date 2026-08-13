@@ -263,7 +263,9 @@ class EstadoCaso(BaseModel):
     # --- campos de PRODUTO (multi-tenant) — isolamento por tenant é reforçado por RLS no Postgres
     tenant_id: str = ""        # o profissional/firma dono do caso; propagado em todo kickoff
     profissional_id: str = ""  # quem opera e assina (OAB/registro no app)
-    teto_usd_caso: float = 5.0 # guarda de orçamento por caso (BFF recusa kickoff acima disso)
+    teto_usd_caso: float = 5.0 # guarda de orçamento por caso (Flow aborta ao estourar)
+    data_caso: str = ""        # ISO — data-de-referência do caso; filtra o corpus por vigência (as_of)
+    gate_humano_ok: bool = False  # marcado no gate2; render_final exige True (gate não-burlável)
     versao_corpus: str = ""
     perfil: Optional[PerfilEstruturado] = None
     red_flags: Optional[RedFlagReport] = None

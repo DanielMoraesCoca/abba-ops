@@ -1,0 +1,9 @@
+{
+  "corpus_version": "v0-vazio",
+  "note": "Corpus jurídico curado por advogado nomeado. VAZIO de propósito ate a curadoria (briefing-corpus-hector.md no abba-ops). So fonte primaria/oficial entra como autoridade. Dados de cliente JAMAIS entram aqui.",
+  "formato": {
+    "docs": "lista de fichas FrescorDoc: {doc_id, tipo, valid_from, valid_to, superseded_by, last_verified, ttl_dias, fonte_url, ...}",
+    "chunks": "um arquivo chunks/<doc_id>.jsonl por documento; cada linha {chunk_id, artigo, texto, tipo}. Lei quebra por artigo, preservando #art-N no chunk_id."
+  },
+  "docs": []
+}

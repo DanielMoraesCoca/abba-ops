@@ -8,7 +8,7 @@ Assinatura CrewAI: (TaskOutput) -> tuple[bool, Any]
 from __future__ import annotations
 
 import re
-from typing import Any
+from typing import Any, Optional
 
 # Padrões de linguagem de ocultação — bloqueiam SEMPRE (conformidade-primeiro).
 PADROES_PROIBIDOS = [
@@ -21,29 +21,68 @@ PADROES_PROIBIDOS = [
     r"invis[ií]vel\s+ao\s+fisco",
 ]
 
+# Fração mínima de termos-de-conteúdo da claim que precisam aparecer nos chunks
+# citados. Abaixo disso, o source_id existe mas NÃO sustenta a afirmação
+# ("alucinação com cara de citação"): ID real, conteúdo não amparado.
+MIN_SUSTENTACAO = 0.30
 
-def make_anti_citacao_orfa(chunks_recuperados: list[str]):
-    """Fábrica: guardrail que rejeita claims citando chunk_id não recuperado nesta execução."""
+
+def _tokens(texto: str) -> list[str]:
+    return [t for t in re.split(r"[^0-9a-zà-ú]+", texto.lower()) if len(t) > 3]
+
+
+def make_anti_citacao_orfa(
+    chunks_recuperados: list[str],
+    textos: Optional[dict] = None,
+    min_sustentacao: float = MIN_SUSTENTACAO,
+):
+    """Fábrica do guardrail de citação. Três camadas, todas determinísticas:
+
+    1. ABSTENÇÃO ESTRUTURAL — claim sem fonte e sem nao_coberto=true é rejeitada
+       (o agente é OBRIGADO a se abster quando o corpus não cobre; abster-se é
+       resposta correta, não falha).
+    2. ANTI-ÓRFÃ — source_id que não foi recuperado nesta execução é rejeitado.
+    3. SUSTENTAÇÃO A NÍVEL DE TRECHO — se `textos` (chunk_id -> texto) for dado,
+       a claim precisa compartilhar ao menos `min_sustentacao` dos seus termos
+       de conteúdo com o texto dos chunks citados. Pega o caso em que o ID é
+       real mas o chunk não ampara a afirmação.
+    `textos` é uma referência viva (populada pela RagCorpusTool durante a
+    execução); None mantém o comportamento só-ID (retrocompatível)."""
 
     def anti_citacao_orfa(task_output: Any) -> tuple[bool, Any]:
         modelo = getattr(task_output, "pydantic", None)
         if modelo is None:
             return False, "Output sem modelo Pydantic; produza o schema exigido."
         recuperados = set(chunks_recuperados)
-        orfas: list[str] = []
+        problemas: list[str] = []
         for claim in getattr(modelo, "claims", []):
             if claim.nao_coberto:
                 continue  # abstenção honesta é válida
+            # (1) abstenção estrutural
             if not claim.source_ids:
-                orfas.append(f"claim sem fonte: '{claim.text[:60]}...'")
+                problemas.append(f"claim sem fonte: '{claim.text[:60]}...' — marque nao_coberto=true")
                 continue
-            for sid in claim.source_ids:
-                if sid not in recuperados:
-                    orfas.append(f"source_id '{sid}' não foi recuperado nesta execução")
-        if orfas:
+            # (2) anti-órfã
+            orfaos = [sid for sid in claim.source_ids if sid not in recuperados]
+            if orfaos:
+                problemas.append(f"source_ids não recuperados nesta execução: {orfaos}")
+                continue
+            # (3) sustentação a nível de trecho
+            if textos:
+                base = " ".join(textos.get(sid, "") for sid in claim.source_ids)
+                base_toks = set(_tokens(base))
+                claim_toks = _tokens(claim.text)
+                if claim_toks and base_toks:
+                    cobertos = sum(1 for t in claim_toks if t in base_toks)
+                    if cobertos / len(claim_toks) < min_sustentacao:
+                        problemas.append(
+                            f"claim não sustentada pelos chunks citados "
+                            f"({cobertos}/{len(claim_toks)} termos): '{claim.text[:60]}...'")
+        if problemas:
             return False, (
-                "Citações inválidas — cite APENAS chunks fornecidos pela tool de corpus, "
-                "ou marque nao_coberto=true com a lacuna: " + "; ".join(orfas[:5])
+                "Citações inválidas — cite APENAS chunks fornecidos pela tool de corpus e "
+                "só afirme o que o texto deles sustenta; senão marque nao_coberto=true com a "
+                "lacuna: " + "; ".join(problemas[:5])
             )
         return True, task_output
 

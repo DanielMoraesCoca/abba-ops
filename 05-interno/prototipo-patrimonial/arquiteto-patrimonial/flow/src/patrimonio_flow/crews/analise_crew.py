@@ -46,7 +46,8 @@ class AnaliseCrew:
     # -------- tasks
 
     def _guardrails(self):
-        return [sem_linguagem_de_ocultacao, make_anti_citacao_orfa(self.chunks_recuperados)]
+        return [sem_linguagem_de_ocultacao,
+                make_anti_citacao_orfa(self.chunks_recuperados, self.rag_tool.textos_entregues)]
 
     @task
     def task_analise_tributaria(self) -> Task:
@@ -66,4 +67,5 @@ class AnaliseCrew:
     @crew
     def crew(self) -> Crew:
         return Crew(agents=self.agents, tasks=self.tasks,
-                    process=Process.sequential, memory=False, verbose=True)
+                    process=Process.sequential, memory=False, verbose=True,
+                    max_rpm=30)  # rate-limit: defesa a mais de custo (o teto duro é _cobrar_custo)

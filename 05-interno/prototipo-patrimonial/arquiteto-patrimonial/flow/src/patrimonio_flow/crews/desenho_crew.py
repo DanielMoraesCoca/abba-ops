@@ -40,7 +40,8 @@ class DesenhoCrew:
         return Task(config=self.tasks_config["task_desenhar_alternativas"],
                     output_pydantic=S.ListaDesenhos,
                     guardrails=[sem_linguagem_de_ocultacao,
-                                make_anti_citacao_orfa(self.chunks_recuperados)])
+                                make_anti_citacao_orfa(self.chunks_recuperados,
+                                                       self.rag_tool.textos_entregues)])
 
     @task
     def task_critica_adversarial(self) -> Task:
@@ -51,4 +52,5 @@ class DesenhoCrew:
     @crew
     def crew(self) -> Crew:
         return Crew(agents=self.agents, tasks=self.tasks,
-                    process=Process.sequential, memory=False, verbose=True)
+                    process=Process.sequential, memory=False, verbose=True,
+                    max_rpm=30)  # rate-limit: defesa a mais de custo (o teto duro é _cobrar_custo)
