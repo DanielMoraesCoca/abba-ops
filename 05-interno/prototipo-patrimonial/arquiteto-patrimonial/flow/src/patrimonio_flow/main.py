@@ -12,6 +12,7 @@ teto de gasto por caso; PII direta nunca vai ao provedor (hook de redação).
 from __future__ import annotations
 
 import json
+import os
 from datetime import date
 
 from crewai.flow.flow import Flow, listen, or_, router, start
@@ -160,10 +161,9 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         # marca que o gate humano foi ALCANÇADO — render_final exige isto (o
         # gate é não-burlável: nenhuma minuta sai sem passar por aqui).
         self.state.gate_humano_ok = True
-        return {
-            "desenhos": [d.model_dump() for d in self.state.desenhos],
-            "obrigacoes": [o.model_dump() for o in self.state.obrigacoes],
-        }
+        # o payload de revisão é o mesmo item que a fila assíncrona monta (DRY):
+        from patrimonio_flow.hitl import montar_item_revisao
+        return montar_item_revisao(self.state)
 
     @listen("rejeitado")
     def caso_rejeitado(self):
@@ -191,11 +191,18 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         # (render_final ← crew_redacao ← "aprovado" ← gate2); a asserção é a trava.
         assert self.state.gate_humano_ok, (
             "Minuta sem gate humano — bloqueado. A saída exige revisão do advogado.")
+        from patrimonio_flow.render import minuta_para_docx, trilha_de_auditoria
         m = self.state.minuta
-        trilha = (f"\n\n---\nTrilha: corpus {self.state.versao_corpus} · "
-                  f"{len(set(self.state.chunks_recuperados))} chunks consultados · "
-                  f"custo acumulado US$ {self.state.custo_acumulado_usd:.2f}")
-        return m.corpo_markdown + "\n\n" + m.rodape_obrigatorio + trilha
+        trilha = trilha_de_auditoria(
+            self.state.versao_corpus, len(set(self.state.chunks_recuperados)),
+            self.state.custo_acumulado_usd)
+        # DOCX opcional: se MINUTA_DIR estiver setado, grava o documento editável.
+        # No app (Fase 1) isso é servido ao profissional; sem env, retorna o markdown.
+        minuta_dir = os.environ.get("MINUTA_DIR")
+        if minuta_dir:
+            caminho = os.path.join(minuta_dir, f"{self.state.caso_id or 'minuta'}.docx")
+            minuta_para_docx(m, caminho, trilha=trilha)
+        return m.corpo_markdown + "\n\n" + m.rodape_obrigatorio + "\n\n---\n" + trilha
 
 
 def kickoff_exemplo(perfil: S.PerfilEstruturado) -> str:
