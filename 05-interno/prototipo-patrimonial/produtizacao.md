@@ -80,7 +80,15 @@ CrewAI Factory/VPC, login federado corporativo, versionamento em grafo do corpus
 
 **Bloqueio resolvido (2026-08-12):** a criação do repo pela integração desta sessão havia falhado por permissão (403, sem escopo de criar repo); o sócio criou o repo vazio no GitHub e uma **sessão-irmã** (escopada em `arquiteto-patrimonial` + `abba-ops`) subiu o bundle 1:1 para a branch `main`. A cópia-espelho segue aqui no abba-ops como fonte-verdade de negócio; a partir de agora, mudanças no **código** do produto vão no repo próprio, e este pacote de doutrina permanece a referência.
 
-**Demais gatilhos da Fase 0 (dependem de gente/chaves):** ingerir o corpus real (precisa do advogado curando as fontes — caminho crítico) · deploy no AMP staging (precisa das credenciais) · rodar um caso ponta a ponta com LLM e corpus reais.
+**Deploy no CrewAI AMP — VIVO e validado ao vivo (2026-08-12).** O Flow está deployado (`arquiteto-patrimonial-*.crewai.com`), status Online, endpoints `/healthcheck`·`/inputs`·`/kickoff`·`/status/{id}`. Primeiro caso disparado ao vivo (`POST /kickoff` com um perfil que fere o red flag duro RF6 — `aceite_transparencia:false`): retorno `state:SUCCESS`, `result` = o relatório determinístico `CASO BLOQUEADO … RF6_recusa_transparencia (lei-14754)`, **`usage_metrics:null`** — ou seja, o gate disse "não" ao caso errado **sem gastar LLM**, ao vivo. O caminho determinístico (intake→gate1→relatório) está provado ponta a ponta no deploy real.
+
+**Aprendizados de deploy no AMP (memória de engenharia — o 1º deploy quebrou 2×):**
+1. **Working Directory = `flow/`** (monorepo — o `pyproject.toml` não está na raiz do repo).
+2. **Projeto Flow precisa de marcação e lock:** `[tool.crewai] type = "flow"` + `[project.scripts]` (`kickoff`/`run_crew`/`plot`) no `pyproject.toml`, e um **`uv.lock`** commitado (gerado com `uv lock`). Sem isso o detector procura o layout de *Crew* (`crew.py`+`config/`) e falha.
+3. **Imports absolutos, não relativos:** o runtime do AMP carrega o módulo sem contexto de pacote → `from .` quebra com `ImportError: attempted relative import`. Todo import intra-pacote é `from patrimonio_flow.X import Y`. Verificável instalando o pacote num venv isolado (`uv pip install .`) e importando o entrypoint de fora do `src`.
+4. **Kickoff pela rede:** a UI "Test Endpoints" do AMP (formulário de checkbox) **não** expressa objeto aninhado no `perfil` → "Invalid JSON syntax". Usar `POST /kickoff` com corpo `{"inputs":{"perfil":{…}}}` via `curl`. **As sessões Claude não alcançam `*.crewai.com`** (egress da org bloqueia) — disparar do laptop do sócio ou liberar o host na allowlist do environment.
+
+**Único gatilho restante da Fase 0 (caminho crítico):** ingerir o **corpus real** — precisa do **advogado nomeado (Héctor)** curando as fontes. Sem ele, um caso *liberado* (`aceite_transparencia:true`, sem red flags) para no RAG stub (`NotImplementedError`). Depois: rodar um caso liberado ponta a ponta com LLM + corpus reais.
 
 ## Ligações
 
