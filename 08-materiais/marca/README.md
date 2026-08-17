@@ -11,6 +11,8 @@
 - `grade-vitrine.html` — os 9 posts de lançamento do Instagram com conteúdo real (16 quadros; fonte editável), na tipografia da marca (v4).
 - `templates-posts.html` — os 5 templates de post editáveis (instruções no topo do arquivo), na tipografia da marca e com o wordmark limpo.
 - `export/` — os PNGs finais prontos para subir: 5 ativos de marca (cópias de `oficial/`) + as 16 imagens da grade. Regenerar a partir de `oficial/assets-oficiais.html` e `grade-vitrine.html` quando o texto mudar.
+- `posts-lancamento.html` + `export/lancamento/` — os 3 primeiros posts (12 quadros), na voz da apresentação institucional. Legendas e estratégia em [`../../03-comercial/posts-lancamento.md`](../../03-comercial/posts-lancamento.md).
+- `instagram-preview.html` + `export/instagram/` — **prévia do perfil**: como a grade fica na primeira semana, o ritmo navy/branco corrigido, o recorte 1:1 que o Instagram aplica nas capas 4:5 e um carrossel aberto no feed. As miniaturas puxam os PNGs reais — re-renderizar quando as artes mudarem.
 - `fonts/` — Cormorant Garamond e EB Garamond (OFL; licença em `LICENCA.md`).
 - **`abba-kit-inicial.pdf` — O DOCUMENTO (v4, 14 páginas)**: marca + regras, cores e tipografia, ativos, papelaria nominal, timbrado e kit de brindes, perfis prontos (LinkedIn empresa/pessoais/Instagram), grade-vitrine, estratégia de conteúdo, briefing para agência, checklist de lançamento e brief para designer. É o que se manda para o Pedro aprovar e o que se entrega à agência. Fonte editável: `kit-inicial-v4.html` (regenerar o PDF via Playwright `page.pdf`, 1240×1754).
 

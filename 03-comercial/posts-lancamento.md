@@ -66,6 +66,15 @@ A história começa com uma conversa de 45 minutos e com o seu Mapa de Vazamento
 
 contato@abbaservices.com.br
 
+## A regra da grade do Instagram
+
+A prévia do perfil ([`../08-materiais/marca/instagram-preview.html`](../08-materiais/marca/instagram-preview.html)) revelou duas coisas que só aparecem com a grade montada:
+
+1. **As três capas de lançamento são navy** — juntas viram um bloco escuro e o perfil perde o respiro do padrão editorial. Regra que fica valendo: **nunca dois navy seguidos na mesma fileira**; alternar a cor da capa a cada post produz o xadrez automaticamente (a grade tem 3 colunas). Inverter uma capa é trivial: mesmo texto, fundo branco, título em navy, termo-chave em dourado.
+2. **A grade corta as capas em 1:1.** A arte é 4:5; o Instagram tira topo e base na miniatura — o rodapé com a marca some. As três capas atuais sobrevivem porque o texto é centralizado verticalmente; em capa nova, conferir se o bloco cabe nos 80% centrais.
+
+Terceiro ponto, de calendário: três posts deixam a grade com uma fileira cheia e duas vazias, o que parece perfil abandonado. **Publicar os três em sequência curta** (mesmo dia ou mesma semana) e emendar com a grade-vitrine.
+
 ## Pendências antes de publicar
 
 1. Aval do Pedro nos três (em especial o post 2, que usa o argumento dele) e na escolha da família de headline (ver nota acima).

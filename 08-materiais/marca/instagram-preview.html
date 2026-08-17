@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ABBA — Prévia do Instagram</title>
+<!--
+  PRÉVIA DO INSTAGRAM — como o perfil fica ao começar a publicar.
+  Quadro 1: o perfil logo após os 3 posts de lançamento.
+  Quadro 2: o perfil com a grade-vitrine completa (12 posts).
+  Quadro 3: o recorte quadrado que o Instagram aplica nas capas 4:5.
+  Quadro 4: um carrossel aberto no feed.
+  As miniaturas puxam os PNGs reais de export/ — se as artes mudarem,
+  basta re-renderizar este arquivo.
+-->
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('fonts/CormorantGaramond.ttf'); font-weight: 100 900; }
+  @font-face { font-family: 'EBGaramond'; src: url('fonts/EBGaramond.ttf'); font-weight: 100 900; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #4a4a4a;
+         font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+  .sheet { width: 1500px; background: #F2F1ED; margin: 24px auto; padding: 48px 64px 56px;
+           display: flex; flex-direction: column; }
+  .head { display: flex; justify-content: space-between; align-items: baseline;
+          border-bottom: 2px solid #1B2A4A; padding-bottom: 12px; margin-bottom: 12px; }
+  .head .rt { font-family: 'Cormorant', serif; font-size: 32px; font-weight: 600; color: #1B2A4A; }
+  .head .rt b { color: #C2A35B; }
+  .head .lbl { font-size: 13px; letter-spacing: 4px; color: #5A6472; text-transform: uppercase; }
+  .intro { font-family: 'EBGaramond', serif; font-size: 16px; color: #5A6472; margin-bottom: 26px;
+           max-width: 1180px; line-height: 1.5; }
+  .intro b { color: #1B2A4A; }
+
+  /* ---------- aparelho ---------- */
+  .palco { display: flex; gap: 56px; align-items: flex-start; }
+  .fone { width: 460px; background: #FFFFFF; border-radius: 34px; overflow: hidden;
+          box-shadow: 0 14px 44px rgba(27,42,74,.22); border: 1px solid #E2E0D8; flex: 0 0 auto; }
+  .fone .barra { height: 34px; background: #FFFFFF; display: flex; align-items: center;
+                 justify-content: space-between; padding: 0 18px; font-size: 12px; font-weight: 600;
+                 color: #1B2A4A; }
+  .fone .topo { display: flex; align-items: center; gap: 8px; padding: 6px 16px 12px;
+                border-bottom: 1px solid #F0F0F0; }
+  .fone .topo .user { font-size: 15px; font-weight: 700; color: #16181C; }
+  .fone .topo .ico { margin-left: auto; color: #16181C; font-size: 16px; letter-spacing: 3px; }
+
+  .perfil { padding: 14px 16px 0; }
+  .perfil .linha1 { display: flex; align-items: center; gap: 22px; }
+  .perfil .av { width: 84px; height: 84px; border-radius: 50%; overflow: hidden; flex: 0 0 auto;
+                border: 1px solid #EDEDED; }
+  .perfil .av img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .perfil .nums { display: flex; gap: 26px; flex: 1; justify-content: space-around; }
+  .perfil .nums div { text-align: center; }
+  .perfil .nums b { display: block; font-size: 16px; color: #16181C; }
+  .perfil .nums span { font-size: 12.5px; color: #16181C; }
+  .perfil .nome { font-size: 13.5px; font-weight: 700; color: #16181C; margin-top: 12px; }
+  .perfil .cat { font-size: 13px; color: #737373; }
+  .perfil .bio { font-size: 13px; color: #16181C; line-height: 1.42; margin-top: 4px; }
+  .perfil .link { font-size: 13px; color: #00376B; font-weight: 600; margin-top: 3px; }
+  .perfil .btns { display: flex; gap: 6px; margin: 14px 0 4px; }
+  .perfil .btns div { flex: 1; text-align: center; font-size: 13px; font-weight: 600;
+                      padding: 7px 0; border-radius: 8px; }
+  .perfil .btns .b1 { background: #0095F6; color: #FFFFFF; }
+  .perfil .btns .b2 { background: #EFEFEF; color: #16181C; }
+  .perfil .dest { display: flex; gap: 18px; padding: 16px 2px 14px; }
+  .perfil .dest .d { text-align: center; }
+  .perfil .dest .c { width: 60px; height: 60px; border-radius: 50%; background: #1B2A4A;
+                     display: flex; align-items: center; justify-content: center;
+                     font-family: 'Cormorant', serif; font-size: 26px; font-weight: 600;
+                     color: #C2A35B; border: 2px solid #FFFFFF; outline: 1px solid #E4E4E4; }
+  .perfil .dest .t { font-size: 11.5px; color: #16181C; margin-top: 5px; }
+  .abas { display: flex; border-top: 1px solid #EFEFEF; margin-top: 4px; }
+  .abas div { flex: 1; text-align: center; padding: 10px 0; font-size: 15px; color: #C7C7C7;
+              letter-spacing: 2px; }
+  .abas div.on { color: #16181C; border-top: 1px solid #16181C; margin-top: -1px; }
+
+  .grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: #FFFFFF; }
+  .grade .cel { position: relative; aspect-ratio: 1/1; overflow: hidden; background: #F5F5F5; }
+  .grade .cel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .grade .cel .carr { position: absolute; top: 7px; right: 7px; color: #FFFFFF; font-size: 13px;
+                      text-shadow: 0 1px 3px rgba(0,0,0,.45); }
+  .grade .vazio { aspect-ratio: 1/1; background: #FAFAFA; border: 1px dashed #E4E4E4; }
+  .rodape-fone { display: flex; justify-content: space-around; align-items: center; height: 46px;
+                 border-top: 1px solid #EFEFEF; background: #FFFFFF; font-size: 15px; color: #16181C; }
+
+  /* ---------- coluna de leitura ---------- */
+  .leitura { flex: 1; padding-top: 6px; font-family: 'EBGaramond', serif; }
+  .leitura h3 { font-family: 'Cormorant', serif; font-size: 40px; font-weight: 600; color: #1B2A4A;
+                line-height: 1.15; margin-bottom: 8px; }
+  .leitura .fil { height: 2px; width: 120px; background: #C2A35B; margin: 16px 0 22px; }
+  .leitura p { font-size: 19px; line-height: 1.55; color: #3A4356; margin-bottom: 18px; max-width: 700px; }
+  .leitura p b { color: #1B2A4A; }
+  .leitura .rot { font-size: 14px; letter-spacing: 5px; text-transform: uppercase; color: #C2A35B;
+                  margin: 26px 0 10px; }
+  .leitura ul { margin-left: 24px; }
+  .leitura li { font-size: 19px; line-height: 1.5; color: #3A4356; margin-bottom: 12px; max-width: 680px; }
+  .leitura li b { color: #1B2A4A; }
+
+  /* ---------- recorte ---------- */
+  .cortes { display: flex; gap: 34px; }
+  .corte { flex: 1; }
+  .corte .par { display: flex; gap: 14px; align-items: flex-start; }
+  .corte .orig { width: 168px; border: 1px solid #E2E0D8; position: relative; }
+  .corte .orig img { width: 100%; display: block; }
+  .corte .orig .faixa { position: absolute; left: 0; right: 0; border-top: 2px dashed #C2A35B;
+                        border-bottom: 2px dashed #C2A35B; top: 10%; height: 80%;
+                        background: rgba(194,163,91,.10); }
+  .corte .quad { width: 168px; height: 168px; overflow: hidden; border: 1px solid #E2E0D8; }
+  .corte .quad img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .corte .cap { font-family: 'EBGaramond', serif; font-size: 15px; color: #5A6472; margin-top: 10px;
+                line-height: 1.45; }
+  .corte .cap b { color: #1B2A4A; }
+  .corte .tag { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #9AA1AD;
+                margin-top: 6px; }
+
+  /* ---------- feed ---------- */
+  .feed .post { border-bottom: 1px solid #EFEFEF; }
+  .feed .cab { display: flex; align-items: center; gap: 9px; padding: 10px 12px; }
+  .feed .cab .av { width: 32px; height: 32px; border-radius: 50%; overflow: hidden; }
+  .feed .cab .av img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .feed .cab .u { font-size: 13px; font-weight: 700; color: #16181C; }
+  .feed .cab .mais { margin-left: auto; color: #16181C; letter-spacing: 2px; }
+  .feed .arte img { width: 100%; display: block; }
+  .feed .pontos { display: flex; justify-content: center; gap: 6px; padding: 10px 0 4px; }
+  .feed .pontos i { width: 6px; height: 6px; border-radius: 50%; background: #C7C7C7; }
+  .feed .pontos i.on { background: #0095F6; }
+  .feed .acoes { display: flex; gap: 14px; padding: 4px 12px 6px; font-size: 17px; color: #16181C; }
+  .feed .legenda { padding: 0 12px 14px; font-size: 13px; color: #16181C; line-height: 1.45; }
+  .feed .legenda b { font-weight: 700; }
+  .feed .legenda span { color: #737373; }
+</style>
+</head>
+<body>
+
+<!-- ============ 1 · O PERFIL AGORA ============ -->
+<div class="sheet" id="ig1">
+  <div class="head"><div class="rt">Instagram · <b>o perfil na primeira semana</b></div><div class="lbl">ABBA · prévia · 2026</div></div>
+  <p class="intro">Como o perfil aparece para quem chega depois dos <b>três posts de lançamento</b>. Números de seguidores ficam em branco de propósito — a doutrina proíbe métrica inventada, inclusive em prévia.</p>
+  <div class="palco">
+    <div class="fone">
+      <div class="barra"><span>9:41</span><span>▲ ◗</span></div>
+      <div class="topo"><span class="user">abba.consultoria</span><span class="ico">☰</span></div>
+      <div class="perfil">
+        <div class="linha1">
+          <div class="av"><img src="oficial/avatar.png" alt=""></div>
+          <div class="nums">
+            <div><b>3</b><span>publicações</span></div>
+            <div><b>—</b><span>seguidores</span></div>
+            <div><b>—</b><span>seguindo</span></div>
+          </div>
+        </div>
+        <div class="nome">ABBA · Consultoria de IA</div>
+        <div class="cat">Consultoria empresarial</div>
+        <div class="bio">Instalamos capacidade de IA — e provamos o que mudou.<br>Consultoria para empresas de médio porte.<br>↓ Mapa de Vazamento gratuito</div>
+        <div class="link">abbaservices.com.br</div>
+        <div class="btns"><div class="b1">Seguir</div><div class="b2">Mensagem</div><div class="b2">···</div></div>
+        <div class="dest">
+          <div class="d"><div class="c">M</div><div class="t">Método</div></div>
+          <div class="d"><div class="c">P</div><div class="t">Perguntas</div></div>
+          <div class="d"><div class="c">Q</div><div class="t">Quem somos</div></div>
+        </div>
+      </div>
+      <div class="abas"><div class="on">▦</div><div>▶</div><div>♢</div></div>
+      <div class="grade">
+        <div class="cel"><img src="export/lancamento/l3a.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/lancamento/l2a.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/lancamento/l1a.png" alt=""><span class="carr">❐</span></div>
+        <div class="vazio"></div><div class="vazio"></div><div class="vazio"></div>
+        <div class="vazio"></div><div class="vazio"></div><div class="vazio"></div>
+      </div>
+      <div class="rodape-fone"><span>⌂</span><span>⌕</span><span>＋</span><span>♡</span><span>◍</span></div>
+    </div>
+    <div class="leitura">
+      <h3>O que o mockup revela</h3>
+      <div class="fil"></div>
+      <p><b>As três capas são navy.</b> Vistas isoladas cada uma funciona; empilhadas na grade viram um bloco escuro único, e o perfil perde o respiro que o padrão editorial da ABBA tem no papel. Na página seguinte está a correção.</p>
+      <p><b>O recorte quadrado corta as capas.</b> A arte é 4:5 (1080×1350) e a grade mostra 1:1 — o Instagram tira as bordas de cima e de baixo. As capas sobrevivem porque o texto está centralizado, mas o rodapé com a marca some da miniatura.</p>
+      <p><b>Três posts deixam a grade pela metade.</b> Uma fileira preenchida e duas vazias é a aparência de perfil abandonado. Publicar os três no mesmo dia — ou emendar rápido com a grade-vitrine — resolve.</p>
+      <div class="rot">Ordem de leitura</div>
+      <p>O Instagram preenche da esquerda para a direita e de cima para baixo, com o mais recente na primeira posição. Publicando 1 → 2 → 3, a grade mostra <b>3, 2, 1</b> — quem chega lê o último primeiro. É o comportamento normal da rede; a sequência continua fazendo sentido porque cada post fecha sozinho.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 2 · O RITMO CORRIGIDO ============ -->
+<div class="sheet" id="ig2">
+  <div class="head"><div class="rt">Instagram · <b>a grade com ritmo</b></div><div class="lbl">ABBA · prévia · 2026</div></div>
+  <p class="intro">O mesmo perfil depois da grade-vitrine completa, com as capas <b>alternando navy e branco</b>. É assim que o padrão editorial da ABBA respira numa grade — a mesma lógica do material impresso, onde página escura e página clara se revezam.</p>
+  <div class="palco">
+    <div class="fone">
+      <div class="barra"><span>9:41</span><span>▲ ◗</span></div>
+      <div class="topo"><span class="user">abba.consultoria</span><span class="ico">☰</span></div>
+      <div class="perfil">
+        <div class="linha1">
+          <div class="av"><img src="oficial/avatar.png" alt=""></div>
+          <div class="nums">
+            <div><b>12</b><span>publicações</span></div>
+            <div><b>—</b><span>seguidores</span></div>
+            <div><b>—</b><span>seguindo</span></div>
+          </div>
+        </div>
+        <div class="nome">ABBA · Consultoria de IA</div>
+        <div class="cat">Consultoria empresarial</div>
+        <div class="bio">Instalamos capacidade de IA — e provamos o que mudou.<br>Consultoria para empresas de médio porte.<br>↓ Mapa de Vazamento gratuito</div>
+        <div class="link">abbaservices.com.br</div>
+        <div class="btns"><div class="b1">Seguir</div><div class="b2">Mensagem</div><div class="b2">···</div></div>
+        <div class="dest">
+          <div class="d"><div class="c">M</div><div class="t">Método</div></div>
+          <div class="d"><div class="c">P</div><div class="t">Perguntas</div></div>
+          <div class="d"><div class="c">Q</div><div class="t">Quem somos</div></div>
+        </div>
+      </div>
+      <div class="abas"><div class="on">▦</div><div>▶</div><div>♢</div></div>
+      <div class="grade">
+        <div class="cel"><img src="export/grade-p9.png" alt=""></div>
+        <div class="cel"><img src="export/grade-p7.png" alt=""></div>
+        <div class="cel"><img src="export/grade-p8a.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/grade-p6.png" alt=""></div>
+        <div class="cel"><img src="export/grade-p5.png" alt=""></div>
+        <div class="cel"><img src="export/grade-p4a.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/grade-p3.png" alt=""></div>
+        <div class="cel"><img src="export/lancamento/l3a.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/lancamento/l2b.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/lancamento/l1b.png" alt=""><span class="carr">❐</span></div>
+        <div class="cel"><img src="export/grade-p2.png" alt=""></div>
+        <div class="cel"><img src="export/lancamento/l1a.png" alt=""><span class="carr">❐</span></div>
+      </div>
+      <div class="rodape-fone"><span>⌂</span><span>⌕</span><span>＋</span><span>♡</span><span>◍</span></div>
+    </div>
+    <div class="leitura">
+      <h3>A regra da grade</h3>
+      <div class="fil"></div>
+      <p>Uma regra simples, e ela vale para sempre: <b>nunca dois navy seguidos na mesma fileira</b>. Como a grade tem 3 colunas, alternar a cor da capa a cada post produz automaticamente o xadrez — e o perfil ganha a mesma respiração do impresso.</p>
+      <div class="rot">Como aplicar</div>
+      <ul>
+        <li>A capa de um carrossel <b>não precisa ser navy</b>. Um quadro branco com o título grande funciona igual e alterna o ritmo.</li>
+        <li>Quando dois posts seguidos pedirem capa escura, inverter um deles: mesmo texto, fundo branco, título em navy e o termo-chave em dourado.</li>
+        <li>Os quadros internos do carrossel seguem livres — só a <b>primeira imagem</b> entra na grade.</li>
+      </ul>
+      <div class="rot">O que fica evidente aqui</div>
+      <p>Com nove a doze quadros, a identidade aparece: a serifa, o dourado sempre no mesmo papel, o rodapé assinado. Alguém que abre o perfil entende em três segundos que há um sistema por trás — que é exatamente o que uma consultoria que vende método precisa transmitir.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 3 · O RECORTE ============ -->
+<div class="sheet" id="ig3">
+  <div class="head"><div class="rt">Instagram · <b>o recorte da miniatura</b></div><div class="lbl">ABBA · prévia · 2026</div></div>
+  <p class="intro">A arte é publicada em <b>4:5</b> (1080×1350) porque é o formato que ocupa mais tela no feed. Mas a grade do perfil mostra <b>1:1</b> e corta o topo e a base. A faixa dourada marca o que sobrevive — vale conferir isso em toda capa nova.</p>
+  <div class="cortes">
+    <div class="corte">
+      <div class="par">
+        <div class="orig"><img src="export/lancamento/l1a.png" alt=""><div class="faixa"></div></div>
+        <div class="quad"><img src="export/lancamento/l1a.png" alt=""></div>
+      </div>
+      <div class="cap"><b>Post 1 · Quem somos.</b> Sobrevive: o título inteiro. Perde-se o rodapé com a marca.</div>
+      <div class="tag">Aprovado</div>
+    </div>
+    <div class="corte">
+      <div class="par">
+        <div class="orig"><img src="export/lancamento/l2a.png" alt=""><div class="faixa"></div></div>
+        <div class="quad"><img src="export/lancamento/l2a.png" alt=""></div>
+      </div>
+      <div class="cap"><b>Post 2 · Na ponta ou no processo.</b> Título curto, folga grande dos dois lados — o recorte não ameaça.</div>
+      <div class="tag">Aprovado</div>
+    </div>
+    <div class="corte">
+      <div class="par">
+        <div class="orig"><img src="export/lancamento/l3a.png" alt=""><div class="faixa"></div></div>
+        <div class="quad"><img src="export/lancamento/l3a.png" alt=""></div>
+      </div>
+      <div class="cap"><b>Post 3 · As três perguntas.</b> É a capa mais cheia das três — sobrevive inteira, mas com a menor folga. É o limite que uma capa pode ter.</div>
+      <div class="tag">Aprovado · no limite</div>
+    </div>
+  </div>
+  <p class="intro" style="margin:34px 0 0"><b>A regra que sai daqui:</b> em toda capa nova, o bloco de texto tem de caber na faixa central — 80% da altura. Como os quadros já são compostos com o conteúdo centralizado verticalmente, isso acontece sozinho; o cuidado é só com capas de texto longo.</p>
+</div>
+
+<!-- ============ 4 · O POST ABERTO ============ -->
+<div class="sheet" id="ig4">
+  <div class="head"><div class="rt">Instagram · <b>o carrossel aberto</b></div><div class="lbl">ABBA · prévia · 2026</div></div>
+  <p class="intro">Como um post aparece no feed de quem segue — em 4:5 inteiro, com os pontos de navegação do carrossel e a legenda que está pronta no plano comercial.</p>
+  <div class="palco">
+    <div class="fone feed">
+      <div class="barra"><span>9:41</span><span>▲ ◗</span></div>
+      <div class="post">
+        <div class="cab">
+          <div class="av"><img src="oficial/avatar.png" alt=""></div>
+          <div class="u">abba.consultoria</div>
+          <div class="mais">···</div>
+        </div>
+        <div class="arte"><img src="export/lancamento/l2a.png" alt=""></div>
+        <div class="pontos"><i class="on"></i><i></i><i></i><i></i></div>
+        <div class="acoes"><span>♡</span><span>💬</span><span>↗</span></div>
+        <div class="legenda"><b>abba.consultoria</b> Uma pergunta que fazemos em toda reunião: o seu time usa IA — mas a sua empresa usa? <span>… mais</span></div>
+      </div>
+    </div>
+    <div class="leitura">
+      <h3>Por que 4:5</h3>
+      <div class="fil"></div>
+      <p>É o formato vertical máximo que o Instagram aceita no feed. Ocupa mais tela que o quadrado, o que significa <b>mais tempo de leitura</b> antes do polegar rolar — decisivo para conteúdo com texto, que é o caso de tudo que a ABBA publica.</p>
+      <div class="rot">A primeira linha da legenda</div>
+      <p>Só a primeira linha aparece antes do "… mais". Por isso as legendas do plano comercial <b>abrem com a frase mais forte</b>, nunca com saudação ou contexto. A pergunta do post 2 é o melhor exemplo: ela sozinha já para o polegar.</p>
+      <div class="rot">Sobre os pontos</div>
+      <p>Quatro quadros por carrossel é o número certo para este conteúdo: capa, desenvolvimento, prova e fecho. Menos que isso não desenvolve; mais que isso perde gente no meio.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
