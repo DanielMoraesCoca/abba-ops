@@ -53,9 +53,29 @@ Existem duas famílias em uso: a canônica ("Instalamos capacidade de IA — e p
 ### 2.3 Instagram (@abba.consultoria — verificar disponibilidade; alternativas: @abbaconsultoria, @abba.ia)
 
 - **Nome:** ABBA · Consultoria de IA
-- **Bio** (≤150 car.): `Instalamos capacidade de IA — e provamos o que mudou. Consultoria para empresas de médio porte. ↓ Mapa de Vazamento gratuito` + link abbaservices.com.br
+- **Bio** (≤150 car.): ver as opções em §2.4 — **default: opção B**.
+- **Link:** abbaservices.com.br
 - **Avatar:** o mesmo da página LinkedIn.
 - **Destaques** (criar com capas navy + ícone dourado): `Método` · `Perguntas` · `Quem somos`.
+
+### 2.4 A bio — opções (registradas 2026-08-17)
+
+O campo **Nome** (30 car., é o que a busca do Instagram lê) carrega a categoria: `ABBA · Consultoria de IA` (24 car.). Isso libera a **bio** (150 car.) para carregar a cunha, em vez de repetir "consultoria". Todas as opções abaixo cabem no limite; a seta `↓` é caractere tipográfico, não emoji — a regra do padrão editorial continua respeitada.
+
+| # | Bio | Car. | De onde vem |
+|---|---|---|---|
+| **A** | `IA no processo, não na ponta. Instalamos a capacidade e provamos, de fora, o que mudou.` ↓ Mapa de Vazamento gratuito | 116 | A cunha do Pedro na reunião com a incorporadora (ad hoc × embedded) |
+| **B** | `Instalamos IA da diretoria à linha de frente — e provamos, de fora, o que mudou.` ↓ Mapa de Vazamento gratuito, em 48h | 117 | A imagem das raízes, pág. 1 da apresentação institucional |
+| **C** | `Instalamos capacidade de IA — e provamos o que mudou. Consultoria para empresas de médio porte.` ↓ Mapa de Vazamento gratuito | 124 | A headline canônica (era o default da v1) |
+| **D** | `Sistemas inteligentes e pessoas formadas — e a prova, mês a mês, do que mudou.` ↓ Mapa de Vazamento gratuito, em 48h | 115 | As duas frentes, pág. 1 da apresentação |
+| **E** | `Instalamos os 70% da transformação em IA que ninguém instala: processos e pessoas.` ↓ Mapa de Vazamento gratuito, em 48h | 119 | O parágrafo-corpo do posicionamento e a bio dos fundadores |
+| **F** | `Tornamos a sua empresa AI native: sistemas, pessoas e a prova do que mudou.` ↓ Mapa de Vazamento gratuito, em 48h | 112 | A família enviável (apresentação e um-minuto) |
+| **G** | `Não é curso. Não é piloto sem métrica. É capacidade de IA instalada — e provada de fora.` ↓ Mapa de Vazamento gratuito | 117 | As recusas do manifesto e o "Sobre" do LinkedIn |
+| **H** | `Capacidade de IA instalada em processos e pessoas. Número combinado antes, medido depois.` ↓ Mapa gratuito em 48h | 112 | O protocolo de prova |
+
+**Default recomendado: B.** No lançamento ninguém viu ainda o conteúdo que explica a cunha, então a bio precisa se sustentar sozinha para um desconhecido: "da diretoria à linha de frente" diz o escopo em cinco palavras, "provamos, de fora" diz o diferencial, e o CTA fecha. **A** é a mais distintiva e vira a melhor escolha depois que o post 2 estiver no ar — bio se troca em dez segundos, e trocar é barato.
+
+**Evitar C como bio** (embora seja a headline canônica): repete "consultoria" que já está no campo Nome e gasta 40 caracteres com qualificação de público que o próprio conteúdo faz. Ela continua sendo a tagline da **página do LinkedIn**, onde há 220 caracteres e o campo Nome não carrega a categoria.
 
 ## 3. A grade-vitrine do Instagram (9 posts, publicar em 3 lotes de 3)
 
