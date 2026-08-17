@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Prototipo ABBA — apoio a planejamento patrimonial internacional (ferramenta do advogado; conformidade-primeiro)"
 requires-python = ">=3.11"
 dependencies = [
-    "crewai>=1.15.0",
+    "crewai[anthropic]>=1.15.0",   # provider nativo Anthropic (Claude) — a conexão do AMP é Anthropic
     "pydantic>=2.7",
     "python-docx>=1.1",
 ]

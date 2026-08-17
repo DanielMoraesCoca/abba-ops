@@ -191,6 +191,25 @@ wheels = [
 ]
 
 [[package]]
+name = "anthropic"
+version = "0.73.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "docstring-parser" },
+    { name = "httpx" },
+    { name = "jiter" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f0/07/f550112c3f5299d02f06580577f602e8a112b1988ad7c98ac1a8f7292d7e/anthropic-0.73.0.tar.gz", hash = "sha256:30f0d7d86390165f86af6ca7c3041f8720bb2e1b0e12a44525c8edfdbd2c5239", size = 425168, upload-time = "2025-11-14T18:47:52.635Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/15/b1/5d4d3f649e151e58dc938cf19c4d0cd19fca9a986879f30fea08a7b17138/anthropic-0.73.0-py3-none-any.whl", hash = "sha256:0d56cd8b3ca3fea9c9b5162868bdfd053fbc189b8b56d4290bd2d427b56db769", size = 367839, upload-time = "2025-11-14T18:47:51.195Z" },
+]
+
+[[package]]
 name = "anyio"
 version = "4.14.2"
 source = { registry = "https://pypi.org/simple" }
@@ -688,6 +707,11 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/de/19/e6328240c9f57b1bc60b7c0f28429e4a859f14b9a28b668c04337d2eaf84/crewai-1.15.15.tar.gz", hash = "sha256:c264cace6b195b23c44c88d113d7a0e79c2f3830d8dede597a2b3394c1a73375", size = 7876356, upload-time = "2026-08-12T01:28:09.466Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/97/01/ab653fec9637cdf18d2b28b1bafb58b326ff900b638dd11733f9b42cd11f/crewai-1.15.15-py3-none-any.whl", hash = "sha256:7423afb157d6b11c42ce0affc8aaf50328b3bb7f891bdfa5411d6445f5b98f4e", size = 1111849, upload-time = "2026-08-12T01:28:07.147Z" },
+]
+
+[package.optional-dependencies]
+anthropic = [
+    { name = "anthropic" },
 ]
 
 [[package]]
@@ -2415,7 +2439,7 @@ name = "patrimonio-flow"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "crewai" },
+    { name = "crewai", extra = ["anthropic"] },
     { name = "pydantic" },
     { name = "python-docx" },
 ]
@@ -2427,7 +2451,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "crewai", specifier = ">=1.15.0" },
+    { name = "crewai", extras = ["anthropic"], specifier = ">=1.15.0" },
     { name = "pydantic", specifier = ">=2.7" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "python-docx", specifier = ">=1.1" },
