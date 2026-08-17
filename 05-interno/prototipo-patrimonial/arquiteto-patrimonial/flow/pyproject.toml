@@ -26,6 +26,12 @@ type = "flow"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+# CRÍTICO: os YAML de configuração das crews precisam ir no pacote instalado —
+# senão CrewBase não acha config/*.yaml em runtime no AMP (só falha num caso
+# liberado, que carrega as crews). O caso bloqueado nunca exercita isto.
+[tool.setuptools.package-data]
+patrimonio_flow = ["crews/config/*.yaml"]
+
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"

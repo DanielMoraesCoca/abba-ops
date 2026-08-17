@@ -48,7 +48,15 @@ def _resolver_corpus_dir(corpus_dir: Optional[str]) -> Path:
     if not d:
         return _CORPUS_DIR_DEFAULT
     p = Path(d)
-    return p if p.is_absolute() else (_FLOW_ROOT / p)
+    if p.is_absolute():
+        return p
+    # relativo: o corpus vive fora do pacote (flow/corpus, flow/corpus-demo).
+    # Tenta, em ordem, o cwd (working dir do AMP = flow/) e a raiz do flow/
+    # (layout de fonte). Retorna o primeiro que existe; senão, cwd.
+    for base in (Path.cwd() / p, _FLOW_ROOT / p):
+        if (base / "manifest.json").exists():
+            return base
+    return Path.cwd() / p
 
 
 def _parse_iso(s: Optional[str]) -> Optional[date]:

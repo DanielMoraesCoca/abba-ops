@@ -81,8 +81,22 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         # data explícita, usa hoje — o caso é sempre avaliado contra a lei vigente.
         if not self.state.data_caso:
             self.state.data_caso = date.today().isoformat()
-        assert self.state.perfil is not None, "kickoff exige inputs com o PerfilEstruturado"
+        # PORTA DE ENTRADA POR UPLOAD: se veio documento e não veio perfil pronto,
+        # extrai o perfil do documento (PII mascarada antes do LLM).
+        if self.state.perfil is None and self.state.documento_texto:
+            self.state.perfil = self._extrair_perfil(self.state.documento_texto)
+        assert self.state.perfil is not None, "kickoff exige 'perfil' ou 'documento_texto'"
         return self.state.perfil
+
+    def _extrair_perfil(self, documento_texto: str) -> S.PerfilEstruturado:
+        """Extrai o PerfilEstruturado do documento do cliente. PII mascarada
+        pré-LLM (o perfil resultante é pseudonimizado por natureza)."""
+        from patrimonio_flow.crews.extracao_crew import ExtracaoCrew
+        from patrimonio_flow.pii import mascarar
+        seguro = mascarar(documento_texto).texto_mascarado
+        resultado = ExtracaoCrew().crew().kickoff(inputs={"documento": seguro})
+        self._cobrar_custo(resultado)
+        return resultado.tasks_output[0].pydantic
 
     @router(intake)
     def gate1_red_flags(self):

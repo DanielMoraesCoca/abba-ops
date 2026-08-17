@@ -1,0 +1,16 @@
+task_extrair_perfil:
+  description: >
+    Leia o documento do cliente abaixo (texto já pseudonimizado) e preencha o
+    PerfilEstruturado com o que está efetivamente escrito. Não invente: se um campo não
+    aparece no documento, deixe o default. Não marque conformidade.aceite_transparencia
+    como verdadeiro — isso é um aceite explícito do cliente, não uma inferência.
+
+    DOCUMENTO:
+    {documento}
+  expected_output: >
+    Um PerfilEstruturado preenchido apenas com o que o documento sustenta: pessoa
+    (idade/estado civil se houver), família (filhos, herdeiros no exterior), patrimônio
+    (ativos com classe/jurisdição/ordem de grandeza, estruturas no exterior e se são
+    declaradas), passivos (dívidas, processos, avais), objetivos e conformidade. Campos
+    sem base no documento permanecem no default.
+  agent: extrator_perfil

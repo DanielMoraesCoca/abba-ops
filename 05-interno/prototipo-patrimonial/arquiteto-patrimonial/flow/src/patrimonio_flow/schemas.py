@@ -267,6 +267,7 @@ class EstadoCaso(BaseModel):
     data_caso: str = ""        # ISO — data-de-referência do caso; filtra o corpus por vigência (as_of)
     gate_humano_ok: bool = False  # marcado no gate2; render_final exige True (gate não-burlável)
     versao_corpus: str = ""
+    documento_texto: str = ""   # intake por upload: texto bruto do doc do cliente (extraído p/ perfil)
     perfil: Optional[PerfilEstruturado] = None
     red_flags: Optional[RedFlagReport] = None
     analise: Optional[AnaliseJuridica] = None
