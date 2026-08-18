@@ -7,4 +7,11 @@ Regras inegociáveis deste código (ver especificacao-agentes.md):
 - Memória CrewAI OFF; dados do caso vivem só no estado do Flow.
 """
 
+import os as _os
+
+# Modelo padrão: Claude (a conexão de LLM do AMP é Anthropic). Sem isto o CrewAI
+# cai no default OpenAI (gpt-4.1-mini) e falha por falta de OPENAI_API_KEY.
+# setdefault → uma env MODEL explícita no deploy ainda sobrescreve.
+_os.environ.setdefault("MODEL", "anthropic/claude-haiku-4-5")
+
 __version__ = "0.1.0"
