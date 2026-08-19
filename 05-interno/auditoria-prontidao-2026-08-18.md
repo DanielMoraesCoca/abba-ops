@@ -97,8 +97,8 @@ A matemática que o próprio repo documenta, consolidada num lugar só:
 | Dia | Ação | Dono | Custo |
 |---|---|---|---|
 | 1 | Aval do Pedro em bloco: marca v4 + headline + posts + menção CrewAI/João | Pedro | 1h de leitura do kit |
-| 1 | Cobrar advogado e contador por escrito, com prazo | Daniel | 20 min |
-| 2 | Preencher metas ano 1 + runway + 6 células de capacidade | Os dois | 1h |
+| 1 | ✅ **ASSUMIDO PELOS SÓCIOS (2026-08-19):** advogado e contador serão resolvidos por fora | Daniel + Pedro | — |
+| 2 | ✅ **ASSUMIDO PELOS SÓCIOS (2026-08-19):** metas ano 1 + runway + células de capacidade serão preenchidos por fora | Daniel + Pedro | — |
 | 2 | Custódia dupla da passphrase (regra zero) | Os dois | 30 min |
 | 3 | Higiene técnica: R23 + banner nos materials/ + 1 restore ensaiado | Pedro | meio dia |
 | 3 | Publicar: perfis + 3 posts (sequência curta) + fotos agendadas | Daniel | 2h |
