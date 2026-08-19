@@ -77,14 +77,6 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
         """Parser determinístico: respostas do questionário → PerfilEstruturado.
         No protótipo, o perfil chega pronto via kickoff(inputs=...)."""
         self.state.versao_corpus = VERSAO_CORPUS
-        # DIAGNÓSTICO (temporário, INCONDICIONAL): aborta todo caso no intake
-        # mostrando o TAMANHO de cada env var (0 = ausente), sem expor valores.
-        # Não depende de env — se este erro aparecer, o deploy pegou o código novo
-        # E vemos se as variáveis chegam no runtime. REMOVER após o diagnóstico.
-        _alvos = ["ANTHROPIC_API_KEY", "OPENAI_API_KEY", "MODEL", "CORPUS_DIR", "PATRIMONIO_DIAG"]
-        raise RuntimeError(
-            "DIAG env (tamanhos, 0=ausente): "
-            + str({k: len(os.environ.get(k, "")) for k in _alvos}))
         # data-de-referência do caso: filtra o corpus por vigência (as_of). Sem
         # data explícita, usa hoje — o caso é sempre avaliado contra a lei vigente.
         if not self.state.data_caso:
