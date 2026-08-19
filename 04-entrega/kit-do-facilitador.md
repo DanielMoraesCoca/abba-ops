@@ -17,6 +17,21 @@
 
 Fora destes quatro, a ABBA não está na sala — está no portal e no canal. **A entrega não termina na graduação: termina no relatório de durabilidade de 90 dias.**
 
+## Coerência com as aulas online (regra de um só corpo)
+
+A sala e o portal são o mesmo programa: mesma linguagem, mesmos
+artefatos, mesma **Rubrica ABBA** (escolha · pedido · crítica ·
+entrega), mesma redação das 3 perguntas (**Parar / Começar / Só eu**).
+Cada encontro referencia as aulas da janela — quando uma aula mudar, o
+encontro muda no mesmo commit:
+
+| Encontro | Aulas da janela | O que o encontro usa delas |
+|---|---|---|
+| Kickoff (sem. 0) | Aula 1 da Fundação, feita na sala | as 3 perguntas + a primeira Bússola ao vivo |
+| Marco 1 (sem. 3) | Fundação 2–8 concluídas | os modos de falha (aula 4) e o colar-e-citar (aula 6) viram prática guiada sobre os artefatos trazidos |
+| Marco 2 (sem. 6) | trilha do papel concluída (Gestor: G1–G5) | o ritual dos 15 minutos (G3) e as 3 faixas de amostragem (G2) entram no roteiro do plantão dos campeões |
+| Graduação (sem. 8) | capstones prontos | comparação com a linha de base + credencial |
+
 ---
 
 ## 1. Kickoff da Academy (semana 0 · meio dia)
