@@ -10,6 +10,15 @@
 | Avaliação em 25 dimensões com entrevistas do conselho à linha de frente | Primeira execução com dados reais — enquadrar como charter: método validado, primeira aplicação real com escopo controlado (risco R1) | "Método certificado em clientes reais" — ainda não é verdade |
 | Relatórios editados pelos sócios + one-pager + quantificação rastreável | Assessment web (no ar em URL própria, **ainda não aberto ao público** — ver abaixo): alinhamento visual/CTA/gating entra ANTES do lançamento | |
 | Compartilhamento seguro: só o one-pager anonimizado, link com expiração | | |
+| **Maturidade em IA por pilar** (6 pilares × 5 níveis nomeados: Improvisado·Consciente·Estruturado·Instalado·Composto) + **Veredito de Fundação de Dados** (FRÁGIL/PARCIAL/PRONTA) — derivados DESTA análise, nunca vendidos como benchmark de mercado | **Anexo visual de 7 páginas** (`abba report <eng> --visual`: capa-veredito, radar, heatmap 25D, matriz valor×esforço, roadmap 3 horizontes, Contar o Custo, limite honesto) — construído e testado em mock; **apresentar a cliente só após o gate real do Cliente Zero** | |
+
+## Assessment v2 (2026-08-19) — a camada que o cliente vê
+
+Melhoria estruturada a partir da reunião Rafael/Brasal + [pesquisa de mercado](../05-interno/pesquisa-assessment-mercado.md) + [princípios do método](../00-identidade/principios-do-assessment.md). O que mudou na ferramenta (tudo agregação pós-análise; prompts travados intocados; 456 testes verdes):
+
+- **Relatório reordenado para a narrativa que vende:** Veredito em 60 segundos → Sumário → Maturidade por pilar → Fundação de Dados → achados → plano → apêndices profundos.
+- **`abba report <eng> --visual`** gera o anexo visual (PDF via Chromium; sem Chromium, HTML imprimível). One-pager ganhou a miniatura de maturidade (continua anonimizado, seguro para share-link).
+- **Fase M (motor: 4 análises LLM novas)** aprovada mas sequenciada DEPOIS do gate real — flag `ABBA_ASSESSMENT_V2`, default off. Nada disso vai a cliente antes da Etapa 1 do [Cliente Zero](../05-interno/cliente-zero-execucao.md).
 
 ## Prontidão regulatória (ISO/IEC 42001 + PL 2338)
 
