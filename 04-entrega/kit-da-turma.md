@@ -10,11 +10,14 @@
 
 | Semana | Marco |
 |---|---|
-| 0 | **Kickoff presencial** (kit do facilitador da Academy) — a turma nasce com data de graduação anunciada |
-| 1–2 | Nível 1 Explorador: trilha + desafios + Bússola preenchida por todos |
-| 3–4 | Workshop de marco (presencial ou ao vivo) + início do Nível 2 nos papéis certos |
-| 5–7 | Trilhas por papel + desafios aplicados aos agentes reais do cliente |
-| 8 | **Graduação** — cerimônia presencial: certificados, campeões apresentam a Primeira Vitória, patrocinador fala |
+| 0 | **Kickoff da Academy** ([kit do facilitador](kit-do-facilitador.md)) — a turma nasce com data de graduação anunciada e **linha de base medida** |
+| 1–2 | Nível Explorador: trilha da Fundação + desafios + Bússola preenchida por todos |
+| 3 | **Marco 1 — "o caso de vocês"** (presencial): os casos reais da empresa viram os desafios do resto do programa |
+| 3–5 | Trilhas por papel + desafios no fluxo real de cada um |
+| 6 | **Peneira + Marco 2 — formação de campeões** (presencial, só os selecionados): critério é comportamento observado — concluiu + aplicou + ajudou |
+| 6–7 | Campeões em formação · demais consolidam, praticando em duplas |
+| 8 | **Graduação** — cerimônia presencial: comparação com a linha de base, campeões apresentam a Primeira Vitória, certificados e credencial, patrocinador fala |
+| d30 · d60 · d90 | **Checkpoints de durabilidade + relatório d90.** A entrega termina aqui, não na formatura |
 
 Regras do formato (evidência cohort — [análise](../05-interno/analise-estrategica-2026-07.md), seção 5): início e fim **declarados no dia 0** · desafios com componente coletivo · graduação é evento, não e-mail.
 
@@ -44,3 +47,5 @@ Regras do formato (evidência cohort — [análise](../05-interno/analise-estrat
 
 - ✅ "A Turma 1 da {{Empresa}} se forma em {{mês}}" · ❌ "vocês terão acesso à plataforma"
 - ✅ "restam {{X}} semanas para a graduação" · ❌ "façam no seu ritmo" (ritmo é da turma)
+- ✅ "o nosso treinamento acaba no relatório de durabilidade de 90 dias" · ❌ "acabou na formatura"
+- ✅ "campeão é quem aplicou e ajudou alguém" · ❌ "campeão é quem tirou as melhores notas"

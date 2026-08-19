@@ -1,0 +1,79 @@
+# Falas — venda do treinamento (serviço 5)
+
+> **Para que serve:** o que se diz e o que **não** se diz ao vender capacitação. Sai da [reanálise do treinamento de 19/08/2026](https://github.com/DanielMoraesCoca/abba-portal/blob/main/docs/REANALISE-TREINAMENTO-2026-08.md) §7. As falas de sala estão no [kit do facilitador](../04-entrega/kit-do-facilitador.md); aqui é a mesa.
+
+## O erro que esta página corrige
+
+Na reunião de 18/08 vendemos **videoaula** e **quiz** — commodity que qualquer LMS entrega e que a ABBA não tem pronta — e **não citamos nenhum** dos três diferenciais que já estão construídos e que quase ninguém no mercado tem:
+
+1. **Durabilidade de comportamento (d30/d60/d90)** — 30, 60 e 90 dias depois, o compromisso assumido ainda produz evidência?
+2. **Patrocínio do gestor instrumentado** — o gestor atesta e corrobora o que o time aplicou. É o único diferencial que aparece em todo estudo sério de adoção.
+3. **Credencial assinada e verificável por link** — é da pessoa, não da empresa, e serve de critério auditável para liberar ferramenta.
+
+**Regra:** nenhuma conversa de treinamento termina sem que os três tenham sido ditos.
+
+## Substituições
+
+| ❌ Não dizer | ✅ Dizer |
+|---|---|
+| "Temos um treinamento de IA com portal e videoaulas." | "Vocês já fizeram letramento — e 47% das empresas brasileiras também já fizeram, acima de EUA e Inglaterra ([KPMG 2025](#fontes)). O problema do Brasil não é treinar; é colher. A gente instala capacidade e mede se ela continua viva 90 dias depois." |
+| "A nossa plataforma está pronta." | "O motor está pronto e é raro: mede durabilidade de comportamento, não conclusão de aula. A trilha de vocês se monta com os casos de vocês — é o método, não é lacuna." |
+| "Temos videoaulas." | "Vídeo é a parte mais barata do mercado — não é onde a gente investe. A aula é 2 minutos de gancho, um vídeo curado, 3 de leitura, e aí você faz na sua própria planilha com a Iris do lado." |
+| "Nós temos a trilha que libera a licença." | "Você já desenhou o certo: licença para quem concluiu. O que falta é a trilha e uma prova de conclusão auditável. A credencial é verificável por link — o seu processo de liberação para de depender da sua memória." |
+| "Somos mais baratos que a Start." | "Se o que vocês querem são dois encontros e um acesso, R$ 30 mil compra isso em qualquer lugar — de nós, R$ 15 mil. O que ninguém entrega por R$ 30 mil é a prova, 90 dias depois, de que mudou." |
+| "O programa termina na formatura." | "O nosso treinamento não acaba na formatura. Acaba no relatório de durabilidade de 90 dias — e é ele que a gente assina." |
+
+## Sobre preço (serviço 5)
+
+A [tabela](tabela-de-precos.md) não muda: **online R$ 15.000/turma · híbrido R$ 35.000/turma** (até 25 pessoas, 12 meses de acesso, −20% nas turmas adicionais).
+
+- **Não brigar no preço do híbrido** contra proposta de R$ 30 mil. Separar o que é comparável: dois encontros + acesso é o nosso **online**, e o nosso online é mais barato.
+- **Vender a Turma 1 como prova medida:** tamanho combinado antes, linha de base no dia 0, comparação no d90. É Daniel 1 aplicado ao comercial — a excelência se demonstra por comparação, não por promessa —, e converte a pressão de custo do cliente em risco reduzido, sem descontar o nosso valor.
+- Desconto **só** via charter com contrapartida (máx. 20%), e a contrapartida mais valiosa aqui é **autorização de publicar o case**.
+
+## Quando o cliente já treinou (o caso mais comum)
+
+Este é o cenário brasileiro típico e é a nossa melhor posição. O roteiro:
+
+1. **Reconhecer o que já foi feito.** *"Vocês fizeram letramento com gente boa. Não vim dizer que foi perdido."*
+2. **Nomear o que não aconteceu.** *"O que não veio foi a mudança no trabalho de terça-feira. É quase sempre assim: o evento acaba na sexta e o hábito volta na segunda."*
+3. **Dar o motivo estrutural, sem culpar ninguém.** Conteúdo genérico para um funcionário genérico que não existe · workshop único sem laço de aplicação · treino fora da ferramenta onde o trabalho acontece · medição por conclusão de aula, que é fácil de coletar e desligada de qualquer mudança real.
+4. **Oferecer o que falta, não o que já têm.** Trilha por papel · prática embutida no fluxo real · campeões por área · e a medição que sustenta a conversa com o conselho.
+
+## Quando o cliente já tem um processo próprio (encaixar, nunca substituir)
+
+Se o cliente já roda um funil de adoção próprio, **a oferta encaixa nele**. Nunca apresentar a ideia dele como nossa.
+
+**A fala:** *"A gente não veio propor um processo novo. O seu já está certo — inclusive é melhor do que a gente vê por aí. A gente veio ser a trilha e a prova que faltam dentro dele."*
+
+| Etapa típica do funil do cliente | O que encaixa |
+|---|---|
+| Barrar pedidos de licença sem critério | A Fundação vira o filtro; a credencial verificável vira o critério auditável |
+| Escolher as pessoas-chave | A trilha por papel e o comportamento medido apontam — fruto observado, não indicação |
+| Área "contaminada" pede mais, e tudo passa por uma pessoa | Campeões por área são os chefes de dez (Êx 18). O gargalo dele é o problema que a arquitetura de campeões resolve |
+| "Aí entra IA de verdade" | Assessment · protótipos · construção. **O treinamento é a porta, não o fim** |
+
+## O que não se promete até haver decisão do sócio
+
+- **Videoaula** — enquanto a curadoria não estiver feita e a origem do vídeo definida, não se promete biblioteca de vídeo.
+- **CrewAI para os destaques** — hoje consta como promessa oficial no [kit da turma](../04-entrega/kit-da-turma.md) para graduados nível Arquiteto. Enquanto o sócio não redecidir, vale o que está escrito lá — e não se amplia na mesa.
+- **Trilhas Comercial e Administrativo-Financeiro** — em produção. Diz-se "em produção", não "temos".
+- **Resultado medido de turma** — ainda não temos turma formada. A fala honesta é: *"a Turma 1 de vocês é a primeira a ser medida assim"*.
+
+## Fontes
+
+Citar sempre com fonte, e reconferir antes de virar slide — metade do que ranqueia sobre treinamento corporativo de IA é material de fornecedor ou estatística inventada que se cita em círculo.
+
+| Número usado | Fonte | Estado |
+|---|---|---|
+| 47% das empresas brasileiras já oferecem treinamento em IA (EUA 28%, UK 27%, Alemanha 20%) | KPMG 2025 | **reconferir antes de ir para slide** |
+| 95% dos pilotos de IA corporativa sem impacto medível | MIT/NANDA 2025 | reconferir |
+| ~5% das organizações com ganho financeiro substancial | BCG | reconferir |
+| Campeões: Moderna, Citigroup, Ropes & Gray, Telstra · proporção ~1:25–50 | pesquisa de 18/08 | reconferir nomes e números |
+| Nenhum caso público no mundo de licença condicionada à conclusão de trilha | pesquisa de 18/08 | **é argumento forte — confirmar que segue verdadeiro antes de usar** |
+
+## Histórico
+
+| Versão | Data | Mudança |
+|---|---|---|
+| v1 | 2026-08-19 | Criado pela reanálise do treinamento. Corrige a inversão de discurso: vendíamos o que não temos (vídeo, quiz) e escondíamos o que temos (durabilidade, patrocínio do gestor, credencial verificável) |
