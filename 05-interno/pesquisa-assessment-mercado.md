@@ -28,12 +28,15 @@ Padrões recorrentes em Gartner, McKinsey (QuantumBlack), Deloitte, BCG (GAMMA),
 
 ## 3. Sophy Works (sophyworks.ai) — o concorrente que impressionou a Brasal
 
-Informação via buscas (o site estava bloqueado pelo proxy do ambiente; aprofundar se os sócios exportarem páginas internas):
+Buscas na web + **primeira mão do Rafael na [reunião de 18/08](reuniao-rafael-brasal-2026-08-18.md)** (Brasal tem licença):
 
-- Posiciona-se como **"Innovation OS"** — sistema operacional de inovação, não consultoria pontual.
-- Estrutura em **4 camadas: contexto → hipóteses → validação → entrega**, com rastreabilidade de decisão ponta a ponta.
+- Posiciona-se como **"Innovation OS"** — sistema operacional de inovação, não consultoria pontual. Fundador brasileiro, ex-Serpro, exits anteriores.
+- **Modelo e preço:** SaaS **US$49/mês**, com opções on-premise e VPS (dedicado ou compartilhado). Site e produto **todos em inglês, preço em dólar** — decisão deliberada de posicionamento.
+- Estrutura em **4 camadas: contexto → hipóteses → validação → entrega**, com rastreabilidade de decisão ponta a ponta ("você propôs X, mas o contexto de 2 anos atrás diz que impacta") e memória persistente de contexto.
+- Foco real (segundo o Rafael): **gestão de produto** — discovery, planejamento, mapeamento de processos, arquitetura de projeto; no fim, o output vai para Claude Code/CrewAI construir.
 - Vende avaliar hipóteses **"antes de ficarem caras"** (jobs-to-be-done, riscos, roadmap).
 - **Lição principal:** o cliente compra um SISTEMA legível — soluções, estrada, maturidade, problemas mais valiosos primeiro — não um documento. A resposta da ABBA não é copiar o formato deles, é entregar a nossa substância (que é maior) com legibilidade equivalente.
+- **Fronteira honesta:** a Sophy estrutura o problema por metodologia; o assessment ABBA entra com **dados reais da empresa** (entrevistas multi-nível + documentos) e sai com número, premissa e veredito de fundação. E o hand-off para construção que eles vendem, a ABBA já tem: `abba export --target crewai`. Tornar isso visível na venda.
 
 ## 4. O que virou produto (rastreabilidade das decisões)
 
@@ -51,4 +54,6 @@ Informação via buscas (o site estava bloqueado pelo proxy do ambiente; aprofun
 
 ## 5. O que ainda falta (Fase M — motor, decisão consciente, atrás de gate)
 
-Quatro análises novas com LLM (sonda de fundação de dados, narrativa "o que destrava o próximo nível", TCO assistido, gerador de roadmap) foram aprovadas pelo Daniel em 19/08 **sequenciadas DEPOIS da validação real** — entram em módulo separado (`assessment-v2-prompts.js`) atrás de flag `ABBA_ASSESSMENT_V2`, default off. A transcrição da reunião Rafael/Brasal (Daniel vai colar no chat) pode refinar esse escopo antes da construção.
+Quatro análises novas com LLM (sonda de fundação, narrativa "o que destrava o próximo nível", TCO assistido, gerador de roadmap) foram aprovadas pelo Daniel em 19/08 **sequenciadas DEPOIS da validação real** — entram em módulo separado (`assessment-v2-prompts.js`) atrás de flag `ABBA_ASSESSMENT_V2`, default off.
+
+**Refino da transcrição Rafael/Brasal (chegou 19/08):** a sonda de fundação deve cobrir **dados E processos** — o padrão de campo é o processo quebrado aparecendo como dado ruim (dois departamentos com duas planilhas dos mesmos números de venda). E o gerador de roadmap deve considerar a **disposição da área para mudar** (aval do diretor + equipe alinhada) como critério de sequência, não só valor×esforço — "o humano no loop ou ajuda ou vira detrator". Insights completos: [reuniao-rafael-brasal-2026-08-18.md](reuniao-rafael-brasal-2026-08-18.md).

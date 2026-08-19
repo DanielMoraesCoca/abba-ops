@@ -23,7 +23,7 @@
 | **T5 — Assinatura** ([estágio 04](../02-jornada-do-cliente/04-contrato.md)) | [E-mail 5](emails-follow-up.md) no mesmo dia + NF em 2 dias + kickoff em ≤10 dias úteis — **a primeira prova de entrega** | — |
 | **T6 — Kickoff** ([roteiro](../04-entrega/kickoff-roteiro.md)) | O slide 5: os objetivos DELES escritos ao vivo. O cliente se sente ouvido no primeiro dia — e nasce o baseline do ritual do conselho | — |
 
-## As 10 objeções — resposta preparada, nunca improvisada
+## As 11 objeções — resposta preparada, nunca improvisada
 
 | Objeção | Resposta (essência) |
 |---|---|
@@ -37,6 +37,7 @@
 | "Por que vocês e não uma grande consultoria?" | "As grandes entregam slides e terceirizam a execução. Nós entregamos sistemas funcionando e pessoas capacitadas — com os fundadores na sala. E custamos uma fração." |
 | "Já temos IA / já compramos uma solução" | **A porta lateral do [Conselheiro de IA](conselheiro-de-ia.md):** "Ótimo — e quem senta do SEU lado da mesa quando o fornecedor apresenta a fatura? Não viemos substituir o que existe: o Conselheiro dirige o que vocês já têm — roadmap, governança, arbitragem independente de fornecedores. E se um dia decidirem construir, o retainer credita." |
 | "Já temos um diretor/head de IA" | **Nunca competir com ele — ele é o campeão.** "Que bom — isso coloca vocês na frente. O que ele mediu no último trimestre? E quantas pessoas ele tem para a fila de casos que já mapeou?" As perguntas fazem o trabalho; o discurso completo (custo da cadeira, o que ele não compra dentro de casa, o que nunca dizer) está em [objeção: diretor de IA](objecao-diretor-de-ia.md). |
+| "Não preciso de assessment — já sei meus 10 problemas" | Resposta em 3 tempos (surgiu em campo, [reunião Rafael/Brasal 18/08](../05-interno/reuniao-rafael-brasal-2026-08-18.md)): **1)** "Ótimo — a Análise valida os seus 10 com número e premissa, e vira o business case que você leva pro conselho." **2)** "E ela acha o que a liderança não vê — nos nossos assessments, parte dos vazamentos vem marcada como *invisível para a diretoria hoje*." **3)** "E antes de gastar no primeiro dos 10: a fundação de dados e processos aguenta? 80% dos projetos falham exatamente aí. É mais barato descobrir na Análise do que no projeto." |
 
 Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) até saírem naturais — decoradas soam decoradas.
 
@@ -55,7 +56,7 @@ Regra de ensaio: essas respostas são faladas em voz alta nos ensaios (abaixo) a
 Documento não vende — fluência vende. Antes do primeiro T1 real:
 
 1. **3 ensaios completos de T1 + T2** entre os sócios (um faz o prospect difícil), gravados e revistos. Critério de pronto: 45s de elevator sem hesitar, transições naturais, nenhuma consulta a material. *Os drills cobrem as duas frentes: os fatos (kit de presença, escada, tabela v2) e a condução psicológica (rapport, perguntas, objeções, fechamento — [kit](kit-de-presenca.md) e [roteiro de descoberta](roteiro-descoberta-prototipo.md)).*
-2. **Drill de objeções:** as 10 acima, ordem aleatória, resposta em ≤30s cada.
+2. **Drill de objeções:** as 11 acima, ordem aleatória, resposta em ≤30s cada.
 3. **Dry-run da Análise:** rodar o scout numa empresa real, montar o PDF no modelo, apresentar ao outro sócio como se fosse o prospect. Cronometrar: 45 min com folga para conversa.
 4. Depois de CADA conversa real: 10 min de retrospectiva a dois (o que travou → ajuste no material ou no ensaio) — o funil melhora a cada repetição.
 
