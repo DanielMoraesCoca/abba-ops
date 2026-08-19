@@ -1,6 +1,21 @@
 # Falas — venda do treinamento (serviço 5)
 
-> **Para que serve:** o que se diz e o que **não** se diz ao vender capacitação. Sai da [reanálise do treinamento de 19/08/2026](https://github.com/DanielMoraesCoca/abba-portal/blob/main/docs/REANALISE-TREINAMENTO-2026-08.md) §7. As falas de sala estão no [kit do facilitador](../04-entrega/kit-do-facilitador.md); aqui é a mesa.
+> **Para que serve:** o que se diz e o que **não** se diz ao vender capacitação. Sai da [reanálise do treinamento](https://github.com/DanielMoraesCoca/abba-portal/blob/main/docs/REANALISE-TREINAMENTO-2026-08.md) §7 e foi **conferido contra a transcrição integral da reunião Daniel × Rafa de 18/08** (v2, 19/08 — timestamps citados). As falas de sala estão no [kit do facilitador](../04-entrega/kit-do-facilitador.md); aqui é a mesa.
+
+## O que foi dito na reunião — literal, com hora
+
+Da transcrição (18/08, 17:07–17:59):
+
+| Hora | O que foi dito | Estado |
+|---|---|---|
+| 17:31 | *"a gente fez uma **parceria com Video Aulas**"* | **Não existe parceria.** Decisão de 19/08 (CONTENT-13): os vídeos são NOSSOS, roteiros prontos, gravação em lotes. A correção da fala está abaixo |
+| 17:32 | Rafa: *"Hoje essa solução já está pronta?"* — Daniel: *"a gente nunca fez nenhum treinamento presencial. Mas a nossa plataforma, sim"* | Meio-verdade na época (motor pronto, conteúdo não). Hoje: Fundação + trilha do Gestor escritas em pt-BR no portal; presencial roteirizado no kit do facilitador |
+| 17:32 | Rafa: *"depois eu queria conhecer mais a fundo, porque **a gente está exatamente nesse ponto agora**"* | O sinal de compra. A segunda reunião é sobre ISTO |
+| 17:33 | Letramento anterior com a Start: C-levels + gerência, ~70–80 pessoas | Confirma o pitch "vocês já treinaram e não colheram" |
+| 17:34–17:35 | O funil dele: barramento → **Claude Team** com MCPs para pessoas-chave → área "contaminada" pede mais; **~10 solicitações/dia** ("parece padaria"); a ideia DELE, já apresentada internamente: **licença só para quem concluir uma trilha** | A trilha-gate é o processo DELE. Nossa peça: a Fundação como filtro + credencial verificável como critério auditável |
+| 17:35–17:36 | Daniel ofereceu: destaques ganham **CrewAI de graça** pela parceria ("de 100, 20 avançando... a gente separa") | Promessa feita em reunião E escrita no [kit da turma](../04-entrega/kit-da-turma.md) (nível Arquiteto, ressalva R9). Não ampliar na mesa até decisão do sócio |
+| 17:55 | Rafa: *"isso aí era bom a gente tentar **agilizar**... na próxima semana"* + *"estou recebendo **algumas propostas até de outras empresas**"* | Urgência real e concorrência viva — a reunião é na semana de 24/08 |
+| 17:55–17:56 | *"a última conversa que eu tive com o **Daniel** [decisor interno, homônimo] é: vamos focar em **economia de custo**"*; Start ~R$ 200 mil/~70 pessoas; **Keiros ~R$ 30 mil** (2 encontros + plataforma deles); ele ainda vai falar com o **Carlos**; head de RH no circuito | O terreno de preço. Resposta na seção de preço abaixo |
 
 ## O erro que esta página corrige
 
@@ -18,7 +33,7 @@ Na reunião de 18/08 vendemos **videoaula** e **quiz** — commodity que qualque
 |---|---|
 | "Temos um treinamento de IA com portal e videoaulas." | "Vocês já fizeram letramento — e 47% das empresas brasileiras também já fizeram, acima de EUA e Inglaterra ([KPMG 2025](#fontes)). O problema do Brasil não é treinar; é colher. A gente instala capacidade e mede se ela continua viva 90 dias depois." |
 | "A nossa plataforma está pronta." | "O motor está pronto e é raro: mede durabilidade de comportamento, não conclusão de aula. A trilha de vocês se monta com os casos de vocês — é o método, não é lacuna." |
-| "Temos videoaulas." | "Vídeo é a parte mais barata do mercado — não é onde a gente investe. A aula é 2 minutos de gancho, um vídeo curado, 3 de leitura, e aí você faz na sua própria planilha com a Iris do lado." |
+| "Temos videoaulas." / "parceria com videoaulas" (dito às 17:31) | "As aulas são nossas — escritas e gravadas por quem entra na sala. E vídeo é a menor parte: a aula é um gancho, uma leitura curta, e aí você faz na sua própria planilha com a Iris do lado. Ninguém aprende assistindo vídeo — essa frase está na nossa apresentação institucional." |
 | "Nós temos a trilha que libera a licença." | "Você já desenhou o certo: licença para quem concluiu. O que falta é a trilha e uma prova de conclusão auditável. A credencial é verificável por link — o seu processo de liberação para de depender da sua memória." |
 | "Somos mais baratos que a Start." | "Se o que vocês querem são dois encontros e um acesso, R$ 30 mil compra isso em qualquer lugar — de nós, R$ 15 mil. O que ninguém entrega por R$ 30 mil é a prova, 90 dias depois, de que mudou." |
 | "O programa termina na formatura." | "O nosso treinamento não acaba na formatura. Acaba no relatório de durabilidade de 90 dias — e é ele que a gente assina." |
@@ -55,7 +70,7 @@ Se o cliente já roda um funil de adoção próprio, **a oferta encaixa nele**. 
 
 ## O que não se promete até haver decisão do sócio
 
-- **Videoaula** — enquanto a curadoria não estiver feita e a origem do vídeo definida, não se promete biblioteca de vídeo.
+- **Biblioteca de vídeo com data** — os vídeos são nossos (CONTENT-13), roteiros prontos, gravação em lotes; promete-se "aulas com prática avaliada", nunca calendário de vídeo.
 - **CrewAI para os destaques** — hoje consta como promessa oficial no [kit da turma](../04-entrega/kit-da-turma.md) para graduados nível Arquiteto. Enquanto o sócio não redecidir, vale o que está escrito lá — e não se amplia na mesa.
 - **Trilhas Comercial e Administrativo-Financeiro** — em produção. Diz-se "em produção", não "temos".
 - **Resultado medido de turma** — ainda não temos turma formada. A fala honesta é: *"a Turma 1 de vocês é a primeira a ser medida assim"*.

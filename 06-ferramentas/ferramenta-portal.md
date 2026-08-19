@@ -6,7 +6,7 @@
 
 | ✅ Prometer | ⚠️ Com cuidado | ❌ Não prometer (ainda) |
 |---|---|---|
-| Trilhas gamificadas com desafios avaliados por IA, Bússola e Iris (guia em português) | Fase 1 (Fundamentos): conteúdo FINAL, **vídeos em produção, prontos em agosto/2026** (prazo confirmado pelos sócios em 2026-07-24) — até a gravação, prometer trilha com leitura + desafios + kickoff presencial cobrindo o início | SSO corporativo / requisitos de procurement enterprise (autenticação interina — R3) |
+| Trilhas em pt-BR com desafios avaliados pela Rubrica ABBA, Bússola e Iris (guia em português) — **Fundação (8 aulas) e trilha do Gestor (5 aulas) escritas e no portal** | **Vídeos: são NOSSOS (decisão CONTENT-13, 19/08/2026 — revoga o modelo de licenciar terceiros).** Roteiros word-for-word das 8 aulas prontos; gravação pelos fundadores em lotes (aulas 3, 4 e 1 primeiro). Até gravar, a aula roda em 4 blocos — **prometer "aulas com prática avaliada"; NUNCA prometer biblioteca de vídeo com data** | SSO corporativo / requisitos de procurement enterprise (autenticação interina — R3) |
 | Acesso individual por colaborador, progresso e adoção visíveis ao patrocinador | Fases 2–4: estrutura pronta, conteúdo produzido sob demanda do 1º cliente — prometer "trilha do seu departamento", não "catálogo completo" | Fórum aberto entre clientes **antes do 3º cliente** — a rede existe em plano e o mecanismo está construído, mas não se promete data ([ecossistema](../00-identidade/ecossistema.md)) |
 | Pré-trabalho da avaliação (reflexões, mapas de fluxo, Bússola) | Níveis oficiais (P7 ✅): Explorador → Praticante → Especialista → Arquiteto — Academy e proposta seguem esta escala; portal já implementa | Marketplace de agentes |
 | Fluxos LGPD do titular (acesso, exportação, eliminação) | | CrewAI embutido no portal — integração simples, prevista para os próximos dias (Pedro é o dono da conta/parceria CrewAI; confirmado 2026-07-24). Migra para ✅ quando estiver no ar E testada; até lá, a promessa segura é a licença CrewAI de 12 meses ao graduar |
@@ -40,4 +40,4 @@ Levantado em 2026-08-01 — o portal tem três capacidades de ecossistema pronta
 
 ## Dono e lacunas
 
-**Operação:** chapéu [Capacitação](../01-setores/capacitacao.md) · **Saúde:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R3 (auth interina), R5 (vídeos). P7: ✅ resolvida 2026-07-23. Status no [mapa](mapa-jornada-ferramentas.md).
+**Operação:** chapéu [Capacitação](../01-setores/capacitacao.md) · **Saúde:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R3 (auth interina) · R5 (vídeos — roteiros prontos em `abba-portal/docs/platform/content/roteiros/`, gravação em lotes pelos fundadores). P7: ✅ resolvida 2026-07-23. Status no [mapa](mapa-jornada-ferramentas.md).
