@@ -141,8 +141,25 @@ class PatrimonioFlow(Flow[S.EstadoCaso]):
                 "desenhos_json": "",  # preenchido pelo context da 2ª task em runtime
             })
             self._cobrar_custo(resultado)
-            desenhos: list[S.DesenhoEstrutura] = resultado.tasks_output[0].pydantic.desenhos
-            criticas: list[S.CriticaAdversarial] = resultado.tasks_output[1].pydantic.criticas
+            # Blindagem: o output_pydantic pode vir None se o parse da task falhar
+            # (LLM devolveu texto fora do schema). O desenho é a espinha do caso —
+            # sem desenhos não há minuta; a crítica é enriquecimento (não fatal).
+            outs = resultado.tasks_output
+            desenhos: list[S.DesenhoEstrutura] = (
+                list(outs[0].pydantic.desenhos)
+                if outs and outs[0].pydantic is not None else [])
+            criticas: list[S.CriticaAdversarial] = (
+                list(outs[1].pydantic.criticas)
+                if len(outs) > 1 and outs[1].pydantic is not None else [])
+            if not desenhos:
+                # sem desenho estruturado não há o que revisar; reexecuta se ainda
+                # houver ciclo, senão falha alto (não engole o caso em silêncio).
+                if self.state.ciclos_redesenho >= MAX_CICLOS_REDESENHO:
+                    raise RuntimeError(
+                        "Crew de desenho não produziu estrutura parseável após "
+                        f"{self.state.ciclos_redesenho + 1} ciclo(s) — caso ao advogado.")
+                self.state.ciclos_redesenho += 1
+                continue
             for d, c in zip(desenhos, criticas):
                 d.critica = c
             sobreviventes = [d for d in desenhos if not d.descartado]
