@@ -29,7 +29,7 @@ encontro muda no mesmo commit:
 |---|---|---|
 | Kickoff (sem. 0) | Aula 1 da Fundação, feita na sala | as 3 perguntas + a primeira Bússola ao vivo |
 | Marco 1 (sem. 3) | Fundação 2–8 concluídas | os modos de falha (aula 4) e o colar-e-citar (aula 6) viram prática guiada sobre os artefatos trazidos |
-| Marco 2 (sem. 6) | trilha do papel concluída (Gestor: G1–G5) | o ritual dos 15 minutos (G3) e as 3 faixas de amostragem (G2) entram no roteiro do plantão dos campeões |
+| Marco 2 (sem. 6) | trilha do papel concluída (Operacional: O1–O6 · Gestor: G1–G5) | quem vem da trilha Operacional chega com quatro artefatos escritos — Ficha de Padrão (O2), grade de avaliação (O3), pontos de conferência obrigatória (O4) e modelo de pedido (O5) — e é **isso** que ele apresenta no bloco "Ensinar o que se pratica"; o passo a passo da O6 é literalmente o rascunho dos "dois nomes". Do lado do gestor, o ritual dos 15 minutos (G3) e as 3 faixas de amostragem (G2) entram no roteiro do plantão dos campeões |
 | Graduação (sem. 8) | capstones prontos | comparação com a linha de base + credencial |
 
 ---
@@ -136,7 +136,7 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 | Bloco | Min | O que acontece |
 |---|---|---|
 | Por que você está aqui | 15 | Mostrar a cada um o próprio dado que o trouxe. Não é honraria, é encargo |
-| Ensinar o que se pratica | 40 | Cada campeão apresenta em 5 min **um movimento que ele mesmo já usa**. Os outros criticam. Ninguém ensina o que não pratica |
+| Ensinar o que se pratica | 40 | Cada campeão apresenta em 5 min **um movimento que ele mesmo já usa**. Quem veio da trilha Operacional apresenta em cima dos próprios artefatos (Ficha de Padrão, grade, pontos de conferência, modelo de pedido) — nada de slide novo. Os outros criticam. Ninguém ensina o que não pratica |
 | A pergunta que ensina | 40 | Treino de condução: como responder com pergunta, como não resolver pela pessoa, como reconhecer quem está travado e não pede ajuda |
 | Intervalo | 15 | — |
 | O cético | 35 | Simulação: um campeão conduz, o facilitador faz o papel do colega cético. Regra: a objeção é dado, nunca resistência a ser ridicularizada |
