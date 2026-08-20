@@ -24,6 +24,9 @@ Melhoria estruturada a partir da reunião Rafael/Brasal + [pesquisa de mercado](
 
 A avaliação pode entregar, sem campo adicional, uma seção de **prontidão regulatória**: o [mapa 25 dimensões × ISO 42001 × PL 2338](mapa-avaliacao-iso42001-pl2338.md) mostra qual evidência as entrevistas já coletam e as 10 perguntas suplementares que fecham o resto. Travas: é leitura de prontidão, **nunca certificação** (não somos organismo acreditado); PL 2338 ainda em tramitação — conferir o mapa antes de prometer.
 
+> ⚠️ **Descasamento aberto (auditoria 2026-08-20):** a ferramenta **ainda não emite** essa seção — o mapa existe como documento, a análise não o produz. O framework (D09) cita GDPR/HIPAA/SOX e **não** cita LGPD, AI Act nem ISO 42001. Até isso ser construído ou a promessa ser retirada, **não prometer a seção regulatória em proposta**. Detalhes e demais lacunas: [auditoria do Assessment v2](../05-interno/auditoria-assessment-v2-2026-08-20.md).
+> Também de 2026-08: o Digital Omnibus da UE adiou as obrigações de alto risco do Anexo III para 12/2027, **mas o Artigo 50 (transparência) vale desde 02/08/2026** — não generalizar prazos em material de cliente.
+
 ## Superfície web (assessment.abbaservices.com.br)
 
 O assessment no ar gera relatórios profundos por informação pública (fontes citadas com nível de confiança, formato Situação/Complicação/Resolução). **Consistência verificada em 3 execuções** (Brasal/deep 42p · Grupo Santa/quick 30p · ABC DataSaúde/quick 31p): mesma estrutura e qualidade, com consciência regulatória por setor.
