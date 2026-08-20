@@ -17,6 +17,8 @@
 
 Fora destes quatro, a ABBA não está na sala — está no portal e no canal. **A entrega não termina na graduação: termina no relatório de durabilidade de 90 dias.**
 
+**Antes do encontro 1** existe uma quinta presença, que não é da turma: a **[Oficina de Casos](oficina-de-casos.md)** — 90 minutos com 6 a 10 pessoas que fazem o trabalho, 10 a 14 dias antes do kickoff. É dela que saem as 12 tarefas-âncora que dão às aulas o nome dos sistemas do cliente. Turma sem Oficina roda com exemplo genérico, e exemplo genérico ensina o movimento sem mudar o trabalho.
+
 ## Coerência com as aulas online (regra de um só corpo)
 
 A sala e o portal são o mesmo programa: mesma linguagem, mesmos
@@ -191,7 +193,7 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 
 | Encontro | Materiais |
 |---|---|
-| Kickoff | [deck de kickoff](../08-materiais/modelos/abba-deck-kickoff.pptx) adaptado · ficha da linha de base · lista de acessos testados |
+| Kickoff | [deck de kickoff](../08-materiais/modelos/abba-deck-kickoff.pptx) adaptado · **[Ficha de Linha de Base](../08-materiais/ficha-linha-de-base.md)** (Partes A e B impressas; Parte C já apurada com o patrocinador) · as 12 tarefas-âncora da [Oficina de Casos](oficina-de-casos.md) · lista de acessos testados |
 | Marco 1 | painel da turma impresso · artefatos trazidos pelos participantes · ficha dos 5 casos |
 | Marco 2 | dados de seleção por participante · roteiro do plantão |
 | Graduação | [certificados](../08-materiais/modelos/certificados-modelo.pptx) · comparação com a linha de base · ficha Primeira Vitória |
