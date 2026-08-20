@@ -34,30 +34,72 @@ encontro muda no mesmo commit:
 
 ---
 
-## 1. Kickoff da Academy (semana 0 · meio dia)
+## 1. Kickoff da Academy (semana 0 · 3h30)
 
-**Objetivo:** a turma nasce com nome, data de formatura e linha de base medida — e cada pessoa sai com um compromisso escrito com gatilho.
+**Objetivo:** a turma nasce com nome, data de formatura e linha de base medida — e cada pessoa sai com o rascunho de uma vitória real e a Bússola v0 escrita.
 
-**Pré-requisitos (checar 48h antes):** turma criada no portal com nome próprio · acessos testados por amostragem (3 pessoas de áreas diferentes) · patrocinador alinhado sobre a abertura · sala com projetor e wi-fi que aguente a turma inteira logada ao mesmo tempo.
+> **Origem do roteiro:** run-of-show do Tier 1C do pacote "Academy
+> Materiais Finais" (jul/2026), fundido em 20/08/2026 com a estrutura de
+> 4 encontros e atualizado à redação canônica (Bússola: PARAR / COMEÇAR
+> / **SÓ EU**; avaliação pela Rubrica ABBA).
 
-| Bloco | Min | O que acontece | Quem conduz |
-|---|---|---|---|
-| Abertura | 10 | **O patrocinador abre** — por que a empresa está fazendo isto, com as palavras dele. Nunca a ABBA | patrocinador |
-| A frase | 5 | *"Ninguém aqui vai aprender IA hoje. Vocês vão instalar três perguntas que não saem mais."* | fundador |
-| As 3 perguntas | 25 | Parar / Começar / Só eu faço. Explicação curta e três exemplos de **áreas presentes na sala** — nunca exemplo genérico | fundador |
-| Bússola ao vivo | 30 | Todos preenchem a primeira Bússola no portal, ali, juntos. Quem travar é atendido na hora. **O fundador preenche a dele também**, na frente de todos (1 Cr 25:8) | todos |
-| Linha de base | 30 | Medição do ponto de partida: quantas horas por semana em tarefas candidatas, que ferramentas já usam, o que já tentaram e não pegou. *"Combinado antes, medido depois"* | fundador |
-| Intervalo | 15 | — | — |
-| Primeira aula, juntos | 45 | A turma faz a Aula 1 inteira na sala, incluindo o Faça Você na Iris. **A primeira repetição acontece com alguém do lado** | todos |
-| A escada | 20 | Explorador → Praticante → Especialista → Arquiteto, e o que cada degrau exige. Deixar explícito: **para Especialista só sobe quem ensinou alguém** | fundador |
-| O combinado | 20 | Ritmo semanal, o que é o canal, o que acontece quando alguém trava, e a **data da graduação anunciada** | fundador + patrocinador |
-| Perguntas | 20 | — | — |
+**Pré-requisitos (3–5 dias antes):** turma criada no portal com nome próprio · acessos testados por amostragem · patrocinador com o briefing abaixo · **tarefa do voluntário da Autópsia coletada por formulário** (qual tarefa, frequência, tempo, cor no Semáforo — NUNCA tarefa com dado vermelho ao vivo) · consentimento do voluntário por escrito · demo ensaiada 2× na ferramenta homologada, com versão "boa" salva de backup · dados anonimizados · AV testado (fonte ≥18pt no prompt, hotspot reserva).
 
-**Saídas obrigatórias:** 100% da turma com Bússola preenchida · linha de base registrada · data de graduação anunciada em voz alta e no e-mail do mesmo dia · foto da turma.
+### Run-of-show
 
-**Erros a evitar:** a ABBA abrir a reunião (é do patrocinador) · demonstrar a ferramenta antes das 3 perguntas (vira demo de produto) · deixar alguém sair sem ter preenchido a Bússola ("preenche depois" = nunca) · prometer conteúdo que não existe.
+| Horário | Dur. | Segmento | Responsável | Materiais |
+|---|---|---|---|---|
+| 00:00 | 15 min | Chegada e boas-vindas | facilitador líder + patrocinador | crachás, café |
+| 00:15 | 15 min | **Abertura do patrocinador** ("horas reinvestidas") | patrocinador | slide 1 |
+| 00:30 | 30 min | A Bússola das Três Perguntas (introdução v0) + **linha de base medida** | facilitador líder | cards da Bússola impressos |
+| 01:00 | 40 min | **Autópsia de uma Tarefa / Demo Theater** | facilitador + voluntário | tela grande, ferramenta homologada, tarefa pré-coletada |
+| 01:40 | 15 min | Intervalo | — | café |
+| 01:55 | 55 min | **Clínica da Primeira Vitória** | todos os facilitadores circulando | Fichas Primeira Vitória, laptops |
+| 02:50 | 25 min | Bússola em papel (v0 individual) | facilitador líder | cards, canetas |
+| 03:15 | 15 min | Fechamento, próximos passos, data da graduação anunciada | facilitador líder | slide final |
 
----
+### As falas-chave (word-for-word)
+
+- **Abertura (00:15):** *"Bom dia. Vocês não estão aqui para virar técnicos. Estão aqui para recuperar tempo. Nas próximas três horas e meia, cada um vai transformar uma tarefa real. Uma regra só: participem. Ninguém aprende a nadar assistindo vídeo de natação."*
+- **Antes da Autópsia (01:00):** *"Agora vem a parte favorita de todo Kickoff. Um colega de vocês nos deu, com antecedência, uma tarefa chata de verdade. Vamos transformá-la ao vivo, juntos — e vão ver os tropeços também, porque eles fazem parte."*
+- **Script da demo:** "Esta é a tarefa do [VOLUNTÁRIO]. Primeiro, o jeito errado: um pedido de uma linha." [resultado fraco] "Agora, com o Esqueleto ABBA: Papel, Contexto, Tarefa, Formato, Exemplo, Restrições." [construir ao vivo] "E o passo que ninguém pode pular: a crítica. Vamos caçar erros." [as três checagens ao vivo]
+
+### Clínica da Primeira Vitória — facilitadores circulantes (1 por ~6 pessoas)
+
+Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coaching ao circular:
+
+- "Qual tarefa você trouxe? Quantos 'sim' na Lente de Oportunidade?"
+- "Antes de pedir, que Papel e Contexto você vai dar?"
+- "Como você vai verificar se o resultado está certo?"
+- Para quem travou: "Peça à IA para te fazer três perguntas antes de responder."
+- Para quem aceitou a primeira resposta: "O que você mudaria? Faça uma rodada de refino."
+
+### Bússola em papel — instruções
+
+25 minutos, individual, silêncio nos primeiros 10. O facilitador lê cada pergunta em voz alta e dá 3 minutos por pergunta (PARAR · COMEÇAR · **SÓ EU**). Últimos 5 minutos: 3 voluntários compartilham a resposta da Pergunta 3 — a insubstituível — em voz alta. Recolher registro da v0 para o portal.
+
+### Contingências
+
+- **Demo falha:** mostrar o backup pré-gravado; dizer *"isto é exatamente o tipo de falha que o método existe para pegar."* Falha é conteúdo.
+- **Sala apática:** trocar para dupla — "vire para o colega e compartilhe sua tarefa chata em 60 segundos."
+- **Internet cai:** prints/backup; seguir para a Bússola em papel (não depende de rede).
+
+### As 8 perguntas céticas mais comuns (respostas prontas)
+
+1. **"Isso vai substituir meu emprego?"** — "Não é a máquina que substitui pessoas; é a pessoa que usa IA com julgamento que se destaca. E o compromisso da empresa é horas reinvestidas, não eliminadas."
+2. **"Meus dados estão seguros?"** — "Nas ferramentas homologadas, sim, com proteção contratual. Por isso o Semáforo: amarelo ou vermelho, só em ferramenta homologada. Nunca em conta pessoal."
+3. **"Eu não tenho tempo pra isso."** — "Por isso os vídeos têm poucos minutos e os desafios cabem em 48h. E o objetivo é te devolver tempo: a Primeira Vitória de hoje já economiza a partir de amanhã."
+4. **"E se a IA errar e a culpa for minha?"** — "A responsabilidade é sua, sim — como com qualquer ferramenta. Por isso ensinamos as três checagens. Verificação não é opcional; é o núcleo do método."
+5. **"Não sou de tecnologia."** — "Não precisa programar. Precisa saber escolher, pedir, criticar e entregar. Se você sabe dar instruções claras a um colega, já tem a base."
+6. **"Já tentei e veio uma bobagem."** — "Pedido fraco, resultado fraco. É conversa, não comando. Hoje você vai ver a diferença ao vivo."
+7. **"A empresa vai me vigiar pelo que eu digito?"** — "O foco é segurança de dados, não vigilância. A política está publicada — vamos lê-la juntos."
+8. **"Isso é modismo, daqui a um ano passa."** — "As ferramentas mudam. Por isso ensinamos um método que independe da ferramenta — a Bússola e os quatro movimentos funcionam com qualquer modelo."
+
+### Briefing do patrocinador (entregar antes; 2–3 min de fala)
+
+**Dizer:** (1) por que a empresa investe nisso agora; (2) o compromisso explícito: *"as horas que a IA economizar são horas reinvestidas em trabalho melhor, não horas eliminadas"*; (3) que você mesmo vai participar e usar; (4) que erro e experimentação são bem-vindos. **Não dizer:** não prometa que ninguém nunca será afetado; não trate como obrigação punitiva; não minimize preocupações. Autenticidade > perfeição.
+
+**Saídas obrigatórias:** 100% da turma com Bússola v0 registrada · linha de base medida · Fichas Primeira Vitória recolhidas (rascunho) · data de graduação anunciada em voz alta e por e-mail no mesmo dia · foto da turma.
 
 ## 2. Marco 1 — "o caso de vocês" (semana 3 · meio dia)
 

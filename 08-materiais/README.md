@@ -110,8 +110,8 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | ✅ regularizado (`modelos/relatorio-maturidade-modelo.docx` + oportunidades + plano diretor) |
 | Certificados (participante e campeão, PPTX com logo) | graduação | ✅ [`modelos/certificados-modelo.pptx`](modelos/certificados-modelo.pptx) |
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
-| Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
-| Card da Bússola do portal em pt-BR | o card existente ("My Week With AI") está em inglês — não pode aparecer em material pt-BR | pendência de tradução (Pedro/portal) |
+| Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | **texto final portado e corrigido em [`artefatos-impressos.md`](artefatos-impressos.md) (Bússola com SÓ EU; rubricas nos 4 movimentos — 20/08)** → arte final + gráfica |
+| Card da Bússola do portal em pt-BR | o card legado ("My Week With AI", 3ª pergunta "Continuar") está aposentado — o texto canônico é o de [`artefatos-impressos.md`](artefatos-impressos.md) §1 | reeditar na arte final (Pedro/portal) |
 | **Re-emissão das propostas na tabela v2** | as 3 propostas de entrada (DOCX) e a proposta do programa citam preços da v1 (28k/185k) — **descontinuados; o Revisor bloqueia se forem enviadas como estão** (é o comportamento desejado) | atualizar cada DOCX na primeira emissão real pós-v2 |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
 | One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
