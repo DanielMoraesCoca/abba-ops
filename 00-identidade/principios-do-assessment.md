@@ -22,6 +22,31 @@ O método da ABBA não nasceu de um framework de consultoria — nasceu da convi
 
 **"Contar o custo"** é o diferencial defensável desta camada: uma seção do entregável que mostra o custo total honesto de cada intervenção — incluindo operação, manutenção e pessoas — antes de o cliente decidir. É coerente com "prova, não impressão", é rara no mercado (a dor nº 1 documentada de quem contrata consultoria de IA é descobrir o custo real depois), e é diretamente pregável na conversa de venda sem citar fonte nenhuma.
 
+## A doutrina agora é executável (2026-08-20)
+
+Os princípios deixaram de ser só documento: viraram o registro `src/report/principles.js` no assessment-brain — **15 princípios em 3 camadas** (7 bíblicos acima + 4 de campo da [reunião Rafael/Brasal](../05-interno/reuniao-rafael-brasal-2026-08-18.md) + 4 de mercado da análise da Sophy Works), cada um com verificação determinística de onde vive no produto.
+
+**Como conferir que tudo está dentro da ferramenta:**
+- `abba principles` — imprime a doutrina (redação universal, fontes internas nos ids)
+- `abba principles "<engajamento>"` — tabela de conformidade contra o último run real (15/15 vivos no ensaio mock de 20/08)
+- O relatório do consultor ganhou a seção **Method Integrity**: os princípios checados contra o próprio relatório
+- `test/unit/principles.test.js` trava no CI: remover a seção/página/módulo que sustenta um princípio quebra a suíte
+
+**Os 8 princípios novos (campo + mercado):**
+
+| id no código | Princípio (redação universal) | Fonte | Onde vira produto |
+|---|---|---|---|
+| `dados-e-processos` | A fundação que falha nunca é só o dado: é o processo que o produz | Rafael/Brasal #1 | Veredito de fundação "dados e processos" |
+| `area-disposta-primeiro` | O humano no loop ou ajuda ou vira detrator: começar pela área mais disposta | Rafael/Brasal #2 | Willing-area gate no plano de adoção + tags no roadmap |
+| `adaptar-ao-processo-real` | Solução de prateleira quebra no processo real | Rafael/Brasal #3 (Spring Globo) | Loops de decisão reais mapeados |
+| `imersao-e-licoes` | O que se vende é a imersão e as lições acumuladas | Rafael/Brasal #4 | Priors do vault citados no relatório |
+| `sistema-vivo-nao-slide` | A análise não morre como documento: entra no ciclo vivo de decisão | Sophy (Decision Stack "living system") | **`abba decision seed`**: intervenções ranqueadas viram decisões no cérebro, com trigger/outcome/Brier |
+| `primeira-hipotese-mais-rapida` | A primeira hipótese raramente é a melhor: é só a mais rápida | Sophy | Nota no plano + `abba red-team` |
+| `por-que-este-trabalho-existe` | Toda construção carrega por que existe e se continua sendo a aposta certa | Sophy ("why does this work exist") | Decisões semeadas carregam vazamento + número + premissa |
+| `transparencia-de-custo` | O custo do próprio trabalho é visível até o centavo | Sophy (token transparency) | Custo do run no rodapé + reliability |
+
+Os 7 bíblicos da tabela acima têm ids: `contar-o-custo`, `inspecionar-de-noite`, `multidao-de-conselheiros`, `conhece-tuas-ovelhas`, `coracao-que-discerne`, `sete-anos-de-jose`, `sabedoria-edifica-a-casa`.
+
 ## Regras de aplicação
 
 1. **Interno + sutil** (decisão do Daniel, 2026-08-19): a camada existe no método e nos documentos internos; em material público aparece só como sabedoria universal.

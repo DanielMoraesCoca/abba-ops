@@ -38,6 +38,10 @@ Buscas na web + **primeira mão do Rafael na [reunião de 18/08](reuniao-rafael-
 - **Lição principal:** o cliente compra um SISTEMA legível — soluções, estrada, maturidade, problemas mais valiosos primeiro — não um documento. A resposta da ABBA não é copiar o formato deles, é entregar a nossa substância (que é maior) com legibilidade equivalente.
 - **Fronteira honesta:** a Sophy estrutura o problema por metodologia; o assessment ABBA entra com **dados reais da empresa** (entrevistas multi-nível + documentos) e sai com número, premissa e veredito de fundação. E o hand-off para construção que eles vendem, a ABBA já tem: `abba export --target crewai`. Tornar isso visível na venda.
 
+**Aprofundamento 20/08 (buscas adicionais; site segue bloqueado no ambiente):** o produto se chama **aOS** e o coração é o **Decision Stack** — 4 camadas empilhadas como um sistema operacional (contexto na base → entrega no topo) rodando como **"living system, not a slide deck"**; a pergunta-mestra é **"why does this work exist — and is it still the right bet?"**; máxima de método: **"the first hypothesis is rarely the best one — it's just the fastest"**; ações nas IDEs (Claude Code, Cursor) **retroalimentam o Decision Stack**; transparência de custo até o token; sem tiers ou feature gating. Posicionamento: "clarity problem, not execution problem". Fontes: [sophyworks.ai](https://sophyworks.ai/) (via snippets de busca).
+
+**O que a ABBA absorveu disso (2026-08-20, tudo no assessment-brain):** os 4 princípios de mercado do registro executável (`sistema-vivo-nao-slide`, `primeira-hipotese-mais-rapida`, `por-que-este-trabalho-existe`, `transparencia-de-custo` em `src/report/principles.js`) e o novo **`abba decision seed`** — as intervenções ranqueadas do assessment viram decisões `recommended` no cérebro (com evidência do vazamento como "porquê", trigger de revisão sugerido, outcome e Brier depois). O assessment deixou de morrer como documento: é o Decision Stack da ABBA, com a vantagem de nascer de dados reais.
+
 ## 4. O que virou produto (rastreabilidade das decisões)
 
 | Achado da pesquisa | Decisão de produto | Onde vive |
