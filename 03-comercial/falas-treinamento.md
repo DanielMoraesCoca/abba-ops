@@ -37,6 +37,7 @@ Na reunião de 18/08 vendemos **videoaula** e **quiz** — commodity que qualque
 | "Nós temos a trilha que libera a licença." | "Você já desenhou o certo: licença para quem concluiu. O que falta é a trilha e uma prova de conclusão auditável. A credencial é verificável por link — o seu processo de liberação para de depender da sua memória." |
 | "Somos mais baratos que a Start." | "Se o que vocês querem são dois encontros e um acesso, R$ 30 mil compra isso em qualquer lugar — de nós, R$ 15 mil. O que ninguém entrega por R$ 30 mil é a prova, 90 dias depois, de que mudou." |
 | "O programa termina na formatura." | "O nosso treinamento não acaba na formatura. Acaba no relatório de durabilidade de 90 dias — e é ele que a gente assina." |
+| "O portal é onde ficam as aulas." | "O portal não é curso que acaba — é academia que a pessoa frequenta. Todo dia ele propõe UMA prática de dois a cinco minutos no trabalho real: um erro plausível para caçar, um pedido para experimentar na tarefa de hoje, a pergunta da semana. Tem o estudo semanal da casa, a biblioteca de pedidos por área, cenários de decisão — e as fichas que a pessoa constrói nas aulas ficam guardadas com ela, prontas para o dia de trabalho. Nada disso depende de vídeo: é prática, que é como comportamento muda." |
 
 ## Sobre preço (serviço 5)
 
@@ -92,3 +93,4 @@ Citar sempre com fonte, e reconferir antes de virar slide — metade do que ranq
 | Versão | Data | Mudança |
 |---|---|---|
 | v1 | 2026-08-19 | Criado pela reanálise do treinamento. Corrige a inversão de discurso: vendíamos o que não temos (vídeo, quiz) e escondíamos o que temos (durabilidade, patrocínio do gestor, credencial verificável) |
+| v2 | 2026-08-23 | Currículo v3 (academia diária): nova substituição "o portal é onde ficam as aulas" → "academia que a pessoa frequenta" — Prática de Hoje, Boletim, biblioteca, cenários e Minhas Ferramentas entram na fala; nada depende de vídeo |
