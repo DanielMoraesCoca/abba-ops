@@ -13,6 +13,10 @@ from patrimonio_flow import schemas as S
 from patrimonio_flow.guardrails import make_anti_citacao_orfa, sem_linguagem_de_ocultacao
 from patrimonio_flow.tools.rag_corpus import RagCorpusTool
 
+# Ver desenho_crew.py: eleva o teto de completion para as análises citadas
+# (tributária/sucessória/jurisdições) não truncarem em casos com muitas fontes.
+MAX_TOKENS_SAIDA = 16000
+
 
 @CrewBase
 class AnaliseCrew:
@@ -31,17 +35,20 @@ class AnaliseCrew:
     @agent
     def analista_tributario_br(self) -> Agent:
         return Agent(config=self.agents_config["analista_tributario_br"],
-                     tools=[self.rag_tool], temperature=0, memory=False)
+                     tools=[self.rag_tool], temperature=0, memory=False,
+                     max_tokens=MAX_TOKENS_SAIDA)
 
     @agent
     def analista_sucessorio(self) -> Agent:
         return Agent(config=self.agents_config["analista_sucessorio"],
-                     tools=[self.rag_tool], temperature=0, memory=False)
+                     tools=[self.rag_tool], temperature=0, memory=False,
+                     max_tokens=MAX_TOKENS_SAIDA)
 
     @agent
     def analista_jurisdicoes(self) -> Agent:
         return Agent(config=self.agents_config["analista_jurisdicoes"],
-                     tools=[self.rag_tool], temperature=0, memory=False)
+                     tools=[self.rag_tool], temperature=0, memory=False,
+                     max_tokens=MAX_TOKENS_SAIDA)
 
     # -------- tasks
 

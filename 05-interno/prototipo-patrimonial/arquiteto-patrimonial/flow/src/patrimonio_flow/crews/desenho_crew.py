@@ -13,6 +13,13 @@ from patrimonio_flow import schemas as S
 from patrimonio_flow.guardrails import make_anti_citacao_orfa, sem_linguagem_de_ocultacao
 from patrimonio_flow.tools.rag_corpus import RagCorpusTool
 
+# Teto de tokens de completion por agente. O default do provedor (~4096) truncava
+# o JSON de ListaDesenhos (2-3 estruturas + crítica num objeto só) no meio de uma
+# string → ConverterError "EOF while parsing". Sonnet 4.5 aceita até 64k de saída;
+# 16k dá folga larga sem risco. O gasto real é limitado pelo conteúdo, não pelo
+# teto — e o teto DURO de custo do caso (teto_usd_caso, main.py) segue valendo.
+MAX_TOKENS_SAIDA = 16000
+
 
 @CrewBase
 class DesenhoCrew:
@@ -27,13 +34,15 @@ class DesenhoCrew:
     def arquiteto_estruturas(self) -> Agent:
         # modelo sugerido: classe Sonnet; criatividade controlada
         return Agent(config=self.agents_config["arquiteto_estruturas"],
-                     tools=[self.rag_tool], memory=False)
+                     tools=[self.rag_tool], memory=False,
+                     max_tokens=MAX_TOKENS_SAIDA)
 
     @agent
     def critico_adversarial(self) -> Agent:
         # é onde mais se paga inteligência — modelo sugerido: classe Sonnet/Opus
         return Agent(config=self.agents_config["critico_adversarial"],
-                     tools=[self.rag_tool], memory=False)
+                     tools=[self.rag_tool], memory=False,
+                     max_tokens=MAX_TOKENS_SAIDA)
 
     @task
     def task_desenhar_alternativas(self) -> Task:
