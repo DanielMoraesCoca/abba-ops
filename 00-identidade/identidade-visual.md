@@ -4,21 +4,43 @@
 
 ## Paleta
 
+Valores **extraídos dos arquivos dos decks** em 20/08/2026 (o XML de
+`abba-deck-institucional.pptx` e `abba-apresentacao.pptx` — as duas peças
+usam exatamente a mesma paleta). Antes desta data a tabela trazia um
+dourado (`#C2A35B`) que não era o dos materiais reais; ficou valendo o
+que os arquivos usam.
+
 | Papel | Cor | Hex | Uso |
 |---|---|---|---|
-| **Primária** | Azul-marinho profundo | `#1B2A4A` | Títulos, texto de destaque, fundos de capa |
-| **Acento** | Dourado | `#C2A35B` | Detalhes, linhas, números de destaque, elementos premium — usar com parcimônia |
+| **Primária** | Azul-marinho profundo | `#1B2A4A` | Títulos, marca, botão primário, fundos de capa |
+| **Tinta** | Grafite | `#232B3A` | Texto forte sobre fundo claro |
+| **Acento** | Dourado/latão | `#B8985A` | Etiquetas em caixa alta, réguas, números de destaque, links — a cor mais usada do deck, e ainda assim usada com parcimônia |
 | **Neutro escuro** | Cinza-ardósia | `#5A6472` | Texto secundário, legendas, rodapés |
-| **Neutro claro** | Cinza-gelo | `#E8E8E8` | Fundos de tabela, divisores |
-| **Apoio** | Azul-petróleo | `#2E8B9A` | Links, elementos interativos (raro em impresso) |
-| Base | Branco | `#FFFFFF` | Fundo padrão |
+| **Areia** | Bege claro | `#D9D2C4` | Réguas finas, divisores, superfície de apoio |
+| **Fundo** | Creme | `#F7F4EE` | Fundo de página |
+| Base | Branco | `#FFFFFF` | Cartões, tabelas |
 
-Regra: navy + dourado sobre branco = a cara da ABBA (sóbrio, premium, confiável). Nunca introduzir cor nova sem registrar aqui.
+Regra: **navy + dourado sobre creme = a cara da ABBA** (sóbrio, premium,
+confiável). Nunca introduzir cor nova sem registrar aqui.
+
+**Cores funcionais** (só para estado, nunca para decorar): verde
+`#2F7A5A` (deu certo) · âmbar `#B8862A` (atenção — é também o amarelo do
+Semáforo de Dados) · vermelho `#A33A32` (pare). Se uma cor não está
+dizendo "certo", "cuidado" ou "errado", ela deveria ser navy, dourada ou
+areia.
+
+### No portal
+
+O portal implementa esta paleta desde 20/08/2026 (decisão DESIGN-01 no
+registro do produto). Os tokens vivem em `abba-portal/src/app/globals.css`
+sob `@theme`, e `npm run audit:hex` reprova cor nova escrita direto no
+componente. Antes disso o portal era escuro, com acentos azul, teal,
+laranja, rosa e roxo — que não existiam em nenhum material impresso.
 
 ## Tipografia
 
 - **Documentos Office:** Aptos (corpo) e Aptos Display (títulos) — padrão dos materiais atuais. Fallback universal: Calibri / Arial.
-- **Portal/web:** manter a tipografia do design system do portal; os hex acima valem para lá também.
+- **Portal/web:** serifada nos títulos e sans no corpo, espelhando o par Cambria/Calibri dos decks — na web, Source Serif 4 e Inter. Os hex acima valem para lá, e agora estão implementados.
 - Corpo 11pt · legendas 9pt · títulos de seção numerados (`1. `, `1.1 `).
 
 ## Anatomia dos documentos
