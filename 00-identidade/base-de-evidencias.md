@@ -5,8 +5,8 @@
 > **número que não está aqui não sai da boca nem do material.** Para
 > adicionar um número: fonte primária + nível de confiança + registrar
 > aqui primeiro. Adotada por decisão do sócio (V4a, 2026-08-23), a partir
-> do estudo de utility delta e de duas pesquisas diligentes com auditoria
-> de fonte (18/08 e 23/08/2026).
+> do [estudo de utility delta](../05-interno/estudo-utility-delta.md) e de
+> duas pesquisas diligentes com auditoria de fonte (18/08 e 23/08/2026).
 >
 > **Por que este documento existe:** metade do conteúdo que ranqueia
 > sobre "IA corporativa" é marketing de fornecedor ou SEO gerado por IA,
@@ -46,6 +46,38 @@ Cada linha: o número, a fonte, a confiança, e a fala pronta.
 | 72% dos líderes dizem acompanhar retorno de GenAI — mas **metade usa "qualidade de dados" como métrica** e **53% reportam retorno de só 1–5%** | Wharton GBK, ano 3 (out/2025) | MÉDIA-ALTA | *"Quase todo mundo diz que mede. Metade mede 'qualidade de dados'. E metade reporta retorno de até 5%. Medição de verdade — combinada antes, ligada a P&L — quase não existe."* |
 | McKinsey: **~25% da receita global de 2025 veio de contratos baseados em resultado** | Declaração pública da própria McKinsey | MÉDIA | *"No topo do mercado, um quarto da receita da McKinsey já é atrelada a resultado. No médio porte brasileiro, ninguém oferece isso. Nós oferecemos."* |
 | Brasil: **47% das empresas já dão treinamento de IA** — acima de EUA (28%), UK (27%) e Alemanha (20%) | KPMG / Univ. Melbourne, "Trust, attitudes and use of AI" (2025) | MÉDIA-ALTA | *"O Brasil não tem falta de treinamento de IA — tem falta de treinamento que aparece no trabalho. 47% das empresas já treinam; a pergunta é o que sobrou 90 dias depois."* |
+
+### Sobre a cadeira de IA e o talento (a objeção do diretor)
+
+Números usados na [objeção: diretor de IA](../03-comercial/objecao-diretor-de-ia.md)
+e no [Conselheiro](../03-comercial/conselheiro-de-ia.md) — todos com fonte
+declarável na frase:
+
+| Número | Fonte | Confiança | Como falar |
+|---|---|---|---|
+| **98% das médias e grandes empresas brasileiras** relatam dificuldade de contratar profissional qualificado em IA | CartaCapital / Money Times (2025-26) | MÉDIA — imprensa citando pesquisa; declarar como "as pesquisas de mercado apontam" | *"As pesquisas apontam que 98% das empresas brasileiras não acham profissional de IA qualificado — quem disputa esse talento contra banco e vaga em dólar, perde."* |
+| CAIO é o cargo executivo que mais cresce (**76% das organizações em 2026 vs 26% em 2025**); Gartner projeta 30%+ das médias empresas com executivo de IA **fracionário** até 2027 | Gartner + levantamentos setoriais | MÉDIA | *"A cadeira de IA virou padrão — e no médio porte ela nasce fracionária. É exatamente o formato do Conselheiro."* |
+| **CAIOs saem em ~18 meses**; o cargo frequentemente se dissolve em 2 anos | Forbes/Bernard Marr (2025) | MÉDIA — análise de mercado, não estudo | *"O diretor de IA médio historicamente sai antes das fundações darem fruto — e o contexto vai na cabeça dele. O que a gente instala é o que fica quando qualquer pessoa sai."* |
+| **61,9% dos conselheiros consultivos** de capital fechado ganham até R$ 15 mil/mês | IBGC | MÉDIA-ALTA | Âncora de preço do Conselheiro — uso interno na [tabela](../03-comercial/tabela-de-precos.md), não vira slide |
+
+*(O "56% do patrocínio evapora em 6 meses" continua {{A VERIFICAR}} no
+[estudo de imunidade](../05-interno/estudo-imunidade-diretor-de-ia.md) —
+não entra em material até a fonte primária aparecer.)*
+
+### O estatuto do 70/30 (a tese da casa)
+
+O "70% do valor vive em pessoas, processos e cultura" — usado no
+[posicionamento](posicionamento.md), no [manifesto](manifesto.md) e no
+[kit](../03-comercial/kit-de-presenca.md) — **não é estatística externa:
+é a tese da casa.** Não tem (nem precisa de) fonte primária; frases desse
+tipo circulam no mercado sem medição rigorosa, e fingir que é número
+medido nos colocaria no mesmo balaio que combatemos. Regra de uso: falar
+como **convicção e leitura de mercado** (*"a nossa leitura é que a maior
+parte do valor…"*), nunca como "estudos mostram que 70%…". Se um cético
+pedir a fonte: *"é a nossa tese — e é por isso que trabalhamos como
+trabalhamos. O que a gente cita com fonte é outra coisa: RAND, METR,
+DORA."* A honestidade sobre o que é tese e o que é medição É o
+posicionamento.
 
 ### Sobre preço (posicionar sem inventar)
 

@@ -4,7 +4,7 @@
 
 ## 1. Tese
 
-**O problema:** 70–80% dos projetos de IA corporativa falham — e as falhas não são técnicas, são de adoção. O valor está 70% em pessoas, processos, cultura e governança; o mercado vende os outros 30% (ferramentas, pilotos sem métrica, cursos).
+**O problema:** mais de 80% dos projetos de IA falham — o dobro da taxa de projetos de TI comuns (RAND; [base de evidências](base-de-evidencias.md)) — e a causa nº 1 não é técnica: é começar sem critério de sucesso definido. O valor está 70% em pessoas, processos, cultura e governança; o mercado vende os outros 30% (ferramentas, pilotos sem métrica, cursos).
 
 **A lacuna de mercado:** a Fortune 500 é atendida por alianças de elite (consultorias globais + laboratórios de IA) a milhões de dólares por engajamento. O mid-market brasileiro é atendido por vendedores de ferramenta e consultorias de slide. **Ninguém instala os 70% no mid-market brasileiro.** Essa é a cunha.
 

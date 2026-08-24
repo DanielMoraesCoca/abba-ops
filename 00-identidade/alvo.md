@@ -53,7 +53,7 @@ Até agora este repositório não tinha **nenhum** critério de recusa escrito. 
 | Recusar quando | Por que |
 |---|---|
 | **Não há patrocinador na diretoria** | O trabalho é de mudança organizacional. Sem mandato, a adoção morre na etapa 4 e a culpa fica com a gente |
-| **Querem piloto sem métrica de sucesso definida antes** | É o padrão que faz 73% dos projetos falharem. Aceitar é vender uma derrota — e contradiz o inegociável do [protocolo de prova](../04-entrega/protocolo-de-prova.md) |
+| **Querem piloto sem métrica de sucesso definida antes** | É a causa nº 1 de fracasso medida pela RAND — começar sem critério de sucesso definido ([base de evidências](base-de-evidencias.md); o "73%" que estava aqui era número sem fonte, apontado pelo conselho e corrigido em V4a). Aceitar é vender uma derrota — e contradiz o inegociável do [protocolo de prova](../04-entrega/protocolo-de-prova.md) |
 | **Querem terceirizar a decisão, não aprender a decidir** | Nosso modelo é centauro: a IA gera, o humano assina. Cliente que quer a decisão terceirizada compra outra coisa — e vai reclamar de nós por não sermos ela |
 | **Exigem SSO corporativo / procurement formal** | A autenticação do portal é interina ([R3](../05-interno/registro-de-riscos.md)). Prometer aqui é quebrar depois |
 | **Faturamento muito abaixo da faixa** | Abaixo do piso, o programa não cabe no orçamento e a negociação empurra para baixo do piso de preço — o que a [tabela](../03-comercial/tabela-de-precos.md) proíbe |

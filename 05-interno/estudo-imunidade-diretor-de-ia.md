@@ -5,6 +5,8 @@
 > **Este documento não é discurso** — o discurso de mesa está na [objeção: diretor de IA](../03-comercial/objecao-diretor-de-ia.md). Este é o entendimento por baixo dele: o inventário honesto do que temos que um diretor interno **estruturalmente não consegue ter**, o inventário igualmente honesto de onde morreríamos, e as mudanças que tiram a ABBA da rota de colisão com o CAIO — pesquisadas, com fonte.
 >
 > Regra do repo vale aqui: número sem fonte não sobe para material de cliente; itens {{A VERIFICAR}} não viram slide.
+>
+> ⚠️ **NOTA DE CORREÇÃO (V4a, 2026-08-24).** Os números do MIT NANDA usados abaixo ("95%" e o 67% vs ~22% — que este estudo chamava de "o número mais importante") foram **aposentados do cânone**: fonte não revisada por pares, autorrelato, autores com conflito de interesse. O argumento de imunidade **continua de pé com fontes melhores** — RAND (>80%, causa nº 1 = sem critério de sucesso), METR (autorrelato erra ~40 pontos → verificação externa é necessária por medição, não por opinião) e DORA (IA amplifica a base) — ver [base de evidências](../00-identidade/base-de-evidencias.md). As linhas corrigidas estão marcadas; o restante do estudo (ISO 42001, PL 2338, 18 meses do CAIO, escassez) permanece válido.
 
 ---
 
@@ -12,8 +14,8 @@
 
 | Achado | Número | Fonte | O que significa para nós |
 |---|---|---|---|
-| Pilotos internos de IA generativa com **zero impacto mensurável no resultado** | 95% (MIT Projeto NANDA, jul/2025) · 80,3% sem valor mensurável (RAND) | [MIT/Yahoo Finance](https://finance.yahoo.com/news/mit-report-95-generative-ai-105412686.html) · [Pertama Partners](https://www.pertamapartners.com/insights/ai-project-failure-statistics-2026) | A falha dominante não é modelo — é **ausência de métrica definida antes, dono claro e integração de fluxo**. É literalmente o que o [protocolo de prova](../04-entrega/protocolo-de-prova.md) instala |
-| **Comprar de parceiro especializado dá certo ~67% das vezes; construção puramente interna, ~1/3 disso** | 2× a favor do externo | mesmo estudo MIT NANDA ([análise](https://www.thedataexperts.us/writing/enterprise-ai-failure-crisis-95-percent-failure-rate.html)) | O dado que desmonta "fazemos por dentro" **sem atacar ninguém**. É o número mais importante deste estudo |
+| Projetos de IA falham em **>80% dos casos — o dobro de TI comum**; causa nº 1: sem critério de sucesso definido | >80% (RAND, 2024 — 65 entrevistas com engenheiros de ML sêniores) ~~95% MIT NANDA, aposentado em V4a~~ | [Base de evidências](../00-identidade/base-de-evidencias.md) | A falha dominante não é modelo — é **ausência de métrica definida antes, dono claro e integração de fluxo**. É literalmente o que o [protocolo de prova](../04-entrega/protocolo-de-prova.md) instala |
+| **Autorrelato de ganho com IA erra por ~40 pontos** (devs experientes: 19% mais lentos, convencidos de +20%) | METR (jul/2025, RCT) | [Base de evidências](../00-identidade/base-de-evidencias.md) | ~~O antigo "dado de ouro" (67% externo vs 1/3 interno, MIT NANDA) foi aposentado em V4a~~ — o substituto é **mais forte**: ninguém interno consegue provar o próprio ganho sem medição externa. Desmonta "fazemos por dentro" pela via da prova, não da competência |
 | Patrocínio executivo **evapora em 6 meses** em 56% dos casos de falha | 56% | [Institute PM](https://www.institutepm.com/knowledge-hub/why-enterprise-ai-pilots-fail) {{A VERIFICAR fonte primária}} | O diretor de IA sozinho não segura o patrocínio — cadência externa com número (nosso ritual) segura |
 | **CAIOs saem em ~18 meses**; o cargo frequentemente se dissolve em 2 anos — o descompasso expectativa×realidade é a causa nº 1 | 18 meses | [Forbes/Bernard Marr](https://www.forbes.com/sites/bernardmarr/2025/03/06/the-ai-leadership-crisis-why-chief-ai-officers-are-failing-and-how-to-fix-it/) | O diretor de IA médio **vai embora antes das fundações darem fruto — e leva o contexto na cabeça**. Nossa memória institucional é o contra-ativo exato |
 | Empresas **com** CAIO reportam ~10% mais ROI em IA (IBM, 2.300 orgs) | 26% têm CAIO (2025), 2,4× em 2 anos | [Jeff Winter Insights](https://www.jeffwinterinsights.com/insights/the-chief-ai-officer-role) | Confirma a doutrina da [objeção](../03-comercial/objecao-diretor-de-ia.md): o CAIO é **bom para nós** — empresa com ele mede mais, compra melhor. Nunca vender contra |
@@ -49,9 +51,9 @@ O melhor diretor de IA do Brasil, dentro de uma empresa, vê **uma** empresa. A 
 
 O CAIO médio sai em ~18 meses — antes das fundações darem fruto — e o contexto vai na cabeça dele. O que fica na empresa quando o nosso conselheiro está lá: fatos com origem e vigência, diário decisão→resultado, dossiê compilado — **ativo da empresa, exportável em formato aberto**. A frase honesta: *"o seu diretor de IA é excelente e o mercado sabe disso — em dólar. O que a gente instala é o que fica quando qualquer pessoa sai."* Isso soma com o diretor, não compete.
 
-### (d) [CONSTRUÍDO] A disciplina que os 95% não tiveram
+### (d) [CONSTRUÍDO] A disciplina que os >80% não tiveram *(corrigido em V4a)*
 
-As causas de falha do MIT/RAND — métrica ausente antes de começar, dono indefinido, patrocínio que evapora — são, ponto a ponto, o que o [protocolo de prova](../04-entrega/protocolo-de-prova.md), o kickoff com pré-mortem e o [ritual semanal](../04-entrega/ritual-semanal.md) tratam. E o dado dos **67% externo vs. ~22% interno** é a resposta de uma linha para "fazemos por dentro". Um diretor de IA que conhece esses números (os bons conhecem) **quer** um parceiro de execução — é assim que ele não vira estatística dos 18 meses.
+As causas de falha medidas pela RAND — métrica ausente antes de começar, desconexão entre projeto e necessidade, patrocínio que evapora — são, ponto a ponto, o que o [protocolo de prova](../04-entrega/protocolo-de-prova.md), o kickoff com pré-mortem e o [ritual semanal](../04-entrega/ritual-semanal.md) tratam. E a resposta de uma linha para "fazemos por dentro" agora é a do METR: *"pode ser que vocês consigam — mas o estudo mais desconfortável do ano mostrou que quem faz por dentro erra a própria percepção de ganho em ~40 pontos. Sem medição de fora, nem vocês vão saber se deu certo."* Um diretor de IA que conhece esses números (os bons conhecem) **quer** um parceiro de execução e prova — é assim que ele não vira estatística dos 18 meses.
 
 ### (e) [CONSTRUÍDO] Ferramentas prontas contra o funil de contratação dele
 
@@ -62,7 +64,7 @@ No dia 1 chegamos com avaliação instrumentada (25 dimensões), portal de capac
 | O argumento deles | O contra-ativo genuíno | Classe |
 |---|---|---|
 | "Já temos quem cuide de IA" | Cuidar ≠ verificar. Autoavaliação não passa em conselho, banco, certificadora nem no PL 2338 | ESTRUTURAL |
-| "Ele define nossa estratégia de IA" | Ótimo — estratégia é dele. Execução em escala (67% vs 1/3) e prova independente são o que ele não fabrica sozinho | CONSTRUÍDO |
+| "Ele define nossa estratégia de IA" | Ótimo — estratégia é dele. Execução em escala e prova independente são o que ele não fabrica sozinho (METR: autorrelato erra ~40 pontos) | CONSTRUÍDO |
 | "Ele conhece nossa empresa melhor que vocês" | Verdade — e em ~18 meses esse conhecimento historicamente vai embora com ele. O nosso fica em ativo exportável | CONSTRUÍDO |
 | "Contratar vocês é admitir que ele falhou" | Inverso: empresa com CAIO tem ~10% mais ROI justamente porque compra melhor. Nós somos o que ele compra para não virar estatística | ESTRUTURAL |
 | "Vocês nunca fizeram isso" (a mesa vira) | **Aqui não temos resposta boa hoje.** Ver §3 | — |
