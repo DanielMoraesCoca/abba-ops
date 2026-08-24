@@ -128,11 +128,13 @@ Separar isto é o que impede de defender a camada errada.
 Análise de texto, geração de conteúdo, automação simples, RAG sobre documentos, memória persistente. **Não é aqui que se defende margem.** Usamos, não vendemos como diferencial. Quem vende isso é a agência de n8n — e vai ser comprimido pelo próximo release da plataforma.
 
 ### Camada 2 — Serviço (defensável enquanto houver escassez de gente boa)
-Integrar sistemas que não conversam, redesenhar processo, treinar organização, decidir o que fazer primeiro, **responsabilizar-se pelo resultado**. É aqui que vive o número mais valioso que temos:
+Integrar sistemas que não conversam, redesenhar processo, treinar organização, decidir o que fazer primeiro, **responsabilizar-se pelo resultado**. É aqui que vive o argumento mais valioso que temos:
 
-> **Pilotos com expertise externa acertam 67%. Só com TI interna: 22%** (MIT, "The GenAI Divide", 2025).
+> **Mais de 80% dos projetos de IA falham — o dobro da taxa de projetos de TI comuns — e a causa nº 1 é começar sem critério de sucesso definido** (RAND, 2024, 65 entrevistas com engenheiros de ML sêniores).
 
-**Esse é o produto da ABBA em forma numérica** — defensável, citável em qualquer sala de conselho, e a única coisa desta pesquisa que **nenhuma plataforma pode embutir num SKU**.
+**Esse é o produto da ABBA em forma numérica**: nós somos, literalmente, a empresa do critério de sucesso combinado antes. Defensável, citável em qualquer sala de conselho, e a única coisa desta pesquisa que **nenhuma plataforma pode embutir num SKU**.
+
+> ⚠️ Correção de fonte (V4a, 2026-08-23): a versão anterior deste bloco citava "67% externo vs 22% interno" do MIT "GenAI Divide". O número foi **aposentado** — relatório não revisado por pares, autorrelato, e autores com conflito de interesse. Cânone e proibições: [base de evidências](base-de-evidencias.md).
 
 ### Camada 3 — Ativo acumulado (o único fosso que cresce sozinho)
 - **Memória por cliente** com autoridade de origem, linha do tempo bitemporal e deleção comprovável
@@ -154,7 +156,7 @@ Integrar sistemas que não conversam, redesenhar processo, treinar organização
 3. **O volante dados↔produto** — ferramenta usada em todo engajamento (barateia a entrega) e vendida à parte (recorrência).
 4. **Custo de troca por acúmulo de contexto** — se detemos o mapa curado da empresa, trocar a ABBA custa reconstruir o mapa.
 5. **Posicionamento regulatório** — o mais subestimado no Brasil e o de data mais marcada (§5).
-6. **Histórico de resultado medido** — num mercado onde 95% falham, prova é escassez pura.
+6. **Histórico de resultado medido** — num mercado onde mais de 80% falham (RAND) e onde quem faz o trabalho erra em ~40 pontos a própria percepção de ganho (METR), prova medida de fora é escassez pura.
 
 ### 4.2 A nossa interseção defensável
 
@@ -272,6 +274,6 @@ Vinte e quatro a trinta e seis meses para converter reputação em ativo proprie
 
 ## Fontes
 
-Pesquisa competitiva e regulatória de 2026-08-01 (21 buscas, EN+PT). Principais: Source Global Research (outlook 2026) · Accenture Q3 FY2026 e aquisição da Faculty · McKinsey (25% outcome-based, 25 mil agentes) · Deloitte (hora bilhável) · **MIT NANDA "The GenAI Divide" (95% dos pilotos; 67% vs 22%)** · Palantir (FDE, AIP Bootcamp, Q1 2026) · OpenAI Deployment Company · Y Combinator RFS "Company Brain" · Glean, Microsoft Work IQ, OpenAI Company Knowledge, Gemini Enterprise, Mem0/Zep/Letta · CI&T Q1 2026 · Cetic.br e Exame (adoção no Brasil) · PL 2338 · ANPD (Mapa de Temas Prioritários 2026-27) · cronograma da reforma tributária · EU AI Act.
+Pesquisa competitiva e regulatória de 2026-08-01 (21 buscas, EN+PT). Principais: Source Global Research (outlook 2026) · Accenture Q3 FY2026 e aquisição da Faculty · McKinsey (25% outcome-based, 25 mil agentes) · Deloitte (hora bilhável) · **MIT NANDA "The GenAI Divide" (95% dos pilotos; 67% vs 22% — números APOSENTADOS em V4a; ver [base de evidências](base-de-evidencias.md))** · Palantir (FDE, AIP Bootcamp, Q1 2026) · OpenAI Deployment Company · Y Combinator RFS "Company Brain" · Glean, Microsoft Work IQ, OpenAI Company Knowledge, Gemini Enterprise, Mem0/Zep/Letta · CI&T Q1 2026 · Cetic.br e Exame (adoção no Brasil) · PL 2338 · ANPD (Mapa de Temas Prioritários 2026-27) · cronograma da reforma tributária · EU AI Act.
 
 Estudos internos que este documento pressupõe e não repete: [mercado de ofertas](../05-interno/arquivo/estudo-mercado-ofertas.md) · [big techs e o cérebro de empresa](../05-interno/arquivo/estudo-big-techs-company-brain.md) · [memória agêntica](../05-interno/arquivo/estudo-memoria-agentica.md) · [IA financeira](../05-interno/estudo-ia-financeira.md) · [arquitetura do cérebro](../05-interno/arquitetura-cerebro-conselheiro.md).

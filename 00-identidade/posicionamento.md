@@ -2,7 +2,7 @@
 
 > Fonte única do que a ABBA diz de si para fora. Adaptado do copy EN anterior (`EXTERNAL_POSITIONING_COPY.md` no abba-portal, agora histórico). Toda peça externa nova nasce daqui.
 >
-> **Companheiros:** o [manifesto](manifesto.md) dá a postura (o que acreditamos e recusamos); o [kit de presença](../03-comercial/kit-de-presenca.md) dá as falas prontas de 30s/3min/1 página; a [escada](../03-comercial/escada-abba.md) dá o que exatamente se compra em cada degrau. Este documento continua sendo a fonte do **vocabulário**.
+> **Companheiros:** o [manifesto](manifesto.md) dá a postura (o que acreditamos e recusamos); a [base de evidências](base-de-evidencias.md) dá os **números** (cânone aprovado + índice proibido); o [kit de presença](../03-comercial/kit-de-presenca.md) dá as falas prontas de 30s/3min/1 página; a [escada](../03-comercial/escada-abba.md) dá o que exatamente se compra em cada degrau. Este documento continua sendo a fonte do **vocabulário**.
 
 ## A prateleira (decisão dos sócios, 2026-08-03 — V3c)
 
@@ -59,3 +59,4 @@ A ABBA não entra na mesa como "mais uma consultoria de IA" — essa prateleira 
 5. **O volante ABBA** (usar a partir do 3º engajamento — por **forma**, não por setor): cada cliente alimenta um cofre de padrões anonimizados e uma régua comparativa entre clientes — mais clientes → mais padrões → avaliações mais rápidas e certeiras → mais valor para o próximo. Consultoria comum não compõe conhecimento; a ABBA compõe. É o fosso que cresce sozinho. **Enquanto o cofre estiver vazio, isto é tese, não prova** — falar como visão, nunca como resultado ([ecossistema](ecossistema.md)).
 6. Preço externo: sempre programa primeiro, produtos de entrada depois ("se ainda não for o momento…").
 7. Assinaturas e rodapés usam somente **abbaservices.com.br** — nunca URLs de ferramenta interna.
+8. **Todo número externo sai da [base de evidências](base-de-evidencias.md)** (V4a, 2026-08-23) — e sai com a fonte na frase ("a RAND mediu", "a Gartner projeta"). Número que não está lá não entra em peça nenhuma; o índice proibido dela (MIT 95%, 67%/33%, "ROI 3x a 8x") bloqueia na régua do revisor. Para nós, honestidade estatística não é estética: é o produto.

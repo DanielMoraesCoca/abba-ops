@@ -1,5 +1,7 @@
 # Estudo — O que as empresas compram de IA (2025–2026) e o encaixe da esteira ABBA
 
+> ⚠️ **NOTA DE CORREÇÃO (V4a, 2026-08-23) — ler antes de citar qualquer número daqui.** O item 2 abaixo ("95% dos pilotos" e o "dado de ouro" 33%/67%/2×) vem do MIT NANDA "GenAI Divide", **aposentado do cânone da casa**: não revisado por pares, baseado em autorrelato, critério de sucesso estreitíssimo e autores com conflito de interesse (vendem o framework que o relatório recomenda). Substitutos aprovados e índice proibido: [base de evidências](../../00-identidade/base-de-evidencias.md). As CONCLUSÕES estruturais do estudo (matriz de situações de comprador, Resgate de IA, proibições de empacotamento) permanecem válidas — os números de suporte é que mudaram.
+
 > **Status: ESTUDO CONCLUÍDO (2026-07-30) — mudanças de oferta são CANDIDATAS, pendentes de decisão dos sócios** (várias tocam preço/posicionamento = porta de 1 via). Origem: pedido do sócio — "ter todos os encaixes possíveis para qualquer tipo de empresa caber na ABBA". Pesquisa profunda: McKinsey/Gartner/Deloitte/BCG/Forrester/RSM 2025-26 + Brasil (Cetic.br, IDC/ABES, ANPD) + benchmarks de precificação de boutiques.
 
 ## O quadro em 5 números (o mercado é o GAP entre adoção e valor)

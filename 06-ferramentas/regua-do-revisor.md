@@ -33,6 +33,9 @@ abba report <eng> --revise                     # o relatório só grava se passa
 | "presente em todos os lugares"/"ouve tudo"/"monitora o time" | block | 8 recusas do Assento |
 | prever regime/futuro | block | recusa 8 do manifesto |
 | "primeiro café" (a forma aprovada é "da primeira conversa") | block | V3n — veto do sócio |
+| **"95% dos pilotos/projetos falham" · "GenAI Divide" · "MIT NANDA"** (substituto: RAND >80%) | block | V4a — [base de evidências](../00-identidade/base-de-evidencias.md), índice proibido |
+| **"parceiro externo dobra o acerto" · "67% vs 33%"** (substituto: RAND+METR+DORA) | block | V4a — mesmo relatório MIT aposentado |
+| **"ROI de 3x a 8x" · "payback 5,1 meses" · "73% preferem" · "90% falham em treinamento"** (substituto: payback com número DO cliente) | block | V4a — folclore de vendor sem fonte primária |
 | "benchmark" (conferir tempo verbal) · "acurácia" (fora da recusa) | warn | ecossistema §3 · manifesto |
 | "firma nova" (é doutrina de conversa, não texto de material) | warn | V3o — padrão editorial |
 | "25 dimensões" (ok em proposta/contrato/entrega; não em material de envio) | warn | V3l — [padrão editorial §0](../08-materiais/README.md) |
@@ -44,6 +47,8 @@ abba report <eng> --revise                     # o relatório só grava se passa
 1. Doutrina nova (decisão V-registrada) que proíba ou trave algo → regra nova no JSON, com `reason` e `doc` apontando o documento.
 2. Falso positivo em material que sai → ajustar `unless`/exceção **no mesmo commit** que o registra.
 3. A versão (`version`) sobe a cada mudança; o episódio `revisor.reviewed` grava com qual versão o material foi conferido.
+
+**v1.3.0 (2026-08-23)** — três regras novas do índice proibido da [base de evidências](../00-identidade/base-de-evidencias.md) (V4a): `mit-95`, `parceiro-dobra-acerto`, `roi-magico`. Todos os números do MIT NANDA e o folclore de vendor agora bloqueiam; a exceção `unless` (aposentad/banid/proibid/❌) deixa a própria base e as notas de correção citarem os números banidos sem flagrar. Padrões estreitos de propósito — "0,95" de confiança e "95% de cobertura" não disparam. **Pendência:** sincronizar a cópia embarcada no assessment-brain quando o módulo revisor estiver no checkout (não existe em `src/` hoje).
 
 **v1.2.1 (2026-08-10)** — falso positivo corrigido: a negação `não somos auditoria` — que é a própria doutrina sendo afirmada — bloqueava. A exceção exige a negação **colada** ao termo (`não\s+somos\s+(a\s+)?auditor`), para que "não somos apenas X, somos auditoria" continue bloqueando.
 

@@ -88,6 +88,19 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 
 **Regras:** nunca enviar o PDF antes da apresentação ao vivo (a conversa é onde a conversão acontece) · o slide 5 é o único onde a apresentação vira diálogo — não atropelar a resposta · se perguntarem preço no meio, *"chego lá no fim — antes quero que vocês saibam exatamente o que se compra"* (e usar a [escada](escada-abba.md)).
 
+## Os números que sustentam o pitch (fonte única: [base de evidências](../00-identidade/base-de-evidencias.md))
+
+**Regra absoluta:** número que não está na base de evidências não sai da boca. Todo número emprestado sai com a fonte na frase ("a RAND mediu…") — número sem dono é boato com dígitos. Os quatro que mais entram em conversa:
+
+| Situação na conversa | A fala (pronta, decorada) |
+|---|---|
+| Abrir o problema | *"A pesquisa mais séria que existe, da RAND, mediu: mais de 80% dos projetos de IA falham — o dobro dos projetos de TI comuns. E a causa número um não é técnica: é começar sem combinar o que seria dar certo."* |
+| Cético técnico na mesa (**a fala de ouro**) | *"O estudo mais desconfortável do ano, da METR: desenvolvedores experientes ficaram 19% mais lentos usando IA — e saíram convencidos de que tinham ficado 20% mais rápidos. Ninguém sabe se a IA ajudou sem medir de fora. É exatamente por isso que a gente existe."* |
+| Cliente com base bagunçada (vender o passo atrás) | *"O relatório DORA do Google resume: IA amplifica o que já existe. Time com base arrumada acelera; time com processo bagunçado piora mais rápido. Arrumar a base não é atraso — é a condição do ganho."* |
+| "Todo mundo já mede ROI" | *"Quase todo mundo diz que mede. Pela Wharton, metade mede 'qualidade de dados' — e metade reporta retorno de até 5%. Medição combinada antes, ligada a P&L, quase não existe. É o nosso trabalho."* |
+
+**Proibidos em qualquer conversa** (índice completo na base): "95% dos pilotos falham" (MIT), "parceiro externo dobra o acerto" (67% vs 33%), "ROI de 3x a 8x". Se o interlocutor citar um deles, não corrigir com arrogância — *"esse número viralizou, mas a fonte não segura; o que a gente usa é o da RAND, que é mais duro e mais bem medido"* — e a correção em si já demonstra o produto.
+
 ## O que nunca dizemos
 
 | Nunca | Em vez disso |

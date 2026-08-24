@@ -32,6 +32,9 @@
 
 - **Mapa de Vazamento nunca se cobra** — é a peça de abertura
 - Workshop/Sprint (portas laterais, abaixo) creditam 100% no **Assessment** em até 90 dias
+- **Porta de entrada padrão até existir o 1º caso medido (V4a, 2026-08-23 — proposta, Pedro valida):** Mapa grátis → **Protótipo R$ 26 mil**, sempre apresentado com **payback calculado no número DO cliente** (ex.: ABC DataSaúde — R$ 26 mil contra ~R$ 6,5 mil/mês de exposição recuperável = payback ~4 meses). Fundamento na [base de evidências](../00-identidade/base-de-evidencias.md): R$ 26 mil está no meio da faixa de fábrica de software (R$ 15–60 mil) entregando diagnóstico e medição que fábrica não entrega; o Assessment a R$ 45 mil está no topo da faixa de boutique **sem caso publicado** — vender prova antes de pedir o cheque grande
+- **Assessment com crédito integral do protótipo (V4a — proposta, Pedro valida):** enquanto não houver caso medido publicado, quem fez protótipo credita **100% dos R$ 26 mil** no Assessment em até 120 dias (Assessment efetivo: R$ 19 mil). O crédito expira quando o 1º caso medido existir — aí o Assessment volta a se vender pela prova, sem desconto
+- **Trava de integridade — treinamento (V4a):** turma **não se vende** enquanto o portal não tiver o conteúdo das trilhas no ar (reestruturação em curso — briefing no abba-portal). Vender aula sem aula é o único erro irrecuperável para quem vende prova. Exceção: sessões presenciais avulsas com os fundadores, escopo dito com honestidade
 - Pacote de 3 protótipos só se vende **com ou após** o Assessment (sem portfólio, protótipo é chute) — avulso pode, para o caso que o dono já trouxe pronto
 - Desconto **só** via charter com contrapartidas (Anexo III do [contrato](contrato-sow-esqueleto.md)), máx. 20%
 - Abaixo do piso do serviço = não vender · reajuste anual IPCA nos recorrentes

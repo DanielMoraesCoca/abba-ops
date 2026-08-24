@@ -1,5 +1,5 @@
 {
-  "version": "1.2.1",
+  "version": "1.3.0",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
     {
@@ -220,6 +220,59 @@
       "reason": "Recusa 8 do manifesto: modelos preveem PIOR em quebra de regime. Prometer isso é ser desmentido pelo primeiro trimestre ruim.",
       "doc": "00-identidade/manifesto.md · 05-interno/estudo-antecipacao.md §2",
       "allowQuotedInTables": true
+    },
+    {
+      "id": "mit-95",
+      "kind": "regex",
+      "pattern": "95\\s*%\\s*(dos?\\s+(pilotos|projetos|iniciativas)|das?\\s+(empresas|iniciativas)|falham|n[ãa]o\\s+geram)|GenAI\\s+Divide|MIT\\s+NANDA",
+      "flags": "gi",
+      "severity": "block",
+      "unless": [
+        "aposentad",
+        "banid",
+        "proibid",
+        "n[ãa]o\\s+usar",
+        "nota\\s+de\\s+corre[çc][ãa]o",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "V4a (2026-08-23): 'MIT 95% dos pilotos falham' está APOSENTADO — MIT NANDA não é revisado por pares, é autorrelato, e os autores vendem o framework recomendado. Substituto aprovado: RAND >80% (dobro de TI comum; causa nº1 = sem critério de sucesso). O padrão é estreito de propósito: '0,95' de confiança e afins não disparam.",
+      "doc": "00-identidade/base-de-evidencias.md (índice proibido) · 05-interno/registro-de-decisoes.md (V4a)"
+    },
+    {
+      "id": "parceiro-dobra-acerto",
+      "kind": "regex",
+      "pattern": "67\\s*%\\s*(vs|versus|contra|x)|acerta\\w*\\s+~?\\s*67|parceiro\\s+(externo\\s+)?(dobra|ganha\\s+2|acerta\\s+2)|externo\\s+acerta\\s+2|constru[çc][ãa]o\\s+interna\\s+acerta\\s+~?\\s*33",
+      "flags": "gi",
+      "severity": "block",
+      "unless": [
+        "aposentad",
+        "banid",
+        "proibid",
+        "n[ãa]o\\s+usar",
+        "nota\\s+de\\s+corre[çc][ãa]o",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "V4a (2026-08-23): o 'dado de ouro comercial' (parceiro externo 67% vs interno 22–33%, ganho de 2×) vem do MESMO relatório MIT NANDA aposentado. Substituto: a convergência RAND + METR + DORA — argumento por três fontes independentes.",
+      "doc": "00-identidade/base-de-evidencias.md (índice proibido) · 05-interno/registro-de-decisoes.md (V4a)"
+    },
+    {
+      "id": "roi-magico",
+      "kind": "regex",
+      "pattern": "ROI\\s+de\\s+3\\s*x?\\s*a\\s*8|3x\\s*a\\s*8x|payback\\s+de\\s+5[,.]1|73\\s*%\\s+prefere|90\\s*%\\s*(das\\s+organiza[çc][õo]es\\s+)?falham?\\s+em\\s+treinamento",
+      "flags": "gi",
+      "severity": "block",
+      "unless": [
+        "aposentad",
+        "banid",
+        "proibid",
+        "n[ãa]o\\s+usar",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "V4a (2026-08-23): números de folclore de vendor sem fonte primária ('ROI 3x a 8x', 'payback 5,1 meses', '73% preferem resultado', '90% falham em treinamento') são banidos. Substituto: payback calculado caso a caso com número DO cliente; McKinsey ~25% outcome-based; KPMG 47% treinam.",
+      "doc": "00-identidade/base-de-evidencias.md (índice proibido)"
     },
     {
       "id": "precos-travados",
