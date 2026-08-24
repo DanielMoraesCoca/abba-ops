@@ -69,6 +69,42 @@ Se o cliente já roda um funil de adoção próprio, **a oferta encaixa nele**. 
 | Área "contaminada" pede mais, e tudo passa por uma pessoa | Campeões por área são os chefes de dez (Êx 18). O gargalo dele é o problema que a arquitetura de campeões resolve |
 | "Aí entra IA de verdade" | Assessment · protótipos · construção. **O treinamento é a porta, não o fim** |
 
+## Quando quem está na mesa é o dono do processo (o cético que decide a adoção)
+
+O público mais difícil — e o motivo da compra. Não é o executivo que
+assina; é a pessoa que domina um processo há dez anos, sabe que o
+treinamento mira o trabalho DELA, e tem dois medos legítimos: ser
+substituída e ver o processo dela quebrado por atalho de novato. Se essa
+pessoa cruzar os braços, a turma inteira aprende a cruzar os braços.
+
+**A postura:** reconhecer o domínio antes de falar de ferramenta. Nunca
+"a IA faz isso em segundos" — para o dono do processo isso é ameaça, não
+argumento.
+
+**As falas:**
+
+- *"O portal não tira o seu processo de você — ele o escreve com o seu
+  nome. A primeira coisa que a trilha pede é o SEU padrão: como uma
+  entrega sua tem que sair para estar certa. Isso vira uma ficha sua,
+  guardada com você. Hoje esse padrão mora só na sua cabeça — e some
+  quando você tira férias."*
+- *"A pergunta central do método não é 'o que a IA faz?'. São três: o
+  que dá para PARAR de fazer, o que dá para COMEÇAR a fazer com IA — e
+  **o que SÓ VOCÊ faz**. A terceira é a mais importante, e ninguém
+  responde por você."*
+- *"Quem mais aproveita não é quem menos sabe do processo — é quem mais
+  sabe. Crítica é um dos quatro movimentos do método: só quem conhece o
+  padrão consegue dizer 'isso passou' ou 'isso não passa'. O novato não
+  tem esse olho; você tem."*
+- Se a pessoa é o gargalo por onde tudo passa (todo pedido cai nela):
+  *"o programa forma outros no SEU critério — escrito por você, não
+  inventado por nós. Você deixa de ser o funil e vira a referência."*
+
+**O que não fazer:** não prometer que "nada muda" (muda, e ela sabe);
+não demonstrar a IA fazendo a tarefa DELA na frente dela sem convite;
+não escalar por cima ("o diretor já decidiu") — é a receita do boicote
+silencioso.
+
 ## O que não se promete até haver decisão do sócio
 
 - **Biblioteca de vídeo com data** — os vídeos são nossos (CONTENT-13), roteiros prontos, gravação em lotes; promete-se "aulas com prática avaliada", nunca calendário de vídeo.
@@ -94,3 +130,4 @@ Citar sempre com fonte, e reconferir antes de virar slide — metade do que ranq
 |---|---|---|
 | v1 | 2026-08-19 | Criado pela reanálise do treinamento. Corrige a inversão de discurso: vendíamos o que não temos (vídeo, quiz) e escondíamos o que temos (durabilidade, patrocínio do gestor, credencial verificável) |
 | v2 | 2026-08-23 | Currículo v3 (academia diária): nova substituição "o portal é onde ficam as aulas" → "academia que a pessoa frequenta" — Prática de Hoje, Boletim, biblioteca, cenários e Minhas Ferramentas entram na fala; nada depende de vídeo |
+| v3 | 2026-08-24 | Fala do público C (o cético dono de processo — lacuna nº 1 do dossiê, zero linhas até aqui): reconhecer o domínio, "o portal escreve o seu processo com o seu nome", o que SÓ VOCÊ faz, o gargalo que vira referência. E o serviço 5 ganhou [proposta enviável](proposta-treinamento-portal.md) + [roteiro de demo](../04-entrega/roteiro-demo-portal.md) + [modelo do relatório d90](../04-entrega/relatorio-d90-modelo.md) |
