@@ -35,8 +35,12 @@ Você recebe:
   todos), as trilhas de aprofundamento por papel — Operacional (6) e
   Gestor (5) abertas hoje; Comercial e Administrativo-Financeiro em
   produção — e a **formação de campeão** (8 aulas do nível
-  Especialista), a que não se chega por inscrição: chega quem concluiu,
-  aplicou e ajudou um colega, e sai com o encargo de formar outros dois.
+  Especialista), a que não se chega por inscrição: chega quem concluiu a
+  trilha do papel, aplicou com evidência que sobreviveu a 30 dias e teve
+  a ajuda reconhecida por um colega — o portal mede esses sinais (mais
+  tempo de casa no nível e reflexão visível ao gestor) e **quem decide a
+  passagem é o gestor da pessoa**, com o quadro na frente. Sai com o
+  encargo de formar outros dois.
 - **Prática avaliada, não quiz**: cada aula termina em exercício sobre a
   tarefa real da pessoa, avaliado pelos quatro movimentos do método ABBA
   — a escolha certa da tarefa, o pedido bem construído, a crítica do

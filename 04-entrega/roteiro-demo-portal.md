@@ -119,6 +119,12 @@ com o cartão do dia destacado.
 
 ### 7 · Credencial verificável + fecho (2 min)
 
+**Preparo (véspera):** `/verify` SEM token mostra o cartão "não
+válida" — emita uma credencial da persona de demo antes
+(`/me/credential` → Emitir; a de Fundação exige as 8 aulas concluídas
+no seed) e guarde o LINK COMPLETO com `?token=…` num favorito. A
+página é pública e em pt-BR (25/08), com o selo "Fundação em IA".
+
 `/verify`: *"A credencial é da pessoa e verifica-se por link — sem
 depender de planilha nossa nem da memória de vocês. Vocês já desenharam
 o processo certo: licença para quem concluiu. Isto é o critério

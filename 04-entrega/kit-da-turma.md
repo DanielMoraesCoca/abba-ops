@@ -37,8 +37,8 @@ Regras do formato (evidência cohort — [análise](../05-interno/analise-estrat
 
 ## Checklist de graduação (chapéu Capacitação, semana final)
 
-- [ ] Status da turma → `graduated` no portal (`/admin/turmas` — carimba a data oficial)
-- [ ] Certificados gerados pelo [modelo](../08-materiais/modelos/certificados-modelo.pptx) (nível alcançado por participante — escala oficial P7)
+- [ ] **Cerimônia em `/admin/graduacao`** (B2.3, 25/08): o portão (Fundação 8/8 + ≥6/8 drills) conferido NA TELA, pessoa a pessoa, e as **credenciais verificáveis de Fundação emitidas em lote** — o clique da cerimônia também carimba a turma `graduated` (a data oficial). Sem planilha paralela; re-clicar não duplica; exceções são decisão humana, fora do lote
+- [ ] Certificados IMPRESSOS gerados pelo [modelo](../08-materiais/modelos/certificados-modelo.pptx) (nível alcançado por participante — escala oficial P7; complementam a credencial digital, não a substituem)
 - [ ] Cerimônia: patrocinador abre · 2–3 campeões apresentam a Ficha Primeira Vitória · entrega dos certificados · foto da turma
 - [ ] Pós: foto + números da turma (conclusão, horas reinvestidas) no relatório mensal · depoimento do patrocinador pedido no evento (quente > frio)
 - [ ] Graduados Nível 4 (Arquiteto): licença CrewAI de 12 meses ativada (promessa oficial — [ficha](../06-ferramentas/ferramenta-agentes.md))

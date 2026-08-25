@@ -15,13 +15,19 @@ Roteiros word-for-word prontos em
 8 + trilha Operacional 6); faltam os 5 do Gestor e os 8 do Especialista
 (trilha escrita em 24/08). Gravação pelos fundadores, em lotes.
 
+A numeração de lotes abaixo é a MESMA de
+`abba-portal/docs/platform/content/roteiros/README.md` (corrigido
+25/08 — os dois repos numeravam diferente e "lote 4" significava
+coisas distintas):
+
 | Lote | Vídeos | Por quê primeiro |
 |---|---|---|
 | 1 | **Aulas 3, 4 e 1 da Fundação** | 3 e 4 são o coração do método (pedido bem construído + crítica do resultado); a 1 é a porta de entrada que todo mundo vê |
-| 2 | Aulas 2, 5–8 da Fundação | fecha a Fundação — a trilha que toda turma percorre |
-| 3 | Operacional O1–O6 | a trilha mais larga (o público da Brasal) |
-| 4 | Gestor (quando os 5 roteiros saírem) | menor público por turma; depende de roteiro |
-| 5 | Especialista 1–8 (quando os 8 roteiros saírem) | formação de campeão — público pequeno e tardio na jornada da turma; último lote de propósito |
+| 2 | Aulas 2, 5, 6 da Fundação | completam o meio da Fundação |
+| 3 | Aulas 7, 8 da Fundação | fechamento da trilha que toda turma percorre |
+| 4 | Operacional O1–O6 | a trilha mais larga (o público da Brasal) |
+| 5 | Gestor G1–G5 (quando os 5 roteiros saírem) | menor público por turma; o gestor lê melhor do que assiste |
+| 6 | Especialista E1–E8 (quando os 8 roteiros saírem) | formação de campeão — público pequeno e tardio na jornada da turma; último lote de propósito |
 
 **Setup:** talking-head + screen capture · 130–150 palavras/min (8 min ≈
 1.000–1.200 palavras) · gancho nos primeiros 8s · encerrar com a ação de
@@ -64,4 +70,5 @@ terceiros em nenhum card**.
 | Versão | Data | Mudança |
 |---|---|---|
 | v1 | jul/2026 | Criado no pacote Academy (vídeos licenciados + 4D) |
-| v2 | 2026-08-24 | Expurgo do 4D (atribuição revogada — risco jurídico se impresso) e do modelo de vídeo licenciado (CONTENT-13); hex do dourado corrigido #C2A35B → #B8985A; lotes de gravação alinhados aos roteiros reais (14/19) |
+| v2 | 2026-08-24 | Expurgo do 4D (atribuição revogada — risco jurídico se impresso) e do modelo de vídeo licenciado (CONTENT-13); hex do dourado corrigido #C2A35B → #B8985A; lotes de gravação alinhados aos roteiros reais |
+| v2.1 | 2026-08-25 | Contagem corrigida 14/19 → **14/27** (o denominador ignorava Gestor 5 + Especialista 8); numeração de lotes unificada com o README de roteiros do portal (6 lotes) |

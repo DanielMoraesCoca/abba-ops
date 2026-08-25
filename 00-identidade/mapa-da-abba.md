@@ -59,7 +59,7 @@ flowchart TD
 | Gatilho por decisão + probabilidade declarada + fila da manhã (`brain next`) | ✅ em código | idem | idem |
 | Placar de calibração por engajamento | ✅ em código | `abba brain calibration` | Piso de 20 decisões medidas; **placar da firma: 🔒 10+ clientes** |
 | Avaliação 25 dimensões | ✅ ferramenta · ⚠️ validada só em sintético | [ferramenta](../06-ferramentas/ferramenta-avaliacao.md) | R1: 1º cliente charter é a 1ª validação real |
-| Portal de capacitação (trilhas, Bússola, Iris, durabilidade) | ✅ parcial (vídeos em produção) | [ferramenta](../06-ferramentas/ferramenta-portal.md) | Gravação ago/2026 |
+| Portal de capacitação (trilhas, Bússola, Iris, durabilidade) | ✅ completo por desenho sem vídeo (27 aulas em 4 blocos); vídeos por gravar | [ferramenta](../06-ferramentas/ferramenta-portal.md) | Gravação pelos fundadores em lotes (14/27 roteiros prontos) — **sem data prometida a cliente** |
 | Benchmark entre clientes (fluência + durabilidade) | 🔒 construído, invisível ao cliente | [ecossistema](ecossistema.md) §3 | 5 clientes qualificados (≥5 pessoas cada) |
 | Credencial verificável portátil | ✅ funcional | portal `/verify` | Combinável já na 1ª graduação |
 | Rede de campeões entre clientes | 🔒 plano em 3 estágios | [ecossistema](ecossistema.md) §4 | 3 clientes com campeões |
