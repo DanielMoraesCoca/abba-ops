@@ -9,6 +9,8 @@ Contrato assinado, primeira parcela cobrada, kickoff agendado.
 
 **Antes do kickoff**
 - [ ] Patrocinador confirmado por escrito (nome, cargo, e-mail) — sem patrocinador, não há kickoff
+- [ ] **D-7: checklist de documentos enviada ao cliente** ([e-mails 1–2](../04-entrega/emails-imersao.md), anexando o Pacote de Imersão gerado por `abba kickoff`) — a lista chega ANTES do kickoff, nunca durante; o campo não começa sem os itens obrigatórios ([Protocolo de Imersão](../04-entrega/protocolo-de-imersao.md))
+- [ ] Ponto focal do cliente definido (quem agenda salas e cobra pendências internas) e agenda de entrevistas fechada conforme o [mapa de entrevistas](../04-entrega/mapa-de-entrevistas.md)
 - [ ] Canal de comunicação criado: canal no Slack/Teams **do cliente** (preferência) ou grupo dedicado; regras do [doc de comunicação](../05-interno/comunicacao.md) aplicadas (WhatsApp = logística; decisão = e-mail)
 - [ ] Lista de participantes recebida (nomes, e-mails, papéis, departamentos)
 - [ ] Contas criadas na plataforma ABBA para os participantes (quando o escopo inclui capacitação/avaliação com pré-trabalho)

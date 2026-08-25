@@ -149,6 +149,20 @@ _______________________________          _______________________________
 | Valor e condição de pagamento | [ ] |
 | Critérios de sucesso/métricas | [definidos no kickoff] |
 
+### Bloco do Anexo I — específico da Avaliação de Prontidão (usar quando o produto for o Assessment)
+
+Acrescentar à tabela acima, sem substituir nada:
+
+| Item | Definição |
+|---|---|
+| **Área de entrada (willing-area)** | [área que entra primeiro, com aval por escrito do diretor da área] — imersão só entra em área cujo diretor aprovou e cuja equipe foi avisada; área sem aval fica FORA do escopo, registrada aqui |
+| **Áreas excluídas** | [áreas em que o Cliente pediu que NÃO se entre nesta avaliação] |
+| **Documentos de entrada** | conforme a [checklist de documentos](../04-entrega/checklist-documentos-assessment.md) enviada em D-7, nas duas categorias: obrigatórios antes do campo e desejáveis em 30 dias |
+| **Dependências do Cliente com data** | ponto focal nomeado até [D-5] · agenda de entrevistas fechada até [D-2] · documentos obrigatórios até [D-2] · pré-trabalho respondido até [fim da semana 1] |
+| **Consequência de dependência não cumprida** | o campo não inicia sem os documentos obrigatórios; atraso do Cliente desloca o cronograma sem constituir descumprimento da ABBA (Cláusula 3.1); a pontuação de pré-trabalho (40/100) reporta o valor real apurado |
+| **Retenção de dados do engajamento** | [prazo em meses acordado; sem indicação, 18 meses após o arquivamento] — registrado na plataforma; ao término, eliminação via processo certificado com comprovante de resíduo zero entregue ao Cliente |
+| **Sessão de validação de achados** | 90 min com patrocinador + lideranças, antes do relatório final (integra o escopo, não é opcional) |
+
 ## Anexo II — Suboperadores (LGPD)
 
 | Fornecedor | Função | Localização do tratamento |

@@ -51,6 +51,20 @@ Tabela: o quê · quem · quando.
 
 ---
 
+## Variante — Descoberta da Avaliação de Prontidão
+
+O modelo acima nasceu para o protótipo. Quando a conversa é sobre o **Assessment**, os blocos 1–3, 5, 12 e 13 valem como estão; substituir os blocos centrais por estes cinco (mesma regra: preencher no mesmo dia da reunião):
+
+**A4. Willing-area** — qual área está mais disposta a mudar (nas palavras dele), quem é o diretor dela, e quais áreas ele pediu que NÃO entrem. Vira o campo willing-area do Anexo I ([SOW](contrato-sow-esqueleto.md)).
+
+**A5. As 4 pessoas na sala** — patrocinador, cético técnico, campeão, guardião ([alvo](../00-identidade/alvo.md)): nomes, cargos e quem falta conhecer.
+
+**A6. O que já é medido** — os 2–3 números em reais que doem e JÁ são medidos hoje (fonte: quem produz cada número). Se nada é medido, registrar isso: é achado, e muda a conversa da proposta.
+
+**A7. Terreno de dados e documentos** — o que existe: DRE gerencial? inventário de sistemas? tickets? mapa de processos? (prévia informal da [checklist de documentos](../04-entrega/checklist-documentos-assessment.md) — quanto mais "não sei" aqui, maior o valor do assessment e mais realista o cronograma).
+
+**A8. Histórico com IA e consultorias** — o que já tentaram, com quem, o que sobrou. Molda as objeções da proposta e o tom do kickoff.
+
 ## Como gerar o PDF do registro
 
 O markdown é o que o time usa; o PDF é para o cliente e para o Drive. Converter com o estilo editorial da casa:

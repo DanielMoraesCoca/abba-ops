@@ -24,7 +24,10 @@
 2. (20) Percorrer o brief: hipóteses de oportunidade, perguntas que faríamos, o que o método de 25 dimensões olharia
 3. (10) Reação deles: quais hipóteses acertamos? o que surpreendeu?
 4. (7) Ponte: o que a avaliação profunda revelaria que isto não pode revelar
-5. (3) Proposta de próximo passo: Avaliação de Prontidão, com data
+5. (3) **As duas perguntas de escopo (willing-area, Rafael/Brasal):** "se fôssemos entrar, qual área da empresa está mais disposta a mudar — e em qual vocês NÃO querem que a gente entre?" A resposta vira o campo willing-area do Anexo I ([SOW](contrato-sow-esqueleto.md)); área sem diretor disposto não entra no escopo — o humano no loop ou ajuda ou vira detrator
+6. (3) Proposta de próximo passo: Avaliação de Prontidão, com data
+
+> **Lead vindo do assessment web:** ele JÁ tem o relatório em mãos, então o passo 2 vira **apresentação comentada** (o que os números significam, o que o método viu por trás) + o passo 4 ganha peso dobrado. Nunca reapresentar o PDF como novidade — [contrato de fronteira](../06-ferramentas/contrato-fronteira-gratuito-pago.md).
 
 ## 3. Apresentação de proposta (45–60 min)
 
