@@ -33,7 +33,7 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 - [ ] Workshops presenciais dos marcos realizados (presença + feedback arquivados)
 - [ ] Promoções de nível celebradas no canal (visibilidade importa)
 - [ ] Campeões identificados e desenvolvidos (candidatos: primeiros Especialistas)
-- [ ] Graduação: credenciais verificáveis emitidas + cerimônia na sessão de encerramento
+- [ ] Graduação em `/admin/graduacao`: o portão (Fundação 8/8 + ≥6/8 drills) conferido NA TELA, pessoa a pessoa, e as credenciais verificáveis emitidas **em lote** na cerimônia (idempotente — re-clicar não duplica; exceções são decisão humana, fora do lote)
 
 **Depois da graduação (o estágio não acaba aqui — correção 24/08: a versão anterior terminava na cerimônia e deixava a nossa maior promessa sem dono)**
 - [ ] A academia diária segue como rotina da turma (Prática de Hoje, Boletim de segunda — a régua "não é curso que acaba; é academia que a pessoa frequenta")
