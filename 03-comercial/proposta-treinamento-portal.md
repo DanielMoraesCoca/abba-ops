@@ -31,10 +31,12 @@ a gente assina.**
 
 Você recebe:
 
-- **Trilhas por papel em português**, escritas pela ABBA: a Fundação
-  (8 aulas, para todos) e as trilhas de aprofundamento por papel —
-  Operacional (6 aulas) e Gestor (5 aulas) abertas hoje; Comercial e
-  Administrativo-Financeiro em produção, entram em turmas seguintes.
+- **27 aulas em português**, escritas pela ABBA: a Fundação (8, para
+  todos), as trilhas de aprofundamento por papel — Operacional (6) e
+  Gestor (5) abertas hoje; Comercial e Administrativo-Financeiro em
+  produção — e a **formação de campeão** (8 aulas do nível
+  Especialista), a que não se chega por inscrição: chega quem concluiu,
+  aplicou e ajudou um colega, e sai com o encargo de formar outros dois.
 - **Prática avaliada, não quiz**: cada aula termina em exercício sobre a
   tarefa real da pessoa, avaliado pelos quatro movimentos do método ABBA
   — a escolha certa da tarefa, o pedido bem construído, a crítica do
@@ -88,7 +90,7 @@ Você recebe:
 | Linha de base dia 0 + medição d30/60/90 + relatório assinado | ✓ | ✓ |
 | Kickoff presencial de meio dia com os fundadores | — | ✓ |
 | Sessões presenciais nos marcos da turma (formatura da Fundação, marcos da trilha) | — | ✓ |
-| Formação de campeões internos em sala | — | ✓ |
+| Sessões presenciais de formação de campeões (a trilha do Especialista no portal vale nos dois modelos) | — | ✓ |
 | **Investimento por turma (até 25 pessoas, 12 meses de acesso)** | **R$ 15.000** | **R$ 35.000** |
 
 - Pagamento: **50% na assinatura · 50% na formatura da Fundação**.

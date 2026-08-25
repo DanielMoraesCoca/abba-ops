@@ -11,9 +11,9 @@
 ## Vídeos — os NOSSOS, por lote (CONTENT-13)
 
 Roteiros word-for-word prontos em
-`abba-portal/docs/platform/content/roteiros/`: **14 de 19** (Fundação
-8 + trilha Operacional 6); os 5 da trilha do Gestor estão em produção.
-Gravação pelos fundadores, em lotes.
+`abba-portal/docs/platform/content/roteiros/`: **14 de 27** (Fundação
+8 + trilha Operacional 6); faltam os 5 do Gestor e os 8 do Especialista
+(trilha escrita em 24/08). Gravação pelos fundadores, em lotes.
 
 | Lote | Vídeos | Por quê primeiro |
 |---|---|---|
@@ -21,6 +21,7 @@ Gravação pelos fundadores, em lotes.
 | 2 | Aulas 2, 5–8 da Fundação | fecha a Fundação — a trilha que toda turma percorre |
 | 3 | Operacional O1–O6 | a trilha mais larga (o público da Brasal) |
 | 4 | Gestor (quando os 5 roteiros saírem) | menor público por turma; depende de roteiro |
+| 5 | Especialista 1–8 (quando os 8 roteiros saírem) | formação de campeão — público pequeno e tardio na jornada da turma; último lote de propósito |
 
 **Setup:** talking-head + screen capture · 130–150 palavras/min (8 min ≈
 1.000–1.200 palavras) · gancho nos primeiros 8s · encerrar com a ação de
@@ -51,7 +52,7 @@ terceiros em nenhum card**.
 
 ## Estado e donos
 
-- **Vídeos:** roteiros prontos (14/19); gravação é ação de sócio —
+- **Vídeos:** roteiros prontos (14/27); gravação é ação de sócio —
   consta no checklist de pendências dos fundadores. A ficha do
   [portal](../06-ferramentas/ferramenta-portal.md) mantém o ⚠️ até o
   lote 1 subir.

@@ -29,7 +29,7 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 | Tier | Conteúdo |
 |---|---|
 | 1A | Roteiros Nível 1, word-for-word (1.1.1–1.4.4) — vídeos de ~5–8 min |
-| 1B | Módulo 2.1 — **Método 4D** (2.1.1–2.1.5) |
+| 1B | Módulo 2.1 — **Método 4D** (2.1.1–2.1.5) ⚠️ legado: o 4D foi revogado (Rubrica ABBA, 20/08) — não gravar nem imprimir deste módulo |
 | 1C | Kit do Facilitador — **Kickoff presencial de meio dia** (Autópsia de Tarefa/Demo Theater, Clínica da Primeira Vitória, Bússola em papel, checklists de logística) |
 | 1D | Artefatos impressos: **Card da Bússola · Semáforo de Dados · Esqueleto de Prompt (Papel/Contexto/Tarefa/Formato/Exemplo/Restrições) · Lente de Oportunidade · Solution Canvas · Ficha Primeira Vitória** |
 | 1E | Biblioteca de Prompts (40+) |
@@ -40,7 +40,7 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 
 **Recompensa de conclusão:** certificado ABBA + **licença CrewAI de 12 meses** (consistente com o modelo de serviço; *condicionada à via de contratação CrewAI ativa — R9: não prometer em proposta antes do setup*).
 
-**⚠️ Atribuição obrigatória (compliance):** o Método 4D é adaptado do *AI Fluency Framework* (Rick Dakan, Joseph Feller e Anthropic), licenciado **CC BY-NC-SA 4.0**. O texto de atribuição está no próprio material e deve aparecer sempre que o 4D aparecer. **A cláusula NC (não-comercial) precisa de validação do advogado para uso em programa pago — incluída na pauta P4.**
+**⚠️ 4D revogado (compliance, atualização 25/08):** o Método 4D deste pacote é adaptado do *AI Fluency Framework* (Rick Dakan, Joseph Feller e Anthropic, CC BY-NC-SA 4.0) e foi **substituído pela Rubrica ABBA em 20/08/2026** — a cláusula NC nunca foi validada para programa pago, e a decisão da casa tornou a validação desnecessária: **nada com 4D se grava, se imprime ou vai a cliente** ([guia de produção](guia-producao-fisica.md)). Se algum material LEGADO com 4D for reusado internamente, a atribuição do próprio material acompanha.
 
 **O que falta produzir (do próprio documento):**
 1. Gravar os 3 vídeos de maior alavancagem primeiro (1.3.3 "Confie, mas verifique", 1.3.1 Semáforo, 2.1.2 Descrição) + imprimir os 6 cards
