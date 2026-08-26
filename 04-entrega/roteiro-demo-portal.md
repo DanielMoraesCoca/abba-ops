@@ -12,6 +12,15 @@
 ## Antes de abrir a sala (checklist, na véspera)
 
 - [ ] `npm run turma:preflight` no ambiente da demo → 0 bloqueadores
+      (audita o DADO: currículo, migrações, segredos, provedor de e-mail)
+- [ ] **`npm run demo:rehearsal`** no ambiente da demo → 0 quebras
+      (audita a TELA: abre as 17 telas deste roteiro num navegador de
+      verdade e acusa crash, inglês na cara do aluno, elemento da fala
+      que não apareceu. Contra o ambiente real:
+      `npm run demo:rehearsal -- --base-url=https://… --cookie="<abba_session da persona>"`
+      — o cookie sai do navegador depois de entrar como ela. As
+      capturas ficam em `.demo-rehearsal/`: dá para conferir cada
+      tela sem reabrir o portal)
 - [ ] Semear a demo: `POST /api/admin/seed-demo-client` (sessão de staff;
       só opera em tenant `demo-*`) — confere que `maria@ridgeline.com`
       abre com progresso rico
@@ -159,3 +168,4 @@ o relatório de 90 dias é o que a gente assina."*
 | Versão | Data | Mudança |
 |---|---|---|
 | v1 | 2026-08-24 | Criado para a reunião da Brasal. Substitui o `_PHASE1_DEMO_SCRIPT.md` (abril, inglês, produto antigo); percurso alinhado ao Currículo v3 (academia diária) e às falas v2 |
+| v1.1 | 2026-08-26 | Primeiro ENSAIO real (as 17 telas abertas num navegador, `npm run demo:rehearsal`, agora na véspera): 0 quebras. Dois defeitos consertados antes de virarem cena — a concordância de "credencial" (era masculina na barra lateral de todas as telas) e a home que, sem conseguir ler a escada, afirmava "as aulas estão feitas". Bloco 7 ganhou o preparo do token do /verify |
