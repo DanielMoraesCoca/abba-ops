@@ -27,6 +27,28 @@
 | C6 | Build cujo modelo esqueceu a confiança levava desconto de 50% no score (o default de 0.5 era inalcançável por um bug de validação) | Ranking punia omissão de campo como se fosse risco medido | ✅ corrigido |
 | C7 | Anexo dizia "confiança média das 25 leituras" mas excluía as dimensões com erro do cálculo | Número certo com legenda errada, na página do cliente | ✅ corrigido |
 
+## Onda "A máquina confessa" (2026-08-26) — o que fechou
+
+A tese: **o maior risco da máquina nunca foi errar, foi não conseguir avisar que errou.** Em mock esse tipo de falha é estruturalmente invisível (mock nunca trunca, nunca falha, nunca varia), então ela só apareceria no primeiro run com chave real, que custa dinheiro e credibilidade. Fechados nesta onda, do registro P1 abaixo: **1, 2, 5, 6, 7** (e a metade visível do 4).
+
+| Item | Estado | O que passa a acontecer |
+|---|---|---|
+| P1.1 JSON truncado reparado em silêncio | ✅ fechado | O run confessa o reparo, com o sinal autoritativo (`stop_reason`) dos três providers, e paga **um** retry a 1,5x o teto de tokens. O relatório diz que os totais são **um piso, não uma estimativa central** |
+| P1.2 Pass 2 falhando em silêncio | ✅ fechado | `pass2=FALHOU` em vez de `pass2=0` |
+| P1.4 Vínculo leak↔build por índice | 🟡 metade | O lote perdido agora é REGISTRADO (nomeia os vazamentos que ficaram sem build). Exigir `leakId` explícito continua aberto, agora com evidência para dimensionar |
+| P1.5 Dois vocabulários de arquétipo | ✅ fechado | Registro único; palavra fora do vocabulário vira perda declarada, nunca relabelada. **⚠️ mudou o prompt da espinha `loops`** |
+| P1.6 Ranking irreproduzível | ✅ fechado | Ordem congelada no fim do run. **Consequência de negócio: `abba outcome` não reordena mais um plano já entregue** — o aprendizado serve o PRÓXIMO run. `abba report --refresh-ranking` re-tira, preservando a ordem anterior |
+| P1.7 Logs fora do `forget` | ✅ fechado | Varridos e no certificado; um log sobrevivente **reprova** a atestação de resíduo zero |
+| (novo) Cliente não sabia que a leitura era parcial | ✅ fechado | Uma linha de nota de escopo no one-pager, no anexo visual e no deck, logo abaixo do cabeçalho, dizendo a DIREÇÃO do erro |
+| (novo) `abba validate` certificava sem olhar as falhas | ✅ fechado | Quatro travas que bloqueiam, três que avisam |
+
+Duas coisas que valem ser ditas em voz alta para o Pedro e para qualquer cliente que pergunte:
+
+1. **Nós preferimos declarar um limite a apresentar um número redondo.** Um run degradado passa a dizer, na primeira página que o cliente lê, que os números são um piso. Isso custa uma linha de desconforto e compra a credibilidade inteira.
+2. **Degradação periférica não dispara alarme.** Declarar limite é honestidade; alarmar por ruído é ansiedade, e uma ressalva que aparece sempre é uma ressalva que ninguém lê.
+
+Ficaram abertos, do P1: 3 (receita órfã), 8 (share-link), 9 (sinais de nível de run), 10 (enums vs dinheiro), 11 (shipped sem valor medido), 12 (autoridade do consultor no score). Os quatro últimos mexem em ranking: exigem decisão de método antes de código.
+
 ## Registro de Pontos Fracos — P1 (próxima onda: integridade e aprendizado)
 
 1. **JSON truncado é "reparado" em silêncio**: resposta cortada pelo limite de tokens tem os colchetes fechados e parseia com sucesso — os últimos itens de listas (vazamentos, evidências, intervenções) somem sem sinal nenhum. É a perda mais consequente do motor. *Fechar: marcar reparo como warning persistido + retry com maxTokens maior.*
