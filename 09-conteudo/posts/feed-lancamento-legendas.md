@@ -99,9 +99,9 @@ Todo mundo consegue prometer. Publicar o que você se recusa a vender é outra c
 
 ## Peça 04 · A análise gratuita
 
-O primeiro passo com a gente não custa nada, e ele já tem um número dentro.
+O primeiro passo com a gente não custa nada, e ele fica pronto em menos de cinco minutos.
 
-É uma estimativa em reais do que pode estar saindo da sua operação, calculada com informação pública, durante a própria conversa, em menos de cinco minutos.
+É uma análise da sua empresa feita com informação pública, e a primeira página traz uma estimativa em reais do que pode estar saindo da operação sem precisar sair.
 
 Por que um número e não três hipóteses: três hipóteses fazem o leitor pensar. Um número faz o leitor reagir, concordando, discordando ou corrigindo. Qualquer uma das três é uma conversa. A ausência de reação é um PDF arquivado.
 
@@ -111,7 +111,9 @@ Faixa, nunca número exato. Um valor exato calculado de fora é uma mentira com 
 Premissa sem fonte não entra.
 E a faixa pode ser pequena: se a estimativa honesta for baixa, ela vai baixa.
 
-O que a análise não faz: provar a causa. Ela foi calculada de fora, e a gente diz isso na primeira linha.
+O documento inteiro tem entre 32 e 60 páginas, conforme o modelo de profundidade. E aqui vai a ressalva que a gente faz questão de dar: sessenta páginas não são o argumento. A primeira é. A análise é longa porque cada premissa vem com a fonte e você precisa poder conferir de onde saiu o número. Se a primeira página não trouxer uma faixa que faça você reagir, o resto não salva.
+
+O que ela não faz: provar a causa. Foi calculada de fora, e a gente diz isso na primeira linha.
 
 Tem algum número em reais aí dentro que dói hoje, e que vocês já medem?
 

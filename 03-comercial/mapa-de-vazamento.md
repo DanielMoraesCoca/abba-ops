@@ -37,9 +37,22 @@ Não é reunião de vendas. É a coleta que torna a estimativa defensável. **Ci
 
 ---
 
-## O documento: 2 páginas, entregue em 48h
+## O documento: a abertura da Análise ABBA
 
-Estrutura na seção 1 do modelo:
+**O Mapa de Vazamento é a seção 1** — a primeira página, a que carrega a faixa em
+reais. Ele **não é** o documento inteiro: a
+[Análise ABBA](../02-jornada-do-cliente/02-diagnostico-gratuito.md) completa tem
+hoje **entre 32 e 60 páginas**, conforme o modelo de profundidade escolhido, e é
+**gerada em menos de cinco minutos** pelo assessment-brain (fato corrigido em
+2026-08-27; o "2 páginas em 48h" que estava aqui descrevia só a seção 1 e o
+prazo do fluxo antigo).
+
+**A regra que isso não muda:** a primeira página continua sendo um número, não um
+sumário. As outras dezenas existem para o leitor **conferir de onde o número
+saiu**. Volume é trilha de auditoria, nunca argumento de venda: uma análise
+longa que não abre com uma faixa em reais falhou no que importa.
+
+Estrutura da seção 1:
 
 | Elemento | Regra |
 |---|---|
@@ -65,11 +78,20 @@ Estrutura na seção 1 do modelo:
 
 | Quando | O quê |
 |---|---|
-| D+0 | Conversa de 45 min (as 5 perguntas) · registrar o placar do teste de alvo |
-| D+0 | `abba scout "NomeEmpresa" --industry X --create` com provedor de busca real |
-| D+1 | Curadoria dos sócios: montar a faixa, escolher o vetor, escrever as três premissas com fonte |
-| D+1 | Revisão cruzada do outro sócio — **obrigatória**, é onde a faixa inflada é pega |
-| D+2 | Apresentação ao vivo de 45 min. O PDF vai **depois** |
+| Antes | `abba scout "NomeEmpresa" --industry X --create` com provedor de busca real. **A geração leva menos de 5 minutos** |
+| Antes | Curadoria dos sócios sobre a faixa: escolher o vetor, escrever as premissas com fonte |
+| Antes | Revisão cruzada do outro sócio sobre **a faixa** — **obrigatória**, é onde a faixa inflada é pega |
+| D+0 | Conversa de 45 min (as 5 perguntas) · registrar o placar do teste de alvo · apresentar a análise ao vivo |
+| D+0 | O PDF vai **depois** da apresentação |
+
+> **A questão operacional que a velocidade abriu** (decisão dos sócios pendente):
+> a geração em 5 minutos permite entregar a análise **dentro da própria conversa**,
+> e é isso que o [enviável](../08-materiais/modelos/abba-apresentacao.pdf) promete
+> desde a [V3v](../05-interno/registro-de-decisoes.md). Mas a **revisão cruzada da
+> faixa é inegociável** e não cabe numa conversa ao vivo. A saída que este fluxo
+> adota: **o scout roda antes da conversa**, com informação pública, e a conversa
+> refina. Se os sócios preferirem gerar ao vivo, então a faixa da primeira página
+> só é dita depois da revisão cruzada, nunca na hora.
 | D+2 | Registrar reação, objeções e o degrau proposto no [pipeline](pipeline-modelo.md) |
 
 **Custo-alvo:** < {{CUSTO_MAX}} em API + 3h de sócio. Acima disso, só para lead que fez ≥3 pontos no teste de alvo.

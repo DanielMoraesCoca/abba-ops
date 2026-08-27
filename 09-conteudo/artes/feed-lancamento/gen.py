@@ -317,9 +317,9 @@ peca("peca-03", "03 · Prometemos × Recusamos", "Recusa", 3, [
 peca("peca-04", "04 · A análise gratuita", "Analise", 4, [
  ("PEÇA 04", '''
 <p class="label">O primeiro passo · gratuito</p>
-<h1>Uma estimativa em reais do que pode estar <i>vazando.</i></h1>
+<h1>Dezenas de páginas sobre a sua empresa, em menos de <i>cinco minutos.</i></h1>
 <div class="rule"></div>
-<p class="lede">Feita com informação pública, durante a própria conversa, em menos de cinco minutos. Sem custo e sem compromisso.</p>
+<p class="lede">Feita com informação pública. A primeira página traz uma estimativa em reais do que pode estar vazando na operação.</p>
 ''', False),
  ("POR QUE UM NÚMERO", '''
 <p class="label mute">Por que um número, e não três hipóteses</p>
@@ -358,7 +358,12 @@ peca("peca-04", "04 · A análise gratuita", "Analise", 4, [
 <tr><td class="k">02</td><td><b>As premissas numeradas, com a fonte citada,</b> incluindo o que assumimos e ainda não sabemos.</td></tr>
 <tr><td class="k">03</td><td><b>As perguntas que só você pode responder,</b> e que mudariam a estimativa nos dois sentidos.</td></tr>
 </table>
-''' + note("·", "Sem custo, sem compromisso, e sem nenhum dado seu no documento."), False),
+''' + note("·", "Entre 32 e 60 páginas, conforme o modelo de profundidade. Sem custo, sem compromisso, e sem nenhum dado seu no documento."), False),
+ ("SOBRE O TAMANHO", '''
+<p class="label mute">Uma ressalva que fazemos questão de dar</p>
+<h1 class="xs">Sessenta páginas não são o argumento. <i>A primeira é.</i></h1>
+<p class="lede">A análise é longa porque <b>cada premissa vem com a fonte</b>, e você precisa poder conferir de onde saiu o número. Se a primeira página não trouxer uma faixa em reais que faça você reagir, o resto não salva.</p>
+''', True),
  ("O PRÓXIMO PASSO", '''
 <img class="mark" src="abba-logo.png" alt="ABBA">
 <p class="label" style="margin-top:34px">O próximo passo</p>

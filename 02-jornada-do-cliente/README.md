@@ -19,7 +19,7 @@
 | # | Estágio | Dono (chapéu) | Prazo-alvo |
 |---|---|---|---|
 | [01](01-visitante-e-lead.md) | Visitante e lead | Comercial | resposta a lead em 24h |
-| [02](02-diagnostico-gratuito.md) | Degustação gratuita | Comercial | documento em 48h · apresentação ≤5 dias úteis |
+| [02](02-diagnostico-gratuito.md) | Degustação gratuita | Comercial | análise gerada em <5 min (32–60 págs) · apresentação ≤5 dias úteis |
 | [03](03-proposta.md) | Proposta | Comercial | envio em 3 dias úteis |
 | [04](04-contrato.md) | Contrato | Comercial + Fin-Admin | contrato em 2 dias úteis |
 | [05](05-onboarding.md) | Onboarding | Entrega | kickoff em 10 dias úteis |

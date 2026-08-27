@@ -146,7 +146,7 @@ pode contradizer**. Linha nova a cada publicação.
 | **01 · A tese** | Duas frentes simultâneas · as três perguntas · o registro com o que não funcionou · IA rascunha / humano assina | Qualquer peça que sugira IA decidindo, ou treinamento como produto |
 | **02 · A jornada** | Sete passos nesta ordem e com estes nomes · cada etapa inteira sozinha · análise gratuita **na hora** | Qualquer peça que mude nome, ordem ou prazo de etapa |
 | **03 · Promessas × Recusas** | As 3 promessas e as 4 recusas, nestas palavras | Qualquer peça que prometa acurácia, previsão ou piloto sem métrica |
-| **04 · A análise gratuita** | Faixa nunca exata · premissa com fonte · a faixa pode ser pequena · não prova causa | Qualquer peça com número exato de economia estimada de fora |
+| **04 · A análise gratuita** | Gerada em <5 min · **32 a 60 páginas** · faixa nunca exata · premissa com fonte · a faixa pode ser pequena · não prova causa · *"volume não é o argumento, a primeira página é"* | Qualquer peça com número exato estimado de fora, ou que lidere por tamanho do documento |
 | **05 · Parceiros** | Microsoft e CrewAI · aprovação humana em qualquer ferramenta · ninguém sai refém | Qualquer peça que prometa licença ou exclusividade |
 | **06 · O que é AI native** | A definição canônica · o método em quatro passos · *"as ferramentas ficam, e as pessoas sabem operá-las"* | Qualquer peça que use AI native sem a prova colada, ou que trate capacidade como produto em vez de método |
 
@@ -199,15 +199,24 @@ canônica está no [posicionamento](../00-identidade/posicionamento.md) e virou 
 peça 06, que fecha o Ato I explicando a frase que a peça 01 estampa na capa. O
 anglicismo é legítimo pela exceção que o próprio manifesto declara.
 
-**Ainda aberto: duas heranças da [V3v](../05-interno/registro-de-decisoes.md)
-que nunca se propagaram.** O
+**Resolvido (V4e, 27/08).** O "2 páginas em 48h" saiu de seis documentos. A
+Análise ABBA tem **32 a 60 páginas conforme o modelo de profundidade e é gerada
+em menos de cinco minutos**. Os dois números antigos estavam errados de formas
+diferentes: "2 páginas" descrevia apenas a seção 1, e "48h" era o prazo do fluxo
+manual anterior à ferramenta. **A regra editorial que nasceu daí:** volume é
+trilha de auditoria, nunca argumento de venda. Nenhuma peça lidera por tamanho
+de documento, e a peça 04 traz isso escrito na própria tela.
+
+**Ainda aberto:** o
 [deck institucional](../08-materiais/modelos/abba-deck-institucional.pptx) mantém
-a metáfora das raízes no slide 4, e o
-[Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md) mantém "2 páginas em
-48h" enquanto o enviável e o feed já dizem "durante a própria conversa". Nenhum
-dos dois foi tocado: um vai ao vivo para cliente e o outro é o processo
-comercial. **Enquanto o segundo não se alinha, existe uma contradição publicada
-entre o que o feed promete e o que o processo descreve.**
+a metáfora das raízes no slide 4, que a [V3v](../05-interno/registro-de-decisoes.md)
+tirou de todo o resto. É um binário que vai ao vivo para cliente, então não foi
+tocado sem a palavra dos sócios.
+
+**Decisão pendente na operação:** a revisão cruzada da faixa é inegociável e não
+cabe numa conversa ao vivo. O fluxo adotado roda o scout **antes** da conversa; se
+os sócios preferirem gerar ao vivo, a faixa da primeira página só é dita depois
+da revisão cruzada ([mapa de vazamento](../03-comercial/mapa-de-vazamento.md)).
 
 ## 8. O gate ganha um item
 

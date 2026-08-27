@@ -1,9 +1,14 @@
 # Estágio 02 — Degustação Gratuita (Análise ABBA)
 
-**Dono:** chapéu Comercial · **Prazo-alvo:** documento (Mapa de Vazamento + análise) pronto em **48h**; apresentação ao vivo em até **5 dias úteis** após o aceite
+**Dono:** chapéu Comercial · **Prazo-alvo:** geração da Análise ABBA em **menos de 5 minutos** (32 a 60 páginas, conforme o modelo de profundidade); curadoria e revisão cruzada da faixa **antes** da conversa; apresentação ao vivo em até **5 dias úteis** após o aceite
 
 ## O que é
 A amostra do método: uma análise da empresa do prospect feita **apenas com informação pública**, usando o scout do assessment-brain + curadoria dos sócios. De graça, com limite honesto declarado. Objetivo: provar competência e converter para a Avaliação de Prontidão paga.
+
+**O tamanho real, corrigido em 2026-08-27:** a Análise ABBA gerada hoje tem
+**entre 32 e 60 páginas**, conforme o modelo de profundidade, e sai em **menos de
+cinco minutos**. O "2 páginas em 48h" que circulava nos documentos descrevia
+apenas a seção 1 (o Mapa de Vazamento) e o prazo do fluxo manual antigo.
 
 **A primeira página é o [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md)**: uma faixa em R$ do dinheiro que estimamos estar saindo sem precisar sair, com três premissas de fonte citada. Três hipóteses fazem o leitor pensar; um número faz o leitor reagir — e a faixa em reais coloca o documento na mesa da diretoria em vez da TI. As regras de honestidade da faixa (nunca ponto, premissa sem fonte não entra, a faixa pode ser pequena) estão no doc do Mapa e valem sem exceção.
 
@@ -16,7 +21,7 @@ Lead aceitou a degustação na call de descoberta — **ou chegou pelo assessmen
 - [ ] Registrar o placar do teste de alvo (0–5) na pasta do lead — lead sem placar não avança de estágio
 - [ ] Rodar o scout: `abba scout "NomeEmpresa" --industry X --create` (com provedor de busca real configurado — **nunca** enviar brief marcado como pesquisa sintética)
 - [ ] Curadoria dos sócios sobre o brief bruto (1–2h): cortar o que estiver fraco, fortalecer as 2–3 hipóteses mais fortes, adicionar contexto de setor que só humano tem
-- [ ] Montar o PDF "Análise ABBA — NomeEmpresa" com: **Mapa de Vazamento (faixa em R$ + vetor + 3 premissas com fonte)** · 3 hipóteses de oportunidade de IA · perguntas que faríamos à diretoria · o que a avaliação em 25 dimensões olharia · limite honesto ("feito de fora")
+- [ ] Montar o PDF "Análise ABBA — NomeEmpresa" (32 a 60 págs) com: **Mapa de Vazamento (faixa em R$ + vetor + 3 premissas com fonte)** · 3 hipóteses de oportunidade de IA · perguntas que faríamos à diretoria · o que a avaliação em 25 dimensões olharia · limite honesto ("feito de fora")
 - [ ] Revisão cruzada do outro sócio
 - [ ] Agendar apresentação de 45 min ([pauta nº 2](../03-comercial/pautas-de-reuniao.md)) — **apresentar ao vivo, não só mandar o PDF** (a conversa é onde a conversão acontece)
 - [ ] Enviar o PDF após a apresentação com o [e-mail nº 2](../03-comercial/emails-follow-up.md)
