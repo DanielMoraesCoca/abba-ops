@@ -19,6 +19,7 @@
 | [`06-ferramentas/`](06-ferramentas/mapa-jornada-ferramentas.md) | Mapa jornada × ferramenta + fichas de negócio (o que prometer, setup, custo, dono) | Antes de prometer qualquer coisa técnica; setup de cliente novo |
 | [`07-drive/`](07-drive/estrutura-drive.md) | Especificação da estrutura no Google Drive | Criação de pastas de cliente; organização de arquivos vivos |
 | [`08-materiais/`](08-materiais/README.md) | Catálogo dos materiais reais (Academy, propostas, modelos-mestres) + fila de produção | Antes de criar qualquer material novo; onboarding de conteúdo |
+| [`09-conteudo/`](09-conteudo/README.md) | **A máquina de conteúdo**: estratégia, motor diário, formatos, banco de 60 pautas, plano de 90 dias, e as peças prontas em `posts/` e `roteiros/` | Toda segunda; antes de publicar qualquer coisa em nome da ABBA |
 
 ## 📐 Arquitetura de documentos: as três camadas
 
