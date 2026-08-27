@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin:0; }
+    a { color:#C2A35B; } a:hover { color:#D9BA72; }
+
+    .p { width:1080px; height:1350px; box-sizing:border-box; position:relative;
+         overflow:hidden; background:#1B2A4A; color:#FFFFFF;
+         font-family:"Source Serif 4", Georgia, serif; }
+    .p.paper { background:#F2F4F7; color:#1B2A4A; }
+
+    /* --- moldura do documento: folio, referencia, fiadas --- */
+    .frame { position:absolute; inset:0; pointer-events:none; }
+    .hair { position:absolute; background:#33456A; }
+    .paper .hair { background:#CBD3DF; }
+    .hair.gold { background:#C2A35B; }
+    .folio { position:absolute; top:96px; font-family:"IBM Plex Mono", monospace;
+             font-size:19px; letter-spacing:.2em; color:#5D6E92; }
+    .paper .folio { color:#8C97AA; }
+    .folio.l { left:104px; } .folio.r { right:104px; text-align:right; }
+    .ref { position:absolute; bottom:92px; left:104px; font-family:"IBM Plex Mono", monospace;
+           font-size:19px; letter-spacing:.2em; color:#5D6E92; }
+    .paper .ref { color:#8C97AA; }
+    .refr { position:absolute; bottom:92px; right:104px; font-family:"IBM Plex Mono", monospace;
+            font-size:19px; letter-spacing:.2em; color:#C2A35B; }
+
+    /* --- area util: dentro do recorte 1:1 da grade --- */
+    .stage { position:absolute; left:104px; right:104px; top:196px; bottom:168px;
+             display:flex; flex-direction:column; }
+
+    .label { font-family:"IBM Plex Mono", monospace; font-size:20px; letter-spacing:.22em;
+             text-transform:uppercase; color:#C2A35B; margin:0 0 30px; }
+    .label.mute { color:#5D6E92; } .paper .label.mute { color:#8C97AA; }
+
+    h1 { font-family:"Newsreader", Georgia, serif; font-weight:400; margin:0;
+         font-size:80px; line-height:1.12; letter-spacing:-.014em; color:#FFFFFF;
+         text-wrap:balance; }
+    .paper h1 { color:#1B2A4A; }
+    h1.sm { font-size:70px; } h1.xs { font-size:58px; line-height:1.16; }
+    h1 i { font-style:italic; color:#D8BE7C; font-weight:300; }
+    .paper h1 i { color:#8A6E28; }
+
+    .lede { font-family:"Source Serif 4", Georgia, serif; font-size:36px; line-height:1.5;
+            color:#C3CAD8; margin:34px 0 0; max-width:840px; }
+    .paper .lede { color:#4E5A70; }
+    .lede b { color:#FFFFFF; font-weight:600; } .paper .lede b { color:#1B2A4A; }
+
+    .rule { height:1px; background:#C2A35B; width:96px; margin:44px 0 0; flex:none; }
+
+    /* --- numero grande (arquetipo dado) --- */
+    .fig { font-family:"Newsreader", Georgia, serif; font-weight:300;
+           font-size:236px; line-height:.9; letter-spacing:-.03em;
+           font-variant-numeric:tabular-nums; color:#1B2A4A; margin:0; }
+    .p:not(.paper) .fig { color:#FFFFFF; }
+    .fig sup { font-size:.38em; vertical-align:super; color:#C2A35B; font-weight:400;
+               letter-spacing:0; margin-left:.06em; }
+    .figcap { font-family:"IBM Plex Mono", monospace; font-size:22px; letter-spacing:.16em;
+              text-transform:uppercase; color:#8A6E28; margin:22px 0 0; }
+    .p:not(.paper) .figcap { color:#C2A35B; }
+
+    /* --- nota de rodape: a doutrina da fonte, feita visual --- */
+    .note { margin-top:auto; display:flex; gap:20px; align-items:flex-start;
+            padding-top:26px; border-top:1px solid #33456A; }
+    .paper .note { border-top-color:#CBD3DF; }
+    .note .mk { font-family:"IBM Plex Mono", monospace; font-size:19px; color:#C2A35B;
+                flex:none; line-height:1.6; }
+    .note p { font-family:"Source Serif 4", serif; font-size:22px; line-height:1.55;
+              color:#7C88A2; margin:0; } .paper .note p { color:#78839A; }
+
+    /* --- tabela / razao --- */
+    table { border-collapse:collapse; width:100%; margin-top:8px; }
+    td, th { text-align:left; vertical-align:top; padding:24px 22px 24px 0;
+             border-bottom:1px solid #33456A; }
+    .paper td, .paper th { border-bottom-color:#CBD3DF; }
+    th { font-family:"IBM Plex Mono", monospace; font-size:19px; letter-spacing:.2em;
+         text-transform:uppercase; color:#C2A35B; font-weight:400; padding-bottom:16px; }
+    td { font-family:"Source Serif 4", serif; font-size:30px; line-height:1.42; color:#C3CAD8; }
+    .paper td { color:#4E5A70; }
+    td.k { font-family:"IBM Plex Mono", monospace; font-size:21px; color:#5D6E92;
+           width:74px; letter-spacing:.08em; padding-top:28px; }
+    .paper td.k { color:#9AA4B6; }
+    td b { color:#FFFFFF; font-weight:600; } .paper td b { color:#1B2A4A; }
+
+    /* --- lista de etapa --- */
+    .steps { display:flex; flex-direction:column; gap:0; margin-top:6px; }
+    .step { display:grid; grid-template-columns:96px 1fr; gap:30px;
+            padding:26px 0; border-bottom:1px solid #33456A; align-items:baseline; }
+    .paper .step { border-bottom-color:#CBD3DF; }
+    .step:last-child { border-bottom:none; }
+    .step .n { font-family:"IBM Plex Mono", monospace; font-size:24px; color:#C2A35B;
+               letter-spacing:.1em; font-variant-numeric:tabular-nums; }
+    .step h3 { font-family:"Newsreader", Georgia, serif; font-weight:400; font-size:38px;
+               line-height:1.2; margin:0 0 8px; color:#FFFFFF; }
+    .paper .step h3 { color:#1B2A4A; }
+    .step p { font-family:"Source Serif 4", serif; font-size:26px; line-height:1.44;
+              color:#8E9AB4; margin:0; } .paper .step p { color:#6B778E; }
+
+    /* --- margem anotada --- */
+    .marg { display:grid; grid-template-columns:1fr 268px; gap:52px; align-items:start; }
+    .margnote { font-family:"IBM Plex Mono", monospace; font-size:21px; line-height:1.65;
+                color:#7C88A2; border-left:1px solid #C2A35B; padding-left:24px; }
+    .paper .margnote { color:#78839A; }
+  </style>
+</helmet>
+<div class="p paper"><div class="frame"><div class="hair" style="left:104px;right:104px;top:150px;height:1px"></div><div class="hair" style="left:104px;right:104px;bottom:146px;height:1px"></div><div class="hair gold" style="left:104px;top:150px;width:52px;height:2px"></div></div><span class="folio l">ABBA</span><span class="folio r">COMO TRABALHAMOS</span><div class="stage">
+<p class="label mute">Como trabalhamos</p>
+<h1 class="sm">A IA rascunha.<br>Um humano <i>assina.</i><br>A diretoria decide.</h1>
+<p class="lede">Toda decisão entra num registro: métrica combinada antes, resultado medido depois — e vocês veem o registro inteiro, <b>incluindo o que não funcionou.</b></p>
+</div><span class="ref">§1 · 06/07</span><span class="refr">abbaservices.com.br</span></div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,276 @@
+{
+  "pages": [
+    {
+      "id": "peca-01",
+      "name": "01 · A tese"
+    },
+    {
+      "id": "peca-02",
+      "name": "02 · A jornada"
+    },
+    {
+      "id": "peca-03",
+      "name": "03 · Prometemos × Recusamos"
+    },
+    {
+      "id": "peca-04",
+      "name": "04 · O Mapa de Vazamento"
+    }
+  ],
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Tese02.dc.html",
+      "x": 1260,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Tese03.dc.html",
+      "x": 2520,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Tese04.dc.html",
+      "x": 3780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Tese05.dc.html",
+      "x": 5040,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Tese06.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Tese07.dc.html",
+      "x": 1260,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-01"
+    },
+    {
+      "file": "Jornada01.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada02.dc.html",
+      "x": 1260,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada03.dc.html",
+      "x": 2520,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada04.dc.html",
+      "x": 3780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada05.dc.html",
+      "x": 5040,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada06.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada07.dc.html",
+      "x": 1260,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada08.dc.html",
+      "x": 2520,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Jornada09.dc.html",
+      "x": 3780,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-02"
+    },
+    {
+      "file": "Recusa01.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-03"
+    },
+    {
+      "file": "Recusa02.dc.html",
+      "x": 1260,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-03"
+    },
+    {
+      "file": "Recusa03.dc.html",
+      "x": 2520,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-03"
+    },
+    {
+      "file": "Recusa04.dc.html",
+      "x": 3780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-03"
+    },
+    {
+      "file": "Recusa05.dc.html",
+      "x": 5040,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-03"
+    },
+    {
+      "file": "Recusa06.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-03"
+    },
+    {
+      "file": "Mapa01.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    },
+    {
+      "file": "Mapa02.dc.html",
+      "x": 1260,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    },
+    {
+      "file": "Mapa03.dc.html",
+      "x": 2520,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    },
+    {
+      "file": "Mapa04.dc.html",
+      "x": 3780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    },
+    {
+      "file": "Mapa05.dc.html",
+      "x": 5040,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    },
+    {
+      "file": "Mapa06.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    },
+    {
+      "file": "Mapa07.dc.html",
+      "x": 1260,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-04"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-sistema",
+      "x": 0,
+      "y": -260,
+      "w": 620,
+      "page": "peca-01",
+      "text": "SISTEMA · documento de registro.\nNewsreader (títulos) · Source Serif 4 (corpo) · IBM Plex Mono (rótulos, folios e números).\nNavy #1B2A4A e papel #F2F4F7 alternando; dourado #C2A35B só em fiada, marca e uma palavra por tela.\nTodo texto dentro do recorte 1:1 da grade do perfil."
+    },
+    {
+      "id": "nota-arquetipos",
+      "x": 700,
+      "y": -260,
+      "w": 540,
+      "page": "peca-01",
+      "text": "SEIS ARQUÉTIPOS DE CARD, não um template repetido:\ncapa · razão (tabela) · etapas · marginália · diagrama · fecho.\nÉ a variedade que faz o feed parecer feito por gente."
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "peca-01"
+  }
+}
