@@ -403,11 +403,61 @@ peca("peca-05", "05 · Parceiros oficiais", "Parceiro", 5, [
 ])
 
 
-# ═══════════ PEÇA 06 · O NÚMERO DESCONFORTÁVEL (abre o Ato II) ═══════════
+
+# ═══════════ PEÇA 06 · O QUE É AI NATIVE (fecha o Ato I) ═══════════
+# Herda de: peça 01. Gancho para trás: "Tornamos a sua empresa AI native",
+# a capa da peça 01, que nunca foi explicada. Gancho para frente: reconstruir
+# processo é fácil de afirmar, como você saberia que melhorou (peça 07).
+peca("peca-06", "06 · O que é AI native", "Native", 6, [
+ ("PEÇA 06", '''
+<p class="label">A definição, sem slogan</p>
+<h1>Se você fundasse a sua empresa hoje, <i>ela não seria assim.</i></h1>
+<div class="rule"></div>
+<p class="lede">Com IA disponível desde o primeiro dia, você desenharia cada processo de outro jeito. Provavelmente nem existiriam alguns deles.</p>
+''', False),
+ ("A NOSSA PRIMEIRA FRASE", '''
+<p class="label mute">O que está na capa de tudo que a gente manda</p>
+<h1 class="sm">Tornamos a sua empresa <i>AI native.</i></h1>
+<p class="lede">É a nossa primeira frase, e ela merece uma definição em vez de virar slogan. Esta peça é a definição.</p>
+''', False),
+ ("O PROBLEMA", '''
+<p class="label">Por que o experimento mental não basta</p>
+<h1 class="sm">Ninguém vai refundar <i>a própria empresa.</i></h1>
+<p class="lede">A sua já funciona. Tem clientes, contratos, gente boa e processos que deram certo ao longo de anos. Jogar isso fora para começar do zero não é opção, e nem deveria ser.</p>
+''', False),
+ ("A DEFINIÇÃO", '''
+<p class="label mute">AI native</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">É chegar no mesmo lugar <i>sem refundar nada.</i></h1>
+  <div class="margnote">A empresa que você teria desenhado hoje, construída a partir da que você já tem.</div>
+</div>
+''', True),
+ ("COMO SE FAZ", '''
+<p class="label">Na prática, gargalo por gargalo</p>
+<div class="steps">
+  <div class="step"><span class="n">1</span><div><h3>Mapear o que já dá certo</h3><p>Não se automatiza o caos. Primeiro se entende como o trabalho realmente flui.</p></div></div>
+  <div class="step"><span class="n">2</span><div><h3>Achar o gargalo que tem número</h3><p>Onde o trabalho para, onde o dinheiro vaza, onde a decisão demora.</p></div></div>
+  <div class="step"><span class="n">3</span><div><h3>Reconstruir o processo com IA</h3><p>Onde ela faz diferença, e só aí. Solução sob medida, no fluxo real.</p></div></div>
+  <div class="step"><span class="n">4</span><div><h3>Medir o que mudou</h3><p>Métrica combinada antes, resultado medido depois.</p></div></div>
+</div>
+''', False),
+ ("O QUE FICA", '''
+<p class="label mute">Quando a gente sai</p>
+<h1 class="xs">As ferramentas ficam. E as pessoas <i>sabem operá-las.</i></h1>
+<p class="lede">Junto com cada solução instalamos a capacidade de usar, mudar e cobrar resultado dela. Sistema sem gente formada vira software abandonado em seis meses, e aí a empresa não ficou AI native: ficou com mais uma assinatura.</p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">Reconstruir processo é fácil de afirmar. <i>Como você saberia que melhorou?</i></h1>
+''' + note("·", "É a próxima conversa."), False),
+])
+
+# ═══════════ PEÇA 07 · O NÚMERO DESCONFORTÁVEL (abre o Ato II) ═══════════
 # Herda de: peça 03. Gancho para trás: "recusamos prometer acurácia que não
 # medimos". Gancho para frente: se nem quem usa sabe, como a diretoria saberia.
-peca("peca-06", "06 · O número desconfortável", "Prova", 6, [
- ("PEÇA 06", '''
+peca("peca-07", "07 · O número desconfortável", "Prova", 7, [
+ ("PEÇA 07", '''
 <p class="label">O estudo mais desconfortável do ano</p>
 <h1>19% mais lentos.<br>E convencidos de que estavam <i>20% mais rápidos.</i></h1>
 <div class="rule"></div>

@@ -46,7 +46,7 @@ argumento em vez de catálogo.
 
 | Ato | O que estabelece | Por que só aqui | Pilar | Estado |
 |---|---|---|---|---|
-| **I · Quem somos** | Identidade, oferta, postura, tecnologia | Ninguém escuta evidência de quem não sabe quem é | P3 Método | ✅ **peças 01 a 05** |
+| **I · Quem somos** | Identidade, oferta, postura, tecnologia, **e a definição de AI native** | Ninguém escuta evidência de quem não sabe quem é | P3 Método | ✅ **peças 01 a 06** |
 | **II · Por que isso é necessário** | O problema é real e medido: RAND, METR, DORA, Wharton | O Ato I *afirmou* "provamos de fora". O Ato II mostra por que essa afirmação vale alguma coisa | P1 A Prova | ▶ **em produção** |
 | **III · Não é conversa** | A máquina por dentro: a régua, o gate em código, a deleção com certificado, as travas anti-maquiagem | Depois de dois atos de afirmação, o leitor precisa ver funcionando. Antes disso, seria bastidor de algo que ele não sabe o que é | P2 Bastidor | ⬜ out/2026 |
 | **IV · E tem data** | Obrigações com prazo: IBS/CBS, ANPD, PL 2338, IA-sombra | Converte interesse em urgência. Só funciona em quem já confia, senão lê como terrorismo de vendedor | P4 Brasil | ⬜ out/nov |
@@ -110,13 +110,27 @@ Frases já publicadas ou já ditas na boca dos sócios. **Copiar, nunca parafras
 - *O que eu posso começar a fazer, porque a IA agora permite?*
 - *O que só eu faço, e devo fazer ainda melhor?*
 
+### AI native (V4d, definição canônica)
+- *Tornamos a sua empresa AI native. E provamos, de fora, o que mudou.* **As duas
+  metades sempre juntas.** Sozinha, a promessa é a mesma de qualquer fornecedor.
+- *Uma empresa AI native é a que teria sido desenhada assim se fosse fundada hoje.*
+- *Nós levamos até lá uma empresa que já existe, sem refundar nada.*
+- *Gargalo por gargalo.*
+- *Sistema sem gente formada vira software abandonado em seis meses.*
+
+**A hierarquia**, do [posicionamento](../00-identidade/posicionamento.md):
+**AI native** é a promessa (capa, primeira frase, feed) · **instalar capacidade**
+é o método (corpo, proposta, contrato) · **provar de fora** sustenta as duas.
+"Instalamos capacidade" **não é mais expressão banida**: é subordinada, e só
+aparece depois que a promessa já foi entendida.
+
 ### Entra no Ato II, e passa a ser léxico a partir dele
 - *Ninguém sabe se a ferramenta ajudou sem medir de fora.*
 
 ### Proibido no feed
 Tudo do [índice proibido](../00-identidade/base-de-evidencias.md#2-o-índice-proibido--números-banidos-de-todo-material)
 · travessão ([régua v1.5.0](../06-ferramentas/regua-do-revisor.md))
-· *"instalamos capacidade"* enquanto o conflito do §7 não for resolvido
+· *"AI native"* solta, sem a prova colada na mesma respiração (V4d)
 · a metáfora das raízes ([V3v](../05-interno/registro-de-decisoes.md))
 · *"48 horas"* para a análise gratuita (o prazo vigente é **durante a própria conversa**)
 
@@ -134,6 +148,7 @@ pode contradizer**. Linha nova a cada publicação.
 | **03 · Promessas × Recusas** | As 3 promessas e as 4 recusas, nestas palavras | Qualquer peça que prometa acurácia, previsão ou piloto sem métrica |
 | **04 · A análise gratuita** | Faixa nunca exata · premissa com fonte · a faixa pode ser pequena · não prova causa | Qualquer peça com número exato de economia estimada de fora |
 | **05 · Parceiros** | Microsoft e CrewAI · aprovação humana em qualquer ferramenta · ninguém sai refém | Qualquer peça que prometa licença ou exclusividade |
+| **06 · O que é AI native** | A definição canônica · o método em quatro passos · *"as ferramentas ficam, e as pessoas sabem operá-las"* | Qualquer peça que use AI native sem a prova colada, ou que trate capacidade como produto em vez de método |
 
 ---
 
@@ -141,33 +156,33 @@ pode contradizer**. Linha nova a cada publicação.
 
 Sequência, não fila. Cada linha traz a herança e os dois ganchos.
 
-### Ato II · Por que isso é necessário (peças 06 a 09)
+### Ato II · Por que isso é necessário (peças 07 a 10)
 
 | # | Peça | Herda de | Gancho para trás | Gancho para frente | Pauta |
 |---|---|---|---|---|---|
-| **06** | **O número desconfortável** (METR) | 03 | *"recusamos prometer acurácia que não medimos"* | Se nem quem usa sabe, como a diretoria saberia? | [1](banco-de-pautas.md) |
-| **07** | **A causa nº 1 do fracasso** (RAND) | 06 | *"ninguém sabe se a ferramenta ajudou sem medir de fora"* | E se o problema começa antes, na largada? | [3](banco-de-pautas.md) |
-| **08** | **A IA amplifica o que já existe** (DORA) | 07 | *"começar sem combinar o que seria dar certo"* | Então às vezes o primeiro passo é para trás | [4](banco-de-pautas.md) |
-| **09** | **Quase todo mundo diz que mede** (Wharton) | 08 | *"arrumar a base é a condição do ganho"* | Fecha o ato: por isso existe um terceiro que mede | [5](banco-de-pautas.md) |
+| **07** | **O número desconfortável** (METR) | 06 | *"como você saberia que melhorou?"* (peça 06) e *"recusamos prometer acurácia que não medimos"* (peça 03) | Se nem quem usa sabe, como a diretoria saberia? | [1](banco-de-pautas.md) |
+| **08** | **A causa nº 1 do fracasso** (RAND) | 07 | *"ninguém sabe se a ferramenta ajudou sem medir de fora"* | E se o problema começa antes, na largada? | [3](banco-de-pautas.md) |
+| **09** | **A IA amplifica o que já existe** (DORA) | 08 | *"começar sem combinar o que seria dar certo"* | Então às vezes o primeiro passo é para trás | [4](banco-de-pautas.md) |
+| **10** | **Quase todo mundo diz que mede** (Wharton) | 09 | *"arrumar a base é a condição do ganho"* | Fecha o ato: por isso existe um terceiro que mede | [5](banco-de-pautas.md) |
 
 O Ato II fecha exatamente onde o Ato I abriu: *"e provamos, de fora, o que
 mudou"*. **O arco morde o próprio rabo, de propósito.**
 
-### Ato III · Não é conversa (peças 10 a 12)
+### Ato III · Não é conversa (peças 11 a 13)
 
 | # | Peça | Herda de | Gancho para trás | Pauta |
 |---|---|---|---|---|
-| **10** | **A régua que reprova o nosso próprio material** | 09 | *"medição combinada antes quase não existe"* | [17](banco-de-pautas.md) |
-| **11** | **Apagamos dado e emitimos certificado disso** | 10 | *"o que impede um número inventado de sair da sua empresa?"* | [24](banco-de-pautas.md) |
-| **12** | **Bloqueamos em código a chance de melhorar a própria nota** | 11 | *"registro que vocês veem inteiro"* (peça 01) | [23](banco-de-pautas.md) |
+| **11** | **A régua que reprova o nosso próprio material** | 10 | *"medição combinada antes quase não existe"* | [17](banco-de-pautas.md) |
+| **12** | **Apagamos dado e emitimos certificado disso** | 11 | *"o que impede um número inventado de sair da sua empresa?"* | [24](banco-de-pautas.md) |
+| **13** | **Bloqueamos em código a chance de melhorar a própria nota** | 12 | *"registro que vocês veem inteiro"* (peça 01) | [23](banco-de-pautas.md) |
 
-### Ato IV · E tem data (peças 13 a 15)
+### Ato IV · E tem data (peças 14 a 16)
 
 | # | Peça | Herda de | Pauta |
 |---|---|---|---|
-| **13** | **IA-sombra: seu time já usa, o jurídico não sabe quais** | 12 | [45](banco-de-pautas.md) |
-| **14** | **O calendário de obrigações com data** | 13 | [43](banco-de-pautas.md) |
-| **15** | **PL 2338 e ISO 42001 em português** | 14 | [44](banco-de-pautas.md) |
+| **14** | **IA-sombra: seu time já usa, o jurídico não sabe quais** | 13 | [45](banco-de-pautas.md) |
+| **15** | **O calendário de obrigações com data** | 14 | [43](banco-de-pautas.md) |
+| **16** | **PL 2338 e ISO 42001 em português** | 15 | [44](banco-de-pautas.md) |
 
 **Cadência:** uma peça a cada três dias no Instagram. Doze peças cobrem cerca de
 seis semanas, e o Ato IV desemboca em novembro, que é quando o
@@ -175,30 +190,24 @@ seis semanas, e o Ato IV desemboca em novembro, que é quando o
 
 ---
 
-## 7. O conflito que ainda trava vocabulário
+## 7. O que ficou resolvido, e o que ainda não
 
-Registrado para não ser esquecido, porque **todo material novo herda a
-ambiguidade enquanto ele existir**:
+**Resolvido (V4d, 27/08).** O conflito entre *"instalação de capacidade"* e
+*"AI native"* acabou, por hierarquia em vez de escolha: **AI native é a promessa,
+instalar capacidade é o método, provar de fora sustenta as duas.** A definição
+canônica está no [posicionamento](../00-identidade/posicionamento.md) e virou a
+peça 06, que fecha o Ato I explicando a frase que a peça 01 estampa na capa. O
+anglicismo é legítimo pela exceção que o próprio manifesto declara.
 
-O [posicionamento](../00-identidade/posicionamento.md) manda dizer *"instalação
-de capacidade de IA"* e traz como headline *"Instalamos capacidade de IA"*. A
-[V3q](../05-interno/registro-de-decisoes.md) removeu essa expressão do material
-de cliente, classificando-a como jargão, e a capa passou a ser *"Tornamos a sua
-empresa AI native"*. As duas não podem valer ao mesmo tempo.
-
-As peças 01 a 05 seguem a voz do enviável, que é o padrão editorial da casa desde
-a V3p. **Decisão dos sócios:** alinhar o posicionamento à voz do enviável, ou o
-enviável ao vocabulário do posicionamento. Enquanto não se decide, o léxico do §4
-vale.
-
-**Duas heranças da V3v ainda não propagadas:** o
+**Ainda aberto: duas heranças da [V3v](../05-interno/registro-de-decisoes.md)
+que nunca se propagaram.** O
 [deck institucional](../08-materiais/modelos/abba-deck-institucional.pptx) mantém
 a metáfora das raízes no slide 4, e o
 [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md) mantém "2 páginas em
-48h". Nenhum dos dois foi tocado, porque um vai ao vivo para cliente e o outro é
-o processo comercial. Aguardando a palavra dos sócios.
-
----
+48h" enquanto o enviável e o feed já dizem "durante a própria conversa". Nenhum
+dos dois foi tocado: um vai ao vivo para cliente e o outro é o processo
+comercial. **Enquanto o segundo não se alinha, existe uma contradição publicada
+entre o que o feed promete e o que o processo descreve.**
 
 ## 8. O gate ganha um item
 

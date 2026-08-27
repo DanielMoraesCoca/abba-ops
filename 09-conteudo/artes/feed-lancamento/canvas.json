@@ -22,7 +22,11 @@
     },
     {
       "id": "peca-06",
-      "name": "06 · O número desconfortável"
+      "name": "06 · O que é AI native"
+    },
+    {
+      "id": "peca-07",
+      "name": "07 · O número desconfortável"
     }
   ],
   "artboards": [
@@ -299,7 +303,7 @@
       "page": "peca-05"
     },
     {
-      "file": "Prova01.dc.html",
+      "file": "Native01.dc.html",
       "x": 0,
       "y": 0,
       "w": 1080,
@@ -307,7 +311,7 @@
       "page": "peca-06"
     },
     {
-      "file": "Prova02.dc.html",
+      "file": "Native02.dc.html",
       "x": 1260,
       "y": 0,
       "w": 1080,
@@ -315,7 +319,7 @@
       "page": "peca-06"
     },
     {
-      "file": "Prova03.dc.html",
+      "file": "Native03.dc.html",
       "x": 2520,
       "y": 0,
       "w": 1080,
@@ -323,7 +327,7 @@
       "page": "peca-06"
     },
     {
-      "file": "Prova04.dc.html",
+      "file": "Native04.dc.html",
       "x": 3780,
       "y": 0,
       "w": 1080,
@@ -331,7 +335,7 @@
       "page": "peca-06"
     },
     {
-      "file": "Prova05.dc.html",
+      "file": "Native05.dc.html",
       "x": 5040,
       "y": 0,
       "w": 1080,
@@ -339,7 +343,7 @@
       "page": "peca-06"
     },
     {
-      "file": "Prova06.dc.html",
+      "file": "Native06.dc.html",
       "x": 0,
       "y": 1620,
       "w": 1080,
@@ -347,12 +351,68 @@
       "page": "peca-06"
     },
     {
-      "file": "Prova07.dc.html",
+      "file": "Native07.dc.html",
       "x": 1260,
       "y": 1620,
       "w": 1080,
       "h": 1350,
       "page": "peca-06"
+    },
+    {
+      "file": "Prova01.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
+    },
+    {
+      "file": "Prova02.dc.html",
+      "x": 1260,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
+    },
+    {
+      "file": "Prova03.dc.html",
+      "x": 2520,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
+    },
+    {
+      "file": "Prova04.dc.html",
+      "x": 3780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
+    },
+    {
+      "file": "Prova05.dc.html",
+      "x": 5040,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
+    },
+    {
+      "file": "Prova06.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
+    },
+    {
+      "file": "Prova07.dc.html",
+      "x": 1260,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-07"
     }
   ],
   "annotations": [

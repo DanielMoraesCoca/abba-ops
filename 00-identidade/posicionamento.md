@@ -12,6 +12,62 @@ A ABBA não entra na mesa como "mais uma consultoria de IA" — essa prateleira 
 
 **Onde a capacitação se encaixa (pergunta do sócio, respondida como doutrina):** a capacitação não é um acessório da prova — é **o que torna a prova durável**, e é ela mesma medida. Instalamos capacidade (sistemas + pessoas treinadas); a prova cobre as duas coisas: o número do processo E a fluência/durabilidade do time (baselines do portal). O conflito só existiria se fôssemos o certificador acreditado do nosso próprio treinamento — e nunca seremos: certificação é de terceiro; nós preparamos para ela, inclusive treinando. É o mesmo desenho de mercado da implantação ISO: quem implanta e treina não é quem certifica.
 
+## AI native: o que a expressão quer dizer (decisão do sócio, 2026-08-27 — V4d)
+
+A capa do enviável diz *"Tornamos a sua empresa AI native"* desde a
+[V3i](../05-interno/registro-de-decisoes.md), e até hoje **nenhum documento
+dizia o que isso significa**. Uma promessa sem definição é slogan, e slogan é a
+primeira coisa que o cético técnico desmonta. A definição, nas palavras do
+sócio:
+
+> *"Se você fosse criar uma empresa hoje, e já tivesse mapeado os seus fluxos e
+> os processos que deram certo, você criaria várias ferramentas de IA para essa
+> empresa nova. E o que a gente faz é basicamente isso: pega uma empresa já
+> estruturada e melhora os processos através da IA, melhora os gargalos, cria
+> soluções, aprimoramentos. Isso é tornar uma empresa AI native."*
+
+**A formulação canônica, derivada dela:**
+
+> **Uma empresa AI native é a que teria sido desenhada assim se fosse fundada
+> hoje. Nós levamos até lá uma empresa que já existe, sem refundar nada:
+> mapeando os fluxos que já dão certo e reconstruindo os processos com IA onde
+> ela faz diferença, gargalo por gargalo.**
+
+### A hierarquia que resolve o conflito
+
+O conflito registrado era real: o posicionamento mandava dizer *"instalação de
+capacidade"*, e a [V3q](../05-interno/registro-de-decisoes.md) tinha removido
+essa expressão do material de cliente, classificando-a como jargão. **As duas
+continuam verdadeiras; o que faltava era ordem entre elas.**
+
+| Camada | A expressão | O que ela é | Onde aparece |
+|---|---|---|---|
+| **Promessa** | **AI native** | O **estado final**: o que a empresa do cliente vira | Capa, primeira frase, headline, feed |
+| **Método** | **Instalar capacidade** | O **como se chega lá**: sistemas construídos e pessoas formadas para operá-los | Corpo do material, proposta, contrato, entrega |
+| **Prova** | **Provamos, de fora, o que mudou** | O que sustenta as duas: número combinado antes, medido depois | Sempre colada à promessa, nunca separada dela |
+
+**Consequência prática:** *"instalação de capacidade"* deixa de ser expressão
+banida e passa a ser **expressão subordinada**. Ela não abre material, não vai em
+capa e não vira headline; ela explica o método quando o leitor já entendeu a
+promessa. Na primeira frase, sempre AI native mais a prova.
+
+### Por que o anglicismo é legítimo aqui
+
+O [manifesto](manifesto.md) manda português brasileiro sempre, com uma exceção
+declarada: *"anglicismo só quando o termo não tem tradução consolidada no
+mercado."* **É exatamente o caso.** "AI native" nomeia uma categoria que o
+mercado brasileiro ainda não traduziu, e "nativa em IA" não circula. A exceção
+do manifesto cobre, então isto não é uma quebra de regra: é a regra sendo
+aplicada.
+
+### A trava
+
+**AI native nunca aparece sozinha.** Sempre com a prova colada, na mesma
+respiração: *"Tornamos a sua empresa AI native. E provamos, de fora, o que
+mudou."* Sozinha, a promessa é a mesma que qualquer fornecedor faz, e a
+[prateleira](#a-prateleira-decisão-dos-sócios-2026-08-03--v3c) é perdida na
+primeira frase.
+
 ## Headline (site, deck, tudo)
 
 **Instalamos capacidade de IA — e provamos, de fora, o que ela mudou.**
@@ -39,6 +95,7 @@ A ABBA não entra na mesa como "mais uma consultoria de IA" — essa prateleira 
 | ❌ Não dizer | ✅ Dizer |
 |---|---|
 | "curso de IA" / "treinamento de IA" (como produto) | "instalação de capacidade de IA" / "transformação" |
+| **"instalamos capacidade" como primeira frase ou capa** | **"Tornamos a sua empresa AI native. E provamos, de fora, o que mudou."** Instalar capacidade é o método, dito no corpo (V4d) |
 | "nossa plataforma ensina" | "nossa plataforma instala" / "nosso programa instala" |
 | "aprender a usar IA" | "construir capacidade organizacional de adotar IA" |
 | "alunos" | "participantes" / "campeões" / nomes de papel |
