@@ -86,17 +86,49 @@ próxima.
 **Cor:** navy `#1B2A4A` e dourado `#C2A35B` da
 [identidade visual](../00-identidade/identidade-visual.md), sem alteração.
 
-> **Duas cores novas, pendentes de registro pelos sócios.** A identidade proíbe
-> introduzir cor sem registrar, então ficam aqui declaradas em vez de entrarem
-> caladas:
->
-> | Cor | Hex | Por que é necessária |
-> |---|---|---|
-> | **Papel** | `#F2F4F7` | Fundo claro das telas alternadas. Branco puro em sequência de 7 cards cansa e some na grade; este é um branco-azulado tirado do próprio navy — **não** um creme, que é o clichê visual do momento |
-> | **Ardósia clara** | `#C3CAD8` | Corpo de texto sobre navy. O ardósia `#5A6472` da identidade é para texto sobre branco e não tem contraste suficiente em fundo escuro |
->
-> Ambas são derivadas do navy, não cores novas de fato. Aprovar ou substituir na
-> reunião de sócios; até lá, as peças estão prontas mas não publicadas.
+> **As duas cores derivadas foram registradas** na
+> [identidade visual](../00-identidade/identidade-visual.md) em 2026-08-27
+> (decisão V4b), com uso **restrito ao social**: papel `#F2F4F7` (fundo claro
+> alternado) e ardósia clara `#C3CAD8` (corpo sobre navy). Ambas são tiradas do
+> próprio navy, não são cores novas de fato. O papel é azulado de propósito: o
+> creme quente é o clichê visual do momento e denuncia peça gerada.
+
+## 4b. Transição: as três técnicas
+
+O que separa um carrossel montado de um carrossel **editado** é o que acontece
+entre as telas. Um leitor arrasta o dedo e o material tem que responder ao gesto.
+
+| # | Técnica | Como funciona | O que ela resolve |
+|---|---|---|---|
+| **1** | **Barra de progresso** | A fiada do topo carrega um segmento dourado que avança proporcionalmente a cada tela: 1/7, 2/7, 3/7 | O leitor sabe onde está e quanto falta. Carrossel sem isso é abandonado no meio |
+| **2** | **Marca de continuidade** | Um traço dourado de 56px sai pela **borda direita** de uma tela e reaparece na **mesma altura** na borda esquerda da tela seguinte, descendo a cada passo | No arraste, o traço parece atravessar entre as telas. É o truque clássico de continuidade entre painéis, e é o que faz a peça parecer desenhada como conjunto |
+| **3** | **Ritmo de fundo** | Navy e papel alternam num compasso **escolhido**, não aleatório. O papel marca sempre a tela de pausa, de ressalva ou de limite declarado | Sete telas do mesmo fundo cansam. E a alternância passa a significar alguma coisa em vez de decorar |
+
+A técnica 2 é a que mais muda a percepção e é invisível quando bem-feita: ninguém
+comenta, mas a peça deixa de parecer um monte de cards soltos.
+
+**Regra:** a barra e a marca são desenhadas pela função `page(i, n, ...)` do
+gerador, a partir da posição da tela. Nunca posicionar à mão, porque uma tela
+fora de compasso quebra as três técnicas de uma vez.
+
+## 4c. O texto: sem travessão
+
+Nenhuma peça usa travessão (`—` ou `–`). Vírgula, dois-pontos ou ponto; em lista,
+ponto médio `·`. É decisão do sócio (V3v, reafirmada e estendida a todo material
+externo em V4a-b), e a régua
+[v1.5.0](../06-ferramentas/regua-do-revisor.md) bloqueia. Motivo: lê como texto
+gerado por máquina.
+
+O gerador tem uma trava no fim que falha se sobrar travessão em qualquer tela.
+
+## 4d. A marca
+
+O logo real entra na **última tela de toda peça**, a 190px. O arquivo
+[`abba-logo.png`](../08-materiais/marca/abba-logo.png) tem 614×674, o que o
+mantém nítido até cerca de 300px numa tela de 1080. **Acima disso ele fica
+macio**, então o sistema foi desenhado para caber no que o ativo aguenta em vez
+de pedir um ativo novo. Se um dia existir a marca em vetor, a mesma tela aceita
+sem mudança.
 
 ## 5. Margem de segurança (a regra que o feed antigo quebrava)
 

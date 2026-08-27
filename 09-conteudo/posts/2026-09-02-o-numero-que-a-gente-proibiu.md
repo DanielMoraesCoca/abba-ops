@@ -26,12 +26,12 @@ A gente proibiu, por escrito, o número sobre IA mais compartilhado do LinkedIn 
 
 O motivo não é que o número seja alto demais. É que ele não aguenta ser conferido:
 
-— não passou por revisão por pares
-— o critério do que conta como sucesso é estreitíssimo
-— boa parte da medição é percepção autorrelatada, não resultado apurado
-— e os autores do relatório vendem o método que o próprio relatório recomenda
+· não passou por revisão por pares
+· o critério do que conta como sucesso é estreitíssimo
+· boa parte da medição é percepção autorrelatada, não resultado apurado
+· e os autores do relatório vendem o método que o próprio relatório recomenda
 
-Um número assim é confortável de citar porque assusta na medida certa. É exatamente por isso que ele é caro: o primeiro cético técnico que abrir a fonte durante a sua apresentação desmonta o slide — e junto com ele tudo o que você disse antes.
+Um número assim é confortável de citar porque assusta na medida certa. É exatamente por isso que ele é caro: o primeiro cético técnico que abrir a fonte durante a sua apresentação desmonta o slide, e junto com ele tudo o que você disse antes.
 
 O que a gente usa no lugar, com fonte que aguenta a conferência:
 
@@ -39,7 +39,7 @@ A RAND entrevistou 65 engenheiros de machine learning sêniores e mediu que mais
 
 Oitenta assusta menos que noventa e cinco. Mas oitenta é verificável.
 
-A gente mantém uma lista dessas — cada número banido, o motivo do banimento e o substituto sólido. Ela existe porque vendemos prova, e uma empresa que vende prova citando estatística de folclore morre na primeira reunião com alguém competente.
+A gente mantém uma lista dessas: cada número banido, o motivo do banimento e o substituto sólido. Ela existe porque vendemos prova, e uma empresa que vende prova citando estatística de folclore morre na primeira reunião com alguém competente.
 
 Se você cita número sobre IA em apresentação, vale montar a sua lista. Comece pelo número que você mais gosta de usar: quem mediu, com quantos, e quem pagou pela medição.
 
@@ -55,7 +55,7 @@ número banido, com motivo e substituto. Fundo navy, número em dourado, tarja d
 
 ## Primeiro comentário
 
-> Para quem for conferir: a pesquisa da RAND se chama "The Root Causes of Failure for AI Projects" (2024). A nossa regra interna é que todo número que sai em material nosso tem que ter fonte primária conferível — e a fonte vai dita na frase, não em rodapé.
+> Para quem for conferir: a pesquisa da RAND se chama "The Root Causes of Failure for AI Projects" (2024). A nossa regra interna é que todo número que sai em material nosso tem que ter fonte primária conferível, e a fonte vai dita na frase, não em rodapé.
 
 ## Notas de operação
 

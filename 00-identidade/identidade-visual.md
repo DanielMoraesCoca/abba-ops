@@ -12,8 +12,14 @@
 | **Neutro claro** | Cinza-gelo | `#E8E8E8` | Fundos de tabela, divisores |
 | **Apoio** | Azul-petróleo | `#2E8B9A` | Links, elementos interativos (raro em impresso) |
 | Base | Branco | `#FFFFFF` | Fundo padrão |
+| **Papel** | Branco-azulado | `#F2F4F7` | **Só em peça de social** (fundo claro alternado nos carrosséis). Derivado do navy; branco puro em sequência de 7 cards some na grade. Registrado em 2026-08-27 |
+| **Ardósia clara** | Cinza-azulado claro | `#C3CAD8` | **Só em peça de social** (corpo de texto sobre navy). O ardósia `#5A6472` é para texto sobre branco e não tem contraste em fundo escuro. Registrado em 2026-08-27 |
 
 Regra: navy + dourado sobre branco = a cara da ABBA (sóbrio, premium, confiável). Nunca introduzir cor nova sem registrar aqui.
+
+**As duas últimas são de uso restrito ao social** e não entram em documento de
+Office nem em PDF de cliente. O sistema completo do formato quadrado/vertical
+vive em [`09-conteudo/sistema-visual-social.md`](../09-conteudo/sistema-visual-social.md).
 
 ## Tipografia
 

@@ -23,7 +23,7 @@ O estudo é da METR, de julho de 2025. Experimento controlado: 16 desenvolvedore
 
 A distância entre o que aconteceu e o que eles sentiram foi de quase 40 pontos.
 
-Antes que alguém use isso como argumento contra IA: não é. A amostra é pequena e o cenário é específico — gente sênior, mexendo no que conhece de cor. Em outro contexto a medição dá o oposto. O maior experimento já publicado sobre o tema, na Management Science, com 4.867 desenvolvedores em três empresas grandes, encontrou 26% mais tarefas concluídas — e os menos experientes foram os que mais ganharam.
+Antes que alguém use isso como argumento contra IA: não é. A amostra é pequena e o cenário é específico: gente sênior, mexendo no que conhece de cor. Em outro contexto a medição dá o oposto. O maior experimento já publicado sobre o tema, na Management Science, com 4.867 desenvolvedores em três empresas grandes, encontrou 26% mais tarefas concluídas, e os menos experientes foram os que mais ganharam.
 
 Os dois resultados juntos dizem a mesma coisa, e ela não é sobre IA:
 
@@ -43,7 +43,7 @@ e a Semana 1 precisa de alcance, não de estética.
 
 ## Primeiro comentário (postar em seguida, pelo próprio autor)
 
-> As duas fontes, para quem quiser conferir: o experimento da METR (jul/2025) e o estudo de Cui et al. publicado na Management Science. A gente mantém uma base interna com todo número que pode sair em material nosso — e o que não está lá, não sai.
+> As duas fontes, para quem quiser conferir: o experimento da METR (jul/2025) e o estudo de Cui et al. publicado na Management Science. A gente mantém uma base interna com todo número que pode sair em material nosso. O que não está lá, não sai.
 
 ## Notas de operação
 

@@ -36,6 +36,7 @@ abba report <eng> --revise                     # o relatório só grava se passa
 | **"95% dos pilotos/projetos falham" · "GenAI Divide" · "MIT NANDA"** (substituto: RAND >80%) | block | V4a — [base de evidências](../00-identidade/base-de-evidencias.md), índice proibido |
 | **"parceiro externo dobra o acerto" · "67% vs 33%"** (substituto: RAND+METR+DORA) | block | V4a — mesmo relatório MIT aposentado |
 | **"ROI de 3x a 8x" · "payback 5,1 meses" · "73% preferem" · "90% falham em treinamento"** (substituto: payback com número DO cliente) | block | V4a — folclore de vendor sem fonte primária |
+| **travessão** (— ou –) em qualquer material que sai | block | v1.5.0 — V3v + V4a-b; vírgula, dois-pontos ou ponto |
 | **proporção por extenso** ("nove de cada dez", "um em cada cinco") | warn | v1.4.0 — proporção é estatística; confira cânone + fonte na frase |
 | **porcentagem banida por extenso** ("noventa e cinco por cento dos pilotos falham") | block | v1.4.0 — índice proibido, agora também em letra |
 | "benchmark" (conferir tempo verbal) · "acurácia" (fora da recusa) | warn | ecossistema §3 · manifesto |
@@ -49,6 +50,12 @@ abba report <eng> --revise                     # o relatório só grava se passa
 1. Doutrina nova (decisão V-registrada) que proíba ou trave algo → regra nova no JSON, com `reason` e `doc` apontando o documento.
 2. Falso positivo em material que sai → ajustar `unless`/exceção **no mesmo commit** que o registra.
 3. A versão (`version`) sobe a cada mudança; o episódio `revisor.reviewed` grava com qual versão o material foi conferido.
+
+**v1.5.0 (2026-08-27)** — regra `travessao` (block). O sócio já tinha mandado
+tirar os travessões dos enviáveis em 11/08 (V3v), mas **aquela decisão nunca foi
+registrada**, então não valia para material novo e o social nasceu cheio deles.
+Registrada retroativamente como V3v e estendida a todo material externo como
+V4a-b. Substituto: vírgula, dois-pontos ou ponto; em lista, ponto médio.
 
 **v1.4.0 (2026-08-27)** — duas regras novas contra número **por extenso**, que
 burlava todos os padrões numéricos existentes: `proporcao-por-extenso` (warn —

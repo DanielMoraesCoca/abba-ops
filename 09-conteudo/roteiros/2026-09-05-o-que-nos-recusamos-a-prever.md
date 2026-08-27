@@ -75,15 +75,15 @@ que o [motor](../motor-de-conteudo.md) exige.
 
 Tem uma lista de coisas que a gente se recusa a prever para cliente.
 
-Ela está escrita, e vai para a mesa na primeira reunião — antes de qualquer proposta.
+Ela está escrita, e vai para a mesa na primeira reunião, antes de qualquer proposta.
 
 Mudança de regime, evento de cauda e pergunta contrafactual ("o que acontece se a gente fizer X"). Nessas três, a evidência é dura: modelo mais capaz não resolve, e em alguns casos piora.
 
 O que a gente entrega no lugar de oráculo:
 
-— probabilidade declarada com nome, antes da decisão
-— gatilho que acorda a decisão quando o indicador cruza o limiar
-— placar do próprio acerto, que aparece como indisponível enquanto não houver decisões medidas suficientes para ele ser estável
+· probabilidade declarada com nome, antes da decisão
+· gatilho que acorda a decisão quando o indicador cruza o limiar
+· placar do próprio acerto, que aparece como indisponível enquanto não houver decisões medidas suficientes para ele ser estável
 
 Publicar o limite é caro. É também a única coisa que faz o resto ser acreditável.
 

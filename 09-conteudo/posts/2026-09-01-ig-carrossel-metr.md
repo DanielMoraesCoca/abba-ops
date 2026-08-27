@@ -31,7 +31,7 @@ Com IA, levaram 19% mais tempo.
 
 E, ao fim, cada um relatou ter ficado cerca de 20% mais rápido. A distância entre o que aconteceu e o que eles sentiram passou de 40 pontos.
 
-Isso não é um argumento contra IA — e a gente faz questão de dizer. O maior experimento já publicado sobre o mesmo tema, com 4.867 desenvolvedores em três empresas grandes, encontrou 26% mais tarefas concluídas, com os menos experientes ganhando mais.
+Isso não é um argumento contra IA, e a gente faz questão de dizer. O maior experimento já publicado sobre o mesmo tema, com 4.867 desenvolvedores em três empresas grandes, encontrou 26% mais tarefas concluídas, com os menos experientes ganhando mais.
 
 Os dois resultados juntos dizem uma coisa só, e ela não é sobre IA:
 
@@ -39,11 +39,11 @@ Ninguém sabe se a ferramenta ajudou sem medir de fora.
 
 Se a sua empresa avalia o retorno de IA perguntando às pessoas se elas se sentem mais produtivas, você não tem um número. Tem uma pesquisa de satisfação.
 
-Métrica combinada antes, apurada depois do mesmo jeito, assinada por alguém que responde por ela. É só isso — e quase ninguém faz.
+Métrica combinada antes, apurada depois do mesmo jeito, assinada por alguém que responde por ela. É só isso, e quase ninguém faz.
 
 Qual métrica a sua empresa teria que medir hoje, antes de começar, para saber daqui a seis meses se valeu?
 
-—
+·
 Fontes: METR (jul/2025) · Cui et al., Management Science.
 
 ## Regras de publicação

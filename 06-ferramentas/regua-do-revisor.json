@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
     {
@@ -465,6 +465,23 @@
       "allowQuotedInTables": true,
       "reason": "Os números do índice proibido escritos por extenso burlavam as regras mit-95 e roi-magico, que só olhavam dígitos. Mesma doutrina V4a, mesma exceção de contexto de banimento.",
       "doc": "00-identidade/base-de-evidencias.md (índice proibido)"
+    },
+    {
+      "id": "travessao",
+      "kind": "regex",
+      "pattern": "[\\u2014\\u2013]",
+      "flags": "g",
+      "severity": "block",
+      "unless": [
+        "banid",
+        "proibid",
+        "substitu",
+        "travess",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "V4a-b (2026-08-27): travessão banido de todo material externo, estendendo a V3v (2026-08-11), que tinha tirado os travessões dos enviáveis mas nunca foi registrada e por isso não se propagou. Substituto: vírgula, dois-pontos ou ponto; em lista, ponto médio. Motivo do sócio: lê como texto gerado por máquina. Escopo é material que SAI; doc interno de processo dispara bloqueio esperado e não é o alvo.",
+      "doc": "05-interno/registro-de-decisoes.md (V3v, V4a-b) · 09-conteudo/formatos.md"
     }
   ]
 }

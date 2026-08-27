@@ -30,17 +30,17 @@ E em setembro vence o prazo de decisão de regime tributário.
 
 O que quase ninguém tratou como tal: isso não é, antes de tudo, um evento fiscal. É um evento de dado.
 
-Os campos novos não são preenchidos por uma pessoa lendo um manual. São preenchidos pelo que já está cadastrado — produto, operação, cliente, natureza. Se o cadastro está inconsistente, e no médio porte brasileiro ele quase sempre está, o erro não aparece numa reunião de fechamento. Aparece na hora em que a nota trava, com o caminhão carregado.
+Os campos novos não são preenchidos por uma pessoa lendo um manual. São preenchidos pelo que já está cadastrado: produto, operação, cliente, natureza. Se o cadastro está inconsistente, e no médio porte brasileiro ele quase sempre está, o erro não aparece numa reunião de fechamento. Aparece na hora em que a nota trava, com o caminhão carregado.
 
 Duas coisas que estou vendo e que valem mais que qualquer projeção:
 
-A primeira é que as empresas grandes chegaram preparadas. Elas têm time de tributos, consultoria contratada e ERP atualizado há um ano. Quem está exposto é exatamente a faixa do meio — grande o bastante para ter complexidade fiscal, pequena o bastante para não ter um time dedicado a ela.
+A primeira é que as empresas grandes chegaram preparadas. Elas têm time de tributos, consultoria contratada e ERP atualizado há um ano. Quem está exposto é exatamente a faixa do meio: grande o bastante para ter complexidade fiscal, pequena o bastante para não ter um time dedicado a ela.
 
-A segunda é que as estimativas públicas de preparo dessa faixa não batem entre si — e a divergência entre as fontes é, ela própria, o dado. Quando ninguém sabe medir o preparo de um segmento, é porque ninguém está olhando para ele.
+A segunda é que as estimativas públicas de preparo dessa faixa não batem entre si, e a divergência entre as fontes é, ela própria, o dado. Quando ninguém sabe medir o preparo de um segmento, é porque ninguém está olhando para ele.
 
 O que dá para fazer em setembro, sem projeto e sem orçamento novo:
 
-1. Rodar um lote de notas de teste com os campos novos, no ambiente de homologação. Não perguntar ao ERP se está pronto — mandar nota e ver o que volta. Dono: fiscal.
+1. Rodar um lote de notas de teste com os campos novos, no ambiente de homologação. Não perguntar ao ERP se está pronto. Mandar nota e ver o que volta. Dono: fiscal.
 2. Listar quantos produtos têm classificação divergente entre os sistemas. Dono: fiscal e TI juntos, porque separados cada um acha que é do outro.
 3. Definir quem responde no dia em que a nota travar, com nome, e não com área. Dono: diretoria.
 

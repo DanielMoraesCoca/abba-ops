@@ -19,22 +19,22 @@ Antes de qualquer material nosso sair, ele passa por uma ferramenta cujo trabalh
 
 No vídeo, um comando de terminal rodando contra um documento real.
 
-Ela se chama régua do revisor. É um conjunto de regras que roda contra tudo que vai para fora — proposta, relatório, apresentação, e-mail, post. Inclusive este.
+Ela se chama régua do revisor. É um conjunto de regras que roda contra tudo que vai para fora: proposta, relatório, apresentação, e-mail, post. Inclusive este.
 
 Ela não é inteligente, e isso é de propósito. É determinística: mesma entrada, mesma saída, custo zero por execução. Não é um modelo opinando sobre o texto; é uma trava conferindo fatos.
 
 O que ela bloqueia:
 
-— número que não está na nossa base de evidências
-— preço diferente da tabela vigente
-— promessa que a nossa infraestrutura ainda não sustenta
-— qualquer frase que sugira que a IA decide alguma coisa sozinha
+· número que não está na nossa base de evidências
+· preço diferente da tabela vigente
+· promessa que a nossa infraestrutura ainda não sustenta
+· qualquer frase que sugira que a IA decide alguma coisa sozinha
 
 Achado de bloqueio significa que o material não sai. Existe uma opção de forçar. Usá-la é uma decisão com nome, e o nome vai para o registro.
 
 O que ela não faz: dizer se o texto é bom. Isso continua sendo trabalho de gente, e vai continuar sendo.
 
-Construímos isso porque a coisa mais cara de perder num negócio de consultoria não é um contrato — é a credibilidade técnica, que não se recompra. E credibilidade não sobrevive a "a gente confere na hora de mandar".
+Construímos isso porque a coisa mais cara de perder num negócio de consultoria não é um contrato: é a credibilidade técnica, que não se recompra. E credibilidade não sobrevive a "a gente confere na hora de mandar".
 
 A pergunta honesta: o que impede, hoje, um número inventado de sair da sua empresa dentro de uma proposta assinada?
 
@@ -66,7 +66,7 @@ terminal que não aconteceu.**
 
 ## Primeiro comentário
 
-> A régua é um arquivo de regras versionado junto com a doutrina que ela protege — regra nova só entra com o motivo e o link do documento que a origina. É a mesma ideia de um teste automatizado, aplicada a material comercial em vez de código.
+> A régua é um arquivo de regras versionado junto com a doutrina que ela protege. Regra nova só entra com o motivo e o link do documento que a origina. É a mesma ideia de um teste automatizado, aplicada a material comercial em vez de código.
 
 ## Notas de operação
 
