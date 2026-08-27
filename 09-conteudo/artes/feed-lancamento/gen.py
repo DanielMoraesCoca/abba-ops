@@ -452,7 +452,7 @@ peca("peca-06", "06 · O que é AI native", "Native", 6, [
 <img class="mark" src="abba-logo.png" alt="ABBA">
 <p class="label" style="margin-top:34px">Fica a pergunta</p>
 <h1 class="sm">Reconstruir processo é fácil de afirmar. <i>Como você saberia que melhorou?</i></h1>
-''' + note("·", "É a próxima conversa."), False),
+''' + note("→", "É a próxima conversa. contato@abbaservices.com.br"), False),
 ])
 
 # ═══════════ PEÇA 07 · O NÚMERO DESCONFORTÁVEL (abre o Ato II) ═══════════
@@ -498,7 +498,7 @@ peca("peca-07", "07 · O número desconfortável", "Prova", 7, [
 <img class="mark" src="abba-logo.png" alt="ABBA">
 <p class="label" style="margin-top:34px">Fica a pergunta</p>
 <h1 class="sm">Se nem quem está usando sabe, <i>como a diretoria saberia?</i></h1>
-''' + note("·", "Fontes: METR (jul/2025) · Cui et al., Management Science."), False),
+''' + note("→", "Fontes: METR (jul/2025) · Cui et al., Management Science.<br>contato@abbaservices.com.br"), False),
 ])
 
 # ═══════════ escrita ═══════════
