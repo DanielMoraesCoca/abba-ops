@@ -43,7 +43,7 @@ história inteira. A ordem é a da conversa de venda, que já está provada no
 | 01 | A tese | 7 | Quem é a ABBA e como ela trabalha | O patrocinador |
 | 02 | A jornada em sete passos | 9 | O que exatamente se compra, e em que ordem | O campeão |
 | 03 | Prometemos × Recusamos | 6 | Por que confiar. A peça que ninguém copia | O guardião e o cético |
-| 04 | A análise gratuita | 7 | O primeiro passo, sem custo | O patrocinador e o CFO |
+| 04 | O assessment gratuito | 8 | O primeiro passo, sem custo | O patrocinador e o CFO |
 | 05 | Parceiros oficiais | 5 | Em que tecnologia isso roda | O cético técnico |
 
 **Cadência:** uma peça a cada três dias, nesta ordem. As cinco no ar em quinze
@@ -67,7 +67,7 @@ As duas juntas, porque de nada adiantam sistemas novos com a empresa pensando do
 
 E, no fim de cada ciclo, a diretoria recebe o registro inteiro: métrica combinada antes, resultado medido depois, assinado por gente. Inclusive o que não funcionou.
 
-A conversa começa com 45 minutos e uma análise gratuita da sua empresa, feita na hora.
+A conversa começa com 45 minutos e um assessment gratuito da sua empresa.
 
 ## Peça 02 · A jornada em sete passos
 
@@ -75,8 +75,8 @@ Sete passos, da primeira conversa até a cadeira de estrategista na sua diretori
 
 A regra que organiza todos eles: cada etapa entrega algo inteiro sozinha e produz o insumo da próxima. Você pode parar em qualquer uma e ainda ter valor na mão.
 
-1 · A primeira conversa. 45 minutos e uma análise gratuita da sua empresa, feita na hora com informação pública, com uma estimativa em reais do que pode estar vazando.
-2 · Assessment. O mergulho profundo, do conselho à linha de frente. Sai um portfólio ranqueado e quantificado, não uma lista de ideias.
+1 · A primeira conversa. 45 minutos e um assessment gratuito da sua empresa, feita na hora com informação pública, com uma estimativa em reais do que pode estar vazando.
+2 · Avaliação de Prontidão. O mergulho profundo, do conselho à linha de frente. Sai um portfólio ranqueado e quantificado, não uma lista de ideias.
 3 · Protótipo. O caso mais promissor construído com os seus dados reais, e a diretoria decide GO ou NO-GO com números na mesa.
 4 · Construção e implantação. Engenharia sob medida, em produção, com aprovação humana em tudo que é crítico.
 5 · Treinamento e ABBA Portal. Todos os níveis. Campeões internos carregam a transformação depois que saímos da sala.
@@ -97,25 +97,26 @@ Recusamos prometer acurácia que não medimos. Recusamos prever o imprevisível.
 
 Todo mundo consegue prometer. Publicar o que você se recusa a vender é outra coisa, porque copiar esta lista exigiria parar de vender o que se vende hoje.
 
-## Peça 04 · A análise gratuita
+## Peça 04 · O assessment gratuito
 
-O primeiro passo com a gente não custa nada, e ele fica pronto em menos de cinco minutos.
+O primeiro passo com a gente não custa nada, e você não precisa abrir um dado sequer.
 
-É uma análise da sua empresa feita com informação pública, e a primeira página traz uma estimativa em reais do que pode estar saindo da operação sem precisar sair.
+É um assessment de IA da sua empresa, montado só com informação pública e gerado em minutos. Dezenas de páginas. O que vem dentro:
 
-Por que um número e não três hipóteses: três hipóteses fazem o leitor pensar. Um número faz o leitor reagir, concordando, discordando ou corrigindo. Qualquer uma das três é uma conversa. A ausência de reação é um PDF arquivado.
+Uma nota de maturidade em IA, de 0 a 5, em seis dimensões: estratégia, processos, dados, tecnologia, pessoas e governança.
+As oportunidades priorizadas numa matriz de impacto contra esforço, cada uma com score e horizonte, e uma delas marcada como piloto-farol, que é por onde recomendamos começar.
+Um roadmap em três horizontes, do que dá ganho em seis meses ao que muda o modelo de negócio.
+E o ledger de todas as fontes que usamos.
 
-Três regras que a gente não quebra na hora de montar:
+Duas coisas nesse documento são incomuns e são de propósito.
 
-Faixa, nunca número exato. Um valor exato calculado de fora é uma mentira com aparência de precisão, e o primeiro CFO competente desmonta.
-Premissa sem fonte não entra.
-E a faixa pode ser pequena: se a estimativa honesta for baixa, ela vai baixa.
+A primeira: cada achado se declara. Diz se é fato apurado ou hipótese nossa, se veio da sua empresa ou do seu setor, e com que confiança, alta, média ou baixa. O que não descobrimos fica escrito como desconhecido, nunca preenchido por dedução.
 
-O documento inteiro tem entre 32 e 60 páginas, conforme o modelo de profundidade. E aqui vai a ressalva que a gente faz questão de dar: sessenta páginas não são o argumento. A primeira é. A análise é longa porque cada premissa vem com a fonte e você precisa poder conferir de onde saiu o número. Se a primeira página não trouxer uma faixa que faça você reagir, o resto não salva.
+A segunda: toda fonte vai no fim, com a citação literal, o nível de confiança e o endereço. Se você discordar de uma conclusão, dá para ir na fonte dela em dez segundos.
 
-O que ela não faz: provar a causa. Foi calculada de fora, e a gente diz isso na primeira linha.
+A última seção lista o que a informação pública não alcançou. Porque o que ainda não sabemos não é falha: é a agenda da conversa.
 
-Tem algum número em reais aí dentro que dói hoje, e que vocês já medem?
+Quer ver o que a informação pública já diz sobre a sua empresa?
 
 ## Peça 05 · Parceiros oficiais
 

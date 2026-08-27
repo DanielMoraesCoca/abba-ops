@@ -109,7 +109,7 @@ Regras: toda decisão sai com registro no [log](registro-de-decisoes.md) na hora
 ## 6. A rua — só depois do 5
 
 1. **Lista de 20 alvos nomeados** no [pipeline](../03-comercial/pipeline-modelo.md), da rede real de vocês. Para cada um: o placar 0–6 do [teste do alvo](../00-identidade/alvo.md) (as 3 primeiras perguntas dá para estimar antes mesmo da conversa) e a **obrigação com data** dele (pergunta 6) — quem tem prazo compra primeiro, e a validação IBS/CBS está em produção AGORA.
-2. **Cadência:** 10 contatos novos/semana · degustação aceita = Mapa de Vazamento entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo · retrospectiva de 10 min após cada conversa real.
+2. **Cadência:** 10 contatos novos/semana · degustação aceita = Assessment gratuito entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo · retrospectiva de 10 min após cada conversa real.
 3. **O material da mesa:** [kit de presença](../03-comercial/kit-de-presenca.md) (30s/3min/1página, com as 3 objeções respondidas — inclusive "quantas empresas vocês já atenderam?") · [escada](../03-comercial/escada-abba.md) · [protocolo de prova](../04-entrega/protocolo-de-prova.md).
 4. **Meta do trimestre: 1 cliente charter.** Ele resolve de uma vez: R1 (validação real), cofre vazio, primeiro caso publicável, primeiro ponto da curva de tenure.
 

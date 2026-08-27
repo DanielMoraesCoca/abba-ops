@@ -12,7 +12,7 @@
 >
 > Os dados de mercado dizem que não: 70–80% dos projetos de IA corporativa falham na adoção, não na tecnologia. É exatamente isso que a ABBA resolve — avaliamos a empresa a fundo, construímos as soluções certas e treinamos todos os níveis da equipe para trabalhar com elas, sempre alinhados com os objetivos da diretoria.
 >
-> Já preparamos uma análise gratuita da [Empresa], feita com informação pública — a primeira página traz uma estimativa em reais do que pode estar vazando. 15 minutos na próxima semana para eu apresentar? (Nunca "oferecer": a análise chega FEITA — decisão 2026-07-27.)
+> Já preparamos um assessment gratuito da [Empresa], feito só com informação pública: nota de maturidade em IA, oportunidades priorizadas e o ledger das fontes. 15 minutos na próxima semana para eu apresentar? (Nunca "oferecer": a análise chega FEITA — decisão 2026-07-27.)
 >
 > [Assinatura]
 

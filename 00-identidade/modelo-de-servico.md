@@ -26,7 +26,7 @@ A ABBA é uma **consultoria de transformação em IA para empresas brasileiras**
 ```
 
 ### 1. Degustação (gratuita)
-A pessoa acessa o site e recebe uma amostra real do nosso método: uma análise da empresa dela feita **apenas com informação pública** (o **assessment web já está no ar** — `assessment.abbaservices.com.br`, aposta 2 ✅ —, com curadoria dos sócios; a primeira página é o [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md), uma faixa em R$). O gancho honesto: *"isto foi feito de fora — imagine com os dados de dentro."*
+A pessoa acessa o site e recebe uma amostra real do nosso método: uma análise da empresa dela feita **apenas com informação pública** (o **assessment web já está no ar** — `assessment.abbaservices.com.br`, aposta 2 ✅ —, com curadoria dos sócios; a primeira página é o [Assessment gratuito](../03-comercial/assessment-gratuito.md), uma faixa em R$). O gancho honesto: *"isto foi feito de fora — imagine com os dados de dentro."*
 
 ### 2. Avaliação profunda (o produto-porta)
 Análise da empresa em **25 dimensões proprietárias**: entrevistas em todos os níveis (conselho → C-level → gestores → linha de frente), revisão documental, quantificação financeira. Sai um portfólio ranqueado de oportunidades de IA e um caminho recomendado — defensável, com dado por trás de cada afirmação.

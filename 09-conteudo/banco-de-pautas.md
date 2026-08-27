@@ -64,9 +64,9 @@
 
 | # | Pauta | Molde | Fonte | Pri | Publicado |
 |---|---|---|---|---|---|
-| 29 | O Mapa de Vazamento: como estimar o dinheiro que some, de fora, sem acesso a nada | F3 | [mapa](../03-comercial/mapa-de-vazamento.md) | **A** | |
-| 30 | As 5 perguntas de 45 minutos que valem mais que um diagnóstico de 3 semanas | F3 | [mapa](../03-comercial/mapa-de-vazamento.md) | **A** | |
-| 31 | Faixa, nunca número exato: a regra que faz o CFO confiar no que a gente entrega | F7 | [mapa](../03-comercial/mapa-de-vazamento.md) | **A** | |
+| 29 | O Assessment gratuito: como estimar o dinheiro que some, de fora, sem acesso a nada | F3 | [mapa](../03-comercial/assessment-gratuito.md) | **A** | |
+| 30 | As 5 perguntas de 45 minutos que valem mais que um diagnóstico de 3 semanas | F3 | [mapa](../03-comercial/assessment-gratuito.md) | **A** | |
+| 31 | Faixa, nunca número exato: a regra que faz o CFO confiar no que a gente entrega | F7 | [mapa](../03-comercial/assessment-gratuito.md) | **A** | |
 | 32 | A escada: o que exatamente se compra, degrau a degrau, e o que se perde ao parar em cada um | F3 | [escada](../03-comercial/escada-abba.md) | **A** | |
 | 33 | O teste de 6 perguntas para saber se uma empresa está pronta para IA | F3 | [alvo](../00-identidade/alvo.md) | **A** | |
 | 34 | Toda proposta nossa tem uma seção do que a gente **não** vai fazer | F7 | [manifesto](../00-identidade/manifesto.md) | **A** | |
@@ -88,7 +88,7 @@
 | 45 | IA-sombra: seus funcionários já usam, e o jurídico não sabe quais | F6 | [workshop](../03-comercial/proposta-workshop-shadow-ai.md) | **A** | |
 | 46 | LGPD e IA: as três perguntas que o DPO vai fazer e que ninguém prepara | F6 | [sprint LGPD](../03-comercial/proposta-sprint-lgpd.md) | **A** | |
 | 47 | Reforma tributária: por que ela é um evento de dado antes de ser um evento fiscal | F6 | [antecipação](../05-interno/estudo-antecipacao.md) | **A** | |
-| 48 | NF-e, SPED, EFD: a lei brasileira padronizou o dado, e quase ninguém usa isso a favor | F1 | [mapa](../03-comercial/mapa-de-vazamento.md) | B | |
+| 48 | NF-e, SPED, EFD: a lei brasileira padronizou o dado, e quase ninguém usa isso a favor | F1 | [mapa](../03-comercial/assessment-gratuito.md) | B | |
 | 49 | As pesquisas apontam que 98% das empresas brasileiras não acham profissional de IA qualificado | F1 | [base](../00-identidade/base-de-evidencias.md) | **A** | |
 | 50 | A cadeira de IA virou padrão — e no médio porte ela nasce fracionária | F1 | Gartner + [conselheiro](../03-comercial/conselheiro-de-ia.md) | B | |
 | 51 | Residência de dado no Brasil: a pergunta de compras que derruba fornecedor | F6 | CrewAI/LGPD | B | |

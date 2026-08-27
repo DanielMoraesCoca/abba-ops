@@ -1,6 +1,6 @@
 # Ferramenta: Avaliação — ficha de negócio
 
-> **Nome externo:** "Análise ABBA" (degustação) e "Avaliação em 25 dimensões" · **interno:** assessment-brain. Serve os estágios [02](../02-jornada-do-cliente/02-diagnostico-gratuito.md) e [06](../02-jornada-do-cliente/06-avaliacao-profunda.md). Engenharia vive no repo da ferramenta — aqui é só o negócio. Linhas `{{CONFIRMAR}}` precisam de validação dos sócios.
+> **Nome externo:** "Assessment gratuito" (degustação) e "Avaliação em 25 dimensões" · **interno:** assessment-brain. Serve os estágios [02](../02-jornada-do-cliente/02-diagnostico-gratuito.md) e [06](../02-jornada-do-cliente/06-avaliacao-profunda.md). Engenharia vive no repo da ferramenta — aqui é só o negócio. Linhas `{{CONFIRMAR}}` precisam de validação dos sócios.
 
 ## O que podemos prometer hoje
 

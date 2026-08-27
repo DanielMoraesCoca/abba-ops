@@ -52,7 +52,7 @@ Com essas três regras, vamos.
 - **Stack de agentes** (CrewAI): dois protótipos construídos. Um
   deployado e Online. 36 testes verdes no segundo.
 - **Doutrina comercial completa**: escada de 7 serviços, tabela de preços
-  com racional de engenharia, mapa de vazamento, protocolo de prova,
+  com racional de engenharia, assessment gratuito, protocolo de prova,
   coreografia da conversão, régua do que nunca dizer.
 - **Rede**: Pedro dentro da CrewAI, parceria com Microsoft e CrewAI,
   acesso a conversas que ninguém de fora consegue.
@@ -386,7 +386,7 @@ Onde o nosso delta é menor: empresa com bom time interno, problema
 pequeno e técnico, cliente que só quer uma ferramenta.
 
 **(b) Vender diagnóstico e prova, não capacidade de construção.**
-O produto de maior ΔU da casa é o Assessment + o Mapa de Vazamento —
+O produto de maior ΔU da casa é o Assessment + o Assessment gratuito —
 achar o problema certo e provar o resultado. A construção é consequência,
 não a promessa.
 
@@ -400,8 +400,8 @@ se vende — se conserta.
 **(e) Decidir conscientemente o caminho da escala.** A provocação do
 utility delta fala de dois caminhos. Hoje a ABBA está no de **alto impacto,
 baixa escala** (5-6 clientes profundos), que é coerente com boutique.
-Mas as **ferramentas** (assessment-brain, portal, Mapa de Vazamento
-gratuito) são ativos de **alta escala** — o Mapa de Vazamento poderia
+Mas as **ferramentas** (assessment-brain, portal, Assessment gratuito
+gratuito) são ativos de **alta escala** — o Assessment gratuito poderia
 tocar centenas de empresas em vez de seis. São dois negócios diferentes
 dentro da mesma casa, e vale escolher explicitamente qual está sendo
 construído, em vez de deixar a resposta emergir do acaso.

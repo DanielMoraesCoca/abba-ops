@@ -14,7 +14,7 @@
 - Cabeçalho: "ABBA · Análise" (não "ABBA · Assessment")
 
 ## 2. Nomes (tabela da [marca](../00-identidade/marca-e-nomenclatura.md))
-- "Assessment" → **"Análise ABBA"** em toda a UI e no PDF
+- "Assessment" → **"Assessment gratuito"** em toda a UI e no PDF
 - Recomendações do relatório NUNCA inventam produto: mapear para a escada oficial — "Discovery de IA" → **"Avaliação de Prontidão para IA"** · workshops → "Workshop de Descoberta de Shadow AI" · governança → "Sprint LGPD + Governança de IA". Prompt/template do gerador deve citar apenas estes nomes
 - Rodapé do PDF: sempre `assessment.abbaservices.com.br` (NUNCA URL de staging — checar build de produção)
 

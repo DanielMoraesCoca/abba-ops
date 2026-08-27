@@ -131,7 +131,7 @@ Todo post nasce de exatamente um pilar. A distribuição semanal está no
 |---|---|---|---|---|
 | **P1** | **A Prova** | O número desconfortável, com fonte na frase. Desmonte de folclore estatístico. Por que medir de fora | [base de evidências](../00-identidade/base-de-evidencias.md) | Não |
 | **P2** | **O Bastidor** | O que estamos construindo, rodando na tela. Protótipos, agentes CrewAI, o Conselheiro, o que quebrou | assessment-brain · arquiteto-patrimonial · abba-portal | Não |
-| **P3** | **O Método** | Os frameworks proprietários abertos: escada, Mapa de Vazamento, protocolo de prova, régua do revisor, o teste de 6 perguntas | [03-comercial](../03-comercial/) · [04-entrega](../04-entrega/) | Não |
+| **P3** | **O Método** | Os frameworks proprietários abertos: escada, Assessment gratuito, protocolo de prova, régua do revisor, o teste de 6 perguntas | [03-comercial](../03-comercial/) · [04-entrega](../04-entrega/) | Não |
 | **P4** | **O Brasil Real** | LGPD, PL 2338, ISO 42001, reforma tributária, NF-e/SPED. Obrigação com data vira pauta | [estudo de antecipação](../05-interno/estudo-antecipacao.md) · [mapa ISO](../06-ferramentas/mapa-avaliacao-iso42001-pl2338.md) | Não |
 | **P5** | **A Fronteira** | Postura e opinião: o que recusamos, onde erramos, o que a IA não faz. O pilar que precisa de gente | [manifesto](../00-identidade/manifesto.md) | **Sim** |
 
@@ -160,7 +160,7 @@ rosto** por semana.
   em 60 minutos mudam a distribuição do post em ordem de grandeza. É por isso
   que o motor tem uma rotina de comentários, e não só de publicação.
 - **Isca de engajamento é penalizada.** "Comente SIM se concorda" está fora.
-  A oferta do [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md) é feita
+  A oferta do [Assessment gratuito](../03-comercial/assessment-gratuito.md) é feita
   de forma reta, ou não é feita.
 
 ### Instagram — o canal de cara

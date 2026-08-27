@@ -12,7 +12,7 @@
 - [ ] Ensaio da call de descoberta ([pauta 1](../03-comercial/pautas-de-reuniao.md)): 30 min cronometrados, gravados · prospect faz 2 objeções da [lista](../03-comercial/coreografia-da-conversao.md)
 - [ ] Retrospectiva de 10 min: o que travou → corrigir material ou repetir
 
-## Dia 2 — Análise ABBA (estágio 02)
+## Dia 2 — Assessment gratuito (estágio 02)
 - [ ] Rodar o assessment web (ou scout) no alvo · custo da execução ANOTADO (vira dado da ficha)
 - [ ] Curadoria: revisar fontes (lembrar o caso "Rede Santa Catarina"), montar o PDF no [modelo](../08-materiais/modelos/analise-abba-modelo.docx)
 - [ ] Cronometrar o processo inteiro: cabe nos 5 dias úteis prometidos?

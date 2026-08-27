@@ -36,7 +36,7 @@
 
 | Oferta | Onde se encaixa | Como é oferecida | Por quê aqui |
 |---|---|---|---|
-| Análise ABBA (gratuita) | 01–02 | Porta digital + prospecção ativa | O produto É a demonstração |
+| Assessment gratuito (gratuita) | 01–02 | Porta digital + prospecção ativa | O produto É a demonstração |
 | Workshop Shadow AI · Avaliação de Prontidão · Sprint LGPD | 03 | Propostas de entrada (T3) | Degraus de prova antes do compromisso grande |
 | Programa completo | 03, após entrada | Conversão do produto de entrada (crédito 100%) | Nunca vender o programa de cara — erro clássico de boutique |
 | **[Conselheiro de IA](../03-comercial/conselheiro-de-ia.md)** | **10 — duas portas** | (a) Na renovação (11), como evolução do ritual já vivido; (b) **venda direta em T0/T1** quando o prospect diz "já temos IA" (9ª objeção da [coreografia](../03-comercial/coreografia-da-conversao.md)) | Continuidade de algo vivido converte mais que promessa; e a porta lateral transforma lead desqualificado em cliente |
@@ -50,7 +50,7 @@
 | Transição | Métrica |
 |---|---|
 | Visitante → lead | leads/mês por origem |
-| Lead → degustação | % que aceita a análise gratuita |
+| Lead → degustação | % que aceita o assessment gratuito |
 | Degustação → proposta | % convertida |
 | Proposta → contrato | % fechada · ciclo (dias) · ticket médio |
 | Entrada → programa | % de produtos de entrada que viram programa em 90 dias |

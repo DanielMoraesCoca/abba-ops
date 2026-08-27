@@ -79,7 +79,7 @@ quando já existe alguém lendo.
 | Semana | Ter | Qua | Qui | Sex | Vídeo P5 |
 |---|---|---|---|---|---|
 | **1** (01–04/09) | Pauta 1 · METR | Pauta 2 · índice proibido | Pauta 17 · régua do revisor | Pauta 43 · calendário de obrigações | Pauta 53 · o que recusamos prever |
-| **2** (08–11/09) | Pauta 3 · RAND | Pauta 29 · Mapa de Vazamento (carrossel) | Pauta 24 · deleção com certificado | Pauta 45 · IA-sombra | Pauta 56 · "a IA decidiu" |
+| **2** (08–11/09) | Pauta 3 · RAND | Pauta 29 · Assessment gratuito (carrossel) | Pauta 24 · deleção com certificado | Pauta 45 · IA-sombra | Pauta 56 · "a IA decidiu" |
 | **3** (15–18/09) | Pauta 4 · DORA | Pauta 33 · teste de 6 perguntas (carrossel) | Pauta 23 · anti-cheat | Pauta 44 · PL 2338 + ISO 42001 | Pauta 54 · diretor de IA |
 | **4** (22–25/09) | Pauta 5 · Wharton | Pauta 32 · a escada (carrossel) | Pauta 18 · gate de red flags | Pauta 46 · LGPD e o DPO | Pauta 55 · precisar menos de nós |
 
@@ -146,7 +146,7 @@ quiser falar com a ABBA depende de achar o perfil e mandar mensagem.
 1 usa o perfil como destino. Mas até a Fase 2 precisa existir uma página que
 receba, com três coisas e nada mais: o que a ABBA faz, os degraus da
 [escada](../03-comercial/escada-abba.md), e um jeito de pedir o
-[Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md).
+[Assessment gratuito](../03-comercial/assessment-gratuito.md).
 
 **Decisão dos sócios, com data-limite 30 de setembro** — três caminhos:
 

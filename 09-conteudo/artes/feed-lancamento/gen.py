@@ -186,14 +186,14 @@ peca("peca-01", "01 · A tese", "Tese", 1, [
  ("O PRÓXIMO PASSO", '''
 <img class="mark" src="abba-logo.png" alt="ABBA">
 <p class="label" style="margin-top:34px">O próximo passo</p>
-<h1 class="sm">Uma conversa de 45 minutos, e a sua <i>análise gratuita</i> feita na hora.</h1>
+<h1 class="sm">Uma conversa de 45 minutos, e o seu <i>assessment gratuito</i> da empresa.</h1>
 ''' + note("→", "contato@abbaservices.com.br"), False),
 ])
 
 # ═══════════ PEÇA 02 · A JORNADA ═══════════
 JORNADA = [
- ("1","A primeira conversa","45 min · análise gratuita feita na hora"),
- ("2","Assessment","o mergulho profundo · portfólio ranqueado"),
+ ("1","A primeira conversa","45 min · assessment gratuito da empresa"),
+ ("2","Avaliação de Prontidão","o mergulho profundo · portfólio ranqueado"),
  ("3","Protótipo de caso de uso","dados reais · GO ou NO-GO com números"),
  ("4","Construção e implantação","engenharia sob medida · em produção"),
  ("5","Treinamento + ABBA Portal","todos os níveis · campeões internos"),
@@ -226,8 +226,8 @@ peca("peca-02", "02 · A jornada", "Jornada", 2, [
  ("ETAPAS 1 E 2", '''
 <p class="label">Antes de qualquer investimento</p>
 <div class="steps">
-  <div class="step"><span class="n">1</span><div><h3>A primeira conversa</h3><p>45 minutos, e nós já chegamos com uma análise da sua empresa feita com informação pública, incluindo uma estimativa em reais do que pode estar vazando na operação. Fica pronta em menos de cinco minutos, durante a própria conversa.</p></div></div>
-  <div class="step"><span class="n">2</span><div><h3>Assessment: o mergulho profundo</h3><p>Do conselho à linha de frente: como o trabalho realmente flui, onde quebra, onde vaza valor. Você sai com um portfólio de oportunidades ranqueado e quantificado, não com uma lista de ideias.</p></div></div>
+  <div class="step"><span class="n">1</span><div><h3>A primeira conversa</h3><p>45 minutos, e nós já chegamos com um assessment da sua empresa feito só com informação pública: nota de maturidade em IA, oportunidades priorizadas e o ledger de todas as fontes que usamos.</p></div></div>
+  <div class="step"><span class="n">2</span><div><h3>Avaliação de Prontidão: o mergulho profundo</h3><p>Do conselho à linha de frente: como o trabalho realmente flui, onde quebra, onde vaza valor. Você sai com um portfólio de oportunidades ranqueado e quantificado, não com uma lista de ideias.</p></div></div>
 </div>
 ''' + note("·", "Ninguém deveria pagar para descobrir se faz sentido."), False),
  ("ETAPA 3", '''
@@ -313,61 +313,58 @@ peca("peca-03", "03 · Prometemos × Recusamos", "Recusa", 3, [
 ''' + note("→", "contato@abbaservices.com.br"), False),
 ])
 
-# ═══════════ PEÇA 04 · A ANÁLISE GRATUITA ═══════════
-peca("peca-04", "04 · A análise gratuita", "Analise", 4, [
+# ═══════════ PEÇA 04 · O ASSESSMENT GRATUITO ═══════════
+peca("peca-04", "04 · O assessment gratuito", "Assess", 4, [
  ("PEÇA 04", '''
 <p class="label">O primeiro passo · gratuito</p>
-<h1>Dezenas de páginas sobre a sua empresa, em menos de <i>cinco minutos.</i></h1>
+<h1>Um assessment de IA da sua empresa, feito só com <i>informação pública.</i></h1>
 <div class="rule"></div>
-<p class="lede">Feita com informação pública. A primeira página traz uma estimativa em reais do que pode estar vazando na operação.</p>
+<p class="lede">Dezenas de páginas, geradas em minutos, sem custo e sem você precisar abrir um dado sequer.</p>
 ''', False),
- ("POR QUE UM NÚMERO", '''
-<p class="label mute">Por que um número, e não três hipóteses</p>
-<h1 class="xs">Três hipóteses fazem o leitor pensar. <i>Um número faz o leitor reagir.</i></h1>
-<p class="lede">Concordando, discordando ou corrigindo. Qualquer uma das três é uma conversa. A ausência de reação é um PDF arquivado.</p>
-''', True),
- ("A CONVERSA", '''
-<p class="label">45 minutos · cinco perguntas</p>
-<div class="steps">
-  <div class="step"><span class="n">1</span><div><h3>O caminho de uma nota fiscal aí dentro,</h3><p>do pedido ao pagamento: quem toca, em que sistema.</p></div></div>
-  <div class="step"><span class="n">2</span><div><h3>O que mais atrasa o fechamento do mês,</h3><p>e quanto tempo ele leva hoje.</p></div></div>
-  <div class="step"><span class="n">3</span><div><h3>Que número em reais dói hoje</h3><p>e já é medido.</p></div></div>
-  <div class="step"><span class="n">4</span><div><h3>Quando vocês descobrem que perderam dinheiro:</h3><p>no mês, no trimestre, ou no ano seguinte.</p></div></div>
-  <div class="step"><span class="n">5</span><div><h3>Se esse número melhorasse 20%, quem comemoraria.</h3><p>Quase nunca é quem marcou a reunião.</p></div></div>
-</div>
-''', False),
- ("AS REGRAS", '''
-<p class="label">As regras de honestidade</p>
+ ("O QUE SAI DELE", '''
+<p class="label">O que vem dentro</p>
 <table>
-<tr><td class="k">I</td><td><b>Faixa, nunca número exato.</b> Um valor exato calculado de fora é uma mentira com aparência de precisão, e o primeiro CFO competente desmonta.</td></tr>
-<tr><td class="k">II</td><td><b>Premissa sem fonte não entra.</b> Se não há referência pública citável, o item sai da análise.</td></tr>
-<tr><td class="k">III</td><td><b>A faixa pode ser pequena.</b> Se a estimativa honesta for baixa, ela vai baixa. Análise inflada vende uma reunião e perde a relação.</td></tr>
+<tr><td class="k">01</td><td><b>Uma nota de maturidade em IA</b>, de 0 a 5, em seis dimensões da sua operação.</td></tr>
+<tr><td class="k">02</td><td><b>As oportunidades priorizadas</b>, com impacto contra esforço, e uma delas marcada como o ponto de partida.</td></tr>
+<tr><td class="k">03</td><td><b>Um roadmap em três horizontes</b>, do que dá ganho em seis meses ao que muda o modelo de negócio.</td></tr>
+<tr><td class="k">04</td><td><b>O ledger de todas as fontes</b> que usamos, com a citação literal de cada uma.</td></tr>
 </table>
 ''', False),
- ("O QUE ELA NÃO É", '''
-<p class="label mute">O limite, dito por nós</p>
+ ("A NOTA", '''
+<p class="label mute">A parte que costuma incomodar</p>
 <div class="marg" style="margin-top:auto;margin-bottom:auto">
-  <h1 class="sm">A análise aponta onde o dinheiro parece estar vazando. Ela <i>não prova a causa,</i> porque foi calculada de fora.</h1>
-  <div class="margnote">E nunca prometemos capturar a faixa inteira. A captura é uma fração dela, e isso a gente diz em voz alta.</div>
+  <h1 class="sm">Uma nota de maturidade, <i>de fora,</i> sem ninguém pedir licença.</h1>
+  <div class="margnote">Estratégia, processos, dados, tecnologia, pessoas e governança. Se a nota estiver baixa, ela vai baixa.</div>
 </div>
 ''', True),
- ("O QUE VOCÊ RECEBE", '''
-<p class="label">O que fica com você</p>
+ ("A PRIORIZAÇÃO", '''
+<p class="label">Onde começar, e por quê</p>
+<h1 class="xs">Não é uma lista de ideias. É uma fila, <i>com um primeiro.</i></h1>
+<p class="lede">Cada oportunidade entra numa matriz de impacto contra esforço, recebe um score e um horizonte. Uma delas sai marcada como <b>piloto-farol</b>: por onde a gente recomenda começar, com o motivo escrito.</p>
+''', False),
+ ("A AUTOCLASSIFICAÇÃO", '''
+<p class="label">O detalhe que ninguém mais faz</p>
 <table>
-<tr><td class="k">01</td><td><b>A faixa em reais,</b> em ordem de grandeza anual, e o vetor principal: por onde o dinheiro sai.</td></tr>
-<tr><td class="k">02</td><td><b>As premissas numeradas, com a fonte citada,</b> incluindo o que assumimos e ainda não sabemos.</td></tr>
-<tr><td class="k">03</td><td><b>As perguntas que só você pode responder,</b> e que mudariam a estimativa nos dois sentidos.</td></tr>
+<tr><td class="k">·</td><td><b>Cada achado se declara.</b> Se é fato apurado ou hipótese nossa. Se veio da sua empresa ou do seu setor. E com que confiança: alta, média ou baixa.</td></tr>
+<tr><td class="k">·</td><td><b>O que não descobrimos fica escrito como desconhecido</b>, nunca preenchido por dedução.</td></tr>
 </table>
-''' + note("·", "Entre 32 e 60 páginas, conforme o modelo de profundidade. Sem custo, sem compromisso, e sem nenhum dado seu no documento."), False),
- ("SOBRE O TAMANHO", '''
-<p class="label mute">Uma ressalva que fazemos questão de dar</p>
-<h1 class="xs">Sessenta páginas não são o argumento. <i>A primeira é.</i></h1>
-<p class="lede">A análise é longa porque <b>cada premissa vem com a fonte</b>, e você precisa poder conferir de onde saiu o número. Se a primeira página não trouxer uma faixa em reais que faça você reagir, o resto não salva.</p>
+''' + note("·", "Um documento que se autoclassifica é um documento que você pode conferir. Essa é a ideia."), False),
+ ("O LEDGER", '''
+<p class="label">A prova de que dá para conferir</p>
+<h1 class="xs">Toda fonte que usamos vai no fim, com a <i>citação literal.</i></h1>
+<p class="lede">Id, provedor, nível de confiança, o trecho exato que foi lido e o endereço. Se você discordar de uma conclusão, dá para ir na fonte dela em dez segundos.</p>
+''', False),
+ ("OS DESCONHECIDOS", '''
+<p class="label mute">A última seção do documento</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">O que ainda não sabemos não é falha. <i>É a agenda da conversa.</i></h1>
+  <div class="margnote">O assessment lista o que a informação pública não alcançou. É por aí que a primeira reunião começa.</div>
+</div>
 ''', True),
  ("O PRÓXIMO PASSO", '''
 <img class="mark" src="abba-logo.png" alt="ABBA">
 <p class="label" style="margin-top:34px">O próximo passo</p>
-<h1 class="sm">Tem algum número em reais aí dentro que <i>dói hoje,</i> e que vocês já medem?</h1>
+<h1 class="sm">Quer ver o que a informação pública já diz <i>sobre a sua empresa?</i></h1>
 ''' + note("→", "contato@abbaservices.com.br"), False),
 ])
 

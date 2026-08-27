@@ -26,7 +26,7 @@ Isso tem duas consequências práticas que mudam como se planeja:
    outubro que diz "cinco minutos" ficam lado a lado para sempre. Numa empresa
    que vende registro auditável, essa é a pior falha possível, e ela já quase
    aconteceu: a [V3v](../05-interno/registro-de-decisoes.md) mudou o prazo da
-   análise gratuita e, por não ter sido registrada, não se propagou.
+   assessment gratuito e, por não ter sido registrada, não se propagou.
 2. **Repetição é o mecanismo, não o defeito.** O [kit de presença](../03-comercial/kit-de-presenca.md)
    já diz isso da boca dos sócios: *"os dois sócios usam as mesmas frases,
    inconsistência entre fundadores é o que faz uma firma pequena parecer
@@ -127,12 +127,18 @@ aparece depois que a promessa já foi entendida.
 ### Entra no Ato II, e passa a ser léxico a partir dele
 - *Ninguém sabe se a ferramenta ajudou sem medir de fora.*
 
+### Do assessment gratuito (V4f)
+- *O que ainda não sabemos não é falha. É a agenda da conversa.*
+- *Se a nota estiver baixa, ela vai baixa.*
+- *Um documento que se autoclassifica é um documento que você pode conferir.*
+
 ### Proibido no feed
 Tudo do [índice proibido](../00-identidade/base-de-evidencias.md#2-o-índice-proibido--números-banidos-de-todo-material)
 · travessão ([régua v1.5.0](../06-ferramentas/regua-do-revisor.md))
 · *"AI native"* solta, sem a prova colada na mesma respiração (V4d)
 · a metáfora das raízes ([V3v](../05-interno/registro-de-decisoes.md))
-· *"48 horas"* para a análise gratuita (o prazo vigente é **durante a própria conversa**)
+· qualquer **cifra em reais** atribuída ao assessment gratuito (o produto não gera nenhuma, V4f)
+· *"Mapa de Vazamento"* (aposentado) e *"Assessment"* para o degrau 1 pago (é **Avaliação de Prontidão**)
 
 ---
 
@@ -144,9 +150,9 @@ pode contradizer**. Linha nova a cada publicação.
 | Peça | Estabeleceu | Não pode ser contradito por |
 |---|---|---|
 | **01 · A tese** | Duas frentes simultâneas · as três perguntas · o registro com o que não funcionou · IA rascunha / humano assina | Qualquer peça que sugira IA decidindo, ou treinamento como produto |
-| **02 · A jornada** | Sete passos nesta ordem e com estes nomes · cada etapa inteira sozinha · análise gratuita **na hora** | Qualquer peça que mude nome, ordem ou prazo de etapa |
+| **02 · A jornada** | Sete passos nesta ordem e com estes nomes · cada etapa inteira sozinha · assessment gratuito **na hora** | Qualquer peça que mude nome, ordem ou prazo de etapa |
 | **03 · Promessas × Recusas** | As 3 promessas e as 4 recusas, nestas palavras | Qualquer peça que prometa acurácia, previsão ou piloto sem métrica |
-| **04 · A análise gratuita** | Gerada em <5 min · **32 a 60 páginas** · faixa nunca exata · premissa com fonte · a faixa pode ser pequena · não prova causa · *"volume não é o argumento, a primeira página é"* | Qualquer peça com número exato estimado de fora, ou que lidere por tamanho do documento |
+| **04 · O assessment gratuito** | Só informação pública · nota de maturidade 0 a 5 em seis dimensões · piloto-farol nomeado · achados autoclassificados por natureza e confiança · ledger de fontes com citação literal · *"o que ainda não sabemos não é falha, é a agenda da conversa"* | Qualquer peça que prometa cifra em reais no assessment gratuito, ou que apresente hipótese como fato |
 | **05 · Parceiros** | Microsoft e CrewAI · aprovação humana em qualquer ferramenta · ninguém sai refém | Qualquer peça que prometa licença ou exclusividade |
 | **06 · O que é AI native** | A definição canônica · o método em quatro passos · *"as ferramentas ficam, e as pessoas sabem operá-las"* | Qualquer peça que use AI native sem a prova colada, ou que trate capacidade como produto em vez de método |
 
@@ -200,7 +206,7 @@ peça 06, que fecha o Ato I explicando a frase que a peça 01 estampa na capa. O
 anglicismo é legítimo pela exceção que o próprio manifesto declara.
 
 **Resolvido (V4e, 27/08).** O "2 páginas em 48h" saiu de seis documentos. A
-Análise ABBA tem **32 a 60 páginas conforme o modelo de profundidade e é gerada
+Assessment gratuito tem **32 a 60 páginas conforme o modelo de profundidade e é gerada
 em menos de cinco minutos**. Os dois números antigos estavam errados de formas
 diferentes: "2 páginas" descrevia apenas a seção 1, e "48h" era o prazo do fluxo
 manual anterior à ferramenta. **A regra editorial que nasceu daí:** volume é
@@ -216,7 +222,7 @@ tocado sem a palavra dos sócios.
 **Decisão pendente na operação:** a revisão cruzada da faixa é inegociável e não
 cabe numa conversa ao vivo. O fluxo adotado roda o scout **antes** da conversa; se
 os sócios preferirem gerar ao vivo, a faixa da primeira página só é dita depois
-da revisão cruzada ([mapa de vazamento](../03-comercial/mapa-de-vazamento.md)).
+da revisão cruzada ([assessment gratuito](../03-comercial/assessment-gratuito.md)).
 
 ## 8. O gate ganha um item
 

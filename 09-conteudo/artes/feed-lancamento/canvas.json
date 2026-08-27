@@ -14,7 +14,7 @@
     },
     {
       "id": "peca-04",
-      "name": "04 · A análise gratuita"
+      "name": "04 · O assessment gratuito"
     },
     {
       "id": "peca-05",
@@ -207,7 +207,7 @@
       "page": "peca-03"
     },
     {
-      "file": "Analise01.dc.html",
+      "file": "Assess01.dc.html",
       "x": 0,
       "y": 0,
       "w": 1080,
@@ -215,7 +215,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise02.dc.html",
+      "file": "Assess02.dc.html",
       "x": 1260,
       "y": 0,
       "w": 1080,
@@ -223,7 +223,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise03.dc.html",
+      "file": "Assess03.dc.html",
       "x": 2520,
       "y": 0,
       "w": 1080,
@@ -231,7 +231,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise04.dc.html",
+      "file": "Assess04.dc.html",
       "x": 3780,
       "y": 0,
       "w": 1080,
@@ -239,7 +239,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise05.dc.html",
+      "file": "Assess05.dc.html",
       "x": 5040,
       "y": 0,
       "w": 1080,
@@ -247,7 +247,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise06.dc.html",
+      "file": "Assess06.dc.html",
       "x": 0,
       "y": 1620,
       "w": 1080,
@@ -255,7 +255,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise07.dc.html",
+      "file": "Assess07.dc.html",
       "x": 1260,
       "y": 1620,
       "w": 1080,
@@ -263,7 +263,7 @@
       "page": "peca-04"
     },
     {
-      "file": "Analise08.dc.html",
+      "file": "Assess08.dc.html",
       "x": 2520,
       "y": 1620,
       "w": 1080,

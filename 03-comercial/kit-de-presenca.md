@@ -30,7 +30,7 @@ Quatro movimentos. **Nesta ordem** — a ordem é o que faz funcionar.
 > *"Setenta por cento do valor de uma transformação de IA está em pessoas, processo e cultura. O mercado vende os outros trinta: ferramenta, piloto sem métrica, curso. Ninguém instala os setenta no médio porte brasileiro — e ninguém prova de fora o que mudou. Funciona como uma auditoria: mesmo quem tem um ótimo CFO contrata auditor, porque a prova só vale vindo de terceiro. É onde a gente vive."*
 
 **3. Como funciona, em uma frase por degrau (60s)**
-> *"Começa com um mapa do que estimamos estar vazando, feito de fora e de graça. Se fizer sentido, o Assessment faz o mergulho profundo com os dados de dentro, do conselho à linha de frente, e devolve um portfólio ranqueado. Aí a gente prototipa os casos mais promissores com dados reais e vocês decidem GO/NO-GO com números — só então constrói e treina, plataforma mais presencial. E daí em diante a gente fica: presença semanal, toda decisão num registro — métrica combinada antes, resultado medido depois, assinado por gente. E quando vocês quiserem a cadeira do estrategista do lado de vocês da mesa, isso tem nome: Conselheiro de IA."*
+> *"Começa com um assessment gratuito da sua empresa, feito só com informação pública: nota de maturidade em IA, as oportunidades priorizadas e o ledger de todas as fontes que usamos. Se fizer sentido, a Avaliação de Prontidão faz o mergulho profundo com os dados de dentro, do conselho à linha de frente, e devolve um portfólio ranqueado. Aí a gente prototipa os casos mais promissores com dados reais e vocês decidem GO/NO-GO com números — só então constrói e treina, plataforma mais presencial. E daí em diante a gente fica: presença semanal, toda decisão num registro — métrica combinada antes, resultado medido depois, assinado por gente. E quando vocês quiserem a cadeira do estrategista do lado de vocês da mesa, isso tem nome: Conselheiro de IA."*
 
 **4. A pergunta que devolve a palavra (30s)**
 > *"Me conta uma coisa: tem algum número em reais aí dentro que dói hoje e que vocês já medem?"*
@@ -54,7 +54,7 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 
 **Ordem de preferência do que se manda depois de uma conversa:**
 
-1. **[Mapa de Vazamento](mapa-de-vazamento.md)** — se houve conversa de descoberta. É o que mais converte, porque tem um número dentro.
+1. **[Assessment gratuito](assessment-gratuito.md)** — se houve conversa de descoberta. É o que mais converte, porque tem um número dentro.
 2. **[A apresentação em PDF](../08-materiais/modelos/abba-apresentacao.pdf)** — quando pedirem "manda o que vocês fazem" antes da reunião. **É o documento-padrão de todo material** ([§0 do catálogo](../08-materiais/README.md)). 3 páginas em NARRATIVA: pág. 1 abre direto na ABBA ("Tornamos a sua empresa AI native") + a seção dourada das raízes; págs. 2–3 a jornada NA ORDEM (conversa → Assessment → protótipo → construção/engenharia → treinamento com as 3 perguntas → gerenciados → Conselheiro), cada etapa em "o quê · por quê · como", fechando com as logos Microsoft/CrewAI. **Sem preços — preço é conversa.** Passou no Revisor. Versão-relâmpago para WhatsApp: [1 página](../08-materiais/modelos/abba-um-minuto.pdf).
 3. **[Manifesto](../00-identidade/manifesto.md)** — se a conversa foi sobre confiança, governança ou risco. É o documento para o guardião (jurídico/DPO).
 4. **Institucional** ([deck](../08-materiais/modelos/abba-deck-institucional.pptx)) — **apresentar ao vivo, nunca enviar antes** (a conversa é onde a conversão acontece).
@@ -77,14 +77,14 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 | 3 | As duas frentes | *"Sistemas e pessoas ao mesmo tempo — porque de nada adiantam sistemas novos com a empresa pensando do jeito antigo."* |
 | 4 | O nosso processo (raízes) | **Pausa.** Deixar a frase dourada ser lida em silêncio — não explicar |
 | 5 | A jornada em 7 passos | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nesse caminho hoje?"* (quase sempre se colocam adiante do real) |
-| 6 | Etapas 1–3 | *"Começa de graça, com um número em reais na mesa — e a prova vem antes de qualquer investimento pesado."* |
+| 6 | Etapas 1–3 | *"Começa de graça, com um assessment da empresa de vocês na mesa, e a prova vem antes de qualquer investimento pesado."* |
 | 7 | Etapa 4 — a engenharia | *"Existe uma arquitetura, uma engenharia, uma lógica — e os agentes de IA já estão inseridos nisso."* |
 | 8 | Etapa 5 — as 3 perguntas | Ler as três perguntas em voz alta, devagar — é o coração do treinamento |
 | 9 | Etapas 6–7 | *"Todo fornecedor de IA tem um vendedor. A sua mesa merece alguém do seu lado quando a fatura chega."* |
 | 10 | Como trabalhamos | *"Repare: nenhuma decisão entra sem métrica combinada antes. Isso é raro no nosso mercado."* |
 | 11 | **Promessas × recusas** | *"Este slide é o que nenhum concorrente nosso consegue copiar — porque copiar exigiria parar de vender o que eles vendem."* Deixar 30s de silêncio para lerem |
 | 12 | Parceiros oficiais | *"Durante a capacitação, a equipe de vocês usa ferramentas dos nossos parceiros para construir as próprias soluções."* |
-| 13 | CTA | *"O próximo passo não custa nada e cabe em 45 minutos: o Mapa de Vazamento."* Sair da sala com a data marcada |
+| 13 | CTA | *"O próximo passo não custa nada e cabe em 45 minutos: o Assessment gratuito."* Sair da sala com a data marcada |
 
 **Regras:** nunca enviar o PDF antes da apresentação ao vivo (a conversa é onde a conversão acontece) · o slide 5 é o único onde a apresentação vira diálogo — não atropelar a resposta · se perguntarem preço no meio, *"chego lá no fim — antes quero que vocês saibam exatamente o que se compra"* (e usar a [escada](escada-abba.md)).
 
@@ -128,4 +128,4 @@ Se, ao final de um engajamento, é isso que o patrocinador diz para um par, o po
 
 ## Ligações
 
-[Manifesto](../00-identidade/manifesto.md) · [Posicionamento](../00-identidade/posicionamento.md) · [Escada](escada-abba.md) · [Mapa de Vazamento](mapa-de-vazamento.md) · [Alvo](../00-identidade/alvo.md) · [Coreografia da conversão](coreografia-da-conversao.md) · [Roteiro de descoberta do protótipo](roteiro-descoberta-prototipo.md) — o instrumento oficial da reunião técnica, para qualquer pessoa da ABBA
+[Manifesto](../00-identidade/manifesto.md) · [Posicionamento](../00-identidade/posicionamento.md) · [Escada](escada-abba.md) · [Assessment gratuito](assessment-gratuito.md) · [Alvo](../00-identidade/alvo.md) · [Coreografia da conversão](coreografia-da-conversao.md) · [Roteiro de descoberta do protótipo](roteiro-descoberta-prototipo.md) — o instrumento oficial da reunião técnica, para qualquer pessoa da ABBA

@@ -8,7 +8,7 @@
 
 | # | Serviço | Preço-alvo | Faixa / variação | Pagamento |
 |---|---|---|---|---|
-| 1 | **A primeira conversa + Mapa de Vazamento** | **Grátis** | — (é a peça de abertura; nunca cobrar) | — |
+| 1 | **A primeira conversa + Assessment gratuito** | **Grátis** | — (é a peça de abertura; nunca cobrar) | — |
 | 2 | **Assessment — o mergulho com dados internos** | **R$ 45.000** | R$ 35–60 mil conforme porte (nº de áreas e entrevistas) | 50/50 |
 | 3 | **Protótipo de caso de uso** | **R$ 26.000** (1 caso) | **Pacote de 3 casos: R$ 65.000** (o desenho ideal — explora o portfólio do Assessment) | 50/50 |
 | 4 | **Construção e implantação** | pela [calculadora](../06-ferramentas/calculadora-construcao.md) | **P: R$ 60–90 mil · M: R$ 120–200 mil · G: R$ 220–400 mil** | 30/30/40 por marco |
@@ -30,7 +30,7 @@
 
 ## Regras comerciais
 
-- **Mapa de Vazamento nunca se cobra** — é a peça de abertura
+- **Assessment gratuito nunca se cobra** — é a peça de abertura
 - Workshop/Sprint (portas laterais, abaixo) creditam 100% no **Assessment** em até 90 dias
 - **Porta de entrada padrão até existir o 1º caso medido (V4a, 2026-08-23 — proposta, Pedro valida):** Mapa grátis → **Protótipo R$ 26 mil**, sempre apresentado com **payback calculado no número DO cliente** (ex.: ABC DataSaúde — R$ 26 mil contra ~R$ 6,5 mil/mês de exposição recuperável = payback ~4 meses). Fundamento na [base de evidências](../00-identidade/base-de-evidencias.md): R$ 26 mil está no meio da faixa de fábrica de software (R$ 15–60 mil) entregando diagnóstico e medição que fábrica não entrega; o Assessment a R$ 45 mil está no topo da faixa de boutique **sem caso publicado** — vender prova antes de pedir o cheque grande
 - **Assessment com crédito integral do protótipo (V4a — proposta, Pedro valida):** enquanto não houver caso medido publicado, quem fez protótipo credita **100% dos R$ 26 mil** no Assessment em até 120 dias (Assessment efetivo: R$ 19 mil). O crédito expira quando o 1º caso medido existir — aí o Assessment volta a se vender pela prova, sem desconto

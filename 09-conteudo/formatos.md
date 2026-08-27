@@ -105,7 +105,7 @@ queimada e trilha discreta.
 **Inegociável:** nunca acelerar a tela sem avisar em texto, e nunca cortar a
 parte que demora. Screencast maquiado é a versão em vídeo do número inflado.
 
-**Fontes:** `assessment-brain` (avaliação, Mapa de Vazamento, o Conselheiro,
+**Fontes:** `assessment-brain` (avaliação, Assessment gratuito, o Conselheiro,
 `abba revise`) · `arquiteto-patrimonial` (Flow CrewAI, gate de red flags,
 fila do advogado) · `abba-portal` (trilhas, adoção).
 

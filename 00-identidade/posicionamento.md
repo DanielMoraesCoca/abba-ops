@@ -88,7 +88,7 @@ primeira frase.
 
 **Bio dos fundadores:** Sócio-fundador, ABBA · Consultoria de transformação em IA para o mid-market brasileiro · Instalamos os 70% que todo fornecedor de IA ignora
 
-**Sobre (página da empresa):** A ABBA instala capacidade de IA em organizações — e prova, como terceiro, o que mudou. Não treinamento. Não piloto sem métrica. Não ferramentas. A instalação completa: análise gratuita por informação pública → avaliação profunda em 25 dimensões → protótipo validado com dados reais (GO/NO-GO) → construção de agentes sob medida → capacitação híbrida de todos os níveis → manutenção com presença semanal → Conselheiro de IA — tudo dirigido pelos objetivos da diretoria do cliente, num ritual permanente de alinhamento. Atendemos empresas brasileiras de médio porte, começando por jurídico e serviços profissionais.
+**Sobre (página da empresa):** A ABBA instala capacidade de IA em organizações — e prova, como terceiro, o que mudou. Não treinamento. Não piloto sem métrica. Não ferramentas. A instalação completa: assessment gratuito por informação pública → avaliação profunda em 25 dimensões → protótipo validado com dados reais (GO/NO-GO) → construção de agentes sob medida → capacitação híbrida de todos os níveis → manutenção com presença semanal → Conselheiro de IA — tudo dirigido pelos objetivos da diretoria do cliente, num ritual permanente de alinhamento. Atendemos empresas brasileiras de médio porte, começando por jurídico e serviços profissionais.
 
 ## Vocabulário — não dizer / dizer
 

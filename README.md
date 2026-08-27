@@ -13,7 +13,7 @@
 | [`00-identidade/`](00-identidade/) | Plano de negócio, posicionamento, **manifesto**, **alvo**, **ecossistema**, modelo de serviço, marca, apostas futuras, Visão 2029 | Antes de qualquer material externo novo; dúvida sobre "o que a ABBA é" ou "para quem é" |
 | [`01-setores/`](01-setores/README.md) | Os 5 setores da empresa como "chapéus" com dono e checklist | Divisão de responsabilidades; entrada de novo sócio/funcionário |
 | [`02-jornada-do-cliente/`](02-jornada-do-cliente/README.md) | O funil completo em 11 estágios, um doc por estágio | Sempre que um cliente muda de estágio; onboarding de quem vai atender cliente |
-| [`03-comercial/`](03-comercial/) | **Escada**, **kit de presença**, **Mapa de Vazamento**, propostas prontas, contrato-esqueleto, precificação, pautas, e-mails | Da primeira conversa até a assinatura |
+| [`03-comercial/`](03-comercial/) | **Escada**, **kit de presença**, **Assessment gratuito**, propostas prontas, contrato-esqueleto, precificação, pautas, e-mails | Da primeira conversa até a assinatura |
 | [`04-entrega/`](04-entrega/) | Kickoff, relatório de avaliação, plano de capacitação, SLA, pauta do conselho | Da assinatura até a renovação |
 | [`05-interno/`](05-interno/) | Decisões, riscos, finanças, comunicação, societário | Reunião semanal de sócios; qualquer decisão relevante |
 | [`06-ferramentas/`](06-ferramentas/mapa-jornada-ferramentas.md) | Mapa jornada × ferramenta + fichas de negócio (o que prometer, setup, custo, dono) | Antes de prometer qualquer coisa técnica; setup de cliente novo |

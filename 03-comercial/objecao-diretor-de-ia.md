@@ -42,7 +42,7 @@ O que o diretor de IA **não consegue** comprar dentro de casa — e é o que ve
 **Regra de segmentação que este documento instala:**
 
 - **Tem diretor de IA de verdade** (dedicado, com mandato) → vender **construção + prova + capacitação**, com ele como campeão e comprador técnico. O Conselheiro de IA não é a oferta — ele já ocupa a cadeira.
-- **Tem diretor "de título"** (chapéu acumulado, sem equipe, sem métrica) → a descoberta revela sozinha (ver §4) e a conversa volta ao funil normal — Mapa de Vazamento primeiro.
+- **Tem diretor "de título"** (chapéu acumulado, sem equipe, sem métrica) → a descoberta revela sozinha (ver §4) e a conversa volta ao funil normal — Assessment gratuito primeiro.
 - **Não tem ninguém** → o custo de contratar (§3) é a abertura, e o [Conselheiro de IA](conselheiro-de-ia.md) é a oferta natural: a cadeira sem o custo da cadeira.
 
 ---

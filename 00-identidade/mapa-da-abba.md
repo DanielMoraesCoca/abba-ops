@@ -22,7 +22,7 @@ flowchart TD
         M[Manifesto: 7 crenças, 9 recusas] --- A[Alvo: teste de 6 perguntas + recusas]
     end
     subgraph FUNIL["ABERTURA E ESCADA"]
-        MV[Mapa de Vazamento — grátis, um número em R$] --> AV[Avaliação 25 dimensões — R$ 28k]
+        MV[Assessment gratuito — grátis, um número em R$] --> AV[Avaliação 25 dimensões — R$ 28k]
         AV --> PT[Protótipo validado — GO/NO-GO com dados reais]
         PT --> PR[Programa 16 semanas — R$ 185k]
         PR --> MA[Manutenção — R$ 9,5k/mês]
@@ -49,7 +49,7 @@ flowchart TD
 |---|---|---|---|
 | Manifesto, posicionamento, kit de presença | ✅ | [manifesto](manifesto.md) · [kit](../03-comercial/kit-de-presenca.md) | — |
 | Alvo por forma + critérios de recusa | ✅ (faixa de faturamento é ⬜ proposta) | [alvo](alvo.md) | Sócios confirmam R$ 50–500 mi |
-| Mapa de Vazamento (peça de abertura) | ✅ | [processo](../03-comercial/mapa-de-vazamento.md) + seção 1 do modelo DOCX | — |
+| Assessment gratuito (peça de abertura) | ✅ | [processo](../03-comercial/assessment-gratuito.md) + seção 1 do modelo DOCX | — |
 | Deck institucional (13 slides, posicionamento vigente) | ✅ regenerado 2026-08-01 | [modelo PPTX](../08-materiais/modelos/abba-deck-institucional.pptx) · roteiro no [kit](../03-comercial/kit-de-presenca.md) | — |
 | Escada com preços v1 | ✅ travada | [escada](../03-comercial/escada-abba.md) · [tabela](../03-comercial/tabela-de-precos.md) | v2 = ⬜ após 3 reações reais de preço |
 | Protocolo de prova + caso publicável | ✅ | [protocolo](../04-entrega/protocolo-de-prova.md) · [molde](../05-interno/caso-publicavel-modelo.md) | Primeiro caso = 1º cliente real |

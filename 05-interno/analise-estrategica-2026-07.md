@@ -9,7 +9,7 @@
 | Prática ABBA | Validação externa |
 |---|---|
 | **"Instalamos capacidade, não só slides"** (posicionamento) | O padrão nº 1 das boutiques que ganham da Big 4 em 2026: implementação > estratégia; a pergunta de vetting do mercado é "mostre 3 features de IA em produção nos últimos 6 meses" | 
-| **Análise gratuita como porta** (estágio 02 + gating) | Assessments interativos convertem 30–45% — o melhor formato de captação do setor; a decisão de teaser + apresentação ao vivo protege exatamente o que o funil precisa |
+| **Assessment gratuito como porta** (estágio 02 + gating) | Assessments interativos convertem 30–45% — o melhor formato de captação do setor; a decisão de teaser + apresentação ao vivo protege exatamente o que o funil precisa |
 | **Manutenção + conselho como receita recorrente** (estágios 05–06) | Nas consultorias de TI estabelecidas no Brasil, o recorrente é 50–65% do faturamento; projeto é porta de entrada, não negócio isolado |
 | **Capacitação embutida no engajamento** (transformação híbrida) | "As boutiques mais fortes escrevem a transferência de capacidade dentro do contrato em vez de tratá-la como despedida" — é literalmente nosso modelo |
 | **Sócios sêniores, sem pirâmide** | O modelo senior-only é vantagem competitiva declarada das boutiques vencedoras, não limitação |
@@ -37,7 +37,7 @@ A lição Palantir: o modelo forward-deployed funciona porque **cada engajamento
 ## 4. O que NÃO fazer (validado pela pesquisa de falhas do 1º ano)
 
 1. **Não alargar o menu.** A causa nº 1 de morte de boutique: "vender de tudo para todo setor antes de ter tração". Nossa escada tem 4 degraus e basta. Pedido fora da escada → é projeto de construção (estágio 07) ou é "não".
-2. **Não pular o primeiro degrau da escada de valor.** A pesquisa confirma: o erro clássico é vender o programa grande de cara. Nossa porta é a Análise gratuita → Avaliação paga. Respeitar a ordem mesmo quando o prospect "já quer tudo".
+2. **Não pular o primeiro degrau da escada de valor.** A pesquisa confirma: o erro clássico é vender o programa grande de cara. Nossa porta é o Assessment gratuito → Avaliação paga. Respeitar a ordem mesmo quando o prospect "já quer tudo".
 3. **Não virar SaaS agora.** A visão plataforma já está em [apostas futuras](../00-identidade/apostas-futuras.md) — a pesquisa reforça: produtizar antes de 10+ engajamentos reais é compor sem massa. O vault primeiro acumula; o produto emerge dele.
 4. **Não deixar a relação dos sócios sem manutenção.** Falha recorrente de firmas de 2 fundadores. A reunião semanal ganha 1 pergunta fixa de saúde societária ("algo entre nós precisa de conversa?") — 2 minutos, barato, salva empresas.
 5. **Não competir em preço com generalistas.** 77% das empresas BR investem pouco em IA — o barato atrai exatamente o cliente sem orçamento. Nosso preço já está na banda sênior; a resposta a "está caro" é o charter (troca formal), nunca desconto seco.

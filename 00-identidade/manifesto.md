@@ -57,7 +57,7 @@ A lista longa, com o custo de quebrar cada uma, está nos [inegociáveis da Vis�
 Uma postura que não muda o comportamento é decoração. Estas são as marcas visíveis:
 
 - **Toda proposta nossa tem uma seção do que não vamos fazer.** Escopo sem limite é escopo sem preço.
-- **Todo documento nosso declara o próprio limite.** O Mapa de Vazamento diz "foi calculado de fora". A auditoria de memória diz que mede coerência, não verdade. O relatório diz o que não foi olhado.
+- **Todo documento nosso declara o próprio limite.** O Assessment gratuito diz "foi calculado de fora". A auditoria de memória diz que mede coerência, não verdade. O relatório diz o que não foi olhado.
 - **Todo número nosso tem premissa citada** ou não é publicado.
 - **O que deu errado entra no relatório**, na mesma tipografia do que deu certo.
 - **Recusa é nomeada, não disfarçada.** Quando não somos a escolha certa, dizemos qual condição falta e o que a destravaria.

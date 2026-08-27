@@ -46,7 +46,7 @@ Estrutura da ISO/IEC 42001 usada como referência: cláusulas 4–10 (contexto, 
 
 ### Sem correspondência direta — e está certo assim
 
-**D04 (Mapa do Dinheiro)** é dimensão de negócio puro: nenhum marco regulatório pede mapa de vazamento financeiro. Registrar a ausência é parte da honestidade do mapa — não inflar cobertura.
+**D04 (Mapa do Dinheiro)** é dimensão de negócio puro: nenhum marco regulatório pede assessment gratuito financeiro. Registrar a ausência é parte da honestidade do mapa — não inflar cobertura.
 
 ---
 

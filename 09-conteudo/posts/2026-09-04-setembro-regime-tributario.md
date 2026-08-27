@@ -78,4 +78,4 @@ carrossel circula para sempre.
   inteiro rende.
 - Este é o post com maior chance de gerar mensagem de CFO/controller. Se vier,
   **não é lead para proposta** — é conversa de 45 minutos das
-  [cinco perguntas do Mapa de Vazamento](../../03-comercial/mapa-de-vazamento.md).
+  [cinco perguntas do Assessment gratuito](../../03-comercial/assessment-gratuito.md).

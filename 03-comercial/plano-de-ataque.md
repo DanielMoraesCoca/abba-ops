@@ -61,7 +61,7 @@ auditoria).
 | Passo | O quê | Quando |
 |---|---|---|
 | 1 | **19 perguntas ao Bernardo** — condição da venda, não cortesia: sem as respostas, qualquer proposta é chute (RAND, causa nº 1) | Já enviadas / cobrar esta semana |
-| 2 | **Mapa de Vazamento** montado quando o mapeamento de processos do Alan chegar — o número em reais na mesa antes de qualquer proposta | Ao receber os dados |
+| 2 | **Assessment gratuito** montado quando o mapeamento de processos do Alan chegar — o número em reais na mesa antes de qualquer proposta | Ao receber os dados |
 | 3 | **Protótipo do Caso B primeiro** ("se não emite NF, não vende" — dor diária, decisão repetitiva, dono claro), R$ 26 mil, payback ~4 meses no número deles | Proposta junto com o Mapa |
 | 4 | **Apresentação de dezembro com preço** — Caso B rodando + Caso C desenhado = a jornada deixa de ser abstrata | Dezembro/2026 |
 
@@ -99,7 +99,7 @@ Proposta de R$ 56,5 mil enviada, follow-up feito. Menor ΔU × N das três
   novo (não pressão), depois esfria no funil. Custo de perseguição >
   valor da conta.
 
-## 4. A arma de escala: o Mapa de Vazamento industrializado
+## 4. A arma de escala: o Assessment gratuito industrializado
 
 A peça que abre TODA porta é o Mapa — grátis, feito de fora, com um
 número em reais dentro. Agressividade coerente não é prospecção fria
@@ -132,7 +132,7 @@ Falas completas no [kit](kit-de-presenca.md). A sequência de 60 segundos:
 3. **DORA** — *"IA amplifica o que já existe. Arrumar a base não é
    atraso, é a condição do ganho."* (por que o passo atrás)
 4. **A oferta** — *"Por isso a gente começa com um mapa grátis do que
-   está vazando, e a primeira coisa paga é um protótipo que se paga em
+   está na mesa, e a primeira coisa paga é um protótipo que se paga em
    meses — com o número combinado antes."*
 
 **Proibido no ataque:** MIT 95%, "parceiro dobra o acerto", "ROI 3x a
@@ -173,5 +173,5 @@ mexer numa das três alavancas, com registro.
 
 [Base de evidências](../00-identidade/base-de-evidencias.md) ·
 [Tabela de preços](tabela-de-precos.md) · [Kit de presença](kit-de-presenca.md) ·
-[Mapa de Vazamento](mapa-de-vazamento.md) · [Alvo](../00-identidade/alvo.md) ·
+[Assessment gratuito](assessment-gratuito.md) · [Alvo](../00-identidade/alvo.md) ·
 [Registro de decisões](../05-interno/registro-de-decisoes.md) (V4a)
