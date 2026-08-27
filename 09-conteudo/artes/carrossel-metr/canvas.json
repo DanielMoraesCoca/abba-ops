@@ -1,0 +1,65 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350
+    },
+    {
+      "file": "Estudo.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1350
+    },
+    {
+      "file": "Percepcao.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1350
+    },
+    {
+      "file": "Contraponto.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1350
+    },
+    {
+      "file": "Cunha.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350
+    },
+    {
+      "file": "Consequencia.dc.html",
+      "x": 1240,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350
+    },
+    {
+      "file": "Assinatura.dc.html",
+      "x": 2480,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-margem",
+      "x": 0,
+      "y": -190,
+      "w": 560,
+      "text": "1080x1350. Todo texto vive dentro da faixa central de 1:1 — nada se perde quando o Instagram corta para quadrado na grade do perfil."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

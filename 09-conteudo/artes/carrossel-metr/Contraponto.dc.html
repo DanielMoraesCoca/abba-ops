@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #C2A35B; } a:hover { color: #D9BA72; }
+    .sheet {
+      width: 1080px; height: 1350px; box-sizing: border-box;
+      background: #1B2A4A; color: #FFFFFF;
+      display: flex; flex-direction: column;
+      padding: 200px 112px 190px;
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      position: relative; overflow: hidden;
+    }
+    .sheet.light { background: #FFFFFF; color: #1B2A4A; }
+    .eyebrow {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 21px; letter-spacing: .34em; text-transform: uppercase;
+      color: #C2A35B; margin: 0 0 46px; font-weight: 600;
+    }
+    h1 {
+      font-family: "Playfair Display", "Times New Roman", Georgia, serif;
+      font-weight: 500; margin: 0; color: #FFFFFF;
+      font-size: 96px; line-height: 1.08; letter-spacing: -.012em;
+      text-wrap: balance;
+    }
+    .light h1 { color: #1B2A4A; }
+    h1 em { font-style: normal; color: #C2A35B; }
+    .rule { width: 132px; height: 2px; background: #C2A35B; margin: 54px 0 44px; flex: none; }
+    p.body {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 38px; line-height: 1.46; color: #C3CAD8; margin: 0 0 30px;
+      max-width: 800px;
+    }
+    .light p.body { color: #5A6472; }
+    p.body b { color: #FFFFFF; font-weight: 600; }
+    .light p.body b { color: #1B2A4A; }
+    .foot {
+      margin-top: auto; display: flex; align-items: flex-end;
+      justify-content: space-between; gap: 32px;
+    }
+    .src {
+      font-size: 22px; line-height: 1.5; color: #7F8BA3; margin: 0;
+      letter-spacing: .01em; max-width: 620px;
+    }
+    .swipe {
+      font-size: 21px; letter-spacing: .26em; text-transform: uppercase;
+      color: #C2A35B; white-space: nowrap; display: flex; align-items: center; gap: 14px;
+    }
+    .pip {
+      position: absolute; top: 118px; left: 112px;
+      font-size: 21px; letter-spacing: .2em; color: #4E5C78;
+      font-variant-numeric: tabular-nums;
+    }
+    .light .pip { color: #B4BCC9; }
+  </style>
+</helmet>
+<div class="sheet">
+<span class="pip">04 / 07</span>
+
+<p class="eyebrow">ABBA &middot; O limite deste estudo</p>
+<h1>Antes que isso vire argumento contra IA: <em>n&atilde;o &eacute;.</em></h1>
+<div class="rule"></div>
+<p class="body">A amostra &eacute; pequena e o cen&aacute;rio &eacute; espec&iacute;fico. Em outro contexto, a medi&ccedil;&atilde;o d&aacute; o oposto.</p>
+<p class="body">O maior experimento j&aacute; publicado sobre o tema, com <b>4.867 desenvolvedores</b> em tr&ecirc;s empresas grandes, encontrou <b>26% mais tarefas conclu&iacute;das</b> &mdash; e os menos experientes foram os que mais ganharam.</p>
+<div class="foot"><p class="src">Cui et al., Management Science.</p><span class="swipe">arraste <svg width="34" height="14" viewBox="0 0 34 14" fill="none" aria-hidden="true"><path d="M0 7h31M25 1l6 6-6 6" stroke="#C2A35B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+</div>
+</x-dc>
+</body>
+</html>

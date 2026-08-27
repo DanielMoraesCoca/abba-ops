@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
     {
@@ -431,6 +431,40 @@
         "custo[- ]base",
         "metodologia"
       ]
+    },
+    {
+      "id": "proporcao-por-extenso",
+      "kind": "regex",
+      "pattern": "\\b(um|uma|dois|duas|tr[êe]s|quatro|cinco|seis|sete|oito|nove|dez|onze|doze|quinze|vinte)\\s+(de|em)\\s+cada\\s+(cinco|dez|vinte|cem|\\d+)\\b",
+      "flags": "gi",
+      "severity": "warn",
+      "unless": [
+        "aposentad",
+        "banid",
+        "proibid",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "Proporção escrita por extenso É estatística — 'nove de cada dez' é 90%. Todo número externo sai do cânone da base de evidências e sai COM A FONTE NA FRASE (posicionamento, regra 8). O revisor não bloqueia porque há proporção sancionada no cânone ('1 em 20 empresas', BCG) — o humano confere se este número está lá e se a fonte está dita. Origem: card publicado no Instagram em ago/2026 com 'nove de cada dez empresas' sem fonte, que passou por todos os padrões numéricos existentes.",
+      "doc": "00-identidade/base-de-evidencias.md · 00-identidade/posicionamento.md (regra 8) · 09-conteudo/estrategia-de-conteudo.md"
+    },
+    {
+      "id": "porcentagem-por-extenso-banida",
+      "kind": "regex",
+      "pattern": "(noventa\\s+e\\s+cinco|noventa|oitenta\\s+e\\s+tr[êe]s|setenta\\s+e\\s+tr[êe]s)\\s+por\\s+cento[^.]{0,80}(falh|piloto|projeto|iniciativa|treinamento|n[ãa]o\\s+gera)",
+      "flags": "gi",
+      "severity": "block",
+      "unless": [
+        "aposentad",
+        "banid",
+        "proibid",
+        "n[ãa]o\\s+usar",
+        "nota\\s+de\\s+corre[çc][ãa]o",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "Os números do índice proibido escritos por extenso burlavam as regras mit-95 e roi-magico, que só olhavam dígitos. Mesma doutrina V4a, mesma exceção de contexto de banimento.",
+      "doc": "00-identidade/base-de-evidencias.md (índice proibido)"
     }
   ]
 }
