@@ -402,6 +402,53 @@ peca("peca-05", "05 · Parceiros oficiais", "Parceiro", 5, [
 ''' + note("→", "contato@abbaservices.com.br"), False),
 ])
 
+
+# ═══════════ PEÇA 06 · O NÚMERO DESCONFORTÁVEL (abre o Ato II) ═══════════
+# Herda de: peça 03. Gancho para trás: "recusamos prometer acurácia que não
+# medimos". Gancho para frente: se nem quem usa sabe, como a diretoria saberia.
+peca("peca-06", "06 · O número desconfortável", "Prova", 6, [
+ ("PEÇA 06", '''
+<p class="label">O estudo mais desconfortável do ano</p>
+<h1>19% mais lentos.<br>E convencidos de que estavam <i>20% mais rápidos.</i></h1>
+<div class="rule"></div>
+<p class="lede">Desenvolvedores experientes usando IA, medidos por fora e depois perguntados por dentro.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">Recusamos prometer acurácia <i>que não medimos.</i></h1>
+<p class="lede">Essa é uma das nossas quatro recusas. Existe um estudo que explica por que ela não é modéstia, e sim a única postura defensável.</p>
+''', False),
+ ("O EXPERIMENTO", '''
+<p class="label">Não foi enquete</p>
+<table>
+<tr><td class="k">01</td><td><b>16 desenvolvedores experientes, 246 tarefas reais</b>, no código que eles mesmos dominavam. Metade com IA, metade sem.</td></tr>
+<tr><td class="k">02</td><td><b>O tempo foi cronometrado</b>, não perguntado. Com IA, levaram 19% mais tempo.</td></tr>
+</table>
+''' + note("·", "METR, julho de 2025. Experimento controlado."), False),
+ ("A PERCEPÇÃO", '''
+<p class="label mute">Depois da medição, a pergunta</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Cada um relatou ter ficado cerca de <i>20% mais rápido.</i></h1>
+  <div class="margnote">A distância entre o que aconteceu e o que eles sentiram passou de 40 pontos.</div>
+</div>
+''', True),
+ ("O LIMITE DESTE ESTUDO", '''
+<p class="label mute">O que este número não prova</p>
+<h1 class="xs">Isso não é argumento contra IA, e a gente faz questão <i>de dizer.</i></h1>
+<p class="lede">A amostra é pequena e o cenário é específico. O maior experimento já publicado sobre o mesmo tema, com <b>4.867 desenvolvedores</b>, encontrou <b>26% mais tarefas concluídas</b>, e os menos experientes foram os que mais ganharam.</p>
+''' + note("·", "Cui et al., Management Science."), True),
+ ("A CONCLUSÃO", '''
+<p class="label">O que os dois estudos dizem juntos</p>
+<h1 class="sm">Ninguém sabe se a ferramenta ajudou <i>sem medir de fora.</i></h1>
+<p class="lede">Um achou perda, o outro achou ganho. Nos dois casos, <b>quem estava usando não sabia qual dos dois era o seu caso.</b></p>
+''', False),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">Se nem quem está usando sabe, <i>como a diretoria saberia?</i></h1>
+''' + note("·", "Fontes: METR (jul/2025) · Cui et al., Management Science."), False),
+])
+
 # ═══════════ escrita ═══════════
 order = [a for _,_,arqs in PAGES for a in arqs]
 ren, first = {}, order[0]

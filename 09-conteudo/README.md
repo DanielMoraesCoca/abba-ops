@@ -14,6 +14,7 @@
 |---|---|---|
 | [Estratégia de conteúdo](estrategia-de-conteudo.md) | **Por que, para quem, com que ângulo** — a cunha, os cinco pilares, a doutrina de canal, o placar | Antes de qualquer coisa. Uma vez, inteiro |
 | [Motor de conteúdo](motor-de-conteudo.md) | **Como sai peça todo dia** — as duas trilhas, a semana, o ritual de 25 min, o gate de publicação, a reciclagem | Antes da primeira semana. Depois, na segunda de manhã |
+| [Linha editorial](linha-editorial.md) | **Em que ordem, e ligada a quê**: o arco em cinco atos, as três regras de continuidade, o léxico travado, o razão do que já foi dito e a ordem de marcha das próximas doze peças | Antes de produzir qualquer peça nova |
 | [Formatos](formatos.md) | **Os oito moldes** — de F1 a F8, com estrutura, arte e regras | Ao produzir ou aprovar uma peça |
 | [Banco de pautas](banco-de-pautas.md) | **60 peças que já existem dentro de casa**, ranqueadas e ligadas ao doc que as sustenta | Quando faltar assunto (não vai faltar em ~15 semanas) |
 | [Plano de 90 dias](plano-90-dias.md) | **O calendário** — semana 0, três fases, o calendário das 4 primeiras semanas, a lacuna do destino e as 6 decisões dos sócios | Agora. E toda segunda, 10 min |
@@ -48,5 +49,5 @@ setembro.
 ---
 
 [Estratégia](estrategia-de-conteudo.md) · [Motor](motor-de-conteudo.md) ·
-[Formatos](formatos.md) · [Banco de pautas](banco-de-pautas.md) ·
+[Linha editorial](linha-editorial.md) · [Formatos](formatos.md) · [Banco de pautas](banco-de-pautas.md) ·
 [Plano de 90 dias](plano-90-dias.md) · [Posts](posts/) · [Roteiros](roteiros/)

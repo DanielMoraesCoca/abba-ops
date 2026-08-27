@@ -12,6 +12,12 @@
 > Ao publicar, marcar a linha com a data. Pauta usada não volta — vira
 > reciclagem, que é outra coisa.
 >
+> **A ordem de publicação não sai daqui.** Este banco é o estoque, organizado por
+> pilar. Quem decide **em que sequência** as pautas viram peça, e com que gancho
+> cada uma se liga à anterior, é a [linha editorial](linha-editorial.md): o arco
+> em cinco atos e a ordem de marcha das próximas doze peças. Pauta escolhida fora
+> da ordem de marcha vira post avulso.
+>
 > Dono: chapéu Comercial.
 
 ---

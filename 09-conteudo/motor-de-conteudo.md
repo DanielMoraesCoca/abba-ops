@@ -139,8 +139,11 @@ abba revise 09-conteudo/posts/AAAA-MM-DD-slug.md
 Achado `block` = a peça não sai. Publicar com `--force` é uma decisão com nome,
 e vai para o [registro de decisões](../05-interno/registro-de-decisoes.md).
 
-**Checklist humano de 4 minutos** (o que a régua determinística não pega):
+**Checklist humano de 5 minutos** (o que a régua determinística não pega):
 
+- [ ] **De qual peça esta herda?** Tem gancho para trás com a palavra exata já
+      usada, e gancho para frente? Contradiz alguma linha do razão de
+      continuidade? ([linha editorial](linha-editorial.md) §5 e §8)
 - [ ] **Mira uma das quatro cabeças?** Se não mira nenhuma, é decorativa — não sai
 - [ ] **Todo número tem a fonte na frase** e está no cânone da [base de evidências](../00-identidade/base-de-evidencias.md)?
 - [ ] **A primeira frase diz o que não dá para fazer de dentro**, ou pelo menos não disputa a cadeira do diretor de IA? ([posicionamento](../00-identidade/posicionamento.md) regra 1)

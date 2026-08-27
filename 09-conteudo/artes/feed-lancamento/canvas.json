@@ -19,6 +19,10 @@
     {
       "id": "peca-05",
       "name": "05 · Parceiros oficiais"
+    },
+    {
+      "id": "peca-06",
+      "name": "06 · O número desconfortável"
     }
   ],
   "artboards": [
@@ -293,6 +297,62 @@
       "w": 1080,
       "h": 1350,
       "page": "peca-05"
+    },
+    {
+      "file": "Prova01.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
+    },
+    {
+      "file": "Prova02.dc.html",
+      "x": 1260,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
+    },
+    {
+      "file": "Prova03.dc.html",
+      "x": 2520,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
+    },
+    {
+      "file": "Prova04.dc.html",
+      "x": 3780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
+    },
+    {
+      "file": "Prova05.dc.html",
+      "x": 5040,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
+    },
+    {
+      "file": "Prova06.dc.html",
+      "x": 0,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
+    },
+    {
+      "file": "Prova07.dc.html",
+      "x": 1260,
+      "y": 1620,
+      "w": 1080,
+      "h": 1350,
+      "page": "peca-06"
     }
   ],
   "annotations": [
