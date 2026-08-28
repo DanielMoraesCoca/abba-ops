@@ -166,7 +166,7 @@ Ou seja: taxtech acha dinheiro mas não corrige processo; SaaS corrige função 
 - [ ] Preço na proposta v2 (fixo do diagnóstico + faixas de êxito por família, escalonado pela dificuldade).
 - [ ] Avaliar parceiro taxtech (white-label ou indicação com fee) para a tese tributária.
 - [x] ~~Conselheiro: brief mensal ganha seção "R$ verificado no período"~~ — **ENTREGUE 2026-08-01**: a seção soma apenas métricas monetárias (dias e horas aparecem na lista, fora do total, porque somar R$ com dias produz um número que o CFO rasga na primeira leitura).
-- [ ] Prontidão IBS/CBS (W2) como oferta-satélite ou capítulo do diagnóstico — decidir escopo.
+- [x] ~~Prontidão IBS/CBS (W2) como oferta-satélite ou capítulo do diagnóstico — decidir escopo.~~ — **ESCOPO PROPOSTO 2026-08-28** em [`plano-camada-de-caixa-2027.md`](plano-camada-de-caixa-2027.md): linha de produto própria (não capítulo do diagnóstico), ancorada na **apuração assistida** e no **RAD** — não no split payment, adiado sem data em 12/08/2026. Engenharia em [`blueprint-crews-camada-de-caixa.md`](../06-ferramentas/blueprint-crews-camada-de-caixa.md). Segue pendente de decisão de sócios (V4b).
 - [ ] Roteiro do capítulo não operacional (§1b): checklist de coleta (extratos OFX 24m, CCBs, contratos de câmbio, razão de despesas financeiras, lista de processos CNJ) + calculadoras CET-vs-BCB e spread-vs-PTAX.
 - [ ] Validar as fronteiras regulatórias do §1b com advogado (junto da P4): texto padrão "diagnosticamos e simulamos; a execução é do cliente" em proposta e contrato.
 
