@@ -80,3 +80,61 @@ Ficaram abertos, do P1: 3 (receita órfã), 8 (share-link), 9 (sinais de nível 
 ## Como usar este registro
 
 Um item sobe de P2 para P1 quando machucar um engajamento real; um P1 vira onda de trabalho quando o custo de fechá-lo couber numa sessão. Itens que mexem em ranking ou em prompt exigem re-validação com chave real (`npm run eval` + runbook). O dossiê técnico traz o file:line de cada item daqui.
+
+---
+
+## Onda de 2026-08-28 — as quatro respostas de sócio
+
+Daniel ratificou as quatro recomendações de uma vez. Todas entregues sob a mesma regra das ondas anteriores: **nenhuma mudança silenciosa na matemática do ranking**, e por isso nenhuma delas dependeu da chave real. Duas *criam* instrumento para o dia em que ela chegar.
+
+### Fecha o P1-10 (enums movem 12x, dinheiro move 1,75x) — decidido: medir, não recalibrar
+
+Não foi canonizado como doutrina nem recalibrado. Canonizar seria transformar em princípio um número que ninguém calibrou; recalibrar agora seria mexer no ranking sem nenhuma evidência e sem forma de saber se melhorou.
+
+Em vez disso: `abba rank whatif <eng> --prize` imprime as duas ordens e o **breakeven** — quanto o dinheiro teria que pesar mais antes de qualquer construção se mover, e antes de o #1 mudar. No engajamento de demonstração dá 2,05x e 2,9x.
+
+- Breakeven **alto** = o amortecimento não é o que decide aquele plano. Não há nada a corrigir.
+- Breakeven **baixo** = é, e aí a calibração merece decisão explícita de sócio.
+
+Critério de longo prazo, registrado no `abba pending`: **quantas vezes a confissão do prêmio enterrado apontou uma construção que o consultor acabou promovendo na mão.** Promover na mão repetidamente É a evidência de que o amortecimento está forte demais.
+
+**Argumento que ficou registrado a favor da calibração atual:** uma consultoria não morre por deixar dinheiro na mesa, morre por recomendar algo que o cliente não conseguiu executar. Priorizar viabilidade sobre tamanho é convicção defensável. O que não dava para sustentar era a assimetria na intuição.
+
+### Fecha o P1-8 (share-link não é anonimizado) — decidido: peça fictícia, não versão anonimizada
+
+**A versão anonimizada não será construída, e essa é a decisão.** Anonimizar um relatório real é promessa impossível de cumprir: setor + faixa de faturamento + vazamento principal reidentifica uma empresa de médio porte para qualquer um do mercado, e o mercado brasileiro de médio porte é pequeno. Um teaser que vaza destrói a única coisa que uma consultoria vende.
+
+No lugar: `abba demo` cria a **Nortex Componentes**, empresa fictícia com 25 dimensões, 6 vazamentos quantificados, 6 construções, matriz stop/start/keep e duas oportunidades de receita, renderizada pelos **geradores reais**. Nada no módulo de demonstração escreve documento: escreve linhas, e `abba report` faz o resto. Uma peça montada por renderizador próprio derivaria do produto e acabaria mostrando a um prospect algo que a ferramenta não faz mais.
+
+Regra de uso que continua valendo: **o share-link vai só para o próprio cliente.** É divulgação de nível cliente, não amostra.
+
+Risco que quase passou: a calibração de outcome é **firm-wide por design**, então um resultado inventado na demonstração viraria fator aplicado ao plano de um cliente real. O engajamento é marcado e as duas trilhas do ledger o ignoram.
+
+### Fecha parte do P1-3 (receita órfã) — a decisão está escrita, ligar espera a chave
+
+A suspeita de que faltava encanamento estava errada: o bloco de prioridades por setor **existe dos dois lados**. O que faltava era decidir quais tipos de upside são vivos em cada setor.
+
+Escrito como proposta para **Daniel e Pedro ratificarem**: cinco por setor com o argumento de cada uma, mais o que ficou deliberadamente de fora e por quê. Ler com `abba archetypes --revenue`.
+
+**A pergunta útil na ratificação não é "está certo?".** É: (a) qual dos excluídos deveria voltar, e (b) qual tradução para o setor está errada. Vários rótulos foram escritos pensando em software (`expansion_upsell`, `self_serve`, `speed_to_value`) e a proposta declara como cada indústria os lê.
+
+Duas travas até lá: enquanto não ratificada, toda leitura devolve vazio (nenhum prompt muda nem por engano), e uma varredura de código pega o dia em que alguém alimentar o bloco. **Mesmo ratificada ela espera:** ligar antes do primeiro run real destrói a única linha de base capaz de dizer se o direcionamento ajudou.
+
+### Complemento do congelamento de ranking
+
+Congelar resolveu o problema que importava e criou um silêncio: a firma continua medindo, e nada dizia quando esse aprendizado passou a discordar de um plano já entregue. O relatório do consultor agora traz **"What we would say today"**, nomeando as construções e as posições que teriam hoje.
+
+É a primeira frase da conversa de follow-up, e é **só do consultor**: nenhum one-pager, deck ou anexo recebe uma palavra. A ordem entregue não se move.
+
+### Dois defeitos client-facing que só apareceram porque alguém leu um artefato inteiro
+
+1. O one-pager imprimia **"1 are not visible to your leadership today"**.
+2. O anexo visual é PT-BR de ponta a ponta **exceto** que duas páginas imprimiam o título da dimensão em inglês: *"The Knowledge Decay Rate · Power Structure & Politics"* sob um cabeçalho em português, e uma expressão em inglês em cada célula do heatmap.
+
+Ambos corrigidos, o segundo com cobertura travada por teste para que uma dimensão futura não chegue ao cliente em inglês por omissão.
+
+**Lição de processo:** nenhum dos dois era invisível. Ninguém tinha lido um anexo completo de ponta a ponta até a peça de demonstração forçar essa leitura. Vale repetir a leitura integral dos três artefatos depois do primeiro run com chave real.
+
+### Limitação declarada e não maquiada
+
+Os valores da peça de demonstração estão **em dólar**, porque a ferramenta armazena e imprime dólar. Para um prospect brasileiro isso é fraqueza real. Corrigir é funcionalidade de moeda, não truque de demonstração, e por isso está registrado aqui em vez de escondido no fixture. **Novo item P2.**
