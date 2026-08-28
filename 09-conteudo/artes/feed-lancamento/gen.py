@@ -772,6 +772,57 @@ peca("peca-13", "13 · Bloqueamos a nossa própria trapaça", "Cheat", 13, [
 ''' + note("→", "contato@abbaservices.com.br"), False),
 ])
 
+
+# ═══════════ PEÇA 14 · O CONSELHEIRO DE IA (fecha o Ato III) ═══════════
+# Herda de 13. Trás: "Quem mede o seu fornecedor de IA?" Frente: e quem já tem
+# IA rodando? Sem curva de tenure, sem placar, sem preço, sem as 5 camadas.
+peca("peca-14", "14 · O Conselheiro de IA", "Consel", 14, [
+ ("PEÇA 14", '''
+<p class="label">A cadeira que quase ninguém tem</p>
+<h1>Todo fornecedor de IA tem um vendedor. A sua mesa merece <i>alguém do seu lado.</i></h1>
+<div class="rule"></div>
+<p class="lede">Quando a fatura chega, quando a proposta chega, quando o contrato vence.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">Quem mede <i>o seu fornecedor de IA?</i></h1>
+<p class="lede">A gente fechou a peça anterior com essa pergunta. Ela tem um nome, e é a cadeira que está faltando na maioria das diretorias do médio porte.</p>
+''', False),
+ ("O MERCADO", '''
+<p class="label">O cargo que mais cresce</p>
+<table>
+<tr><td class="k">01</td><td>O executivo de IA passou de <b>26% das organizações em 2025 para 76% em 2026</b>. Virou padrão.</td></tr>
+<tr><td class="k">02</td><td>E no médio porte ele nasce <b>fracionário</b>: a Gartner projeta mais de 30% das médias empresas com executivo de IA nesse formato até 2027.</td></tr>
+</table>
+''' + note("·", "Gartner e levantamentos setoriais."), False),
+ ("O PROBLEMA DE CONTRATAR", '''
+<p class="label mute">Por que fracionário, e não contratado</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">As pesquisas apontam que 98% das empresas brasileiras <i>não acham</i> profissional de IA qualificado.</h1>
+  <div class="margnote">E quem acha costuma ver a pessoa sair em cerca de 18 meses, levando o contexto inteiro na cabeça.</div>
+</div>
+''', True),
+ ("O QUE A CADEIRA ENTREGA", '''
+<p class="label">Quatro entregas nomeadas</p>
+<table>
+<tr><td class="k">01</td><td><b>Presença no conselho.</b> Resultados contra os objetivos declarados, no máximo três recomendações priorizadas, e as decisões registradas.</td></tr>
+<tr><td class="k">02</td><td><b>Arbitragem de fornecedores.</b> Análise independente de qualquer proposta de IA que chegar, por escrito: isso é real, é para vocês, e o preço é justo?</td></tr>
+<tr><td class="k">03</td><td><b>Roadmap vivo.</b> O plano deixa de ser documento e vira instrumento revisado a cada ciclo.</td></tr>
+<tr><td class="k">04</td><td><b>Governança e LGPD de IA.</b> Vigilância contínua: uso novo, risco novo, adequação.</td></tr>
+</table>
+''', False),
+ ("O QUE ELA NÃO É", '''
+<p class="label mute">Quatro recusas, para não haver mal-entendido</p>
+<h1 class="xs">Não é banco de horas. Não é suporte. Não é parecer jurídico. E não é <i>terceirizar a decisão.</i></h1>
+<p class="lede">É senioridade recorrente com pauta própria. A gente recomenda com convicção e assina a recomendação. <b>Quem decide é quem responde pela empresa.</b></p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Se você já tem IA rodando</p>
+<h1 class="sm">A pergunta não é se você precisa de consultoria. É quem senta <i>do seu lado</i> quando o fornecedor apresenta a fatura.</h1>
+''' + note("→", "contato@abbaservices.com.br"), False),
+])
+
 # ═══════════ escrita ═══════════
 order = [a for _,_,arqs in PAGES for a in arqs]
 ren, first = {}, order[0]

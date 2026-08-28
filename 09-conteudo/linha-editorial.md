@@ -182,13 +182,27 @@ mudou"*. **O arco morde o próprio rabo, de propósito.**
 | **12** | **Apagamos dado e emitimos certificado disso** | 11 | *"o que impede um número inventado de sair da sua empresa?"* | [24](banco-de-pautas.md) |
 | **13** | **Bloqueamos em código a chance de melhorar a própria nota** | 12 | *"registro que vocês veem inteiro"* (peça 01) | [23](banco-de-pautas.md) |
 
-### Ato IV · E tem data (peças 14 a 16)
+| **14** | **O Conselheiro de IA** (fecha o Ato III) | 13 | *"Quem mede o seu fornecedor de IA?"* | E quem já tem IA rodando, e não sabe por onde dirigir? |
+
+**A peça 14 é a única do feed que fala com quem já tem IA rodando.** Todo o resto
+do arco conversa com quem ainda não começou. Ela é a porta lateral do
+[Conselheiro](../03-comercial/conselheiro-de-ia.md), e o público dela é mais
+qualificado: já tem orçamento aprovado e já se decepcionou com alguém.
+
+**O que ela não pode dizer, e por quê:** a curva de tenure (gateada, e a régua
+bloqueia o termo) · qualquer placar de acerto (exige massa de decisões medidas,
+gatilho de 10+ clientes) · as cinco camadas de presença (só a camada zero é
+vendável hoje) · preço (o deck do serviço é sem preço, por decisão V3r). A
+memória que melhora a cada ciclo entra **como visão, nunca como resultado**,
+enquanto o cofre estiver vazio ([ecossistema](../00-identidade/ecossistema.md)).
+
+### Ato IV · E tem data (peças 15 a 17)
 
 | # | Peça | Herda de | Pauta |
 |---|---|---|---|
-| **14** | **IA-sombra: seu time já usa, o jurídico não sabe quais** | 13 | [45](banco-de-pautas.md) |
-| **15** | **O calendário de obrigações com data** | 14 | [43](banco-de-pautas.md) |
-| **16** | **PL 2338 e ISO 42001 em português** | 15 | [44](banco-de-pautas.md) |
+| **15** | **IA-sombra: seu time já usa, o jurídico não sabe quais** | 14 | [45](banco-de-pautas.md) |
+| **16** | **O calendário de obrigações com data** | 15 | [43](banco-de-pautas.md) |
+| **17** | **PL 2338 e ISO 42001 em português** | 16 | [44](banco-de-pautas.md) |
 
 **Cadência:** uma peça por dia desde 28/08. Doze peças cobrem doze dias, e o Ato IV desemboca em novembro, que é quando o
 [plano de 90 dias](plano-90-dias.md) prevê o conteúdo alimentando o funil sozinho.

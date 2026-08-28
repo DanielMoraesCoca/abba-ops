@@ -276,3 +276,26 @@ Isso tem um custo, e ele é o ponto. Deixa os nossos erros registrados para semp
 Quem vende medição se mede primeiro. Não dá para cobrar de um cliente uma métrica combinada antes e, do nosso lado, ajustar o próprio placar depois do jogo.
 
 Quem mede o seu fornecedor de IA?
+
+## Peça 14 · O Conselheiro de IA
+
+Todo fornecedor de IA tem um vendedor. A sua mesa merece alguém do seu lado quando a fatura chega.
+
+O executivo de IA passou de 26% das organizações em 2025 para 76% em 2026. Virou padrão. Mas no médio porte ele nasce fracionário, e a Gartner projeta mais de 30% das médias empresas nesse formato até 2027.
+
+O motivo é prático. As pesquisas de mercado apontam que 98% das empresas brasileiras não encontram profissional de IA qualificado. E quem encontra costuma ver a pessoa sair em cerca de 18 meses, levando o contexto inteiro na cabeça.
+
+O Conselheiro de IA é essa cadeira, ocupada em regime fracionário. São quatro entregas nomeadas:
+
+Presença no conselho: resultados contra os objetivos declarados, no máximo três recomendações priorizadas, e as decisões registradas.
+Arbitragem de fornecedores: análise independente de qualquer proposta de IA que chegar, por escrito. Isso é real, é para vocês, e o preço é justo?
+Roadmap vivo: o plano deixa de ser documento e vira instrumento revisado a cada ciclo.
+Governança e LGPD de IA: vigilância contínua sobre uso novo, risco novo e adequação.
+
+E quatro recusas, para não haver mal-entendido. Não é banco de horas. Não é suporte técnico. Não é parecer jurídico nem representação perante a ANPD. E não é terceirizar a decisão: a gente recomenda com convicção e assina a recomendação, mas quem decide é quem responde pela empresa.
+
+Se você já tem IA rodando, comprada de terceiros ou desenvolvida dentro de casa, a pergunta não é se você precisa de consultoria.
+
+É quem senta do seu lado quando o fornecedor apresenta a fatura.
+
+Fontes: Gartner e levantamentos setoriais.
