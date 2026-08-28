@@ -189,7 +189,7 @@ Registrar no [registro de decisões](../05-interno/registro-de-decisoes.md).
 | # | Decisão | Recomendação | Prazo |
 |---|---|---|---|
 | 1 | **Quem é o rosto** — um sócio, os dois, ou alternando | **Um sócio como voz principal.** Duas vozes em canal novo diluem o reconhecimento; o segundo entra na Fase 2 comentando e depois publicando | 31/08 |
-| 2 | **Cadência: 4 ou 7 peças/semana** | **4/semana com comentário diário.** Subir para 7 só depois de 6 semanas sem furo | 31/08 |
+| 2 | ~~Cadência: 4 ou 7 peças/semana~~ **RESOLVIDA em 28/08: diária.** O estoque passa a ser o gargalo, e a regra nova é nunca ficar abaixo de 3 peças prontas | Decidido pelo sócio | ✅ 28/08 |
 | 3 | **Três candidatos ao cânone** da [base de evidências](../00-identidade/base-de-evidencias.md) — hoje sustentam decisões internas mas **não podem entrar em post** (ver abaixo) | Aprovar os três, com o nível de confiança anotado | 15/09 |
 | 4 | **O destino do tráfego** (§4) | Página única | 30/09 |
 | 5 | **Instagram: perfil da empresa ou do sócio** | **Da empresa**, com o sócio aparecendo. No LinkedIn é o oposto — a assimetria é real e vem de como cada plataforma distribui | 31/08 |

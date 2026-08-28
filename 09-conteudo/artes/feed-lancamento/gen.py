@@ -501,6 +501,277 @@ peca("peca-07", "07 · O número desconfortável", "Prova", 7, [
 ''' + note("→", "Fontes: METR (jul/2025) · Cui et al., Management Science.<br>contato@abbaservices.com.br"), False),
 ])
 
+
+# ═══════════ PEÇA 08 · A CAUSA Nº 1 DO FRACASSO (RAND) ═══════════
+# Herda de 07. Trás: "ninguém sabe se a ferramenta ajudou sem medir de fora".
+# Frente: e se o erro começa antes, na largada?
+peca("peca-08", "08 · A causa nº 1 do fracasso", "Rand", 8, [
+ ("PEÇA 08", '''
+<p class="label">A pesquisa mais séria sobre o assunto</p>
+<h1>Mais de 80% dos projetos de IA <i>falham.</i></h1>
+<div class="rule"></div>
+<p class="lede">O dobro da taxa dos projetos de TI comuns. E a causa número um não é técnica.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">Ninguém sabe se a ferramenta ajudou <i>sem medir de fora.</i></h1>
+<p class="lede">Esse era o problema de não medir. Existe um problema anterior, e ele acontece antes de qualquer ferramenta entrar na empresa.</p>
+''', False),
+ ("A PESQUISA", '''
+<p class="label">Quem mediu, e como</p>
+<table>
+<tr><td class="k">01</td><td>A RAND entrevistou <b>65 engenheiros de machine learning sêniores</b> sobre projetos que deram errado.</td></tr>
+<tr><td class="k">02</td><td>O resultado: <b>mais de 80% dos projetos de IA falham</b>, o dobro da taxa de projetos de TI comuns.</td></tr>
+</table>
+''' + note("·", "RAND, The Root Causes of Failure for AI Projects, 2024."), False),
+ ("A CAUSA", '''
+<p class="label mute">A causa número um</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Começar sem combinar <i>o que seria dar certo.</i></h1>
+  <div class="margnote">Não é modelo ruim. Não é dado ruim. É desconexão entre o que o projeto buscava e o que a organização precisava.</div>
+</div>
+''', True),
+ ("O QUE ISSO SIGNIFICA", '''
+<p class="label">A leitura</p>
+<h1 class="xs">O fracasso é de enquadramento, <i>não de tecnologia.</i></h1>
+<p class="lede">Um projeto que começa sem métrica de sucesso acordada <b>não pode dar certo</b>, porque não existe definição do que seria certo. Ele só pode terminar, e alguém decide depois se gostou.</p>
+''', False),
+ ("O QUE A GENTE FAZ", '''
+<p class="label mute">A consequência, aqui dentro</p>
+<h1 class="sm">Nenhuma decisão entra sem a métrica <i>combinada antes.</i></h1>
+<p class="lede">Registrar a decisão com o número que ela precisa mover, antes de começar, não é burocracia em cima do serviço. <b>É a intervenção que mais move o resultado.</b></p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">E se a base da empresa <i>já estiver bagunçada?</i></h1>
+''' + note("→", "Fonte: RAND (2024). contato@abbaservices.com.br"), False),
+])
+
+# ═══════════ PEÇA 09 · A IA AMPLIFICA O QUE JÁ EXISTE (DORA) ═══════════
+peca("peca-09", "09 · A IA amplifica o que já existe", "Dora", 9, [
+ ("PEÇA 09", '''
+<p class="label">O relatório que ninguém quer ouvir</p>
+<h1>A IA não conserta um time. Ela <i>amplifica</i> o que já está lá.</h1>
+<div class="rule"></div>
+<p class="lede">E amplificar não é sempre uma boa notícia.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">Começar sem combinar <i>o que seria dar certo.</i></h1>
+<p class="lede">Essa é a causa número um. Tem um segundo jeito de errar, e ele aparece mesmo em quem combinou tudo direito.</p>
+''', False),
+ ("O QUE FOI MEDIDO", '''
+<p class="label">DORA 2025, cerca de 5.000 respondentes</p>
+<table>
+<tr><td class="k">01</td><td>Adoção de IA correlaciona <b>positivamente com velocidade</b>. Os times entregam mais rápido.</td></tr>
+<tr><td class="k">02</td><td>E correlaciona <b>negativamente com estabilidade</b>. Mais falhas, mais retrabalho.</td></tr>
+</table>
+''' + note("·", "DORA 2025, Google."), False),
+ ("A LEITURA", '''
+<p class="label mute">O que isso quer dizer na prática</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Time com a base arrumada acelera. Time com processo bagunçado <i>piora mais rápido.</i></h1>
+  <div class="margnote">A ferramenta é a mesma. O que muda é o que ela encontra quando chega.</div>
+</div>
+''', True),
+ ("A CONSEQUÊNCIA", '''
+<p class="label">O que a gente faz com isso</p>
+<h1 class="xs">Às vezes a primeira entrega é <i>um passo atrás.</i></h1>
+<p class="lede">Cliente com dado duplicado e processo sem dono não recebe da gente um agente em cima do caos. Recebe <b>o diagnóstico disso, com número</b>, e a fundação como primeira entrega.</p>
+''', False),
+ ("A FRASE", '''
+<p class="label mute">Dito de outro jeito</p>
+<h1 class="sm">Arrumar a base não é atraso. <i>É a condição do ganho.</i></h1>
+<p class="lede">Automatizar um cadastro errado não corrige o cadastro. <b>Só faz o erro chegar mais cedo.</b></p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">E quem já arrumou a base <i>e já mede?</i></h1>
+''' + note("→", "Fonte: DORA 2025, Google. contato@abbaservices.com.br"), False),
+])
+
+# ═══════════ PEÇA 10 · QUASE TODO MUNDO DIZ QUE MEDE (fecha o Ato II) ═══════════
+peca("peca-10", "10 · Quase todo mundo diz que mede", "Medir", 10, [
+ ("PEÇA 10", '''
+<p class="label">A última armadilha</p>
+<h1>72% dos líderes dizem acompanhar <i>o retorno de IA.</i></h1>
+<div class="rule"></div>
+<p class="lede">Metade deles mede qualidade de dados.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">Arrumar a base não é atraso. <i>É a condição do ganho.</i></h1>
+<p class="lede">Suponha que a base esteja arrumada e a métrica combinada. Ainda sobra uma pergunta: medir o quê?</p>
+''', False),
+ ("A PESQUISA", '''
+<p class="label">Wharton, terceiro ano do levantamento</p>
+<table>
+<tr><td class="k">01</td><td><b>72%</b> dos líderes dizem que acompanham o retorno de IA generativa.</td></tr>
+<tr><td class="k">02</td><td><b>Metade</b> usa "qualidade de dados" como a métrica de retorno.</td></tr>
+<tr><td class="k">03</td><td>E <b>53%</b> reportam retorno de apenas 1 a 5%.</td></tr>
+</table>
+''' + note("·", "Wharton GBK, outubro de 2025."), False),
+ ("O PROBLEMA", '''
+<p class="label mute">Por que isso importa</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Qualidade de dados não é retorno. <i>É pré-requisito.</i></h1>
+  <div class="margnote">Medir o pré-requisito e chamar de resultado é como pesar os ingredientes e dizer que o bolo ficou bom.</div>
+</div>
+''', True),
+ ("O QUE É MEDIR", '''
+<p class="label">Medição de verdade tem quatro partes</p>
+<div class="steps">
+  <div class="step"><span class="n">1</span><div><h3>Combinada antes</h3><p>Não escolhida depois, entre as que ficaram boas.</p></div></div>
+  <div class="step"><span class="n">2</span><div><h3>Apurada do mesmo jeito nas duas pontas</h3><p>Mesma fonte, mesma regra, mesma periodicidade.</p></div></div>
+  <div class="step"><span class="n">3</span><div><h3>Ligada ao resultado da empresa</h3><p>E não a um indicador de uso da ferramenta.</p></div></div>
+  <div class="step"><span class="n">4</span><div><h3>Assinada por alguém que responde por ela</h3><p>Com nome, do lado do cliente.</p></div></div>
+</div>
+''', False),
+ ("O FECHO DO ARCO", '''
+<p class="label mute">Onde isso nos deixa</p>
+<h1 class="xs">Todo mundo diz que mede. Quase ninguém mede <i>de fora.</i></h1>
+<p class="lede">É por isso que a gente existe, e é por isso que a nossa primeira frase é a que é: <b>instalamos capacidade de IA, e provamos, de fora, o que ela mudou.</b></p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">O próximo passo</p>
+<h1 class="sm">Qual número a sua empresa acompanha hoje, <i>e ele é resultado ou pré-requisito?</i></h1>
+''' + note("→", "Fonte: Wharton GBK (out/2025). contato@abbaservices.com.br"), False),
+])
+
+
+# ═══════════ PEÇA 11 · A RÉGUA (abre o Ato III) ═══════════
+peca("peca-11", "11 · A régua que nos reprova", "Regua", 11, [
+ ("PEÇA 11", '''
+<p class="label">O Ato III começa aqui</p>
+<h1>A ferramenta cujo trabalho é <i>reprovar a gente.</i></h1>
+<div class="rule"></div>
+<p class="lede">Antes de qualquer material nosso sair, ele passa por ela. Inclusive este post.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">Todo mundo diz que mede. Quase ninguém mede <i>de fora.</i></h1>
+<p class="lede">Falar isso é fácil. Nas próximas peças a gente mostra a máquina por dentro, começando pela trava que a gente aponta para nós mesmos.</p>
+''', False),
+ ("O QUE ELA BLOQUEIA", '''
+<p class="label">Quatro coisas nunca passam</p>
+<table>
+<tr><td class="k">01</td><td>Número que <b>não está na nossa base de evidências</b>.</td></tr>
+<tr><td class="k">02</td><td>Preço diferente da tabela vigente.</td></tr>
+<tr><td class="k">03</td><td>Promessa que a nossa infraestrutura ainda não sustenta.</td></tr>
+<tr><td class="k">04</td><td>Qualquer frase que sugira <b>IA decidindo sozinha</b>, sem assinatura humana.</td></tr>
+</table>
+''', False),
+ ("O BLOQUEIO", '''
+<p class="label mute">O que acontece quando ela reprova</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Bloqueio significa que o material <i>não sai.</i></h1>
+  <div class="margnote">Existe uma opção de forçar. Usar ela é uma decisão com nome, e o nome vai para o registro.</div>
+</div>
+''', True),
+ ("O QUE ELA NÃO FAZ", '''
+<p class="label">O limite dela</p>
+<h1 class="xs">Ela não diz se o texto <i>é bom.</i></h1>
+<p class="lede">É determinística de propósito: mesma entrada, mesma saída, custo zero por execução. <b>Não é um modelo opinando sobre o texto</b>, é uma trava conferindo fatos. Julgar qualidade continua sendo trabalho de gente.</p>
+''', False),
+ ("POR QUE EXISTE", '''
+<p class="label mute">O motivo</p>
+<h1 class="sm">A coisa mais cara de perder numa consultoria não é um contrato. É <i>credibilidade técnica.</i></h1>
+<p class="lede">Contrato se recupera. Credibilidade não se recompra. E ela não sobrevive a <b>"a gente confere na hora de mandar"</b>.</p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">O que impede, hoje, um número inventado de sair da sua empresa <i>dentro de uma proposta assinada?</i></h1>
+''' + note("→", "contato@abbaservices.com.br"), False),
+])
+
+# ═══════════ PEÇA 12 · A DELEÇÃO COM CERTIFICADO ═══════════
+peca("peca-12", "12 · Apagar com comprovante", "Forget", 12, [
+ ("PEÇA 12", '''
+<p class="label">Ato III · a máquina por dentro</p>
+<h1>Quando um cliente manda apagar, a gente apaga. <i>E comprova.</i></h1>
+<div class="rule"></div>
+<p class="lede">O comando emite um certificado de deleção. Não é promessa por e-mail.</p>
+''', False),
+ ("A LIGAÇÃO", '''
+<p class="label mute">De onde vem esta peça</p>
+<h1 class="sm">O que impede um número inventado <i>de sair da sua empresa?</i></h1>
+<p class="lede">Aquilo era uma trava na saída. Esta é uma trava na deleção, e ela existe pelo mesmo motivo: promessa sem mecanismo é só promessa.</p>
+''', False),
+ ("O QUE O COMANDO FAZ", '''
+<p class="label">Três coisas, numa transação só</p>
+<table>
+<tr><td class="k">01</td><td><b>Purga os arquivos em disco</b>, incluindo os relatórios já gerados.</td></tr>
+<tr><td class="k">02</td><td><b>Apaga os registros em cascata</b>, camada por camada.</td></tr>
+<tr><td class="k">03</td><td><b>Grava uma lápide</b>: o registro de que a deleção aconteceu, que sobrevive ao que foi apagado.</td></tr>
+</table>
+''', False),
+ ("O CERTIFICADO", '''
+<p class="label mute">O que fica na mão do cliente</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Quantos registros, quantos arquivos, quem pediu, <i>e quando.</i></h1>
+  <div class="margnote">É o documento que o DPO leva para uma fiscalização. Sem ele, "a gente apagou" é palavra contra palavra.</div>
+</div>
+''', True),
+ ("A REGRA", '''
+<p class="label">O inegociável</p>
+<h1 class="xs">Nada se deleta <i>fora desse caminho.</i></h1>
+<p class="lede">Não existe apagar na mão, não existe apagar no banco, não existe apagar sem deixar o comprovante. <b>Verdade que some sem registro não era verdade.</b></p>
+''', False),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">Se o seu jurídico pedisse hoje a prova de que um dado foi apagado, <i>ela existiria?</i></h1>
+''' + note("→", "contato@abbaservices.com.br"), False),
+])
+
+# ═══════════ PEÇA 13 · O ANTI-CHEAT ═══════════
+peca("peca-13", "13 · Bloqueamos a nossa própria trapaça", "Cheat", 13, [
+ ("PEÇA 13", '''
+<p class="label">Ato III · a máquina por dentro</p>
+<h1>A gente bloqueou, em código, a chance de <i>melhorar a própria nota.</i></h1>
+<div class="rule"></div>
+<p class="lede">Duas travas, e as duas existem contra nós mesmos.</p>
+''', False),
+ ("COMO FUNCIONA", '''
+<p class="label">O desenho</p>
+<h1 class="xs">Quem recomenda declara quanto acredita, <i>antes.</i></h1>
+<p class="lede">Toda recomendação nossa carrega uma probabilidade declarada, com nome de quem declarou. Depois, o resultado é medido. E existe um placar comparando as duas coisas.</p>
+''', False),
+ ("A PRIMEIRA TRAVA", '''
+<p class="label">Trava 1</p>
+<table>
+<tr><td class="k">01</td><td><b>Declarar a probabilidade depois de medir o resultado é bloqueado.</b> O sistema recusa, com erro nomeado.</td></tr>
+<tr><td class="k">02</td><td>Sem isso, bastaria esperar o número aparecer para "prever" com precisão perfeita.</td></tr>
+</table>
+''', False),
+ ("A SEGUNDA TRAVA", '''
+<p class="label mute">Trava 2, a mais importante</p>
+<div class="marg" style="margin-top:auto;margin-bottom:auto">
+  <h1 class="sm">Probabilidade declarada <i>é imutável.</i></h1>
+  <div class="margnote">Declarar 60%, ver os números melhorarem e trocar para 95% limparia o placar sem deixar vestígio. O código não deixa.</div>
+</div>
+''', True),
+ ("O QUE ISSO CUSTA", '''
+<p class="label">Sendo honesto sobre o preço</p>
+<h1 class="xs">Isso deixa <i>os nossos erros</i> registrados para sempre.</h1>
+<p class="lede">Uma recomendação em que a gente apostou alto e deu errado fica lá, com nome e data. <b>É desconfortável de propósito:</b> um placar que se pode editar não é um placar.</p>
+''', False),
+ ("A REGRA GERAL", '''
+<p class="label mute">O princípio por trás das duas</p>
+<h1 class="sm">Quem vende medição <i>se mede primeiro.</i></h1>
+<p class="lede">Não dá para cobrar de um cliente uma métrica combinada antes e, do nosso lado, ajustar o próprio placar depois do jogo.</p>
+''', True),
+ ("O PRÓXIMO PASSO", '''
+<img class="mark" src="abba-logo.png" alt="ABBA">
+<p class="label" style="margin-top:34px">Fica a pergunta</p>
+<h1 class="sm">Quem mede <i>o seu fornecedor de IA?</i></h1>
+''' + note("→", "contato@abbaservices.com.br"), False),
+])
+
 # ═══════════ escrita ═══════════
 order = [a for _,_,arqs in PAGES for a in arqs]
 ren, first = {}, order[0]

@@ -75,7 +75,7 @@ Sete passos, da primeira conversa até a cadeira de estrategista na sua diretori
 
 A regra que organiza todos eles: cada etapa entrega algo inteiro sozinha e produz o insumo da próxima. Você pode parar em qualquer uma e ainda ter valor na mão.
 
-1 · A primeira conversa. 45 minutos e um assessment gratuito da sua empresa, feita na hora com informação pública, com uma estimativa em reais do que pode estar vazando.
+1 · A primeira conversa. 45 minutos, e um assessment gratuito da sua empresa feito só com informação pública: nota de maturidade em IA, oportunidades priorizadas e o ledger de todas as fontes.
 2 · Avaliação de Prontidão. O mergulho profundo, do conselho à linha de frente. Sai um portfólio ranqueado e quantificado, não uma lista de ideias.
 3 · Protótipo. O caso mais promissor construído com os seus dados reais, e a diretoria decide GO ou NO-GO com números na mesa.
 4 · Construção e implantação. Engenharia sob medida, em produção, com aprovação humana em tudo que é crítico.
@@ -165,3 +165,114 @@ Muda pouco em relação à atual, de propósito: acrescenta **para quem** (que
 faltava e é o que qualifica o visitante) e a praça. O campo **Nome** passa a ser
 `ABBA · Consultoria de IA`, porque ele é indexado na busca e hoje está sendo
 desperdiçado com "ABBA" sozinho.
+
+---
+
+# Ato II e III · peças 08 a 13
+
+> Produzidas em 28/08, quando a cadência passou a ser diária. Mesmas regras de
+> publicação das anteriores: sem travessão, sem emoji, sem hashtag genérica, sem
+> link na legenda.
+
+## Peça 08 · A causa nº 1 do fracasso
+
+Mais de 80% dos projetos de IA falham. É o dobro da taxa dos projetos de TI comuns.
+
+O número é da RAND, que entrevistou 65 engenheiros de machine learning sêniores sobre projetos que deram errado. E a parte mais útil da pesquisa não é o percentual: é a causa.
+
+A causa número um não é técnica. É começar sem combinar o que seria dar certo.
+
+Não é modelo ruim, não é dado ruim, não é falta de ferramenta. É desconexão entre o que o projeto buscava e o que a organização precisava.
+
+Isso muda como se lê um fracasso. Um projeto que começa sem métrica de sucesso acordada não pode dar certo, porque não existe definição do que seria certo. Ele só pode terminar, e alguém decide depois se gostou do resultado.
+
+É por isso que aqui nenhuma decisão entra sem a métrica combinada antes. Registrar a decisão com o número que ela precisa mover, antes de começar, não é burocracia em cima do serviço. É a intervenção que mais move o resultado.
+
+E se a base da empresa já estiver bagunçada?
+
+Fonte: RAND, The Root Causes of Failure for AI Projects, 2024.
+
+## Peça 09 · A IA amplifica o que já existe
+
+A IA não conserta um time. Ela amplifica o que já está lá.
+
+O relatório DORA de 2025, do Google, com cerca de 5.000 respondentes, mediu duas correlações ao mesmo tempo. Adoção de IA correlaciona positivamente com velocidade: os times entregam mais rápido. E correlaciona negativamente com estabilidade: mais falhas, mais retrabalho.
+
+A leitura prática é dura. Time com a base arrumada acelera. Time com processo bagunçado piora, e piora mais rápido. A ferramenta é a mesma; o que muda é o que ela encontra quando chega.
+
+A consequência disso no nosso trabalho é que às vezes a primeira entrega é um passo atrás.
+
+Cliente com dado duplicado e processo sem dono não recebe da gente um agente em cima do caos. Recebe o diagnóstico disso, com número, e a fundação como primeira entrega.
+
+Arrumar a base não é atraso. É a condição do ganho.
+
+Automatizar um cadastro errado não corrige o cadastro. Só faz o erro chegar mais cedo.
+
+Fonte: DORA 2025, Google.
+
+## Peça 10 · Quase todo mundo diz que mede
+
+72% dos líderes dizem acompanhar o retorno de IA generativa.
+
+Metade deles usa qualidade de dados como métrica de retorno. E 53% reportam retorno de apenas 1 a 5%.
+
+Os três números são da mesma pesquisa da Wharton, no terceiro ano do levantamento. Juntos, eles descrevem uma armadilha específica: qualidade de dados não é retorno, é pré-requisito. Medir o pré-requisito e chamar de resultado é como pesar os ingredientes e dizer que o bolo ficou bom.
+
+Medição de verdade tem quatro partes, e todas as quatro precisam estar lá.
+
+Combinada antes, não escolhida depois entre as que ficaram boas.
+Apurada do mesmo jeito nas duas pontas: mesma fonte, mesma regra, mesma periodicidade.
+Ligada ao resultado da empresa, e não a um indicador de uso da ferramenta.
+E assinada por alguém que responde por ela, com nome, do lado do cliente.
+
+Todo mundo diz que mede. Quase ninguém mede de fora.
+
+Qual número a sua empresa acompanha hoje, e ele é resultado ou pré-requisito?
+
+Fonte: Wharton GBK, outubro de 2025.
+
+## Peça 11 · A régua que nos reprova
+
+Antes de qualquer material nosso sair, ele passa por uma ferramenta cujo trabalho é tentar reprová-lo. Inclusive este post.
+
+Quatro coisas nunca passam: número que não está na nossa base de evidências, preço diferente da tabela vigente, promessa que a nossa infraestrutura ainda não sustenta, e qualquer frase que sugira IA decidindo sozinha, sem assinatura humana.
+
+Bloqueio significa que o material não sai. Existe uma opção de forçar, e usar ela é uma decisão com nome, que vai para o registro.
+
+Ela não é inteligente, e isso é de propósito. É determinística: mesma entrada, mesma saída, custo zero por execução. Não é um modelo opinando sobre o texto, é uma trava conferindo fatos. Julgar se o texto é bom continua sendo trabalho de gente.
+
+Construímos isso porque a coisa mais cara de perder numa consultoria não é um contrato. Contrato se recupera. Credibilidade técnica não se recompra, e ela não sobrevive a "a gente confere na hora de mandar".
+
+O que impede, hoje, um número inventado de sair da sua empresa dentro de uma proposta assinada?
+
+## Peça 12 · Apagar com comprovante
+
+Quando um cliente manda apagar os dados dele, a gente apaga. E emite um certificado disso.
+
+O comando faz três coisas, numa transação só. Purga os arquivos em disco, incluindo os relatórios já gerados. Apaga os registros em cascata, camada por camada. E grava uma lápide: o registro de que a deleção aconteceu, que sobrevive ao que foi apagado.
+
+O que fica na mão do cliente é o documento: quantos registros, quantos arquivos, quem pediu e quando. É o que o DPO leva para uma fiscalização. Sem ele, "a gente apagou" é palavra contra palavra.
+
+E a regra que sustenta tudo isso: nada se deleta fora desse caminho. Não existe apagar na mão, não existe apagar direto no banco, não existe apagar sem deixar o comprovante.
+
+Verdade que some sem registro não era verdade.
+
+Se o seu jurídico pedisse hoje a prova de que um dado foi apagado, ela existiria?
+
+## Peça 13 · Bloqueamos a nossa própria trapaça
+
+A gente bloqueou, em código, a chance de melhorar a própria nota.
+
+Funciona assim: toda recomendação nossa carrega uma probabilidade declarada, com nome de quem declarou, antes da decisão ser tomada. Depois, o resultado é medido. E existe um placar comparando as duas coisas.
+
+Um placar assim só vale se ninguém puder mexer nele depois do jogo. Por isso existem duas travas, e as duas apontam para nós.
+
+A primeira: declarar a probabilidade depois de medir o resultado é bloqueado, com erro nomeado. Sem ela, bastaria esperar o número aparecer para prever com precisão perfeita.
+
+A segunda é a que importa: probabilidade declarada é imutável. Declarar 60%, ver os números melhorarem e trocar para 95% limparia o placar sem deixar vestígio. O código não deixa.
+
+Isso tem um custo, e ele é o ponto. Deixa os nossos erros registrados para sempre: uma recomendação em que a gente apostou alto e deu errado fica lá, com nome e data. É desconfortável de propósito, porque um placar que se pode editar não é um placar.
+
+Quem vende medição se mede primeiro. Não dá para cobrar de um cliente uma métrica combinada antes e, do nosso lado, ajustar o próprio placar depois do jogo.
+
+Quem mede o seu fornecedor de IA?

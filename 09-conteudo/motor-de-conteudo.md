@@ -98,6 +98,15 @@ audiência de outra pessoa **sem prospecção fria** — o que mantém a doutrin
 
 ---
 
+> **Cadência atualizada em 28/08: diária.** A tabela semanal abaixo continua
+> descrevendo a distribuição por pilar, mas a Pista A passa a publicar **todo
+> dia**. A consequência é uma só e ela é dura: **o estoque vira o gargalo.**
+>
+> **Regra de estoque: nunca abaixo de 3 peças prontas.** Ao chegar em 3, produzir
+> vira pendência de sócio na reunião de segunda. E o ritual diário de 25 minutos
+> deixa de ser recomendação e passa a ser condição: publicar todo dia sem
+> responder comentário só aumenta volume, não aumenta alcance.
+
 ## O ritual oportunista (a Pista B)
 
 A [Pista B](duas-pistas.md) não tem agenda: ela roda quando acontece alguma

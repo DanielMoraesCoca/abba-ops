@@ -190,8 +190,7 @@ mudou"*. **O arco morde o próprio rabo, de propósito.**
 | **15** | **O calendário de obrigações com data** | 14 | [43](banco-de-pautas.md) |
 | **16** | **PL 2338 e ISO 42001 em português** | 15 | [44](banco-de-pautas.md) |
 
-**Cadência:** uma peça a cada três dias no Instagram. Doze peças cobrem cerca de
-seis semanas, e o Ato IV desemboca em novembro, que é quando o
+**Cadência:** uma peça por dia desde 28/08. Doze peças cobrem doze dias, e o Ato IV desemboca em novembro, que é quando o
 [plano de 90 dias](plano-90-dias.md) prevê o conteúdo alimentando o funil sozinho.
 
 ---

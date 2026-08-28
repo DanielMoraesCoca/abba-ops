@@ -41,7 +41,7 @@ outra com regras escritas.
 | **Origem da pauta** | [Linha editorial](linha-editorial.md): o arco em cinco atos, com herança e ganchos | Acontecimento: viagem, visita, protótipo, sala de máquina, objeção ouvida |
 | **Produção** | Assistente escreve inteiro; sócio aprova em 5 min | Sócio grava no celular; assistente monta roteiro, corte e legenda |
 | **Rosto** | Não | Quase sempre |
-| **Cadência** | 1 peça a cada 3 dias, calendário fixo | Oportunista, consumindo estoque |
+| **Cadência** | **1 peça por dia** (decisão do sócio, 28/08) | Oportunista, consumindo estoque |
 | **Placar** | **12 conversas com decisor em 90 dias** | **Reconhecimento** (§4) |
 | **Régua** | Completa, com gate de continuidade | Completa, menos o gate de continuidade |
 
