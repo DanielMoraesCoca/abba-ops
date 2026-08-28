@@ -15,6 +15,7 @@
 | [Estratégia de conteúdo](estrategia-de-conteudo.md) | **Por que, para quem, com que ângulo** — a cunha, os cinco pilares, a doutrina de canal, o placar | Antes de qualquer coisa. Uma vez, inteiro |
 | [Motor de conteúdo](motor-de-conteudo.md) | **Como sai peça todo dia** — as duas trilhas, a semana, o ritual de 25 min, o gate de publicação, a reciclagem | Antes da primeira semana. Depois, na segunda de manhã |
 | [Linha editorial](linha-editorial.md) | **Em que ordem, e ligada a quê**: o arco em cinco atos, as três regras de continuidade, o léxico travado, o razão do que já foi dito e a ordem de marcha das próximas doze peças | Antes de produzir qualquer peça nova |
+| [Duas pistas](duas-pistas.md) | **Pipeline e alcance, com placares que não se misturam** e as quatro regras que impedem uma de contaminar a outra | Antes de propor qualquer formato novo |
 | [Formatos](formatos.md) | **Os oito moldes** — de F1 a F8, com estrutura, arte e regras | Ao produzir ou aprovar uma peça |
 | [Banco de pautas](banco-de-pautas.md) | **60 peças que já existem dentro de casa**, ranqueadas e ligadas ao doc que as sustenta | Quando faltar assunto (não vai faltar em ~15 semanas) |
 | [Plano de 90 dias](plano-90-dias.md) | **O calendário** — semana 0, três fases, o calendário das 4 primeiras semanas, a lacuna do destino e as 6 decisões dos sócios | Agora. E toda segunda, 10 min |
@@ -25,6 +26,9 @@
 |---|---|
 | [`posts/`](posts/) | Peça pronta para copiar e colar. Uma por arquivo, com texto final, arte, primeiro comentário e notas de operação |
 | [`roteiros/`](roteiros/) | Roteiro de vídeo cronometrado + plano de captação + legenda |
+| [Kit de captação](kit-de-captacao.md) | Cinco cartões para consultar no celular: o que gravar numa viagem, numa visita, numa tela, e quando o Pedro estiver junto |
+| [Banco de roteiros curtos](roteiros/banco-de-roteiros-curtos.md) | 12 peças da Pista B, gravaveis em qualquer ordem |
+| [Spec dos agentes](spec-agentes-conteudo.md) | O Flow de conteúdo especificado sobre o padrão que já roda no `arquiteto-patrimonial`. **Construir depois** |
 
 **A Semana 1 está escrita e aprovável hoje:** quatro posts sem rosto
 (01 a 04/09) e um roteiro de vídeo.

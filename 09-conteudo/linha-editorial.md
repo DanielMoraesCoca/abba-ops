@@ -224,6 +224,25 @@ cabe numa conversa ao vivo. O fluxo adotado roda o scout **antes** da conversa; 
 os sócios preferirem gerar ao vivo, a faixa da primeira página só é dita depois
 da revisão cruzada ([assessment gratuito](../03-comercial/assessment-gratuito.md)).
 
+## 7b. A Pista B corre ao lado, sem entrar no arco
+
+O arco dos cinco atos governa a **[Pista A](duas-pistas.md)**, que é a de
+pipeline. A **Pista B**, de alcance, corre em paralelo e **não tem arco**: ela é
+oportunista por construção, nasce de acontecimento e se organiza por estoque, não
+por sequência.
+
+**O que a Pista B herda daqui:** o léxico do §4, que é o que faz um vídeo de 30
+segundos soar como a mesma empresa do carrossel de sete telas. As frases travadas
+valem igual nos dois formatos.
+
+**O que ela não herda:** a regra dos dois ganchos e o razão de continuidade. Um
+vídeo gravado numa viagem não precisa herdar de peça nenhuma, e exigir isso
+mataria a espontaneidade que é justamente o valor dele.
+
+**A trava que protege o arco:** peça da Pista B **nunca ocupa vaga do calendário
+da Pista A**. Se a semana tiver material de sobra, a Pista A publica no dia dela
+e a Pista B publica nos intervalos. Nunca o contrário.
+
 ## 8. O gate ganha um item
 
 O [checklist de 4 minutos](motor-de-conteudo.md#o-gate-de-publicação--a-régua-roda-no-post)
@@ -241,5 +260,5 @@ Peça que não responde isso não é peça: é post avulso.
 [Estratégia](estrategia-de-conteudo.md) · [Motor](motor-de-conteudo.md) ·
 [Formatos](formatos.md) · [Banco de pautas](banco-de-pautas.md) ·
 [Plano de 90 dias](plano-90-dias.md) ·
-[Sistema visual](sistema-visual-social.md) ·
+[Sistema visual](sistema-visual-social.md) · [Duas pistas](duas-pistas.md) ·
 [Kit de presença](../03-comercial/kit-de-presenca.md)

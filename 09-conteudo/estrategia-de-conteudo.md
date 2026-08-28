@@ -231,6 +231,24 @@ Revisão toda segunda.
 | Mapas de Vazamento originados em conteúdo | Ligação com o funil | 2 |
 | Números proibidos publicados | Integridade | **0** |
 
+### O segundo placar (Pista B, a partir de 2026-08-27)
+
+O quadro acima é o placar da **[Pista A](duas-pistas.md)**, de pipeline, e ele
+não muda. A **Pista B**, de alcance, tem placar próprio e **as duas listas nunca
+se somam**: alcance que não vira conversa não é fracasso da Pista B, é o trabalho
+dela sendo feito.
+
+| Métrica da Pista B | Alvo em 90 dias |
+|---|---|
+| Seguidores do alvo (decisor, não colega de mercado) | +150 |
+| Salvamentos acumulados | ≥ 200 |
+| Menções e compartilhamentos por terceiros | ≥ 20 |
+| Peças em estoque não publicadas | ≥ 6 |
+| Visualizações | **anotada, sem alvo** |
+
+A última linha é deliberada: o número aparece porque some se não aparecer, e
+**não tem meta porque meta de visualização muda o que se publica**.
+
 **Gatilho de revisão:** 90 dias com ≥90% de consistência e **zero** conversas
 iniciadas por conteúdo → o problema não é volume, é ângulo ou alvo. Reunir os
 sócios e mexer, com registro — mesma disciplina do plano de ataque.

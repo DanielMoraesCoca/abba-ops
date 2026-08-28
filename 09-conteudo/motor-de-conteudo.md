@@ -98,6 +98,21 @@ audiência de outra pessoa **sem prospecção fria** — o que mantém a doutrin
 
 ---
 
+## O ritual oportunista (a Pista B)
+
+A [Pista B](duas-pistas.md) não tem agenda: ela roda quando acontece alguma
+coisa. O que ela tem é **prontidão**, e ela cabe em três passos.
+
+| Quando | O quê |
+|---|---|
+| **Antes de sair** (viagem, visita, evento) | Abrir o [kit de captação](kit-de-captacao.md) e escolher 1 ou 2 roteiros do [banco](roteiros/banco-de-roteiros-curtos.md). Trinta segundos de preparo |
+| **No momento** | Gravar os quatro planos do cartão 1. Vertical, sempre. Mais do que se vai usar |
+| **Na volta** | Mandar tudo cru neste chat, com uma linha de contexto. Eu devolvo corte, legenda e destino |
+
+**Estoque mínimo: 6 peças.** Abaixo disso, gravar vira pendência de sócio na
+reunião de segunda. É a única métrica de saúde da Pista B que importa, porque
+estoque vazio é o que mata uma pista oportunista.
+
 ## O ciclo semanal (a conversa deste chat)
 
 | Quando | O quê | Saída |
