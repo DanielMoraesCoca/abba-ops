@@ -9,9 +9,9 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 
 | Trilho | O quê |
 |---|---|
-| **Plataforma (assíncrono)** | Trilhas por nível (Explorador → Praticante → Especialista → Arquiteto), aulas próprias em pt-BR (vídeos ABBA em gravação por lotes — [ficha](../06-ferramentas/ferramenta-portal.md)), desafios práticos avaliados pela Rubrica ABBA, Bússola (**Parar / Começar / Só eu** — redação canônica 19/08), Iris disponível o tempo todo — e a **academia diária** (Currículo v3, 23/08): Prática de Hoje na home, Boletim semanal, Biblioteca de Pedidos, cenários de decisão, Minhas Ferramentas — o portal entre as aulas e depois delas |
-| **Presencial (síncrono)** | Sessão de abertura (lançamento do programa com o patrocinador) · workshops nos marcos (por nível ou por departamento) · sessão de encerramento/graduação |
-| **Topo da progressão** | Participantes nível Arquiteto ganham acesso a ferramentas de criação de agentes (CrewAI) para construir soluções dos próprios fluxos — com curadoria da ABBA |
+| **Plataforma (assíncrono)** | Uma formação única — base comum de 8 aulas para todos, aprofundamentos por papel e Formação de Campeão, todos abertos sem seleção —, aulas próprias em pt-BR (vídeos ABBA em gravação por lotes — [ficha](../06-ferramentas/ferramenta-portal.md)), desafios práticos avaliados pela Rubrica ABBA, Bússola (**Parar / Começar / Só eu** — redação canônica 19/08), Iris disponível o tempo todo — e a **academia diária** (Currículo v3, 23/08): Prática de Hoje na home, Boletim semanal, Biblioteca de Pedidos, cenários de decisão, Minhas Ferramentas — o portal entre as aulas e depois delas |
+| **Presencial (síncrono)** | Sessão de abertura (lançamento do programa com o patrocinador) · workshops nos marcos (por departamento ou por trilha de aprofundamento) · sessão de encerramento/graduação |
+| **Ao concluir a formação** | Quem conclui as aulas do próprio programa e passa os desafios exigíveis ganha acesso a ferramentas de criação de agentes (CrewAI) para construir soluções dos próprios fluxos — com curadoria da ABBA |
 
 ## Checklist
 
@@ -25,15 +25,15 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 - [ ] Sessão presencial de abertura realizada (patrocinador abre; ABBA conduz; Bússola preenchida ao vivo por todos)
 
 **Ritmo (semanal)**
-- [ ] Adoção monitorada no admin do portal: % ativos, progresso por nível, desafios, Bússola
+- [ ] Adoção monitorada no admin do portal: % ativos, conclusão de aulas e desafios, Bússola
 - [ ] Departamento travado (<{{PCT}}% ativos por 2 semanas) → diagnóstico com o gestor + intervenção (sessão extra, ajuste de trilha, conversa do patrocinador)
 - [ ] Nudges no canal do cliente (logística por WhatsApp/Slack conforme [política](../05-interno/comunicacao.md))
 
 **Marcos**
 - [ ] Workshops presenciais dos marcos realizados (presença + feedback arquivados)
-- [ ] Promoções de nível celebradas no canal (visibilidade importa)
-- [ ] Campeões identificados e desenvolvidos (candidatos: primeiros Especialistas)
-- [ ] Graduação em `/admin/graduacao`: o portão (Fundação 8/8 + ≥6/8 drills) conferido NA TELA, pessoa a pessoa, e as credenciais verificáveis **de Fundação** emitidas **em lote** na cerimônia (é o nível que o portão prova; níveis acima saem pela emissão individual com as portas próprias — idempotente, re-clicar não duplica; exceções são decisão humana, fora do lote)
+- [ ] **Aplicação corroborada pelos gestores** em `/manager/cohort` — quem mostrou compromisso vivo aos 30 dias com evidência e ajuda reconhecida por um colega. É isto que entra no relatório d90, e é a única coisa do programa que se conquista
+- [ ] Quem aplicou e ajudou celebrado no canal — pelo que fez no trabalho, nunca por um posto alcançado
+- [ ] Graduação em `/admin/graduacao`: o portão (base comum 8/8 + ≥6/8 drills) conferido NA TELA, pessoa a pessoa, e as credenciais verificáveis **da base comum** emitidas **em lote** na cerimônia (é o que o portão prova; idempotente, re-clicar não duplica; exceções são decisão humana, fora do lote)
 
 **Depois da graduação (o estágio não acaba aqui — correção 24/08: a versão anterior terminava na cerimônia e deixava a nossa maior promessa sem dono)**
 - [ ] A academia diária segue como rotina da turma (Prática de Hoje, Boletim de segunda — a régua "não é curso que acaba; é academia que a pessoa frequenta")

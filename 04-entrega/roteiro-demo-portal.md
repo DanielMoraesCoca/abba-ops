@@ -64,12 +64,16 @@ esta abertura planta o primeiro.)
 1. **Prática de Hoje** no topo — *"isto muda todo dia: um erro plausível
    para caçar, um pedido para testar na tarefa de hoje, a pergunta da
    semana. Dois a cinco minutos, no trabalho real."*
-2. O CTA **Continuar** — *"o caminho principal continua de onde parou"*.
+2. O CTA **Continuar** — *"o caminho principal continua de onde parou"* —
+   e, logo abaixo, a **linha de progresso honesta** ("X de Y aulas · Z
+   de W desafios"). *"Repare no que NÃO tem aqui: nível, degrau,
+   distintivo. É uma formação só, igual para todo mundo da empresa de
+   vocês, e o número é só a conta real."*
 3. O cartão do **Boletim** — *"toda segunda sai um estudo curto na voz
    da casa. O de hoje entrou no ar sozinho, de manhã"* (é verdade na
    semana da reunião — cadência viva, não promessa).
 
-### 2 · A aula — abrir a Aula 1 da Fundação (4 min)
+### 2 · A aula — abrir a Aula 1 da base comum (4 min)
 
 Pelo Continuar ou pelo catálogo. Mostrar o desenho, não ler o conteúdo:
 
@@ -79,9 +83,16 @@ Pelo Continuar ou pelo catálogo. Mostrar o desenho, não ler o conteúdo:
   apresentação institucional. A aula é um gancho e uma leitura curta;
   o aprendizado acontece AQUI, fazendo na própria tarefa com a guia do
   lado."*
+- Na Leitura, apontar a **Lente de Oportunidade** — as quatro perguntas
+  e os três destinos. *"Este instrumento está na PRIMEIRA aula de
+  propósito: é ele que faz um gerente e um analista de vocês estarem
+  falando da mesma coisa quando discutem o que a IA deve tocar. A Aula 2
+  entrega o segundo, a Ficha de Padrão."* (é aqui que a base comum vira
+  concreta, e não slogan)
 - Na Reflexão, apontar a **Bússola** (as três perguntas). *"Cada aula
-  termina com um compromisso if-então. É isso que a gente mede depois
-  — não a conclusão da aula."* (segundo plantio da durabilidade)
+  termina com um compromisso se-então. E repare: a Lente que ele acabou
+  de aprender responde a primeira e a terceira. É isso que a gente mede
+  depois — não a conclusão da aula."* (segundo plantio da durabilidade)
 
 ### 3 · Minhas Ferramentas (2 min) — ⚠️ ver ressalva
 
@@ -100,9 +111,11 @@ forte do bloco.
 
 ### 4 · Academia curta — /challenges + um cenário (3 min)
 
-`/challenges`: apontar os três formatos (**drill de caça ao erro**,
-**prompt golf**, **cenário de decisão**) e a honestidade da página — o
-que conta para subir de nível e o que é prática livre.
+`/challenges`: apontar que a página agrupa por **movimento da Rubrica**
+(escolha · pedido · crítica · entrega) — o mesmo eixo do catálogo e do
+Boletim —, os três formatos (**drill de caça ao erro**, **prompt golf**,
+**cenário de decisão**) e a honestidade dela: o que é **exigível** para
+concluir a formação e o que é **prática livre**.
 
 Abrir o **cenário da estatística** e jogar as duas primeiras decisões ao
 vivo: escolha → consequência → **a leitura da casa**. *"A gente treina
@@ -119,10 +132,14 @@ com o cartão do dia destacado.
 
 ### 6 · O gestor e o patrocinador — trocar de conta (3 min)
 
-- Como **Carla** (`/manager`): o time dela, o que cada pessoa aplicou,
-  o **atestado do gestor**. *"O gestor não assiste: ele corrobora o que
-  o time aplicou. É o único diferencial que aparece em todo estudo sério
-  de adoção."* (segundo diferencial dito)
+- Como **Carla** (`/manager` → clicar numa pessoa): os sinais de
+  aplicação, a prova de trabalho e os marcos d30/d60/d90 com o botão de
+  **confirmar**. *"O gestor não assiste: ele confirma, olhando o
+  trabalho, o que a pessoa aplicou. E é ISSO que vai com nome e
+  evidência para o relatório de 90 dias que a gente assina. Repare que
+  ele não promove ninguém de nível — não existe nível aqui. O que ele
+  faz é a única coisa deste programa que se conquista."* (segundo
+  diferencial dito)
 - Como **Helena** (`/sponsor`): adoção do programa inteiro. *"É a visão
   que sustenta a conversa de vocês com a diretoria."*
 
@@ -130,9 +147,9 @@ com o cartão do dia destacado.
 
 **Preparo (véspera):** `/verify` SEM token mostra o cartão "não
 válida" — emita uma credencial da persona de demo antes
-(`/me/credential` → Emitir; a de Fundação exige as 8 aulas concluídas
+(`/me/credential` → Emitir; a da base comum exige as 8 aulas concluídas
 no seed) e guarde o LINK COMPLETO com `?token=…` num favorito. A
-página é pública e em pt-BR (25/08), com o selo "Fundação em IA".
+página é pública e em pt-BR (25/08).
 
 `/verify`: *"A credencial é da pessoa e verifica-se por link — sem
 depender de planilha nossa nem da memória de vocês. Vocês já desenharam
@@ -169,3 +186,4 @@ o relatório de 90 dias é o que a gente assina."*
 |---|---|---|
 | v1 | 2026-08-24 | Criado para a reunião da Brasal. Substitui o `_PHASE1_DEMO_SCRIPT.md` (abril, inglês, produto antigo); percurso alinhado ao Currículo v3 (academia diária) e às falas v2 |
 | v1.1 | 2026-08-26 | Primeiro ENSAIO real (as 17 telas abertas num navegador, `npm run demo:rehearsal`, agora na véspera): 0 quebras. Dois defeitos consertados antes de virarem cena — a concordância de "credencial" (era masculina na barra lateral de todas as telas) e a home que, sem conseguir ler a escada, afirmava "as aulas estão feitas". Bloco 7 ganhou o preparo do token do /verify |
+| v2 | 2026-08-29 | **Alinhado ao produto sem escada.** O bloco 4 dizia "o que conta para subir de nível" — não há mais nível; passa a dizer exigível × prática livre, e a apontar o agrupamento por movimento da Rubrica. O bloco 6 mudou de tela: `/manager/attestations` (atestar promoção) não existe mais; o gestor agora abre a pessoa em `/manager/cohort` e **confirma aplicação**, que é o que vai ao relatório d90. O bloco 1 ganhou a linha de progresso honesta e a fala "repare no que não tem aqui: nível, degrau, distintivo". O bloco 2 ganha a Lente de Oportunidade, que subiu para a Aula 1 — é onde a "base comum" deixa de ser slogan e vira instrumento na tela |

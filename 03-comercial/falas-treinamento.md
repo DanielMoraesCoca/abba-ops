@@ -9,7 +9,7 @@ Da transcrição (18/08, 17:07–17:59):
 | Hora | O que foi dito | Estado |
 |---|---|---|
 | 17:31 | *"a gente fez uma **parceria com Video Aulas**"* | **Não existe parceria.** Decisão de 19/08 (CONTENT-13): os vídeos são NOSSOS, roteiros prontos, gravação em lotes. A correção da fala está abaixo |
-| 17:32 | Rafa: *"Hoje essa solução já está pronta?"* — Daniel: *"a gente nunca fez nenhum treinamento presencial. Mas a nossa plataforma, sim"* | Meio-verdade na época (motor pronto, conteúdo não). Hoje: **27 aulas escritas em pt-BR no portal** — Fundação (8), trilha Operacional (6), trilha do Gestor (5) e trilha do Especialista/formação de campeão (8, escrita 24/08) —, presencial roteirizado no kit do facilitador. Para a Brasal isso importa duas vezes: o público dele é majoritariamente operacional, e a trilha Operacional é a que fala com esse público |
+| 17:32 | Rafa: *"Hoje essa solução já está pronta?"* — Daniel: *"a gente nunca fez nenhum treinamento presencial. Mas a nossa plataforma, sim"* | Meio-verdade na época (motor pronto, conteúdo não). Hoje: **27 aulas escritas em pt-BR no portal** — base comum (8, todo mundo faz), Operacional (6), Gestor (5) e Formação de Campeão (8), todas abertas a todos —, presencial roteirizado no kit do facilitador. Para a Brasal isso importa duas vezes: o público dele é majoritariamente operacional, e a trilha Operacional é a que fala com esse público |
 | 17:32 | Rafa: *"depois eu queria conhecer mais a fundo, porque **a gente está exatamente nesse ponto agora**"* | O sinal de compra. A segunda reunião é sobre ISTO |
 | 17:33 | Letramento anterior com a Start: C-levels + gerência, ~70–80 pessoas | Confirma o pitch "vocês já treinaram e não colheram" |
 | 17:34–17:35 | O funil dele: barramento → **Claude Team** com MCPs para pessoas-chave → área "contaminada" pede mais; **~10 solicitações/dia** ("parece padaria"); a ideia DELE, já apresentada internamente: **licença só para quem concluir uma trilha** | A trilha-gate é o processo DELE. Nossa peça: a Fundação como filtro + credencial verificável como critério auditável |
@@ -54,7 +54,7 @@ Este é o cenário brasileiro típico e é a nossa melhor posição. O roteiro:
 1. **Reconhecer o que já foi feito.** *"Vocês fizeram letramento com gente boa. Não vim dizer que foi perdido."*
 2. **Nomear o que não aconteceu.** *"O que não veio foi a mudança no trabalho de terça-feira. É quase sempre assim: o evento acaba na sexta e o hábito volta na segunda."*
 3. **Dar o motivo estrutural, sem culpar ninguém.** Conteúdo genérico para um funcionário genérico que não existe · workshop único sem laço de aplicação · treino fora da ferramenta onde o trabalho acontece · medição por conclusão de aula, que é fácil de coletar e desligada de qualquer mudança real.
-4. **Oferecer o que falta, não o que já têm.** Trilha por papel · prática embutida no fluxo real · campeões por área · e a medição que sustenta a conversa com o conselho.
+4. **Oferecer o que falta, não o que já têm.** Base comum para toda a empresa · aprofundamento por papel · prática embutida no fluxo real · gente formando gente na própria área · e a medição que sustenta a conversa com o conselho.
 
 ## Quando o cliente já tem um processo próprio (encaixar, nunca substituir)
 

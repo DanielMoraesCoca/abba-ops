@@ -34,7 +34,7 @@ A capacitação é **híbrida por desenho**: kickoff e workshops de marco **pres
 
 | Nível | Foco | Desbloqueia |
 |---|---|---|
-| 1 — Explorador (Fundamentos) | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
+| 1 — Base comum (Fundamentos) | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
 | 2 — Praticante (Aplicação) | IA em tarefas reais da própria função | Ferramentas por área |
 | 3 — Especialista (Autonomia) | Construir e ajustar fluxos com IA | Ferramentas avançadas |
 | 4 — Arquiteto (Multiplicação) | Ser referência interna | Criação de agentes (CrewAI) + papel de multiplicador |

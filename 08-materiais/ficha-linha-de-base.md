@@ -84,8 +84,8 @@ colega como usar IA no trabalho dele sem que ele se meta em encrenca."*
 
 > **A8 é a única pergunta de percepção da ficha, e é proposital que ela
 > seja sobre *ensinar*, não sobre *saber*.** Quem consegue ensinar
-> aplicou; quem só acha que sabe, não. É também o degrau do Especialista
-> — a mesma régua, medida no dia 0.
+> aplicou; quem só acha que sabe, não. É a mesma régua da Formação de
+> Campeão — medida no dia 0, antes de qualquer aula.
 
 ---
 

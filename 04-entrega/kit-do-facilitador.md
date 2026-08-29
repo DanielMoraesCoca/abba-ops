@@ -12,7 +12,7 @@
 |---|---|---|---|---|
 | 1 | **Kickoff da Academy** | 0 | meio dia | turma inteira + patrocinador |
 | 2 | **Marco 1 — "o caso de vocês"** | 3 | meio dia | turma inteira, por papel |
-| 3 | **Marco 2 — formação de campeões** | 6 | meio dia | só os selecionados (~1 para cada 25) |
+| 3 | **Marco 2 — "o que já mudou"** | 6 | meio dia | turma inteira |
 | 4 | **Graduação** | 8 | meio dia | turma + patrocinador + convidados da diretoria |
 
 Fora destes quatro, a ABBA não está na sala — está no portal e no canal. **A entrega não termina na graduação: termina no relatório de durabilidade de 90 dias.**
@@ -127,25 +127,36 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 
 ---
 
-## 3. Marco 2 — formação de campeões (semana 6 · meio dia)
+## 3. Marco 2 — "o que já mudou" (semana 6 · meio dia)
 
-**Objetivo:** formar quem vai ensinar — e deixar claro que o nível vem com encargo.
+**Objetivo:** mostrar à turma o que o trabalho dela já mudou, com evidência — e abrir a Formação de Campeão para quem quiser.
 
-**Quem entra:** a seleção é por **comportamento observado no portal**, não por indicação nem por inscrição — concluiu, **aplicou** no próprio trabalho (evidência de durabilidade) e **ajudou alguém** (reconhecimento de par, iniciado por quem foi ajudado). Proporção praticada no mercado: ~1 campeão para cada 25 a 50 pessoas.
+**Quem entra: a turma inteira.**
 
-**A fala de abertura:** *"Não escolhemos quem tirou nota. Escolhemos quem aplicou e quem ajudou alguém. Quem sobe aqui sobe com encargo: formar dois."*
+> ⚠️ **Este encontro era uma peneira até 26/08/2026, e não é mais.** A
+> versão anterior chamava só "os selecionados (~1 para cada 25)" e abria
+> dizendo *"quem sobe aqui sobe com encargo"*. O sócio decidiu que o
+> produto é **uma formação única, igual para todos os funcionários** —
+> seleção de campeão está revogada, e no portal as 8 aulas da Formação
+> de Campeão estão abertas a qualquer pessoa desde o dia 1.
+>
+> **Nunca divida a sala entre quem foi escolhido e quem não foi.** Além
+> de contradizer o produto, é o jeito mais rápido de perder metade da
+> turma na semana 6.
+
+**A fala de abertura:** *"Ninguém aqui foi selecionado, e ninguém ficou de fora. O que a gente vai olhar hoje é o que já mudou no trabalho de vocês — com evidência, não com opinião. E no fim eu abro uma coisa que já estava aberta e talvez vocês não tenham reparado."*
 
 | Bloco | Min | O que acontece |
 |---|---|---|
-| Por que você está aqui | 15 | Mostrar a cada um o próprio dado que o trouxe. Não é honraria, é encargo |
-| Ensinar o que se pratica | 40 | Cada campeão apresenta em 5 min **um movimento que ele mesmo já usa**. Quem veio da trilha Operacional apresenta em cima dos próprios artefatos (Ficha de Padrão, grade, pontos de conferência, modelo de pedido) — nada de slide novo. Os outros criticam. Ninguém ensina o que não pratica |
-| A pergunta que ensina | 40 | Treino de condução: como responder com pergunta, como não resolver pela pessoa, como reconhecer quem está travado e não pede ajuda |
+| O que já mudou | 20 | Painel da turma: quantos compromissos da Bússola continuam vivos aos 30 dias **com evidência**, e quantas ajudas entre colegas foram registradas. Números da turma, nunca ranking de pessoas |
+| Ensinar o que se pratica | 40 | Voluntários apresentam em 5 min **um movimento que eles mesmos já usam**. Quem veio da trilha Operacional apresenta em cima dos próprios artefatos (Ficha de Padrão, grade, pontos de conferência, modelo de pedido) — nada de slide novo. Os outros criticam. Ninguém ensina o que não pratica |
+| A pergunta que ensina | 40 | Treino de condução para todos: como responder com pergunta, como não resolver pela pessoa, como reconhecer quem está travado e não pede ajuda |
 | Intervalo | 15 | — |
-| O cético | 35 | Simulação: um campeão conduz, o facilitador faz o papel do colega cético. Regra: a objeção é dado, nunca resistência a ser ridicularizada |
-| Plantão e cadência | 25 | Como rodar o plantão de dúvidas da área, com que frequência, o que escalar para a ABBA |
-| Os dois nomes | 10 | Cada campeão sai com **dois nomes** de quem vai formar até a graduação |
+| O cético | 35 | Simulação: um participante conduz, o facilitador faz o papel do colega cético. Regra: a objeção é dado, nunca resistência a ser ridicularizada |
+| A conversa do gestor | 20 | Os gestores presentes abrem `/manager/cohort` e **corroboram** o que viram no trabalho de cada reporte. É o que entra no relatório de 90 dias, com nome e evidência. Explicar em voz alta: acesso é de graça; isto aqui é o que se conquista |
+| O convite | 15 | Abrir a **Formação de Campeão**: 8 aulas, no catálogo desde o dia 1, sem indicação e sem inscrição. Quem quiser levar a área junto, começa hoje. Quem abrir sai com **dois nomes** de quem pretende ajudar até a graduação — convite, nunca cargo, e ninguém é cobrado |
 
-**Saídas:** campeões nomeados por área · plantão agendado no calendário da empresa · dois nomes por campeão registrados.
+**Saídas:** painel da turma apresentado · corroborações dos gestores registradas no portal · plantão de dúvidas agendado no calendário da empresa (aberto a quem quiser conduzir) · os dois nomes de quem aceitou o convite.
 
 ---
 
@@ -195,7 +206,7 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 |---|---|
 | Kickoff | [deck de kickoff](../08-materiais/modelos/abba-deck-kickoff.pptx) adaptado · **[Ficha de Linha de Base](../08-materiais/ficha-linha-de-base.md)** (Partes A e B impressas; Parte C já apurada com o patrocinador) · as 12 tarefas-âncora da [Oficina de Casos](oficina-de-casos.md) · lista de acessos testados |
 | Marco 1 | painel da turma impresso · artefatos trazidos pelos participantes · ficha dos 5 casos |
-| Marco 2 | dados de seleção por participante · roteiro do plantão |
+| Marco 2 | painel da turma (compromissos vivos aos 30 dias · ajudas registradas) · acesso dos gestores ao `/manager/cohort` · roteiro do plantão |
 | Graduação | [certificados](../08-materiais/modelos/certificados-modelo.pptx) · comparação com a linha de base · ficha Primeira Vitória |
 
 ## Histórico
@@ -203,3 +214,4 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 | Versão | Data | Mudança |
 |---|---|---|
 | v1 | 2026-08-19 | Criado pela reanálise do treinamento. Fecha a lacuna apontada no kit da turma: o presencial era metade do preço do híbrido e não tinha roteiro nenhum |
+| v2 | 2026-08-29 | **Marco 2 deixa de ser peneira.** Era "formação de campeões, só os selecionados (~1 para cada 25)", com fala de abertura sobre encargo. Vira "o que já mudou", com a turma inteira: painel de durabilidade, corroboração dos gestores ao vivo, e a Formação de Campeão anunciada como o que ela é — aberta desde o dia 1. Segue a decisão do sócio de 26/08 (uma formação única para todos; seleção de campeão revogada) e o que o portal passou a fazer nos blocos G1 e G2 |

@@ -31,16 +31,24 @@ a gente assina.**
 
 Você recebe:
 
-- **27 aulas em português**, escritas pela ABBA: a Fundação (8, para
-  todos), as trilhas de aprofundamento por papel — Operacional (6) e
-  Gestor (5) abertas hoje; Comercial e Administrativo-Financeiro em
-  produção — e a **formação de campeão** (8 aulas do nível
-  Especialista), a que não se chega por inscrição: chega quem concluiu a
-  trilha do papel, aplicou com evidência que sobreviveu a 30 dias e teve
-  a ajuda reconhecida por um colega — o portal mede esses sinais (mais
-  tempo de casa no nível e reflexão visível ao gestor) e **quem decide a
-  passagem é o gestor da pessoa**, com o quadro na frente. Sai com o
-  encargo de formar outros dois.
+- **27 aulas em português**, escritas pela ABBA, e **uma formação só —
+  a mesma para todo mundo da empresa, do estagiário ao diretor.** Começa
+  pela **base comum** (8 aulas que todos fazem, com os dois instrumentos
+  do método: a Lente de Oportunidade, para decidir o que a IA deve
+  tocar, e a Ficha de Padrão, para escrever como é o "bom" no seu
+  trabalho). Depois vêm os aprofundamentos, **todos abertos a qualquer
+  pessoa, sem seleção e sem autorização**: Operacional (6) e Gestor (5)
+  hoje — Comercial e Administrativo-Financeiro em produção — e a
+  **Formação de Campeão** (8 aulas sobre fazer a área inteira usar IA
+  bem, não só você).
+
+  Não há degraus nem seleção de campeões: **o que se conquista não é
+  acesso, é reconhecimento.** O portal mede aplicação com evidência viva
+  aos 30 dias e ajuda reconhecida por um colega; **quem corrobora é o
+  gestor da pessoa**, com esse quadro na frente — e é essa corroboração,
+  com nome e evidência, que entra no relatório de 90 dias que assinamos.
+  Acesso é imediato e de graça; reconhecimento leva noventa dias e
+  depende do trabalho ter mudado. É de propósito.
 - **Prática avaliada, não quiz**: cada aula termina em exercício sobre a
   tarefa real da pessoa, avaliado pelos quatro movimentos do método ABBA
   — a escolha certa da tarefa, o pedido bem construído, a crítica do
@@ -94,7 +102,7 @@ Você recebe:
 | Linha de base dia 0 + medição d30/60/90 + relatório assinado | ✓ | ✓ |
 | Kickoff presencial de meio dia com os fundadores | — | ✓ |
 | Sessões presenciais nos marcos da turma (formatura da Fundação, marcos da trilha) | — | ✓ |
-| Sessões presenciais de formação de campeões (a trilha do Especialista no portal vale nos dois modelos) | — | ✓ |
+| Sessões presenciais de formação de campeões (as 8 aulas da Formação de Campeão no portal valem nos dois modelos) | — | ✓ |
 | **Investimento por turma (até 25 pessoas, 12 meses de acesso)** | **R$ 15.000** | **R$ 35.000** |
 
 - Pagamento: **50% na assinatura · 50% na formatura da Fundação**.

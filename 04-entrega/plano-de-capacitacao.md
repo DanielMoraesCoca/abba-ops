@@ -11,9 +11,9 @@ Preenchido pelo chapéu [Capacitação](../01-setores/capacitacao.md) na semana 
 
 ## Checklist de montagem
 - [ ] Objetivo declarado da diretoria transcrito do kickoff (slide 5) — é o norte do plano
-- [ ] Participantes mapeados por papel (executivos / gestores / operacionais / candidatos a campeão)
-- [ ] Trilhas × papéis definidas com metas de fase (escala oficial P7: Explorador → Praticante → Especialista → Arquiteto)
-- [ ] Datas das quatro presenças fechadas conforme o [kit do facilitador](kit-do-facilitador.md): **Kickoff da Academy** (sem. 0) · **Marco 1 "o caso de vocês"** (sem. 3) · **Marco 2 formação de campeões** (sem. 6) · **Graduação** (sem. 8)
+- [ ] Participantes mapeados por papel (executivos / gestores / operacionais) — para sugerir o aprofundamento, nunca para selecionar quem pode fazer o quê
+- [ ] Aprofundamentos sugeridos por papel, com a regra dita em voz alta: **base comum para todos, aprofundamentos abertos a todos** (a escada de 4 níveis foi revogada em 26/08 — ver [nomenclatura](../00-identidade/marca-e-nomenclatura.md))
+- [ ] Datas das quatro presenças fechadas conforme o [kit do facilitador](kit-do-facilitador.md): **Kickoff da Academy** (sem. 0) · **Marco 1 "o caso de vocês"** (sem. 3) · **Marco 2 "o que já mudou"** (sem. 6) · **Graduação** (sem. 8)
 - [ ] Conexão com os agentes reais do cliente explícita (capacitação nunca é genérica)
 - [ ] Metas de sucesso acordadas — incluindo **horas reinvestidas por pessoa/semana** (a métrica que muda o plano)
 - [ ] **Linha de base medida no dia 0** — horas semanais nas tarefas candidatas, ferramentas já em uso, o que já se tentou e não pegou. *"Prova os teus servos... e depois compara"* (Dn 1): sem baseline na semana 0 não há prova na semana 8, e a disciplina que o mercado inteiro recomenda e quase ninguém faz é justamente esta
