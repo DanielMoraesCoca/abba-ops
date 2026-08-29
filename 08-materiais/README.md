@@ -80,6 +80,20 @@ A pasta antiga do Drive contém **os modelos dos entregáveis que a proposta pro
 
 Nota de nomenclatura: os docs legados usam "ABBA Intelligence" / "AI Consulting & Platform" / "ABBA Consulting" — o nome comercial vigente é **ABBA Consultoria de IA** ([marca](../00-identidade/marca-e-nomenclatura.md)); padronizar na migração.
 
+## 4b. Entregáveis do assessment gerados pela ferramenta (2026-08-29)
+
+**[`modelos/entregaveis-assessment/`](modelos/entregaveis-assessment/README.md)** — os três documentos que um assessment realmente produz, saídos dos geradores reais sobre uma empresa **fictícia** (Nortex Componentes):
+
+| Arquivo | Para quem | Papel |
+|---|---|---|
+| `anexo-visual-modelo.pdf` | cliente e prospect | 8 páginas PT-BR: radar, heatmap das 25 dimensões, matriz valor × esforço, roteiro, TCO. **É o que você mostra.** |
+| `one-pager-cliente-modelo.md` | cliente | o documento que sobrevive à reunião e circula internamente para aprovar orçamento |
+| `relatorio-consultor-modelo.md` | só a ABBA | o relatório interno de 42 KB com o apêndice de evidências. Nunca sai. |
+
+Diferença em relação aos modelos `.docx` da seção 5: aqueles são **gabaritos editoriais** que um humano preenche; estes são a **saída viva da ferramenta**, e envelhecem junto com o produto. Regenerar com `abba demo`, nunca editar à mão.
+
+**A regra que não se quebra:** o rótulo *(empresa fictícia)* viaja dentro dos três documentos e não sai. A frase certa é *"este é o formato do que você recebe"*; a frase proibida é *"foi isto que a nossa IA achou nesta empresa"*. O README da pasta traz o roteiro para as duas perguntas difíceis ("me mostra um cliente real", "esses números são reais") e a limitação declarada (os valores saem em dólar).
+
 ## 5. Família de modelos regularizada (2026-07-23)
 
 Os modelos legados foram **regenerados do zero** no padrão vigente — mesma identidade visual, discurso alinhado (modelo de 6 etapas, nomes oficiais, sem promessas pendentes de P8/P9), `{{PLACEHOLDERS}}` no lugar de dados de exemplo. Em [`modelos/`](modelos/):
