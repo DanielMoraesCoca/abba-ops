@@ -8,7 +8,7 @@
 
 ## A empresa não existe
 
-**Nortex Componentes** é uma fabricante fictícia de componentes usinados: 380 pessoas, duas plantas no Sul, R$ equivalente a US$ 62 milhões de faturamento. Foi inventada.
+**Nortex Componentes** é uma fabricante fictícia de componentes usinados: 380 pessoas, duas plantas no Sul, R$ 180 milhões de faturamento. Foi inventada.
 
 Isso é uma decisão, não uma limitação. O one-pager de um cliente real carrega o nome dele, os nomes dos vazamentos e as cifras. Anonimizar aquilo é promessa impossível de cumprir: setor + faixa de faturamento + vazamento principal reidentifica uma empresa de médio porte para qualquer um do mercado, e o mercado brasileiro é pequeno. Um teaser que vaza destrói a única coisa que uma consultoria vende.
 
@@ -30,9 +30,9 @@ Onde o dinheiro está vazando, o que a IA destrava, o que muda para cada papel, 
 
 **Usa quando:** o cliente pede "me manda alguma coisa que eu possa mostrar para o meu sócio".
 
-### 3. `relatorio-consultor-modelo.md` — 42 KB, nunca sai da ABBA
+### 3. `relatorio-consultor-modelo.md` — nunca sai da ABBA
 
-O relatório interno inteiro, com o apêndice de evidências: as 25 dimensões uma a uma, o organismo, a densidade de evidência, os loops de decisão, a auditoria de confiança da própria análise, a integridade do método e a declaração de completude do run.
+O relatório interno inteiro (cerca de 40 KB), com o apêndice de evidências: as 25 dimensões uma a uma, o organismo, a densidade de evidência, os loops de decisão, a auditoria de confiança da própria análise, a integridade do método e a declaração de completude do run.
 
 **Usa quando:** é seu cérebro durante o engajamento, e é a prova de rigor se alguém desafiar um número. Também serve para mostrar a um sócio, a um futuro contratado ou a um parceiro **o que existe por trás** das 8 páginas bonitas.
 
@@ -64,11 +64,16 @@ Essa resposta é mais forte que o material que ela recusa a mostrar.
 
 ---
 
-## Limitação conhecida e declarada
+## Moeda
 
-**Os valores saem em dólar**, porque a ferramenta armazena e imprime dólar. Diante de um prospect brasileiro isso é um custo de credibilidade real. Está registrado como pendência de produto no [registro executivo](../../../05-interno/engenharia-reversa-assessment.md); enquanto não for corrigido, avise antes de entregar o PDF, ou o interlocutor vai notar antes de você.
+**Os valores estão em reais**, e não por conversão: a empresa é brasileira, os documentos que ela "entregou" estão em reais, e portanto a aritmética que produziu cada cifra já estava em reais. O engajamento declara a moeda (`abba engagement create --currency BRL`) e a ferramenta imprime o que foi declarado. Nada é convertido em lugar nenhum, porque uma conversão inventaria uma taxa e uma data.
 
----
+Até 2026-08-30 estes documentos saíam com cifrão. Não era escolha de formatação: era um número certo com o símbolo errado, e errado na direção que nos favorecia, fazendo um vazamento ler cerca de cinco vezes maior do que é.
+
+Duas coisas para você saber ao usar a peça:
+
+- **O custo da análise continua em dólar** ("Cost: $3.18"), e está certo: é o que a Anthropic cobrou. Se um cliente perguntar, essa é a resposta.
+- **As premissas são checáveis, e é para serem.** R$ 112/h de engenheiro sênior carregado, R$ 180 milhões de faturamento para 380 pessoas, 1.400 cotações com 22% de taxa de ganho. O CSV que a empresa fictícia "enviou" bate com o registro de vazamentos, e todo payback confere com custo dividido por recuperação mensal. Se um diretor industrial conferir, vai fechar. É o único teste que importa neste documento.
 
 ## Como regenerar
 

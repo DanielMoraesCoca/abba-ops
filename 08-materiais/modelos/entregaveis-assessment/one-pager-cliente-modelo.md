@@ -1,6 +1,6 @@
 # Where AI Creates Value for Nortex Componentes (empresa fictícia)
 
-*Prepared by ABBA Assessment Brain — 2026-08-28*
+*Prepared by ABBA Assessment Brain — 2026-08-30*
 
 
 ---
@@ -22,7 +22,7 @@
 
 ## 1. Where you are losing money you do not see
 
-**You are losing approximately $1,410,000 per year to processes that AI can handle today.**
+**You are losing approximately R$ 2.340.000 per year to processes that AI can handle today.**
 
 Of the 6 bleeds we identified, **1 is not visible to your leadership today** — it happens below the dashboard line.
 
@@ -30,32 +30,32 @@ Of the 6 bleeds we identified, **1 is not visible to your leadership today** —
 
 | # | Bleed | What it costs you | Awareness today |
 |---|---|---|---|
-| 1 | Retrabalho de cotação por especificação incompleta | $420,000/ano | Known, deprioritized |
-| 2 | Reconciliação semanal entre PCP, compras e produção | $310,000/ano | Partial fix in flight |
-| 3 | Peça parada esperando aprovação de desvio | $260,000/ano | Known, deprioritized |
-| 4 | Consolidação manual do apontamento de produção | $185,000/ano | Known, deprioritized |
-| 5 | Roteiro de processo real na cabeça de dois planejadores | $140,000/ano (custo de exposição, não de caixa) | Not visible |
-| 6 | ERP e MES reconciliados em planilha | $95,000/ano | Partial fix in flight |
+| 1 | Retrabalho de cotação por especificação incompleta | R$ 920 mil/ano | Known, deprioritized |
+| 2 | Peça parada esperando aprovação de desvio | R$ 610 mil/ano | Known, deprioritized |
+| 3 | Reconciliação semanal entre PCP, compras e produção | R$ 265 mil/ano | Partial fix in flight |
+| 4 | Consolidação manual do apontamento de produção | R$ 140 mil/ano | Known, deprioritized |
+| 5 | Roteiro de processo real na cabeça de dois planejadores | R$ 240 mil/ano (exposição a risco, não despesa de caixa) | Not visible |
+| 6 | ERP e MES reconciliados em planilha | R$ 165 mil/ano | Partial fix in flight |
 
 ---
 
 ## 2. What AI unlocks for you
 
-**Combined Year-1 financial return if you ship the full plan: $977,000** *(against $443,000 in build cost — meaning the system pays for itself 2x in the first year).*
+**Combined Year-1 financial return if you ship the full plan: R$ 1.572.000** *(against R$ 1.079.000 in build cost — meaning the plan covers its build cost in about 8 months and is ahead from there).*
 
 ### New revenue AI can help you make
 
 *Not every AI win is a cost cut. These are places the same capability opens new money — the growth side of the plan.*
 
-**Estimated new annual upside: $1,320,000** *(across 2 opportunities).*
-
-**Capacidade de cotação destravada**
-> A demanda existe e o gargalo é a engenharia de aplicação. Cada ponto de prazo de cotação recuperado devolve propostas que hoje o concorrente responde primeiro.
-*Potential upside: $420K–$1.1M (expected $780K)/year.*
+**Estimated new annual upside: R$ 3.100.000** *(across 2 opportunities).*
 
 **Disciplina de preço por família de produto**
 > A margem por família existe no ERP e não entra na negociação. O desconto sai na hora, com base histórica e não com base na margem real da peça.
-*Potential upside: $300K–$820K (expected $540K)/year.*
+*Potential upside: R$ 1,1 mi–R$ 2,5 mi (expected R$ 1,7 mi)/year.*
+
+**Capacidade de cotação destravada**
+> A demanda existe e o gargalo é a engenharia de aplicação. Cada dia de prazo de cotação recuperado devolve propostas que hoje o concorrente responde primeiro.
+*Potential upside: R$ 630 mil–R$ 2,4 mi (expected R$ 1,4 mi)/year.*
 
 ### Strategic plays
 
@@ -63,23 +63,23 @@ Of the 6 bleeds we identified, **1 is not visible to your leadership today** —
 
 **Checagem de completude da especificação antes da engenharia**
 > Na entrada da cotação, o modelo confere a especificação contra os 20 anos de cotações anteriores e devolve ao comercial o que está faltando, antes de consumir hora de engenheiro sênior.
-*$112K build → $294K/year recovered.*
-
-**Reconciliação automática entre planilha, ERP e chão**
-> Um agente lê o apontamento, o ERP e a planilha do PCP, aponta apenas as divergências e propõe a correção. As três reuniões semanais viram uma, e ela decide em vez de reconciliar.
-*$78K build → $232K/year recovered.*
+*R$ 320 mil build → R$ 644 mil/year recovered.*
 
 **Dossiê de desvio pronto para a engenharia decidir**
 > Quando um desvio abre, o sistema monta o dossiê (peça, histórico de desvios parecidos, impacto no prazo, decisão anterior) e entrega pronto. A engenharia decide, não pesquisa.
-*$96K build → $161K/year recovered.*
+*R$ 285 mil build → R$ 366 mil/year recovered.*
 
-**Leitura automática do apontamento de chão**
-> O apontamento passa a ser lido direto do registro de chão e conferido, em vez de transcrito duas vezes. O ERP deixa de ficar um dia atrás.
-*$54K build → $148K/year recovered.*
+**Reconciliação automática entre planilha, ERP e chão**
+> Um agente lê o apontamento, o ERP e a planilha do PCP, aponta apenas as divergências e propõe a correção. As três reuniões semanais viram uma, e ela decide em vez de reconciliar.
+*R$ 145 mil build → R$ 190 mil/year recovered.*
 
 **Captura do roteiro real antes da aposentadoria**
 > O que os dois planejadores sabem vira consultável: por que esta peça vai nesta máquina, o que dá errado quando não vai. Capturado com eles, não sobre eles.
-*$41K build → $78K/year recovered.*
+*R$ 96 mil build → R$ 144 mil/year recovered.*
+
+**Ponte monitorada entre ERP e MES**
+> A planilha que hoje é a ponte vira uma integração com monitoramento: quando quebra, alguém sabe no mesmo dia em vez de descobrir no planejamento da semana seguinte.
+*R$ 135 mil build → R$ 116 mil/year recovered.*
 
 ---
 
@@ -143,7 +143,7 @@ Of the 6 bleeds we identified, **1 is not visible to your leadership today** —
 
 ### Step 1: Reconciliação automática entre planilha, ERP e chão
 
-*Solves: Reconciliação semanal entre PCP, compras e produção ($310,000/ano)*
+*Solves: Reconciliação semanal entre PCP, compras e produção (R$ 265 mil/ano)*
 
 **Why this keeps paying:** it recovers value every year, not just once.
 
@@ -155,7 +155,7 @@ Um agente lê o apontamento, o ERP e a planilha do PCP, aponta apenas as diverg�
 
 ### Step 2: Leitura automática do apontamento de chão
 
-*Solves: Consolidação manual do apontamento de produção ($185,000/ano)*
+*Solves: Consolidação manual do apontamento de produção (R$ 140 mil/ano)*
 
 **Why this keeps paying:** it recovers value every year, not just once.
 
@@ -167,7 +167,7 @@ O apontamento passa a ser lido direto do registro de chão e conferido, em vez d
 
 ### Step 3: Ponte monitorada entre ERP e MES
 
-*Solves: ERP e MES reconciliados em planilha ($95,000/ano)*
+*Solves: ERP e MES reconciliados em planilha (R$ 165 mil/ano)*
 
 A planilha que hoje é a ponte vira uma integração com monitoramento: quando quebra, alguém sabe no mesmo dia em vez de descobrir no planejamento da semana seguinte.
 

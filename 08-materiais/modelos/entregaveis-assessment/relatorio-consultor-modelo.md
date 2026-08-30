@@ -1,7 +1,7 @@
 # Assessment Report: Nortex Componentes (empresa fictícia)
 
 **Engagement:** Demonstração do método ABBA
-**Date:** 2026-08-28
+**Date:** 2026-08-30
 **Industry:** manufacturing
 **Model:** claude-haiku | **Dimensions:** 25/25 | **Confidence:** 0.78 | **Cost:** $3.18
 
@@ -12,7 +12,7 @@
 - **AI maturity:** level 3/5 — Structured (Estruturado), from 6 of 6 pillars with a reading
 - **Weakest pillar:** Technology & Integration (level 2/5)
 - **Data foundation:** FRAGILE (data and process) — build on it and the build fails
-- **Largest detected leak:** Retrabalho de cotação por especificação incompleta (~$420,000/yr)
+- **Largest detected leak:** Retrabalho de cotação por especificação incompleta (~R$ 920.000/yr)
 - **First move on the ranking:** Reconciliação automática entre planilha, ERP e chão
 
 *Every line above is expanded — with evidence, confidence and method — in the sections below.*
@@ -49,16 +49,16 @@
 
 *Money the company is losing — much of it without realizing. Each row maps to a recommended AI intervention below.*
 
-**Bottom-up leak sum: $1,410,000/yr** *(6 leaks total, 0 unquantified)*
+**Bottom-up leak sum: R$ 2.340.000/yr** *(6 leaks total, 0 unquantified)*
 
 | # | Category | Leak | Annual Cost | Severity | Awareness | Related |
 |---|---|---|---|---|---|---|
-| 1 | rework | Retrabalho de cotação por especificação incompleta | $420,000/ano | critical | known_but_unaddressed | D11, D07, D13 |
-| 2 | coordination_drag | Reconciliação semanal entre PCP, compras e produção | $310,000/ano | high | partially_addressed | D16, D12, D02 |
-| 3 | decision_latency | Peça parada esperando aprovação de desvio | $260,000/ano | high | known_but_unaddressed | D20, D05, D18 |
-| 4 | hidden_labor | Consolidação manual do apontamento de produção | $185,000/ano | high | known_but_unaddressed | D12, D03, D21 |
-| 5 | knowledge_concentration | Roteiro de processo real na cabeça de dois planejadores | $140,000/ano (custo de exposição, não de caixa) | medium | unknown_to_company | D15, D06, D05 |
-| 6 | integration_brittleness | ERP e MES reconciliados em planilha | $95,000/ano | medium | partially_addressed | D21, D03, D19 |
+| 1 | rework | Retrabalho de cotação por especificação incompleta | R$ 920 mil/ano | critical | known_but_unaddressed | D11, D07, D13 |
+| 2 | decision_latency | Peça parada esperando aprovação de desvio | R$ 610 mil/ano | high | known_but_unaddressed | D20, D05, D18 |
+| 3 | coordination_drag | Reconciliação semanal entre PCP, compras e produção | R$ 265 mil/ano | high | partially_addressed | D16, D12, D02 |
+| 4 | hidden_labor | Consolidação manual do apontamento de produção | R$ 140 mil/ano | high | known_but_unaddressed | D12, D03, D21 |
+| 5 | knowledge_concentration | Roteiro de processo real na cabeça de dois planejadores | R$ 240 mil/ano (exposição a risco, não despesa de caixa) | medium | unknown_to_company | D15, D06, D05 |
+| 6 | integration_brittleness | ERP e MES reconciliados em planilha | R$ 165 mil/ano | medium | partially_addressed | D21, D03, D19 |
 
 <details><summary>Leak detail — evidence + methodology</summary>
 
@@ -66,25 +66,25 @@
 
 Cada cotação passa em média 2,4 vezes pela engenharia de aplicação porque a especificação chega incompleta do comercial. O tempo é de engenheiro sênior, e o cliente espera.
 
-*Methodology (calculated):* Premissa: 1.400 cotações/ano x 1,4 passagens extras x 4,2h por passagem x $51/h de engenheiro carregado. As 1.400 cotações vieram do ERP; as passagens extras e as horas vieram da entrevista com a engenharia de aplicação.
+*Methodology (calculated):* Premissa: 1.400 cotações/ano x 1,4 passagens extras x 4,2h por passagem x R$ 112/h de engenheiro sênior carregado. As 1.400 cotações vieram do ERP; as passagens extras e as horas vieram da entrevista com a engenharia de aplicação; a hora carregada veio da folha.
 
-**2. Reconciliação semanal entre PCP, compras e produção**
-
-Três reuniões por semana existem para alinhar o que cada área acha que está acontecendo. Nenhuma decide nada novo: elas corrigem a divergência entre planilha, ERP e chão.
-
-*Methodology (calculated):* Premissa: 9 pessoas x 3 reuniões x 1,5h x 46 semanas x $56/h carregado, mais 6h/semana de preparação de planilha do PCP. Contagem de participantes conferida na agenda.
-
-**3. Peça parada esperando aprovação de desvio**
+**2. Peça parada esperando aprovação de desvio**
 
 Um desvio de engenharia leva 3,4 dias em média para ser aprovado. A ordem fica parada e o prazo prometido ao cliente já está correndo.
 
-*Methodology (estimated):* Premissa: 560 desvios/ano x 2,1 dias de espera evitável x $221/dia de margem de contribuição parada. A margem por dia de ordem é média da família, não por peça, então o número é uma faixa e não um ponto.
+*Methodology (estimated):* Premissa: 560 desvios/ano x 2,1 dias de espera evitável x R$ 520/dia de custo de atraso (expedição extra e multa contratual rateada). O custo por dia é média da carteira, não por peça, então este número é uma faixa e não um ponto.
+
+**3. Reconciliação semanal entre PCP, compras e produção**
+
+Três reuniões por semana existem para alinhar o que cada área acha que está acontecendo. Nenhuma decide nada novo: elas corrigem a divergência entre planilha, ERP e chão.
+
+*Methodology (calculated):* Premissa: 12 pessoas x 3 reuniões x 1,5h x 46 semanas x R$ 98/h carregado, mais 6h/semana de preparação de planilha do PCP a R$ 85/h. A contagem de participantes foi conferida na agenda.
 
 **4. Consolidação manual do apontamento de produção**
 
 Duas pessoas passam parte do dia transcrevendo apontamento de chão para a planilha e da planilha para o ERP. O ERP fica sempre um dia atrás do que é verdade.
 
-*Methodology (calculated):* Premissa: 2 pessoas x 3,5h/dia x 230 dias x $41/h carregado, mais o custo do retrabalho de digitação medido em 3 semanas de amostra.
+*Methodology (calculated):* Premissa: 2 pessoas x 3,5h/dia x 230 dias x R$ 78/h carregado, mais o retrabalho de digitação medido em 3 semanas de amostra.
 
 **5. Roteiro de processo real na cabeça de dois planejadores**
 
@@ -96,7 +96,7 @@ O roteiro que funciona não é o do sistema: é o que dois planejadores com 20 a
 
 A ponte entre os dois sistemas é uma planilha mantida por uma pessoa. Quando ela falha, o planejamento da semana seguinte sai errado.
 
-*Methodology (estimated):* Premissa: 11 incidentes relatados no último ano x custo médio de replanejamento de 1,5 dia. O número de incidentes veio do relato do PCP, não de um registro, então a confiança é baixa.
+*Methodology (estimated):* Premissa: 11 incidentes relatados no último ano x 1,5 dia de replanejamento x R$ 10 mil/dia de custo de reprogramação. O número de incidentes veio do relato do PCP, não de um registro, então a confiança é baixa.
 
 </details>
 
@@ -106,26 +106,26 @@ A ponte entre os dois sistemas é uma planilha mantida por uma pessoa. Quando el
 
 *The other side of the ledger — money the company could **make**, not just the money it is losing. These are build-new candidates for AI, not cost cuts.*
 
-**Total estimated annual upside: $1,320,000** *(2 opportunities)*
+**Total estimated annual upside: R$ 3.100.000** *(2 opportunities)*
 
 | # | Category | Opportunity | Annual Upside | Value Profile | Time to Value |
 |---|---|---|---|---|---|
-| 1 | capacity_unlock | Capacidade de cotação destravada | $420K–$1.1M (expected $780K) | recurring | 2 a 3 trimestres |
-| 2 | pricing_packaging | Disciplina de preço por família de produto | $300K–$820K (expected $540K) | recurring | 1 a 2 trimestres |
+| 1 | pricing_packaging | Disciplina de preço por família de produto | R$ 1,1 mi–R$ 2,5 mi (expected R$ 1,7 mi) | recurring | 1 a 2 trimestres |
+| 2 | capacity_unlock | Capacidade de cotação destravada | R$ 630 mil–R$ 2,4 mi (expected R$ 1,4 mi) | recurring | 2 a 3 trimestres |
 
 <details><summary>Opportunity detail — evidence + methodology</summary>
 
-**1. Capacidade de cotação destravada**
-
-A demanda existe e o gargalo é a engenharia de aplicação. Cada ponto de prazo de cotação recuperado devolve propostas que hoje o concorrente responde primeiro.
-
-*Methodology (estimated):* Premissa: 1.400 cotações/ano, taxa de ganho atual de 22%, e 3 a 8 pontos de recuperação em propostas hoje perdidas por prazo. A faixa é larga de propósito: a taxa de perda por prazo é relato comercial, não medição.
-
-**2. Disciplina de preço por família de produto**
+**1. Disciplina de preço por família de produto**
 
 A margem por família existe no ERP e não entra na negociação. O desconto sai na hora, com base histórica e não com base na margem real da peça.
 
-*Methodology (estimated):* Premissa: 1 a 1,8 ponto percentual de margem recuperada sobre $62M de receita, aplicando ao mix as famílias hoje descontadas abaixo da média. Vem do ERP, mas o comportamento de desconto vem de entrevista.
+*Methodology (estimated):* Premissa: 0,6 a 1,4 ponto percentual de margem recuperada sobre R$ 180 milhões de faturamento, aplicando às famílias hoje descontadas abaixo da média. A margem por família vem do ERP; o comportamento de desconto vem de entrevista, e é o lado fraco da estimativa.
+
+**2. Capacidade de cotação destravada**
+
+A demanda existe e o gargalo é a engenharia de aplicação. Cada dia de prazo de cotação recuperado devolve propostas que hoje o concorrente responde primeiro.
+
+*Methodology (estimated):* Premissa: R$ 9 a 24 milhões de faturamento hoje perdido por prazo de cotação, recuperando de 25% a 35% disso, com margem de contribuição de 28%. É MARGEM, não faturamento. A faixa é larga de propósito: o quanto se perde por prazo é relato comercial, não medição, e é a primeira coisa a instrumentar.
 
 </details>
 
@@ -137,16 +137,16 @@ A margem por família existe no ERP e não entra na negociação. O desconto sai
 
 *These are the most valuable hypotheses, not the only ones — the first hypothesis is rarely the best, just the fastest. Challenge the plan before committing: `abba red-team <engagement>`.*
 
-**Combined Year-1 recovery if all interventions ship: $977,000** *(total implementation cost: $443,000)*
+**Combined Year-1 recovery if all interventions ship: R$ 1.572.000** *(total implementation cost: R$ 1.079.000)*
 
 | # | Intervention | Capability | Impl Cost | Annual Recovery | Payback | Loaded Payback | Readiness | Sensitivity |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Reconciliação automática entre planilha, ERP e chão | reconciliation | $78,000 | $232,000 | 4.1 mo | — | high | low |
-| 2 | Leitura automática do apontamento de chão | extraction | $54,000 | $148,000 | 4.4 mo | — | high | low |
-| 3 | Ponte monitorada entre ERP e MES | reconciliation | $62,000 | $64,000 | 11.6 mo | — | high | low |
-| 4 | Checagem de completude da especificação antes da engenharia | extraction | $112,000 | $294,000 | 5.8 mo | — | medium | medium |
-| 5 | Captura do roteiro real antes da aposentadoria | summarization | $41,000 | $78,000 | 9.4 mo | — | medium | medium |
-| 6 | Dossiê de desvio pronto para a engenharia decidir | decision_support | $96,000 | $161,000 | 7.2 mo | — | medium | high |
+| 1 | Reconciliação automática entre planilha, ERP e chão | reconciliation | R$ 145.000 | R$ 190.000 | 9.2 mo | — | high | low |
+| 2 | Leitura automática do apontamento de chão | extraction | R$ 98.000 | R$ 112.000 | 10.5 mo | — | high | low |
+| 3 | Ponte monitorada entre ERP e MES | reconciliation | R$ 135.000 | R$ 116.000 | 14.0 mo | — | high | low |
+| 4 | Checagem de completude da especificação antes da engenharia | extraction | R$ 320.000 | R$ 644.000 | 6.0 mo | — | medium | medium |
+| 5 | Captura do roteiro real antes da aposentadoria | summarization | R$ 96.000 | R$ 144.000 | 8.0 mo | — | medium | medium |
+| 6 | Dossiê de desvio pronto para a engenharia decidir | decision_support | R$ 285.000 | R$ 366.000 | 9.3 mo | — | medium | high |
 
 ### Why this ranking
 
@@ -154,15 +154,21 @@ A margem por família existe no ERP e não entra na negociação. O desconto sai
 
 | Intervention | Prize | Feasibility | Payback | Compounding | Measurability | Risk |
 |---|---|---|---|---|---|---|
-| Reconciliação automática entre planilha, ERP e chã | 5.37 | 0.53 | 0.74 | 1.00 | 1.00 | 0.69 |
-| Leitura automática do apontamento de chão | 5.17 | 0.53 | 0.73 | 1.00 | 1.00 | 0.69 |
-| Ponte monitorada entre ERP e MES | 4.81 | 0.53 | 0.51 | 1.00 | 1.00 | 0.67 |
-| Checagem de completude da especificação antes da e | 5.47 | 0.19 | 0.67 | 1.00 | 1.00 | 0.66 |
-| Captura do roteiro real antes da aposentadoria | 4.89 | 0.19 | 0.56 | 1.00 | 1.00 | 0.60 |
+| Reconciliação automática entre planilha, ERP e chã | 5.28 | 0.53 | 0.57 | 1.00 | 1.00 | 0.69 |
+| Leitura automática do apontamento de chão | 5.05 | 0.53 | 0.53 | 1.00 | 1.00 | 0.69 |
+| Ponte monitorada entre ERP e MES | 5.06 | 0.53 | 0.46 | 1.00 | 1.00 | 0.67 |
+| Checagem de completude da especificação antes da e | 5.81 | 0.19 | 0.67 | 1.00 | 1.00 | 0.66 |
+| Captura do roteiro real antes da aposentadoria | 5.16 | 0.19 | 0.60 | 1.00 | 1.00 | 0.60 |
+
+**Bigger prizes that did not lead:**
+
+- **Checagem de completude da especificação antes da engenharia** recovers R$ 644.000/yr, 3.4x the money of the #1 build, and ranks #4. The Breach Score damps the prize on purpose, so 3.4x the money is only 1.10x the prize factor. Then its feasibility markers (`readiness: medium`, `sensitivity: medium`) cost it another 2.8x.
+
+*A marking is a judgement someone made in an interview, not a measurement. If one of these is wrong, the plan is wrong, and this is the cheapest moment to catch it: re-check the marking with the client, then `abba rerun` or override it. If the markings are right, this ordering is the method working as intended (start where the organization is willing, not where the number is biggest).*
 
 *Run-level signals: integration gravity (D21, fix-first verdict) discounts every build's feasibility by 25%.*
 
-*Order frozen at the end of the run (snapshot `rnk_ylbugEoMPXM`, prioritizer `breach-1`). The signals above are the ones in force when it was taken. Later measured outcomes change the NEXT assessment, not the plan already delivered; `abba report --refresh-ranking` re-takes it and preserves the previous order beside it.*
+*Order frozen at the end of the run (snapshot `rnk_7LK1A4iilKM`, prioritizer `breach-1`). The signals above are the ones in force when it was taken. Later measured outcomes change the NEXT assessment, not the plan already delivered; `abba report --refresh-ranking` re-takes it and preserves the previous order beside it.*
 
 <details><summary>Intervention specs — architecture, data, integrations, HITL</summary>
 
@@ -722,8 +728,8 @@ Quando um desvio abre, o sistema monta o dossiê (peça, histórico de desvios p
 | D24 (dim) | 0.79 | 0 | — | — | Build Today vs. Tomorrow |
 | D25 (dim) | 0.68 | 0 | — | — | The Measurement Baseline |
 | leak (critical) | 0.78 | 0 | — | — | Retrabalho de cotação por especificação incompleta |
-| leak (high) | 0.82 | 0 | — | — | Reconciliação semanal entre PCP, compras e produção |
 | leak (high) | 0.61 | 0 | — | — | Peça parada esperando aprovação de desvio |
+| leak (high) | 0.82 | 0 | — | — | Reconciliação semanal entre PCP, compras e produção |
 | leak (high) | 0.85 | 0 | — | — | Consolidação manual do apontamento de produção |
 | leak (medium) | 0.55 | 0 | — | — | Roteiro de processo real na cabeça de dois planejadores |
 | leak (medium) | 0.52 | 0 | — | — | ERP e MES reconciliados em planilha |
@@ -779,4 +785,4 @@ Quando um desvio abre, o sistema monta o dossiê (peça, histórico de desvios p
 
 ---
 
-*Generated by ABBA Assessment Brain on 2026-08-28. Model: claude-haiku. Cost: $3.18.*
+*Generated by ABBA Assessment Brain on 2026-08-30. Model: claude-haiku. Cost: $3.18.*

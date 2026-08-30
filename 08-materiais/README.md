@@ -92,7 +92,7 @@ Nota de nomenclatura: os docs legados usam "ABBA Intelligence" / "AI Consulting 
 
 Diferença em relação aos modelos `.docx` da seção 5: aqueles são **gabaritos editoriais** que um humano preenche; estes são a **saída viva da ferramenta**, e envelhecem junto com o produto. Regenerar com `abba demo`, nunca editar à mão.
 
-**A regra que não se quebra:** o rótulo *(empresa fictícia)* viaja dentro dos três documentos e não sai. A frase certa é *"este é o formato do que você recebe"*; a frase proibida é *"foi isto que a nossa IA achou nesta empresa"*. O README da pasta traz o roteiro para as duas perguntas difíceis ("me mostra um cliente real", "esses números são reais") e a limitação declarada (os valores saem em dólar).
+**A regra que não se quebra:** o rótulo *(empresa fictícia)* viaja dentro dos três documentos e não sai. A frase certa é *"este é o formato do que você recebe"*; a frase proibida é *"foi isto que a nossa IA achou nesta empresa"*. O README da pasta traz o roteiro para as duas perguntas difíceis ("me mostra um cliente real", "esses números são reais") e a nota sobre moeda: os valores saem em **reais** desde 2026-08-30, e só o custo da própria análise continua em dólar, porque é o que o fornecedor cobrou.
 
 ## 5. Família de modelos regularizada (2026-07-23)
 
