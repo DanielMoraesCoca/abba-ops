@@ -71,8 +71,9 @@ Regulamentada em 30/04/2026 pelos dois regulamentos publicados no mesmo dia (Dec
 | Elemento | Regra |
 |---|---|
 | **O que é** | O Fisco monta a apuração de IBS/CBS **pré-preenchida**, a partir dos documentos fiscais eletrônicos e dos dados de pagamento. A empresa deixa de apurar do zero e passa a **conferir, complementar e confirmar** |
-| **Prazo** | Disponível até o dia **15** do mês seguinte (dia **20** para quem entrega DeRE) |
-| **O default** | **Silêncio = aceite.** Não havendo manifestação, os valores propostos prevalecem e o crédito tributário é constituído automaticamente |
+| **Disponibilização** | A proposta fica **disponível** até o dia **15** do mês seguinte (dia **20** para quem entrega DeRE). Isto é quando ela aparece — **não** é o prazo de resposta |
+| **Prazo de manifestação** | Até o **último dia útil do mês seguinte**, para incluir ajustes positivos e negativos |
+| **O default** | **Silêncio = aceite.** Não havendo manifestação no prazo, a apuração do Fisco é presumida correta e o crédito tributário é constituído automaticamente — o que **equivale a confissão de dívida** (art. 348, §1º da LC 214/2025 e §4º do art. 125 do ADCT) |
 | **A trava** | Depois de validada, **não se refaz a apuração fora do sistema**. Ajuste posterior só sobre a base já validada |
 
 **Por que isto é o produto:** é uma obrigação **mensal**, **universal** (todo contribuinte do regime regular), com **prazo curto** e **penalidade por omissão** — e cuja conferência é exatamente um trabalho de cruzamento de documentos em volume, que é onde agente de IA ganha de gente cansada. Não depende de o split payment sair. Não depende de o cliente ser de um setor. E o número que ela produz é **dinheiro duro e auditável**: crédito que estava no documento fiscal da empresa, não entrou na proposta do Fisco, e teria sido perdido pelo silêncio.
@@ -173,7 +174,7 @@ A leitura do documento se sustenta e é compatível com o [alvo](../00-identidad
 
 | Perfil | Prioridade | Por quê |
 |---|---|---|
-| **Escritório de contabilidade** (centenas de clientes) | **1 — canal** | Carrega o prazo do dia 15 de **todos** os clientes ao mesmo tempo. A Sentinela é multiplicadora de capacidade dele. É o único canal que resolve o "17% das MPEs usam ferramenta digital estruturada" sem vender para MPE |
+| **Escritório de contabilidade** (centenas de clientes) | **1 — canal** | Carrega o mesmo prazo mensal de **todos** os clientes ao mesmo tempo, e a janela e curta. A Sentinela é multiplicadora de capacidade dele. É o único canal que resolve o "17% das MPEs usam ferramenta digital estruturada" sem vender para MPE |
 | Volume alto e margem baixa (varejo, distribuição, atacado) | 1 | Muito documento fiscal = muita divergência = muito crédito perdido no silêncio |
 | Empresa com muitos fornecedores B2B | 1 | É onde a conversa do RAD abre |
 | Serviços com poucos insumos | 2 | Gera pouco crédito; a Sentinela vale menos. Vender diagnóstico, não recorrência |
@@ -232,7 +233,7 @@ Os dez riscos do documento continuam válidos. Estes são os que mudaram de tama
 
 As três do documento, corrigidas pelo que se sabe hoje:
 
-1. Se as empresas e os escritórios consultados **não reagirem ao prazo do dia 15** e não conseguirem dizer quem confere a apuração hoje — não há dor comprada.
+1. Se as empresas e os escritórios consultados **não reagirem ao prazo mensal de manifestação** e não conseguirem dizer quem confere a apuração hoje — não há dor comprada.
 2. ~~Se o split payment for adiado além de 2028~~ → **substituída**: se a apuração assistida for adiada ou perder o default silencioso, a linha volta para a fila e o projeto é reavaliado do zero.
 3. Se **nenhum executor dedicado for definido em 60 dias**, o projeto não deve começar. **Mantida integralmente.**
 
@@ -254,7 +255,7 @@ Mantém a estrutura do documento — **conversas e planilha antes de código** �
 
 | Prazo | Ação | Critério de avanço |
 |---|---|---|
-| **Semana 1** | Conversar com **dois escritórios de contabilidade**: quem confere a apuração assistida dos clientes deles? Em quanto tempo? O que acontece se passar do dia 15? | Ao menos um não souber responder, ou responder "no olho, no mês que vier" |
+| **Semana 1** | Conversar com **dois escritórios de contabilidade**: quem confere a apuração assistida dos clientes deles? Em quanto tempo? O que acontece quando a manifestação não sai no prazo? | Ao menos um não souber responder, ou responder "no olho, no mês que vier" |
 | **Semana 1** | Responder a **C2**: existe API para a apuração pré-preenchida? Perguntar ao contador, não ao Google | Resposta escrita, com fonte |
 | **Semana 2** | Conversar com cinco clientes empresariais com as perguntas do [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md) + duas novas: *"quem confere a apuração?"* e *"você já ouviu falar em RAD?"* | Três não souberem responder às duas |
 | **Semana 2** | Reconferir os fatos legais deste plano **na fonte primária** e registrar na [base de evidências](../00-identidade/base-de-evidencias.md) | Cada afirmação do §2 com ato normativo citado |
@@ -267,6 +268,27 @@ Mantém a estrutura do documento — **conversas e planilha antes de código** �
 **A regra que protege o plano, mantida:** nada de empresa, captação ou equipe antes do mês 3. E uma regra nova, desta casa: **nenhuma peça comercial desta linha antes da reconferência da semana 2** — vender prova com fato não reconferido é o único erro irrecuperável para quem vende prova.
 
 ---
+
+## Correções desta versão
+
+**2026-08-30 — o prazo estava errado, e era o fato mais importante do plano.**
+A v1 tratava o dia 15 (dia 20 para quem entrega DeRE) como a data-limite de
+manifestação. Não é: essa é a data até a qual a proposta do Fisco fica **disponível**.
+O prazo para incluir ajustes positivos e negativos vai até o **último dia útil do mês
+seguinte**.
+
+Duas consequências, e nenhuma enfraquece a tese:
+
+1. **A janela de trabalho é maior do que a v1 supunha** — da disponibilização até o
+   fim do mês. Isso muda a cadência operacional do produto e melhora a viabilidade:
+   há dias úteis para conferir, não horas.
+2. **O custo do silêncio é mais grave do que a v1 dizia.** Não é só "o crédito
+   tributário é constituído": a falta de manifestação **equivale a confissão de
+   dívida** (art. 348, §1º da LC 214/2025; §4º do art. 125 do ADCT). Para um CFO,
+   confissão de dívida é uma palavra de outro peso.
+
+Como todo fato deste plano, ainda em fonte secundária — a reconferência primária
+segue sendo pré-requisito de qualquer peça comercial.
 
 ## Fontes
 

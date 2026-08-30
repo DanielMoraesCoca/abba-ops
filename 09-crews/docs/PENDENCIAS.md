@@ -42,6 +42,25 @@ de dentro da ABBA.
 
 **Dono:** Entrega. **Gate:** promoção a PRODUCAO.
 
+## P3b — O calendário, conferido na fonte primária
+
+**Corrigido em 2026-08-30, e vale registrar como o erro se parecia.** Até esta data o
+projeto tratava o dia 15 (dia 20 com DeRE) como a data-limite de manifestação. É a data
+de **disponibilização** da proposta. O prazo de manifestação vai até o **último dia útil
+do mês seguinte**.
+
+O erro era do tipo mais perigoso: plausível, repetido em vários documentos, e no fato
+que sustenta o produto inteiro. Um calendário errado no código faria a Sentinela alarmar
+na data errada — ou pior, dar por perdido o que ainda dava para manifestar.
+
+Base legal do silêncio, a conferir junto: **art. 348, §1º da LC 214/2025** e **§4º do
+art. 125 do ADCT** — a falta de manifestação equivale a **confissão de dívida**.
+
+`core/calendario.py` nasce no M2 com estes prazos e **com a fonte citada por regra**.
+Nenhuma data fica escrita em prompt.
+
+**Dono:** Tecnologia. **Gate:** M2 para o código; fonte primária antes de peça comercial.
+
 ## P4 — Credencial da Plataforma RTC
 
 O caminho crítico do produto não é código. É entrar no **piloto RTC-CBS**, ou obter

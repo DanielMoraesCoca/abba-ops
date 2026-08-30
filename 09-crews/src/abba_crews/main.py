@@ -29,7 +29,10 @@ class EstadoSentinela(BaseModel):
 
 
 class SentinelaFlow(Flow[EstadoSentinela]):
-    """Confere a apuracao assistida antes do prazo. Nunca transmite ao Fisco."""
+    """Confere a apuracao assistida dentro da janela de manifestacao.
+
+    Nunca transmite ao Fisco: a manifestacao e ato do contribuinte.
+    """
 
     @start()
     def abrir_competencia(self, crewai_trigger_payload: dict[str, Any] | None = None) -> None:

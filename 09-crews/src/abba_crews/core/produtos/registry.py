@@ -96,7 +96,7 @@ PRODUTOS: tuple[Produto, ...] = (
         resumo=(
             "Confere a apuracao assistida pre-preenchida pelo Fisco contra os documentos "
             "da propria empresa, acha credito legitimo omitido e monta o dossie de "
-            "manifestacao antes do prazo. Nunca transmite."
+            "manifestacao dentro da janela. Nunca transmite."
         ),
         entrada="Apuracao pre-preenchida (API RTC) + documentos fiscais da competencia",
         saida="Dossie de manifestacao em estado RASCUNHO, para o contador assinar",
@@ -113,8 +113,12 @@ PRODUTOS: tuple[Produto, ...] = (
         crew="abba_crews.crews.sentinela",
         flow="abba_crews.flows.sentinela_flow",
         observacao=(
-            "Silencio do contribuinte = aceite: o credito tributario e constituido "
-            "automaticamente. E a unica dor mensal, universal e ja regulamentada."
+            "Silencio do contribuinte = aceite. A proposta fica disponivel ate o dia 15 "
+            "(20 para quem entrega DeRE) e a manifestacao vai ate o ultimo dia util do "
+            "mes seguinte; nao havendo resposta, a apuracao e presumida correta e o "
+            "credito tributario e constituido — o que EQUIVALE A CONFISSAO DE DIVIDA "
+            "(art. 348, §1o da LC 214/2025; §4o do art. 125 do ADCT). E a unica dor "
+            "mensal, universal e ja regulamentada."
         ),
     ),
     Produto(
