@@ -58,13 +58,17 @@ export ABBA_DATA_DIR=/caminho/absoluto/para/dados-reais
 export ABBA_DB_PASSPHRASE=...           # regra zero do runbook de ativação
 
 node bin/abba.js doctor --live          # a chave responde? qual renderizador de PDF existe?
-node bin/abba.js engagement create "Ensaio interno" --client "ABBA" --profile manufacturing-mid-market
+node bin/abba.js engagement create "ABBA" "Ensaio interno" --profile manufacturing-mid-market --currency BRL
 node bin/abba.js ingest "Ensaio interno" ./corpus --level c_suite --phase 2
 node bin/abba.js assess "Ensaio interno" --dry-run          # estimativa, zero gasto
 node bin/abba.js assess "Ensaio interno" --budget 8
 ```
 
 **Corpus:** documentos da própria ABBA, ou o Cliente Zero. Nada de cliente pagante.
+
+**`--currency BRL` não é detalhe.** Nada no pipeline instrui moeda ao modelo, então a aritmética feita sobre documentos em reais **sai em reais**. A ferramenta imprime o que o engajamento declara e não converte nada. Sem a flag, o default é dólar e todo número do relatório aparece com o símbolo errado, na direção que nos favorece. Se esquecer: `abba engagement set-currency "<engajamento>" BRL` e re-renderize (relabela, não recalcula).
+
+O custo da própria análise continua em dólar em todo lugar, e está certo: é o que a Anthropic cobrou.
 
 **Antes de o dinheiro sair, o `assess` vai avisar sobre:**
 - documentos entregues que não puderam ser lidos (PDF escaneado sem camada de texto) — este é o momento mais barato de corrigir: rode OCR e reingira;
@@ -149,14 +153,15 @@ Pré-requisitos, todos:
 ```
 [ ] 0. Ensaio em mock: demo + 3 artefatos lidos + validate + pending
 [ ] 1. doctor --live responde
-[ ] 2. Corpus interno ingerido, avisos de ingestão zerados
-[ ] 3. assess --dry-run: estimativa conferida
-[ ] 4. assess --budget apertado, modelo barato
-[ ] 5. rateLimitHits == 0 (senão: baixar ABBA_DIMENSION_CONCURRENCY e repetir)
-[ ] 6. npm run eval com chave real, baseline commitada
-[ ] 7. validate: só roi.reconciled e/ou recommender.coverage bloqueando
-[ ] 8. Três artefatos lidos inteiros, anotações feitas
-[ ] 9. Checklist humano assinado
+[ ] 2. Engajamento criado com --currency BRL
+[ ] 3. Corpus interno ingerido, avisos de ingestão zerados
+[ ] 4. assess --dry-run: estimativa conferida
+[ ] 5. assess --budget apertado, modelo barato
+[ ] 6. rateLimitHits == 0 (senão: baixar ABBA_DIMENSION_CONCURRENCY e repetir)
+[ ] 7. npm run eval com chave real, baseline commitada
+[ ] 8. validate: só roi.reconciled e/ou recommender.coverage bloqueando
+[ ] 9. Três artefatos lidos inteiros, anotações feitas
+[ ] 10. Checklist humano assinado
 ```
 
 ---

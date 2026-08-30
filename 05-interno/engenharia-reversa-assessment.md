@@ -137,4 +137,51 @@ Ambos corrigidos, o segundo com cobertura travada por teste para que uma dimens�
 
 ### Limitação declarada e não maquiada
 
-Os valores da peça de demonstração estão **em dólar**, porque a ferramenta armazena e imprime dólar. Para um prospect brasileiro isso é fraqueza real. Corrigir é funcionalidade de moeda, não truque de demonstração, e por isso está registrado aqui em vez de escondido no fixture. **Novo item P2.**
+Os valores da peça de demonstração estão **em dólar**, porque a ferramenta armazena e imprime dólar. Para um prospect brasileiro isso é fraqueza real. Corrigir é funcionalidade de moeda, não truque de demonstração, e por isso está registrado aqui em vez de escondido no fixture. **Novo item P2.** → **FECHADO em 2026-08-30, e não era P2: era correção.** Ver a onda da moeda abaixo.
+
+---
+
+## Onda de 2026-08-30 — a moeda, e o portão que o próprio demo abriu
+
+### O buraco que a peça de demonstração criou, fechado no mesmo dia
+
+Ao ensaiar o `abba validate` sobre a Nortex apareceu um risco que a peça tinha criado sozinha: os textos dela são escritos à mão, **sem marcador de mock**, e as confianças foram autoradas para variar. Isso derrota **as duas metades** da trava que impede a ferramenta de certificar texto enlatado.
+
+Consequência numa máquina com a chave configurada: `abba validate` na demonstração carimbaria **LIVE**, passaria em tudo, e imprimiria o checklist que termina em *"você assinaria seu nome embaixo disso?"* sobre uma empresa inventada. Exatamente a falha que o marcador `is_demo` existe para impedir, no único lugar onde ela custa caro.
+
+Fechado: um engajamento de demonstração reprova **independente de como o comando foi chamado** (inventado é propriedade do dado, não da invocação), o CLI carimba `DEMO` como terceiro modo acima de mock e live, e o veredito lê **NOT VALIDATED, AND NEVER CAN BE**.
+
+### A moeda: o número certo com o símbolo errado
+
+**Eu tinha classificado como P2 cosmético. Estava errado: era correção, e falhava na direção que nos favorece.**
+
+A investigação veio antes do desenho, e ela é que mudou a resposta:
+
+1. Os prompts **nunca instruem moeda nenhuma**. As duas menções a "dollar" no código travado são inglês idiomático para dinheiro.
+2. **Ninguém converte moeda** em lugar nenhum do repositório.
+3. A calibração entre clientes usa **só o sinal** (`recovered_usd > 0`), nunca a magnitude, e o vault não guarda dinheiro.
+
+Logo: quando o modelo lê documentos de uma fábrica brasileira e calcula `1.400 × 1,4 × 4,2h × R$ 112/h`, o número que volta **já está em reais**. A ferramenta guardava em coluna `_usd` e imprimia `$`. A ~5,4 R$/USD, o vazamento lia **cinco vezes maior** do que é, na primeira página que o cliente abre.
+
+**Decisão: rótulo, nunca conversão.** Converter inventaria uma taxa e uma data, o tipo de número sem premissa que o resto do sistema recusa. O engajamento declara a moeda dos documentos de origem (`abba engagement create --currency BRL` / `set-currency`), com default `USD` para que tudo anterior leia idêntico. Nada multiplica nada, e o teste prova que nenhuma cifra armazenada e nenhum Breach Score se movem quando o rótulo muda.
+
+**A exceção:** o custo da API continua em dólar, porque é o que o fornecedor cobra. Função separada, para que os dois nunca se confundam.
+
+**O que ficou deliberadamente por fazer:** os sufixos `_usd` das colunas **não** foram renomeados. É migração grande com ganho só cosmético, e poria um risco real contra um problema de documentação. A moeda de uma cifra é `engagements.currency` e nada mais.
+
+### Mais dois defeitos client-facing, encontrados ao ligar isso
+
+1. O bloco do **prêmio enterrado** renderizava recuperação do cliente com o formatador de **fatura de API**, imprimindo `$294000.00`.
+2. O one-pager dizia **"pays for itself 1x in the first year"** quando a razão arredondava para 1. Frase que não diz nada e convida o leitor a conferir a conta e achar errado. Abaixo de 2x a afirmação honesta não é um múltiplo, é o mês em que o plano para de custar dinheiro.
+
+**Padrão que já se repetiu quatro vezes nesta série:** todo defeito client-facing desta e da onda anterior foi encontrado **lendo um artefato inteiro**, nunca por teste. Vale como etapa obrigatória do runbook, e vale repetir depois do primeiro run com chave real.
+
+### A peça foi recalibrada, não reetiquetada
+
+Trocar o símbolo teria deixado premissas impossíveis (R$ 51/h de engenheiro sênior seria contestado na hora). Agora: R$ 180 milhões de faturamento coerente com 380 pessoas, engenheiro sênior a R$ 112/h carregado, 1.400 cotações com 22% de taxa de ganho, e **o CSV que a empresa fictícia "enviou" batendo com o registro de vazamentos**. Todo payback confere com custo dividido por recuperação mensal.
+
+Se um diretor industrial pegar a calculadora, fecha. É o único teste que importa naquele documento.
+
+### Correção de um número que eu tinha dado errado
+
+Na conversa do dia 28 eu atribuí à peça de demonstração um breakeven de peso do prêmio de **2,05x / 2,9x**. Aqueles números vieram de um exemplo montado à mão para testar o simulador, não da Nortex. **Na peça o breakeven é 5,85x, e o #1 se mantém em todos os pesos até 6x** — leitura mais tranquilizadora, e a que vale citar.
