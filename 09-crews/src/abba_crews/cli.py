@@ -9,6 +9,7 @@ from __future__ import annotations
 import typer
 
 from abba_crews.core.produtos import Maturidade, listar, vendaveis
+from abba_crews.core.sinteticos import Familia, golden_set, rodar
 
 app = typer.Typer(
     help="Camada de Caixa da reforma tributaria — operacao.",
@@ -67,6 +68,45 @@ def produtos(
             "Nao prometer a cliente o que esta em 'especificado' ou 'executavel'."
         )
     typer.echo("")
+
+
+
+
+@app.command("golden")
+def golden(
+    detalhe: bool = typer.Option(False, "--detalhe", "-d", help="Lista caso a caso."),
+) -> None:
+    """Roda o golden set da Sentinela e imprime o placar.
+
+    A metrica que manda e a precisao nos negativos: falso positivo fiscal manda o
+    cliente pleitear o que nao e dele.
+    """
+    casos = golden_set()
+    placar = rodar(casos)
+
+    if detalhe:
+        typer.echo("")
+        for c in casos:
+            marca = {Familia.POSITIVO: "+", Familia.NEGATIVO: "-", Familia.LIMPO: "o"}[c.familia]
+            typer.echo(f"  [{marca}] {c.id}")
+            typer.echo(f"      {c.descricao}")
+
+    typer.echo(f"\n  casos              {len(casos)}")
+    typer.echo(f"  recall             {placar.recall:.0%}  "
+               f"({placar.positivos_achados}/{placar.positivos} com divergencia)")
+    typer.echo(f"  precisao negativos {placar.precisao_nos_negativos:.0%}  "
+               f"({placar.negativos_sem_falso_positivo}/{placar.negativos_e_limpos} limpos) "
+               f"<- a metrica que manda")
+
+    if placar.falhas:
+        typer.echo("\n  FALHAS:")
+        for f in placar.falhas:
+            typer.echo(f"    {f}")
+        raise typer.Exit(code=1)
+
+    typer.echo("\n  golden set v0 aprovado.")
+    typer.echo("  Nao promove a Sentinela a PRODUCAO: isso exige golden set montado")
+    typer.echo("  com um contador, sobre competencias reais anonimizadas.\n")
 
 
 if __name__ == "__main__":

@@ -104,7 +104,11 @@ PRODUTOS: tuple[Produto, ...] = (
             "Credito legitimo omitido pela proposta do Fisco e incorporado por "
             "manifestacao dentro do prazo, em R$, no mes"
         ),
-        gate="M1 (nucleo deterministico) verde no golden set → EXECUTAVEL",
+        gate=(
+            "M2: o Flow rodar ponta a ponta em dado sintetico → EXECUTAVEL. "
+            "(M1 concluido: reconciliador e golden set v0 verdes. Golden set verde "
+            "sozinho NAO promove — EXECUTAVEL exige o fluxo inteiro rodando.)"
+        ),
         base_legal="Decreto 12.955/2026 (RCBS) e Resolucao CGIBS 6/2026 (RIBS)",
         crew="abba_crews.crews.sentinela",
         flow="abba_crews.flows.sentinela_flow",
