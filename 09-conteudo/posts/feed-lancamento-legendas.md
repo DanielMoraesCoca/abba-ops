@@ -87,15 +87,32 @@ Onde vocês acham que estão nesse caminho hoje?
 
 ## Peça 03 · Prometemos × Recusamos
 
-Toda proposta nossa tem uma seção do que a gente não vai fazer.
+> Reescrita em 30/08. A versão anterior abria pela nossa proposta; esta abre por
+> um teste que o leitor pode rodar sozinho, agora, na proposta que ele já tem na
+> mesa. A anterior continua no histórico do git.
 
-Não é modéstia. Escopo sem limite é escopo sem preço, e num mercado onde todo fornecedor promete tudo, a lista de recusas é a única informação que custa alguma coisa para quem a publica.
+Pegue a última proposta que um fornecedor de IA te mandou. Procure a seção do que ele não vai fazer.
 
-Prometemos o método: métrica combinada antes, medida depois, num registro que vocês veem inteiro. Presença recorrente de quem decide, não um relatório na gaveta. E honestidade sobre escopo: o que fazemos, nomeado, e o que fica de fora.
+Provavelmente não existe.
 
-Recusamos prometer acurácia que não medimos. Recusamos prever o imprevisível. Recusamos piloto sem métrica de sucesso definida antes. E recusamos IA decidindo sozinha: a IA rascunha, um humano assina, a diretoria decide.
+Toda proposta nossa tem uma. E não é modéstia: escopo sem limite é escopo sem preço. Uma proposta que promete tudo está cobrando por nada em específico.
 
-Todo mundo consegue prometer. Publicar o que você se recusa a vender é outra coisa, porque copiar esta lista exigiria parar de vender o que se vende hoje.
+O que prometemos são três coisas.
+
+O método: métrica combinada antes, medida depois, num registro que vocês veem inteiro.
+Presença recorrente de quem decide, não um relatório na gaveta.
+E honestidade sobre escopo: o que fazemos, nomeado, e o que fica de fora.
+
+O que recusamos são quatro.
+
+Prometer acurácia que não medimos, porque um número que não temos destruiria a única coisa que não se recompra: credibilidade técnica.
+Prever o imprevisível. Não vendemos oráculo.
+Piloto sem métrica de sucesso definida antes, que é a receita documentada do fracasso.
+E IA decidindo sozinha. A IA rascunha, um humano assina, a diretoria decide.
+
+Publicar uma lista dessas custa alguma coisa. Ela fecha portas, e é exatamente para isso que ela serve: quem quer um fornecedor que promete tudo não deveria nos contratar.
+
+Se na proposta que está na sua mesa não existe uma seção assim, vale perguntar por quê.
 
 ## Peça 04 · O assessment gratuito
 
