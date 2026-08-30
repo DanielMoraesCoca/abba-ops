@@ -61,6 +61,21 @@
 - [ ] Provedor de busca do scout confirmado e configurado
 - [ ] Custo estimado por cliente/mês medido em ensaio interno
 
+## Aposta 7 — O Conselheiro Corporificado (humanoide)
+
+**O que é:** dar um corpo físico ao Conselheiro — um humanoide que **toma assento** nos marcos do engajamento (conselho, kickoff, graduação), conversando fundado no cérebro daquele cliente. Extensão física do [Assento](../05-interno/estudo-conselheiro-presente.md): presença **episódica e anunciada**, nunca "vigiando" — as 8 recusas valem para o corpo como valem para o microfone. Corpo sempre comprado/alugado (RaaS), **nunca construído**; o que é nosso é o que o corpo diz. Estudo completo com o mercado 2026, custos, doutrina e a escada de degraus: [estudo](../05-interno/estudo-humanoide-conselheiro.md).
+
+**Por que não agora:** o produto não existe em 2026 — nenhum humanoide opera comercialmente em escritório; bateria de 1–4h, ~78% de conclusão de tarefas no melhor caso público, norma de segurança (ISO 25785-1) ainda em rascunho, RaaS a ~US$ 100k/ano, G1 no Brasil a R$ 265–616 mil. E ~90% do valor do cenário é o software que já construímos e **ainda não ativamos com dados reais** (R17). Horizonte realista para corpo comprável e segurável em escritório: 2029–2031 — coincidindo com o Horizonte 3 da [Visão 2029](visao-2029.md).
+
+**Gatilhos de reavaliação:**
+- [ ] ISO 25785-1 publicada + seguro disponível no Brasil para humanoide entre pessoas
+- [ ] Primeiro humanoide comercial operando em escritório (não fábrica), com índice de intervenção humana divulgado
+- [ ] RaaS de humanoide no Brasil por < R$ 30 mil/mês
+- [ ] 5+ clientes de recorrência com cérebro ativo (sem isso o corpo não tem o que dizer)
+- [ ] Um cliente da camada Estratégia **pede** presença corporificada
+
+**Decisão de hoje que protege o amanhã:** ao desenhar a Voz (camada 2 do Assento), separar superfície de conteúdo — a mesma resposta do cérebro deve poder sair por portal, WhatsApp, avatar ou corpo sem retrabalho.
+
 ## Regra
 
 Aposta futura não recebe investimento de tempo além de: (a) manter este registro atualizado; (b) não tomar decisões hoje que **impossibilitem** a aposta amanhã (ex.: contratos que proíbam comunidade entre clientes sem necessidade).
