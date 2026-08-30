@@ -51,3 +51,8 @@ files = ["src/abba_crews/core"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.165.10",
+]
