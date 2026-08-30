@@ -99,22 +99,28 @@ Todo mundo consegue prometer. Publicar o que você se recusa a vender é outra c
 
 ## Peça 04 · O assessment gratuito
 
-O primeiro passo com a gente não custa nada, e você não precisa abrir um dado sequer.
+> Reescrita em 30/08 para ganhar o gancho para trás com a peça 03, como manda a
+> [linha editorial](../linha-editorial.md) §3. A versão anterior abria fria.
 
-É um assessment de IA da sua empresa, montado só com informação pública e gerado em minutos. Dezenas de páginas. O que vem dentro:
+"Prometer acurácia que não medimos" é uma das quatro coisas que a gente se recusa a fazer.
 
-Uma nota de maturidade em IA, de 0 a 5, em seis dimensões: estratégia, processos, dados, tecnologia, pessoas e governança.
-As oportunidades priorizadas numa matriz de impacto contra esforço, cada uma com score e horizonte, e uma delas marcada como piloto-farol, que é por onde recomendamos começar.
-Um roadmap em três horizontes, do que dá ganho em seis meses ao que muda o modelo de negócio.
-E o ledger de todas as fontes que usamos.
+Escrever isso é fácil. A pergunta justa é onde isso aparece no trabalho.
 
-Duas coisas nesse documento são incomuns e são de propósito.
+Aparece no primeiro documento que a gente entrega, e ele não custa nada.
 
-A primeira: cada achado se declara. Diz se é fato apurado ou hipótese nossa, se veio da sua empresa ou do seu setor, e com que confiança, alta, média ou baixa. O que não descobrimos fica escrito como desconhecido, nunca preenchido por dedução.
+É um assessment de IA da sua empresa, montado só com informação pública e gerado em minutos, sem você precisar abrir um dado sequer. Dezenas de páginas.
 
-A segunda: toda fonte vai no fim, com a citação literal, o nível de confiança e o endereço. Se você discordar de uma conclusão, dá para ir na fonte dela em dez segundos.
+Dentro dele: uma nota de maturidade em IA, de 0 a 5, em seis dimensões. As oportunidades numa matriz de impacto contra esforço, cada uma com score e horizonte, e uma delas marcada como piloto-farol, que é por onde recomendamos começar. Um roadmap em três horizontes. E o ledger de todas as fontes que usamos.
 
-A última seção lista o que a informação pública não alcançou. Porque o que ainda não sabemos não é falha: é a agenda da conversa.
+Mas o que faz esse documento ser diferente não é o tamanho. São duas coisas que ele faz contra si mesmo.
+
+A primeira: cada achado se declara. Diz se é fato apurado ou hipótese nossa, se veio da sua empresa ou do seu setor, e com que confiança. O que não descobrimos fica escrito como desconhecido, nunca preenchido por dedução.
+
+A segunda: toda fonte vai no fim, com a citação literal e o endereço. Se você discordar de qualquer conclusão, dá para ir na fonte dela em dez segundos.
+
+É assim que uma recusa vira mecanismo. Não prometer acurácia que não se mede só significa alguma coisa quando o documento diz, linha por linha, o quanto ele tem certeza de cada coisa que afirma.
+
+E a última seção lista o que a informação pública não alcançou. Porque o que ainda não sabemos não é falha: é a agenda da conversa.
 
 Quer ver o que a informação pública já diz sobre a sua empresa?
 
