@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "2.0.0",
   "source": "abba-ops/06-ferramentas/regua-do-revisor.json (canônico — sincronizar ao mudar doutrina)",
   "rules": [
     {
@@ -275,96 +275,128 @@
       "doc": "00-identidade/base-de-evidencias.md (índice proibido)"
     },
     {
+      "id": "ofertas-aposentadas-v5",
+      "kind": "regex",
+      "pattern": "(workshop\\s+shadow\\s*ai|sprint\\s+lgpd|pacote\\s+de\\s+3\\s+(prot[óo]tipos|casos)|jornada\\s+completa|avalia[çc][ãa]o\\s+de\\s+prontid[ãa]o|treinamento\\s+h[íi]brido|camada\\s+(opera[çc][ãa]o|evolu[çc][ãa]o|estrat[ée]gia)\\s+(a|por)\\s+R\\$)[^.\\n]{0,80}R\\$\\s*\\d",
+      "flags": "gi",
+      "severity": "block",
+      "unless": [
+        "hist[óo]ric",
+        "aposentad",
+        "descontinuad",
+        "superad",
+        "arquivo",
+        "\\bv2\\b",
+        "\\bv1\\b",
+        "nota\\s+de\\s+corre[çc][ãa]o",
+        "❌"
+      ],
+      "allowQuotedInTables": true,
+      "reason": "V5 (2026-08-31): as ofertas do modelo dos 7 servicos (workshop, sprint LGPD, pacote de 3, jornada completa, avaliacao de prontidao, treinamento avulso, camadas vendidas separadas) foram descontinuadas como oferta. Apresenta-las com preco em material que sai e vender o cardapio que a casa aposentou. Substituto: os 3 caminhos da tabela v3.",
+      "doc": "03-comercial/tabela-de-precos.md (v3) · 05-interno/registro-de-decisoes.md (V5)"
+    },
+    {
       "id": "precos-travados",
       "kind": "price-table",
       "products": [
         {
-          "name": "workshop",
+          "name": "fase-1-programa",
           "aliases": [
-            "workshop\\s+shadow\\s*ai",
-            "workshop"
+            "fase\\s*1",
+            "entrada\\s+do\\s+programa",
+            "primeira\\s+prova",
+            "prot[óo]tipo"
           ],
-          "priceBRL": 14000
+          "priceBRL": 26000
         },
         {
-          "name": "sprint-lgpd",
+          "name": "programa-porte-p",
           "aliases": [
-            "sprint\\s+lgpd"
+            "porte\\s*p\\b",
+            "programa.{0,30}\\bP\\b"
           ],
-          "priceBRL": 24000
+          "priceBRL": 218000
         },
         {
-          "name": "mini-ciclo",
+          "name": "programa-porte-m",
           "aliases": [
-            "mini[- ]ciclo"
+            "porte\\s*m\\b",
+            "programa.{0,30}\\bM\\b",
+            "programa\\s+anual",
+            "ai\\s*native"
           ],
-          "priceBRL": 42000
+          "priceBRL": 278000
         },
         {
-          "name": "assessment",
+          "name": "programa-porte-g",
           "aliases": [
+            "porte\\s*g\\b",
+            "programa.{0,30}\\bG\\b"
+          ],
+          "priceBRL": 378000
+        },
+        {
+          "name": "trimestre-p",
+          "aliases": [
+            "trimestre"
+          ],
+          "priceBRL": 48000
+        },
+        {
+          "name": "trimestre-m",
+          "aliases": [
+            "trimestre",
+            "trimestral\\s+antecipado"
+          ],
+          "priceBRL": 63000
+        },
+        {
+          "name": "trimestre-g",
+          "aliases": [
+            "trimestre"
+          ],
+          "priceBRL": 88000
+        },
+        {
+          "name": "assinatura-p",
+          "aliases": [
+            "assinatura"
+          ],
+          "priceBRL": 11000
+        },
+        {
+          "name": "assinatura-m",
+          "aliases": [
+            "assinatura",
+            "capacidade\\s+instalada"
+          ],
+          "priceBRL": 15000
+        },
+        {
+          "name": "assinatura-g",
+          "aliases": [
+            "assinatura"
+          ],
+          "priceBRL": 21000
+        },
+        {
+          "name": "diagnostico-standalone",
+          "aliases": [
+            "diagn[óo]stico\\s+standalone",
+            "diagn[óo]stico\\s+avulso",
             "assessment",
-            "avalia[çc][ãa]o\\s+de\\s+prontid[ãa]o",
             "avalia[çc][ãa]o\\s+profunda",
             "mergulho"
           ],
           "priceBRL": 45000
         },
         {
-          "name": "prototipo",
+          "name": "mini-ciclo",
           "aliases": [
-            "prot[óo]tipo"
+            "mini[- ]ciclo",
+            "caso\\s+de\\s+uso\\s+novo"
           ],
-          "priceBRL": 26000
-        },
-        {
-          "name": "pacote-prototipos",
-          "aliases": [
-            "pacote\\s+de\\s+3",
-            "3\\s+prot[óo]tipos",
-            "3\\s+casos"
-          ],
-          "priceBRL": 65000
-        },
-        {
-          "name": "treinamento-online",
-          "aliases": [
-            "online",
-            "plataforma",
-            "treinamento",
-            "turma"
-          ],
-          "priceBRL": 15000
-        },
-        {
-          "name": "treinamento-hibrido",
-          "aliases": [
-            "h[íi]brid\\w*",
-            "presencial"
-          ],
-          "priceBRL": 35000
-        },
-        {
-          "name": "manutencao-operacao",
-          "aliases": [
-            "opera[çc][ãa]o"
-          ],
-          "priceBRL": 6000
-        },
-        {
-          "name": "manutencao-evolucao",
-          "aliases": [
-            "manuten[çc][ãa]o",
-            "evolu[çc][ãa]o"
-          ],
-          "priceBRL": 9500
-        },
-        {
-          "name": "manutencao-estrategia",
-          "aliases": [
-            "estrat[ée]gia"
-          ],
-          "priceBRL": 15000
+          "priceBRL": 42000
         },
         {
           "name": "conselheiro-mensal",
@@ -381,40 +413,17 @@
           "priceBRL": 7500
         },
         {
-          "name": "jornada-completa",
+          "name": "instalacao-memoria",
           "aliases": [
-            "jornada\\s+completa",
-            "programa\\s+(completo|de\\s+transforma[çc][ãa]o)"
+            "instala[çc][ãa]o\\s+da\\s+mem[óo]ria",
+            "setup\\s+de\\s+mem[óo]ria"
           ],
-          "priceBRL": 260000
-        },
-        {
-          "name": "adicional-operacao",
-          "aliases": [
-            "solu[çc][ãa]o\\s+adicional",
-            "adicional"
-          ],
-          "priceBRL": 1500
-        },
-        {
-          "name": "adicional-evolucao",
-          "aliases": [
-            "solu[çc][ãa]o\\s+adicional",
-            "por\\s+solu[çc][ãa]o"
-          ],
-          "priceBRL": 2500
-        },
-        {
-          "name": "adicional-estrategia",
-          "aliases": [
-            "solu[çc][ãa]o\\s+adicional"
-          ],
-          "priceBRL": 3500
+          "priceBRL": 15000
         }
       ],
       "severity": "block",
-      "reason": "Tabela v2 travada (V3t, 2026-08-06, por serviço da jornada): Assessment 45k · Protótipo 26k (3 por 65k) · Treinamento 15k online/35k híbrido · Gerenciados 6k/9,5k/15k por camada · Conselheiro 12k mensal/7,5k trimestral · Jornada 260k · portas laterais 14k/24k/42k. Construção sai da calculadora (faixa P/M/G — sem valor único). Preço divergente num material que sai é a violação mais cara possível. Preços da v1 descontinuados (28k avaliação, 185k programa) BLOQUEIAM — é o objetivo.",
-      "doc": "03-comercial/tabela-de-precos.md (v2) · 06-ferramentas/calculadora-construcao.md",
+      "reason": "Tabela v3 travada (V5, 2026-08-31, PROPOSTA - Pedro valida; porta de 1 via): Programa 'AI Native Ano 1' por porte P 218k / M 278k / G 378k (entrada/fase 1 26k + trimestres 48/63/88k) - Assinatura da Capacidade ano 2+ 11/15/21k por mes - Conselheiro 12k mensal / 7,5k trimestral + memoria 15k - diagnostico standalone 45k (fora da vitrine) - mini-ciclo 42k (expansao interna). Preco divergente num material que sai e a violacao mais cara possivel. Precos v1 (28k/185k) e v2 (65k pacote, 14k workshop, 24k sprint, 35k hibrido, 260k jornada, 6k/9,5k camadas) sao LEGADO: sem alias vivo nesta tabela, e as ofertas aposentadas bloqueiam pela regra ofertas-aposentadas-v5.",
+      "doc": "03-comercial/tabela-de-precos.md (v3) · 06-ferramentas/calculadora-construcao.md · 05-interno/estudo-virada-v5.md",
       "maxAliasDistance": 80,
       "exemptSanctionedPrices": true,
       "unless": [],
