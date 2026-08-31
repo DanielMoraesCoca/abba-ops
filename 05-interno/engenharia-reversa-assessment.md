@@ -185,3 +185,24 @@ Se um diretor industrial pegar a calculadora, fecha. É o único teste que impor
 ### Correção de um número que eu tinha dado errado
 
 Na conversa do dia 28 eu atribuí à peça de demonstração um breakeven de peso do prêmio de **2,05x / 2,9x**. Aqueles números vieram de um exemplo montado à mão para testar o simulador, não da Nortex. **Na peça o breakeven é 5,85x, e o #1 se mantém em todos os pesos até 6x** — leitura mais tranquilizadora, e a que vale citar.
+
+
+---
+
+## Onda de 2026-08-31 — a auditoria da águia, e o raio-x que estava cego
+
+O Daniel pediu a verificação de cada afirmação do documento da águia contra o código. Regra: onde a afirmação fosse mais bonita que o código, ou se conserta o código, ou se conserta o documento.
+
+**Confirmado:** a página das citações lado a lado, os loops no pipeline padrão, o Stop/Start/Keep, a severidade por degrau hierárquico, o aviso de cobertura antes do gasto.
+
+**Quebrado e medido:** o motor de contradições — a assinatura do método — detectava **ZERO contradições em português**. As entrevistas da Nortex carregam contradições plantadas; o detector extraiu 5 asserções-lixo (o "no" português lido como negação inglesa) e não achou nenhuma. Três causas-raiz, todas determinísticas, nenhuma tocando prompt: padrões 100% anglófonos; o `\b` do JavaScript ser ASCII (o `é`, verbo de ligação mais comum da língua, era invisível para os próprios padrões); e "1.400" lido como 1,4.
+
+**Corrigido no mesmo dia e provado por medição:** a contradição plantada é encontrada com severidade alta — *"o PCP resolve"* (diretoria) contra *"não passa sem o aval da engenharia"* (chefia) — com a pergunta de esclarecimento em português.
+
+**O cruzamento que o doc afirmava passou a existir:** o relatório do consultor ganhou **"Where Information Breaks Between Levels"**, as contradições agregadas por par de níveis, com a doutrina embutida no texto: uma fronteira quente não é duas pessoas que não se gostam, é uma passagem de bastão que o processo exige e não sustenta.
+
+**O demo agora prova o raio-x em vez de escondê-lo:** o seed roda o detector real sobre as fontes em português; a peça ganhou a página mais persuasiva do método. Linhas semeadas à mão teriam escondido a cegueira para sempre.
+
+Suíte 704/704 nos dois modos, eval parado, IP intacta, quatro sabotagens mordidas. Os três modelos canônicos regenerados com as seções novas.
+
+**Lição de processo (a quinta da série):** a afirmação mais central do método era a menos testada no idioma do mercado. O que salvou foi medir a afirmação em vez de acreditar nela.

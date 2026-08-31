@@ -37,7 +37,7 @@ A águia não tem um sensor mágico. **A visão de raio-x do método é triangul
 | **A rotina da casa** | Ritmo, ciclos, onde o tempo para | D17 (sazonalidade e ritmo), D20 (mapa de latência — a latência que dói raramente é de máquina, é de decisão parada esperando alguém) |
 | **O que entra e o que sai** | Dinheiro, informação, material | D04 (mapa do dinheiro), D12 (topologia do fluxo de informação — por onde o dado REALMENTE viaja: planilha, WhatsApp, memória), registro de vazamentos (o que sai pelo ralo sem ninguém contabilizar) e de receita (o que poderia entrar e não entra) |
 | **O que os olhos do dono não veem** | As contradições entre andares | O motor de contradições entre níveis + o red-team da própria análise. O vazamento típico é *known_but_unaddressed* ou *unknown_to_company* — a coluna existe porque a cegueira do dono é um dado do método |
-| **As relações entre as pessoas** | Onde o dado não chega porque a relação não funciona | Lido pelo cruzamento D18 × D12 × contradições: a fricção interpessoal aparece como **fluxo de informação quebrado** e é nomeada como problema de processo (ver a fronteira abaixo) |
+| **As relações entre as pessoas** | Onde o dado não chega porque a relação não funciona | A seção **"Where Information Breaks Between Levels"** do relatório do consultor: as contradições agregadas por PAR de níveis hierárquicos, com contagem, severidade e o exemplo mais grave como a cara de cada fronteira. A fricção aparece como **passagem de bastão que o processo exige e não sustenta**, nomeada como processo (ver a fronteira abaixo) |
 | **A casa como ser vivo** | A empresa não é um diagrama, é um organismo | O modelo de organismo inteiro: sistema imune (o que rejeita mudança), metabolismo (quanto de mudança absorve), sistema nervoso (onde a informação dói ou não chega), cicatrizes (o MES de 2021 entregue pela metade explica por que a planilha é vista como o que funciona), bordas de crescimento e de decadência |
 
 **Nada disso é decoração.** Cada linha desta tabela é uma dimensão ou um estágio que custa dinheiro real para rodar e ocupa espaço no relatório. Se um dia alguém propuser cortar uma dimensão "porque o relatório está longo", este é o documento que diz o que aquela dimensão enxerga na casa — e o que a ABBA fica sem ver se cortar.
@@ -79,6 +79,18 @@ E o pré-requisito de tudo: **a águia ainda não voou.** Nenhum modelo leu uma 
 | 6. Alinhamento | O dono diz o que importa ver | Os objetivos da diretoria dirigem para onde a águia olha — a visão é profunda, mas a agenda é do cliente |
 
 A escada inteira é UMA tese: **ver a casa como ninguém consegue, e então remodelá-la — com a autoridade de quem viu.** Quem compra a etapa 2 está comprando a fundação das etapas 3 a 6; quem entrega a etapa 2 e para, jogou fora o ativo e ficou com o subproduto.
+
+---
+
+## A auditoria deste documento (2026-08-31)
+
+Este documento foi escrito e, no dia seguinte, **cada afirmação dele foi verificada contra o código** a pedido do Daniel. O resultado merece ficar dentro dele:
+
+- **Quase tudo se confirmou** como escrito: a página das citações lado a lado, os loops no pipeline, o Stop/Start/Keep, a severidade por degrau, o aviso de cobertura.
+- **Uma afirmação era mais bonita que o código, e o código foi consertado no mesmo dia:** o motor de contradições, a assinatura do método, era 100% anglófono. Medido sobre as entrevistas em português da Nortex, que carregam contradições plantadas: **zero detectadas**. O raio-x estava cego para o idioma do nosso mercado, e nenhum teste percebeu porque a única fixture de avaliação é americana. Corrigido deterministicamente (camada de idioma, padrões PT para os 7 métodos, números no formato brasileiro, bordas de regex à prova de acento) e provado por medição: a contradição plantada agora é encontrada com severidade alta e a pergunta de esclarecimento sai em português.
+- **O cruzamento D18 × D12 × contradições, que este documento afirmava, não existia como mecanismo.** Passou a existir: a agregação por fronteiras de nível descrita na tabela acima.
+
+**A lição, que vale como regra da casa:** a afirmação mais central do método era a menos testada no idioma do mercado. Um documento de visão só serve se cada linha dele puder ser cobrada do código — e foi cobrada.
 
 ---
 
