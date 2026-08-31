@@ -8,6 +8,8 @@ A ABBA é uma **consultoria de transformação em IA para empresas brasileiras**
 
 **A tese:** 70% do valor da transformação em IA vive em pessoas, processos e cultura. Fornecedores vendem os outros 30%. Nós instalamos os 70% — e provamos com resultado verificado.
 
+**A visão por trás do frame:** as 6 etapas são uma tese só — ver a empresa como ninguém consegue (a [visão da águia](visao-da-aguia.md): quem faz o quê, como funciona NA PRÁTICA, o que entra e sai, o que o dono não vê) e então remodelá-la com a autoridade de quem viu. O raio-x da etapa 2 é o ativo que dirige as etapas 3 a 6; nada no método é à toa, e aquele documento mostra onde cada pedaço da visão já é produto.
+
 ## As 6 etapas
 
 ```

@@ -61,6 +61,19 @@
 - [ ] Provedor de busca do scout confirmado e configurado
 - [ ] Custo estimado por cliente/mês medido em ensaio interno
 
+## Aposta 7 — Raio-x operacional (ler o escapamento dos sistemas, não só documentos)
+
+**O que é:** hoje a águia enxerga por documentos + entrevistas trianguladas ([visão da águia](visao-da-aguia.md)). A fronteira seguinte é ler o escapamento operacional direto: extratos de ERP, logs de processo, filas, tempos reais entre etapas — process mining com leitura de IA por cima. É a versão mais literal da visão de raio-x, e a mais profunda tecnicamente: o que a empresa DIZ que faz vs. o que os sistemas REGISTRAM que ela faz.
+
+**Por que não agora:** (a) a águia ainda nem voou com documentos — validar o método atual com chave real vem antes de aprofundá-lo; (b) exige conector por sistema (cada ERP é um projeto), e o custo de integração só se paga com método já provado; (c) é a camada mais delicada em LGPD e em confiança — exige as salvaguardas abaixo desenhadas ANTES da primeira leitura, não depois.
+
+**Salvaguardas inegociáveis (valem desde já como doutrina):** fluxos e agregados, nunca vigilância de indivíduo; dado operacional entra no mesmo regime do resto (criptografia em repouso, `abba forget`, certificado de deleção); opt-in explícito no contrato, nunca inferido do acesso ao sistema.
+
+**Gatilhos de reavaliação:**
+- [ ] 3+ assessments reais entregues com o método atual (a linha de base existe e o raio-x por escuta está provado)
+- [ ] Um cliente com ERP acessível pedindo explicitamente a leitura profunda
+- [ ] As salvaguardas revisadas pelo advogado junto com o anexo LGPD
+
 ## Regra
 
 Aposta futura não recebe investimento de tempo além de: (a) manter este registro atualizado; (b) não tomar decisões hoje que **impossibilitem** a aposta amanhã (ex.: contratos que proíbam comunidade entre clientes sem necessidade).
