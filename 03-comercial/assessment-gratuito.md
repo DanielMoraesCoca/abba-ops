@@ -9,8 +9,9 @@
 > **Nome externo:** *Assessment gratuito*. É como o produto se apresenta em
 > `assessment.abbaservices.com.br`, e agora é como a casa inteira o chama.
 >
-> Dono: chapéu Comercial. Fonte da anatomia: relatório real de 31 páginas,
-> profundidade `quick`, gerado em 9 minutos (jul/2026).
+> Dono: chapéu Comercial. Fonte da anatomia: **dois** relatórios reais (jul/2026),
+> um em profundidade `quick` (31 páginas, 21 fontes, 9 minutos) e um em `deep`
+> (42 páginas, 34 fontes).
 
 ---
 
@@ -25,7 +26,7 @@ priorizadas, roadmap e o ledger de todas as fontes usadas.**
 | **Onde é gerado** | `assessment.abbaservices.com.br` (**ainda não aberto ao público** — [R4](../05-interno/registro-de-riscos.md)) |
 | **Insumo** | Somente informação pública. Nenhum dado do cliente |
 | **Tempo** | Minutos. O exemplar de referência saiu em **9 minutos** |
-| **Tamanho** | **31 páginas na profundidade `quick`**; 32 a 60 conforme o modelo escolhido |
+| **Tamanho** | **31 páginas** na profundidade `quick`; **42 páginas** na `deep`. Dois exemplares reais medidos (jul/2026) |
 | **Custo para o prospect** | Zero |
 
 ---
@@ -51,6 +52,24 @@ priorizadas, roadmap e o ledger de todas as fontes usadas.**
 | 26 | **Desconhecidos: a pauta da discovery call** | *"O que ainda não sabemos não é falha: é a agenda da conversa"* |
 | 27 | **Cobertura e confiança dos dados** | Nº de fontes, confiança geral, quebra por provedor |
 | 27–31 | **Ledger de evidências** | **Toda fonte, com id, provedor, nível de confiança, citação literal e URL** |
+
+### O que só a profundidade `deep` traz
+
+| Seção | O que entrega |
+|---|---|
+| **Relações com investidores** | Só para empresa listada. **E quando não acha documento de RI da empresa, escreve isso e nomeia o que achou no lugar**, em vez de omitir a seção |
+| **Como os concorrentes usam IA** | Por concorrente: como usa IA hoje, e a lacuna ou oportunidade que isso abre para o cliente |
+| **O que precisamos do cliente** | Dentro do piloto-farol: acessos, agenda e patrocínio necessários |
+
+**A seção de RI é a melhor prova do [manifesto](../00-identidade/manifesto.md)
+que existe no produto.** Um documento comercial normal teria omitido a seção e
+ninguém sentiria falta. O nosso dedica uma seção inteira a declarar o vazio. É a
+crença nº 5 rodando em produção, de graça, para um desconhecido.
+
+**Proporção honesta observada:** no exemplar `deep`, os achados se distribuíram
+em **15 hipóteses declaradas contra 1 fato declarado**, com a confiança marcada
+em cada um. O documento é majoritariamente hipótese, e diz isso achado por
+achado. **É o que torna as poucas certezas dele confiáveis.**
 
 ---
 

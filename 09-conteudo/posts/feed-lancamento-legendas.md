@@ -116,28 +116,34 @@ Se na proposta que está na sua mesa não existe uma seção assim, vale pergunt
 
 ## Peça 04 · O assessment gratuito
 
-> Reescrita em 30/08 para ganhar o gancho para trás com a peça 03, como manda a
-> [linha editorial](../linha-editorial.md) §3. A versão anterior abria fria.
+> Reescrita em 31/08, depois da leitura de um segundo exemplar real (profundidade
+> `deep`, 42 páginas, 34 fontes). Ela deixa de listar o que tem dentro e passa a
+> mostrar **a coisa mais honesta que o documento faz**, que é declarar quando não
+> encontrou nada. Nenhuma empresa é identificável no texto.
 
 "Prometer acurácia que não medimos" é uma das quatro coisas que a gente se recusa a fazer.
 
-Escrever isso é fácil. A pergunta justa é onde isso aparece no trabalho.
+Escrever isso é fácil. Quero mostrar onde aparece.
 
-Aparece no primeiro documento que a gente entrega, e ele não custa nada.
+O nosso assessment gratuito é montado só com informação pública. Quando ele procura os documentos de relações com investidores de uma empresa listada e não encontra nenhum, ele não pula a seção.
 
-É um assessment de IA da sua empresa, montado só com informação pública e gerado em minutos, sem você precisar abrir um dado sequer. Dezenas de páginas.
+Ele escreve que não encontrou. E nomeia o que achou no lugar: um guia normativo do setor, e o resultado divulgado de outra companhia. Conclui que, portanto, não foi possível extrair prioridades declaradas pela empresa.
 
-Dentro dele: uma nota de maturidade em IA, de 0 a 5, em seis dimensões. As oportunidades numa matriz de impacto contra esforço, cada uma com score e horizonte, e uma delas marcada como piloto-farol, que é por onde recomendamos começar. Um roadmap em três horizontes. E o ledger de todas as fontes que usamos.
+Uma seção inteira dedicada a dizer que não achou nada.
 
-Mas o que faz esse documento ser diferente não é o tamanho. São duas coisas que ele faz contra si mesmo.
+Um documento comercial normal teria simplesmente omitido essa parte. Ninguém sentiria falta.
 
-A primeira: cada achado se declara. Diz se é fato apurado ou hipótese nossa, se veio da sua empresa ou do seu setor, e com que confiança. O que não descobrimos fica escrito como desconhecido, nunca preenchido por dedução.
+É isso que uma recusa vira quando sai do papel.
 
-A segunda: toda fonte vai no fim, com a citação literal e o endereço. Se você discordar de qualquer conclusão, dá para ir na fonte dela em dez segundos.
+E o resto do documento segue a mesma regra. Cada achado declara se é fato apurado ou hipótese nossa, se veio da empresa ou do setor, e com que confiança. Num assessment recente, a maioria dos achados era hipótese, e está escrito assim, um por um. Não é confortável. É verificável.
 
-É assim que uma recusa vira mecanismo. Não prometer acurácia que não se mede só significa alguma coisa quando o documento diz, linha por linha, o quanto ele tem certeza de cada coisa que afirma.
+Toda fonte vai no fim, com a citação literal e o endereço. Se você discordar de qualquer conclusão, dá para ir na fonte dela em dez segundos.
 
-E a última seção lista o que a informação pública não alcançou. Porque o que ainda não sabemos não é falha: é a agenda da conversa.
+E a última seção lista o que a informação pública não alcançou, incluindo os números que só vocês têm: baseline de ruptura de estoque, tempo de resposta do atendimento, tempo de processamento administrativo.
+
+Porque o que ainda não sabemos não é falha. É a agenda da conversa.
+
+Dezenas de páginas, geradas em minutos, sem custo, e sem você precisar abrir um dado.
 
 Quer ver o que a informação pública já diz sobre a sua empresa?
 
