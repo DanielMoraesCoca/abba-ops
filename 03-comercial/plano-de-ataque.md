@@ -36,8 +36,8 @@ publicados** fica com a prateleira. Nossa vantagem não é segredo — é
 
 Tudo neste plano serve a UM objetivo: **um caso real, com métrica
 combinada antes, medida depois, assinada por gente do cliente — pronto
-para virar material.** Antes dele, o Assessment a R$ 45 mil está no topo
-da faixa de boutique sem prova; a jornada de R$ 260 mil não fecha; o
+para virar material.** Antes dele, o diagnóstico standalone a R$ 45 mil está no topo
+da faixa de boutique sem prova; as fases 2–3 do Programa não se exercem; o
 Conselheiro é promessa. Depois dele, cada peça da tabela se vende pela
 prova, e o [volante](../00-identidade/posicionamento.md) começa a girar.
 
@@ -146,8 +146,9 @@ o cliente citar um deles, corrigir com generosidade: a correção É a demo.
 
 - **Não abre 4ª frente** antes de fechar uma das três. Dois sócios;
   profundidade ganha de amplitude.
-- **Não vende jornada de R$ 260 mil sem caso medido** — a proposta
-  grande de dezembro na ABC é construída degrau a degrau, não empurrada.
+- **Não empurra o ano inteiro sem caso medido** — as fases 2–3 do Termo
+  são opção do Portão da Prova, exercida pelo cliente; a apresentação
+  grande de dezembro na ABC é construída fase a fase, não empurrada.
 - **Não faz prospecção fria** — nem para nós, nem como produto (doutrina
   BDL: B2B patrocinador, lookalike, opt-in; nunca mensagem fria).
 - **Não infla número** — cada cifra em proposta sai da base de
