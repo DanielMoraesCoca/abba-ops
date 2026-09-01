@@ -13,6 +13,8 @@
 - **Sem "somos uma firma nova"** em material — a honestidade sobre histórico é doutrina de **conversa** ([kit, 3ª objeção](../03-comercial/kit-de-presenca.md))
 - **Engenharia, não só agentes** — "arquitetura, integrações e agentes de IA trabalhando em conjunto"
 - **Raízes sem nomear árvore** nas seções especiais; **"da primeira conversa"**, nunca "do primeiro café"
+- **Sem travessão (—) em material oficial** (decisão do sócio, 2026-09-01) — no lugar: dois-pontos, ponto ou vírgula. Vale para todo material que sai; o separador tipográfico `·` continua permitido
+- **A voz é a do pitch** (`kit-de-presenca.md` + teleprompt): IA na ponta vs. na veia, mesa de três pés, a primeira parede paga a fundação, número combinado antes e medido depois, prova não impressão — os materiais escrevem como o sócio fala no palco
 - **E-mail externo = contato@abbaservices.com.br** · **logos Microsoft e CrewAI** discretas onde a parceria é citada
 - Visual: o sistema editorial do próprio documento (branco, Cambria/Calibri, versaletes dourados, filetes — sem cartões nem decoração)
 
