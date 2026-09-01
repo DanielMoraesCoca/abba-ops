@@ -1,6 +1,11 @@
 # Proposta — Workshop de Descoberta de Shadow AI
 
-> **Uso interno:** proposta comercial enviada após a primeira call de descoberta. Preencher todos os `{{CAMPOS}}`, substituir `{{PRECO_WORKSHOP}}` pela [tabela vigente](tabela-de-precos.md), exportar em PDF para o Drive (`01 Comercial/Propostas enviadas/`) e enviar. Prazo de entrega: assinatura → sessão em 10 dias úteis.
+> ⚠️ SUPERADO PELA V5 (2026-08-31): esta oferta saiu da vitrine — ver
+> [tabela v3](../../03-comercial/tabela-de-precos.md) e
+> [estudo da virada](../estudo-virada-v5.md). Mantido como memória de
+> processo.
+
+> **Uso interno:** proposta comercial enviada após a primeira call de descoberta. Preencher todos os `{{CAMPOS}}`, substituir `{{PRECO_WORKSHOP}}` pela [tabela vigente](../../03-comercial/tabela-de-precos.md), exportar em PDF para o Drive (`01 Comercial/Propostas enviadas/`) e enviar. Prazo de entrega: assinatura → sessão em 10 dias úteis.
 
 ---
 
@@ -64,7 +69,7 @@ Este workshop produz o retrato compartilhado em uma sala, em 90 minutos. O relat
 
 ## 5. Investimento
 
-**Engajamento padrão: R$ 14.000** (faixa R$ 12–16 mil conforme porte — [tabela v1](tabela-de-precos.md)) — inclui tudo da seção 3, até 30 participantes, uma sessão.
+**Engajamento padrão: R$ 14.000** (faixa R$ 12–16 mil conforme porte — [tabela v1](../../03-comercial/tabela-de-precos.md)) — inclui tudo da seção 3, até 30 participantes, uma sessão.
 
 Ajustes: 30–45 participantes (dois blocos de trabalho em grupo): {{AJUSTE_GRUPO_GRANDE}} · segunda sessão para outra divisão em até 60 dias: {{PRECO_SEGUNDA_SESSAO}} · entrega remota: sem desconto (mesmas horas de facilitação) · pré-revisão do relatório pelo seu Jurídico antes da publicação interna: {{AJUSTE_REVISAO_JURIDICA}}.
 

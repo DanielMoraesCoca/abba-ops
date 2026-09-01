@@ -1,6 +1,11 @@
 # Proposta — Avaliação de Prontidão para IA
 
-> **Uso interno:** proposta da avaliação standalone (2 semanas de campo + semana de entrega) — o produto de entrada mais importante (é a porta natural para o programa completo). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), congelar PDF no Drive, enviar. Nota: o relatório é entregue em **português** (a cláusula antiga de relatório apenas em inglês foi descartada).
+> ⚠️ SUPERADO PELA V5 (2026-08-31): esta oferta saiu da vitrine — ver
+> [tabela v3](../../03-comercial/tabela-de-precos.md) e
+> [estudo da virada](../estudo-virada-v5.md). Mantido como memória de
+> processo.
+
+> **Uso interno:** proposta da avaliação standalone (2 semanas de campo + semana de entrega) — o produto de entrada mais importante (é a porta natural para o programa completo). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](../../03-comercial/tabela-de-precos.md), congelar PDF no Drive, enviar. Nota: o relatório é entregue em **português** (a cláusula antiga de relatório apenas em inglês foi descartada).
 
 ---
 
@@ -85,7 +90,7 @@ Cada tabela e gráfico deriva de dados reais que o seu time registrou. Você pod
 ## 7. Investimento
 
 <!-- ATIVAR QUANDO {{N_PADROES_SETOR}} ≥ 3: "Nosso método já acumulou {{N_PADROES_SETOR}} padrões validados no seu setor — sua avaliação começa na frente." (fonte: vault, E3) -->
-**Engajamento padrão: R$ 45.000** (faixa R$ 35–60 mil conforme porte — [tabela v2](tabela-de-precos.md); na v2 este serviço é o **Assessment com dados internos**) — inclui tudo da seção 4, até 25 participantes.
+**Engajamento padrão: R$ 45.000** (faixa R$ 35–60 mil conforme porte — [tabela v2](../../03-comercial/tabela-de-precos.md); na v2 este serviço é o **Assessment com dados internos**) — inclui tudo da seção 4, até 25 participantes.
 
 Ajustes: organização pequena (<50 colaboradores, até 12 participantes): {{PRECO_AVALIACAO_PEQUENA}} · organização grande (100+, 25–50 participantes, multi-site): {{PRECO_AVALIACAO_GRANDE}} · segunda avaliação para outra divisão em até 90 dias: {{PRECO_SEGUNDA_AVALIACAO}} · entrega remota: sem desconto · pré-revisão jurídica do relatório: {{AJUSTE_REVISAO_JURIDICA}}.
 

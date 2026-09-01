@@ -145,7 +145,7 @@ A boa notícia: **a espinha existe e foi testada.** O que falta é superfície, 
 
 ## 7. O dossiê do guardião deste produto (o que o DPO vai perguntar)
 
-Uma página que precisa existir **antes** da primeira demonstração: base legal por camada (e a LIA escrita quando for legítimo interesse) · quem é controlador e operador · o que é capturado e o que não é · onde o dado mora e por quanto tempo · quem acessa e como se audita · como se contesta e como se apaga (com certificado) · o que acontece no fim do contrato (portabilidade em formato aberto) · e a lista de recusas da §5. Encaixa direto no [mapa ISO 42001 / PL 2338](../06-ferramentas/mapa-avaliacao-iso42001-pl2338.md) e no [Sprint LGPD](../03-comercial/proposta-sprint-lgpd.md).
+Uma página que precisa existir **antes** da primeira demonstração: base legal por camada (e a LIA escrita quando for legítimo interesse) · quem é controlador e operador · o que é capturado e o que não é · onde o dado mora e por quanto tempo · quem acessa e como se audita · como se contesta e como se apaga (com certificado) · o que acontece no fim do contrato (portabilidade em formato aberto) · e a lista de recusas da §5. Encaixa direto no [mapa ISO 42001 / PL 2338](../06-ferramentas/mapa-avaliacao-iso42001-pl2338.md) e no [Sprint LGPD](arquivo/proposta-sprint-lgpd.md) (arquivado na V5 — hoje capacidade da fase 1).
 
 ---
 
