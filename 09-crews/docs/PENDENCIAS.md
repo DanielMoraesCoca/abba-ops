@@ -24,11 +24,28 @@ O par (`CST`, `cClassTrib`) amarra cada item a um dispositivo específico da lei
 é a base da classificação determinística de creditabilidade. A tabela oficial é o
 **Informe Técnico 2025.002 — Tabelas de Classificação do IBS e da CBS** (RFB).
 
-Hoje o código não classifica creditabilidade: o reconciliador é estrutural. A
-tabela entra no M3, versionada e **com fonte citada por linha**, e o que sobrar de
-dúvida é o que vai à rota de julgamento.
+**Estado desde o M3a (2026-09-01):** o mecanismo existe e a tabela está vazia — de
+propósito.
 
-**Dono:** Tecnologia + contador do cliente. **Gate:** M3.
+`core/creditabilidade.py` classifica cada crédito em `CREDITAVEL`, `VEDADO` ou
+`DUVIDOSO`; `core/dados/vedacoes.json` é a tabela versionada, com **fonte citada por
+linha**. Ela nasce com uma única linha, marcada `a_confirmar: true` — nenhuma foi
+conferida no Informe Técnico oficial, e direito tributário não se deduz. Enquanto for
+assim, todo crédito cai em `DUVIDOSO`, que é o comportamento seguro: presumir
+creditabilidade de código desconhecido é o falso positivo fiscal que manda o cliente
+pleitear o que não é dele.
+
+**O trabalho concreto que fecha esta pendência:** sentar com o contador e preencher
+`vedacoes.json`, uma linha por dispositivo, cada uma com `doc` apontando o item do IT
+2025.002. Trocar `a_confirmar: true` por `false` **só junto com a citação conferida** —
+`tests/unit/test_creditabilidade.py` reprova quem apagar a marca deixando a fonte
+dizendo "A CONFERIR".
+
+**Como medir o avanço:** `abba-crews cobertura` imprime a fração de itens resolvida sem
+julgamento por modelo. Cada linha conferida move o número e tira custo de LLM do produto.
+
+**Dono:** Tecnologia + contador do cliente. **Gate:** M3b (a crew de julgamento só faz
+sentido sobre o resíduo que esta tabela não resolver) e promoção a PRODUCAO.
 
 ## P3 — Golden set com um contador
 

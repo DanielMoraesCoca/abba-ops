@@ -18,6 +18,17 @@ Nao e escrupulo abstrato: e o que torna o dossie assinavel por um contador.
 Cinco tipos estruturais, todos deterministicos, mais um sexto que e a **unica**
 porta para julgamento por modelo. Quatro em cada cinco execucoes nao passam por
 essa porta — e o que faz a conta fechar em centenas de CNPJs por mes.
+
+## A classificacao de creditabilidade e opcional, e isso e deliberado
+
+Ate o M2 `CLASSIFICACAO_DUVIDOSA` existia no enum e **nada a construia**: a porta
+do julgamento estava trancada por dentro. Passando um `classificador`
+(`core/creditabilidade`), cada credito ausente da proposta e conferido contra a
+tabela de vedacoes e pode virar descarte (vedado) ou duvida (desconhecido).
+
+Sem classificador o comportamento e identico ao do M2 — o que mantem todo o
+regime de testes estrutural valido e permite rodar a conferencia estrutural mesmo
+sem tabela nenhuma.
 """
 
 from __future__ import annotations
@@ -27,9 +38,11 @@ from enum import Enum
 
 from pydantic import BaseModel, Field
 
+from abba_crews.core.creditabilidade import Classificador, Veredito
 from abba_crews.core.modelos import (
     ApuracaoFisco,
     DocumentoFiscal,
+    ItemDocumento,
     LinhaApuracao,
     Papel,
 )
@@ -93,6 +106,25 @@ class Divergencia(BaseModel):
         return self.tipo is TipoDivergencia.CLASSIFICACAO_DUVIDOSA
 
 
+class ItemDescartado(BaseModel):
+    """Um credito que a empresa tem documentado e que **nao** entra no dossie.
+
+    Existe para ser mostrado, nao para ser escondido. Um dossie que so lista o que
+    entra pede fe; um que lista tambem o que ficou de fora, e sob qual dispositivo,
+    pode ser conferido — e e isso que o contador precisa para assinar o resto.
+    """
+
+    model_config = {"frozen": True}
+
+    chave: str = Field(min_length=44, max_length=44)
+    item: int = Field(ge=1)
+    valor_brl: Decimal = Field(description="O R$ que NAO sera pleiteado")
+    cst: str
+    c_class_trib: str
+    razao: str
+    fonte: str = Field(min_length=1, description="Dispositivo citado. Nunca vazio.")
+
+
 class ResultadoReconciliacao(BaseModel):
     """O que a conferencia de uma competencia produziu."""
 
@@ -102,6 +134,8 @@ class ResultadoReconciliacao(BaseModel):
     competencia: str
     divergencias: tuple[Divergencia, ...]
     itens_conferidos: int
+    descartados: tuple[ItemDescartado, ...] = ()
+    """Vazio quando se reconcilia sem classificador — o padrao ate a tabela existir."""
 
     @property
     def conforme(self) -> bool:
@@ -124,6 +158,27 @@ class ResultadoReconciliacao(BaseModel):
         return sum(
             (d.valor_brl for d in self.divergencias if d.sentido is Sentido.DESFAVORAVEL), ZERO
         )
+
+    @property
+    def total_descartado(self) -> Decimal:
+        """R$ que a classificacao tirou do dossie. Aparece no documento, somado."""
+        return sum((d.valor_brl for d in self.descartados), ZERO)
+
+    @property
+    def itens_em_julgamento(self) -> int:
+        return sum(1 for d in self.divergencias if d.requer_julgamento)
+
+    @property
+    def cobertura(self) -> float:
+        """Fracao dos itens resolvida sem julgamento por modelo.
+
+        E a resposta direta a pergunta de custo: que parte do trabalho a regra
+        resolve sozinha? Com a tabela de vedacoes vazia isto tende a zero, e esse
+        zero e o numero honesto — cada linha que o contador acrescenta o move.
+        """
+        if not self.itens_conferidos:
+            return 1.0
+        return (self.itens_conferidos - self.itens_em_julgamento) / self.itens_conferidos
 
     def por_tipo(self, tipo: TipoDivergencia) -> tuple[Divergencia, ...]:
         return tuple(d for d in self.divergencias if d.tipo is tipo)
@@ -163,12 +218,23 @@ def reconciliar(
     apuracao: ApuracaoFisco,
     *,
     tolerancia_brl: Decimal = ZERO,
+    classificador: Classificador | None = None,
 ) -> ResultadoReconciliacao:
     """Confronta os documentos da empresa contra a proposta do Fisco.
 
     `tolerancia_brl` descarta diferenca de centavos vinda de arredondamento em
     sistemas diferentes. **Cuidado ao configurar:** tolerancia alta esconde
     divergencia real. O padrao e zero — quem quiser folga, declara e assume.
+
+    `classificador` (opcional) confere a creditabilidade de cada credito ausente da
+    proposta. Sem ele, a conferencia e puramente estrutural — o comportamento do M2.
+    Com ele, credito vedado sai do dossie para a lista de descartados e credito de
+    codigo desconhecido vira `CLASSIFICACAO_DUVIDOSA`.
+
+    **Limite deliberado deste marco:** a classificacao se aplica so ao credito
+    *inteiramente ausente* da proposta. Um `VALOR_DIVERGENTE` de entrada tambem
+    depende de creditabilidade, mas ali o Fisco ja reconheceu o item — a duvida e
+    de quantia, nao de direito. Ampliar isso exige a tabela preenchida (P2).
     """
     if tolerancia_brl < ZERO:
         raise ValueError("tolerancia nao pode ser negativa")
@@ -177,6 +243,7 @@ def reconciliar(
     proposta = apuracao.por_chave_item()
     vistos: set[tuple[str, int]] = set()
     achados: list[Divergencia] = []
+    descartados: list[ItemDescartado] = []
     conferidos = 0
 
     for doc in da_competencia:
@@ -186,7 +253,11 @@ def reconciliar(
             linha = proposta.get(ref)
 
             if linha is None:
-                achados.append(_ausente_na_proposta(doc, item.numero, item.tributo_total))
+                achado = _ausente_na_proposta(doc, item, classificador)
+                if isinstance(achado, ItemDescartado):
+                    descartados.append(achado)
+                else:
+                    achados.append(achado)
                 continue
 
             vistos.add(ref)
@@ -238,17 +309,58 @@ def reconciliar(
         )
 
     achados.sort(key=lambda d: (-d.valor_brl, d.chave, d.item))
+    descartados.sort(key=lambda d: (-d.valor_brl, d.chave, d.item))
     return ResultadoReconciliacao(
         cnpj=apuracao.cnpj,
         competencia=apuracao.competencia,
         divergencias=tuple(achados),
         itens_conferidos=conferidos,
+        descartados=tuple(descartados),
     )
 
 
-def _ausente_na_proposta(doc: DocumentoFiscal, numero: int, valor: Decimal) -> Divergencia:
-    """Documento da empresa que a proposta do Fisco nao contemplou."""
+def _ausente_na_proposta(
+    doc: DocumentoFiscal, item: ItemDocumento, classificador: Classificador | None
+) -> Divergencia | ItemDescartado:
+    """Documento da empresa que a proposta do Fisco nao contemplou.
+
+    Entrada passa pela creditabilidade quando ha classificador; saida nao, porque
+    debito omitido nao depende de direito a credito — depende de ter havido a
+    operacao, e ela esta documentada.
+    """
+    numero, valor = item.numero, item.tributo_total
+
     if doc.papel is Papel.ENTRADA:
+        if classificador is not None:
+            c = classificador.classificar(item.cst, item.c_class_trib)
+
+            if c.veredito is Veredito.VEDADO:
+                return ItemDescartado(
+                    chave=doc.chave,
+                    item=numero,
+                    valor_brl=valor,
+                    cst=item.cst,
+                    c_class_trib=item.c_class_trib,
+                    razao=c.razao,
+                    fonte=c.fonte,
+                )
+
+            if c.veredito is Veredito.DUVIDOSO:
+                return Divergencia(
+                    tipo=TipoDivergencia.CLASSIFICACAO_DUVIDOSA,
+                    sentido=Sentido.INDETERMINADO,
+                    chave=doc.chave,
+                    item=numero,
+                    valor_brl=valor,
+                    detalhe=(
+                        f"credito de R$ {valor} ausente da proposta do Fisco, com "
+                        f"creditabilidade NAO resolvida pela tabela (CST {item.cst}, "
+                        f"cClassTrib {item.c_class_trib}). {c.razao} "
+                        f"Fonte: {c.fonte}. Nao pleitear sem conferencia: pleitear "
+                        f"credito indevido cria passivo onde nao havia."
+                    ),
+                )
+
         return Divergencia(
             tipo=TipoDivergencia.CREDITO_OMITIDO,
             sentido=Sentido.FAVORAVEL,

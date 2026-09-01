@@ -11,9 +11,12 @@ um núcleo determinístico e um caminho de deploy que é conectar o repositório
 
 ## O que ele faz
 
-Em 2027 o Fisco passa a entregar a apuração de IBS/CBS **pré-preenchida**. Se a empresa
-não se manifestar até o dia 15 (dia 20 para quem entrega DeRE), **os valores propostos
-prevalecem e o crédito tributário é constituído automaticamente**. Silêncio é aceite.
+Em 2027 o Fisco passa a entregar a apuração de IBS/CBS **pré-preenchida**. A proposta
+fica disponível até o **dia 15** (dia 20 para quem entrega DeRE) — essa é a data em que
+ela *aparece*, não o prazo. A manifestação vai até o **último dia útil do mês seguinte**;
+não havendo resposta, os valores propostos prevalecem e o crédito tributário é
+constituído automaticamente — o que **equivale a confissão de dívida** (art. 348, §1º da
+LC 214/2025; §4º do art. 125 do ADCT). Silêncio é aceite.
 
 A Sentinela da Apuração confere a proposta do Fisco contra os documentos da própria
 empresa, acha crédito legítimo omitido, e monta o dossiê de manifestação para o
@@ -39,7 +42,30 @@ uv run ruff check .                         # lint
 uv run mypy                                 # tipos, estrito em core/
 uv run python scripts/audita_fronteira.py   # a trava de portabilidade
 uv run abba-crews produtos                  # o estado honesto
+uv run abba-crews cobertura                 # quanto a REGRA resolve sem modelo
+uv run abba-crews janela -c 2027-03         # disponibilização x prazo final
+uv run abba-crews golden                    # o placar do golden set
 ```
+
+## Creditabilidade: o que entra no dossiê e o que fica de fora
+
+O reconciliador acha divergência **estrutural** — o que falta na proposta, o que diverge
+em valor. Isso não responde à pergunta que o contador faz primeiro: *este crédito é
+legítimo?* `core/creditabilidade.py` responde, **por regra e sem LLM**, lendo o par
+(`CST`, `cClassTrib`) contra uma tabela versionada com fonte citada por linha.
+
+A regra de segurança que desenha o módulo: **código desconhecido é `DUVIDOSO` — nunca
+creditável, nunca vedado.** Presumir creditabilidade de um par que não conhecemos é o
+falso positivo fiscal que manda o cliente pleitear o que não é dele.
+
+A tabela (`core/dados/vedacoes.json`) nasce quase vazia, e de propósito: nenhuma linha
+foi conferida no Informe Técnico 2025.002 oficial, e direito tributário não se deduz.
+Com ela assim, todo crédito vai a `DUVIDOSO` — o estado real do nosso conhecimento.
+Preenchê-la é trabalho com um contador (`docs/PENDENCIAS.md`, P2), e `abba-crews
+cobertura` mede o avanço.
+
+Por isso a classificação é **opcional e vem desligada**: ligada hoje, mandaria todo
+crédito à rota de julgamento, e a crew que julga só chega no M3b.
 
 ## As duas regras que estruturam o código
 
@@ -81,5 +107,9 @@ Certificado digital A1 e credenciais da Plataforma RTC **nunca** entram no repos
 `.gitignore` bloqueia `*.p12`, `*.pfx`, `*.pem`, `*.key`; a CI reprova se algum for rastreado.
 Ver `.env.example` para os nomes das variáveis.
 
-Telemetria da CrewAI vem desligada por padrão (`CREWAI_TELEMETRY_OPT_OUT=true`) — este
-projeto toca dado fiscal de cliente.
+Telemetria da CrewAI vem desligada por padrão — este projeto toca dado fiscal de
+cliente. A trava é aplicada **em execução**, em `abba_crews/__init__.py`, antes de
+qualquer import de `crewai`: `CREWAI_DISABLE_TELEMETRY=true`, `CREWAI_TRACING_ENABLED=false`
+e `OTEL_SDK_DISABLED=true`. `tests/unit/test_telemetria.py` lê o código instalado da
+CrewAI e reprova se algum desses nomes deixar de existir lá — documentação que promete
+uma variável ignorada pela biblioteca é o pior defeito possível numa trava de privacidade.

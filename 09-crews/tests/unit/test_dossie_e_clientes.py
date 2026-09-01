@@ -162,3 +162,55 @@ def test_render_e_deterministico() -> None:
     a = renderizar(dossie_de(date(2027, 4, 20), conforme=False))
     b = renderizar(dossie_de(date(2027, 4, 20), conforme=False))
     assert a == b
+
+
+# --------------------------- descartados e por que --------------------------- #
+
+
+def _dossie_com_descarte(caso_id: str):  # type: ignore[no-untyped-def]
+    from abba_crews.core.sinteticos import TABELA_ENSAIO, golden_set
+
+    caso = next(c for c in golden_set() if c.id == caso_id)
+    resultado = reconciliar(caso.documentos, caso.apuracao, classificador=TABELA_ENSAIO)
+    return montar(
+        config=carregar_por_cnpj(CNPJ_EMPRESA),
+        janela=JanelaManifestacao.para(COMPETENCIA),
+        resultado=resultado,
+        hoje=date(2027, 4, 20),
+    )
+
+
+def test_dossie_mostra_o_que_foi_descartado_com_a_fonte() -> None:
+    """Um documento que so mostra o que entra pede fe; este pode ser conferido."""
+    md = renderizar(_dossie_com_descarte("negativo-cst-vedado"))
+    assert "Descartados e por que" in md
+    assert "R$ 100,00" in md
+    assert "CST 999" in md
+    assert "fonte:" in md
+
+
+def test_nada_a_manifestar_com_descarte_nao_diz_que_a_proposta_confere() -> None:
+    """Sem esta ressalva o texto mentiria.
+
+    A proposta NAO conferiu com os documentos: houve credito ausente dela, que nao foi
+    pleiteado por decisao de creditabilidade. "Nenhuma divergencia encontrada" ali
+    esconderia justamente a decisao que o contador precisa conferir.
+    """
+    d = _dossie_com_descarte("negativo-cst-vedado")
+    assert d.natureza is Natureza.NADA_A_FAZER
+    md = renderizar(d)
+    assert "Nenhuma divergencia encontrada" not in md
+    assert "nao entrou" in md or "nao entraram" in md
+    assert d.total_descartado == Decimal("100.00")
+
+
+def test_dossie_sem_descarte_nao_ganha_a_secao() -> None:
+    docs = (_doc(1, Papel.ENTRADA),)
+    r = reconciliar(docs, _vazia())
+    d = montar(
+        config=carregar_por_cnpj(CNPJ_EMPRESA),
+        janela=JanelaManifestacao.para(COMPETENCIA),
+        resultado=r,
+        hoje=date(2027, 4, 20),
+    )
+    assert "Descartados" not in renderizar(d)

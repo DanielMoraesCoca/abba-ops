@@ -110,6 +110,64 @@ def golden(
     typer.echo("  com um contador, sobre competencias reais anonimizadas.\n")
 
 
+@app.command("cobertura")
+def cobertura(
+    tabela: str = typer.Option("", "--tabela", help="Caminho de outra tabela de vedacoes."),
+) -> None:
+    """Mede quanto da conferencia a REGRA resolve sozinha, sem julgamento por modelo.
+
+    E a resposta direta a pergunta de custo do plano de negocio: que fracao dos itens
+    cai na rota cara? Cada linha conferida que o contador acrescenta a tabela move
+    este numero para cima. Com a tabela como nasce, ele e zero — e o zero e honesto.
+    """
+    from pathlib import Path
+
+    from abba_crews.core.creditabilidade import carregar
+    from abba_crews.core.reconciliacao import reconciliar
+
+    t = carregar(Path(tabela) if tabela else None)
+
+    typer.echo("")
+    typer.echo(f"  tabela             {t.versao}")
+    typer.echo(f"  fonte              {t.fonte}")
+    typer.echo(f"  regras             {len(t.regras)}  "
+               f"({len(t.ativas)} decidem, {len(t.pendentes)} a confirmar)")
+
+    from decimal import Decimal
+
+    conferidos = julgamento = descartados = 0
+    brl_julgamento = Decimal("0.00")
+    for caso in golden_set():
+        r = reconciliar(caso.documentos, caso.apuracao, classificador=t)
+        conferidos += r.itens_conferidos
+        julgamento += r.itens_em_julgamento
+        descartados += len(r.descartados)
+        brl_julgamento += sum(
+            (d.valor_brl for d in r.divergencias if d.requer_julgamento), Decimal("0.00")
+        )
+
+    pct = (conferidos - julgamento) / conferidos if conferidos else 1.0
+    typer.echo("")
+    typer.echo(f"  itens conferidos   {conferidos}   (corpus: golden set v0)")
+    typer.echo(f"  em julgamento      {julgamento}   (R$ {brl_julgamento})")
+    typer.echo(f"  descartados        {descartados}")
+    typer.echo(f"  COBERTURA          {pct:.0%}  <- resolvido sem modelo")
+    typer.echo("")
+    typer.echo("  O denominador e TODO item conferido, nao so os que passam pela tabela:")
+    typer.echo("  saida e item ja reconhecido pela proposta nunca precisam de")
+    typer.echo("  creditabilidade. A cobertura mede custo — que fracao cai na rota cara.")
+    typer.echo("")
+
+    if t.pendentes:
+        typer.echo(f"  {len(t.pendentes)} linha(s) marcada(s) a_confirmar NAO decidem nada:")
+        for r_ in t.pendentes:
+            typer.echo(f"    CST {r_.cst} / cClassTrib {r_.c_class_trib} -> {r_.doc}")
+        typer.echo("")
+    if t.nota:
+        typer.echo(f"  {t.nota}")
+        typer.echo("")
+
+
 @app.command("janela")
 def janela(
     competencia: str = typer.Option(..., "--competencia", "-c", help="AAAA-MM"),
@@ -143,15 +201,30 @@ def sentinela(
     hoje: str = typer.Option("", "--hoje", help="Data de referencia (AAAA-MM-DD)."),
     mock: bool = typer.Option(False, "--mock", help="Usa fonte sintetica."),
     caso: str = typer.Option("positivo-credito-omitido", "--caso", help="Caso do golden set."),
+    classificar: bool = typer.Option(
+        False,
+        "--classificar",
+        help="Liga a conferencia de creditabilidade. Com --mock usa a tabela de ENSAIO.",
+    ),
 ) -> None:
     """Roda a Sentinela e imprime o dossie.
 
     Sem `--mock` a coleta real ainda nao existe: ela chega no M6 e depende da
     credencial do piloto RTC-CBS.
+
+    `--classificar` liga a conferencia de creditabilidade. Ela vem desligada porque
+    a tabela de vedacoes ainda nao tem linha conferida (P2): ligada sobre a tabela
+    real, todo credito vai a julgamento — e a crew que julga so chega no M3b.
     """
     from datetime import date as _date
 
+    from abba_crews.core.creditabilidade import Classificador, carregar
+    from abba_crews.core.sinteticos import TABELA_ENSAIO
     from abba_crews.flows.sentinela_flow import Fonte, SentinelaFlow
+
+    classificador: Classificador | None = None
+    if classificar:
+        classificador = TABELA_ENSAIO if mock else carregar()
 
     fonte = None
     if mock:
@@ -166,7 +239,7 @@ def sentinela(
     if hoje:
         payload["hoje"] = hoje
 
-    flow = SentinelaFlow(fonte=fonte)
+    flow = SentinelaFlow(fonte=fonte, classificador=classificador)
     flow.kickoff({"crewai_trigger_payload": payload})
 
     if not flow.state.markdown:

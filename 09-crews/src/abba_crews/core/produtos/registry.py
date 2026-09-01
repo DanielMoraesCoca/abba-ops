@@ -105,10 +105,12 @@ PRODUTOS: tuple[Produto, ...] = (
             "manifestacao dentro do prazo, em R$, no mes"
         ),
         gate=(
-            "M3 + golden set montado com um contador sobre competencias reais "
-            "anonimizadas → PRODUCAO. (M2 concluido: Flow ponta a ponta em sintetico, "
-            "com calendario, configuracao por cliente e dossie em RASCUNHO. "
-            "EXECUTAVEL e demonstravel, NAO vendavel.)"
+            "M3b + tabela de vedacoes preenchida (P2) + golden set montado com um "
+            "contador sobre competencias reais anonimizadas → PRODUCAO. "
+            "(M3a concluido: creditabilidade deterministica — o par CST/cClassTrib "
+            "passou a decidir, credito vedado sai do dossie com o dispositivo citado, "
+            "e a rota de julgamento deixou de ser codigo morto. Segue EXECUTAVEL: "
+            "demonstravel, NAO vendavel.)"
         ),
         base_legal="Decreto 12.955/2026 (RCBS) e Resolucao CGIBS 6/2026 (RIBS)",
         crew="abba_crews.crews.sentinela",

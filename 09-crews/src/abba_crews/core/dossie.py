@@ -14,6 +14,11 @@ perdeu a sua funcao.
 Conferir a apuracao e calar sobre o que pesa contra o cliente e divulgacao seletiva —
 e um dossie assim nao e assinavel por um profissional.
 
+**Mostra tambem o que ficou de fora.** A secao "Descartados e por que" lista o credito
+que a empresa tem documentado e que a classificacao de creditabilidade nao deixou
+entrar, com o dispositivo citado. Um documento que so mostra o que entra pede fe; um
+que mostra o que ficou de fora, e sob qual regra, pode ser conferido.
+
 O rodape declara a fronteira: a ABBA evidencia; concluir, decidir e transmitir e do
 cliente. Nenhuma linha deste modulo produz linguagem de parecer.
 """
@@ -28,7 +33,12 @@ from pydantic import BaseModel, Field
 
 from abba_crews.core.calendario import JanelaManifestacao, Situacao
 from abba_crews.core.clientes import ConfigCliente
-from abba_crews.core.reconciliacao import Divergencia, ResultadoReconciliacao, Sentido
+from abba_crews.core.reconciliacao import (
+    Divergencia,
+    ItemDescartado,
+    ResultadoReconciliacao,
+    Sentido,
+)
 
 ZERO = Decimal("0.00")
 
@@ -74,6 +84,11 @@ class Dossie(BaseModel):
     @property
     def total_desfavoravel(self) -> Decimal:
         return self.resultado.total_desfavoravel
+
+    @property
+    def total_descartado(self) -> Decimal:
+        """O que a classificacao tirou do dossie — mostrado, nunca omitido."""
+        return self.resultado.total_descartado
 
     @property
     def efeito_liquido(self) -> Decimal:
@@ -135,6 +150,27 @@ def _secao(
     return linhas
 
 
+def _secao_descartados(descartados: tuple[ItemDescartado, ...], total: Decimal) -> list[str]:
+    """O que a empresa tem documentado e nao vai pleitear, com a regra que o barrou."""
+    if not descartados:
+        return []
+    linhas = [
+        f"### Descartados e por que — {_brl(total)}",
+        "",
+        "Creditos documentados pela empresa que a conferencia de creditabilidade **nao** "
+        "levou ao pleito. Estao aqui para serem conferidos, nao para serem esquecidos: "
+        "discordando da regra citada, o profissional que assina decide diferente.",
+        "",
+    ]
+    for d in descartados:
+        linhas.append(f"- **{_brl(d.valor_brl)}** · CST {d.cst} / cClassTrib {d.c_class_trib}")
+        linhas.append(f"  - documento `{d.chave}`, item {d.item}")
+        linhas.append(f"  - {d.razao}")
+        linhas.append(f"  - fonte: {d.fonte}")
+    linhas.append("")
+    return linhas
+
+
 def renderizar(dossie: Dossie) -> str:
     """O dossie em Markdown, para leitura humana."""
     d = dossie
@@ -162,13 +198,31 @@ def renderizar(dossie: Dossie) -> str:
     ]
 
     if d.natureza is Natureza.NADA_A_FAZER:
-        L += [
-            "## Nada a manifestar",
-            "",
-            f"A proposta do Fisco confere com os {d.resultado.itens_conferidos} item(ns) "
-            f"documentado(s) na competencia. Nenhuma divergencia encontrada.",
-            "",
-        ]
+        L += ["## Nada a manifestar", ""]
+        if d.resultado.descartados:
+            # Sem esta ressalva o texto mentiria: a proposta NAO conferiu com os
+            # documentos — houve credito ausente dela, e ele nao foi pleiteado por
+            # decisao de creditabilidade. Dizer "nenhuma divergencia" aqui esconderia
+            # justamente a decisao que o contador precisa conferir.
+            barrados = len(d.resultado.descartados)
+            restante = d.resultado.itens_conferidos - barrados
+            frase = (
+                f"Nada a pleitear nesta competencia. Dos "
+                f"{d.resultado.itens_conferidos} item(ns) conferido(s), {barrados} "
+                f"nao entrou no pleito por creditabilidade — {_brl(d.total_descartado)} "
+                f"listado(s) abaixo, com a regra que os barrou."
+            )
+            # So afirmar sobre o restante quando ele existe: "o restante confere" com
+            # zero itens restantes e frase vazia com cara de conclusao.
+            if restante > 0:
+                frase += f" Os outros {restante} item(ns) conferem com a proposta do Fisco."
+            L += [frase, ""]
+        else:
+            L += [
+                f"A proposta do Fisco confere com os {d.resultado.itens_conferidos} "
+                f"item(ns) documentado(s) na competencia. Nenhuma divergencia encontrada.",
+                "",
+            ]
     else:
         if d.natureza is Natureza.REGISTRO_DE_PERDA:
             L += [
@@ -200,6 +254,10 @@ def renderizar(dossie: Dossie) -> str:
                 indeterminadas,
                 sum((x.valor_brl for x in indeterminadas), ZERO),
             )
+
+    # Fora do if: quando TUDO foi descartado nao ha divergencia, a natureza vira
+    # "nada a fazer" — e e justamente ai que omitir os descartes seria pior.
+    L += _secao_descartados(d.resultado.descartados, d.total_descartado)
 
     L += [
         "---",

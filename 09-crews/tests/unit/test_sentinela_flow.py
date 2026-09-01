@@ -71,3 +71,48 @@ def test_fora_do_prazo_o_dossie_muda_de_natureza() -> None:
     fora = roda("positivo-credito-omitido", hoje="2027-05-10")
     assert "Registro de perda" in fora.state.markdown
     assert "Registro de perda" not in dentro.state.markdown
+
+
+# --------------------------------------------------------------------------- #
+# A rota de julgamento — codigo morto ate o M3a
+# --------------------------------------------------------------------------- #
+
+
+def test_rota_de_julgamento_e_alcancavel_e_recusa_citando_o_m3b() -> None:
+    """A regressao mais importante deste marco.
+
+    Ate o M3a `decidir_rota` podia devolver "julgamento" e **nada** conseguia
+    dispara-la: `requer_julgamento` nunca era verdadeiro porque ninguem construia uma
+    divergencia de classificacao duvidosa. Construir a crew de julgamento antes disto
+    teria sido construir agentes para uma rota que nada alcanca.
+
+    Se este teste voltar a passar por acidente — porque parou de levantar — a rota
+    virou codigo morto de novo.
+    """
+    from abba_crews.core.sinteticos import TABELA_ENSAIO
+
+    f = SentinelaFlow(fonte=fonte_do("positivo-cst-desconhecido"), classificador=TABELA_ENSAIO)
+    with pytest.raises(NotImplementedError, match="M3b"):
+        f.kickoff({"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP}})
+
+
+def test_cst_vedado_nao_vai_a_julgamento_e_produz_dossie() -> None:
+    """Vedado e resposta, nao duvida: resolve na regra e nao custa modelo."""
+    from abba_crews.core.sinteticos import TABELA_ENSAIO
+
+    f = SentinelaFlow(fonte=fonte_do("negativo-cst-vedado"), classificador=TABELA_ENSAIO)
+    f.kickoff({"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}})
+    assert f.state.resultado is not None and len(f.state.resultado.descartados) == 1
+    assert "Descartados e por que" in f.state.markdown
+
+
+def test_sem_classificador_nenhum_caso_do_golden_set_vai_a_julgamento() -> None:
+    """O padrao desligado e o que mantem o M2 inteiro valido — e e deliberado."""
+    from abba_crews.core.sinteticos import golden_set as _gs
+
+    for caso in _gs():
+        f = SentinelaFlow(fonte=fonte_do(caso.id))
+        f.kickoff(
+            {"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}}
+        )
+        assert f.state.markdown, f"{caso.id} terminou sem dossie"

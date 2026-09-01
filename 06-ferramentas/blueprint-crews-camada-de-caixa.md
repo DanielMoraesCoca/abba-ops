@@ -67,7 +67,7 @@ abba-crews/
 
 ## 3. Crew 1 — Sentinela da Apuração (a primeira a construir)
 
-**Missão:** entre o dia em que a apuração pré-preenchida fica disponível e o dia 15 (ou 20, para quem entrega DeRE), garantir que **nenhum crédito legítimo da empresa seja perdido pelo silêncio**.
+**Missão:** entre o dia em que a apuração pré-preenchida fica **disponível** (dia 15, ou 20 para quem entrega DeRE) e o **último dia útil do mês seguinte** — que é o prazo real de manifestação —, garantir que **nenhum crédito legítimo da empresa seja perdido pelo silêncio**.
 
 ### 3.1 O Flow (o esqueleto determinístico)
 
@@ -209,7 +209,7 @@ Esta é a diferença entre "mais uma ferramenta fiscal" e um produto ABBA.
 | **Fatos bitemporais com autoridade de origem** | O que o contador confirma nasce `human_stated` e **não pode ser rebaixado** por inferência de LLM depois. É exatamente a trava que um produto fiscal precisa |
 | **`roi-reconcile`** (top-down × bottom-up com trava de divergência) | O R$ recuperado do mês passa por ele antes de virar número de cobrança. Número inflado não chega ao cliente |
 | **`abba forget`** | Único caminho de deleção. Dado fiscal entra no ciclo de vida declarado desde o primeiro dia |
-| **`abba brain next`** | O prazo do dia 15 de cada CNPJ entra na fila de antecipação. O ritual da manhã já existe |
+| **`abba brain next`** | O prazo de manifestação de cada CNPJ (último dia útil do mês seguinte) entra na fila de antecipação, com a disponibilização do dia 15/20 como marco de início. O ritual da manhã já existe |
 | **`crewai-export.js`** (`abba.crewai-export/v1`) | **Continua servindo o caminho sob medida** — o assessment gera crews por cliente. Esta biblioteca é o caminho de prateleira. **Os dois convivem**; não substituir um pelo outro |
 
 ### A doutrina de memória — e é uma decisão, não um detalhe

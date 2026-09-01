@@ -30,6 +30,7 @@ from enum import Enum
 
 from pydantic import BaseModel
 
+from abba_crews.core.creditabilidade import Regra, TabelaCreditabilidade, Veredito
 from abba_crews.core.modelos import (
     ApuracaoFisco,
     DocumentoFiscal,
@@ -67,6 +68,10 @@ class CasoGolden(BaseModel):
     documentos: tuple[DocumentoFiscal, ...]
     apuracao: ApuracaoFisco
     tipos_esperados: tuple[TipoDivergencia, ...]
+    usa_classificador: bool = False
+    """Roda com a TABELA_ENSAIO. So os casos de creditabilidade precisam disso."""
+    descartados_esperados: int = 0
+    """Quantos creditos a classificacao deve barrar. Conferido pelo avaliador."""
 
     @property
     def espera_achado(self) -> bool:
@@ -78,17 +83,59 @@ def _chave(n: int) -> str:
 
 
 def _item(numero: int = 1, ibs_uf: str = "5.00", ibs_mun: str = "5.00",
-          cbs: str = "90.00") -> ItemDocumento:
+          cbs: str = "90.00", cst: str = "000",
+          c_class_trib: str = "000001") -> ItemDocumento:
     return ItemDocumento(
         numero=numero,
         descricao=f"mercadoria {numero}",
-        cst="000",
-        c_class_trib="000001",
+        cst=cst,
+        c_class_trib=c_class_trib,
         vbc=dinheiro("1000.00"),
         v_ibs_uf=dinheiro(ibs_uf),
         v_ibs_mun=dinheiro(ibs_mun),
         v_cbs=dinheiro(cbs),
     )
+
+
+# --------------------------------------------------------------------------- #
+# A tabela de ENSAIO
+# --------------------------------------------------------------------------- #
+
+TABELA_ENSAIO = TabelaCreditabilidade(
+    versao="ensaio-0",
+    fonte="FICCAO — casos sinteticos do golden set. NAO e direito tributario.",
+    nota=(
+        "Codigos INVENTADOS para exercitar os tres ramos da classificacao "
+        "(creditavel, vedado, duvidoso). A tabela que vale em execucao e "
+        "core/dados/vedacoes.json, e ela nasce quase vazia de proposito. Nunca "
+        "importar esta tabela fora de teste ou do modo --mock."
+    ),
+    regras=(
+        Regra(
+            cst="000",
+            c_class_trib="000001",
+            veredito=Veredito.CREDITAVEL,
+            razao="Caso de ensaio: par tratado como creditavel para exercitar o ramo feliz.",
+            doc="ficcao de teste — sem valor juridico",
+        ),
+        Regra(
+            cst="999",
+            c_class_trib="999999",
+            veredito=Veredito.VEDADO,
+            razao=(
+                "Caso de ensaio: par tratado como vedado para exercitar o descarte "
+                "com dispositivo citado."
+            ),
+            doc="ficcao de teste — sem valor juridico",
+        ),
+    ),
+)
+"""Tabela **ficticia**, so para os casos sinteticos.
+
+Ela existe porque a tabela real (`core/dados/vedacoes.json`) nasce sem nenhuma linha
+que decida — o que e correto e honesto, e tambem significa que os ramos VEDADO e
+CREDITAVEL nao teriam como ser exercitados. O nome grita 'ensaio' de proposito: se
+um dia alguem tentar usa-la em producao, o proprio nome denuncia."""
 
 
 def _doc(n: int, papel: Papel, *, dia: int = 15, mes: int = 3,
@@ -225,6 +272,34 @@ def golden_set() -> tuple[CasoGolden, ...]:
             ),
             tipos_esperados=(TipoDivergencia.DOC_DESCONHECIDO,),
         ),
+        # ------------- CREDITABILIDADE: a rota de julgamento fica viva -------------
+        CasoGolden(
+            id="negativo-cst-vedado",
+            familia=Familia.NEGATIVO,
+            descricao=(
+                "Entrada ausente da proposta, mas com par (CST, cClassTrib) vedado na "
+                "tabela. NAO pode virar pleito: pleitear credito vedado cria passivo "
+                "onde nao havia. Vai para 'descartados e por que', com a fonte citada."
+            ),
+            documentos=(_doc(11, Papel.ENTRADA, itens=(_item(cst="999", c_class_trib="999999"),)),),
+            apuracao=_vazia(),
+            tipos_esperados=(),
+            usa_classificador=True,
+            descartados_esperados=1,
+        ),
+        CasoGolden(
+            id="positivo-cst-desconhecido",
+            familia=Familia.POSITIVO,
+            descricao=(
+                "Entrada ausente da proposta, com par fora da tabela. O produto NAO "
+                "presume creditabilidade: marca CLASSIFICACAO_DUVIDOSA e manda a "
+                "conferencia humana. E o unico caso que abre a rota de julgamento."
+            ),
+            documentos=(_doc(12, Papel.ENTRADA, itens=(_item(cst="777", c_class_trib="777777"),)),),
+            apuracao=_vazia(),
+            tipos_esperados=(TipoDivergencia.CLASSIFICACAO_DUVIDOSA,),
+            usa_classificador=True,
+        ),
         CasoGolden(
             id="positivo-papel-divergente",
             familia=Familia.POSITIVO,
@@ -281,8 +356,18 @@ def rodar(casos: tuple[CasoGolden, ...] | None = None) -> Placar:
     positivos = achados = negativos = limpos_ok = 0
 
     for caso in casos:
-        r: ResultadoReconciliacao = reconciliar(caso.documentos, caso.apuracao)
+        r: ResultadoReconciliacao = reconciliar(
+            caso.documentos,
+            caso.apuracao,
+            classificador=TABELA_ENSAIO if caso.usa_classificador else None,
+        )
         tipos = {d.tipo for d in r.divergencias}
+
+        if len(r.descartados) != caso.descartados_esperados:
+            falhas.append(
+                f"{caso.id}: esperava {caso.descartados_esperados} descarte(s) por "
+                f"creditabilidade, achou {len(r.descartados)}"
+            )
 
         if caso.espera_achado:
             positivos += 1

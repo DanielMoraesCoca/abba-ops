@@ -5,10 +5,18 @@ em `core/`; aqui mora a sequencia.
 
     abrir_competencia  -> config do cliente + janela de manifestacao
     coletar            -> adaptador de fonte (sintetico neste marco)
-    reconciliar        -> core/reconciliacao. Zero LLM.
-    decidir_rota       -> sem_divergencia | rotina | julgamento (M3)
+    reconciliar        -> core/reconciliacao (+ creditabilidade). Zero LLM.
+    decidir_rota       -> sem_divergencia | rotina | julgamento (M3b)
     montar_dossie      -> core/dossie, sempre RASCUNHO
     submeter_a_humano  -> grava e ENCERRA
+
+**A rota `julgamento` so existe de verdade com classificador.** Ate o M3a ela era
+alcancavel no papel e inalcancavel na pratica: nada construia uma divergencia de
+classificacao duvidosa. Agora um `classificador` injetado a torna real. Ele e
+opcional e **vem desligado por padrao**, porque a tabela de vedacoes ainda nao tem
+uma linha conferida (`docs/PENDENCIAS.md`, P2): ligada hoje, ela mandaria todo
+credito a julgamento, e a crew que julga so chega no M3b. O padrao vira ligado
+quando a tabela for preenchida com o contador.
 
 **O Flow nunca transmite ao Fisco e nunca conclui.** Nao existe ferramenta de
 transmissao no projeto, e a manifestacao e ato do contribuinte.
@@ -31,6 +39,7 @@ from pydantic import BaseModel
 
 from abba_crews.core.calendario import JanelaManifestacao
 from abba_crews.core.clientes import ConfigCliente, carregar_por_cnpj
+from abba_crews.core.creditabilidade import Classificador
 from abba_crews.core.dossie import Dossie, montar, renderizar
 from abba_crews.core.modelos import ApuracaoFisco, DocumentoFiscal
 from abba_crews.core.reconciliacao import ResultadoReconciliacao, reconciliar
@@ -81,10 +90,17 @@ class EstadoSentinela(BaseModel):
 class SentinelaFlow(Flow[EstadoSentinela]):
     """Confere a apuracao assistida dentro da janela de manifestacao."""
 
-    def __init__(self, *, fonte: Fonte | None = None, dir_clientes: Path | None = None) -> None:
+    def __init__(
+        self,
+        *,
+        fonte: Fonte | None = None,
+        dir_clientes: Path | None = None,
+        classificador: Classificador | None = None,
+    ) -> None:
         super().__init__()
         self._fonte = fonte
         self._dir_clientes = dir_clientes
+        self._classificador = classificador
 
     @start()
     def abrir_competencia(self, crewai_trigger_payload: dict[str, Any] | None = None) -> None:
@@ -133,6 +149,7 @@ class SentinelaFlow(Flow[EstadoSentinela]):
             self.state.fonte.documentos,
             self.state.fonte.apuracao,
             tolerancia_brl=self.state.config.tolerancia_brl,
+            classificador=self._classificador,
         )
 
     @router(reconciliar_competencia)
@@ -145,9 +162,19 @@ class SentinelaFlow(Flow[EstadoSentinela]):
 
     @listen("julgamento")
     def julgar(self) -> None:
+        """Rota alcancavel desde o M3a, e ainda sem quem a atenda.
+
+        Recusar alto e o comportamento correto: a alternativa seria montar um dossie
+        que cala sobre creditos de creditabilidade nao resolvida — exatamente o falso
+        positivo fiscal que o produto promete nao cometer.
+        """
+        assert self.state.resultado
+        duvidosas = [d for d in self.state.resultado.divergencias if d.requer_julgamento]
         raise NotImplementedError(
-            "a crew de julgamento chega no M3 (cetico + redator). Ate la, divergencia "
-            "de classificacao duvidosa nao e resolvida por este produto."
+            f"{len(duvidosas)} item(ns) com creditabilidade nao resolvida pela tabela "
+            f"de vedacoes. A crew que julga o residuo (cetico + redator) chega no M3b; "
+            f"a tabela se preenche com o contador (docs/PENDENCIAS.md, P2). Ate la, "
+            f"este produto nao conclui sobre estes itens — e nao vai fingir que conclui."
         )
 
     @listen("sem_divergencia")
