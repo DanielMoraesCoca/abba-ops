@@ -22,14 +22,15 @@ A cadeira de estrategista de IA da empresa, em regime fracionário — com entre
 
 Ciclos seguintes de 90 dias repetem o ritmo: ritual → recomendações → decisões → registro.
 
-## 3. Formatos — [RASCUNHO v2 — NÃO vigente]
+## 3. Formatos — tabela v3 (Virada V5 — proposta, Pedro valida)
 
 | Formato | Cadência | Investimento |
 |---|---|---|
-| **Trimestral** | 1 ritual/trimestre + até 2 arbitragens/trimestre | R$ 6.000/mês |
-| **Mensal** | presença mensal + ritual semanal de 20 min + arbitragens ilimitadas + linha direta | R$ 9.000/mês |
+| **Trimestral** | 1 ritual/trimestre + até 2 arbitragens/trimestre | R$ 7.500/mês |
+| **Mensal** | presença mensal + ritual semanal de 20 min + arbitragens ilimitadas + linha direta | R$ 12.000/mês |
+| **Instalação da memória** (venda direta, sem Programa antes) | ingestão, perfil da empresa, primeiro dossiê | R$ 15.000 (única vez) |
 
-Preços em regime rascunho ([tabela](tabela-de-precos.md)); em proposta real antes da ativação da v2, apresentar como condição de lançamento com transparência.
+Preços da [tabela v3](tabela-de-precos.md). Regra de anti-canibalização: o Conselheiro é só para quem **já tem IA rodando** — quem pode comprar o Programa não recebe proposta de Conselheiro.
 
 ## 4. O que precisamos de você
 
