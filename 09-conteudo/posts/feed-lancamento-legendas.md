@@ -149,23 +149,34 @@ Quer ver o que a informação pública já diz sobre a sua empresa?
 
 ## Peça 05 · Parceiros oficiais
 
+> Reescrita em 01/09 para ganhar o gancho para trás com a peça 04. A ponte é o
+> mesmo princípio nas duas: no documento, toda conclusão tem fonte conferível;
+> no sistema, toda solução tem tecnologia conferível. Auditabilidade saindo do
+> papel e entrando na infraestrutura.
+
+No assessment, toda conclusão vem com a fonte, e você consegue conferir em dez segundos.
+
+No que a gente constrói, vale a mesma regra.
+
 Durante a capacitação, o time de vocês usa ferramentas dos nossos parceiros para construir as próprias soluções.
 
-Microsoft entra na camada corporativa: identidade, nuvem e as ferramentas de produtividade onde o trabalho da sua empresa já acontece.
+Microsoft na camada corporativa: identidade, nuvem e as ferramentas de produtividade onde o trabalho da sua empresa já acontece.
 
-CrewAI entra na camada de agentes: onde os fluxos com aprovação humana são construídos e colocados em produção.
+CrewAI na camada de agentes: onde os fluxos com aprovação humana são construídos e colocados em produção.
 
-Duas consequências práticas, e elas importam mais que os logos.
+Duas consequências práticas, e elas importam muito mais que os logos.
 
-A primeira é que ninguém sai refém. As soluções são construídas em tecnologia de mercado, com documentação pública que qualquer time consegue ler depois que a gente sair.
+A primeira é que ninguém sai refém.
+
+Vale dizer o que refém significa aqui, porque é o que mais assusta quem já se queimou. É o fornecedor que some e leva o conhecimento junto. É o sistema que uma pessoa só entende. E é a descoberta, dois anos depois, de que trocar de fornecedor custa mais do que custou o projeto inteiro.
+
+As soluções são construídas em tecnologia de mercado, com documentação pública que qualquer time consegue ler depois que a gente sair. Se um dia você quiser trocar de parceiro, dá.
 
 A segunda é que a capacidade fica com vocês, porque quem constrói durante a capacitação é o time de vocês, não a gente.
 
 E a regra não muda com a ferramenta: aprovação humana nos pontos críticos. A IA executa, gente da sua confiança valida.
 
 Quem, no seu time, sairia dessa história com mais capacidade?
-
----
 
 ## Regras de publicação
 
