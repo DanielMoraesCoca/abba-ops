@@ -91,6 +91,79 @@ STYLE = '''
     .note p { font-size:22px; line-height:1.55; color:#7C88A2; margin:0; }
     .paper .note p { color:#78839A; }
 
+
+    /* ── Grao. O fundo chapado lia como slide; com grao le como impresso.
+       E o unico jeito honesto de dar textura sem imagem generica de IA. ── */
+    .grain { position:absolute; inset:0; pointer-events:none;
+             background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); background-size:240px 240px;
+             opacity:.06; mix-blend-mode:overlay; }
+    .paper .grain { opacity:.42; mix-blend-mode:multiply; }
+    .gold .grain  { opacity:.30; mix-blend-mode:multiply; }
+
+    /* ── Terceiro fundo: campo dourado. Existe para dar contraste de valor
+       na grade do perfil, onde tudo era navy. Acento por italico, nunca por
+       cor, porque nada claro tem contraste suficiente sobre o dourado. ── */
+    .p.gold { background:#C2A35B; color:#1B2A4A; }
+    .gold .hair { background:#A98D48; }
+    /* colisao de nome: a barra de progresso e a marca de continuidade usam a
+       classe .gold, que sobre o cartao dourado ficava dourado sobre dourado.
+       No campo dourado elas viram bronze escuro. */
+    .p.gold .gold { background:#3E3210; }
+    .gold .folio, .gold .ref { color:#6F5A22; }
+    .gold .refr { color:#3E3210; }
+    .gold .label { color:#5C4A18; }
+    .gold .label.mute { color:#6F5A22; }
+    .gold h1, .gold h1 i { color:#1B2A4A; }
+    .gold .lede { color:#4A3D18; }
+    .gold .lede b { color:#1B2A4A; }
+    .gold .rule { background:#3E3210; }
+    .gold .note { border-top-color:#A98D48; }
+    .gold .note p { color:#5C4A18; }
+    .gold .note .mk { color:#3E3210; }
+    .gold td, .gold th { border-bottom-color:#A98D48; }
+    .gold td { color:#4A3D18; } .gold td b { color:#1B2A4A; }
+    .gold td.k { color:#6F5A22; }
+
+    /* ── Capa cheia. A grade do perfil deixou de recortar em 1:1 e passou a
+       mostrar quase o cartao inteiro, entao a capa antiga, que usava so o
+       terco de cima, aparecia com metade vazia em toda miniatura. A capa
+       agora ancora embaixo: o rotulo fica no topo, o vazio no meio, e a
+       frase grande fecha o cartao. ── */
+    .stage.cover .label { margin-bottom:auto; }
+    .cover h1.c1 { font-size:132px; line-height:1.04; letter-spacing:-.022em; }
+    .cover h1.c2 { font-size:112px; line-height:1.06; letter-spacing:-.02em; }
+    .cover h1.c3 { font-size:94px;  line-height:1.08; letter-spacing:-.018em; }
+    .cover h1.c4 { font-size:78px;  line-height:1.12; letter-spacing:-.014em; }
+    .cover .rule { margin-top:38px; }
+    .cover .lede { font-size:31px; margin-top:30px; max-width:800px; }
+
+    /* ── Numero heroi. Quando a manchete E um numero do canone, o numero
+       vira a imagem da capa. E o unico "interrompe o scroll" que esta casa
+       pode usar sem inventar nada. ── */
+    .hero { font-family:"Newsreader", Georgia, serif; font-weight:300;
+            font-size:300px; line-height:.84; letter-spacing:-.045em;
+            color:#D8BE7C; margin:0 0 26px; font-variant-numeric:tabular-nums; }
+    .paper .hero { color:#8A6E28; } .gold .hero { color:#1B2A4A; }
+    .hero .u { font-size:.42em; letter-spacing:-.01em; vertical-align:.52em; }
+    .heropre { font-family:"IBM Plex Mono", monospace; font-size:24px;
+               letter-spacing:.22em; text-transform:uppercase; color:#8E9AB4;
+               margin:0 0 14px; }
+    .paper .heropre { color:#78839A; } .gold .heropre { color:#5C4A18; }
+    .cover h1.sub { font-size:62px; line-height:1.14; letter-spacing:-.01em; }
+
+    /* ── Figura. Duas cores so, tiradas do proprio sistema: #D8BE7C para o
+       que foi medido e #7C88A2 para o que foi sentido. Separacao conferida
+       no validador (normal 22,5 · protan 20,7 · tritan 20,8; contraste
+       acima de 3:1 sobre o navy). Cada barra tem rotulo proprio, entao a
+       identidade nunca depende so da cor. ── */
+    .fig { margin-top:auto; margin-bottom:auto; }
+    .fig .v { font-family:"Newsreader", Georgia, serif; font-size:54px; fill:#FFFFFF; }
+    .fig .k { font-family:"IBM Plex Mono", monospace; font-size:20px;
+              letter-spacing:.2em; fill:#8E9AB4; }
+    .fig .g { font-family:"IBM Plex Mono", monospace; font-size:20px;
+              letter-spacing:.2em; fill:#C2A35B; }
+    .paper .fig .v { fill:#1B2A4A; } .paper .fig .k { fill:#6B778E; }
+
     .mark { display:block; width:190px; height:auto; opacity:.96; }
     /* Placa de parceiro. A marca oficial vai sobre campo branco, com folga em
        volta, sem recorte e sem recolorir (V3o e guia de marca de cada parceiro).
@@ -113,15 +186,17 @@ TAIL = '</x-dc>\n</body>\n</html>\n'
 
 def page(i, n, ref, folio_r, body, paper=False):
     """i = indice 0-based da tela; n = total. Constroi a moldura com as duas
-    tecnicas de transicao: barra de progresso e marca de continuidade."""
-    cls = "p paper" if paper else "p"
+    tecnicas de transicao: barra de progresso e marca de continuidade.
+    `paper` aceita False (navy), True (papel) ou a string 'gold'."""
+    ground = {False:"", True:" paper", "gold":" gold", "paper":" paper"}[paper]
+    cls = "p" + ground
     span = W - 2*M
     # 1. barra de progresso: fiada cheia + segmento dourado proporcional
     prog = round(span * (i+1) / n)
     # 2. marca de continuidade: sai pela direita em y_i, entra pela esquerda em y_{i-1}
     def ty(k): return round(300 + k * (760 / max(n-1, 1)))
     out_y, in_y = ty(i), ty(i-1) if i > 0 else None
-    f = ['<div class="frame">',
+    f = ['<div class="grain"></div>', '<div class="frame">',
          f'<div class="hair" style="left:{M}px;right:{M}px;top:150px;height:1px"></div>',
          f'<div class="gold" style="left:{M}px;top:149px;width:{prog}px;height:3px"></div>',
          f'<div class="hair" style="left:{M}px;right:{M}px;bottom:146px;height:1px"></div>']
@@ -132,13 +207,58 @@ def page(i, n, ref, folio_r, body, paper=False):
     f.append('</div>')
     return (HEAD + f'<div class="{cls}">' + "".join(f) +
             f'<span class="folio l">ABBA</span><span class="folio r">{folio_r}</span>'
-            f'<div class="stage">{body}</div>'
+            f'<div class="stage{" cover" if i == 0 else ""}">{body}</div>'
             f'<span class="ref">{ref}</span>'
             f'<span class="refr">abbaservices.com.br</span>'
             '</div>\n' + TAIL)
 
 def note(mk, txt):
     return f'<div class="note"><span class="mk">{mk}</span><p>{txt}</p></div>'
+
+
+def fig_distancia():
+    """A distancia entre o que foi medido e o que foi sentido (METR).
+
+    FORMA: duas barras divergindo de uma linha de zero. O trabalho do dado e
+    POLARIDADE, uma perda real contra um ganho percebido, e nao comparacao de
+    magnitude, entao o zero fica no meio e as barras crescem em sentidos
+    opostos. E a unica forma que faz a distancia de 40 pontos ser vista em vez
+    de lida.
+
+    COR: dourado #D8BE7C no medido, ardosia #7C88A2 no percebido, as duas ja no
+    sistema. Conferido no validador de paleta: separacao normal 22,5 · protan
+    20,7 · tritan 20,8, e as duas acima de 3:1 sobre o navy.
+
+    TEXTO: tinta do sistema, nunca a cor da serie. Cada barra carrega o proprio
+    rotulo, colado nela, entao a identidade nunca depende so da cor.
+
+    Sem camada de hover, de proposito: isto vira PNG de carrossel, nao pagina.
+    """
+    Z, U, X, BW, R = 330, 9.5, 40, 300, 6   # zero · px/ponto · x · largura · raio
+    hA, hB = round(19*U), round(20*U)       # medido p/ baixo · percebido p/ cima
+    G = 3                                   # respiro de superficie entre as duas
+    def barra(h, baixo, cor):
+        y0 = Z + G if baixo else Z - G      # a barra nao encosta na linha do zero:
+        y1 = Z + h if baixo else Z - h      # sem o respiro as duas viram um bloco so
+        sy = -R if baixo else R
+        return (f'<path d="M{X},{y0} L{X},{y1+sy} Q{X},{y1} {X+R},{y1} '
+                f'L{X+BW-R},{y1} Q{X+BW},{y1} {X+BW},{y1+sy} L{X+BW},{y0} Z" fill="{cor}"/>')
+    bx = X + BW + 46                        # colchete da distancia
+    return f'''<div class="fig"><svg viewBox="0 0 928 640" width="928" height="640">
+  <text class="k" x="{X}" y="56">RELATADO POR ELES</text>
+  <text class="v" x="{X}" y="112">20% mais rápidos</text>
+  {barra(hB, False, "#7C88A2")}
+  {barra(hA, True,  "#D8BE7C")}
+  <line x1="0" y1="{Z}" x2="{X+BW+18}" y2="{Z}" stroke="#7C88A2" stroke-width="1"/>
+  <text class="v" x="{X}" y="{Z+hA+82}">19% mais lentos</text>
+  <text class="k" x="{X}" y="{Z+hA+124}">MEDIDO NO CRONÔMETRO</text>
+
+  <path d="M{bx},{Z-hB} L{bx+16},{Z-hB} L{bx+16},{Z+hA} L{bx},{Z+hA}"
+        fill="none" stroke="#C2A35B" stroke-width="1"/>
+  <text class="g" x="{bx+40}" y="{Z-6}">40 PONTOS</text>
+  <text class="g" x="{bx+40}" y="{Z+26}">DE DISTÂNCIA</text>
+</svg></div>'''
+
 
 F, PAGES = {}, []
 
@@ -156,7 +276,7 @@ def peca(pid, nome, prefixo, sec, telas):
 peca("peca-01", "01 · A tese", "Tese", 1, [
  ("PEÇA 01", '''
 <p class="label">Consultoria de inteligência artificial</p>
-<h1>Tornamos a sua empresa <i>AI native.</i></h1>
+<h1 class="c1">Tornamos a sua empresa <i>AI native.</i></h1>
 <div class="rule"></div>
 <p class="lede">E provamos, de fora, o que isso mudou. Número combinado antes. Medido depois, do mesmo jeito. Assinado por gente que responde por ele.</p>
 ''', False),
@@ -227,10 +347,10 @@ def espinha():
 peca("peca-02", "02 · A jornada", "Jornada", 2, [
  ("PEÇA 02", '''
 <p class="label">O caminho completo</p>
-<h1>A jornada,<br>em <i>sete passos.</i></h1>
+<h1 class="c1">A jornada,<br>em <i>sete passos.</i></h1>
 <div class="rule"></div>
 <p class="lede">Da primeira conversa à cadeira de estrategista na sua diretoria. Cada etapa entrega algo inteiro sozinha e produz o insumo da próxima.</p>
-''', False),
+''', True),
  ("O DESENHO", espinha(), False),
  ("ETAPAS 1 E 2", '''
 <p class="label">Antes de qualquer investimento</p>
@@ -284,7 +404,7 @@ peca("peca-02", "02 · A jornada", "Jornada", 2, [
 peca("peca-03", "03 · Prometemos × Recusamos", "Recusa", 3, [
  ("PEÇA 03", '''
 <p class="label">O documento que define uma consultoria</p>
-<h1>O que prometemos,<br>e o que <i>recusamos.</i></h1>
+<h1 class="c1">O que prometemos,<br>e o que <i>recusamos.</i></h1>
 <div class="rule"></div>
 <p class="lede">Escopo sem limite é escopo sem preço. Toda proposta nossa tem uma seção do que não vamos fazer.</p>
 ''', False),
@@ -326,10 +446,10 @@ peca("peca-03", "03 · Prometemos × Recusamos", "Recusa", 3, [
 peca("peca-04", "04 · O assessment gratuito", "Assess", 4, [
  ("PEÇA 04", '''
 <p class="label">O primeiro passo · gratuito</p>
-<h1>Um assessment de IA da sua empresa, feito só com <i>informação pública.</i></h1>
+<h1 class="c3">Um assessment de IA da sua empresa, feito só com <i>informação pública.</i></h1>
 <div class="rule"></div>
 <p class="lede">Dezenas de páginas, geradas em minutos, sem custo e sem você precisar abrir um dado sequer.</p>
-''', False),
+''', 'gold'),
  ("O QUE SAI DELE", '''
 <p class="label">O que vem dentro</p>
 <table>
@@ -381,7 +501,7 @@ peca("peca-04", "04 · O assessment gratuito", "Assess", 4, [
 peca("peca-05", "05 · Parceiros oficiais", "Parceiro", 5, [
  ("PEÇA 05", '''
 <p class="label">Parceiros oficiais</p>
-<h1>A sua equipe constrói com as <i>mesmas ferramentas</i> que nós.</h1>
+<h1 class="c2">A sua equipe constrói com as <i>mesmas ferramentas</i> que nós.</h1>
 <div class="rule"></div>
 <p class="lede">Durante a capacitação, o time de vocês usa ferramentas dos nossos parceiros para construir as próprias soluções.</p>
 ''', False),
@@ -424,10 +544,10 @@ peca("peca-05", "05 · Parceiros oficiais", "Parceiro", 5, [
 peca("peca-06", "06 · O que é AI native", "Native", 6, [
  ("PEÇA 06", '''
 <p class="label">A definição, sem slogan</p>
-<h1>Se você fundasse a sua empresa hoje, <i>ela não seria assim.</i></h1>
+<h1 class="c2">Se você fundasse a sua empresa hoje, <i>ela não seria assim.</i></h1>
 <div class="rule"></div>
 <p class="lede">Com IA disponível desde o primeiro dia, você desenharia cada processo de outro jeito. Provavelmente nem existiriam alguns deles.</p>
-''', False),
+''', True),
  ("A NOSSA PRIMEIRA FRASE", '''
 <p class="label mute">O que está na capa de tudo que a gente manda</p>
 <h1 class="sm">Tornamos a sua empresa <i>AI native.</i></h1>
@@ -472,8 +592,8 @@ peca("peca-06", "06 · O que é AI native", "Native", 6, [
 peca("peca-07", "07 · O número desconfortável", "Prova", 7, [
  ("PEÇA 07", '''
 <p class="label">O estudo mais desconfortável do ano</p>
-<h1>19% mais lentos.<br>E convencidos de que estavam <i>20% mais rápidos.</i></h1>
-<div class="rule"></div>
+<div class="hero">19<span class="u">%</span></div>
+<h1 class="sub">mais lentos. E convencidos de que estavam <i>20% mais rápidos.</i></h1>
 <p class="lede">Desenvolvedores experientes usando IA, medidos por fora e depois perguntados por dentro.</p>
 ''', False),
  ("A LIGAÇÃO", '''
@@ -489,12 +609,8 @@ peca("peca-07", "07 · O número desconfortável", "Prova", 7, [
 </table>
 ''' + note("·", "METR, julho de 2025. Experimento controlado."), False),
  ("A PERCEPÇÃO", '''
-<p class="label mute">Depois da medição, a pergunta</p>
-<div class="marg" style="margin-top:auto;margin-bottom:auto">
-  <h1 class="sm">Cada um relatou ter ficado cerca de <i>20% mais rápido.</i></h1>
-  <div class="margnote">A distância entre o que aconteceu e o que eles sentiram passou de 40 pontos.</div>
-</div>
-''', True),
+<p class="label">Depois da medição, a pergunta</p>
+''' + fig_distancia() + note("·", "Mesmo experimento, mesmas pessoas. A barra de cima é o que eles sentiram; a de baixo é o que o cronômetro registrou."), False),
  ("O LIMITE DESTE ESTUDO", '''
 <p class="label mute">O que este número não prova</p>
 <h1 class="xs">Isso não é argumento contra IA, e a gente faz questão <i>de dizer.</i></h1>
@@ -519,10 +635,11 @@ peca("peca-07", "07 · O número desconfortável", "Prova", 7, [
 peca("peca-08", "08 · A causa nº 1 do fracasso", "Rand", 8, [
  ("PEÇA 08", '''
 <p class="label">A pesquisa mais séria sobre o assunto</p>
-<h1>Mais de 80% dos projetos de IA <i>falham.</i></h1>
-<div class="rule"></div>
+<p class="heropre">Mais de</p>
+<div class="hero">80<span class="u">%</span></div>
+<h1 class="sub">dos projetos de IA <i>falham.</i></h1>
 <p class="lede">O dobro da taxa dos projetos de TI comuns. E a causa número um não é técnica.</p>
-''', False),
+''', 'gold'),
  ("A LIGAÇÃO", '''
 <p class="label mute">De onde vem esta peça</p>
 <h1 class="sm">Ninguém sabe se a ferramenta ajudou <i>sem medir de fora.</i></h1>
@@ -563,7 +680,7 @@ peca("peca-08", "08 · A causa nº 1 do fracasso", "Rand", 8, [
 peca("peca-09", "09 · A IA amplifica o que já existe", "Dora", 9, [
  ("PEÇA 09", '''
 <p class="label">O relatório que ninguém quer ouvir</p>
-<h1>A IA não conserta um time. Ela <i>amplifica</i> o que já está lá.</h1>
+<h1 class="c2">A IA não conserta um time. Ela <i>amplifica</i> o que já está lá.</h1>
 <div class="rule"></div>
 <p class="lede">E amplificar não é sempre uma boa notícia.</p>
 ''', False),
@@ -607,10 +724,10 @@ peca("peca-09", "09 · A IA amplifica o que já existe", "Dora", 9, [
 peca("peca-10", "10 · Quase todo mundo diz que mede", "Medir", 10, [
  ("PEÇA 10", '''
 <p class="label">A última armadilha</p>
-<h1>72% dos líderes dizem acompanhar <i>o retorno de IA.</i></h1>
-<div class="rule"></div>
+<div class="hero">72<span class="u">%</span></div>
+<h1 class="sub">dos líderes dizem acompanhar <i>o retorno de IA.</i></h1>
 <p class="lede">Metade deles mede qualidade de dados.</p>
-''', False),
+''', True),
  ("A LIGAÇÃO", '''
 <p class="label mute">De onde vem esta peça</p>
 <h1 class="sm">Arrumar a base não é atraso. <i>É a condição do ganho.</i></h1>
@@ -657,7 +774,7 @@ peca("peca-10", "10 · Quase todo mundo diz que mede", "Medir", 10, [
 peca("peca-11", "11 · A régua que nos reprova", "Regua", 11, [
  ("PEÇA 11", '''
 <p class="label">O Ato III começa aqui</p>
-<h1>A ferramenta cujo trabalho é <i>reprovar a gente.</i></h1>
+<h1 class="c2">A ferramenta cujo trabalho é <i>reprovar a gente.</i></h1>
 <div class="rule"></div>
 <p class="lede">Antes de qualquer material nosso sair, ele passa por ela. Inclusive este post.</p>
 ''', False),
@@ -703,10 +820,10 @@ peca("peca-11", "11 · A régua que nos reprova", "Regua", 11, [
 peca("peca-12", "12 · Apagar com comprovante", "Forget", 12, [
  ("PEÇA 12", '''
 <p class="label">Ato III · a máquina por dentro</p>
-<h1>Quando um cliente manda apagar, a gente apaga. <i>E comprova.</i></h1>
+<h1 class="c2">Quando um cliente manda apagar, a gente apaga. <i>E comprova.</i></h1>
 <div class="rule"></div>
 <p class="lede">O comando emite um certificado de deleção. Não é promessa por e-mail.</p>
-''', False),
+''', 'gold'),
  ("A LIGAÇÃO", '''
 <p class="label mute">De onde vem esta peça</p>
 <h1 class="sm">O que impede um número inventado <i>de sair da sua empresa?</i></h1>
@@ -743,7 +860,7 @@ peca("peca-12", "12 · Apagar com comprovante", "Forget", 12, [
 peca("peca-13", "13 · Bloqueamos a nossa própria trapaça", "Cheat", 13, [
  ("PEÇA 13", '''
 <p class="label">Ato III · a máquina por dentro</p>
-<h1>A gente bloqueou, em código, a chance de <i>melhorar a própria nota.</i></h1>
+<h1 class="c3">A gente bloqueou, em código, a chance de <i>melhorar a própria nota.</i></h1>
 <div class="rule"></div>
 <p class="lede">Duas travas, e as duas existem contra nós mesmos.</p>
 ''', False),
@@ -790,10 +907,10 @@ peca("peca-13", "13 · Bloqueamos a nossa própria trapaça", "Cheat", 13, [
 peca("peca-14", "14 · O Conselheiro de IA", "Consel", 14, [
  ("PEÇA 14", '''
 <p class="label">A cadeira que quase ninguém tem</p>
-<h1>Todo fornecedor de IA tem um vendedor. A sua mesa merece <i>alguém do seu lado.</i></h1>
+<h1 class="c3">Todo fornecedor de IA tem um vendedor. A sua mesa merece <i>alguém do seu lado.</i></h1>
 <div class="rule"></div>
 <p class="lede">Quando a fatura chega, quando a proposta chega, quando o contrato vence.</p>
-''', False),
+''', True),
  ("A LIGAÇÃO", '''
 <p class="label mute">De onde vem esta peça</p>
 <h1 class="sm">Quem mede <i>o seu fornecedor de IA?</i></h1>

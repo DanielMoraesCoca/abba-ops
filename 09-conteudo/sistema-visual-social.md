@@ -155,15 +155,100 @@ do texto: continua valendo a redação da
 nossos parceiros durante a capacitação"*, sem prometer licença
 ([risco R9](../05-interno/registro-de-riscos.md)).
 
+## 4f. A capa cheia, e por que a regra antiga virou o problema
+
+> Reescrito em 01/09 (V4j), depois de o sócio olhar a grade do perfil com cinco
+> peças no ar e dizer que estava sem graça. Ele tinha razão, e a causa era
+> técnica.
+
+**O que aconteceu.** O §5 abaixo mandava toda mancha de texto viver dentro do
+**recorte 1:1**, entre y=196 e y=1182, porque era assim que o Instagram cortava
+a miniatura da grade. **O Instagram mudou.** A grade do perfil hoje mostra a
+**altura inteira** do cartão 4:5 e corta cerca de 3% de cada lado.
+
+A consequência é direta: a capa antiga punha tudo no terço de cima e deixava
+**mais da metade do cartão vazia**, e essa metade vazia, que antes era cortada,
+passou a aparecer em toda miniatura. Cinco peças no ar viraram cinco retângulos
+navy com um pouco de texto no topo. Não era falta de ideia, era uma régua velha.
+
+**A capa agora ancora embaixo.** Rótulo no topo, vazio no meio, e a frase grande
+fechando o cartão contra o filete de rodapé.
+
+| | Antes | Agora |
+|---|---|---|
+| Manchete | 80px, fixa | **132 · 112 · 94 · 78px**, escolhida pelo tamanho da frase (`.c1` a `.c4`) |
+| Posição | topo | ancorada no rodapé (`.stage.cover`) |
+| Mancha ocupada | ~40% da altura | ~70% |
+
+## 4g. Ritmo da grade: a peça não se julga sozinha
+
+A grade mostra **três por linha**. Uma peça pode ser ótima sozinha e a grade
+continuar morta, que era o caso. Por isso o fundo passou a ser decidido no nível
+da **sequência**, não da peça:
+
+| Peça | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 10 | 11 | 12 | 13 | 14 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Fundo | navy | papel | navy | **ouro** | navy | papel | navy | **ouro** | navy | papel | navy | **ouro** | navy | papel |
+
+O ciclo tem período 4 e a grade tem 3 colunas, então **nenhuma linha sai só de
+um valor**, e isso vale de qualquer ponto da sequência, o que importa porque o
+Instagram mostra do mais novo para o mais antigo e a ordem de leitura vira ao
+contrário.
+
+**Terceiro fundo: campo dourado.** Navy e papel davam só claro e escuro. O
+dourado da marca como campo cheio dá o terceiro valor. Tipo em navy sobre ouro
+(5,9:1) e **acento por itálico, nunca por cor**, porque nada claro tem contraste
+suficiente sobre o dourado.
+
+## 4h. Grão
+
+Fundo chapado lê como slide. Um grão de ruído a 6% sobre o navy e a 42% em
+multiplicação sobre o papel faz o cartão ler como impresso. É textura sem
+imagem, que é o único jeito de dar matéria a este sistema sem cair na imagem
+genérica de IA que a [duas-pistas](duas-pistas.md) proíbe.
+
+## 4i. Número herói
+
+Quando a manchete **é** um número do cânone, o número vira a imagem da capa:
+300px, no display, com a fonte na sequência. Vale para as peças 07 (19%),
+08 (mais de 80%) e 10 (72%). Quando o cânone diz "mais de", a linha mono
+`.heropre` carrega o "mais de", porque **arredondar em favor do impacto seria
+inventar um número**.
+
+## 4j. Figura
+
+Onde existe dado real, entra figura, e ela segue a régua de gráfico:
+
+- **a forma vem do trabalho do dado.** A da peça 07 é polaridade (uma perda
+  medida contra um ganho percebido), então são duas barras divergindo de uma
+  linha de zero, e não duas barras lado a lado
+- **as cores saem do sistema** e passam pelo validador antes de entrar. O par
+  em uso, `#D8BE7C` medido × `#7C88A2` percebido, dá separação 22,5 em visão
+  normal, 20,7 em protanopia e 20,8 em tritanopia, e as duas ficam acima de
+  3:1 sobre o navy
+- **todo texto usa tinta do sistema, nunca a cor da série**, e cada barra
+  carrega o próprio rótulo colado nela: a identidade nunca depende só da cor
+- **respiro de superfície** entre marcas adjacentes, senão duas barras que se
+  encontram no zero leem como um bloco só
+
+Próximas figuras candidatas, todas com número já no cânone: peça 08 (RAND),
+peça 09 (DORA) e peça 10 (Wharton).
+
 ## 5. Margem de segurança (a regra que o feed antigo quebrava)
 
 Formato **1080×1350**. Toda mancha de texto vive entre **y=196 e y=1182** e
-entre **x=104 e x=976** — ou seja, **dentro do recorte 1:1** que o Instagram
-aplica na miniatura da grade do perfil.
+entre **x=104 e x=976**.
 
-Consequência prática: a primeira tela de todo carrossel continua legível quando
-alguém abre o perfil e vê só o quadrado. É onde a maior parte das pessoas vê o
-post pela primeira vez, e é onde o feed anterior perdia a primeira letra do olho.
+> **Corrigido em 01/09 (V4j).** Esta margem existia porque o Instagram cortava a
+> miniatura da grade em **1:1**. Não corta mais: a grade mostra a **altura
+> inteira** e tira cerca de **3% de cada lado**. A margem lateral de 104px cobre
+> esse corte com folga, então ela fica. **A margem vertical deixou de ser um
+> recorte e passou a ser só respiro**, e foi por confundir as duas coisas que as
+> capas nasceram com metade do cartão vazia. Ver [4f](#4f-a-capa-cheia-e-por-que-a-regra-antiga-virou-o-problema).
+
+Consequência prática: a primeira tela de todo carrossel é vista quase inteira
+quando alguém abre o perfil. É onde a maior parte das pessoas vê o post pela
+primeira vez.
 
 ## 6. Como produzir a próxima peça
 

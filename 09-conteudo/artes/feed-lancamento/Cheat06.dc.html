@@ -90,6 +90,79 @@
     .note p { font-size:22px; line-height:1.55; color:#7C88A2; margin:0; }
     .paper .note p { color:#78839A; }
 
+
+    /* ── Grao. O fundo chapado lia como slide; com grao le como impresso.
+       E o unico jeito honesto de dar textura sem imagem generica de IA. ── */
+    .grain { position:absolute; inset:0; pointer-events:none;
+             background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); background-size:240px 240px;
+             opacity:.06; mix-blend-mode:overlay; }
+    .paper .grain { opacity:.42; mix-blend-mode:multiply; }
+    .gold .grain  { opacity:.30; mix-blend-mode:multiply; }
+
+    /* ── Terceiro fundo: campo dourado. Existe para dar contraste de valor
+       na grade do perfil, onde tudo era navy. Acento por italico, nunca por
+       cor, porque nada claro tem contraste suficiente sobre o dourado. ── */
+    .p.gold { background:#C2A35B; color:#1B2A4A; }
+    .gold .hair { background:#A98D48; }
+    /* colisao de nome: a barra de progresso e a marca de continuidade usam a
+       classe .gold, que sobre o cartao dourado ficava dourado sobre dourado.
+       No campo dourado elas viram bronze escuro. */
+    .p.gold .gold { background:#3E3210; }
+    .gold .folio, .gold .ref { color:#6F5A22; }
+    .gold .refr { color:#3E3210; }
+    .gold .label { color:#5C4A18; }
+    .gold .label.mute { color:#6F5A22; }
+    .gold h1, .gold h1 i { color:#1B2A4A; }
+    .gold .lede { color:#4A3D18; }
+    .gold .lede b { color:#1B2A4A; }
+    .gold .rule { background:#3E3210; }
+    .gold .note { border-top-color:#A98D48; }
+    .gold .note p { color:#5C4A18; }
+    .gold .note .mk { color:#3E3210; }
+    .gold td, .gold th { border-bottom-color:#A98D48; }
+    .gold td { color:#4A3D18; } .gold td b { color:#1B2A4A; }
+    .gold td.k { color:#6F5A22; }
+
+    /* ── Capa cheia. A grade do perfil deixou de recortar em 1:1 e passou a
+       mostrar quase o cartao inteiro, entao a capa antiga, que usava so o
+       terco de cima, aparecia com metade vazia em toda miniatura. A capa
+       agora ancora embaixo: o rotulo fica no topo, o vazio no meio, e a
+       frase grande fecha o cartao. ── */
+    .stage.cover .label { margin-bottom:auto; }
+    .cover h1.c1 { font-size:132px; line-height:1.04; letter-spacing:-.022em; }
+    .cover h1.c2 { font-size:112px; line-height:1.06; letter-spacing:-.02em; }
+    .cover h1.c3 { font-size:94px;  line-height:1.08; letter-spacing:-.018em; }
+    .cover h1.c4 { font-size:78px;  line-height:1.12; letter-spacing:-.014em; }
+    .cover .rule { margin-top:38px; }
+    .cover .lede { font-size:31px; margin-top:30px; max-width:800px; }
+
+    /* ── Numero heroi. Quando a manchete E um numero do canone, o numero
+       vira a imagem da capa. E o unico "interrompe o scroll" que esta casa
+       pode usar sem inventar nada. ── */
+    .hero { font-family:"Newsreader", Georgia, serif; font-weight:300;
+            font-size:300px; line-height:.84; letter-spacing:-.045em;
+            color:#D8BE7C; margin:0 0 26px; font-variant-numeric:tabular-nums; }
+    .paper .hero { color:#8A6E28; } .gold .hero { color:#1B2A4A; }
+    .hero .u { font-size:.42em; letter-spacing:-.01em; vertical-align:.52em; }
+    .heropre { font-family:"IBM Plex Mono", monospace; font-size:24px;
+               letter-spacing:.22em; text-transform:uppercase; color:#8E9AB4;
+               margin:0 0 14px; }
+    .paper .heropre { color:#78839A; } .gold .heropre { color:#5C4A18; }
+    .cover h1.sub { font-size:62px; line-height:1.14; letter-spacing:-.01em; }
+
+    /* ── Figura. Duas cores so, tiradas do proprio sistema: #D8BE7C para o
+       que foi medido e #7C88A2 para o que foi sentido. Separacao conferida
+       no validador (normal 22,5 · protan 20,7 · tritan 20,8; contraste
+       acima de 3:1 sobre o navy). Cada barra tem rotulo proprio, entao a
+       identidade nunca depende so da cor. ── */
+    .fig { margin-top:auto; margin-bottom:auto; }
+    .fig .v { font-family:"Newsreader", Georgia, serif; font-size:54px; fill:#FFFFFF; }
+    .fig .k { font-family:"IBM Plex Mono", monospace; font-size:20px;
+              letter-spacing:.2em; fill:#8E9AB4; }
+    .fig .g { font-family:"IBM Plex Mono", monospace; font-size:20px;
+              letter-spacing:.2em; fill:#C2A35B; }
+    .paper .fig .v { fill:#1B2A4A; } .paper .fig .k { fill:#6B778E; }
+
     .mark { display:block; width:190px; height:auto; opacity:.96; }
     /* Placa de parceiro. A marca oficial vai sobre campo branco, com folga em
        volta, sem recorte e sem recolorir (V3o e guia de marca de cada parceiro).
@@ -105,7 +178,7 @@
     .plogo.crew { height:70px; }
   </style>
 </helmet>
-<div class="p paper"><div class="frame"><div class="hair" style="left:104px;right:104px;top:150px;height:1px"></div><div class="gold" style="left:104px;top:149px;width:747px;height:3px"></div><div class="hair" style="left:104px;right:104px;bottom:146px;height:1px"></div><div class="gold" style="right:0;top:933px;width:56px;height:2px"></div><div class="gold" style="left:0;top:807px;width:56px;height:2px"></div></div><span class="folio l">ABBA</span><span class="folio r">A REGRA GERAL</span><div class="stage">
+<div class="p paper"><div class="grain"></div><div class="frame"><div class="hair" style="left:104px;right:104px;top:150px;height:1px"></div><div class="gold" style="left:104px;top:149px;width:747px;height:3px"></div><div class="hair" style="left:104px;right:104px;bottom:146px;height:1px"></div><div class="gold" style="right:0;top:933px;width:56px;height:2px"></div><div class="gold" style="left:0;top:807px;width:56px;height:2px"></div></div><span class="folio l">ABBA</span><span class="folio r">A REGRA GERAL</span><div class="stage">
 <p class="label mute">O princípio por trás das duas</p>
 <h1 class="sm">Quem vende medição <i>se mede primeiro.</i></h1>
 <p class="lede">Não dá para cobrar de um cliente uma métrica combinada antes e, do nosso lado, ajustar o próprio placar depois do jogo.</p>
