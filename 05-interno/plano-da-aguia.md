@@ -15,13 +15,16 @@ A auditoria de 2026-09-01 confirmou que quase toda a metáfora já é produto: q
 Por isso a ordem das fases não é negociável e cada uma é portão da seguinte:
 
 ```
-VOAR  →  CALIBRAR  →  DESENHAR  →  MORAR  →  APROFUNDAR
-(1º run    (julgar os     (o Mapa       (o Conselheiro   (raio-x
- real)      pendentes      da Casa)      no poleiro)      operacional)
-            com luz real)
+DESENHAR ✅  →  VOAR  →  CALIBRAR  →  MORAR  →  APROFUNDAR
+(o Mapa da      (1º run   (julgar os    (o Conselheiro  (raio-x
+ Casa, sobre     real)     pendentes     no poleiro)     operacional)
+ o que a máquina           com luz real)
+ já extraía)
 ```
 
-Desenhar a casa antes de voar seria desenhar sobre dados de mock (entidades placeholder). Aprofundar antes de morar seria ler ERP de um cliente que ainda não confia. Cada fase gera a evidência que a próxima precisa.
+Desenhar a casa antes de voar seria desenhar sobre dados de mock. Aprofundar antes de morar seria ler ERP de um cliente que ainda não confia. Cada fase gera a evidência que a próxima precisa.
+
+**Correção de 2026-09-01, registrada porque a ordem mudou:** a auditoria do código separou duas coisas que este plano tratava como uma só. **Guardar e desenhar o que a máquina JÁ extrai** não custa LLM, não muda prompt nenhum e não precisa de chave: podia ter sido feito desde sempre. **Perguntar algo novo ao modelo** é mudança de prompt e continua gateado no primeiro voo. A Fase 2 caiu inteira no primeiro grupo e foi entregue; o que sobrou dela caiu no segundo e está declarado em `abba pending`.
 
 ---
 
@@ -52,9 +55,19 @@ Desenhar a casa antes de voar seria desenhar sobre dados de mock (entidades plac
 
 **Critério de pronto:** cada item do `abba pending` com veredito registrado (ligado, adiado com razão, ou descartado). Nenhum "ligar porque parece bom" — só com a medição da Fase 0 na mão.
 
-## Fase 2 — O Mapa da Casa (a página que É a metáfora)
+## Fase 2 — O Mapa da Casa ✅ ENTREGUE (2026-09-01)
 
-**O que é:** o aprofundamento que falta construir — hoje a ferramenta DETECTA as peças mas não DESENHA a casa. Uma página única, navegável, no padrão do anexo visual (HTML autocontido + SVG inline, zero dependência externa):
+> **A ordem do plano mudou, e a razão está registrada.** Este plano dizia para esperar o primeiro run real antes de desenhar, porque as entidades do mock eram placeholder. A medição do código mostrou algo mais grave e mais fácil de resolver: a ferramenta **já extraía a planta da casa em todo run e a jogava fora**. Persistir o que já é extraído não é mudança de prompt, não custa LLM e não precisa de chave. Então a Fase 2 foi construída antes da Fase 0, provada contra o demo da Nortex, e o que continua gateado no primeiro run real é só o que exige perguntar algo novo ao modelo.
+>
+> **O que existe:** `abba map <engajamento>` gera duas páginas A3 autocontidas. Andares = os níveis ouvidos, cômodos = as áreas com líder e headcount, setas numeradas = os fluxos de informação reais (cada número indexa uma linha da tabela da página 2), relações tipadas em traço próprio (contorna, trava, conflita, duplica), colchetes = as fronteiras onde as versões param de bater. Documento interno nomeia pessoas; `--client` não nomeia ninguém.
+>
+> **Três honestidades ficaram dentro do desenho:** andar em que ninguém foi ouvido aparece vazio e diz isso (o aviso de cobertura virou a coisa mais visível da página); ponta de fluxo que não casa com cômodo nenhum continua desenhada, tracejada; e **as sangrias ficam FORA da casa**, porque a máquina ainda não atribui vazamento a área e um palpite seria citado de volta como se fosse medição.
+>
+> **O que mais saiu junto:** o relatório do consultor passou a propor um dono para o portão da área disposta (só quando exatamente uma área é nomeada no build; senão entrega o roster), a evidência do Stop/Start/Keep passou a ser renderizada, e as conexões entre dimensões deixaram de ser as mesmas vinte para todo cliente.
+>
+> Commits `84007e2` · `edfd964` · `1dd13da` · `89e0806` · `ff447ec` · `6a367a3`. Suíte 724/724 nos três modos, eval imóvel, IP travada intocada.
+
+**O que era (registro histórico):** o aprofundamento que faltava construir — a ferramenta DETECTAVA as peças mas não DESENHAVA a casa. Uma página única, navegável, no padrão do anexo visual (HTML autocontido + SVG inline, zero dependência externa):
 
 - **Andares** = os níveis hierárquicos ouvidos (conselho → diretoria → chefias → linha de frente).
 - **Cômodos** = as entidades e áreas do mapa de entidades.
