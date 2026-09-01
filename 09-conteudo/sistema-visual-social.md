@@ -130,6 +130,31 @@ macio**, então o sistema foi desenhado para caber no que o ativo aguenta em vez
 de pedir um ativo novo. Se um dia existir a marca em vetor, a mesma tela aceita
 sem mudança.
 
+## 4e. Logo de parceiro
+
+Regra criada na [V4i](../05-interno/registro-de-decisoes.md), quando as logos
+oficiais Microsoft e CrewAI entraram na peça 05. Vale para qualquer marca de
+terceiro que apareça no feed.
+
+**O arquivo é o mesmo do material de envio.** As duas logos foram tiradas do
+[`abba-apresentacao.pptx`](../08-materiais/modelos/abba-apresentacao.pptx), onde
+já estavam aprovadas desde a [V3o](../05-interno/registro-de-decisoes.md), e
+vivem ao lado das artes como `logo-microsoft.png` e `logo-crewai.png`. **Não se
+baixa uma versão nova para o social.** Um material só, um arquivo só.
+
+| Regra | Por quê |
+|---|---|
+| **Campo branco com folga em volta**, a classe `.plate`: caixa de 420×152, fundo `#FFFFFF`, fio de 1px em ardósia clara | É o que a guia de marca de cada parceiro exige, e resolve o fato de a logo da Microsoft não ter fundo transparente. Sem a placa, ela apareceria como um retângulo branco acidental sobre o papel |
+| **Sem recorte, sem recolorir, sem distorcer.** Altura fixa, largura automática | Marca de terceiro não é elemento gráfico do nosso sistema. Ela entra como está |
+| **As placas de uma mesma peça têm a mesma caixa e a mesma altura na tela** | No swipe a placa fica parada e só a marca troca. É a [terceira técnica de transição](#4b-transição-as-três-técnicas) aplicada a logo, e é o que faz duas telas lerem como um par em vez de dois tratamentos |
+| **Só em tela de papel, nunca no navy** | Sobre o fundo escuro a marca perderia contraste, e a única saída seria alterá-la, o que a regra acima proíbe |
+
+**O que a logo não autoriza a dizer.** A presença da marca não muda uma vírgula
+do texto: continua valendo a redação da
+[V3i](../05-interno/registro-de-decisoes.md), *"sua equipe usa ferramentas dos
+nossos parceiros durante a capacitação"*, sem prometer licença
+([risco R9](../05-interno/registro-de-riscos.md)).
+
 ## 5. Margem de segurança (a regra que o feed antigo quebrava)
 
 Formato **1080×1350**. Toda mancha de texto vive entre **y=196 e y=1182** e

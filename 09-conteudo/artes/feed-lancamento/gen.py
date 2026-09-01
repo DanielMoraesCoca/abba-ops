@@ -92,9 +92,18 @@ STYLE = '''
     .paper .note p { color:#78839A; }
 
     .mark { display:block; width:190px; height:auto; opacity:.96; }
-    .wordmark { font-family:"Newsreader", Georgia, serif; font-weight:400;
-                font-size:52px; letter-spacing:.24em; color:#FFFFFF; }
-    .paper .wordmark { color:#1B2A4A; }
+    /* Placa de parceiro. A marca oficial vai sobre campo branco, com folga em
+       volta, sem recorte e sem recolorir (V3o e guia de marca de cada parceiro).
+       As duas placas tem a mesma caixa de propósito: lidas em sequencia, elas
+       formam um par, e nao dois tratamentos diferentes. Por isso a placa so
+       aparece em tela de papel: no navy a marca perderia contraste e a unica
+       saida seria altera-la. */
+    .plate { width:420px; height:152px; box-sizing:border-box; background:#FFFFFF;
+             border:1px solid #CBD3DF; display:flex; align-items:center;
+             justify-content:center; }
+    .plogo { display:block; width:auto; }
+    .plogo.ms { height:62px; }
+    .plogo.crew { height:70px; }
   </style>
 '''
 HEAD = ('<!doctype html>\n<html>\n<head>\n  <meta charset="utf-8">\n'
@@ -378,16 +387,18 @@ peca("peca-05", "05 · Parceiros oficiais", "Parceiro", 5, [
 ''', False),
  ("MICROSOFT", '''
 <p class="label mute">Parceiro oficial</p>
-<div style="margin-top:auto;margin-bottom:auto">
-  <span class="wordmark">MICROSOFT</span>
-  <p class="lede" style="margin-top:40px">A camada corporativa: identidade, nuvem e as ferramentas de produtividade onde o trabalho da sua empresa já acontece.</p>
+<div style="margin-top:145px;margin-bottom:auto">
+  <div class="plate"><img class="plogo ms" src="logo-microsoft.png" alt="Microsoft"></div>
+  <div class="rule" style="margin-top:38px"></div>
+  <p class="lede" style="margin-top:38px">A camada corporativa: identidade, nuvem e as ferramentas de produtividade onde o trabalho da sua empresa já acontece.</p>
 </div>
 ''', True),
  ("CREWAI", '''
 <p class="label mute">Parceiro oficial</p>
-<div style="margin-top:auto;margin-bottom:auto">
-  <span class="wordmark">CREWAI</span>
-  <p class="lede" style="margin-top:40px">A camada de agentes: onde os fluxos com aprovação humana são construídos e colocados em produção.</p>
+<div style="margin-top:145px;margin-bottom:auto">
+  <div class="plate"><img class="plogo crew" src="logo-crewai.png" alt="CrewAI"></div>
+  <div class="rule" style="margin-top:38px"></div>
+  <p class="lede" style="margin-top:38px">A camada de agentes: onde os fluxos com aprovação humana são construídos e colocados em produção.</p>
 </div>
 ''', True),
  ("O QUE MUDA", '''
