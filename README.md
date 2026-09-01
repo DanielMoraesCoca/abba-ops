@@ -42,6 +42,15 @@ Regras que decorrem disso:
 - Docs de processo têm formato fixo: **Dono · Entrada · Checklist · Saída · Ferramentas · Templates · Prazo-alvo**: 1 página, executável por 1 pessoa em 1 sentada.
 - Placeholders que só os sócios podem preencher aparecem como `{{ASSIM}}`.
 - Toda decisão relevante vai para [`05-interno/registro-de-decisoes.md`](05-interno/registro-de-decisoes.md): decisão não registrada não vale.
+- **Travessão (o traço longo) não entra em texto da ABBA** (decisão do sócio, 01/09/2026).
+  É a assinatura mais reconhecível de texto escrito por IA, e o que a gente
+  vende é justamente saber usar IA sem parecer que a IA escreveu. A troca não
+  é mecânica: cada caso vira dois-pontos, vírgula, ponto-e-vírgula, ponto ou
+  parênteses conforme o que o travessão estava fazendo na frase.
+  **Antes de congelar qualquer PDF, rode `sh scripts/checar-texto.sh`**: não
+  instala nada, roda em segundos e reprova travessão, célula de tabela
+  quebrada e travessão órfão. A própria regra é escrita sem usar o
+  caractere: o guarda vale para o README também.
 
 ## 🚦 Comece por aqui
 
