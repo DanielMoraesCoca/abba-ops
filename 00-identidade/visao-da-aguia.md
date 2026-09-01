@@ -63,7 +63,9 @@ A parte interpessoal da visão — "essas duas pessoas não se dão bem, e por i
 | **Raio-x operacional** | Ler o escapamento operacional direto (extratos de ERP, logs de processo) em vez de só documentos e entrevistas — a fronteira real da profundidade, e a mais delicada | ⬜ Aposta futura com gatilhos e salvaguardas ([apostas futuras](apostas-futuras.md), aposta 7) |
 | **O Conselheiro** | A águia não vai embora: o cérebro por cliente mantém o mapa VIVO — fatos com validade no tempo, decisões com resultado medido — para que a visão de hoje não vire retrato amarelado em seis meses | 🔒 Construído, ativação no 1º cliente em manutenção |
 
-E o pré-requisito de tudo: **a águia ainda não voou.** Nenhum modelo leu uma empresa real ponta a ponta. A visão está desenhada, a máquina está montada e travada por 692 testes, e a primeira prova de que o raio-x funciona é o primeiro run com chave real ([runbook](../06-ferramentas/runbook-primeiro-run-real.md)).
+E o pré-requisito de tudo: **a águia ainda não voou.** Nenhum modelo leu uma empresa real ponta a ponta. A visão está desenhada, a máquina está montada e travada por 704 testes, e a primeira prova de que o raio-x funciona é o primeiro run com chave real ([runbook](../06-ferramentas/runbook-primeiro-run-real.md)).
+
+O caminho completo — do primeiro voo até a águia que mora sobre a casa — está sequenciado com portões, donos e critérios de pronto no [**Plano da Águia**](../05-interno/plano-da-aguia.md).
 
 ---
 
@@ -96,6 +98,7 @@ Este documento foi escrito e, no dia seguinte, **cada afirmação dele foi verif
 
 ## Referências cruzadas
 
+- [Plano da Águia](../05-interno/plano-da-aguia.md) — o plano de execução desta visão, em 5 fases gateadas
 - [Princípios do assessment](principios-do-assessment.md) — a camada de sabedoria; "inspecionar os muros à noite" e "multidão de conselheiros" são a águia em linguagem antiga
 - [Modelo de serviço](modelo-de-servico.md) — as 6 etapas canônicas
 - [Apostas futuras](apostas-futuras.md) — aposta 7: o raio-x operacional, com gatilhos e salvaguardas
