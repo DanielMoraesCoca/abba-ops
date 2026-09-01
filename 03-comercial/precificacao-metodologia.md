@@ -1,5 +1,7 @@
 # Metodologia de Precificação
 
+> **Status (2026-08-31 — Virada V5): a tabela vigente é a v3** ([tabela](tabela-de-precos.md) — proposta, Pedro valida). A **unidade de precificação mudou**: não se precifica mais pacote avulso — precifica-se o **Programa por porte** (P/M/G via [calculadora](../06-ferramentas/calculadora-construcao.md)) e a **Assinatura da Capacidade** (ano 2+). O método dos passos 1–3 e 7 segue válido e intacto; os exemplos de pacote abaixo referem-se ao cardápio antigo onde marcado. Ver [estudo da virada](../05-interno/estudo-virada-v5.md).
+
 > **Status (2026-08-02): a v1 já foi derivada por este método em 2026-07-23** ([tabela vigente](tabela-de-precos.md)). Este documento passa a reger a construção da **v2** (após as 3 primeiras reações reais de preço). — ABBA
 
 > **Status:** os preços antigos (R$ 280–450K programa; R$ 8–35K produtos de entrada) foram **descartados por decisão dos sócios** (ver [registro de decisões](../05-interno/registro-de-decisoes.md)) e sobrevivem apenas como referência histórica no anexo da [tabela de preços](tabela-de-precos.md). Esta metodologia reconstrói a precificação do zero. O preenchimento é feito na [planilha de precificação](precificacao-planilha.md).
@@ -54,30 +56,32 @@ A proposta nunca justifica preço por custo — justifica por valor. Âncora pad
 
 | Produto | Âncora de valor |
 |---|---|
-| Workshop Shadow AI | Risco evitado: um incidente LGPD custa a partir de R$ 50 mil em multa + reputação |
-| Avaliação de Prontidão | Decisão informada: erro de priorização em IA custa 6–12 meses e o orçamento do piloto |
-| Sprint LGPD + IA | Multa LGPD: até 2% do faturamento (teto R$ 50 milhões) por infração |
-| Programa completo | Horas economizadas/semana × custo médio do colaborador × 52 semanas |
-| Manutenção | Custo de um agente parado × dias de indisponibilidade evitados |
+| **Programa "AI Native · Ano 1" / Assinatura da Capacidade (v3)** | Capacidade instalada e **medida** (caso da fase 1 com número combinado antes) + custo de não decidir (o vazamento em reais do Mapa continua correndo) |
+| Workshop Shadow AI *(descontinuado — referência histórica)* | Risco evitado: um incidente LGPD custa a partir de R$ 50 mil em multa + reputação |
+| Avaliação de Prontidão *(descontinuado — referência histórica)* | Decisão informada: erro de priorização em IA custa 6–12 meses e o orçamento do piloto |
+| Sprint LGPD + IA *(descontinuado — referência histórica)* | Multa LGPD: até 2% do faturamento (teto R$ 50 milhões) por infração |
+| Programa completo *(formato antigo)* | Horas economizadas/semana × custo médio do colaborador × 52 semanas |
+| Manutenção *(virou Assinatura)* | Custo de um agente parado × dias de indisponibilidade evitados |
 
-## Passo 5 — Arquitetura de pacotes (mantida da estratégia anterior)
+## Passo 5 — Arquitetura de pacotes (reescrita na Virada V5)
 
 ```
-3 produtos de entrada (baixo atrito, convertem para o programa)
-   → Programa completo (herói — engajamento de transformação)
-      → Recorrentes (manutenção + continuidade do portal + mini-ciclos por caso de uso)
+Mapa de Vazamento (grátis — porta única)
+   → Programa "AI Native · Ano 1" por porte P/M/G (fase 1 R$ 26 mil firme + 4 trimestres antecipados)
+      → Assinatura da Capacidade (ano 2+ — recorrência perpétua + mini-ciclos por caso de uso)
 ```
 
-- Produto de entrada **credita 100%** no programa completo se o cliente converter em até 90 dias (regra herdada e mantida — remove objeção de "pagar duas vezes").
-- Exceção: o Sprint LGPD **não credita** (produto genuinamente distinto, comprador distinto).
+- **Não existe mais crédito de produto de entrada**: o diagnóstico standalone (R$ 45 mil, fora da vitrine) é produto distinto — nunca comparado na mesa, nunca creditado ([tabela v3](tabela-de-precos.md)).
+- A **fase 1 do Programa (R$ 26 mil)** é a entrada firme do próprio Termo — não é um produto separado que "credita" em outro; as fases 2–3 já entram no Termo precificadas como opção condicionada ao Portão da Prova.
+- O Sprint LGPD saiu da vitrine (capacidade interna da fase 1); a regra de exceção morreu com ele.
 
 ## Passo 6 — Condições de pagamento (padrão)
 
 | Situação | Condição |
 |---|---|
-| Produtos de entrada | 50% na assinatura, 50% em até 10 dias úteis após entrega final |
-| Programa completo | 30% assinatura / 30% no marco de implantação / 40% no encerramento — ou mensalizado |
-| Recorrentes | Mensal ou anual antecipado com desconto a definir na planilha |
+| Programa "AI Native · Ano 1" | R$ 26 mil na assinatura do Termo (fase 1) + 4 trimestres antecipados por porte; pagamento mensal disponível a **+8%** sobre o equivalente |
+| Diagnóstico standalone (fora da vitrine) | 50% na assinatura, 50% em até 10 dias úteis após entrega final |
+| Recorrentes (Assinatura ano 2+ · Conselheiro) | Mensal, ou anual antecipado com **−8%** |
 | Reajuste | IPCA anual em contratos recorrentes |
 | Mora | 1% a.m. + correção IPCA (mesmo padrão do contrato-esqueleto) |
 | Desconto charter | Só com contrapartidas formais (depoimento, métricas, logo, referências — Cláusula 5.3 do [contrato](contrato-sow-esqueleto.md)); desconto máximo definido na planilha |
@@ -93,4 +97,4 @@ Preço não se valida internamente — se valida em conversa:
 
 ## Saída
 
-Planilha preenchida → [`tabela-de-precos.md`](tabela-de-precos.md) v1 fixada → decisão registrada. As propostas em `03-comercial/` referenciam a [tabela v1 vigente](tabela-de-precos.md) (fixada em 2026-07-23).
+Planilha preenchida → [`tabela-de-precos.md`](tabela-de-precos.md) fixada → decisão registrada. A tabela vigente é a **v3 (Virada V5, 2026-08-31 — proposta, Pedro valida)**; o material comercial referencia sempre a tabela vigente, nunca versões anteriores.

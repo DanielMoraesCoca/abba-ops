@@ -24,7 +24,7 @@
 >
 > O que eu ouvi: [2–3 bullets com as dores nas palavras deles].
 >
-> Conforme combinado, o próximo passo é [degustação gratuita / proposta do produto X] até [data].
+> Conforme combinado, o próximo passo é [degustação gratuita / proposta do Termo do Programa / proposta do Conselheiro de IA] até [data].
 >
 > Qualquer coisa antes disso, estou por aqui.
 
@@ -42,11 +42,11 @@
 
 ## E-mail 3 — Envio de proposta
 
-**Assunto:** Proposta ABBA — [Produto] para [Empresa]
+**Assunto:** Proposta ABBA — [Termo do Programa / Conselheiro de IA] para [Empresa]
 
-> [Nome], segue a proposta de [produto], válida por 30 dias.
+> [Nome], segue a proposta — o Termo do Programa "AI Native · Ano 1" —, válida por 30 dias.
 >
-> Em uma linha: [escopo] em [prazo], entregando [entregável principal], por [valor].
+> Em uma linha: fase 1 firme em [prazo — 6 semanas], entregando [caso construído e medido + portfólio priorizado], por R$ 26.000; o ano completo no porte de vocês fica em [valor por porte], com portão de saída sem multa na semana 6.
 >
 > Sugiro 45 minutos para percorrê-la juntos — de preferência com [decisor adicional identificado]. [Data A] ou [data B]?
 

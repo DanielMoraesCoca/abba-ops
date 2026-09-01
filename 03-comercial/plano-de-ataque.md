@@ -41,12 +41,14 @@ da faixa de boutique sem prova; a jornada de R$ 260 mil não fecha; o
 Conselheiro é promessa. Depois dele, cada peça da tabela se vende pela
 prova, e o [volante](../00-identidade/posicionamento.md) começa a girar.
 
-**Consequência de preço (regras V4a na [tabela](tabela-de-precos.md),
-Pedro valida):** até o caso existir, a porta padrão é **protótipo R$ 26
-mil com payback calculado no número DO cliente** — no meio da faixa de
-fábrica, entregando o que fábrica não entrega — e o Assessment se
-oferece com crédito integral do protótipo. Vender prova antes de pedir o
-cheque grande.
+**Consequência de preço (V5 aplicada — [tabela v3](tabela-de-precos.md),
+Pedro valida):** até o caso existir, a porta padrão é **Mapa grátis →
+Termo do Programa com fase 1 de R$ 26 mil** — a mesma entrada e a mesma
+alçada de um diretor, mas a decisão do ano inteiro tomada uma vez: as
+fases 2 e 3 já entram precificadas como opção condicionada ao Portão da
+Prova, não como uma segunda venda. Vender prova antes do investimento
+maior segue igual; muda o instrumento — um Termo, não uma sequência de
+propostas.
 
 ## 3. As três frentes vivas (toda energia comercial aqui)
 
@@ -62,7 +64,7 @@ auditoria).
 |---|---|---|
 | 1 | **19 perguntas ao Bernardo** — condição da venda, não cortesia: sem as respostas, qualquer proposta é chute (RAND, causa nº 1) | Já enviadas / cobrar esta semana |
 | 2 | **Mapa de Vazamento** montado quando o mapeamento de processos do Alan chegar — o número em reais na mesa antes de qualquer proposta | Ao receber os dados |
-| 3 | **Protótipo do Caso B primeiro** ("se não emite NF, não vende" — dor diária, decisão repetitiva, dono claro), R$ 26 mil, payback ~4 meses no número deles | Proposta junto com o Mapa |
+| 3 | **Termo do Programa com a fase 1 no Caso B** ("se não emite NF, não vende" — dor diária, decisão repetitiva, dono claro): R$ 26 mil firmes, caso medido em 6 semanas, payback estimado ~4 meses no número deles; fases 2 e 3 já cotadas no Termo como opção do Portão da Prova | Proposta pós-19-perguntas, junto com o Mapa |
 | 4 | **Apresentação de dezembro com preço** — Caso B rodando + Caso C desenhado = a jornada deixa de ser abstrata | Dezembro/2026 |
 
 **Disciplina:** o 1º protótipo deles falhou porque não havia decisão
@@ -132,11 +134,12 @@ Falas completas no [kit](kit-de-presenca.md). A sequência de 60 segundos:
 3. **DORA** — *"IA amplifica o que já existe. Arrumar a base não é
    atraso, é a condição do ganho."* (por que o passo atrás)
 4. **A oferta** — *"Por isso a gente começa com um mapa grátis do que
-   está vazando, e a primeira coisa paga é um protótipo que se paga em
-   meses — com o número combinado antes."*
+   está vazando, e a primeira coisa paga é a fase 1 do Programa: um caso
+   construído e medido em seis semanas, que se paga em meses — com o
+   número combinado antes e uma porta de saída limpa."*
 
 **Proibido no ataque:** MIT 95%, "parceiro dobra o acerto", "ROI 3x a
-8x" — a [régua v1.3](../06-ferramentas/regua-do-revisor.md) bloqueia. Se
+8x" — a [régua v2](../06-ferramentas/regua-do-revisor.md) bloqueia. Se
 o cliente citar um deles, corrigir com generosidade: a correção É a demo.
 
 ## 6. Coerência — o que este plano NÃO faz
@@ -159,7 +162,9 @@ Quem vende medição se mede. Na reunião semanal, 5 números:
 |---|---|
 | Casos medidos publicáveis | **1** (ABC Caso B é o candidato) |
 | Mapas de Vazamento entregues | 2/mês a partir de setembro |
-| Protótipos vendidos | 2 (ABC + 1 da rede) |
+| Protótipos vendidos (fase 1 de Termos, pós-V5) | 2 (ABC + 1 da rede) |
+| **Termos do Programa assinados** | **1** (ABC, fase 1) |
+| **Conversões no Portão da Prova** (opção das fases 2-3 exercida) | acompanhar a partir do 1º Portão |
 | Reuniões com data de próximo passo marcada | 100% |
 | Números proibidos flagrados em material que saiu | **0** (régua roda em tudo) |
 

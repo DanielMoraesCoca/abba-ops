@@ -1,5 +1,13 @@
 # Precificação — Proposta do Especialista (pesquisa + modelo + tabela-rascunho)
 
+> ⚠️ **NOTA DE ATUALIZAÇÃO (V5, 2026-08-31) — ler antes de usar este
+> documento.** Este estudo permanece válido como engenharia de piso/hora
+> (tributos, faixa de mercado R$ 300–400/h implícitos, base de custo) — a
+> **unidade comercial mudou**: não se vende mais por pacote avulso, e sim
+> o Programa por porte + Assinatura da Capacidade. Ver
+> [tabela v3](tabela-de-precos.md) e o
+> [estudo da virada](../05-interno/estudo-virada-v5.md).
+
 > Elaborada em 2026-07-23. **DECIDIDO: cenário C** (R$ 20 mil/sócio/mês, 35h/sem) → [tabela v1 vigente](tabela-de-precos.md). Correção importante: o valor de R$ 150K da proposta Galápagos NÃO foi comunicado ao prospect — não há dado de mercado próprio ainda; a validação vem das 3 primeiras conversas com a tabela v1. Este doc permanece como memória de cálculo.
 
 ## 1. Tributos — o número real para Brasília/DF (pesquisado)

@@ -11,7 +11,7 @@
 | 0–3 | Abertura | Agradecimento + "para eu aproveitar bem seus 30 minutos, posso fazer perguntas antes de falar da ABBA?" |
 | 3–15 | Descoberta | · O que a empresa faz e onde dói hoje? · Já pilotaram IA? O que aconteceu depois do piloto? · Quem decide um investimento desse tipo? · Existe meta declarada da diretoria para IA? · Prazo/orçamento em mente? |
 | 15–22 | ABBA em 45s + espelho | Elevator de 45s (ver posicionamento) + conectar 2 achados da descoberta ao nosso modelo de 6 etapas |
-| 22–28 | Próximo passo | **Nunca "oferecer" a análise gratuita — chegar com ela FEITA** (decisão 2026-07-27): agendar a apresentação do [Mapa de Vazamento](mapa-de-vazamento.md) já pronto, OU o produto de entrada adequado: dor difusa → Workshop Shadow AI · decisão de investimento → Avaliação de Prontidão · risco/compliance → Sprint LGPD · **já tem IA rodando → Conselheiro de IA** |
+| 22–28 | Próximo passo | **Nunca "oferecer" a análise gratuita — chegar com ela FEITA** (decisão 2026-07-27): agendar a apresentação do [Mapa de Vazamento](mapa-de-vazamento.md) já pronto — dali, o caminho natural é o Termo do Programa; **já tem IA rodando → Conselheiro de IA** |
 | 28–30 | Fechamento | Confirmar próximo passo com data. Registrar tudo na pasta do lead no Drive |
 
 **Depois:** e-mail de follow-up nº 1 ([sequência](emails-follow-up.md)) no mesmo dia.
@@ -24,17 +24,17 @@
 2. (20) Percorrer o brief: hipóteses de oportunidade, perguntas que faríamos, o que o método de 25 dimensões olharia
 3. (10) Reação deles: quais hipóteses acertamos? o que surpreendeu?
 4. (7) Ponte: o que a avaliação profunda revelaria que isto não pode revelar
-5. (3) Proposta de próximo passo: Avaliação de Prontidão, com data
+5. (3) Proposta de próximo passo: apresentação do Termo do Programa, com data
 
 ## 3. Apresentação de proposta (45–60 min)
 
 **Objetivo:** decisão, não "vamos pensar".
 
 1. (5) Recapitular a dor nas palavras DELES (das notas da descoberta)
-2. (15) A proposta: escopo → entregáveis → cronograma (nunca começar por preço)
-3. (10) Investimento: valor com âncora de valor na frase seguinte ("R$ X — contra um custo de Y/ano do problema")
-4. (15) Objeções — respostas preparadas: "caro" → âncora de valor + produto de entrada menor · "vamos pensar" → "o que precisaria estar diferente para ser sim?" · "IA interna" → nosso método + velocidade + crédito de 100% se converter depois
-5. (10) Fechamento: pedir a decisão OU data da decisão + quem mais precisa aprovar
+2. (15) O Termo do Programa: fase 1 firme (R$ 26 mil, seis semanas, alçada de diretor) → Portão da Prova (semana 6, saída sem multa) → fases 2–3 como opção condicionada → porte definido pela [calculadora](../06-ferramentas/calculadora-construcao.md) (nunca começar por preço)
+3. (10) Investimento: valor por porte com âncora de valor na frase seguinte ("a fase 1 fecha em R$ 26 mil; o ano completo, no porte de vocês, fica em R$ X — contra um custo de Y/ano do problema")
+4. (15) Objeções — respostas preparadas: "caro" → âncora de valor + fase 1 como a menor porta paga · "vamos pensar" → "o que precisaria estar diferente para ser sim?" · "IA interna" → nosso método + velocidade + o Portão da Prova prova o método antes do investimento maior
+5. (10) Fechamento: pedir a decisão sobre o Termo OU data da decisão + quem mais precisa aprovar
 6. Registrar a reação ao preço na [planilha de descoberta de preço](precificacao-planilha.md) (seção 6)
 
 ## 4. Negociação e fechamento (30 min)

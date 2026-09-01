@@ -2,7 +2,9 @@
 
 > ⚠️ **AVISO OBRIGATÓRIO:** esta minuta é um ponto de partida (~70% pronta). **Enviar a advogado brasileiro com experiência em LGPD + tecnologia ANTES de qualquer assinatura** (pendência P4 do [registro de decisões](../05-interno/registro-de-decisoes.md)). As cláusulas de LGPD (9), PI (7) e responsabilidade (11) exigem olhos especializados.
 >
-> **Como usar:** este é o contrato-mãe genérico. O escopo de cada venda entra no **Anexo I** (um por produto — workshop, avaliação, sprint, programa, manutenção por camada, **retainer do Conselheiro de IA — ver bloco no fim deste doc**). Condições charter (desconto por contrapartidas) entram apenas se aplicáveis, via **Anexo III**. O **Anexo IV** (contribuição anonimizada e rede) é de uso obrigatório em **todo** contrato — ver o alerta no próprio anexo. Preencher todos os `[campos]`, revisar com advogado, colher assinaturas, arquivar em `02 Clientes/<Nome>/01 Contrato/` no Drive.
+> **Pauta ampliada para o advogado (V5 — [estudo](../05-interno/estudo-virada-v5.md), seção 9):** (1) unificar os 3 regimes de saída hoje conflitantes — cl. 10.2 (rescisão imotivada em 30 dias) × SLA/Assinatura (renovação automática + aviso; a tabela v3 fixa 60 dias) × Conselheiro (60 dias); (2) validar o **Termo do Programa como opção contratada** — fase 1 firme + fases 2–3 precificadas e exercíveis no Portão da Prova; (3) renovação automática da Assinatura (ano 2+) sem constituir nova fidelização; (4) art. 473, §único, do CC — proteção ao investimento inicial da ABBA em rescisão no meio de fase paga; (5) aceite tácito de marcos com prazo (entregável nomeado por mês); (6) cláusula penal proporcional × art. 413 CC. Nada disto está redigido como cláusula — é pauta, não minuta.
+>
+> **Como usar:** este é o contrato-mãe genérico. O escopo de cada venda entra no **Anexo I**, em três variantes conforme o caminho vendido ([tabela v3](tabela-de-precos.md)): **Anexo I-A — Termo do Programa** (fase 1 firme + fases 2–3 como opção do Portão da Prova) · **Anexo I-B — Assinatura da Capacidade** (ano 2+) · **Anexo I-C — Conselheiro de IA** (retainer — ver bloco no fim deste doc). Condições charter (desconto por contrapartidas) entram apenas se aplicáveis, via **Anexo III**. O **Anexo IV** (contribuição anonimizada e rede) é de uso obrigatório em **todo** contrato — ver o alerta no próprio anexo. Preencher todos os `[campos]`, revisar com advogado, colher assinaturas, arquivar em `02 Clientes/<Nome>/01 Contrato/` no Drive.
 
 ---
 
@@ -48,9 +50,9 @@ Prestar os serviços com diligência e qualidade técnica; alocar profissionais 
 
 ## Cláusula 6 — Investimento e Pagamento
 
-**6.1.** O investimento total é de **R$ [VALOR] ([por extenso])**, conforme condições do Anexo I.
+**6.1.** O investimento total é de **R$ [VALOR] ([por extenso])**, conforme condições do Anexo I-A, I-B ou I-C, conforme o caminho contratado.
 
-**6.2.** Forma de pagamento: [50%/50% para produtos de entrada · 30%/30%/40% por marco para o programa completo · mensal para recorrentes — conforme Anexo I].
+**6.2.** Forma de pagamento: [**entrada de R$ 26.000 na assinatura do Termo + 4 trimestres antecipados** (Programa, Anexo I-A) · **mensal** (Assinatura da Capacidade, Anexo I-B, e Conselheiro, Anexo I-C) — detalhado no Anexo correspondente].
 
 **6.3.** Pagamentos via [transferência/boleto] em conta da ABBA, com emissão de nota fiscal de serviços.
 
@@ -90,7 +92,7 @@ Sigilo mútuo sobre informações confidenciais, subsistindo por **5 anos** apó
 
 ---
 
-## Bloco para Anexo I — Retainer do Conselheiro de IA (usar quando o produto for o [Conselheiro](conselheiro-de-ia.md))
+## Bloco para Anexo I-C — Retainer do Conselheiro de IA (usar quando o caminho for o [Conselheiro](conselheiro-de-ia.md))
 
 *Para a pauta do advogado (P4) junto com o contrato-mãe.*
 
@@ -136,18 +138,30 @@ _______________________________          _______________________________
 
 ---
 
-## Anexo I — Escopo do Engajamento
+## Anexo I-A — Termo do Programa ("AI Native · Ano 1")
 
 | Item | Definição |
 |---|---|
-| Produto contratado | [Workshop Shadow AI / Avaliação de Prontidão / Sprint LGPD / Programa Completo / Manutenção] |
-| Escopo (departamento/unidade) | [ ] |
-| Participantes | [nº e composição] |
+| Porte (pela [calculadora](../06-ferramentas/calculadora-construcao.md), anexa) | [P / M / G] |
+| **Fase 1 — A Prova** (semanas 1–6) | **R$ 26.000, firme na assinatura.** Entregáveis: diagnóstico focado + 1 caso construído com dados reais e MEDIDO (métrica combinada por escrito na semana 1, com proxy definida) + portfólio priorizado completo |
+| **Portão da Prova** (semana 6) | Saída limpa, **sem multa** — o Cliente leva tudo o que foi produzido na fase 1 |
+| **Fases 2–3 (opção exercível no Portão)** | Preço por porte da [tabela v3](tabela-de-precos.md): 4 trimestres antecipados de [P R$ 48.000 / M R$ 63.000 / G R$ 88.000]. Entregável nomeado em todos os meses |
+| **Portão 2** (mês 6) | Revisão formal com a diretoria; saída com aviso, sem multa |
 | Patrocinador interno | [nome, cargo, e-mail] |
-| Entregáveis | [lista — copiar da proposta enviada] |
-| Cronograma e marcos | [tabela — copiar da proposta] |
-| Valor e condição de pagamento | [ ] |
-| Critérios de sucesso/métricas | [definidos no kickoff] |
+| Critérios de sucesso/métricas | [combinados por escrito na semana 1] |
+
+## Anexo I-B — Assinatura da Capacidade (ano 2+)
+
+| Item | Definição |
+|---|---|
+| Vigência | 12 meses, a partir do fim do ano 1; **renovação automática** com aviso de saída de 60 dias |
+| Valor mensal (por porte) | [P R$ 11.000 / M R$ 15.000 / G R$ 21.000] · reajuste anual IPCA |
+| Escopo | Operação sob SLA + ritual semanal + relatório mensal projetado × realizado + conselho trimestral + **Exame Anual de IA** (re-medição das 25 dimensões, série histórica) |
+| Expansão | Caso de uso novo = mini-ciclo **R$ 42.000** dentro da assinatura |
+
+## Anexo I-C — Conselheiro de IA
+
+Usar o bloco do retainer ao fim das cláusulas (vigência 12 meses · fatura mensal · IPCA · aviso de 60 dias · marcos de 90 dias).
 
 ## Anexo II — Suboperadores (LGPD)
 

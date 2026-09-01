@@ -2,7 +2,7 @@
 
 > **Camada:** comercial (processo) — **instrumento oficial de entrevista** para qualquer pessoa da ABBA conduzir a descoberta de protótipo em qualquer empresa, de qualquer setor, **sem developer na sala** (V3s, 2026-08-06). O objetivo da reunião NÃO é desenhar a solução — é sair com informação suficiente para o time de engenharia desenhar o protótipo **sem uma segunda reunião de descoberta**.
 >
-> Cartão de mesa (A4, 2 págs): [`../08-materiais/modelos/cartao-descoberta-prototipo.pdf`](../08-materiais/modelos/cartao-descoberta-prototipo.pdf) · Alimenta: [estágio 07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) · [relatório do protótipo](../08-materiais/modelos/relatorio-prototipo-modelo.docx) (os critérios do Bloco 2 viram a seção 2 dele) · [ficha da ferramenta de agentes](../06-ferramentas/ferramenta-agentes.md) · [deck do serviço 3](../08-materiais/modelos/servico-3-prototipo-deck.pdf)
+> Cartão de mesa (A4, 2 págs): [`../08-materiais/modelos/cartao-descoberta-prototipo.pdf`](../08-materiais/modelos/cartao-descoberta-prototipo.pdf) · Alimenta: [estágio 07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) · [relatório do protótipo](../08-materiais/modelos/relatorio-prototipo-modelo.docx) (os critérios do Bloco 2 viram a seção 2 dele) · [ficha da ferramenta de agentes](../06-ferramentas/ferramenta-agentes.md) · deck do serviço 3 retirado na V5 — a descoberta de protótipo vive dentro das fases 1–2 do Programa ([tabela v3](tabela-de-precos.md))
 
 ## Por que estas perguntas — o mapa pergunta → engenharia
 
@@ -119,4 +119,4 @@ Preencher e mandar ao time o **[registro de descoberta](registro-de-descoberta-m
 
 ## Ligações
 
-[Ficha da ferramenta de agentes](../06-ferramentas/ferramenta-agentes.md) · [Deck do serviço 3 — Protótipo](../08-materiais/modelos/servico-3-prototipo-deck.pdf) · [Estágio 07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) · [Coreografia da conversão](coreografia-da-conversao.md) · [Kit de presença](kit-de-presenca.md)
+[Ficha da ferramenta de agentes](../06-ferramentas/ferramenta-agentes.md) · [Tabela v3](tabela-de-precos.md) (deck do serviço 3 retirado na V5 — a descoberta de protótipo vive dentro das fases 1–2 do Programa) · [Estágio 07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) · [Coreografia da conversão](coreografia-da-conversao.md) · [Kit de presença](kit-de-presenca.md)
