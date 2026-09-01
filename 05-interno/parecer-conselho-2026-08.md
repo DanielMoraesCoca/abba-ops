@@ -1,5 +1,15 @@
 # Parecer do Conselho Consultivo — agosto/2026
 
+> ⚠️ **NOTA DE ATUALIZAÇÃO (V5, 2026-08-31) — ler antes de usar este
+> parecer.** O parecer avaliou o modelo dos 7 serviços (a escada vigente em
+> agosto/2026). A Virada V5 (2026-08-31) colapsou o cardápio em 3 caminhos —
+> ver [estudo da virada](estudo-virada-v5.md) e
+> [tabela v3](../03-comercial/tabela-de-precos.md). Várias recomendações do
+> parecer seguem válidas (prospectar já, charter com contrapartidas,
+> honestidade sobre capacidade/papéis). Os preços e degraus citados no corpo
+> (R$ 28k, R$ 185k, os 5 papéis, etc.) são **históricos** — não usar como
+> tabela vigente.
+
 > **Camada:** interno. Origem: pedido do sócio (2026-08-02) — *"juntasse um grupo de conselheiros de agentes para verificar a ideia de negócio da ABBA... todos os possíveis ângulos presentes dentro da empresa e também fora"*.
 >
 > **Como foi feito:** 7 conselheiros independentes (agentes com lentes distintas e adversariais), cada um lendo o repositório inteiro — identidade, jornada, comercial, entrega, interno, ferramentas, materiais — sem ver o parecer dos outros; um presidente sintetizou os 7 pareceres num parecer final. Nenhum conselheiro recebeu instrução de ser gentil.
