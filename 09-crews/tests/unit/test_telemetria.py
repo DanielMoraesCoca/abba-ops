@@ -66,3 +66,29 @@ def test_nenhuma_variavel_inventada_no_env_exemplo() -> None:
         f"variaveis documentadas que a CrewAI nao le: {inventadas}. "
         f"Variavel inventada da a sensacao de configuracao sem efeito nenhum."
     )
+
+
+def test_trava_de_telemetria_e_aplicada_no_import() -> None:
+    """Documentacao nao desliga nada — a trava tem de valer em execucao.
+
+    Ate 2026-09-01 o processo ainda tentava exportar spans para telemetry.crewai.com
+    mesmo com o .env.example correto, porque nada aplicava as variaveis. Agora
+    `abba_crews/__init__.py` as aplica antes de qualquer import de crewai.
+    """
+    import os
+
+    import abba_crews  # noqa: F401  — o import e o que aplica a trava
+
+    assert os.environ["CREWAI_DISABLE_TELEMETRY"] == "true"
+    assert os.environ["CREWAI_TRACING_ENABLED"] == "false"
+    assert os.environ["OTEL_SDK_DISABLED"] == "true"
+
+
+def test_escolha_explicita_do_operador_e_respeitada(monkeypatch) -> None:  # type: ignore[no-untyped-def]
+    """`setdefault` e deliberado: quem liga de volta no ambiente manda."""
+    import importlib
+    import os
+
+    monkeypatch.setenv("CREWAI_DISABLE_TELEMETRY", "false")
+    importlib.reload(importlib.import_module("abba_crews"))
+    assert os.environ["CREWAI_DISABLE_TELEMETRY"] == "false"

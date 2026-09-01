@@ -91,7 +91,7 @@ PRODUTOS: tuple[Produto, ...] = (
     Produto(
         id="sentinela",
         nome="Sentinela da Apuracao",
-        maturidade=Maturidade.ESPECIFICADO,
+        maturidade=Maturidade.EXECUTAVEL,
         vazamento=None,
         resumo=(
             "Confere a apuracao assistida pre-preenchida pelo Fisco contra os documentos "
@@ -105,9 +105,10 @@ PRODUTOS: tuple[Produto, ...] = (
             "manifestacao dentro do prazo, em R$, no mes"
         ),
         gate=(
-            "M2: o Flow rodar ponta a ponta em dado sintetico → EXECUTAVEL. "
-            "(M1 concluido: reconciliador e golden set v0 verdes. Golden set verde "
-            "sozinho NAO promove — EXECUTAVEL exige o fluxo inteiro rodando.)"
+            "M3 + golden set montado com um contador sobre competencias reais "
+            "anonimizadas → PRODUCAO. (M2 concluido: Flow ponta a ponta em sintetico, "
+            "com calendario, configuracao por cliente e dossie em RASCUNHO. "
+            "EXECUTAVEL e demonstravel, NAO vendavel.)"
         ),
         base_legal="Decreto 12.955/2026 (RCBS) e Resolucao CGIBS 6/2026 (RIBS)",
         crew="abba_crews.crews.sentinela",

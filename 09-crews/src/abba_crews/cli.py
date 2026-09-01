@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import typer
 
+from abba_crews.core.calendario import JanelaManifestacao
 from abba_crews.core.produtos import Maturidade, listar, vendaveis
 from abba_crews.core.sinteticos import Familia, golden_set, rodar
 
@@ -107,6 +108,74 @@ def golden(
     typer.echo("\n  golden set v0 aprovado.")
     typer.echo("  Nao promove a Sentinela a PRODUCAO: isso exige golden set montado")
     typer.echo("  com um contador, sobre competencias reais anonimizadas.\n")
+
+
+@app.command("janela")
+def janela(
+    competencia: str = typer.Option(..., "--competencia", "-c", help="AAAA-MM"),
+    dere: bool = typer.Option(False, "--dere", help="Empresa entrega DeRE."),
+    hoje: str = typer.Option("", "--hoje", help="Data de referencia (AAAA-MM-DD)."),
+) -> None:
+    """Mostra a janela de manifestacao de uma competencia.
+
+    O dia 15 (ou 20, com DeRE) e a DISPONIBILIZACAO da proposta. O prazo de
+    manifestacao vai ate o ultimo dia util do mes seguinte.
+    """
+    from datetime import date as _date
+
+    ref = _date.fromisoformat(hoje) if hoje else _date.today()
+    j = JanelaManifestacao.para(competencia, entrega_dere=dere)
+    typer.echo("")
+    typer.echo(f"  competencia        {j.competencia}{'  (DeRE)' if dere else ''}")
+    typer.echo(f"  disponibilizacao   {j.disponibilizacao.strftime('%d/%m/%Y')}")
+    typer.echo(f"  prazo final        {j.prazo_final.strftime('%d/%m/%Y')}")
+    typer.echo(f"  situacao em {ref.strftime('%d/%m/%Y')}  {j.situacao(ref).value}")
+    typer.echo(f"  dias uteis restantes  {j.dias_uteis_restantes(ref)}")
+    typer.echo("")
+    typer.echo(f"  {j.resumo(ref)}")
+    typer.echo("")
+
+
+@app.command("sentinela")
+def sentinela(
+    cnpj: str = typer.Option(..., "--cnpj"),
+    competencia: str = typer.Option(..., "--competencia", "-c", help="AAAA-MM"),
+    hoje: str = typer.Option("", "--hoje", help="Data de referencia (AAAA-MM-DD)."),
+    mock: bool = typer.Option(False, "--mock", help="Usa fonte sintetica."),
+    caso: str = typer.Option("positivo-credito-omitido", "--caso", help="Caso do golden set."),
+) -> None:
+    """Roda a Sentinela e imprime o dossie.
+
+    Sem `--mock` a coleta real ainda nao existe: ela chega no M6 e depende da
+    credencial do piloto RTC-CBS.
+    """
+    from datetime import date as _date
+
+    from abba_crews.flows.sentinela_flow import Fonte, SentinelaFlow
+
+    fonte = None
+    if mock:
+        casos = {c.id: c for c in golden_set()}
+        if caso not in casos:
+            typer.echo(f"caso desconhecido: {caso}\nValidos: {', '.join(sorted(casos))}")
+            raise typer.Exit(code=1)
+        c = casos[caso]
+        fonte = Fonte(documentos=c.documentos, apuracao=c.apuracao, origem=f"golden:{caso}")
+
+    payload: dict[str, object] = {"cnpj": cnpj, "competencia": competencia}
+    if hoje:
+        payload["hoje"] = hoje
+
+    flow = SentinelaFlow(fonte=fonte)
+    flow.kickoff({"crewai_trigger_payload": payload})
+
+    if not flow.state.markdown:
+        typer.echo("o fluxo terminou sem produzir dossie")
+        raise typer.Exit(code=1)
+    typer.echo("")
+    typer.echo(flow.state.markdown)
+    typer.echo(f"<!-- chave de execucao: {flow.state.chave_execucao} -->")
+    _ = _date
 
 
 if __name__ == "__main__":
