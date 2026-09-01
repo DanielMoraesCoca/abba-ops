@@ -1,6 +1,8 @@
 # Kit da Turma — operação do formato único da capacitação
 
 > **Decisão E4:** capacitação só existe como **"Turma {{N}} da {{Empresa}}"** — identidade, calendário e graduação; nunca "acesso à plataforma". Executado pelo [estágio 08](../02-jornada-do-cliente/08-capacitacao-e-transformacao.md) conforme o [plano de capacitação](plano-de-capacitacao.md). Suporte em código: tela `/admin/turmas` do portal (branch `claude/abba-consulting-structure-kdyfga`, pendente merge do Pedro). Estado atual: 1 turma ativa por cliente (a turma vale para o elenco inteiro do tenant); vincular matrícula individual à turma (`turma_id`) é evolução futura — só importa quando houver 2ª turma simultânea no mesmo cliente.
+>
+> **Virada V5:** a capacitação deixou de ser produto avulso — a Turma nomeada é **como a fase 2 do [Programa](../00-identidade/modelo-de-servico.md)** entrega a capacitação, com fluência medida 30/60/90. **A trava V4a segue valendo** ("não vender turma até o portal ter conteúdo" — [plano de ataque](../03-comercial/plano-de-ataque.md) §"Consequência de preço"), agora aplicada à promessa de capacitação da fase 2: não prometer a turma antes de o portal ter o conteúdo pronto.
 
 ## Regra de nomeação
 

@@ -1,6 +1,11 @@
 # Proposta — Sprint LGPD + Governança de IA
 
-> **Uso interno:** proposta do sprint de 2–3 semanas vendido a compradores de Jurídico / Risco / Compliance. Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), congelar PDF no Drive, enviar. Este produto **não credita** no programa completo (comprador e produto distintos).
+> ⚠️ SUPERADO PELA V5 (2026-08-31): esta oferta saiu da vitrine — ver
+> [tabela v3](../../03-comercial/tabela-de-precos.md) e
+> [estudo da virada](../estudo-virada-v5.md). Mantido como memória de
+> processo.
+
+> **Uso interno:** proposta do sprint de 2–3 semanas vendido a compradores de Jurídico / Risco / Compliance. Preencher `{{CAMPOS}}`, preço pela [tabela vigente](../../03-comercial/tabela-de-precos.md), congelar PDF no Drive, enviar. Este produto **não credita** no programa completo (comprador e produto distintos).
 
 ---
 
@@ -49,7 +54,7 @@ Revisões LGPD genéricas não capturam nada disso. Este sprint é o produto de 
 
 ## 5. Investimento
 
-**Engajamento padrão: R$ 24.000** (faixa R$ 20–32 mil conforme escopo — [tabela v1](tabela-de-precos.md)) — inclui as seções 1 e 3, entregue por consultor sênior com domínio LGPD + IA.
+**Engajamento padrão: R$ 24.000** (faixa R$ 20–32 mil conforme escopo — [tabela v1](../../03-comercial/tabela-de-precos.md)) — inclui as seções 1 e 3, entregue por consultor sênior com domínio LGPD + IA.
 
 Ajustes: sem inventário de IA existente (inclui descoberta de 2 dias): {{AJUSTE_DESCOBERTA}} · regulações adjacentes no escopo (BACEN, CVM, OAB, setoriais): {{AJUSTE_REGULACOES}} · segundo sprint para outra divisão em até 120 dias: {{PRECO_SEGUNDO_SPRINT}} · entrega remota: sem desconto.
 
@@ -83,7 +88,7 @@ Dúvidas: {{NOME_FACILITADOR}}, {{EMAIL_FACILITADOR}}.
 - **Confidencialidade:** os entregáveis são propriedade sua. A ABBA retém cópia de trabalho por 24 meses. Sem estudos de caso sem consentimento escrito.
 - **Sem parecer jurídico** salvo contratação da seção 6 — os entregáveis são análise e minutas de nível consultivo.
 - **Cancelamento:** ≥10 dias úteis antes do kickoff: reembolso integral menos {{TAXA_COORDENACAO}}; <10 dias: 50%; após o kickoff: 100%.
-- **Suboperadores:** os fornecedores de nuvem e IA usados pela ABBA constam do Anexo II do [contrato](contrato-sow-esqueleto.md); nenhum deles processa seus insumos além do escopo necessário à entrega. **A ABBA não treina modelos com dados de clientes.**
+- **Suboperadores:** os fornecedores de nuvem e IA usados pela ABBA constam do Anexo II do [contrato](../../03-comercial/contrato-sow-esqueleto.md); nenhum deles processa seus insumos além do escopo necessário à entrega. **A ABBA não treina modelos com dados de clientes.**
 - **Foro e lei:** {{CIDADE_FORO}}, Brasil; LGPD rege o tratamento dos seus dados por nós na entrega deste sprint.
 
 ---

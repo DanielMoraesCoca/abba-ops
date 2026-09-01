@@ -10,7 +10,7 @@
 
 ## 30 segundos (elevador, evento, apresentação de terceiro)
 
-> *"A ABBA faz duas coisas que não dá para fazer de dentro de uma empresa: constrói capacidade de IA em escala — sistemas e time inteiro treinado — e prova, como terceiro, o que mudou: cada decisão com o número que ela precisa mover, combinado antes, medido depois. No fim, a diretoria tem prova, não impressão."*
+> *"A ABBA instala capacidade de IA num programa de 12 meses com prova a cada passo: o Mapa de Vazamento é grátis, e o Programa 'AI Native · Ano 1' entra em três fases com três portões de saída sem multa — o comitê decide o ano uma vez, mas o investimento maior só anda depois que o primeiro caso está construído e medido, na mesa. No fim de cada fase, a diretoria tem prova, não impressão."*
 
 **O gancho, se houver espaço para mais uma frase:**
 > *"Sabe por que a maioria dos projetos de IA falha? Não é a tecnologia. É que ninguém combinou antes o que seria dar certo."*
@@ -29,8 +29,8 @@ Quatro movimentos. **Nesta ordem** — a ordem é o que faz funcionar.
 **2. A cunha (30s)**
 > *"Setenta por cento do valor de uma transformação de IA está em pessoas, processo e cultura. O mercado vende os outros trinta: ferramenta, piloto sem métrica, curso. Ninguém instala os setenta no médio porte brasileiro — e ninguém prova de fora o que mudou. Funciona como uma auditoria: mesmo quem tem um ótimo CFO contrata auditor, porque a prova só vale vindo de terceiro. É onde a gente vive."*
 
-**3. Como funciona, em uma frase por degrau (60s)**
-> *"Começa com um mapa do que estimamos estar vazando, feito de fora e de graça. Se fizer sentido, o Assessment faz o mergulho profundo com os dados de dentro, do conselho à linha de frente, e devolve um portfólio ranqueado. Aí a gente prototipa os casos mais promissores com dados reais e vocês decidem GO/NO-GO com números — só então constrói e treina, plataforma mais presencial. E daí em diante a gente fica: presença semanal, toda decisão num registro — métrica combinada antes, resultado medido depois, assinado por gente. E quando vocês quiserem a cadeira do estrategista do lado de vocês da mesa, isso tem nome: Conselheiro de IA."*
+**3. Como funciona, em uma frase por caminho (60s)**
+> *"Começa com um Mapa do que estimamos estar vazando, feito de fora e de graça. Se fizer sentido, assinamos o Termo do Programa: a fase 1, de seis semanas e R$ 26 mil, já entrega um caso construído com dados reais e medido, mais o portfólio inteiro ranqueado — e tem um portão de saída sem multa na semana 6. O comitê decide o ano uma vez; o investimento maior só anda depois que esse número está na mesa. Dali em diante, mais duas fases — construção e durabilidade — fecham o primeiro ano com o Exame Anual de IA e viram a Assinatura da Capacidade a partir do ano 2. E quando a empresa já tem IA rodando, a porta é outra: o Conselheiro de IA, a cadeira do estrategista do lado de vocês da mesa."*
 
 **4. A pergunta que devolve a palavra (30s)**
 > *"Me conta uma coisa: tem algum número em reais aí dentro que dói hoje e que vocês já medem?"*
@@ -44,7 +44,7 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 | *"Já temos gente de TI/dados fazendo isso."* | *"Ótimo — a gente não substitui. Eles constroem; o que costuma faltar é o registro de decisão que prova para a diretoria que valeu. Isso não é trabalho de TI."* |
 | *"Já temos um diretor de IA."* | *"Que bom — isso coloca vocês na frente. O que ele mediu no último trimestre? E quantas pessoas ele tem para a fila de casos que já mapeou?"* — ele é o campeão, nunca o rival; discurso completo (custo da cadeira, o que ele não compra dentro de casa) na [objeção: diretor de IA](objecao-diretor-de-ia.md) |
 | *"Vocês já fizeram isso em quantas empresas?"* | *"Somos novos como firma, e não vou inventar média de mercado. O que posso te mostrar é o método e o sistema por trás dele, que estão prontos e testados — e o registro de tudo que a gente decidir junto, incluindo o que der errado. É mais do que a maioria consegue mostrar depois de dez clientes."* |
-| *"Quanto custa?"* | Nunca improvisar. [Tabela v2](tabela-de-precos.md), sempre pela jornada: *"o Assessment com os dados de vocês fica em R$ 45 mil — e é onde tudo começa; a jornada completa, fechada de uma vez, em torno de R$ 260 mil. Se ainda não for o momento, tem portas de entrada a partir de R$ 14 mil que creditam no Assessment. Construção a gente só precifica depois do Assessment — pela [calculadora](../06-ferramentas/calculadora-construcao.md), com o porte na mesa."* |
+| *"Quanto custa?"* | Nunca improvisar. [Tabela v3](tabela-de-precos.md): *"O Termo do Programa 'AI Native · Ano 1' entra com a fase 1 firme, de R$ 26 mil — seis semanas até um caso construído e medido. O ano completo, por porte, fica em R$ 218 mil (P), R$ 278 mil (M) ou R$ 378 mil (G), em quatro trimestres antecipados — porte pela [calculadora](../06-ferramentas/calculadora-construcao.md). Tem um portão na semana 6, sem multa: quem sai leva tudo o que a fase 1 produziu. O comitê decide o ano uma vez — o investimento maior só anda com o caso medido na mesa."* |
 
 > A resposta à segunda objeção é a mais importante do kit. **Não temos histórico, e mentir sobre isso é o único erro irrecuperável.** Vender o método e a transparência é mais forte que fingir portfólio — e é o que separa a ABBA de quem promete média de mercado.
 
@@ -58,7 +58,8 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 2. **[A apresentação em PDF](../08-materiais/modelos/abba-apresentacao.pdf)** — quando pedirem "manda o que vocês fazem" antes da reunião. **É o documento-padrão de todo material** ([§0 do catálogo](../08-materiais/README.md)). 3 páginas em NARRATIVA: pág. 1 abre direto na ABBA ("Tornamos a sua empresa AI native") + a seção dourada das raízes; págs. 2–3 a jornada NA ORDEM (conversa → Assessment → protótipo → construção/engenharia → treinamento com as 3 perguntas → gerenciados → Conselheiro), cada etapa em "o quê · por quê · como", fechando com as logos Microsoft/CrewAI. **Sem preços — preço é conversa.** Passou no Revisor. Versão-relâmpago para WhatsApp: [1 página](../08-materiais/modelos/abba-um-minuto.pdf).
 3. **[Manifesto](../00-identidade/manifesto.md)** — se a conversa foi sobre confiança, governança ou risco. É o documento para o guardião (jurídico/DPO).
 4. **Institucional** ([deck](../08-materiais/modelos/abba-deck-institucional.pptx)) — **apresentar ao vivo, nunca enviar antes** (a conversa é onde a conversão acontece).
-5. **Deck de serviço** (`servico-1` a `servico-7` em [modelos/](../08-materiais/README.md)) — quando a conversa foi sobre **um** serviço específico e a pessoa pediu detalhe: mandar **só o daquele serviço**, depois da conversa. Cada um traz a foto real do entregável — o cliente vê o artefato, não a promessa.
+5. **Deck do Programa** — quando a conversa girou em torno do Termo do Programa e a pessoa pediu o material formal: as 3 fases, os 3 portões e o porte, depois da conversa (nunca antes).
+6. **Material do Conselheiro de IA** ([produto](conselheiro-de-ia.md)) — quando for o caso: o prospect já tem IA rodando e a conversa foi sobre essa porta.
 
 **Regra:** todo envio tem **uma** pergunta ou próximo passo no corpo do e-mail. Material enviado sem pedido é material arquivado ([e-mails de follow-up](emails-follow-up.md)).
 
@@ -70,17 +71,19 @@ Depois dessa pergunta, **calar**. A resposta define o degrau da [escada](escada-
 
 **~20 minutos de apresentação + conversa.** A fala-âncora de cada slide:
 
+> **Nota V5:** este deck está em regeneração para o modelo de 3 caminhos ([estudo V5](../05-interno/estudo-virada-v5.md)). As linhas marcadas **[MUDA V5]** abaixo dependem do cardápio antigo (jornada em 7 etapas) e serão reescritas na regeneração; as demais são falas-âncora que atravessam a virada sem mudança.
+
 | # | Slide | A fala-âncora (1 linha) |
 |---|---|---|
 | 1 | Capa — "Tornamos a sua empresa AI native." | *"Prometo que este é o único deck — o resto é conversa."* |
 | 2 | Quem somos | Ler a frase inteira, com calma — é a mesma abertura do PDF que eles talvez já tenham recebido; a repetição constrói identidade |
 | 3 | As duas frentes | *"Sistemas e pessoas ao mesmo tempo — porque de nada adiantam sistemas novos com a empresa pensando do jeito antigo."* |
 | 4 | O nosso processo (raízes) | **Pausa.** Deixar a frase dourada ser lida em silêncio — não explicar |
-| 5 | A jornada em 7 passos | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nesse caminho hoje?"* (quase sempre se colocam adiante do real) |
-| 6 | Etapas 1–3 | *"Começa de graça, com um número em reais na mesa — e a prova vem antes de qualquer investimento pesado."* |
-| 7 | Etapa 4 — a engenharia | *"Existe uma arquitetura, uma engenharia, uma lógica — e os agentes de IA já estão inseridos nisso."* |
-| 8 | Etapa 5 — as 3 perguntas | Ler as três perguntas em voz alta, devagar — é o coração do treinamento |
-| 9 | Etapas 6–7 | *"Todo fornecedor de IA tem um vendedor. A sua mesa merece alguém do seu lado quando a fatura chega."* |
+| 5 | **[MUDA V5]** A jornada em 7 passos | **PARAR E PERGUNTAR:** *"Onde vocês acham que estão nesse caminho hoje?"* (quase sempre se colocam adiante do real) |
+| 6 | **[MUDA V5]** Etapas 1–3 | *"Começa de graça, com um número em reais na mesa — e a prova vem antes de qualquer investimento pesado."* |
+| 7 | **[MUDA V5]** Etapa 4 — a engenharia | *"Existe uma arquitetura, uma engenharia, uma lógica — e os agentes de IA já estão inseridos nisso."* |
+| 8 | **[MUDA V5]** Etapa 5 — as 3 perguntas | Ler as três perguntas em voz alta, devagar — é o coração do treinamento |
+| 9 | **[MUDA V5]** Etapas 6–7 | *"Todo fornecedor de IA tem um vendedor. A sua mesa merece alguém do seu lado quando a fatura chega."* |
 | 10 | Como trabalhamos | *"Repare: nenhuma decisão entra sem métrica combinada antes. Isso é raro no nosso mercado."* |
 | 11 | **Promessas × recusas** | *"Este slide é o que nenhum concorrente nosso consegue copiar — porque copiar exigiria parar de vender o que eles vendem."* Deixar 30s de silêncio para lerem |
 | 12 | Parceiros oficiais | *"Durante a capacitação, a equipe de vocês usa ferramentas dos nossos parceiros para construir as próprias soluções."* |

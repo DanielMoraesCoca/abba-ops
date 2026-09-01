@@ -1,0 +1,16 @@
+{
+  "versao_tabela": "v3",
+  "status": "proposta V5 - Pedro valida",
+  "programa": {
+    "nome": "AI Native · Ano 1",
+    "fase1": 26000,
+    "portes": {
+      "P": { "ano1": 218000, "trimestre": 48000, "assinatura_mensal": 11000 },
+      "M": { "ano1": 278000, "trimestre": 63000, "assinatura_mensal": 15000 },
+      "G": { "ano1": 378000, "trimestre": 88000, "assinatura_mensal": 21000 }
+    }
+  },
+  "conselheiro": { "mensal": 12000, "trimestral": 7500, "instalacao_memoria": 15000 },
+  "diagnostico_standalone": 45000,
+  "mini_ciclo": 42000
+}

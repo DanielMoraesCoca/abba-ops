@@ -1,6 +1,11 @@
 # Proposta de Continuidade — processo (renovação em 3 camadas)
 
-> **Camada:** processo. **O enviável é o modelo Word:** [`../08-materiais/modelos/proposta-continuidade-modelo.docx`](../08-materiais/modelos/proposta-continuidade-modelo.docx). Apresentada **NO ritual do conselho** (nunca por e-mail frio — regra do [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md)). Camadas definidas no [SLA](../04-entrega/sla-manutencao.md); preços na [tabela — rascunho v2](tabela-de-precos.md).
+> ⚠️ SUPERADO PELA V5 (2026-08-31): esta oferta saiu da vitrine — ver
+> [tabela v3](../../03-comercial/tabela-de-precos.md) e
+> [estudo da virada](../estudo-virada-v5.md). Mantido como memória de
+> processo.
+
+> **Camada:** processo. O modelo Word (`proposta-continuidade-modelo.docx`) foi **retirado na V5** (ver nota acima). Apresentada **NO ritual do conselho** (nunca por e-mail frio — regra do [estágio 11](../../02-jornada-do-cliente/11-renovacao-e-encerramento.md)). Camadas definidas no [SLA](../../04-entrega/sla-manutencao.md); preços na [tabela — rascunho v2](../../03-comercial/tabela-de-precos.md).
 
 ## Quando e como apresentar
 
@@ -13,10 +18,10 @@
 | | **Operação** | **Evolução** | **Estratégia** |
 |---|---|---|---|
 | Monitoramento automatizado 24/7 + SLA S1–S3 + relatório mensal | ✅ | ✅ | ✅ |
-| **[Ritual semanal de 20 min](../04-entrega/ritual-semanal.md)** — presença de sócio em cadência: o que venceu, gatilhos, decisões, o que vamos medir | — | ✅ | ✅ |
+| **[Ritual semanal de 20 min](../../04-entrega/ritual-semanal.md)** — presença de sócio em cadência: o que venceu, gatilhos, decisões, o que vamos medir | — | ✅ | ✅ |
 | Horas de evolução ({{HORAS_MES}}h/mês) nos agentes | — | ✅ | ✅ |
 | Plataforma de capacitação ativa (novos colaboradores onboardados) | — | ✅ | ✅ |
-| [Conselheiro de IA](conselheiro-de-ia.md) trimestral embutido | — | — | ✅ |
+| [Conselheiro de IA](../../03-comercial/conselheiro-de-ia.md) trimestral embutido | — | — | ✅ |
 | Preço [RASCUNHO v2] | R$ 6.000/mês | R$ 9.500/mês | R$ 15.000–18.000/mês |
 
 **Nota da camada Operação (honestidade que evita ressentimento):** o acesso à plataforma não some — vira modo consulta: certificados e conteúdo já concluído permanecem visíveis para sempre; o que pausa são trilhas ativas e onboarding de novos colaboradores. Downgrade nunca apaga a história da turma.
@@ -37,4 +42,4 @@
 
 ## Depois do sim
 
-Aditivo/novo Anexo I ([contrato](contrato-sow-esqueleto.md)) com a camada nomeada · `{{CAMADA_CONTRATADA}}` preenchida no [SLA](../04-entrega/sla-manutencao.md) · fatura ajustada (Fin-Admin) · registro no Drive `01 Contrato/`.
+Aditivo/novo Anexo I ([contrato](../../03-comercial/contrato-sow-esqueleto.md)) com a camada nomeada · `{{CAMADA_CONTRATADA}}` preenchida no [SLA](../../04-entrega/sla-manutencao.md) · fatura ajustada (Fin-Admin) · registro no Drive `01 Contrato/`.

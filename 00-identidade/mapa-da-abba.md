@@ -2,7 +2,7 @@
 
 > **Camada:** identidade. A vista de cima que responde "o que a ABBA é AGORA?" sem abrir outro arquivo. Origem: pedido do sócio (2026-08-01) de visualizar a empresa como um todo depois da rodada de mudanças. **Atualizar a cada decisão V-registrada que mude o estado de uma peça** — um mapa desatualizado é pior que mapa nenhum.
 >
-> Legenda de estado: ✅ vivo · 🔒 construído e gateado (com o gatilho nomeado) · 📋 especificado, não construído · ⬜ aguardando decisão de sócios.
+> Legenda de estado: ✅ vivo · 🔒 construído e gateado (com o gatilho nomeado) · 📋 especificado, não construído · ⬜ aguardando decisão de sócios · 🔴 descontinuado (V5), material em regeneração.
 
 ---
 
@@ -21,12 +21,10 @@ flowchart TD
     subgraph IDENTIDADE
         M[Manifesto: 7 crenças, 9 recusas] --- A[Alvo: teste de 6 perguntas + recusas]
     end
-    subgraph FUNIL["ABERTURA E ESCADA"]
-        MV[Mapa de Vazamento — grátis, um número em R$] --> AV[Avaliação 25 dimensões — R$ 28k]
-        AV --> PT[Protótipo validado — GO/NO-GO com dados reais]
-        PT --> PR[Programa 16 semanas — R$ 185k]
-        PR --> MA[Manutenção — R$ 9,5k/mês]
-        MA --> CO[Conselheiro de IA / Estratégia]
+    subgraph FUNIL["OS 3 CAMINHOS (Virada V5)"]
+        MV[Mapa de Vazamento — grátis] --> PR["O Programa — AI Native · Ano 1 (12 meses, 3 fases, 3 portões sem multa)"]
+        PR --> AS[Assinatura da Capacidade — ano 2+, com o Exame Anual de IA]
+        MV -.-> CO[Conselheiro de IA — só quem já tem IA rodando]
     end
     subgraph RITMO
         S[Ritual semanal 20min] --> BM[Brief mensal curado] --> CT[Conselho trimestral] 
@@ -51,7 +49,8 @@ flowchart TD
 | Alvo por forma + critérios de recusa | ✅ (faixa de faturamento é ⬜ proposta) | [alvo](alvo.md) | Sócios confirmam R$ 50–500 mi |
 | Mapa de Vazamento (peça de abertura) | ✅ | [processo](../03-comercial/mapa-de-vazamento.md) + seção 1 do modelo DOCX | — |
 | Deck institucional (13 slides, posicionamento vigente) | ✅ regenerado 2026-08-01 | [modelo PPTX](../08-materiais/modelos/abba-deck-institucional.pptx) · roteiro no [kit](../03-comercial/kit-de-presenca.md) | — |
-| Escada com preços v1 | ✅ travada | [escada](../03-comercial/escada-abba.md) · [tabela](../03-comercial/tabela-de-precos.md) | v2 = ⬜ após 3 reações reais de preço |
+| Os 3 caminhos, preços v3 (Virada V5) | ✅ proposta — Pedro valida | [modelo de serviço](modelo-de-servico.md) · [tabela v3](../03-comercial/tabela-de-precos.md) | Pedro valida antes de material sair a cliente ([estudo V5](../05-interno/estudo-virada-v5.md)) |
+| Os 7 decks de serviço (`servico-1`…`servico-7`) | 🔴 descontinuados (Virada V5) — materiais em regeneração | [08-materiais/README.md](../08-materiais/README.md) | Regenerar no formato dos 3 caminhos |
 | Protocolo de prova + caso publicável | ✅ | [protocolo](../04-entrega/protocolo-de-prova.md) · [molde](../05-interno/caso-publicavel-modelo.md) | Primeiro caso = 1º cliente real |
 | Ritual semanal de 20 min | ✅ processo (camadas Evolução+) | [ritual](../04-entrega/ritual-semanal.md) | Começa no 1º cliente de manutenção |
 | Pré-mortem + indicadores antecedentes no kickoff | ✅ | [kickoff](../04-entrega/kickoff-roteiro.md) | — |

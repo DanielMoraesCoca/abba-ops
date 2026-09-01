@@ -36,8 +36,8 @@ Aplicável em qualquer conversa de descoberta, em qualquer setor, em ~10 minutos
 
 **Leitura do resultado:**
 
-- **5–6 sins** → alvo cheio. Programa completo é conversa legítima já na segunda reunião.
-- **3–4 sins** → alvo real, entrada por porta menor ([escada](../03-comercial/escada-abba.md), degraus 0–1) para transformar o "não" em "sim".
+- **5–6 sins** → alvo cheio. O Termo do Programa é conversa legítima já na segunda reunião.
+- **3–4 sins** → alvo real, ainda não maduro: entregar o Mapa de Vazamento e deixar amadurecer. Não existe mais porta menor paga na vitrine — o diagnóstico standalone de R$ 45 mil ([tabela v3](../03-comercial/tabela-de-precos.md)) segue existindo fora da vitrine, só para quem insiste nele.
 - **≤2 sins** → não é alvo hoje. Follow-up em 90 dias, sem investimento de proposta.
 
 A pergunta 6 não elimina — ela **ordena a fila**: entre dois alvos iguais, o que tem prazo externo compra primeiro.
@@ -96,5 +96,5 @@ Cada material da ABBA precisa responder a pelo menos uma dessas quatro cabeças 
 ## Onde este documento é usado
 
 - [Estágio 01 — visitante e lead](../02-jornada-do-cliente/01-visitante-e-lead.md) e [02 — degustação](../02-jornada-do-cliente/02-diagnostico-gratuito.md): o teste de 6 perguntas é o filtro
-- [Escada ABBA](../03-comercial/escada-abba.md): qual degrau oferecer depende do placar do teste
+- [Escada ABBA (estrutura interna das 3 fases)](../03-comercial/escada-abba.md): o que a fase 1 entrega, para explicar o Termo do Programa na mesa
 - [Pipeline](../03-comercial/pipeline-modelo.md): lead sem placar registrado não avança de estágio

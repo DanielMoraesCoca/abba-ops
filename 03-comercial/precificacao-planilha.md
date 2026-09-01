@@ -72,8 +72,9 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 | Política | Decisão |
 |---|---|
 | Desconto charter máximo (com contrapartidas da Cl. 5.3) | {{ }}% |
-| Desconto por pagamento anual antecipado (recorrentes) | {{ }}% |
-| Crédito do produto de entrada no programa (prazo) | 100% em até {{ 90 }} dias |
+| Desconto por pagamento anual antecipado (recorrentes) | **−8%** (v3 — tabela de preços, linha do Ano 2) |
+| Mensalidade (Assinatura/Conselheiro) vs. trimestral antecipado | mensal = **+8%** sobre o equivalente (regra da tabela v3) |
+| Crédito do produto de entrada no programa (prazo) | 100% em até {{ 90 }} dias *(na v3 não se aplica mais ao diagnóstico standalone — produto distinto, sem crédito)* |
 | Alçada: acima de R$ {{ }} exige revisão de advogado antes de assinar | (pendência P4) |
 
 ## 6. Descoberta de preço (preencher após cada conversa real)
@@ -83,3 +84,5 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 | 2026-06 | Galápagos Capital (ref ABBA-2026-001) | proposta apresentada **SEM valor** — os R$ 150K constavam do documento interno mas não foram comunicados | — | (sem dado de preço) | — |
 
 > ⚠️ Correção 2026-07-23: **nenhum preço foi testado em mercado ainda** — o valor da proposta Galápagos não chegou ao prospect. As primeiras 3 conversas reais com a tabela v1 são o primeiro teste de descoberta de preço. Registrar TODAS.
+
+> 📌 A partir de 2026-08-31 (v3 — Virada V5): as próximas conversas reais testam a **tabela v3** (Termo do Programa por porte + Assinatura da Capacidade — [tabela](tabela-de-precos.md)). Registrar aqui cada reação, como sempre.

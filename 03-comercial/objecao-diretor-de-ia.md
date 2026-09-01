@@ -34,7 +34,7 @@ O que o diretor de IA **não consegue** comprar dentro de casa — e é o que ve
 | A dor dele | O que a ABBA entrega | Onde está |
 |---|---|---|
 | Ele precisa **defender o próprio orçamento** no conselho, e "estamos avançando" não é número | O diário decisão→resultado: métrica combinada antes, medida depois, assinada por gente. Ele sai da reunião de diretoria com prova, não com narrativa | [Protocolo de prova](../04-entrega/protocolo-de-prova.md) |
-| Ele é **um**, e a fila de casos de uso é longa | Braços de construção: protótipo com GO/NO-GO + agentes em produção, sem passar 6 meses contratando num mercado onde 98% não acham gente | [Programa](proposta-programa-completo.md), etapa de construção |
+| Ele é **um**, e a fila de casos de uso é longa | Braços de construção: protótipo com GO/NO-GO + agentes em produção, sem passar 6 meses contratando num mercado onde 98% não acham gente | [Programa](tabela-de-precos.md), etapa de construção |
 | A base da empresa não acompanha — ele vira gargalo e help desk | Capacitação híbrida (plataforma + presencial) de todos os níveis: a fluência deixa de morar só nele | [Portal](../06-ferramentas/ferramenta-portal.md) |
 | *"Estamos bem comparados a quem?"* — ele não tem referência externa | A régua: posição contra a coorte anonimizada (quando o piso de 5 clientes for atingido — **não prometer antes**) | [Ecossistema](../00-identidade/ecossistema.md) §3 |
 | Se **ele** sair, o contexto sai junto | A memória institucional: dossiê e diário são ativos **da empresa**, exportáveis — não da cabeça de um funcionário | [Dossiê vivo](../04-entrega/dossie-vivo-conselheiro-digital.md) |
@@ -58,12 +58,12 @@ Números para dizer em voz alta na mesa — sempre como faixa, sempre com a font
 | Ferramentas, infra, formação | + R$ 50–150 mil/ano | Estimativa interna — marcar como estimativa ao falar |
 | **Total do caminho "contratar"** | **~R$ 1–2 mi/ano, recorrente, todo ano** | — |
 
-Contra ([tabela v1](tabela-de-precos.md)):
+Contra ([tabela v3](tabela-de-precos.md)):
 
 | Caminho ABBA | Ano 1 | Ano 2 em diante |
 |---|---|---|
-| Programa completo (uma vez) + manutenção com presença | R$ 185 mil + R$ 114 mil | R$ 114 mil/ano (opcional, cancelável) |
-| Só a cadeira de conselheiro (quem já tem IA rodando) | retainer do [Conselheiro](conselheiro-de-ia.md) | idem |
+| O Programa (12 meses, 3 fases — porte M de referência) | R$ 278 mil (26 + 4 × 63) | Assinatura da Capacidade: R$ 15 mil/mês (opcional, cancelável, com o Exame Anual de IA dentro) |
+| Só o Conselheiro de IA (quem já tem IA rodando) | R$ 12 mil/mês ([Conselheiro](conselheiro-de-ia.md)) | idem |
 
 **A frase que fecha a conta:** *"Um diretor de IA custa de um a dois milhões por ano, todo ano, num mercado onde 98% das empresas não acham esse profissional — e, quando ele muda de emprego, o contexto vai junto na cabeça dele. O nosso caminho custa uma fração disso, a capacidade instalada fica com a sua equipe, e a memória do que foi decidido e medido fica num ativo **seu**, exportável, que não pede demissão."*
 

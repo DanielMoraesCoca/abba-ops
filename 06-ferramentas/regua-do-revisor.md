@@ -26,7 +26,8 @@ abba report <eng> --revise                     # o relatório só grava se passa
 | "somos a auditoria"/"auditamos" (analogia "funciona como" pode) | block | V3c — a prateleira |
 | "certificado/validado em clientes reais" | block | R1 — só sintético |
 | "curva de tenure" | block | gateada + anglicismo |
-| preço divergente da tabela v2 (45k·26k/65k·15k/35k·6k/9,5k/15k·12k/7,5k·260k · portas 14k/24k/42k — construção via calculadora, sem valor único; **28k e 185k da v1 bloqueiam**) | block | V3t — tabela v2 por serviço |
+| preço divergente da tabela v3 (Programa 218k/278k/378k · entrada 26k · trimestres 48k/63k/88k · Assinatura 11k/15k/21k/mês · Conselheiro 12k/7,5k + memória 15k · standalone 45k · mini-ciclo 42k) | block | **V5 — tabela v3, um produto só (proposta; Pedro valida)** |
+| **oferta aposentada apresentada com preço** (workshop, sprint LGPD, pacote de 3, jornada completa, avaliação de prontidão, treinamento híbrido, camadas vendidas separadas) | block | V5 — o cardápio dos 7 serviços foi descontinuado; contexto histórico/arquivado não flagra |
 | "5 papéis" | block | parecer do conselho, melhoria nº 1 |
 | SSO prometido | block | R3 — autenticação interina |
 | "a IA decide"/"IA autônoma" | block | centauro inegociável |
@@ -47,6 +48,8 @@ abba report <eng> --revise                     # o relatório só grava se passa
 1. Doutrina nova (decisão V-registrada) que proíba ou trave algo → regra nova no JSON, com `reason` e `doc` apontando o documento.
 2. Falso positivo em material que sai → ajustar `unless`/exceção **no mesmo commit** que o registra.
 3. A versão (`version`) sobe a cada mudança; o episódio `revisor.reviewed` grava com qual versão o material foi conferido.
+
+**v2.0.0 (2026-08-31)** — a Virada V5: a regra `precos-travados` inteira reescrita para a tabela v3 (3 caminhos: Mapa grátis · Programa "AI Native · Ano 1" por porte · Conselheiro; + Assinatura da Capacidade ano 2+). Regra nova `ofertas-aposentadas-v5` (block): oferta do modelo dos 7 serviços apresentada com preço bloqueia — exceções para contexto histórico/arquivado/nota de correção. **Major version porque inverte o sancionado: os preços v2 deixam de passar.** Pendência: sincronizar a cópia embarcada no assessment-brain (`ABBA_REVISOR_RULES` aponta para este JSON como ponte até lá).
 
 **v1.3.0 (2026-08-23)** — três regras novas do índice proibido da [base de evidências](../00-identidade/base-de-evidencias.md) (V4a): `mit-95`, `parceiro-dobra-acerto`, `roi-magico`. Todos os números do MIT NANDA e o folclore de vendor agora bloqueiam; a exceção `unless` (aposentad/banid/proibid/❌) deixa a própria base e as notas de correção citarem os números banidos sem flagrar. Padrões estreitos de propósito — "0,95" de confiança e "95% de cobertura" não disparam. **Pendência:** sincronizar a cópia embarcada no assessment-brain quando o módulo revisor estiver no checkout (não existe em `src/` hoje).
 

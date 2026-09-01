@@ -1,6 +1,6 @@
 # Cliente Zero — runbook de execução (1 semana)
 
-> O ensaio geral: percorrer a jornada INTEIRA internamente, com a [tabela v1](../03-comercial/tabela-de-precos.md) real nos documentos, num alvo real (sem contato). Cada travada = gap corrigido em ambiente seguro. Saída: "já fizemos uma vez". Dono: os dois sócios. Eu (Claude) rodo junto — me chamem em cada dia.
+> O ensaio geral: percorrer o **Termo do Programa** INTEIRO internamente (fase 1 → Portão da Prova → fases 2–3), com a [tabela v3](../03-comercial/tabela-de-precos.md) real nos documentos, num alvo real (sem contato). Cada travada = gap corrigido em ambiente seguro. Saída: "já fizemos uma vez". Dono: os dois sócios. Eu (Claude) rodo junto — me chamem em cada dia.
 
 ## Preparação (30 min, antes do Dia 1)
 - [ ] Escolher o alvo: empresa real do perfil (mid-market BR, 50–500 colab.), de preferência uma que PODERIA virar prospect depois — o material produzido não se perde
@@ -24,8 +24,8 @@
 - [ ] Rever a gravação juntos: 3 ajustes máximos, anotados
 
 ## Dia 4 — T3/T4/T5 (proposta → contrato)
-- [ ] Preencher a [proposta da Avaliação](../08-materiais/modelos/proposta-avaliacao-prontidao-modelo.docx) COMPLETA para o alvo (nenhum {{placeholder}} sobrando) · PDF congelado na pasta
-- [ ] Ensaio da apresentação de proposta ([pauta 3](../03-comercial/pautas-de-reuniao.md)) com negociação: prospect pede desconto → treinar o charter-como-troca
+- [ ] Preencher o **Termo do Programa** (fase 1 firme + fases 2–3 como opção condicionada ao Portão da Prova) COMPLETO para o alvo — modelo ainda em regeneração pós-V5 (o modelo Word do Termo está em regeneração V5 — usar a [tabela v3](../03-comercial/tabela-de-precos.md) como fonte dos números e anotar o gap na retrospectiva) · PDF congelado na pasta
+- [ ] Ensaio da apresentação de proposta ([pauta 3](../03-comercial/pautas-de-reuniao.md)) com negociação: prospect pede desconto → treinar o bônus de fechamento como resposta (nunca desconto seco — [tabela v3](../03-comercial/tabela-de-precos.md))
 - [ ] Preencher o [contrato](../03-comercial/contrato-sow-esqueleto.md) com Anexo I do alvo · listar TODA dúvida de preenchimento (vira pauta do advogado)
 
 ## Dia 5 — T6 + setup (onboarding)

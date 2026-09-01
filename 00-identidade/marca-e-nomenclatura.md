@@ -9,11 +9,15 @@
 | Empresa (marca) | **ABBA** | ✅ fixo |
 | E-mail oficial de contato | **`contato@abbaservices.com.br`** (decisão do sócio, 2026-08-04 — é o que vai em TODO material externo; `comercial@` existe como caixa interna, nunca em material) |
 | Empresa (assinatura comercial) | **ABBA Consultoria de IA** | ✅ fixo (era "ABBA AI Consulting" — traduzido; razão social definitiva pende do CNPJ, pendência do [societário](../05-interno/acordo-societario.md)) |
-| Programa principal | **Programa de Transformação em IA** (proposta alternativa: "Programa de Instalação de Capacidade em IA") | ⏳ decisão P3 |
+| Programa principal | **AI Native · Ano 1** (o Programa) | ✅ fixo (Virada V5, 2026-08-31 — fecha a pendência P3) |
+| Retenção perpétua (ano 2+) | **Assinatura da Capacidade** | ✅ fixo (V5) |
+| Re-medição anual (dentro da Assinatura) | **Exame Anual de IA** | ✅ fixo (V5) — nunca "auditoria" |
+| Marco de saída da fase 1 | **Portão da Prova** | ✅ fixo (V5) |
+| Documento de contratação em dois tempos | **Termo do Programa** | ✅ fixo (V5) |
 | Degustação gratuita | **Análise ABBA** (externa) / "scout" (interna) | ✅ fixo |
 | Avaliação paga | **Avaliação de Prontidão para IA** | ✅ fixo |
-| Workshop | **Workshop de Descoberta de Shadow AI** | ✅ fixo |
-| Sprint | **Sprint LGPD + Governança de IA** | ✅ fixo |
+| Workshop de Descoberta de Shadow AI | descontinuado como oferta (Virada V5) — vira atividade interna da fase 1 do Programa, sem nome de produto externo | ❌ descontinuado (V5) |
+| Sprint LGPD + Governança de IA | descontinuado como oferta (Virada V5) — vira atividade interna da fase 1 do Programa | ❌ descontinuado (V5) |
 | Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) — em 3 camadas: **Operação · Evolução · Estratégia** | ✅ fixo (camadas: E2, 2026-07-25; preços v2 em rascunho) |
 | Alinhamento com conselho (produto) | **Conselheiro de IA ABBA** (externa) / estágio 10, CAIO fracionário (interna) | ✅ fixo (E1, 2026-07-25) |
 | Formato da capacitação | **Turma {{N}} da {{Empresa}}** — sempre turma nomeada com kickoff, semanas definidas e graduação; nunca "acesso à plataforma" | ✅ fixo (E4, 2026-07-25) |

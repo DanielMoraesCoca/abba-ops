@@ -6,6 +6,8 @@
 
 A capacitação **sempre** roda como **"Turma {{N}} da {{Empresa}}"** — grupo nomeado, kickoff presencial de abertura, semanas com início e fim, desafios coletivos e **graduação com certificado**. Nunca vender ou operar como "acesso à plataforma": cohort com identidade e ritmo conclui; biblioteca self-service vira login esquecido. A turma é criada no portal já com esse nome, com cronograma e cerimônia do [kit da turma](kit-da-turma.md) ([ficha](../06-ferramentas/ferramenta-portal.md)).
 
+**Virada V5:** a capacitação não é mais produto avulso vendável fora do Programa — a Turma nomeada é a forma como a **fase 2** ([modelo de serviço](../00-identidade/modelo-de-servico.md)) entrega a capacitação, com fluência medida 30/60/90 dentro do escopo já contratado. **A trava V4a continua valendo** — não vender nem prometer a turma da fase 2 antes de o portal ter o conteúdo pronto.
+
 ## Quando e quem
 Preenchido pelo chapéu [Capacitação](../01-setores/capacitacao.md) na semana do kickoff; aprovado pelo patrocinador antes do lançamento.
 

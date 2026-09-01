@@ -1,5 +1,14 @@
 # Análise Estratégica — o ecossistema ABBA × o que o mundo prova que funciona
 
+> ⚠️ **NOTA DE ATUALIZAÇÃO (V5, 2026-08-31) — ler antes de usar esta
+> análise.** As regras "não pular o primeiro degrau" / "nunca vender o
+> programa de cara" (citadas no corpo) foram **conscientemente revertidas**
+> na Virada V5 — substituídas pela contratação em dois tempos (fase 1 firme
+> na alçada de um diretor + fases 2–3 precificadas como opção contratada).
+> Ver [estudo da virada §8](estudo-virada-v5.md) e
+> [tabela v3](../03-comercial/tabela-de-precos.md). O resto da análise
+> (E1 Conselheiro, E3 Knowledge Vault, validações externas) segue válido.
+
 > **Status: APROVADA em 2026-07-25 (todas as recomendações) e implementada — ver [registro](registro-de-decisoes.md). Preços novos em regime rascunho v2.**
 >
 > **Data:** 2026-07-25 · **Método:** cruzamento do estado completo da ABBA (6 etapas, 3 ferramentas, tabela v1, mercado DF, estágio pré-primeiro-cliente) com pesquisa sobre boutiques de IA vencedoras, o modelo Palantir, CAIO fracionário, receita recorrente em consultorias, funis de assessment e falhas típicas do 1º ano. Fontes ao final. Decisões propostas viram pauta de sócios — nada aqui muda a operação sem passar pelo [registro](registro-de-decisoes.md).

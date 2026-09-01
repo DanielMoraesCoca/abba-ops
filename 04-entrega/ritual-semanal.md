@@ -1,6 +1,6 @@
 # Ritual Semanal — 20 minutos que seguram o cliente
 
-> **Camada:** entrega (processo). O pulso dos degraus **3 e 4** da [escada](../03-comercial/escada-abba.md) (Manutenção e Conselheiro/Estratégia). Decisão dos sócios em 2026-08-01, fundamentada no [estudo de antecipação](../05-interno/estudo-antecipacao.md) §3: contato humano recorrente muda comportamento (meta-análise só de RCTs, g = 0,59); cutucão automatizado não (d = 0,004 corrigido viés). **A ligação é o produto; a IA prepara a pauta.**
+> **Camada:** entrega (processo). O pulso da **fase 3** e da **Assinatura da Capacidade** ([modelo de serviço](../00-identidade/modelo-de-servico.md); estrutura interna nas [3 fases](../03-comercial/escada-abba.md)). Decisão dos sócios em 2026-08-01, fundamentada no [estudo de antecipação](../05-interno/estudo-antecipacao.md) §3: contato humano recorrente muda comportamento (meta-análise só de RCTs, g = 0,59); cutucão automatizado não (d = 0,004 corrigido viés). **A ligação é o produto; a IA prepara a pauta.**
 >
 > Dono: o sócio Conselheiro daquele cliente. **20 minutos, cronometrados.** O relatório mensal e o conselho trimestral continuam — isto é pulso, não substituição.
 
@@ -8,9 +8,9 @@
 
 ## Quando começa e quando não se aplica
 
-- **Começa** quando o cliente entra no degrau 3, **camadas Evolução ou Estratégia** (a camada Operação não inclui presença semanal de sócio — é o que diferencia as camadas, e é o que protege o teto de capacidade abaixo). Nunca antes do primeiro mês de manutenção: sem sistema vivo e sem diário, a semanal vira conversa vazia e mata a percepção de valor.
-- **Não se aplica** a Workshop, Avaliação e Sprint LGPD (têm começo, meio e fim).
-- **Durante o Programa** (16 semanas) vale a reunião de projeto, que é outra coisa e mais longa. A semanal assume quando o programa termina — e é exatamente a ponte que impede o "acabou, obrigado".
+- **Começa** na fase 3 do Programa (ou já na Assinatura), **camadas Evolução ou Estratégia** (a camada Operação não inclui presença semanal de sócio — é o que diferencia as camadas, e é o que protege o teto de capacidade abaixo). Nunca antes do primeiro mês de manutenção: sem sistema vivo e sem diário, a semanal vira conversa vazia e mata a percepção de valor.
+- **Não se aplica** à fase 1 nem à fase 2 do Programa (têm começo, meio e fim definidos).
+- **Durante as fases 1 e 2 do Programa** (semanas 1 ao mês 6) vale a reunião de projeto, que é outra coisa e mais longa. A semanal assume na fase 3 — e é exatamente a ponte que impede o "acabou, obrigado".
 
 ## Preparação (5 min, antes de ligar)
 

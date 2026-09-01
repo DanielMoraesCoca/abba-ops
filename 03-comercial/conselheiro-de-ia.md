@@ -1,6 +1,6 @@
 # Conselheiro de IA ABBA — produto (CAIO fracionário)
 
-> **Camada:** processo + definição comercial. Materiais: one-pager [`../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx`](../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx) · **deck do serviço** [`../08-materiais/modelos/servico-7-conselheiro-deck.pptx`](../08-materiais/modelos/servico-7-conselheiro-deck.pptx) (6 slides no padrão editorial, com o parecer de arbitragem real; **sem preços** — apresentar na conversa, ou enviar como aprofundamento depois dela; substituiu o deck de 10 slides em 2026-08-06, V3r) · [proposta completa](proposta-conselheiro-de-ia.md) · [arbitragem](../04-entrega/arbitragem-de-fornecedores.md) · anexo contratual no [contrato](contrato-sow-esqueleto.md). Operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Origem: decisão E1 da [análise estratégica](../05-interno/analise-estrategica-2026-07.md).
+> **Camada:** processo + definição comercial. Materiais: one-pager [`../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx`](../08-materiais/modelos/conselheiro-de-ia-onepager-modelo.docx) · **deck do serviço** [`../08-materiais/modelos/deck-conselheiro.pptx`](../08-materiais/modelos/deck-conselheiro.pptx) (gerado pelo gerador V5; substitui o `servico-7-conselheiro-deck.pptx` retirado na Virada V5, 2026-08-31; **sem preços** — apresentar na conversa, ou enviar como aprofundamento depois dela) · [proposta completa](proposta-conselheiro-de-ia.md) · [arbitragem](../04-entrega/arbitragem-de-fornecedores.md) · anexo contratual no [contrato](contrato-sow-esqueleto.md). Operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Origem: decisão E1 da [análise estratégica](../05-interno/analise-estrategica-2026-07.md).
 
 ## O depoimento que queremos ouvir em 12 meses (working backwards)
 
@@ -29,7 +29,7 @@ A cadeira de estrategista de IA da empresa, ocupada pela ABBA em regime fracion�
 
 ## Formatos e preços — vigentes (tabela v2, V3t 2026-08-06)
 
-> Preços vigentes na [tabela v2](tabela-de-precos.md). O racional do valor: senioridade recorrente + **a memória que melhora a cada ciclo, alimentada pelo aprendizado de todos os engajamentos** (padrões anonimizados — nunca dado bruto de um cliente em outro). Âncora de mercado: 61,9% dos conselheiros consultivos de capital fechado ganham até R$ 15 mil/mês (IBGC).
+> Preços vigentes na [tabela v3](tabela-de-precos.md) (Virada V5 — proposta, Pedro valida). O racional do valor: senioridade recorrente + **a memória que melhora a cada ciclo, alimentada pelo aprendizado de todos os engajamentos** (padrões anonimizados — nunca dado bruto de um cliente em outro). Âncora de mercado: 61,9% dos conselheiros consultivos de capital fechado ganham até R$ 15 mil/mês (IBGC).
 
 | Formato | Cadência | Preço (v2) |
 |---|---|---|
@@ -40,7 +40,7 @@ A cadeira de estrategista de IA da empresa, ocupada pela ABBA em regime fracion�
 
 Contrato de 12 meses, reajuste IPCA, saída com aviso de 60 dias. Fatura mensal.
 
-> **Pendência de sócios (rascunho v2):** se e como o [ritual semanal](../04-entrega/ritual-semanal.md) entra no **Trimestral** — a cadência semanal custa presença de sócio e o preço de R$ 6.000/mês foi calculado sem ela. Até a decisão, a semanal pertence ao Mensal e às camadas Evolução/Estratégia da manutenção; no Trimestral, a cadência é a do produto (ritual trimestral + arbitragens).
+> **Pendência de sócios (rascunho v2):** se e como o [ritual semanal](../04-entrega/ritual-semanal.md) entra no **Trimestral** — a cadência semanal custa presença de sócio e o preço do Trimestral foi calculado sem ela (base v2 de R$ 6.000/mês, hoje R$ 7.500/mês na v3). Até a decisão, a semanal pertence ao Mensal e às camadas Evolução/Estratégia da manutenção; no Trimestral, a cadência é a do produto (ritual trimestral + arbitragens).
 
 ## Duas portas de entrada
 

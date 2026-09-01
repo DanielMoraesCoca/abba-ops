@@ -1,5 +1,13 @@
 # A ABBA é útil? — o cálculo do utility delta
 
+> ⚠️ **NOTA DE ATUALIZAÇÃO (V5, 2026-08-31) — ler antes de usar este
+> estudo.** Este estudo fundamentou a decisão V4a e, na sequência, a Virada
+> V5 — ver [estudo da virada](estudo-virada-v5.md) e
+> [tabela v3](../03-comercial/tabela-de-precos.md). Menções no corpo a
+> "protótipo avulso R$ 26 mil como porta" agora correspondem à **fase 1 do
+> Programa** (mesmo valor, nova estrutura). A "jornada R$ 260 mil" virou o
+> **Programa por porte** (P/M/G: R$ 218/278/378 mil).
+
 > **Camada:** interno (estudo). Origem: pedido do sócio (2026-08-23) —
 > *"me ajude a fazer esse cálculo e ver se a ABBA mesmo é algo útil"*.
 > **Este é o estudo que originou a decisão V4a**: a
