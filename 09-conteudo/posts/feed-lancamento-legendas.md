@@ -46,8 +46,8 @@ história inteira. A ordem é a da conversa de venda, que já está provada no
 | 04 | O assessment gratuito | 8 | O primeiro passo, sem custo | O patrocinador e o CFO |
 | 05 | Parceiros oficiais | 5 | Em que tecnologia isso roda | O cético técnico |
 
-**Cadência:** uma peça a cada três dias, nesta ordem. As cinco no ar em quinze
-dias. Publicar tudo junto queima o material e nenhuma é vista.
+**Cadência:** uma peça por dia desde 28/08, nesta ordem (V4h). Publicar tudo
+junto queima o material e nenhuma é vista.
 
 ---
 
@@ -178,6 +178,32 @@ E a regra não muda com a ferramenta: aprovação humana nos pontos críticos. A
 
 Quem, no seu time, sairia dessa história com mais capacidade?
 
+## Peça 06 · O que é AI native
+
+> Fecha o Ato I. Herda da peça 05 pela frase *"a capacidade fica com vocês"* e
+> entrega ao Ato II a pergunta *"como você saberia que melhorou?"*, que a peça 07
+> responde com o estudo da METR.
+
+A peça de ontem terminou dizendo que a capacidade fica com vocês. Hoje vale explicar a frase que está na capa de tudo que a gente manda, porque ela merece uma definição em vez de virar slogan.
+
+Tornamos a sua empresa AI native.
+
+Comece por um experimento mental. Se você fundasse a sua empresa hoje, do zero, com IA disponível desde o primeiro dia, ela não seria assim. Você desenharia cada processo de outro jeito, e provavelmente alguns deles nem existiriam.
+
+Só que ninguém vai refundar a própria empresa. A sua já funciona. Tem clientes, contratos, gente boa e processos que deram certo ao longo de anos. Jogar isso fora para começar do zero não é opção, e nem deveria ser.
+
+Então AI native, aqui, quer dizer chegar no mesmo lugar sem refundar nada. A empresa que você teria desenhado hoje, construída a partir da que você já tem.
+
+Isso não é um evento. É um método, gargalo por gargalo.
+
+Primeiro mapear o que já dá certo, porque não se automatiza o caos. Depois achar o gargalo que tem número: onde o trabalho para, onde o dinheiro vaza, onde a decisão demora. Aí reconstruir aquele processo com IA, onde ela faz diferença e só aí. E medir o que mudou, com a métrica combinada antes.
+
+Tem uma última parte, que quase ninguém contrata e que decide o resultado. Quando a gente sai, as ferramentas ficam, e as pessoas sabem operá-las.
+
+Sistema sem gente formada vira software abandonado em seis meses. E aí a empresa não ficou AI native. Ficou com mais uma assinatura.
+
+Reconstruir processo é fácil de afirmar. Como você saberia que melhorou?
+
 ## Regras de publicação
 
 - **Sem travessão.** Vírgula, dois-pontos ou ponto. Em lista, ponto médio.
@@ -208,13 +234,47 @@ desperdiçado com "ABBA" sozinho.
 
 ---
 
-# Ato II e III · peças 08 a 13
+# Ato II e III · peças 07 a 14
 
-> Produzidas em 28/08, quando a cadência passou a ser diária. Mesmas regras de
-> publicação das anteriores: sem travessão, sem emoji, sem hashtag genérica, sem
-> link na legenda.
+> As peças 08 a 14 foram produzidas em 28/08, quando a cadência passou a ser
+> diária. A legenda da 07 foi escrita em 01/09, junto com a da 06. Mesmas regras
+> de publicação das anteriores: sem travessão, sem emoji, sem hashtag genérica,
+> sem link na legenda.
+
+## Peça 07 · O número desconfortável
+
+> Abre o Ato II. Herda da peça 06 pela pergunta *"como você saberia que
+> melhorou?"* e da peça 03 pela recusa *"prometer acurácia que não medimos"*.
+> Entrega à peça 08 a frase *"ninguém sabe se a ferramenta ajudou sem medir de
+> fora"*. Todos os números estão no cânone da
+> [base de evidências](../../00-identidade/base-de-evidencias.md).
+
+A peça de ontem terminou numa pergunta: como você saberia que melhorou?
+
+Existe um estudo que responde isso de um jeito incômodo, e ele é a razão de uma das nossas quatro recusas, a de prometer acurácia que não medimos.
+
+Desenvolvedores experientes ficaram 19% mais lentos usando IA. E saíram convencidos de que tinham ficado cerca de 20% mais rápidos.
+
+O estudo é da METR, de julho de 2025, e não foi enquete. Foram 16 desenvolvedores experientes e 246 tarefas reais, no código que eles mesmos dominavam. Metade das tarefas com IA, metade sem. O tempo foi cronometrado, não perguntado.
+
+A pergunta veio depois da medição, e é aí que dói. A distância entre o que aconteceu e o que eles sentiram passou de 40 pontos.
+
+Agora a parte que quase ninguém publica junto, e que a gente faz questão de dizer: isso não é argumento contra IA.
+
+A amostra é pequena e o cenário é específico. O maior experimento controlado já publicado sobre o mesmo tema, com 4.867 desenvolvedores, na Management Science, encontrou 26% mais tarefas concluídas. E os menos experientes foram justamente os que mais ganharam.
+
+Um achou perda, o outro achou ganho. Os dois mediram, e é por isso que os dois valem.
+
+Juntos eles dizem uma coisa só. Ninguém sabe se a ferramenta ajudou sem medir de fora. Nos dois estudos, quem estava usando não sabia qual dos dois casos era o seu.
+
+Se nem quem está usando sabe, como a diretoria saberia?
 
 ## Peça 08 · A causa nº 1 do fracasso
+
+> Gancho para trás acrescentado em 01/09, quando a legenda da peça 07 passou a
+> existir. A palavra de ligação é *"medir de fora"*.
+
+A peça de ontem fechou dizendo que ninguém sabe se a ferramenta ajudou sem medir de fora. Só que existe um problema que começa antes disso, lá na largada.
 
 Mais de 80% dos projetos de IA falham. É o dobro da taxa dos projetos de TI comuns.
 
