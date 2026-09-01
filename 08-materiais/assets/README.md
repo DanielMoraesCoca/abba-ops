@@ -14,7 +14,9 @@
 | `fotos/assessment--relatorio-interno.jpg` | servico-2 · slide 5 | Página interna do relatório de maturidade (modelo) |
 | `fotos/prototipo--relatorio-gono-go.jpg` | servico-3 · slide 5 | Página do relatório de protótipo GO/NO-GO (modelo) |
 | `fotos/construcao--relatorio-deployment.jpg` | servico-4 · slide 5 | Página do relatório de deployment (modelo) |
-| `fotos/portal--painel-real.jpg` | servico-5 · slide 2 | Print real do painel do portal ("Olá, Daniel") |
+| `fotos/portal--painel-real.jpg` | servico-5 · slide 2 | Print antigo do painel do portal ("Olá, Daniel", tema escuro) · **superado**: usar os dois abaixo |
+| `fotos/portal--inicio-atual.png` | captura 2026-09-01, portal atual (branch de remodelagem, sessão demo "Pedro / Ridgeline") | Tela Início do portal vigente (tema claro, pt-BR) · dados 100% demo |
+| `fotos/portal--aula-atual.png` | captura 2026-09-01, idem | Tela de aula real ("IA no seu trabalho", Foundation aula 1) · dados 100% demo |
 | `fotos/gerenciados--relatorio-mensal.jpg` | servico-6 · slide 5 | Página do relatório mensal (modelo) |
 | `fotos/conselheiro--parecer-arbitragem.jpg` | servico-7 · slide 3 | Página do parecer de arbitragem (modelo) |
 

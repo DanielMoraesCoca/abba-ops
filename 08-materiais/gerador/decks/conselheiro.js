@@ -1,6 +1,7 @@
 // deck-conselheiro — o Conselheiro de IA em 6 slides (substitui o
-// servico-7-conselheiro-deck retirado na V5). SEM precos. Com o parecer
-// de arbitragem real (empresa preservada). So para quem JA tem IA rodando.
+// servico-7-conselheiro-deck retirado na V5). SEM precos, SEM travessao.
+// Com o parecer de arbitragem real (empresa preservada). So para quem JA
+// tem IA rodando.
 const t = require("../tema");
 
 function base(pptx, etiqueta, tit, sub) {
@@ -22,16 +23,16 @@ module.exports = function gerar(pptx, assets) {
   t.capaNavy(pptx, {
     etiqueta: "ABBA · Conselheiro de IA",
     tituloTexto: "A cadeira de IA do seu\nlado da mesa.",
-    sub: "Direção estratégica fracionária para quem já tem IA rodando — sem o custo, nem o conflito, de mais um diretor em folha.",
+    sub: "Direção estratégica fracionária para quem já tem IA rodando. Sem o custo, nem o conflito, de mais um diretor em folha.",
   });
 
   // 2 — para quem
   let s = base(pptx, "Para quem é", "Você já construiu. A pergunta agora é outra.",
-    "O Conselheiro é para a empresa que já tem IA em produção — e por isso enfrenta as perguntas que ferramenta nenhuma responde:");
+    "O Conselheiro é para a empresa que já tem IA em produção, e por isso enfrenta as perguntas que ferramenta nenhuma responde:");
   const pergs = [
-    "O que priorizar no próximo trimestre — e o que recusar?",
+    "O que priorizar no próximo trimestre, e o que recusar?",
     "Este fornecedor entrega o que promete? A que preço isso se compara?",
-    "O que já rodou de fato mudou algum número — ou só virou demonstração?",
+    "O que já rodou de fato mudou algum número, ou só virou demonstração?",
     "Quem, da diretoria, sustenta essas respostas com registro, não com memória?",
   ];
   pergs.forEach((p, i) => {
@@ -41,12 +42,12 @@ module.exports = function gerar(pptx, assets) {
   });
 
   // 3 — o que e
-  s = base(pptx, "O que é", "Presença de direção, em fração — com tudo por escrito.");
+  s = base(pptx, "O que é", "Presença de direção, em fração. Com tudo por escrito.");
   const itens = [
     ["Na diretoria", "presença recorrente nas reuniões de direção: a pauta de IA preparada, defendida e registrada."],
-    ["Roadmap vivo", "a fila de oportunidades mantida e re-ranqueada conforme os números chegam — nunca um PDF parado."],
+    ["Roadmap vivo", "a fila de oportunidades mantida e re-ranqueada conforme os números chegam. Nunca um PDF parado."],
     ["Arbitragem de fornecedores", "parecer por escrito sobre cada proposta que chega à mesa: o que é real, o que é caro, o que é risco."],
-    ["Memória de decisão", "cada decisão registrada com a expectativa declarada antes e o resultado medido depois — imutável por construção."],
+    ["Memória de decisão", "cada decisão registrada com a expectativa declarada antes e o resultado medido depois. Imutável por construção."],
   ];
   itens.forEach((it, i) => {
     const y = 2.3 + i * 1.1;
@@ -63,21 +64,21 @@ module.exports = function gerar(pptx, assets) {
   // 5 — por que terceiro
   s = base(pptx, "Por que um terceiro", "Nenhum time interno pode ser a própria prova.");
   t.corpo(s,
-    "Quem executa não pode atestar o próprio resultado — é a razão pela qual empresas com um ótimo CFO " +
+    "Quem executa não pode atestar o próprio resultado. É a razão pela qual empresas com um ótimo CFO " +
     "ainda contratam quem verifique as contas de fora. O Conselheiro traz exatamente isso para a IA: " +
     "a expectativa declarada antes e imutável, o resultado medido e assinado por uma pessoa nomeada da " +
     "sua empresa, o histórico que nunca se apaga.\n\n" +
-    "Um diretor de IA contratado amanhã não substitui esse registro — ele o herda, e trabalha melhor por causa dele.",
+    "Um diretor de IA contratado amanhã não substitui esse registro. Ele o herda, e trabalha melhor por causa dele.",
     t.PAG.margem, 2.35, { w: W, h: 2.6, size: 15, lineSpacing: 24 });
   t.filete(s, t.PAG.margem, 5.3, W, t.FILETE_CLARO, 0.75);
   t.corpo(s,
-    "Sem exclusividade forçada, sem contrato que prende: a memória é sua e é exportável. A permanência se paga em valor — ou não se paga.",
+    "Sem exclusividade forçada, sem contrato que prende: a memória é sua e é exportável. A permanência se paga em valor, ou não se paga.",
     t.PAG.margem, 5.55, { w: W, h: 0.8, size: 13.5, serif: true, italic: true, cor: t.NAVY, lineSpacing: 21 });
 
   // 6 — CTA
   s = t.novoSlide(pptx, { fundo: t.NAVY });
   t.versalete(s, "O próximo passo", t.PAG.margem, 2.3, { size: 12 });
-  s.addText("Uma conversa de 45 minutos sobre a sua pauta de IA — e um parecer de exemplo sobre um fornecedor que já esteja na sua mesa.", {
+  s.addText("Uma conversa de 45 minutos sobre a sua pauta de IA. E um parecer de exemplo sobre um fornecedor que já esteja na sua mesa.", {
     x: t.PAG.margem, y: 2.85, w: W, h: 1.9,
     fontFace: t.SERIF, fontSize: 26, bold: true, color: "FFFFFF", lineSpacing: 38,
   });
