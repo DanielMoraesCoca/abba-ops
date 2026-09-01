@@ -92,6 +92,17 @@ auditado. Usar como ordem de grandeza, nunca como fato duro.**
 | Primeiro caso de uso (piloto+implantação) | R$ 30k–120k | Protótipo R$ 26k + Construção P R$ 60–90k |
 | Hora de dev / squad mensal | R$ 80–200/h · R$ 45–120k/mês | Nossa hora implícita R$ 405–500 — **justificar por método+prova, nunca por hora** |
 
+### Sobre retenção e contrato anual (a Virada V5)
+
+| Número | Fonte | Confiança | Como falar |
+|---|---|---|---|
+| Tenure médio de um auditor no S&P 500: **32,7 anos** | Audit Analytics (filings SEC) | ALTA | *"O auditor médio do S&P 500 fica 32,7 anos com o mesmo cliente — é o outro extremo do churn de serviços profissionais, e é para lá que miramos."* |
+| Churn anual em serviços profissionais: **16–27%**, pior quanto menor a firma e o ticket | CustomerGauge | MÉDIA | *"Em serviços profissionais, o churn anual corre de 16% a 27% — pior justamente para firmas pequenas e tickets baixos. É a penalidade que o ecossistema neutraliza."* |
+| Renovação automática gera **7×** mais continuidade, mas **24–36%** evitam a oferta quando ela está na entrada | Miller/Sahni/Strulov-Shlain, Chicago Booth WP 2022-44 (B2C — extrapolar com cautela) | ALTA | *"A renovação automática multiplica a continuidade por sete — mas só funciona oferecida depois que o cliente já decidiu ficar, nunca na entrada. Por isso a nossa é a partir do ano 2."* |
+| Switching costs: **relacional > procedural > financeiro** | Burnham/Frels/Mahajan 2003 + meta-análise Blut 2015 | ALTA | *"A literatura é consistente: o que mais prende não é multa, é processo — e o que mais prende de todos é vínculo relacional. É por isso que apostamos na cadência semanal, não numa cláusula."* |
+| Desconto corrói o preço de referência e a qualidade percebida; bônus preserva os dois | Journal of Retailing 2005/2021 | ALTA | *"Desconto seco ensina o cliente a esperar desconto. Bônus de fechamento entrega o mesmo valor sem corroer o preço — por isso nunca damos desconto, damos bônus."* |
+| Inadimplência empresarial brasileira em recorde: **R$ 213 bilhões** (2025) | Serasa Experian | ALTA | *"A inadimplência empresarial está em recorde no Brasil. Mensalidade longa sem entregável nomeado é a fatura mais fácil de cortar — por isso todo mês do nosso contrato nomeia o que entrega."* |
+
 ---
 
 ## 2. O ÍNDICE PROIBIDO — números banidos de todo material
@@ -107,6 +118,8 @@ incluído — usar um destes, o material volta.
 | "90% das organizações falham em treinamento de IA" | Manchete de vendor, sem metodologia | KPMG 47% + Wharton (medição frouxa) |
 | "payback de 5,1 meses em agentes (BCG/Forrester)" · "73% preferem preço por resultado (Futurum)" | Aparecem só em conteúdo com assinatura de geração por IA; fonte primária não localizada | Não usar. McKinsey 25% outcome-based cobre o argumento |
 | Qualquer "X% de acurácia" sem medição própria | Já era proibido (manifesto); permanece | Coerência medida ≠ acurácia; dizer o que foi medido |
+| **"32% vs 15% de churn de firmas pequenas vs grandes"** | Sem fonte primária — verificado na Virada V5 | 16–27% (CustomerGauge) + tenure do auditor S&P 500 de 32,7 anos (Audit Analytics) |
+| **Números de QBR de vendor ("+24% retenção" etc.)** | Sem fonte primária | Não usar |
 
 **Regra geral dos números emprestados:** todo número de terceiro sai com
 a fonte na frase ("a RAND mediu", "a Gartner projeta") e vira alvo de

@@ -10,7 +10,7 @@
 
 ## 1. Por que o ecossistema não é enfeite
 
-A ABBA é uma firma de dois sócios. A pesquisa de serviços profissionais é dura com esse tamanho: **firmas de 1 a 10 pessoas perdem em torno de 32% dos clientes por ano; firmas grandes, cerca de 15%.** A causa raramente é insatisfação. É que **o cliente não perde nada ao sair de uma firma pequena.** Não há sistema, não há comunidade, não há histórico que ele não consiga levar embora ou refazer.
+A ABBA é uma firma de dois sócios. A pesquisa de serviços profissionais é dura com esse tamanho: **o churn anual em serviços profissionais corre de 16% a 27%, pior quanto menor a firma e o ticket** (CustomerGauge, confiança média); no extremo oposto, **o tenure médio de um auditor no S&P 500 é de 32,7 anos** (Audit Analytics, confiança alta) — **o cliente não perde nada ao sair de uma firma pequena, e perde décadas de contexto ao sair de quem guarda o registro.** Não há sistema, não há comunidade, não há histórico que ele não consiga levar embora ou refazer.
 
 O ecossistema é o mecanismo que neutraliza essa penalidade estrutural. Ele funciona por cinco razões, da mais concreta à mais estratégica:
 

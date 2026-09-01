@@ -41,7 +41,7 @@ Regra: navy + dourado sobre branco = a cara da ABBA (sóbrio, premium, confiáve
 
 ## Modelos-mestres (a família completa)
 
-O modelo-mestre de proposta já existe: [`../08-materiais/modelos/proposta-comercial-modelo.docx`](../08-materiais/modelos/proposta-comercial-modelo.docx). A fila dos demais está no [catálogo de materiais](../08-materiais/README.md#4-o-que-ainda-não-existe-fila-de-produção-de-materiais) — **todo novo modelo deriva do mestre de proposta** (mesma capa, paleta, tabelas), nunca nasce do zero.
+O modelo-mestre de proposta do cardápio antigo foi **retirado na V5** — o novo mestre é o **Termo do Programa** (em regeneração; números na [tabela v3](../03-comercial/tabela-de-precos.md)). A fila dos demais está no [catálogo de materiais](../08-materiais/README.md#4-o-que-ainda-não-existe-fila-de-produção-de-materiais) — **todo novo modelo deriva do mestre de proposta** (mesma capa, paleta, tabelas), nunca nasce do zero.
 
 ## Regras de ouro
 

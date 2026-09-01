@@ -15,13 +15,14 @@ ABBA (Drive compartilhado)
 │
 ├── 02 Clientes/                      ← pasta criada no estágio 04-contrato, nunca antes
 │   └── NomeCliente/
-│       ├── 01 Contrato/              (contrato assinado, aditivos, NF-e emitidas)
+│       ├── 01 Contrato/              (Termo do Programa assinado, aditivos, NF-e emitidas)
 │       ├── 02 Onboarding/            (kickoff, acessos, lista de participantes)
-│       ├── 03 Avaliacao/             (relatório de avaliação, one-pager, briefing)
-│       ├── 04 Construcao/            (specs dos agentes, atas de aprovação)
-│       ├── 05 Capacitacao/           (plano de capacitação, presença presencial, certificados)
-│       ├── 06 Manutencao/            (relatórios mensais, incidentes)
-│       └── 07 Conselho/              (atas do ritual trimestral, metas declaradas)
+│       ├── 03 Programa/              (as 3 fases do Programa — ver legado abaixo)
+│       │   ├── Fase 1 - A Prova/     (diagnóstico, caso medido, portfólio priorizado)
+│       │   ├── Fase 2 - A Construcao/ (specs dos agentes, atas de aprovação, plano de capacitação, certificados)
+│       │   └── Fase 3 - A Durabilidade/ (relatórios mensais, ritual semanal, incidentes)
+│       ├── 04 Assinatura/            (ano 2+: relatórios mensais, Exame Anual de IA, incidentes)
+│       └── 05 Conselho/              (atas do ritual trimestral, metas declaradas)
 │
 ├── 03 Modelos/                       ← exports DOCX/PPTX dos templates do git — SOMENTE LEITURA
 │   ├── Academy/                      (PDF dos materiais finais de treinamento + artes dos cards)
@@ -38,6 +39,12 @@ ABBA (Drive compartilhado)
     ├── Decks publicos/               (apresentação institucional, deck de vendas)
     └── Site/                         (conteúdo e assets do site de marketing)
 ```
+
+> **Legado (pré-V5):** a estrutura anterior organizava `02 Clientes/` por
+> produto/etapa (`03 Avaliacao`, `04 Construcao`, `05 Capacitacao`, `06
+> Manutencao`, `07 Conselho`) — mantida como referência para pastas de
+> clientes já criadas antes da Virada V5; clientes novos usam a árvore
+> acima, por caminho.
 
 ## Convenções de nome
 
@@ -68,7 +75,7 @@ Existe um Drive ABBA anterior com testes e rascunhos: [pasta "ABBA"](https://dri
 
 | Arquivo na pasta antiga | O que é | Destino no Drive oficial |
 |---|---|---|
-| `ABBA_Proposta_Comercial.docx` | Versão anterior da proposta Galápagos **com preços (R$ 150K total)** | `04 Interno/Estrategia historica/` — superada pelo [modelo canônico](../08-materiais/modelos/proposta-comercial-modelo.docx); preços registrados na [planilha de precificação](../03-comercial/precificacao-planilha.md) |
+| `ABBA_Proposta_Comercial.docx` | Versão anterior da proposta Galápagos **com preços (R$ 150K total)** | `04 Interno/Estrategia historica/` — superada — o modelo canônico antigo foi retirado na V5; números vigentes na [tabela v3](../03-comercial/tabela-de-precos.md); preços registrados na [planilha de precificação](../03-comercial/precificacao-planilha.md) |
 | `ABBA_Proposta_Comercial.pptx` | Deck da proposta | `03 Modelos/Comercial/` — revisar contra o modelo canônico antes de reusar |
 | `ABBA_Institucional [Autosaved].pptx` | Deck institucional (tentativa anterior) | `04 Interno/Estrategia historica/` — superado pelo [novo deck](../08-materiais/modelos/abba-deck-institucional.pptx); garimpar slides bons antes de arquivar |
 | `ABBA_Termo_Aceite.docx` | **Termo de aceite formal de entregáveis** | `03 Modelos/Entrega/` — vivo! Transcrito para o repo: [`04-entrega/termo-de-aceite.md`](../04-entrega/termo-de-aceite.md) |

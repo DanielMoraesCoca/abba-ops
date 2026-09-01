@@ -23,7 +23,7 @@
 
 - **Perfil:** empresas brasileiras de médio porte (50–500 colaboradores), faturamento **R$ 50–500 milhões/ano** (proposta, sócios confirmam), que já tentaram algo com IA e não escalou, ou sentem urgência do tema no conselho.
 - **Beachhead — por forma, não por setor** (decisão dos sócios, 2026-08-01): empresa que já tentou e não escalou **+** tem uma dor financeira já medida. O eixo de densidade é maturidade de adoção + moldura regulatória brasileira, não indústria. Material setorial de jurídico/serviços profissionais segue como ativo reutilizável, não como estratégia de entrada.
-- **Comprador:** CEO/diretoria (programa) · CFO/Controladoria (porta financeira) · Jurídico/DPO (sprint LGPD) · o dono da dor (produtos de entrada).
+- **Comprador:** CEO/diretoria (o Termo do Programa) · CFO/Controladoria (porta financeira) · Jurídico/DPO (governança de IA como capacidade da fase 1, não oferta separada) · quem já tem IA rodando (Conselheiro).
 
 > **Qualificação e critérios de recusa:** [`alvo.md`](alvo.md) — o teste de 6 perguntas (5 + a de calendário) e as sete situações em que a resposta é não.
 
@@ -31,18 +31,18 @@
 
 | Linha | Produto | Natureza |
 |---|---|---|
-| Entrada | Workshop Shadow AI · Avaliação de Prontidão · Sprint LGPD | Pontual, baixo atrito, converte para o programa |
-| Herói | Programa Completo de Transformação | Projeto, alto valor |
-| Recorrente | Manutenção em **3 camadas** (Operação · Evolução · Estratégia) com **ritual semanal de 20 min** nas camadas Evolução+ e conselho trimestral · mini-ciclos por caso de uso | Assinatura — o objetivo de longo prazo é a base recorrente pagar os custos fixos |
-| **Conselheiro de IA** | A criação nova: CAIO fracionário — presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](../03-comercial/conselheiro-de-ia.md)) | Recorrente; 2 portas: pós-programa ou venda direta a quem já tem IA rodando |
+| Abertura | Mapa de Vazamento (grátis) | Porta única, isca; workshop/avaliação/sprint LGPD saíram da vitrine — viram capacidades internas da fase 1 do Programa |
+| Herói | O Programa — "AI Native · Ano 1" (12 meses, 3 fases, 3 portões sem multa) | Contratação em dois tempos: fase 1 firme (R$ 26 mil), fases 2–3 opção condicionada ao Portão da Prova |
+| Recorrente | A Assinatura da Capacidade (ano 2+): operação sob SLA, ritual semanal, conselho trimestral e o Exame Anual de IA · mini-ciclos por caso de uso | Assinatura — motor de recorrência perpétua; renovação automática a partir do ano 2 |
+| **Conselheiro de IA** | CAIO fracionário — presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](../03-comercial/conselheiro-de-ia.md)) | Recorrente; só para quem já tem IA rodando — nunca para quem pode comprar o Programa |
 
-Preços: **tabela v1 vigente desde 2026-07-23** ([tabela](../03-comercial/tabela-de-precos.md)); a [metodologia](../03-comercial/precificacao-metodologia.md) rege a construção da v2.
+Preços: **tabela v3 — a Virada V5** ([tabela](../03-comercial/tabela-de-precos.md); proposta — Pedro valida).
 
 ## 5. Operação
 
 - **Time:** 2 sócios-fundadores, [setores como chapéus](../01-setores/README.md). Contratação futura disparada pelos gatilhos definidos lá.
 - **Ferramentas próprias:** assessment-brain (avaliação) e portal ABBA (capacitação). Construção de agentes: **CrewAI** como stack, sob medida por cliente. O repo ABBA original é o **legado/origem da empresa** — ativos reutilizáveis, não ferramenta de entrega atual. Mapa completo: [jornada × ferramentas](../06-ferramentas/mapa-jornada-ferramentas.md).
-- **Capacidade:** com utilização de 50–60%, 2 sócios suportam ~{{N_ENGAJAMENTOS}} engajamentos simultâneos (1 programa completo + 1–2 produtos de entrada). Acima disso, fila ou contratação.
+- **Capacidade:** com utilização de 50–60%, 2 sócios suportam ~{{N_ENGAJAMENTOS}} engajamentos simultâneos (1 Termo do Programa + Mapas de Vazamento, sem custo de capacidade relevante). Acima disso, fila ou contratação.
 
 ## 6. Go-to-market (ano 1)
 
@@ -51,13 +51,13 @@ Preços: **tabela v1 vigente desde 2026-07-23** ([tabela](../03-comercial/tabela
 3. **LinkedIn dos fundadores** + material setorial (jurídico) para prospecção dirigida.
 4. **Indicação estruturada:** cada encerramento pede 2 indicações (embutido no [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md)).
 
-## 7. Metas do ano 1 (BLOCO DE DECISÃO DOS SÓCIOS — vazio de propósito: número de meta é decisão de sócio, não de consultor; âncoras da pesquisa na [Visão 2029](visao-2029.md) §7)
+## 7. Metas do ano 1 (BLOCO DE DECISÃO DOS SÓCIOS — vazio de propósito: número de meta é decisão de sócio, não de consultor; âncoras da pesquisa na [Visão 2029](visao-2029.md) §7 e a matemática honesta de capacidade no [estudo V5 §7](../05-interno/estudo-virada-v5.md) — meta honesta do ano 1: **3–4 Termos do Programa assinados**)
 
 | Métrica | Meta |
 |---|---|
 | Cliente charter fechado | até {{DATA}} |
 | Estudo de caso publicado | até {{DATA}} |
-| Clientes pagantes no ano | {{N}} |
+| Termos do Programa assinados no ano | {{N}} (referência V5: 3–4 — [estudo §7](../05-interno/estudo-virada-v5.md)) |
 | Receita no ano | R$ {{VALOR}} |
 | % receita recorrente no mês 12 | {{PCT}}% |
 

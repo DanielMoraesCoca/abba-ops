@@ -4,7 +4,7 @@
 
 ## 1. Camadas de serviço
 
-> A manutenção é vendida em 3 camadas ([tabela — preços v2 em rascunho](../03-comercial/tabela-de-precos.md)). **As severidades e tempos da seção 2 são idênticos nas três** — o que muda é escopo de evolução e presença estratégica, nunca a segurança.
+> As 3 camadas são a estrutura INTERNA de entrega da **fase 3 do Programa** e da **Assinatura da Capacidade** — não é mais venda separada ([modelo de serviço](../00-identidade/modelo-de-servico.md); [tabela v3](../03-comercial/tabela-de-precos.md)). **As severidades e tempos da seção 2 são idênticos nas três** — o que muda é escopo de evolução e presença estratégica, nunca a segurança.
 
 | | **Camada 1 · Operação** | **Camada 2 · Evolução** | **Camada 3 · Estratégia** |
 |---|---|---|---|
@@ -15,7 +15,7 @@
 
 Camada contratada neste anexo: **{{CAMADA_CONTRATADA}}**.
 
-**Transição entre camadas** (regras contratuais — [detalhe comercial](../03-comercial/proposta-continuidade.md)): upgrade a qualquer momento com aprovação por escrito (pró-rata no ciclo corrente); downgrade só no aniversário da renovação, aviso de 30 dias; horas de evolução não cumulativas — aviso obrigatório ao cliente aos 80% de consumo do mês; excedente vira mini-ciclo cotado, nunca fatura-surpresa. Faturamento mensal pelo valor da camada vigente.
+**Transição entre camadas** (regras contratuais — [detalhe comercial](../03-comercial/tabela-de-precos.md)): upgrade a qualquer momento com aprovação por escrito (pró-rata no ciclo corrente); downgrade só no aniversário da renovação, aviso de 30 dias; horas de evolução não cumulativas — aviso obrigatório ao cliente aos 80% de consumo do mês; excedente vira mini-ciclo cotado, nunca fatura-surpresa. Faturamento mensal pelo valor da camada vigente.
 
 ## 1b. Escopo coberto
 
@@ -51,7 +51,7 @@ O relatório mensal segue o modelo Word canônico: [`../08-materiais/modelos/rel
 
 ## 4. Condições
 
-- Vigência: 12 meses, renovação automática salvo aviso de 30 dias
-- Valor: {{PRECO_MANUTENCAO}}/mês · reajuste anual IPCA · fatura mensal
+- Vigência: 12 meses. **Renovação automática vale a partir do ano 2** (nunca na venda inicial do Programa — [tabela v3](../03-comercial/tabela-de-precos.md)), aviso de saída de 60 dias
+- Valor: {{PRECO_MANUTENCAO}}/mês — Assinatura da Capacidade por porte: **P R$ 11.000 · M R$ 15.000 · G R$ 21.000/mês** ([tabela v3](../03-comercial/tabela-de-precos.md)) · reajuste anual IPCA · fatura mensal (anual antecipado −8%)
 - Suspensão por inadimplência > {{30}} dias (agentes seguem rodando; suporte e evolução pausam)
 - Revisão de volumes: se execuções/usuários crescerem >{{50}}% sobre o contratado, as Partes repactuam
