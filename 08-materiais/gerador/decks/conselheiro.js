@@ -1,4 +1,4 @@
-// deck-conselheiro — o Conselheiro de IA em 6 slides (substitui o
+// deck-conselheiro — o Conselheiro de IA em 7 slides (substitui o
 // servico-7-conselheiro-deck retirado na V5). SEM precos, SEM travessao.
 // Com o parecer de arbitragem real (empresa preservada). So para quem JA
 // tem IA rodando.
@@ -44,16 +44,31 @@ module.exports = function gerar(pptx, assets) {
   // 3 — o que e
   s = base(pptx, "O que é", "Presença de direção, em fração. Com tudo por escrito.");
   const itens = [
-    ["Na diretoria", "presença recorrente nas reuniões de direção: a pauta de IA preparada, defendida e registrada."],
-    ["Roadmap vivo", "a fila de oportunidades mantida e re-ranqueada conforme os números chegam. Nunca um PDF parado."],
-    ["Arbitragem de fornecedores", "parecer por escrito sobre cada proposta que chega à mesa: o que é real, o que é caro, o que é risco."],
-    ["Memória de decisão", "cada decisão registrada com a expectativa declarada antes e o resultado medido depois. Imutável por construção."],
+    ["Na diretoria", "presença estruturada e recorrente: resultados contra os objetivos que vocês declararam, no máximo três recomendações priorizadas por encontro, decisões registradas em ata."],
+    ["Roadmap vivo", "a fila de oportunidades mantida e re-ranqueada conforme os números chegam, para que a empresa decida a própria agenda de IA em vez de reagir à agenda de quem vende."],
+    ["Arbitragem de fornecedores", "cada proposta que chega à mesa vira um parecer por escrito, em até cinco dias úteis: isso é real? é para nós? qual o preço justo?"],
+    ["Memória de decisão", "cada recomendação entra no registro com o número que dirá, depois, se deu certo: expectativa declarada antes, resultado medido depois, imutável por construção."],
   ];
   itens.forEach((it, i) => {
     const y = 2.3 + i * 1.1;
     t.filete(s, t.PAG.margem, y, W, t.FILETE_CLARO, 0.75);
     t.versalete(s, it[0], t.PAG.margem, y + 0.12, { w: 3.1, size: 10.5 });
     t.corpo(s, it[1], t.PAG.margem + 3.3, y + 0.1, { w: W - 3.3, h: 0.9, size: 13, lineSpacing: 19 });
+  });
+
+  // 3b — a honestidade de sempre: o que NAO e
+  s = base(pptx, "A honestidade de sempre", "O que o Conselheiro NÃO é.");
+  const naoE = [
+    ["Não é banco de horas", "é senioridade recorrente com pauta própria. Execução é cotada à parte, e você sabe o preço antes."],
+    ["Não é suporte técnico", "operação sob SLA é outro serviço. Os dois convivem, cada um com a sua promessa."],
+    ["Não é parecer jurídico", "governança e adequação, sim; advocacia e representação perante a ANPD, não."],
+    ["Não é terceirizar a decisão", "nós recomendamos com convicção. Quem decide são vocês, e fica registrado quem decidiu o quê."],
+  ];
+  naoE.forEach((it, i) => {
+    const y = 2.35 + i * 1.1;
+    t.filete(s, t.PAG.margem, y, W, t.FILETE_CLARO, 0.75);
+    t.versalete(s, it[0], t.PAG.margem, y + 0.12, { w: 3.4, size: 10.5 });
+    t.corpo(s, it[1], t.PAG.margem + 3.6, y + 0.1, { w: W - 3.6, h: 0.9, size: 13, lineSpacing: 19 });
   });
 
   // 4 — o parecer real

@@ -58,7 +58,7 @@ module.exports = function gerar(pptx, assets) {
     "Cada capacidade que a ABBA opera tem lugar e hora dentro do Programa. Nada é vendido em separado: é assim que o sistema funciona.");
   const linhas = [
     ["Avaliação profunda", "Fase 1", "O mergulho do conselho à linha de frente: onde o dinheiro vaza, o que a empresa tem de base, quem vive cada processo. Sai o retrato completo de oportunidades, ranqueado por retorno e esforço."],
-    ["Protótipo medido", "Fase 1", "O caso escolhido construído com os seus dados e posto em uso real, contra a métrica combinada por escrito na primeira semana. É a primeira parede da obra: é ela que paga a fundação do resto."],
+    ["Protótipo medido", "Fase 1", "O caso escolhido construído com os seus dados e posto em uso real, contra a métrica combinada por escrito na primeira semana. É a prova antes do investimento: a diretoria decide GO ou NO-GO com números na mesa."],
     ["Construção", "Fase 2", "Os casos aprovados em produção: arquitetura, integrações com os seus sistemas e agentes com aprovação humana nos pontos certos. Erro caro passa por gente antes de acontecer."],
     ["Capacitação", "Fase 2", "A turma da sua equipe no nosso portal, uma prática por dia no trabalho real, com fluência medida em 30, 60 e 90 dias. Sistema novo e gente formada andam juntos."],
     ["Operação assistida", "Fase 3", "SLA, presença semanal e relatório mensal de projetado versus realizado, com a nossa mão cada vez mais leve, de propósito."],
@@ -109,14 +109,14 @@ module.exports = function gerar(pptx, assets) {
   // 6 — o portao
   s = t.novoSlide(pptx, { fundo: t.NAVY });
   t.versalete(s, "O Portão da Prova · semana 6", t.PAG.margem, 1.9, { size: 12 });
-  s.addText("Se o número combinado não apareceu, ou se você simplesmente mudar de ideia, você sai levando tudo. Sem multa.", {
-    x: t.PAG.margem, y: 2.45, w: W, h: 2.0,
-    fontFace: t.SERIF, fontSize: 25, bold: true, color: "FFFFFF", lineSpacing: 35,
+  s.addText("Ao término da fase 1, a decisão de continuar é integralmente sua. Se o resultado medido não confirmar o critério combinado, o Programa se encerra ali: sem multa, e com os entregáveis em suas mãos.", {
+    x: t.PAG.margem, y: 2.35, w: W, h: 2.2,
+    fontFace: t.SERIF, fontSize: 21, bold: true, color: "FFFFFF", lineSpacing: 30,
   });
   t.filete(s, t.PAG.margem, 4.7, 2.2, t.OURO, 1.5);
   s.addText(
-    "Há mais dois portões como este: no mês 6 e no mês 12. Nenhuma fase começa sem a anterior ter provado. " +
-    "Se a gente não bater o número, a gente não segue. É o nosso risco, não o seu.",
+    "Os portões se repetem no mês seis e no mês doze. Nenhuma fase se inicia sem que a anterior tenha " +
+    "comprovado o seu resultado: o risco de continuidade é nosso, não seu.",
     { x: t.PAG.margem, y: 4.95, w: W, h: 0.9, fontFace: t.SERIF, fontSize: 15, italic: true, color: "D8DCE8", lineSpacing: 23 });
 
   // 7 — fase 2
