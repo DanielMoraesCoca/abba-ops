@@ -14,5 +14,6 @@ for f in "$@"; do
       -e "s|body { margin:0; }|body { margin:0; background:$BG; } html,body{height:1350px;overflow:hidden}|" "$f.dc.html" > "$OUT/$f.html"
   /opt/pw-browsers/chromium-1194/chrome-linux/chrome --headless --disable-gpu --no-sandbox \
     --hide-scrollbars --force-device-scale-factor=$SCALE --window-size=1080,1350 \
+    --default-background-color=${BG#\#}ff \
     --virtual-time-budget=2500 --screenshot="$OUT/$f.png" "file://$OUT/$f.html" 2>/dev/null
 done
