@@ -405,7 +405,7 @@ peca("peca-05", "05 · Parceiros oficiais", "Parceiro", 5, [
 <p class="label">O que isso muda na prática</p>
 <table>
 <tr><td class="k">01</td><td><b>Ninguém sai refém.</b> As soluções são construídas em tecnologia de mercado, com a documentação pública que qualquer time consegue ler depois.</td></tr>
-<tr><td class="k">02</td><td><b>A capacidade fica com vocês.</b> Quem constrói durante a capacitação é o time de vocês, não a gente.</td></tr>
+<tr><td class="k">02</td><td><b>A capacidade fica com vocês.</b> As primeiras soluções quem constrói somos nós, com o dono do processo do lado. O seu time é formado em paralelo, e no topo da trilha passa a construir os próprios fluxos.</td></tr>
 </table>
 ''' + note("·", "Aprovação humana nos pontos críticos continua valendo em qualquer ferramenta: a IA executa, gente da sua confiança valida."), False),
  ("O PRÓXIMO PASSO", '''

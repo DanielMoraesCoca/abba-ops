@@ -172,7 +172,11 @@ Vale dizer o que refém significa aqui, porque é o que mais assusta quem já se
 
 As soluções são construídas em tecnologia de mercado, com documentação pública que qualquer time consegue ler depois que a gente sair. Se um dia você quiser trocar de parceiro, dá.
 
-A segunda é que a capacidade fica com vocês, porque quem constrói durante a capacitação é o time de vocês, não a gente.
+A segunda é que a capacidade fica com vocês. E vale ser exato aqui, porque é onde muita gente promete demais.
+
+As primeiras soluções quem constrói somos nós, com o dono de cada processo do lado, revisando a especificação e assinando o aceite. O seu time é formado em paralelo, e no topo da trilha passa a construir os próprios fluxos, com a nossa curadoria.
+
+Por isso a palavra é capacidade, e não entrega. O que a gente promete é que a sua empresa saiba operar, mudar e cobrar resultado do que ficou funcionando.
 
 E a regra não muda com a ferramenta: aprovação humana nos pontos críticos. A IA executa, gente da sua confiança valida.
 
