@@ -1,13 +1,13 @@
-# Ficha de Linha de Base — a medição do dia 0
+# Ficha de Linha de Base: a medição do dia 0
 
 > **O que resolve:** o [kit do facilitador](../04-entrega/kit-do-facilitador.md)
 > exige "linha de base medida" como saída obrigatória do kickoff e lista a
-> "ficha da linha de base" entre os materiais — e o instrumento não
+> "ficha da linha de base" entre os materiais, e o instrumento não
 > existia. Sem ele, a promessa que mais nos diferencia (*"medimos, semanas
 > depois, se o comportamento mudou"*) não tem contra o que comparar.
 >
 > **Quando:** no kickoff, bloco de 30 minutos (semana 0). Nunca por e-mail
-> depois — quem responde em casa responde outra coisa.
+> depois, quem responde em casa responde outra coisa.
 >
 > **Quanto tempo:** 12 minutos de aplicação. A ficha é curta de propósito:
 > instrumento longo no dia 0 tem resposta pior, e cada pergunta a mais é
@@ -30,7 +30,7 @@
 
 ---
 
-## PARTE A — o retrato de hoje
+## PARTE A: o retrato de hoje
 
 *Aplicada a cada participante. 6 minutos. Papel ou formulário.*
 
@@ -48,8 +48,8 @@ por semana ☐ todo dia
 
 `_______________________________________________`
 
-**A3.** Nos últimos 30 dias, você entregou a alguém — chefe, colega,
-cliente, área vizinha — algum trabalho **feito com ajuda de IA**?
+**A3.** Nos últimos 30 dias, você entregou a alguém: chefe, colega,
+cliente, área vizinha: algum trabalho **feito com ajuda de IA**?
 
 ☐ não ☐ sim, uma ou duas vezes ☐ sim, várias vezes
 ☐ não sei dizer
@@ -80,16 +80,16 @@ consome** e que você acha repetitiva?
 **A8.** De 0 a 10, o quanto você concorda: *"eu saberia explicar a um
 colega como usar IA no trabalho dele sem que ele se meta em encrenca."*
 
-`0 — 1 — 2 — 3 — 4 — 5 — 6 — 7 — 8 — 9 — 10`
+`0 · 1 · 2 · 3 · 4 · 5 · 6 · 7 · 8 · 9 · 10`
 
 > **A8 é a única pergunta de percepção da ficha, e é proposital que ela
 > seja sobre *ensinar*, não sobre *saber*.** Quem consegue ensinar
 > aplicou; quem só acha que sabe, não. É a mesma régua da Formação de
-> Campeão — medida no dia 0, antes de qualquer aula.
+> Campeão: medida no dia 0, antes de qualquer aula.
 
 ---
 
-## PARTE B — a tarefa-âncora
+## PARTE B: a tarefa-âncora
 
 *Aplicada a cada participante, logo depois da Bússola v0. 4 minutos.*
 
@@ -122,12 +122,12 @@ volume, retrabalho, devolução, reclamação, fila)
 `_______________________________________________`
 
 > **B3 e B5 são o par que faz o relatório d90.** B3 é a estimativa da
-> pessoa — subjetiva, e tudo bem, porque será reestimada com a mesma
+> pessoa: subjetiva, e tudo bem, porque será reestimada com a mesma
 > pergunta. B5 é o gancho para o número objetivo, quando existir.
 
 ---
 
-## PARTE C — a âncora do patrocinador
+## PARTE C: a âncora do patrocinador
 
 *Aplicada uma vez, com o patrocinador, na preparação do kickoff. Não vai
 para os participantes.*
@@ -150,10 +150,10 @@ que você aceitaria como prova de que a turma valeu?
 `_______________________________________________`
 
 > **Regra dura da Parte C:** o indicador tem que **já existir e já ser
-> apurado**. Indicador que exige levantamento novo não é apurado no d90 —
+> apurado**. Indicador que exige levantamento novo não é apurado no d90:
 > nunca é. Se o patrocinador não tiver nenhum, registre isso como está e
 > diga em voz alta: *"então a nossa prova vai ser o relato dos gestores e
-> o tempo estimado pelas pessoas — é mais fraco, e é honesto dizer
+> o tempo estimado pelas pessoas: é mais fraco, e é honesto dizer
 > agora."*
 
 ---
@@ -162,26 +162,26 @@ que você aceitaria como prova de que a turma valeu?
 
 | Min | O quê |
 |---|---|
-| 0–3 | **Enquadrar.** *"Isto não é prova e não vai para o seu gestor com o seu nome. É a fotografia de hoje, para que daqui a três meses a gente saiba se mudou alguma coisa de verdade — em vez de perguntar se vocês gostaram."* |
+| 0–3 | **Enquadrar.** *"Isto não é prova e não vai para o seu gestor com o seu nome. É a fotografia de hoje, para que daqui a três meses a gente saiba se mudou alguma coisa de verdade: em vez de perguntar se vocês gostaram."* |
 | 3–9 | Parte A, em silêncio |
 | 9–20 | Bússola v0 (o bloco que já existe no kit) |
-| 20–24 | Parte B, logo depois da Bússola — a tarefa-âncora costuma ser a mesma do PARAR |
+| 20–24 | Parte B, logo depois da Bússola: a tarefa-âncora costuma ser a mesma do PARAR |
 | 24–30 | Recolher, conferir se **100% respondeu**, anunciar a data da graduação |
 
 **Saída obrigatória:** 100% da turma com Parte A e B preenchidas.
-Ficha faltando é participante que não vai existir no relatório d90 — e
+Ficha faltando é participante que não vai existir no relatório d90, e
 uma turma com furo na linha de base não tem relatório, tem impressão.
 
 ---
 
-## Privacidade — o que se promete e o que se cumpre
+## Privacidade: o que se promete e o que se cumpre
 
 - A ficha individual **não** vai para o gestor. O gestor recebe o
   **agregado da área** e, separadamente, o que o próprio participante
   autorizou a compartilhar na Bússola (o portal já trata essa autorização
   como opt-in explícito).
 - Turma com menos de 5 pessoas numa área: o agregado daquela área **não é
-  publicado** — com 3 pessoas, agregado é identificação.
+  publicado**: com 3 pessoas, agregado é identificação.
 - As fichas em papel ficam com a ABBA até a digitação e são destruídas
   depois; o digitado vive no tenant do cliente, sob o
   [DPA](../06-ferramentas/ferramenta-portal.md).
@@ -191,7 +191,7 @@ uma turma com furo na linha de base não tem relatório, tem impressão.
 
 ---
 
-## Reaplicação — d30, d60, d90
+## Reaplicação: d30, d60, d90
 
 | Marco | O que se aplica | Como |
 |---|---|---|
@@ -200,7 +200,7 @@ uma turma com furo na linha de base não tem relatório, tem impressão.
 | d90 | Parte A + B completa + Parte C apurada com o patrocinador | ficha completa + reunião de graduação |
 
 O relatório de graduação compara três coisas, nesta ordem: **o
-comportamento** (A1, A3, A4 — o que a pessoa faz, não o que ela acha), **o
+comportamento** (A1, A3, A4: o que a pessoa faz, não o que ela acha), **o
 tempo estimado** (B3 antes × depois) e **o número do patrocinador** (C1),
 quando existir.
 

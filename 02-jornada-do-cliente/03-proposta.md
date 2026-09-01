@@ -1,4 +1,4 @@
-# Estágio 03 — Proposta
+# Estágio 03: Proposta
 
 **Dono:** chapéu Comercial · **Prazo-alvo:** proposta enviada em até **3 dias úteis** após a conversa que a pediu
 
@@ -8,7 +8,7 @@ Lead qualificado pediu proposta, ou a apresentação da degustação ([estágio 
 ## Checklist
 
 - [ ] Escolher o produto certo: dor difusa/curiosidade → **Workshop Shadow AI** · decisão de investimento em IA → **Avaliação de Prontidão** · dor jurídica/compliance → **Sprint LGPD** · avaliação já feita + apetite confirmado → **Programa Completo**
-- [ ] Preços SOMENTE da [tabela v1 vigente](../03-comercial/tabela-de-precos.md) (fixada 2026-07-23) — nunca improvisar valor
+- [ ] Preços SOMENTE da [tabela v1 vigente](../03-comercial/tabela-de-precos.md) (fixada 2026-07-23), nunca improvisar valor
 - [ ] Copiar o template correspondente de [`03-comercial/`](../03-comercial/) e preencher TODOS os `{{CAMPOS}}` (nada de placeholder sobrando)
 - [ ] Personalizar com as dores anotadas na descoberta (palavras do prospect, não as nossas)
 - [ ] Revisão cruzada: o outro sócio lê antes do envio (4 olhos em tudo que sai)

@@ -1,14 +1,14 @@
-# Ferramenta: Agentes — ficha de negócio
+# Ferramenta: Agentes: ficha de negócio
 
-> **Nome externo:** "Agentes ABBA" / serviços gerenciados · **stack interna:** CrewAI + roteamento de LLMs. Serve os estágios [07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) e [09](../02-jornada-do-cliente/09-manutencao.md). (O repo ABBA original é legado/origem — nada aqui depende dele.)
+> **Nome externo:** "Agentes ABBA" / serviços gerenciados · **stack interna:** CrewAI + roteamento de LLMs. Serve os estágios [07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) e [09](../02-jornada-do-cliente/09-manutencao.md). (O repo ABBA original é legado/origem: nada aqui depende dele.)
 
 ## O que podemos prometer hoje
 
 | ✅ Prometer | ⚠️ Com cuidado | ❌ Não prometer (ainda) |
 |---|---|---|
-| Agentes sob medida com **pontos de aprovação humana** e limites de custo, integrados aos sistemas do cliente | Prazo de construção: só após a conta/via CrewAI ativa (R9) — até lá, cronograma com folga de setup explícita | "suporte 24/7" — o SLA honesto (P9 ✅ 2026-07-23) é: monitoramento automatizado 24/7 + humano 9h–18h + S1 em 4h corridas ([SLA](../04-entrega/sla-manutencao.md)) |
-| Deploy em nuvem gerenciada OU on-premise (a escolha é do cliente) | "Orquestramos o ecossistema (CrewAI, principais LLMs)" = uso de stack, verdadeiro | "Parceria formal" onde houver só parceria de uso — P8 ✅ (2026-07-23): dizer "stack orquestrada com parceiros oficiais"; comprovantes no Drive. Nunca afirmar contrato assinado |
-| Inventário de decisões automatizadas mapeado ao Art. 20 LGPD | Operação assistida de 30 dias pós go-live | Garantias de resultado — o que prometemos é medição honesta (projetado vs. realizado) |
+| Agentes sob medida com **pontos de aprovação humana** e limites de custo, integrados aos sistemas do cliente | Prazo de construção: só após a conta/via CrewAI ativa (R9): até lá, cronograma com folga de setup explícita | "suporte 24/7": o SLA honesto (P9 ✅ 2026-07-23) é: monitoramento automatizado 24/7 + humano 9h–18h + S1 em 4h corridas ([SLA](../04-entrega/sla-manutencao.md)) |
+| Deploy em nuvem gerenciada OU on-premise (a escolha é do cliente) | "Orquestramos o ecossistema (CrewAI, principais LLMs)" = uso de stack, verdadeiro | "Parceria formal" onde houver só parceria de uso: P8 ✅ (2026-07-23): dizer "stack orquestrada com parceiros oficiais"; comprovantes no Drive. Nunca afirmar contrato assinado |
+| Inventário de decisões automatizadas mapeado ao Art. 20 LGPD | Operação assistida de 30 dias pós go-live | Garantias de resultado: o que prometemos é medição honesta (projetado vs. realizado) |
 | Manifesto de handoff: da avaliação sai o scaffold dos agentes (demonstrável) | | |
 
 ## Setup de cliente

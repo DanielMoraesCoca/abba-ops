@@ -1,11 +1,11 @@
-# Estágio 10 — Alinhamento com o Conselho (a constante)
+# Estágio 10: Alinhamento com o Conselho (a constante)
 
 **Dono:** chapéu Entrega (prepara e conduz) · **Cadência:** ao final de cada etapa durante o programa; **trimestral** na manutenção
 
 ## O que é
-**Como produto vendável, este estágio é o [Conselheiro de IA ABBA](../03-comercial/conselheiro-de-ia.md)** (CAIO fracionário) — com **duas entradas**: pós-programa (embutido na manutenção-Estratégia ou avulso na renovação) e **venda direta** para empresa que já tem IA rodando sem quem dirija (não exige programa anterior).
+**Como produto vendável, este estágio é o [Conselheiro de IA ABBA](../03-comercial/conselheiro-de-ia.md)** (CAIO fracionário): com **duas entradas**: pós-programa (embutido na manutenção-Estratégia ou avulso na renovação) e **venda direta** para empresa que já tem IA rodando sem quem dirija (não exige programa anterior).
 
-O sistema de direção do relacionamento: um ritual estruturado onde os resultados são apresentados **contra os objetivos que a própria diretoria declarou**, a ABBA recomenda o próximo movimento, e **eles decidem**. É o que transforma a ABBA de fornecedor em parceiro — e o motor de renovação e expansão.
+O sistema de direção do relacionamento: um ritual estruturado onde os resultados são apresentados **contra os objetivos que a própria diretoria declarou**, a ABBA recomenda o próximo movimento, e **eles decidem**. É o que transforma a ABBA de fornecedor em parceiro, e o motor de renovação e expansão.
 
 **Princípio inegociável:** nós recomendamos com convicção; a visão deles dirige. Registrado desde o kickoff (os objetivos declarados na abertura são o baseline eterno).
 
@@ -22,12 +22,12 @@ Data trimestral chegando (agendar sempre a próxima ao fim da atual) ou etapa do
 
 **Na reunião (60–90 min)**
 - [ ] Seguir a pauta: resultados → o que aprendemos → recomendações → **decisões deles** → registro ao vivo
-- [ ] Perguntar explicitamente: "os objetivos declarados mudaram?" (mercado muda, prioridade muda — o plano segue a visão deles, não o contrário)
+- [ ] Perguntar explicitamente: "os objetivos declarados mudaram?" (mercado muda, prioridade muda: o plano segue a visão deles, não o contrário)
 - [ ] NPS informal do patrocinador (como estamos indo? o que faríamos melhor?)
 
 **Depois (48h)**
 - [ ] Ata com decisões em `02 Clientes/<Nome>/07 Conselho/` + resumo por e-mail
-- [ ] **Registrar cada decisão no diário** (`abba decision add/advance --by "<quem decidiu>"`) — e, quando o resultado for medido, `abba decision outcome`. É o que transforma o ritual em memória que compõe, em vez de uma reunião que passou
+- [ ] **Registrar cada decisão no diário** (`abba decision add/advance --by "<quem decidiu>"`), e, quando o resultado for medido, `abba decision outcome`. É o que transforma o ritual em memória que compõe, em vez de uma reunião que passou
 - [ ] Decisões viram ações nos estágios respectivos (nova construção → 07; ajuste de trilha → 08; expansão → proposta)
 - [ ] Próximo ritual agendado
 

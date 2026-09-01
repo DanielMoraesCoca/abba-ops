@@ -1,24 +1,24 @@
-# Materiais — catálogo do que já existe
+# Materiais: catálogo do que já existe
 
 > Inventário dos materiais reais da ABBA (treinamento, comerciais, estratégia), com onde cada um vive e o que falta produzir. Regra: **modelos genéricos e canônicos → este repo · arquivos finais pesados e instâncias de cliente → Drive** ([estrutura](../07-drive/estrutura-drive.md)).
 
 ## 0. O padrão editorial (decisão do sócio, 2026-08-05)
 
-**[`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) é o documento-padrão** — todo material novo (e toda revisão de material existente) segue a entonação e os termos dele. Não precisa ser igual; precisa estar na mesma linha:
+**[`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) é o documento-padrão:** todo material novo (e toda revisão de material existente) segue a entonação e os termos dele. Não precisa ser igual; precisa estar na mesma linha:
 
-- **Abre direto na ABBA** — sem parágrafos de contexto de mercado (70/30) antes de dizer quem somos
-- **Conta a história em ordem** — a jornada na sequência real, cada etapa em "o quê · por quê · como"
-- **Sem preços** em material de primeiro contato — preço é conversa
-- **Sem "25 dimensões"** em material de envio — vira "mergulho profundo, do conselho à linha de frente" (em proposta/contrato/relatório de entrega o número é escopo e permanece)
-- **Sem "somos uma firma nova"** em material — a honestidade sobre histórico é doutrina de **conversa** ([kit, 3ª objeção](../03-comercial/kit-de-presenca.md))
-- **Engenharia, não só agentes** — "arquitetura, integrações e agentes de IA trabalhando em conjunto"
+- **Abre direto na ABBA:** sem parágrafos de contexto de mercado (70/30) antes de dizer quem somos
+- **Conta a história em ordem:** a jornada na sequência real, cada etapa em "o quê · por quê · como"
+- **Sem preços** em material de primeiro contato: preço é conversa
+- **Sem "25 dimensões"** em material de envio: vira "mergulho profundo, do conselho à linha de frente" (em proposta/contrato/relatório de entrega o número é escopo e permanece)
+- **Sem "somos uma firma nova"** em material: a honestidade sobre histórico é doutrina de **conversa** ([kit, 3ª objeção](../03-comercial/kit-de-presenca.md))
+- **Engenharia, não só agentes:** "arquitetura, integrações e agentes de IA trabalhando em conjunto"
 - **Raízes sem nomear árvore** nas seções especiais; **"da primeira conversa"**, nunca "do primeiro café"
 - **E-mail externo = contato@abbaservices.com.br** · **logos Microsoft e CrewAI** discretas onde a parceria é citada
-- Visual: o sistema editorial do próprio documento (branco, Cambria/Calibri, versaletes dourados, filetes — sem cartões nem decoração)
+- Visual: o sistema editorial do próprio documento (branco, Cambria/Calibri, versaletes dourados, filetes: sem cartões nem decoração)
 
 O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíveis com regex; o resto é julgamento contra o documento-padrão.
 
-## 1. ABBA Academy — Materiais Finais de Treinamento (PT-BR)
+## 1. ABBA Academy: Materiais Finais de Treinamento (PT-BR)
 
 **O que é:** o pacote FINAL do conteúdo de capacitação (PDF, 23 páginas), pronto para gravar/imprimir/facilitar. **Este é o maior ativo de conteúdo da empresa.**
 
@@ -28,9 +28,9 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 
 | Tier | Conteúdo |
 |---|---|
-| 1A | Roteiros Nível 1, word-for-word (1.1.1–1.4.4) — vídeos de ~5–8 min |
-| 1B | Módulo 2.1 — **Método 4D** (2.1.1–2.1.5) ⚠️ legado: o 4D foi revogado (Rubrica ABBA, 20/08) — não gravar nem imprimir deste módulo |
-| 1C | Kit do Facilitador — **Kickoff presencial de meio dia** (Autópsia de Tarefa/Demo Theater, Clínica da Primeira Vitória, Bússola em papel, checklists de logística) |
+| 1A | Roteiros Nível 1, word-for-word (1.1.1–1.4.4): vídeos de ~5–8 min |
+| 1B | Módulo 2.1: **Método 4D** (2.1.1–2.1.5) ⚠️ legado: o 4D foi revogado (Rubrica ABBA, 20/08): não gravar nem imprimir deste módulo |
+| 1C | Kit do Facilitador: **Kickoff presencial de meio dia** (Autópsia de Tarefa/Demo Theater, Clínica da Primeira Vitória, Bússola em papel, checklists de logística) |
 | 1D | Artefatos impressos: **Card da Bússola · Semáforo de Dados · Esqueleto de Prompt (Papel/Contexto/Tarefa/Formato/Exemplo/Restrições) · Lente de Oportunidade · Solution Canvas · Ficha Primeira Vitória** |
 | 1E | Biblioteca de Prompts (40+) |
 | 1F | Banco de Desafios (12 desafios da semana, 5 Prompt Golf, 8 drills de discernimento) |
@@ -38,9 +38,9 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 
 **Fundamentos embutidos:** casos reais de alucinação (Mata v. Avianca + precedentes brasileiros TJSC/TST/STJ/OAB Rec. 001/2024) · LGPD/Shadow AI com o Semáforo de Dados como espinha de privacidade · normas de microlearning (1 objetivo/vídeo, gancho em 8s, ação de 60s no FAÇA AGORA).
 
-**Recompensa de conclusão:** certificado ABBA + **licença CrewAI de 12 meses** (consistente com o modelo de serviço; *condicionada à via de contratação CrewAI ativa — R9: não prometer em proposta antes do setup*).
+**Recompensa de conclusão:** certificado ABBA + **licença CrewAI de 12 meses** (consistente com o modelo de serviço; *condicionada à via de contratação CrewAI ativa: R9: não prometer em proposta antes do setup*).
 
-**⚠️ 4D revogado (compliance, atualização 25/08):** o Método 4D deste pacote é adaptado do *AI Fluency Framework* (Rick Dakan, Joseph Feller e Anthropic, CC BY-NC-SA 4.0) e foi **substituído pela Rubrica ABBA em 20/08/2026** — a cláusula NC nunca foi validada para programa pago, e a decisão da casa tornou a validação desnecessária: **nada com 4D se grava, se imprime ou vai a cliente** ([guia de produção](guia-producao-fisica.md)). Se algum material LEGADO com 4D for reusado internamente, a atribuição do próprio material acompanha.
+**⚠️ 4D revogado (compliance, atualização 25/08):** o Método 4D deste pacote é adaptado do *AI Fluency Framework* (Rick Dakan, Joseph Feller e Anthropic, CC BY-NC-SA 4.0) e foi **substituído pela Rubrica ABBA em 20/08/2026**: a cláusula NC nunca foi validada para programa pago, e a decisão da casa tornou a validação desnecessária: **nada com 4D se grava, se imprime ou vai a cliente** ([guia de produção](guia-producao-fisica.md)). Se algum material LEGADO com 4D for reusado internamente, a atribuição do próprio material acompanha.
 
 **O que falta produzir (do próprio documento):**
 1. Gravar os 3 vídeos de maior alavancagem primeiro (1.3.3 "Confie, mas verifique", 1.3.1 Semáforo, 2.1.2 Descrição) + imprimir os 6 cards
@@ -49,14 +49,14 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 4. Métrica que muda o plano: **"horas reinvestidas por pessoa/semana"** + taxa de conclusão dos vídeos
 5. Validar com advogado a lição de verificação jurídica (O-JUR) antes de qualquer turma jurídica
 
-## 2. Proposta comercial — modelo canônico (estrutura Galápagos)
+## 2. Proposta comercial: modelo canônico (estrutura Galápagos)
 
 **O que é:** a proposta real enviada em jun/2026 (ref ABBA-2026-001) virou o **modelo canônico** de proposta do programa completo.
 
 **Onde vive:**
-- **Modelo genericizado (Word):** [`modelos/proposta-comercial-modelo.docx`](modelos/proposta-comercial-modelo.docx) — placeholders `{{NOME_DO_CLIENTE}}`, `{{ANO}}`, `{{NUM}}`, `{{MÊS ANO}}`; identidade visual navy/dourado aplicada
+- **Modelo genericizado (Word):** [`modelos/proposta-comercial-modelo.docx`](modelos/proposta-comercial-modelo.docx): placeholders `{{NOME_DO_CLIENTE}}`, `{{ANO}}`, `{{NUM}}`, `{{MÊS ANO}}`; identidade visual navy/dourado aplicada
 - **Estrutura e conteúdo de referência (markdown):** [`../03-comercial/proposta-programa-completo.md`](../03-comercial/proposta-programa-completo.md) (reescrita sobre esta estrutura)
-- **Instância original (com nome do cliente):** Drive → `01 Comercial/Propostas enviadas/` — **nunca em git**
+- **Instância original (com nome do cliente):** Drive → `01 Comercial/Propostas enviadas/`: **nunca em git**
 
 **Estrutura (11 seções):** Sumário Executivo (com stat-cards) → Contexto e Desafios (situação/complicação/desafios/resolução) → Transformação AI Native em 3 Níveis (estratégia/workflows/pessoas + as 3 perguntas) → A Jornada ABBA (modular: Assessment 4–5 sem → Protótipo 6–8 sem → Deployment → Portal → Serviços Gerenciados com presença semanal → Conselheiro de IA) → Portal de Capacitação (4 fases com desbloqueio de ferramentas) → Metodologia (5 fases com gates) → Cronograma (16 semanas, critérios de aceite) → Equipe e Governança → Arquitetura e Ecossistema → Termos e SLAs → Por Que a ABBA.
 
@@ -68,56 +68,56 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 
 **Onde vive:** Drive → `04 Interno/Estrategia historica/`. Decisões dele que seguem vigentes já estão absorvidas neste repo; o resto é histórico.
 
-## 4. Modelos de entregáveis (Drive legado — inventariados em 2026-07-23)
+## 4. Modelos de entregáveis (Drive legado: inventariados em 2026-07-23)
 
 A pasta antiga do Drive contém **os modelos dos entregáveis que a proposta promete**, todos com dados de exemplo (nunca enviar como estão). Mapa completo de migração: [estrutura-drive](../07-drive/estrutura-drive.md#mapa-de-migração-arquivo-a-arquivo-inventário-de-2026-07-23). Destaques:
 
 - **Termo de Aceite** → já transcrito: [`../04-entrega/termo-de-aceite.md`](../04-entrega/termo-de-aceite.md)
-- **Relatório de Maturidade** (6 dimensões, escala 1–5 Exploratório→Transformacional — **este é o arquivo legado do Drive, não o modelo vigente**; o modelo regenerado em `modelos/` já diz 25 dimensões, conferido no DOCX em 2026-08-01) · **Mapa de Casos de Uso** (matriz de priorização + ROI) · **Plano Diretor** (24 meses) — os três entregáveis do Assessment
+- **Relatório de Maturidade** (6 dimensões, escala 1–5 Exploratório→Transformacional: **este é o arquivo legado do Drive, não o modelo vigente**; o modelo regenerado em `modelos/` já diz 25 dimensões, conferido no DOCX em 2026-08-01) · **Mapa de Casos de Uso** (matriz de priorização + ROI) · **Plano Diretor** (24 meses): os três entregáveis do Assessment
 - **Relatório de Protótipo** (sprints, métricas, decisão GO/NO-GO) e **Relatório de Deployment** (testes de aceite, SLAs, rollback, handover, hypercare)
 - **Relatório Mensal de Operação** (serviços gerenciados)
-- Proposta anterior **com os preços reais emitidos** (R$ 150K — registrado na [planilha de precificação](../03-comercial/precificacao-planilha.md))
+- Proposta anterior **com os preços reais emitidos** (R$ 150K: registrado na [planilha de precificação](../03-comercial/precificacao-planilha.md))
 
-Nota de nomenclatura: os docs legados usam "ABBA Intelligence" / "AI Consulting & Platform" / "ABBA Consulting" — o nome comercial vigente é **ABBA Consultoria de IA** ([marca](../00-identidade/marca-e-nomenclatura.md)); padronizar na migração.
+Nota de nomenclatura: os docs legados usam "ABBA Intelligence" / "AI Consulting & Platform" / "ABBA Consulting": o nome comercial vigente é **ABBA Consultoria de IA** ([marca](../00-identidade/marca-e-nomenclatura.md)); padronizar na migração.
 
 ## 5. Família de modelos regularizada (2026-07-23)
 
-Os modelos legados foram **regenerados do zero** no padrão vigente — mesma identidade visual, discurso alinhado (modelo de 6 etapas, nomes oficiais, sem promessas pendentes de P8/P9), `{{PLACEHOLDERS}}` no lugar de dados de exemplo. Em [`modelos/`](modelos/):
+Os modelos legados foram **regenerados do zero** no padrão vigente: mesma identidade visual, discurso alinhado (modelo de 6 etapas, nomes oficiais, sem promessas pendentes de P8/P9), `{{PLACEHOLDERS}}` no lugar de dados de exemplo. Em [`modelos/`](modelos/):
 
 | Modelo | Estágio da jornada |
 |---|---|
-| `relatorio-maturidade-modelo.docx` | 06 — Avaliação (**25 dimensões** do método vigente, escala 1–5 — o modelo já diz 25; a escala de 6 era do legado) |
-| `mapa-de-oportunidades-modelo.docx` | 06 — Avaliação (matriz de priorização + ROI rastreável) |
-| `plano-diretor-modelo.docx` | 06 — Avaliação (roadmap com gates e governança) |
-| `relatorio-prototipo-modelo.docx` | 07 — Construção (GO/NO-GO com números medidos) |
-| `relatorio-deployment-modelo.docx` | 07 — Implantação (aceite, SLA, handover, hypercare) |
-| `relatorio-mensal-modelo.docx` | 09 — Manutenção (projetado vs. realizado sempre) |
-| `termo-de-aceite-modelo.docx` | gates — fecha fase e libera fatura de marco |
-| `plano-capacitacao-modelo.docx` | 08 — Capacitação (4 fases, Bússola, kickoff meio dia) |
+| `relatorio-maturidade-modelo.docx` | 06: Avaliação (**25 dimensões** do método vigente, escala 1–5: o modelo já diz 25; a escala de 6 era do legado) |
+| `mapa-de-oportunidades-modelo.docx` | 06: Avaliação (matriz de priorização + ROI rastreável) |
+| `plano-diretor-modelo.docx` | 06: Avaliação (roadmap com gates e governança) |
+| `relatorio-prototipo-modelo.docx` | 07: Construção (GO/NO-GO com números medidos) |
+| `relatorio-deployment-modelo.docx` | 07: Implantação (aceite, SLA, handover, hypercare) |
+| `relatorio-mensal-modelo.docx` | 09: Manutenção (projetado vs. realizado sempre) |
+| `termo-de-aceite-modelo.docx` | gates: fecha fase e libera fatura de marco |
+| `plano-capacitacao-modelo.docx` | 08: Capacitação (4 fases, Bússola, kickoff meio dia) |
 
-**Regra:** os DOCX legados do Drive viram ARQUIVO após a migração — quem vale são estes. Os markdown correspondentes em `04-entrega/` são a documentação do processo; os DOCX são o que o cliente vê.
+**Regra:** os DOCX legados do Drive viram ARQUIVO após a migração, quem vale são estes. Os markdown correspondentes em `04-entrega/` são a documentação do processo; os DOCX são o que o cliente vê.
 
-## 6. Inventário de materiais e fila restante (2 pendências reais: vídeos e cards — o resto ✅)
+## 6. Inventário de materiais e fila restante (2 pendências reais: vídeos e cards: o resto ✅)
 
 Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [padrão visual](../00-identidade/identidade-visual.md):
 
 | Material | Uso | Status |
 |---|---|---|
-| Deck institucional (PPTX, **13 slides** — **reescrito 2026-08-06 no padrão editorial §0**: a história da apresentação enviável no formato ao vivo — quem somos, duas frentes, raízes, jornada 1–7, prova não impressão, promessas × recusas, parceiros com logos, CTA) | 2ª reunião em diante — roteiro slide a slide no [kit de presença](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
+| Deck institucional (PPTX, **13 slides**: **reescrito 2026-08-06 no padrão editorial §0**: a história da apresentação enviável no formato ao vivo, quem somos, duas frentes, raízes, jornada 1–7, prova não impressão, promessas × recusas, parceiros com logos, CTA) | 2ª reunião em diante: roteiro slide a slide no [kit de presença](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
 | Deck de kickoff (PPTX, 12–13 slides com o pré-mortem 6b, com logo) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | 3 propostas de entrada (DOCX) | workshop · avaliação · sprint LGPD | ✅ em [`modelos/`](modelos/) (`proposta-*-modelo.docx`) |
 | Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | ✅ regularizado (`modelos/relatorio-maturidade-modelo.docx` + oportunidades + plano diretor) |
 | Certificados (participante e campeão, PPTX com logo) | graduação | ✅ [`modelos/certificados-modelo.pptx`](modelos/certificados-modelo.pptx) |
-| **[Ficha de Linha de Base](ficha-linha-de-base.md)** | kickoff (Partes A e B) + reaplicação idêntica no d30/d60/d90; Parte C com o patrocinador na preparação | ✅ escrita 20/08 — o kit exigia "linha de base medida" e o instrumento não existia |
-| Vídeos das trilhas (pelos roteiros VIGENTES — nunca o Módulo 2.1/4D revogado, ver §Módulo 2.1 acima) | portal | 14/27 roteiros prontos (Fundação 8 + Operacional 6); gravar em lotes |
-| Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | **texto final portado e corrigido em [`artefatos-impressos.md`](artefatos-impressos.md) (Bússola com SÓ EU; rubricas nos 4 movimentos — 20/08)** → arte final + gráfica |
-| Card da Bússola do portal em pt-BR | o card legado ("My Week With AI", 3ª pergunta "Continuar") está aposentado — o texto canônico é o de [`artefatos-impressos.md`](artefatos-impressos.md) §1 | reeditar na arte final (Pedro/portal) |
-| **Re-emissão das propostas na tabela v2** | as 3 propostas de entrada (DOCX) e a proposta do programa citam preços da v1 (28k/185k) — **descontinuados; o Revisor bloqueia se forem enviadas como estão** (é o comportamento desejado) | atualizar cada DOCX na primeira emissão real pós-v2 |
+| **[Ficha de Linha de Base](ficha-linha-de-base.md)** | kickoff (Partes A e B) + reaplicação idêntica no d30/d60/d90; Parte C com o patrocinador na preparação | ✅ escrita 20/08: o kit exigia "linha de base medida" e o instrumento não existia |
+| Vídeos das trilhas (pelos roteiros VIGENTES, nunca o Módulo 2.1/4D revogado, ver §Módulo 2.1 acima) | portal | 14/27 roteiros prontos (Fundação 8 + Operacional 6); gravar em lotes |
+| Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | **texto final portado e corrigido em [`artefatos-impressos.md`](artefatos-impressos.md) (Bússola com SÓ EU; rubricas nos 4 movimentos: 20/08)** → arte final + gráfica |
+| Card da Bússola do portal em pt-BR | o card legado ("My Week With AI", 3ª pergunta "Continuar") está aposentado: o texto canônico é o de [`artefatos-impressos.md`](artefatos-impressos.md) §1 | reeditar na arte final (Pedro/portal) |
+| **Re-emissão das propostas na tabela v2** | as 3 propostas de entrada (DOCX) e a proposta do programa citam preços da v1 (28k/185k): **descontinuados; o Revisor bloqueia se forem enviadas como estão** (é o comportamento desejado) | atualizar cada DOCX na primeira emissão real pós-v2 |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
-| One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
+| One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md): estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
 | Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
-| **Apresentação enviável** (PDF A4, 3 págs — **o documento-padrão, §0**: a história em ordem, jornada 1–7 em "o quê · por quê · como", **sem preços**, logos Microsoft/CrewAI; termina no CTA do Mapa de Vazamento; **é o que se manda quando o prospect pede "conteúdo antes da reunião"**; versão-relâmpago de 1 pág para WhatsApp: `abba-um-minuto.pdf`) | pós-ligação / pré-reunião — [ordem de envio no kit](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) (fonte: `.pptx` ao lado) |
-| **Os 7 decks de serviço** (PPTX+PDF, 6 slides cada, padrão editorial §0 — um mergulho por serviço: capa com a essência → o quê → por quê → como → o que fica com você → o encaixe na jornada; **com as fotos reais dos entregáveis embutidas**: página de análise real com radar de maturidade (empresa preservada), relatório de maturidade, relatório do protótipo, relatório de implantação, relatório mensal e parecer de arbitragem; **sem preços**) | aprofundamento por serviço: apresentar ao vivo na conversa daquele serviço, ou enviar DEPOIS dela — nunca como primeiro contato (primeiro contato = a apresentação) | ✅ `modelos/servico-1-mapa-de-vazamento-deck` · `servico-2-assessment` · `servico-3-prototipo` · `servico-4-construcao` · `servico-5-treinamento-portal` · `servico-6-sistemas-gerenciados` · [`servico-7-conselheiro-deck.pptx`](modelos/servico-7-conselheiro-deck.pptx) (este substituiu o deck de 10 slides do Conselheiro, removido em 2026-08-06 — V3r) |
-| Parecer de Arbitragem de Fornecedores (DOCX) | [processo](../04-entrega/arbitragem-de-fornecedores.md) — entregável do Conselheiro | ✅ [`modelos/arbitragem-fornecedores-modelo.docx`](modelos/arbitragem-fornecedores-modelo.docx) |
-| Proposta de Continuidade (DOCX) | [processo](../03-comercial/proposta-continuidade.md) — renovação em 3 camadas, estágio 11 | ✅ [`modelos/proposta-continuidade-modelo.docx`](modelos/proposta-continuidade-modelo.docx) |
+| **Apresentação enviável** (PDF A4, 3 págs: **o documento-padrão, §0**: a história em ordem, jornada 1–7 em "o quê · por quê · como", **sem preços**, logos Microsoft/CrewAI; termina no CTA do Mapa de Vazamento; **é o que se manda quando o prospect pede "conteúdo antes da reunião"**; versão-relâmpago de 1 pág para WhatsApp: `abba-um-minuto.pdf`) | pós-ligação / pré-reunião: [ordem de envio no kit](../03-comercial/kit-de-presenca.md) | ✅ [`modelos/abba-apresentacao.pdf`](modelos/abba-apresentacao.pdf) (fonte: `.pptx` ao lado) |
+| **Os 7 decks de serviço** (PPTX+PDF, 6 slides cada, padrão editorial §0: um mergulho por serviço: capa com a essência → o quê → por quê → como → o que fica com você → o encaixe na jornada; **com as fotos reais dos entregáveis embutidas**: página de análise real com radar de maturidade (empresa preservada), relatório de maturidade, relatório do protótipo, relatório de implantação, relatório mensal e parecer de arbitragem; **sem preços**) | aprofundamento por serviço: apresentar ao vivo na conversa daquele serviço, ou enviar DEPOIS dela, nunca como primeiro contato (primeiro contato = a apresentação) | ✅ `modelos/servico-1-mapa-de-vazamento-deck` · `servico-2-assessment` · `servico-3-prototipo` · `servico-4-construcao` · `servico-5-treinamento-portal` · `servico-6-sistemas-gerenciados` · [`servico-7-conselheiro-deck.pptx`](modelos/servico-7-conselheiro-deck.pptx) (este substituiu o deck de 10 slides do Conselheiro, removido em 2026-08-06: V3r) |
+| Parecer de Arbitragem de Fornecedores (DOCX) | [processo](../04-entrega/arbitragem-de-fornecedores.md): entregável do Conselheiro | ✅ [`modelos/arbitragem-fornecedores-modelo.docx`](modelos/arbitragem-fornecedores-modelo.docx) |
+| Proposta de Continuidade (DOCX) | [processo](../03-comercial/proposta-continuidade.md): renovação em 3 camadas, estágio 11 | ✅ [`modelos/proposta-continuidade-modelo.docx`](modelos/proposta-continuidade-modelo.docx) |

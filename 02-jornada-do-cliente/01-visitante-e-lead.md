@@ -1,4 +1,4 @@
-# Estágio 01 — Visitante e Lead
+# Estágio 01: Visitante e Lead
 
 **Dono:** chapéu Comercial · **Prazo-alvo:** todo lead respondido em **24h úteis**
 
@@ -12,10 +12,10 @@ Alguém demonstrou interesse: formulário do site (quando existir), mensagem no 
 - [ ] Filtro honesto: mid-market brasileiro? decisor alcançável? Se não → responder com cortesia e arquivar como "fora de perfil"
 - [ ] Responder em 24h propondo a **call de descoberta de 30 min** ([pauta nº 1](../03-comercial/pautas-de-reuniao.md))
 - [ ] Realizada a call: notas na pasta do lead (dores nas palavras deles, decisor, prazo, orçamento sinalizado)
-- [ ] Saída da call: **agendar a apresentação da análise gratuita — que chegará FEITA** (decisão 2026-07-27: nunca "oferecer"; chegamos com o [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md) pronto) ([estágio 02](02-diagnostico-gratuito.md)) — ou proposta direta se o lead já chegou quente ([estágio 03](03-proposta.md))
+- [ ] Saída da call: **agendar a apresentação da análise gratuita, que chegará FEITA** (decisão 2026-07-27: nunca "oferecer"; chegamos com o [Mapa de Vazamento](../03-comercial/mapa-de-vazamento.md) pronto) ([estágio 02](02-diagnostico-gratuito.md)), ou proposta direta se o lead já chegou quente ([estágio 03](03-proposta.md))
 - [ ] [E-mail nº 1](../03-comercial/emails-follow-up.md) no mesmo dia
 
-**Enquanto o site não existe:** a aquisição é ativa — LinkedIn dos fundadores, indicações e e-mail frio ([e-mail nº 0](../03-comercial/emails-follow-up.md)). Meta mínima: {{N}} contatos novos/semana (sócios definem).
+**Enquanto o site não existe:** a aquisição é ativa: LinkedIn dos fundadores, indicações e e-mail frio ([e-mail nº 0](../03-comercial/emails-follow-up.md)). Meta mínima: {{N}} contatos novos/semana (sócios definem).
 
 ## Saída
 Lead aceitou degustação → [02](02-diagnostico-gratuito.md). Pediu proposta direto → [03](03-proposta.md). Fora de perfil/sem interesse → arquivado com motivo.

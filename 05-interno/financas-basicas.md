@@ -1,14 +1,14 @@
-# Finanças Básicas — rotina mínima
+# Finanças Básicas: rotina mínima
 
 > A rotina financeira de uma consultoria de 2 sócios: simples, mas sem furo. Dono: chapéu [Fin-Admin](../01-setores/financeiro-admin.md). Instâncias (planilha de caixa, NFs, contratos) vivem em `04 Interno/Financeiro/` no Drive.
 
-## Setup inicial (uma vez — a maioria depende do contador, P5)
+## Setup inicial (uma vez: a maioria depende do contador, P5)
 
 - [ ] CNPJ ativo com CNAEs de consultoria/treinamento/desenvolvimento ({{verificar com contador}})
-- [ ] **Regime tributário definido com o contador**: Simples Nacional (Anexo III vs. V — fator R decide; consultoria com pró-labore alto tende ao III, ~15,5% inicial) vs. Lucro Presumido. Registrar a decisão
+- [ ] **Regime tributário definido com o contador**: Simples Nacional (Anexo III vs. V: fator R decide; consultoria com pró-labore alto tende ao III, ~15,5% inicial) vs. Lucro Presumido. Registrar a decisão
 - [ ] Conta PJ aberta (banco digital PJ resolve: {{Inter/Cora/Itaú...}})
 - [ ] Emissor de NFS-e configurado (prefeitura ou emissor do contador)
-- [ ] Pró-labore dos sócios definido (valor + dia do mês) — alinhado com a [planilha de precificação](../03-comercial/precificacao-planilha.md) (renda-alvo)
+- [ ] Pró-labore dos sócios definido (valor + dia do mês): alinhado com a [planilha de precificação](../03-comercial/precificacao-planilha.md) (renda-alvo)
 - [ ] Planilha de fluxo de caixa criada no Drive (modelo simples: entradas previstas/realizadas, saídas fixas/variáveis, saldo, runway)
 
 ## Rotina por evento

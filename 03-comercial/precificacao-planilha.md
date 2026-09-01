@@ -1,6 +1,6 @@
 # Planilha de Precificação
 
-> **Status (2026-08-02):** os §1–§5 foram efetivamente preenchidos e decididos na [proposta do especialista](precificacao-proposta-especialista.md) (cenário C → tabela v1); os `{{ }}` abaixo ficam como molde para a v2. **A seção 6 (registro de reações a preço) é a parte VIVA deste arquivo** — preencher a cada conversa real. — preencher pelos sócios
+> **Status (2026-08-02):** os §1–§5 foram efetivamente preenchidos e decididos na [proposta do especialista](precificacao-proposta-especialista.md) (cenário C → tabela v1); os `{{ }}` abaixo ficam como molde para a v2. **A seção 6 (registro de reações a preço) é a parte VIVA deste arquivo**: preencher a cada conversa real.: preencher pelos sócios
 
 > Preencher **numa sentada, juntos**. Seguir a [metodologia](precificacao-metodologia.md). Ao final: transcrever para [`tabela-de-precos.md`](tabela-de-precos.md), registrar no [registro de decisões](../05-interno/registro-de-decisoes.md) (pendência P1). Campos `{{ }}` = só os sócios podem responder.
 
@@ -19,7 +19,7 @@
 | · Advogado (pacote LGPD + contrato, ano 1) | R$ {{ }} | ref.: R$ 10–30 mil no ano 1 (do checklist do fundador) |
 | · Marketing (site, LinkedIn, eventos) | R$ {{ }} | |
 | · Outros (seguro, viagens não repassadas...) | R$ {{ }} | |
-| Impostos (% sobre receita) | {{ }}% | simulação inicial: 15,5% (Simples Anexo III) — confirmar com contador (P5) |
+| Impostos (% sobre receita) | {{ }}% | simulação inicial: 15,5% (Simples Anexo III): confirmar com contador (P5) |
 | Semanas úteis/ano por sócio | {{ 46 }} | 52 − férias − feriados − doença |
 | Horas/semana dedicadas à ABBA por sócio | {{ }} | honestidade > otimismo |
 | Utilização faturável | {{ }}% | sugerido 50–60% |
@@ -46,7 +46,7 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 | Manutenção mensal (monitoramento + ajustes + relatório) | {{ }}/mês | R$ {{ }}/mês | R$ {{ }}/mês |
 | Mini-ciclo por caso de uso adicional | {{ }} | R$ {{ }} | R$ {{ }} |
 
-## 3. Teto de mercado (pesquisa — mín. 3 comparáveis por linha)
+## 3. Teto de mercado (pesquisa: mín. 3 comparáveis por linha)
 
 | Pacote | Comparável 1 | Comparável 2 | Comparável 3 | Teto adotado |
 |---|---|---|---|---|
@@ -80,6 +80,6 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 
 | Data | Prospect | Pacote | Preço dito | Reação (susto / neutro / fácil demais) | Ajuste? |
 |---|---|---|---|---|---|
-| 2026-06 | Galápagos Capital (ref ABBA-2026-001) | proposta apresentada **SEM valor** — os R$ 150K constavam do documento interno mas não foram comunicados | — | (sem dado de preço) | — |
+| 2026-06 | Galápagos Capital (ref ABBA-2026-001) | proposta apresentada **SEM valor**: os R$ 150K constavam do documento interno mas não foram comunicados |  | (sem dado de preço) |  |
 
-> ⚠️ Correção 2026-07-23: **nenhum preço foi testado em mercado ainda** — o valor da proposta Galápagos não chegou ao prospect. As primeiras 3 conversas reais com a tabela v1 são o primeiro teste de descoberta de preço. Registrar TODAS.
+> ⚠️ Correção 2026-07-23: **nenhum preço foi testado em mercado ainda**: o valor da proposta Galápagos não chegou ao prospect. As primeiras 3 conversas reais com a tabela v1 são o primeiro teste de descoberta de preço. Registrar TODAS.

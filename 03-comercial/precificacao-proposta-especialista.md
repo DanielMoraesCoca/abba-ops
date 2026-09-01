@@ -1,8 +1,8 @@
-# Precificação — Proposta do Especialista (pesquisa + modelo + tabela-rascunho)
+# Precificação: Proposta do Especialista (pesquisa + modelo + tabela-rascunho)
 
-> Elaborada em 2026-07-23. **DECIDIDO: cenário C** (R$ 20 mil/sócio/mês, 35h/sem) → [tabela v1 vigente](tabela-de-precos.md). Correção importante: o valor de R$ 150K da proposta Galápagos NÃO foi comunicado ao prospect — não há dado de mercado próprio ainda; a validação vem das 3 primeiras conversas com a tabela v1. Este doc permanece como memória de cálculo.
+> Elaborada em 2026-07-23. **DECIDIDO: cenário C** (R$ 20 mil/sócio/mês, 35h/sem) → [tabela v1 vigente](tabela-de-precos.md). Correção importante: o valor de R$ 150K da proposta Galápagos NÃO foi comunicado ao prospect: não há dado de mercado próprio ainda; a validação vem das 3 primeiras conversas com a tabela v1. Este doc permanece como memória de cálculo.
 
-## 1. Tributos — o número real para Brasília/DF (pesquisado)
+## 1. Tributos: o número real para Brasília/DF (pesquisado)
 
 **Regime recomendado: Simples Nacional, Anexo III via Fator R.** A jogada fiscal inteira:
 
@@ -16,21 +16,21 @@
 | ISS Brasília/DF para TI (CNAE 62, incl. 6204-0 consultoria em TI) | **2%** (LC 963/2020; geral é 5%) | Dentro do DAS no Simples; relevante se um dia migrar para Lucro Presumido |
 | INSS sobre pró-labore (sócio) | 11% (sem patronal no Simples III) | Custo do pró-labore |
 | IRPF 2026: pró-labore até R$ 5.000/mês | **isento** (reforma 2026) | Pró-labore ótimo: R$ 5.000/sócio (isento de IR) + distribuição de lucros (isenta) |
-| Lucro Presumido (comparação) | ~13,33% federal + 2% ISS + 20% INSS patronal | Só compensa muito acima do teto do Simples — ignorar por anos |
+| Lucro Presumido (comparação) | ~13,33% federal + 2% ISS + 20% INSS patronal | Só compensa muito acima do teto do Simples: ignorar por anos |
 
 **Provisão recomendada sobre a receita: 12%** (DAS ~7–9% nas faixas do ano 1–2 + margem de segurança). Conservador: 15%.
-**Estrutura de retirada recomendada:** pró-labore de R$ 5.000/sócio/mês (satisfaz o Fator R até ~R$ 430 mil/ano de receita, IRPF zero, INSS R$ 550/sócio) + o restante como distribuição de lucros isenta. ⚠️ Validar com o contador (P5) — esta é a tese; ele confirma o CNAE e o enquadramento.
+**Estrutura de retirada recomendada:** pró-labore de R$ 5.000/sócio/mês (satisfaz o Fator R até ~R$ 430 mil/ano de receita, IRPF zero, INSS R$ 550/sócio) + o restante como distribuição de lucros isenta. ⚠️ Validar com o contador (P5): esta é a tese; ele confirma o CNAE e o enquadramento.
 
-## 2. Mercado — onde a ABBA pode se posicionar (pesquisado)
+## 2. Mercado: onde a ABBA pode se posicionar (pesquisado)
 
 | Referência | Faixa |
 |---|---|
 | Valor-hora consultoria no Brasil (geral) | R$ 70 – R$ 1.000+ |
 | **Consultor sênior/especialista TI (faixa mais comum)** | **R$ 200 – R$ 450/h** |
 | Consultoria estratégica / premium (Big-4 no topo) | > R$ 500/h |
-| Workshops de IA in-company | mercado ativo (KPMG, boutiques); preços sob consulta — sinal de categoria premium |
+| Workshops de IA in-company | mercado ativo (KPMG, boutiques); preços sob consulta: sinal de categoria premium |
 
-**Leitura:** com método proprietário + ferramentas próprias + entrega de sistemas (não slides), a ABBA se posiciona legitimamente em **R$ 300–400/h implícitos** — meio-alto da faixa sênior, abaixo do premium Big-4 (coerente com "custamos uma fração").
+**Leitura:** com método proprietário + ferramentas próprias + entrega de sistemas (não slides), a ABBA se posiciona legitimamente em **R$ 300–400/h implícitos**: meio-alto da faixa sênior, abaixo do premium Big-4 (coerente com "custamos uma fração").
 
 ## 3. Esforço estimado por pacote (base: escopos das propostas)
 
@@ -42,27 +42,27 @@
 | Programa completo (16 sem) | ~450h | avaliação 70h + protótipo 120h + deployment 100h + capacitação 100h + gestão/rituais 60h |
 | Manutenção mensal | ~20h/mês | monitoramento 8h + ajustes 6h + relatório 3h + ritual amortizado 3h |
 
-## 4. Piso da hora — cenários (localizem-se e escolham)
+## 4. Piso da hora: cenários (localizem-se e escolham)
 
 `PISO = (renda anual dos 2 sócios + overhead R$ 36k/ano estimado) ÷ (1 − 12% tributos) ÷ horas faturáveis`
 `Horas faturáveis = 2 sócios × 46 sem × horas/sem dedicadas × 55% de utilização`
 
 | Cenário | Renda-alvo/sócio/mês | Horas/sem dedicadas (cada) | Horas faturáveis/ano | **Piso/h** |
 |---|---|---|---|---|
-| A — começo conservador | R$ 8.000 | 20h | 1.012 | **R$ 256** |
-| B — dedicação séria | R$ 12.000 | 25h | 1.265 | **R$ 291** |
-| C — full na ABBA | R$ 20.000 | 35h | 1.771 | **R$ 331** |
+| A: começo conservador | R$ 8.000 | 20h | 1.012 | **R$ 256** |
+| B: dedicação séria | R$ 12.000 | 25h | 1.265 | **R$ 291** |
+| C: full na ABBA | R$ 20.000 | 35h | 1.771 | **R$ 331** |
 
-Todos os cenários caem DENTRO da faixa de mercado sênior (R$ 200–450/h) → **o negócio fecha em qualquer cenário razoável.** Nota de método: o piso já embute renda+overhead+tributos na utilização assumida — preço ≥ piso é sustentável; o multiplicador da metodologia vira **colchão de 1,3–1,5×** (protege contra utilização abaixo do previsto), não 2,5× sobre o piso cheio.
+Todos os cenários caem DENTRO da faixa de mercado sênior (R$ 200–450/h) → **o negócio fecha em qualquer cenário razoável.** Nota de método: o piso já embute renda+overhead+tributos na utilização assumida: preço ≥ piso é sustentável; o multiplicador da metodologia vira **colchão de 1,3–1,5×** (protege contra utilização abaixo do previsto), não 2,5× sobre o piso cheio.
 
-## 5. TABELA-RASCUNHO (cenário B, hora-alvo R$ 350 — meio da banda de posicionamento)
+## 5. TABELA-RASCUNHO (cenário B, hora-alvo R$ 350: meio da banda de posicionamento)
 
 | Produto | Custo (h × piso B) | **Preço-alvo recomendado** | Faixa publicada | Validação de mercado |
 |---|---|---|---|---|
 | Workshop Shadow AI | R$ 10.185 | **R$ 12.500** | R$ 10–15 mil | hora implícita R$ 357 ✓ |
-| Avaliação de Prontidão | R$ 20.370 | **R$ 25.000** | R$ 20–32 mil | R$ 357/h ✓ · era o produto de R$ 45k na proposta Galápagos como "Assessment" de 4-5 sem — coerente |
+| Avaliação de Prontidão | R$ 20.370 | **R$ 25.000** | R$ 20–32 mil | R$ 357/h ✓ · era o produto de R$ 45k na proposta Galápagos como "Assessment" de 4-5 sem: coerente |
 | Sprint LGPD + IA | R$ 17.460 | **R$ 22.000** | R$ 18–30 mil | R$ 367/h ✓ |
-| **Programa completo (16 sem)** | R$ 130.950 | **R$ 160.000** | R$ 140–220 mil (por porte/escopo) | **R$ 356/h ✓ — e valida os R$ 150K emitidos à Galápagos (estavam bem calibrados!)** |
+| **Programa completo (16 sem)** | R$ 130.950 | **R$ 160.000** | R$ 140–220 mil (por porte/escopo) | **R$ 356/h ✓, e valida os R$ 150K emitidos à Galápagos (estavam bem calibrados!)** |
 | Manutenção mensal | R$ 5.820/mês | **R$ 8.500/mês** | R$ 7–12 mil/mês | inclui infra + margem de risco de plantão |
 | Mini-ciclo (caso de uso adicional) | ~R$ 35.000 | **R$ 45.000** | R$ 35–60 mil | ~100h |
 

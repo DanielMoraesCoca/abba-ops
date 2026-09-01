@@ -1,6 +1,6 @@
-# Proposta — Programa Completo de Transformação em IA (estrutura canônica)
+# Proposta: Programa Completo de Transformação em IA (estrutura canônica)
 
-> **Uso interno:** conteúdo de referência da proposta-herói. O arquivo que vai ao cliente é o **modelo Word** [`../08-materiais/modelos/proposta-comercial-modelo.docx`](../08-materiais/modelos/proposta-comercial-modelo.docx) (identidade visual aplicada) — este markdown é a fonte da estrutura e do texto. Baseada na primeira proposta real emitida (ref ABBA-2026-001, jun/2026; decisão no [registro](../05-interno/registro-de-decisoes.md)). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), personalizar seções 1–2 com achados da degustação, congelar PDF no Drive, registrar a ref sequencial (`ABBA-AAAA-NNN`).
+> **Uso interno:** conteúdo de referência da proposta-herói. O arquivo que vai ao cliente é o **modelo Word** [`../08-materiais/modelos/proposta-comercial-modelo.docx`](../08-materiais/modelos/proposta-comercial-modelo.docx) (identidade visual aplicada): este markdown é a fonte da estrutura e do texto. Baseada na primeira proposta real emitida (ref ABBA-2026-001, jun/2026; decisão no [registro](../05-interno/registro-de-decisoes.md)). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](tabela-de-precos.md), personalizar seções 1–2 com achados da degustação, congelar PDF no Drive, registrar a ref sequencial (`ABBA-AAAA-NNN`).
 
 ## Estrutura (11 seções) e conteúdo-base
 
@@ -14,37 +14,37 @@ Programa estruturado de transformação em IA que conduz a organização do diag
 
 | Nível | O que transformamos |
 |---|---|
-| Estratégia (C-Level) | Como a liderança decide — agentes consolidam dados de todas as áreas em visão integrada |
+| Estratégia (C-Level) | Como a liderança decide: agentes consolidam dados de todas as áreas em visão integrada |
 | Workflows (Processos) | Fluxos críticos reengenheirados, com agentes operando dentro deles |
 | Pessoas (Colaboradores) | Cada colaborador operando AI Native no dia a dia, com autonomia |
 
-As três perguntas (espinha pedagógica): **O que posso parar de fazer? O que posso começar a fazer? O que ainda preciso fazer?** Resultado: não uma empresa que usa IA pontualmente — uma empresa remodelada.
+As três perguntas (espinha pedagógica): **O que posso parar de fazer? O que posso começar a fazer? O que ainda preciso fazer?** Resultado: não uma empresa que usa IA pontualmente: uma empresa remodelada.
 
-### 4. A Jornada ABBA (modular — cada etapa justifica o próprio investimento)
-- **4.0 Análise ABBA / Mapa de Vazamento (gratuita, já entregue):** a porta de entrada — 2 páginas com uma faixa em R$, feitas com informação pública; esta proposta personaliza as seções 1–2 com o que ela encontrou.
-- **4.1 Assessment Profundo ({{4–5}} semanas):** diagnóstico ativo com a ferramenta proprietária em **25 dimensões** organizadas em 9 grupos (do conselho à linha de frente: processos, dados, pessoas, tecnologia, governança, estratégia e mais). Entregáveis: Relatório de Maturidade (scoring por dimensão + espectro de 5 estágios) · Mapa de Oportunidades com ROI · Arquitetura de Referência · Plano Diretor 6–12 meses · Business Case + change management. *(Nunca prometer "benchmarks de mercado" neste entregável — a comparação entre clientes só liga com 5+ clientes; [ecossistema](../00-identidade/ecossistema.md).)*
-- **4.2 Protótipo de Caso de Uso ({{6–8}} semanas):** agente funcional em produção limitada, com dados reais, validado com usuários-chave — reduz o risco antes do deployment total.
+### 4. A Jornada ABBA (modular: cada etapa justifica o próprio investimento)
+- **4.0 Análise ABBA / Mapa de Vazamento (gratuita, já entregue):** a porta de entrada: 2 páginas com uma faixa em R$, feitas com informação pública; esta proposta personaliza as seções 1–2 com o que ela encontrou.
+- **4.1 Assessment Profundo ({{4–5}} semanas):** diagnóstico ativo com a ferramenta proprietária em **25 dimensões** organizadas em 9 grupos (do conselho à linha de frente: processos, dados, pessoas, tecnologia, governança, estratégia e mais). Entregáveis: Relatório de Maturidade (scoring por dimensão + espectro de 5 estágios) · Mapa de Oportunidades com ROI · Arquitetura de Referência · Plano Diretor 6–12 meses · Business Case + change management. *(Nunca prometer "benchmarks de mercado" neste entregável: a comparação entre clientes só liga com 5+ clientes; [ecossistema](../00-identidade/ecossistema.md).)*
+- **4.2 Protótipo de Caso de Uso ({{6–8}} semanas):** agente funcional em produção limitada, com dados reais, validado com usuários-chave: reduz o risco antes do deployment total.
 - **4.3 Deployment Completo:** expansão para a organização em **ABBA Cloud** (gerenciada: menor custo de entrada, atualizações automáticas) ou **On-Premise** (soberania de dados: saúde, financeiro, governo), treinamento operacional, monitoramento, handover formal com SLAs.
 - **4.4 Portal de Capacitação (contínuo):** seção 5.
-- **4.5 Serviços Gerenciados (com a nossa presença):** a ABBA opera e evolui a solução em **3 camadas** (Operação · Evolução · Estratégia) — nas camadas Evolução+, **ritual semanal de 20 minutos** com sócio (o que venceu · gatilhos · decisões · o que vamos medir) além do relatório mensal e do conselho trimestral.
-- **4.6 Conselheiro de IA (a criação nova):** a cadeira do estrategista de IA do lado do cliente da mesa — presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](conselheiro-de-ia.md)); embutido na camada Estratégia ou contratável avulso.
+- **4.5 Serviços Gerenciados (com a nossa presença):** a ABBA opera e evolui a solução em **3 camadas** (Operação · Evolução · Estratégia): nas camadas Evolução+, **ritual semanal de 20 minutos** com sócio (o que venceu · gatilhos · decisões · o que vamos medir) além do relatório mensal e do conselho trimestral.
+- **4.6 Conselheiro de IA (a criação nova):** a cadeira do estrategista de IA do lado do cliente da mesa: presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](conselheiro-de-ia.md)); embutido na camada Estratégia ou contratável avulso.
 
-### 5. Capacitação híbrida — plataforma + presencial
-A capacitação é **híbrida por desenho**: kickoff e workshops de marco **presenciais com os fundadores** + aprendizado contínuo e gamificado na plataforma para todos os colaboradores. **Aprender desbloqueia ferramentas** — o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
+### 5. Capacitação híbrida: plataforma + presencial
+A capacitação é **híbrida por desenho**: kickoff e workshops de marco **presenciais com os fundadores** + aprendizado contínuo e gamificado na plataforma para todos os colaboradores. **Aprender desbloqueia ferramentas**: o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
 
 | Nível | Foco | Desbloqueia |
 |---|---|---|
-| 1 — Base comum (Fundamentos) | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
-| 2 — Praticante (Aplicação) | IA em tarefas reais da própria função | Ferramentas por área |
-| 3 — Especialista (Autonomia) | Construir e ajustar fluxos com IA | Ferramentas avançadas |
-| 4 — Arquiteto (Multiplicação) | Ser referência interna | Criação de agentes (CrewAI) + papel de multiplicador |
+| 1: Base comum (Fundamentos) | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
+| 2: Praticante (Aplicação) | IA em tarefas reais da própria função | Ferramentas por área |
+| 3: Especialista (Autonomia) | Construir e ajustar fluxos com IA | Ferramentas avançadas |
+| 4: Arquiteto (Multiplicação) | Ser referência interna | Criação de agentes (CrewAI) + papel de multiplicador |
 
-Conteúdo próprio (ABBA Academy — [materiais finais](../08-materiais/README.md)) + recursos das parcerias oficiais. Kickoff e marcos **presenciais** com os fundadores.
+Conteúdo próprio (ABBA Academy: [materiais finais](../08-materiais/README.md)) + recursos das parcerias oficiais. Kickoff e marcos **presenciais** com os fundadores.
 
 ### 6. Metodologia de Entrega (5 fases com gates de qualidade)
 **Discovery → Analysis → Design → Build → Deploy.** Princípios: valor incremental · transparência total (dashboards + reports semanais) · flexibilidade controlada entre fases · knowledge transfer contínuo · gate formal de qualidade entre fases. A capacitação corre em paralelo a todas.
 
-### 7. Cronograma de Execução ({{16}} semanas, indicativo — refinado no Discovery)
+### 7. Cronograma de Execução ({{16}} semanas, indicativo: refinado no Discovery)
 
 | Semana | Marco | Critério de aceite |
 |---|---|---|
@@ -55,13 +55,13 @@ Conteúdo próprio (ABBA Academy — [materiais finais](../08-materiais/README.m
 | 16 | Go-live | Produção com SLAs, documentação, handover concluído, serviços gerenciados ativos |
 
 ### 8. Equipe e Governança
-Papéis ABBA: **Engagement Lead · AI Architect · Data Engineer · Agent Developer · Enablement Lead** *(nota interna: hoje são chapéus dos 2 sócios + rede de especialistas — apresentar como papéis, jamais como headcount)*. Governança: Status Report semanal · Steering Committee quinzenal · War Room técnico sob demanda · Dashboard de KPIs contínuo.
+Papéis ABBA: **Engagement Lead · AI Architect · Data Engineer · Agent Developer · Enablement Lead** *(nota interna: hoje são chapéus dos 2 sócios + rede de especialistas: apresentar como papéis, jamais como headcount)*. Governança: Status Report semanal · Steering Committee quinzenal · War Room técnico sob demanda · Dashboard de KPIs contínuo.
 
 ### 9. Arquitetura e Ecossistema
-A ABBA **orquestra** o ecossistema, sem vendor lock-in: roteamento de LLMs (Claude/OpenAI/Gemini) por custo e performance · CrewAI para orquestração multi-agente · infraestrutura {{Azure/AWS}} · camada de dados · portal de capacitação. **Agentes com conhecimento institucional:** o operador pergunta sobre processo, o gestor pede análise de indicadores, o executivo pede impacto estratégico — o mesmo cérebro responde nas três altitudes. Treinamento deixa de ser evento e vira serviço contínuo. Parcerias: **stack orquestrada com parceiros oficiais e uso confirmado** (texto aprovado em P8, 2026-07-23) — nunca afirmar contrato formal onde houver apenas parceria de uso; comprovantes em `04 Interno/` no Drive.
+A ABBA **orquestra** o ecossistema, sem vendor lock-in: roteamento de LLMs (Claude/OpenAI/Gemini) por custo e performance · CrewAI para orquestração multi-agente · infraestrutura {{Azure/AWS}} · camada de dados · portal de capacitação. **Agentes com conhecimento institucional:** o operador pergunta sobre processo, o gestor pede análise de indicadores, o executivo pede impacto estratégico: o mesmo cérebro responde nas três altitudes. Treinamento deixa de ser evento e vira serviço contínuo. Parcerias: **stack orquestrada com parceiros oficiais e uso confirmado** (texto aprovado em P8, 2026-07-23), nunca afirmar contrato formal onde houver apenas parceria de uso; comprovantes em `04 Interno/` no Drive.
 
 ### 10. Termos e SLAs
-Prometer apenas o que o [SLA vigente](../04-entrega/sla-manutencao.md) sustenta (P9 resolvida em 2026-07-23): monitoramento automatizado 24/7 · suporte humano 9h–18h úteis · S1 crítico em 4h corridas (8h–22h) · disponibilidade-alvo 99,5%/mês · **ciclo de correção de {{30}} dias do protótipo** (defeito coberto — nunca usar a palavra "garantia" em material: E6 não ativada; a frase certa é a do [kit](kit-de-presenca.md): "garantimos o método") · ciclo formal de revisão dos entregáveis · documentação completa · **Segurança:** LGPD total, NDA, ambiente segregado com audit trail, opção on-premise · **PI:** metodologia, frameworks e plataforma são da ABBA; outputs (relatórios, diagnósticos, agentes treinados com dados do cliente, documentação) são do cliente; dados devolvidos ou destruídos ao final · **Validade:** 30 dias, valores em BRL, impostos conforme regime aplicável.
+Prometer apenas o que o [SLA vigente](../04-entrega/sla-manutencao.md) sustenta (P9 resolvida em 2026-07-23): monitoramento automatizado 24/7 · suporte humano 9h–18h úteis · S1 crítico em 4h corridas (8h–22h) · disponibilidade-alvo 99,5%/mês · **ciclo de correção de {{30}} dias do protótipo** (defeito coberto, nunca usar a palavra "garantia" em material: E6 não ativada; a frase certa é a do [kit](kit-de-presenca.md): "garantimos o método") · ciclo formal de revisão dos entregáveis · documentação completa · **Segurança:** LGPD total, NDA, ambiente segregado com audit trail, opção on-premise · **PI:** metodologia, frameworks e plataforma são da ABBA; outputs (relatórios, diagnósticos, agentes treinados com dados do cliente, documentação) são do cliente; dados devolvidos ou destruídos ao final · **Validade:** 30 dias, valores em BRL, impostos conforme regime aplicável.
 
 ### 11. Por Que a ABBA
 > A maioria das consultorias de IA entrega slides. A ABBA entrega sistemas funcionando e pessoas capacitadas.
@@ -69,4 +69,4 @@ Prometer apenas o que o [SLA vigente](../04-entrega/sla-manutencao.md) sustenta 
 Diferenciais (tabela): consultoria que produz produto · capacitação que gera adoção · AI Native nos 3 níveis · ecossistema orquestrado · serviços gerenciados · deploy flexível. **Posicionamento competitivo:** vs. grandes consultorias (velocidade, custo, produto próprio) · vs. boutiques (profundidade técnica + plataforma + recorrência) · vs. ferramentas genéricas (verticalização + implementação + capacitação) · vs. TI interna (velocidade + metodologia pronta).
 
 ## Investimento (seção 10 ou anexo)
-**R$ 260.000** (jornada completa; faixa R$ 220–320 mil por porte e escopo — [tabela v2](tabela-de-precos.md), a construção dimensionada pela [calculadora](../06-ferramentas/calculadora-construcao.md)) — 30/30/40 por marco (assinatura / protótipos validados / go-live). Serviços gerenciados após o go-live: **R$ 9.500/mês** (camada Evolução, até 2 soluções; 3 camadas no [SLA](../04-entrega/sla-manutencao.md), a Estratégia com [Conselheiro de IA](conselheiro-de-ia.md) embutido). Workshop contratado nos últimos 90 dias credita 100% no Assessment.
+**R$ 260.000** (jornada completa; faixa R$ 220–320 mil por porte e escopo: [tabela v2](tabela-de-precos.md), a construção dimensionada pela [calculadora](../06-ferramentas/calculadora-construcao.md)): 30/30/40 por marco (assinatura / protótipos validados / go-live). Serviços gerenciados após o go-live: **R$ 9.500/mês** (camada Evolução, até 2 soluções; 3 camadas no [SLA](../04-entrega/sla-manutencao.md), a Estratégia com [Conselheiro de IA](conselheiro-de-ia.md) embutido). Workshop contratado nos últimos 90 dias credita 100% no Assessment.
