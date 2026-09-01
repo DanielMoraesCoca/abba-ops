@@ -65,7 +65,9 @@ Desenhar a casa antes de voar seria desenhar sobre dados de mock. Aprofundar ant
 >
 > **O que mais saiu junto:** o relatório do consultor passou a propor um dono para o portão da área disposta (só quando exatamente uma área é nomeada no build; senão entrega o roster), a evidência do Stop/Start/Keep passou a ser renderizada, e as conexões entre dimensões deixaram de ser as mesmas vinte para todo cliente.
 >
-> Commits `84007e2` · `edfd964` · `1dd13da` · `89e0806` · `ff447ec` · `6a367a3`. Suíte 724/724 nos três modos, eval imóvel, IP travada intocada.
+> Commits `84007e2` · `edfd964` · `1dd13da` · `89e0806` · `ff447ec` · `6a367a3`, e a onda de correção `cf3cf47` · `cfa6269` · `9c75692` · `9e8bb30` · `446227e` (migração 059). Suíte **735/735** nos três modos, eval imóvel, IP travada intocada.
+>
+> **A revisão adversarial que veio depois, e por que ela importa mais que a entrega.** O Daniel pediu a re-análise antes de avançar. Um revisor independente achou treze defeitos; seis foram reproduzidos à mão. O mais grave não era um bug: a fronteira "o documento do cliente nunca nomeia uma pessoa" tinha sido declarada provada e **a trava era vazia** — toda pessoa da fixture tinha departamento, e a fuga só acontece quando o modelo devolve uma pessoa sem. Todos corrigidos e travados por sabotagem. A lição virou regra: fixture curada à mão é internamente coerente, e a saída de um modelo real não é.
 
 **O que era (registro histórico):** o aprofundamento que faltava construir — a ferramenta DETECTAVA as peças mas não DESENHAVA a casa. Uma página única, navegável, no padrão do anexo visual (HTML autocontido + SVG inline, zero dependência externa):
 
