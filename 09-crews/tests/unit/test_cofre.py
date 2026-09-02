@@ -26,7 +26,6 @@ from abba_crews.core.cofre import (
     cifrar,
     decifrar,
     esta_cifrado,
-    ler_possivelmente_cifrado,
     senha_do_ambiente,
     senha_obrigatoria,
 )
@@ -78,11 +77,6 @@ def test_conteudo_adulterado_falha_alto() -> None:
 def test_cifrar_sem_senha_recusa() -> None:
     with pytest.raises(SenhaAusente):
         cifrar(TEXTO, "")
-
-
-def test_ler_possivelmente_cifrado_passa_claro_adiante() -> None:
-    assert ler_possivelmente_cifrado(TEXTO, None) == TEXTO
-    assert ler_possivelmente_cifrado(cifrar(TEXTO, SENHA), SENHA) == TEXTO
 
 
 def test_senha_obrigatoria_diz_o_que_fazer(monkeypatch: pytest.MonkeyPatch) -> None:

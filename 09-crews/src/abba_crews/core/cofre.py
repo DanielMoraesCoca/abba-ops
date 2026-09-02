@@ -14,6 +14,11 @@ o mesmo envelope tem tres ganhos concretos e nenhum custo:
 - a mesma variavel de ambiente (`ABBA_DB_PASSPHRASE`) — uma senha, nao duas;
 - o dia em que o `abba forget` precisar alcancar os dossies, ele ja sabe ler.
 
+O `readPossiblyEncrypted` do lado JS **nao** tem equivalente aqui, e isso e deliberado:
+ele existe no brain porque o brain tem relatorio antigo em claro. Este projeto **nunca
+grava em claro** — sem senha ele recusa —, entao espelhar a funcao so pela simetria
+seria superficie declarada sem dono.
+
     "ABBA-ENC-1\\n" + base64( salt[16] | iv[12] | tag[16] | ciphertext ) + "\\n"
     AES-256-GCM · chave scrypt (N=16384, r=8, p=1, dklen=32)
 
@@ -111,13 +116,6 @@ def decifrar(blob: str, senha: str) -> str:
             "dossie modificado seria entregar a um contador numeros que ele nao conferiu."
         ) from e
     return aberto.decode("utf-8")
-
-
-def ler_possivelmente_cifrado(conteudo: str, senha: str | None) -> str:
-    """Decifra se estiver cifrado; devolve texto claro intocado. Espelha o lado JS."""
-    if not esta_cifrado(conteudo):
-        return conteudo
-    return decifrar(conteudo, senha or "")
 
 
 def senha_do_ambiente() -> str | None:

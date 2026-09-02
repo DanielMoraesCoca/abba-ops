@@ -31,7 +31,7 @@ from enum import Enum
 
 from pydantic import BaseModel, Field
 
-from abba_crews.core.calendario import JanelaManifestacao, Situacao
+from abba_crews.core.calendario import JanelaManifestacao
 from abba_crews.core.clientes import ConfigCliente
 from abba_crews.core.reconciliacao import (
     Divergencia,
@@ -140,8 +140,10 @@ def montar(
     hoje: date,
 ) -> Dossie:
     """Monta o dossie. Deterministico: mesmas entradas, mesmo documento."""
-    situacao = janela.situacao(hoje)
-    if situacao is Situacao.ENCERRADA:
+    # `permite_manifestar` em vez de `is ENCERRADA`: a pergunta aqui e "da para
+    # manifestar?", nao "qual e o rotulo da situacao". Se um estado novo entrar em
+    # `Situacao`, esta linha continua certa sozinha.
+    if not janela.situacao(hoje).permite_manifestar:
         natureza = Natureza.REGISTRO_DE_PERDA
     elif resultado.conforme:
         natureza = Natureza.NADA_A_FAZER

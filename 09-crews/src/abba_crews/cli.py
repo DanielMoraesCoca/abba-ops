@@ -147,6 +147,9 @@ def cobertura(
             (d.valor_brl for d in r.divergencias if d.requer_julgamento), Decimal("0.00")
         )
 
+    # A conta mora em `ResultadoReconciliacao.cobertura`; aqui e so a media ponderada
+    # pelo numero de itens. Recalcular a formula inline seria duas definicoes da mesma
+    # metrica, livres para divergirem.
     pct = (conferidos - julgamento) / conferidos if conferidos else 1.0
     typer.echo("")
     typer.echo(f"  itens conferidos   {conferidos}   (corpus: golden set v0)")
