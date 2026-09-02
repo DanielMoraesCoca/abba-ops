@@ -1,6 +1,6 @@
 # Setor Comercial
 
-**Missão:** encher e mover o funil — do desconhecido ao contrato assinado.
+**Missão:** encher e mover o funil: do desconhecido ao contrato assinado.
 **Dono:** Daniel · suplente: Pedro (matriz no [README](README.md))
 
 ## Responsabilidades

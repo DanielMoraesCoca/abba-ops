@@ -1,4 +1,4 @@
-# Assets — mídias-fonte dos materiais
+# Assets: mídias-fonte dos materiais
 
 > Extraídas dos PPTX da era dos 7 serviços em 2026-08-31 (virada V5), antes da
 > remoção dos decks superados. Sem estes arquivos, as fotos reais dos
@@ -21,4 +21,4 @@
 | `fotos/conselheiro--parecer-arbitragem.jpg` | servico-7 · slide 3 | Página do parecer de arbitragem (modelo) |
 
 Regra do repo continua valendo: instância nomeada de cliente fica no Drive,
-nunca em git — tudo aqui é modelo ou material recortado/anonimizado.
+nunca em git: tudo aqui é modelo ou material recortado/anonimizado.

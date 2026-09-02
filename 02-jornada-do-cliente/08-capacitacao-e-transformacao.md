@@ -1,4 +1,4 @@
-# Estágio 08 — Capacitação e Transformação (híbrida)
+# Estágio 08: Capacitação e Transformação (híbrida)
 
 **Dono:** chapéu Capacitação · **Prazo-alvo:** contínuo durante o engajamento; plano fechado até 1 semana após o kickoff
 
@@ -11,13 +11,13 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 |---|---|
 | **Plataforma (assíncrono)** | Trilhas por nível (Explorador → Praticante → Especialista → Arquiteto), videoaulas, desafios práticos avaliados por IA, Bússola (Parar/Começar/Continuar), Iris disponível o tempo todo |
 | **Presencial (síncrono)** | Sessão de abertura (lançamento do programa com o patrocinador) · workshops nos marcos (por nível ou por departamento) · sessão de encerramento/graduação |
-| **Topo da progressão** | Participantes nível Arquiteto ganham acesso a ferramentas de criação de agentes (CrewAI) para construir soluções dos próprios fluxos — com curadoria da ABBA |
+| **Topo da progressão** | Participantes nível Arquiteto ganham acesso a ferramentas de criação de agentes (CrewAI) para construir soluções dos próprios fluxos · com curadoria da ABBA |
 
 ## Checklist
 
 **Lançamento**
 - [ ] Plano de capacitação aprovado pelo patrocinador (trilhas × papéis, cadência, datas presenciais)
-- [ ] **Turma criada com nome próprio** — "Turma {{N}} da {{Empresa}}" (formato único, decisão E4): início e fim declarados, graduação agendada desde o dia 1
+- [ ] **Turma criada com nome próprio**. "Turma {{N}} da {{Empresa}}" (formato único, decisão E4): início e fim declarados, graduação agendada desde o dia 1
 - [ ] Sessão presencial de abertura realizada (patrocinador abre; ABBA conduz; Bússola preenchida ao vivo por todos)
 
 **Ritmo (semanal)**

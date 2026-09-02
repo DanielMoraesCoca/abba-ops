@@ -1,4 +1,4 @@
-# Ferramenta: Portal — ficha de negócio
+# Ferramenta: Portal: ficha de negócio
 
 > **Nome externo:** "Plataforma ABBA" · **interno:** abba-portal. Serve o estágio [08](../02-jornada-do-cliente/08-capacitacao-e-transformacao.md) (+ pré-trabalho do [06](../02-jornada-do-cliente/06-avaliacao-profunda.md)). Conteúdo didático: [materiais da Academy](../08-materiais/README.md).
 
@@ -6,26 +6,26 @@
 
 | ✅ Prometer | ⚠️ Com cuidado | ❌ Não prometer (ainda) |
 |---|---|---|
-| Trilhas gamificadas com desafios avaliados por IA, Bússola e Iris (guia em português) | Fase 1 (Fundamentos): conteúdo FINAL, **vídeos em produção, prontos em agosto/2026** (prazo confirmado pelos sócios em 2026-07-24) — até a gravação, prometer trilha com leitura + desafios + kickoff presencial cobrindo o início | SSO corporativo / requisitos de procurement enterprise (autenticação interina — R3) |
-| Acesso individual por colaborador, progresso e adoção visíveis ao patrocinador | Fases 2–4: estrutura pronta, conteúdo produzido sob demanda do 1º cliente — prometer "trilha do seu departamento", não "catálogo completo" | Fórum aberto entre clientes **antes do 3º cliente** — a rede existe em plano e o mecanismo está construído, mas não se promete data ([ecossistema](../00-identidade/ecossistema.md)) |
-| Pré-trabalho da avaliação (reflexões, mapas de fluxo, Bússola) | Níveis oficiais (P7 ✅): Explorador → Praticante → Especialista → Arquiteto — Academy e proposta seguem esta escala; portal já implementa | Marketplace de agentes |
-| Fluxos LGPD do titular (acesso, exportação, eliminação) | | CrewAI embutido no portal — integração simples, prevista para os próximos dias (Pedro é o dono da conta/parceria CrewAI; confirmado 2026-07-24). Migra para ✅ quando estiver no ar E testada; até lá, a promessa segura é a licença CrewAI de 12 meses ao graduar |
+| Trilhas gamificadas com desafios avaliados por IA, Bússola e Iris (guia em português) | Fase 1 (Fundamentos): conteúdo FINAL, **vídeos em produção, prontos em agosto/2026** (prazo confirmado pelos sócios em 2026-07-24) · até a gravação, prometer trilha com leitura + desafios + kickoff presencial cobrindo o início | SSO corporativo / requisitos de procurement enterprise (autenticação interina · R3) |
+| Acesso individual por colaborador, progresso e adoção visíveis ao patrocinador | Fases 2–4: estrutura pronta, conteúdo produzido sob demanda do 1º cliente · prometer "trilha do seu departamento", não "catálogo completo" | Fórum aberto entre clientes **antes do 3º cliente** · a rede existe em plano e o mecanismo está construído, mas não se promete data ([ecossistema](../00-identidade/ecossistema.md)) |
+| Pré-trabalho da avaliação (reflexões, mapas de fluxo, Bússola) | Níveis oficiais (P7 ✅): Explorador → Praticante → Especialista → Arquiteto · Academy e proposta seguem esta escala; portal já implementa | Marketplace de agentes |
+| Fluxos LGPD do titular (acesso, exportação, eliminação) | | CrewAI embutido no portal · integração simples, prevista para os próximos dias (Pedro é o dono da conta/parceria CrewAI; confirmado 2026-07-24). Migra para ✅ quando estiver no ar E testada; até lá, a promessa segura é a licença CrewAI de 12 meses ao graduar |
 
 ### O que está construído e **desligado** (não prometer data, mas saber que existe)
 
-Levantado em 2026-08-01 — o portal tem três capacidades de ecossistema prontas em código e sem exposição comercial ([ecossistema](../00-identidade/ecossistema.md)):
+Levantado em 2026-08-01: o portal tem três capacidades de ecossistema prontas em código e sem exposição comercial ([ecossistema](../00-identidade/ecossistema.md)):
 
 | Capacidade | Estado | Quando liga |
 |---|---|---|
 | **Benchmark de fluência e de durabilidade entre clientes** (`src/lib/fluency-benchmark.ts`, `durability-benchmark.ts`) | Construído e testado; renderiza **só para equipe ABBA** | Piso de privacidade de **5 clientes** qualificados (≥5 pessoas pontuadas cada) |
 | **Credencial verificável portátil** do colaborador (`/api/credentials/issue`, `/verify`) | Funcional. O token não identifica o cliente | Pode ser combinada já no 1º cliente, na graduação |
-| **Opt-in recíproco de contribuição** (coluna `benchmark_contribution`, padrão `true`) | Aplicado em banco | **Depende do Anexo IV do [contrato](../03-comercial/contrato-sow-esqueleto.md)** — sem ele, o padrão é indefensável perante um DPO |
+| **Opt-in recíproco de contribuição** (coluna `benchmark_contribution`, padrão `true`) | Aplicado em banco | **Depende do Anexo IV do [contrato](../03-comercial/contrato-sow-esqueleto.md)** · sem ele, o padrão é indefensável perante um DPO |
 
-**Como falar disso com cliente:** "existe, está construído, e liga quando houver massa suficiente para o anonimato ser real — inclusive para proteger vocês". Nunca prometer data.
+**Como falar disso com cliente:** "existe, está construído, e liga quando houver massa suficiente para o anonimato ser real: inclusive para proteger vocês". Nunca prometer data.
 
 ## Setup de cliente
 
-- [ ] Turma criada em `/admin/turmas` como **"Turma {{N}} da {{Empresa}}"** com datas de início e graduação (formato único E4 — suporte em código na branch, pendente merge; [kit da turma](../04-entrega/kit-da-turma.md)) + contas dos participantes (lista do [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
+- [ ] Turma criada em `/admin/turmas` como **"Turma {{N}} da {{Empresa}}"** com datas de início e graduação (formato único E4: suporte em código na branch, pendente merge; [kit da turma](../04-entrega/kit-da-turma.md)) + contas dos participantes (lista do [estágio 05](../02-jornada-do-cliente/05-onboarding.md))
 - [ ] Handoff da avaliação importado (quando estágio 06 concluído)
 - [ ] Trilha do departamento configurada conforme o [plano de capacitação](../04-entrega/plano-de-capacitacao.md)
 - [ ] Slots [PERSONALIZAR] do conteúdo preenchidos com dados do cliente

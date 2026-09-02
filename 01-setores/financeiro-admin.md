@@ -1,6 +1,6 @@
 # Setor Financeiro-Admin
 
-**Missão:** manter a empresa legal, líquida e organizada — caixa, notas, impostos, jurídico, societário.
+**Missão:** manter a empresa legal, líquida e organizada: caixa, notas, impostos, jurídico, societário.
 **Dono:** Daniel · suplente: Pedro (matriz no [README](README.md))
 
 ## Responsabilidades
@@ -17,7 +17,7 @@
 
 - [ ] Alguma parcela a receber vencida? Cobrança feita?
 - [ ] Alguma conta a pagar nos próximos 15 dias?
-- [ ] Caixa atual e runway (meses) — número dito em voz alta na reunião
+- [ ] Caixa atual e runway (meses): número dito em voz alta na reunião
 - [ ] NF de tudo que foi recebido emitida?
 - [ ] Pendências P4/P5 (advogado/contador) avançaram?
 

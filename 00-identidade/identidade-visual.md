@@ -1,13 +1,13 @@
-# Identidade Visual — padrão único de materiais
+# Identidade Visual: padrão único de materiais
 
-> **Objetivo:** tudo que a ABBA produz — proposta, deck, relatório, certificado, card, portal — parece vir da mesma casa. Este padrão foi extraído do material real mais maduro (a proposta comercial canônica) e passa a valer para TODO material novo. Arquivos-fonte da marca: Drive → `05 Marketing/Marca/`.
+> **Objetivo:** tudo que a ABBA produz: proposta, deck, relatório, certificado, card, portal: parece vir da mesma casa. Este padrão foi extraído do material real mais maduro (a proposta comercial canônica) e passa a valer para TODO material novo. Arquivos-fonte da marca: Drive → `05 Marketing/Marca/`.
 
 ## Paleta
 
 | Papel | Cor | Hex | Uso |
 |---|---|---|---|
 | **Primária** | Azul-marinho profundo | `#1B2A4A` | Títulos, texto de destaque, fundos de capa |
-| **Acento** | Dourado | `#C2A35B` | Detalhes, linhas, números de destaque, elementos premium — usar com parcimônia |
+| **Acento** | Dourado | `#C2A35B` | Detalhes, linhas, números de destaque, elementos premium · usar com parcimônia |
 | **Neutro escuro** | Cinza-ardósia | `#5A6472` | Texto secundário, legendas, rodapés |
 | **Neutro claro** | Cinza-gelo | `#E8E8E8` | Fundos de tabela, divisores |
 | **Apoio** | Azul-petróleo | `#2E8B9A` | Links, elementos interativos (raro em impresso) |
@@ -17,7 +17,7 @@ Regra: navy + dourado sobre branco = a cara da ABBA (sóbrio, premium, confiáve
 
 ## Tipografia
 
-- **Documentos Office:** Aptos (corpo) e Aptos Display (títulos) — padrão dos materiais atuais. Fallback universal: Calibri / Arial.
+- **Documentos Office:** Aptos (corpo) e Aptos Display (títulos): padrão dos materiais atuais. Fallback universal: Calibri / Arial.
 - **Portal/web:** manter a tipografia do design system do portal; os hex acima valem para lá também.
 - Corpo 11pt · legendas 9pt · títulos de seção numerados (`1. `, `1.1 `).
 
@@ -41,11 +41,11 @@ Regra: navy + dourado sobre branco = a cara da ABBA (sóbrio, premium, confiáve
 
 ## Modelos-mestres (a família completa)
 
-O modelo-mestre de proposta do cardápio antigo foi **retirado na V5** — o novo mestre é o **Termo do Programa** (em regeneração; números na [tabela v3](../03-comercial/tabela-de-precos.md)). A fila dos demais está no [catálogo de materiais](../08-materiais/README.md#4-o-que-ainda-não-existe-fila-de-produção-de-materiais) — **todo novo modelo deriva do mestre de proposta** (mesma capa, paleta, tabelas), nunca nasce do zero.
+O modelo-mestre de proposta do cardápio antigo foi **retirado na V5**: o novo mestre é o **Termo do Programa** (em regeneração; números na [tabela v3](../03-comercial/tabela-de-precos.md)). A fila dos demais está no [catálogo de materiais](../08-materiais/README.md#4-o-que-ainda-não-existe-fila-de-produção-de-materiais). **todo novo modelo deriva do mestre de proposta** (mesma capa, paleta, tabelas), nunca nasce do zero.
 
 ## Regras de ouro
 
-1. Material novo **sempre** parte de um modelo-mestre — se o modelo não existe, criar o modelo primeiro, depois a instância.
+1. Material novo **sempre** parte de um modelo-mestre: se o modelo não existe, criar o modelo primeiro, depois a instância.
 2. Nome externo ≠ nome interno ([nomenclatura](marca-e-nomenclatura.md)); URLs só `abbaservices.com.br`.
 3. Um documento por versão enviada, congelado em PDF no Drive.
-4. Logo: a marca-símbolo (grafo dourado) está versionada em [`../08-materiais/marca/abba-logo.png`](../08-materiais/marca/abba-logo.png) — usada nos decks e certificados. Cópia no Drive `05 Marketing/Marca/`. Evolução profissional da marca pode vir depois.
+4. Logo: a marca-símbolo (grafo dourado) está versionada em [`../08-materiais/marca/abba-logo.png`](../08-materiais/marca/abba-logo.png): usada nos decks e certificados. Cópia no Drive `05 Marketing/Marca/`. Evolução profissional da marca pode vir depois.

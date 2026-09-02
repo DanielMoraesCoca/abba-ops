@@ -1,45 +1,45 @@
-# Marca e Nomenclatura — ABBA
+# Marca e Nomenclatura. ABBA
 
-> Fonte única dos nomes oficiais. Sete pontos estavam desalinhados entre repos e documentos — este doc fixa cada um (os pendentes viram decisão de sócios).
+> Fonte única dos nomes oficiais. Sete pontos estavam desalinhados entre repos e documentos: este doc fixa cada um (os pendentes viram decisão de sócios).
 
 ## Nomes oficiais
 
 | Item | Nome oficial (pt-BR) | Status |
 |---|---|---|
 | Empresa (marca) | **ABBA** | ✅ fixo |
-| E-mail oficial de contato | **`contato@abbaservices.com.br`** (decisão do sócio, 2026-08-04 — é o que vai em TODO material externo; `comercial@` existe como caixa interna, nunca em material) |
-| Empresa (assinatura comercial) | **ABBA Consultoria de IA** | ✅ fixo (era "ABBA AI Consulting" — traduzido; razão social definitiva pende do CNPJ, pendência do [societário](../05-interno/acordo-societario.md)) |
-| Programa principal | **AI Native · Ano 1** (o Programa) | ✅ fixo (Virada V5, 2026-08-31 — fecha a pendência P3) |
+| E-mail oficial de contato | **`contato@abbaservices.com.br`** (decisão do sócio, 2026-08-04 · é o que vai em TODO material externo; `comercial@` existe como caixa interna, nunca em material) |
+| Empresa (assinatura comercial) | **ABBA Consultoria de IA** | ✅ fixo (era "ABBA AI Consulting" · traduzido; razão social definitiva pende do CNPJ, pendência do [societário](../05-interno/acordo-societario.md)) |
+| Programa principal | **AI Native · Ano 1** (o Programa) | ✅ fixo (Virada V5, 2026-08-31 · fecha a pendência P3) |
 | Retenção perpétua (ano 2+) | **Assinatura da Capacidade** | ✅ fixo (V5) |
-| Re-medição anual (dentro da Assinatura) | **Exame Anual de IA** | ✅ fixo (V5) — nunca "auditoria" |
+| Re-medição anual (dentro da Assinatura) | **Exame Anual de IA** | ✅ fixo (V5) · nunca "auditoria" |
 | Marco de saída da fase 1 | **Portão da Prova** | ✅ fixo (V5) |
 | Documento de contratação em dois tempos | **Termo do Programa** | ✅ fixo (V5) |
 | Degustação gratuita | **Análise ABBA** (externa) / "scout" (interna) | ✅ fixo |
 | Avaliação paga | **Avaliação de Prontidão para IA** | ✅ fixo |
-| Workshop de Descoberta de Shadow AI | descontinuado como oferta (Virada V5) — vira atividade interna da fase 1 do Programa, sem nome de produto externo | ❌ descontinuado (V5) |
-| Sprint LGPD + Governança de IA | descontinuado como oferta (Virada V5) — vira atividade interna da fase 1 do Programa | ❌ descontinuado (V5) |
-| Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) — em 3 camadas: **Operação · Evolução · Estratégia** | ✅ fixo (camadas: E2, 2026-07-25; preços v2 em rascunho) |
+| Workshop de Descoberta de Shadow AI | descontinuado como oferta (Virada V5) · vira atividade interna da fase 1 do Programa, sem nome de produto externo | ❌ descontinuado (V5) |
+| Sprint LGPD + Governança de IA | descontinuado como oferta (Virada V5) · vira atividade interna da fase 1 do Programa | ❌ descontinuado (V5) |
+| Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) · em 3 camadas: **Operação · Evolução · Estratégia** | ✅ fixo (camadas: E2, 2026-07-25; preços v2 em rascunho) |
 | Alinhamento com conselho (produto) | **Conselheiro de IA ABBA** (externa) / estágio 10, CAIO fracionário (interna) | ✅ fixo (E1, 2026-07-25) |
-| Formato da capacitação | **Turma {{N}} da {{Empresa}}** — sempre turma nomeada com kickoff, semanas definidas e graduação; nunca "acesso à plataforma" | ✅ fixo (E4, 2026-07-25) |
-| Níveis da plataforma | **Nível 1 — Explorador** (Fundamentos) · **Nível 2 — Praticante** (Aplicação) · **Nível 3 — Especialista** (Autonomia) · **Nível 4 — Arquiteto** (Multiplicação). O TÍTULO (Explorador→Arquiteto) é a identidade do participante — usado em certificados, portal e discurso; o tema entre parênteses descreve o foco da fase. Concilia as três escalas anteriores sem retrabalho no portal | ✅ fixo (P7, 2026-07-23) |
+| Formato da capacitação | **Turma {{N}} da {{Empresa}}** · sempre turma nomeada com kickoff, semanas definidas e graduação; nunca "acesso à plataforma" | ✅ fixo (E4, 2026-07-25) |
+| Níveis da plataforma | **Nível 1 · Explorador** (Fundamentos) · **Nível 2 · Praticante** (Aplicação) · **Nível 3 · Especialista** (Autonomia) · **Nível 4 · Arquiteto** (Multiplicação). O TÍTULO (Explorador→Arquiteto) é a identidade do participante · usado em certificados, portal e discurso; o tema entre parênteses descreve o foco da fase. Concilia as três escalas anteriores sem retrabalho no portal | ✅ fixo (P7, 2026-07-23) |
 | Guia de IA do portal | **Iris** (único nome, também externo; nunca "AI Concierge") | ✅ fixo |
-| Instrumento pessoal | **Bússola** — card com colunas PARAR / COMEÇAR / CONTINUAR. No discurso, as três perguntas: "o que posso parar de fazer? o que posso começar a fazer? **o que ainda preciso fazer?**" (card e discurso são a mesma coisa, registrados assim para não divergirem) | ✅ fixo |
-| Método pedagógico | **Método 4D** (adaptado do AI Fluency Framework — atribuição obrigatória a Dakan, Feller & Anthropic sempre que aparecer; validação da licença na pauta P4) | ✅ fixo |
+| Instrumento pessoal | **Bússola** · card com colunas PARAR / COMEÇAR / CONTINUAR. No discurso, as três perguntas: "o que posso parar de fazer? o que posso começar a fazer? **o que ainda preciso fazer?**" (card e discurso são a mesma coisa, registrados assim para não divergirem) | ✅ fixo |
+| Método pedagógico | **Método 4D** (adaptado do AI Fluency Framework · atribuição obrigatória a Dakan, Feller & Anthropic sempre que aparecer; validação da licença na pauta P4) | ✅ fixo |
 | Artefatos impressos do Kickoff | Card da Bússola · Semáforo de Dados · Esqueleto de Prompt · Lente de Oportunidade · Solution Canvas · Ficha Primeira Vitória | ✅ fixo |
-| Instrumentos internos do método | Lente (tarefa) · Canvas (solução) · Brief (departamento) · Bússola (pessoa) | ✅ fixo — só a Bússola é vocabulário externo |
+| Instrumentos internos do método | Lente (tarefa) · Canvas (solução) · Brief (departamento) · Bússola (pessoa) | ✅ fixo · só a Bússola é vocabulário externo |
 | Metodologia de avaliação | **Avaliação em 25 dimensões** (externa) / assessment-brain (interna, nome de ferramenta) | ✅ fixo |
 | Plataforma de capacitação | **Plataforma ABBA** (externa) / abba-portal (interna) | ✅ fixo |
 | Construção de agentes | **Agentes ABBA** (externa) / CrewAI (stack interna de construção) | ✅ fixo |
 
 ## Regras
 
-1. **Nome externo ≠ nome de ferramenta.** Cliente nunca ouve "assessment-brain", "abba-portal", "scout", "tenant" — ouve os nomes da coluna oficial.
+1. **Nome externo ≠ nome de ferramenta.** Cliente nunca ouve "assessment-brain", "abba-portal", "scout", "tenant": ouve os nomes da coluna oficial.
 2. **Domínio único: `abbaservices.com.br`** em toda assinatura, rodapé e material. Proibido usar URLs `*.vercel.app` com prospect.
 3. **Idioma:** tudo externo em pt-BR. Termos em inglês só quando consagrados (Shadow AI, kickoff, sprint).
-4. Identidade visual: **definida** (navy `#1B2A4A` + dourado `#C2A35B` — [identidade-visual](identidade-visual.md); logo em [`../08-materiais/marca/`](../08-materiais/README.md)); arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
+4. Identidade visual: **definida** (navy `#1B2A4A` + dourado `#C2A35B`. [identidade-visual](identidade-visual.md); logo em [`../08-materiais/marca/`](../08-materiais/README.md)); arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
 
 ## Histórico
 
-"Capability Installation Program" (EN), "AI Academy", "Moment 1/2/3" e "Sustain" foram vocabulário das fases anteriores — permanecem nos repos como nomes internos/históricos e **não são usados com cliente**.
+"Capability Installation Program" (EN), "AI Academy", "Moment 1/2/3" e "Sustain" foram vocabulário das fases anteriores: permanecem nos repos como nomes internos/históricos e **não são usados com cliente**.
 
 O **repo ABBA original** (a "plataforma de agentes" da fase produto) é o **legado/origem da empresa**: guarda ativos reutilizáveis e a história de onde viemos, mas **não é ferramenta de entrega atual e não aparece no discurso comercial**. A construção de agentes hoje é feita diretamente com CrewAI.

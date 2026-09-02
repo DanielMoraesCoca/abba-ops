@@ -1,6 +1,6 @@
-# Pauta da Reunião Semanal de Sócios — instrumento de condução
+# Pauta da Reunião Semanal de Sócios: instrumento de condução
 
-> **Uso:** abrir este arquivo NA reunião (60–90 min, dia fixo) e percorrer na ordem. O log de métricas é preenchido aqui, toda semana, **principalmente quando estiver ruim** — número ruim é diagnóstico, não vergonha. Estrutura decidida em E5 ([análise](analise-estrategica-2026-07.md)); política geral em [comunicacao.md](comunicacao.md).
+> **Uso:** abrir este arquivo NA reunião (60–90 min, dia fixo) e percorrer na ordem. O log de métricas é preenchido aqui, toda semana, **principalmente quando estiver ruim**: número ruim é diagnóstico, não vergonha. Estrutura decidida em E5 ([análise](analise-estrategica-2026-07.md)); política geral em [comunicacao.md](comunicacao.md).
 
 ## A pauta (ordem e timebox)
 
@@ -12,13 +12,13 @@
 | 3 | **Caixa e runway** | 5 min | O número dito em voz alta + faturas a emitir/vencer (Fin-Admin) |
 | 4 | **Checklists dos 5 setores** | 25 min | 5 min por chapéu, dono conduz ([setores](../01-setores/README.md)) |
 | 5 | **Decisões** | 10 min | Cada decisão: classificar a porta (guia abaixo) → [registro](registro-de-decisoes.md) na hora |
-| 6 | **Pendências abertas** | 5 min | Tabela de pendências do registro — o que destravou? quem cobra o quê? |
+| 6 | **Pendências abertas** | 5 min | Tabela de pendências do registro · o que destravou? quem cobra o quê? |
 | 7 | **"O que compôs esta semana?"** | 15 min | Day 1: padrões no vault ([playbook](playbook-vault.md)), melhoria em template/método/material. Semana sem composição = anotar por quê |
 
 ## Guia rápido de portas (item 5)
 
-- **Porta de 2 vias** (reversível — preço de 1 proposta, formato de material, experimento): **decidir rápido, na hora**, registrar no mesmo dia. Errou? Volta.
-- **Porta de 1 via** (irreversível — preço público/tabela, contratação, exclusividade, cláusula de contrato, nome externo): **dormir sobre ela**; registrar ANTES de agir; se envolver terceiros, passar no advogado/contador.
+- **Porta de 2 vias** (reversível: preço de 1 proposta, formato de material, experimento): **decidir rápido, na hora**, registrar no mesmo dia. Errou? Volta.
+- **Porta de 1 via** (irreversível: preço público/tabela, contratação, exclusividade, cláusula de contrato, nome externo): **dormir sobre ela**; registrar ANTES de agir; se envolver terceiros, passar no advogado/contador.
 - Working backwards para oferta nova: antes de aprovar, alguém escreve **o depoimento do cliente 12 meses depois** (1 parágrafo). Não empolgou os dois → não nasce.
 
 ## Log de métricas de INPUT (preencher toda semana, na reunião)
@@ -32,7 +32,7 @@ Metas: contatos ≥ {{10}}/sem · análises no prazo = 100% · reações a preç
 | {{2026-W33}} | | | | | | | | |
 | {{2026-W34}} | | | | | | | | |
 
-*(Acrescentar linhas; nunca apagar semanas passadas — a série é o instrumento.)*
+*(Acrescentar linhas; nunca apagar semanas passadas: a série é o instrumento.)*
 
 ## Leitura do funil (quando o número vier ruim)
 
