@@ -27,6 +27,9 @@ const ALVOS = {
   "abba-deck-institucional": require("./decks/institucional"),
   "deck-programa": require("./decks/programa"),
   "deck-conselheiro": require("./decks/conselheiro"),
+  "abba-deck-kickoff": require("./decks/kickoff"),
+  "certificados-modelo": require("./decks/certificados"),
+  "cartao-descoberta-prototipo": require("./decks/cartao"),
 };
 
 // alvos DOCX (modulo async que devolve um Buffer)

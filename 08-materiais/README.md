@@ -22,7 +22,7 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 
 ## 0b. O gerador (Virada V5, 2026-08-31)
 
-Os materiais de apresentação agora **nascem de código**, não de edição manual: [`gerador/`](gerador/) (Node + pptxgenjs/docx pinados). `tema.js` é a única fonte da identidade (navy/dourado/versaletes/filetes: espelha o §0); `conteudo/precos.json` é validado contra a [régua](../06-ferramentas/regua-do-revisor.json) em todo build; um manifesto de hashes recusa sobrescrever arquivo retocado à mão sem `--force`. Uso: `cd gerador && npm ci && node build.js [--pdf]`. Alvos: `abba-apresentacao`, `abba-um-minuto`, `abba-deck-institucional`, `deck-programa`, `deck-conselheiro`, `termo-do-programa-modelo` (DOCX).
+Os materiais de apresentação agora **nascem de código**, não de edição manual: [`gerador/`](gerador/) (Node + pptxgenjs/docx pinados). `tema.js` é a única fonte da identidade (navy/dourado/versaletes/filetes: espelha o §0); `conteudo/precos.json` é validado contra a [régua](../06-ferramentas/regua-do-revisor.json) em todo build; um manifesto de hashes recusa sobrescrever arquivo retocado à mão sem `--force`. Uso: `cd gerador && npm ci && node build.js [--pdf]`. Alvos: `abba-apresentacao`, `abba-um-minuto`, `abba-deck-institucional`, `deck-programa`, `deck-conselheiro`, `termo-do-programa-modelo` (DOCX), `abba-deck-kickoff`, `certificados-modelo`, `cartao-descoberta-prototipo` (A4).
 
 ## 1. ABBA Academy. Materiais Finais de Treinamento (PT-BR)
 
@@ -110,11 +110,11 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Material | Uso | Status |
 |---|---|---|
 | Deck institucional (PPTX+PDF, **15 slides · refeito na V5, registro formal (2026-09-01)**: capa navy, quem somos, o gancho, as duas frentes + ponta/veia, as 3 medições, o Mapa, o Programa em 3 fases, um slide "por dentro" para cada fase (serviços em o quê · por quê · como, com fotos), o Portão formal, depois do ano 1, Conselheiro especificado, prometemos/recusamos + próximo passo · **sem preços, sem travessão**) | 2ª reunião em diante · apresentação ao vivo | ✅ [`modelos/abba-deck-institucional.pptx`](modelos/abba-deck-institucional.pptx) |
-| Deck de kickoff (PPTX, 12–13 slides com o pré-mortem 6b, com logo) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) |
+| Deck de kickoff (PPTX, 12 slides · **regenerado na V5 pelo gerador**: as 3 fases do Programa com os Portões no slide do caminho, Termos de Aceite, sem travessão) | [roteiro](../04-entrega/kickoff-roteiro.md) | ✅ [`modelos/abba-deck-kickoff.pptx`](modelos/abba-deck-kickoff.pptx) (gerador) |
 | Modelo da Análise ABBA (degustação, DOCX → PDF) | estágio 02 | ✅ [`modelos/analise-abba-modelo.docx`](modelos/analise-abba-modelo.docx) |
 | 3 propostas de entrada (DOCX) | workshop · avaliação · sprint LGPD | 🔴 retiradas na V5 · as ofertas saíram da vitrine ([tabela v3](../03-comercial/tabela-de-precos.md)); processos arquivados em [`../05-interno/arquivo/`](../05-interno/arquivo/README.md) |
 | Modelo do Relatório de Avaliação (capa/estilo) | estágio 06 | ✅ regularizado (`modelos/relatorio-maturidade-modelo.docx` + oportunidades + plano diretor) |
-| Certificados (participante e campeão, PPTX com logo) | graduação | ✅ [`modelos/certificados-modelo.pptx`](modelos/certificados-modelo.pptx) |
+| Certificados (participante e campeão, PPTX · **regenerados na V5 pelo gerador**, moldura dupla navy/ouro) | graduação | ✅ [`modelos/certificados-modelo.pptx`](modelos/certificados-modelo.pptx) (gerador) |
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
 | Card da Bússola do portal em pt-BR | o card existente ("My Week With AI") está em inglês · não pode aparecer em material pt-BR | pendência de tradução (Pedro/portal) |
