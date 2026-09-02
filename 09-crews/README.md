@@ -109,6 +109,38 @@ cobertura` mede o avanço.
 Por isso a classificação é **opcional e vem desligada**: ligada hoje, mandaria todo
 crédito à rota de julgamento, e a crew que julga só chega no M3b.
 
+## O outbox do ledger — como falamos com o cérebro
+
+Este projeto **não escreve no `assessment-brain`.** Ele enfileira *intenções* em disco,
+cifradas, e o lado Node aplica pelas funções sancionadas de lá:
+
+```bash
+uv run abba-crews sentinela ... --guardar   # conferir gera fato
+uv run abba-crews aprovar --chave <ref> --por "Nome"   # assinar gera decisão
+cd ../../assessment-brain && node bin/abba.js crews sync --dry-run
+node bin/abba.js crews sync                # aplica no cérebro
+```
+
+Três regras que não se negociam:
+
+- **Origem `tool_output`, nunca `human_stated`.** Autoridade 2 no cérebro — nada que
+  este projeto afirme sobrepõe o que uma pessoa afirmou. A única porta de `human_stated`
+  continua sendo `abba brain fact --by "Nome"`, digitada à mão.
+- **A assinatura do contador vira decisão, não fato.** Ato humano nomeado tem lugar
+  próprio no cérebro (`decided_by`); um programa relatando "fulano assinou" não pode
+  entrar pela porta de autoridade máxima.
+- **Não reimplementamos as regras do cérebro.** Supersessão bitemporal, autoridade de
+  origem e o alcance do `abba forget` moram em `src/brain/` do `assessment-brain`. Duas
+  cópias dessa lógica divergiriam sem ninguém perceber.
+
+As intenções usam o mesmo envelope `ABBA-ENC-1` dos dossiês, com a mesma senha — **é
+aqui que a interoperabilidade paga**: o lado Node lê com o `readPossiblyEncrypted` que
+já existia, sem formato novo e sem segunda senha. Cada intenção tem id estável derivado
+do que afirma, então `sync` duas vezes não duplica nada, e nada é apagado.
+
+`engagement_id` no YAML do cliente é o que liga uma conferência a um trabalho no
+cérebro. Sem ele, nada é registrado — inventar um seria pior.
+
 ## As duas regras que estruturam o código
 
 **1. Determinístico onde há dinheiro e prazo; agêntico só onde há julgamento.**

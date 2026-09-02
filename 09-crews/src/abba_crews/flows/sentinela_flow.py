@@ -244,3 +244,28 @@ class SentinelaFlow(Flow[EstadoSentinela]):
             impressao=self.state.fonte.impressao(self.state.hoje),
             origem=self.state.fonte.origem,
         )
+        self._registrar_conferencia()
+
+    def _registrar_conferencia(self) -> None:
+        """Enfileira o fato da conferencia para o cerebro (M5). Nao escreve nele.
+
+        So quando ha `engagement_id`: nem todo CNPJ conferido pertence a um trabalho
+        registrado, e inventar um seria pior que nao registrar.
+        """
+        r, d = self.state.registro, self.state.dossie
+        if self._arquivo is None or r is None or d is None or not r.engagement_id:
+            return
+        from abba_crews.core.outbox import Outbox, da_conferencia
+
+        Outbox(self._arquivo).registrar(
+            da_conferencia(
+                engagement_id=r.engagement_id,
+                cnpj=r.cnpj,
+                competencia=r.competencia,
+                impressao=r.impressao,
+                favoravel=d.total_favoravel,
+                desfavoravel=d.total_desfavoravel,
+                descartado=d.total_descartado,
+                itens=d.resultado.itens_conferidos,
+            )
+        )

@@ -112,6 +112,14 @@ class Dossie(BaseModel):
     janela: JanelaManifestacao
     resultado: ResultadoReconciliacao
     responsavel: str = Field(description="Quem deve assinar. Sem nome nao ha gate humano.")
+    engagement_id: str | None = Field(
+        default=None,
+        description=(
+            "O engagement no assessment-brain. Vem da configuracao do cliente e e o que "
+            "permite o outbox (M5) dizer ao cerebro a que trabalho esta conferencia "
+            "pertence. `None` = cliente sem engagement; nada e registrado no cerebro."
+        ),
+    )
 
     @property
     def total_favoravel(self) -> Decimal:
@@ -159,6 +167,7 @@ def montar(
         janela=janela,
         resultado=resultado,
         responsavel=config.aprovacao.responsavel_nome,
+        engagement_id=config.engagement_id,
     )
 
 

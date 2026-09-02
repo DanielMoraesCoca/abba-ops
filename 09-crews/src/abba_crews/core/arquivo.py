@@ -94,6 +94,8 @@ class RegistroDossie(BaseModel):
     sha256: str = Field(min_length=64, max_length=64, description="hash do markdown")
     estado: EstadoDossie = EstadoDossie.RASCUNHO
     responsavel: str = Field(description="quem deveria assinar, segundo a config")
+    engagement_id: str | None = None
+    """Id interno da ABBA, nao dado de cliente — pode ficar no indice em claro."""
     origem: str = "desconhecida"
     guardado_em: datetime
 
@@ -172,6 +174,7 @@ class Arquivo:
             sha256=sha256_de(markdown),
             estado=EstadoDossie.RASCUNHO,
             responsavel=dossie.responsavel,
+            engagement_id=dossie.engagement_id,
             origem=origem,
             guardado_em=agora(),
         )

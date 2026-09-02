@@ -33,6 +33,8 @@ de gate: nao ha quem responda, e responder e o ponto inteiro.
 
 from __future__ import annotations
 
+from decimal import Decimal
+
 from abba_crews.core.arquivo import Arquivo, RegistroDossie, agora, sha256_de
 from abba_crews.core.dossie import (
     MARCA_RODAPE_RASCUNHO,
@@ -41,6 +43,8 @@ from abba_crews.core.dossie import (
     EstadoDossie,
     bloco_de_assinatura,
 )
+
+ZERO = Decimal("0.00")
 
 
 class GateViolado(RuntimeError):
@@ -149,16 +153,22 @@ def _normaliza(nome: str) -> str:
     return " ".join(nome.strip().casefold().split())
 
 
-def aprovar(arquivo: Arquivo, referencia: str, *, por: str) -> RegistroDossie:
+def aprovar(
+    arquivo: Arquivo, referencia: str, *, por: str, efeito_liquido_do: Decimal | None = None
+) -> RegistroDossie:
     """Assina um dossie. Exige nome de gente e os bytes conferindo.
 
     Grava a **via assinada** ao lado do rascunho: o mesmo conteudo, mais quem assumiu,
     quando, e o hash exato do que foi conferido. O rascunho nunca e alterado.
+
+    `efeito_liquido_do` entra so na descricao da decisao registrada no cerebro; o indice
+    nao guarda valor, por ser lido em claro.
     """
     nome = _nome_de_gente(por)
     r = arquivo.localizar(referencia)
     _exige_rascunho(r, "aprovar")
     markdown = _confere_bytes(arquivo, r)
+    efeito_liquido = efeito_liquido_do or ZERO
 
     quando = agora()
     assinado = r.model_copy(
@@ -167,7 +177,36 @@ def aprovar(arquivo: Arquivo, referencia: str, *, por: str) -> RegistroDossie:
     arquivo.gravar_via_assinada(
         assinado, via_assinada(markdown, Assinatura(por=nome, em=quando, sha256=r.sha256))
     )
+    _registrar_no_outbox(arquivo, assinado, efeito_liquido=efeito_liquido)
     return arquivo.atualizar(assinado)
+
+
+def _registrar_no_outbox(
+    arquivo: Arquivo, r: RegistroDossie, *, efeito_liquido: Decimal
+) -> None:
+    """Enfileira a decisao para o cerebro. Nao escreve nele — ver `core/outbox`.
+
+    Silencioso quando o cliente nao tem `engagement_id`: nem todo CNPJ conferido
+    pertence a um trabalho registrado no cerebro, e inventar um seria pior que nao
+    registrar. Falha no outbox **nao** desfaz a assinatura: o documento assinado ja
+    existe no disco, e a intencao pode ser reenfileirada; perder a assinatura por causa
+    do registro seria trocar o que importa pelo que acompanha.
+    """
+    if not r.engagement_id or r.aprovado_por is None:
+        return
+    from abba_crews.core.outbox import Outbox, da_assinatura
+
+    Outbox(arquivo).registrar(
+        da_assinatura(
+            engagement_id=r.engagement_id,
+            cnpj=r.cnpj,
+            competencia=r.competencia,
+            impressao=r.impressao,
+            por=r.aprovado_por,
+            sha256=r.sha256,
+            efeito_liquido=efeito_liquido,
+        )
+    )
 
 
 def devolver(
