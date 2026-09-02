@@ -29,6 +29,11 @@ const ALVOS = {
   "deck-conselheiro": require("./decks/conselheiro"),
 };
 
+// alvos DOCX (modulo async que devolve um Buffer)
+const ALVOS_DOCX = {
+  "termo-do-programa-modelo": require("./docs/termo-do-programa"),
+};
+
 function sha256(f) { return crypto.createHash("sha256").update(fs.readFileSync(f)).digest("hex"); }
 function lerManifesto() { try { return JSON.parse(fs.readFileSync(MANIFESTO, "utf8")); } catch { return {}; } }
 
@@ -38,10 +43,21 @@ async function main() {
   const force = args.includes("--force");
   const querPdf = args.includes("--pdf");
   const pedidos = args.filter((a) => !a.startsWith("--"));
-  const alvos = pedidos.length ? pedidos : Object.keys(ALVOS);
+  const alvos = pedidos.length ? pedidos : [...Object.keys(ALVOS), ...Object.keys(ALVOS_DOCX)];
   const manifesto = lerManifesto();
 
   for (const alvo of alvos) {
+    if (ALVOS_DOCX[alvo]) {
+      const saida = path.join(MODELOS, `${alvo}.docx`);
+      if (fs.existsSync(saida) && manifesto[alvo] && manifesto[alvo] !== sha256(saida) && !force) {
+        console.error(`${alvo}: arquivo em modelos/ foi editado a mao (hash diverge do manifesto). Use --force para sobrescrever.`);
+        continue;
+      }
+      fs.writeFileSync(saida, await ALVOS_DOCX[alvo]());
+      manifesto[alvo] = sha256(saida);
+      console.log(`gerado: ${alvo}.docx`);
+      continue;
+    }
     if (!ALVOS[alvo]) { console.error(`alvo desconhecido: ${alvo}`); process.exit(1); }
     const saida = path.join(MODELOS, `${alvo}.pptx`);
     if (fs.existsSync(saida) && manifesto[alvo] && manifesto[alvo] !== sha256(saida) && !force) {

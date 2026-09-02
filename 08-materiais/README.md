@@ -22,7 +22,7 @@ O [Revisor](../06-ferramentas/regua-do-revisor.md) codifica as regras compatíve
 
 ## 0b. O gerador (Virada V5, 2026-08-31)
 
-Os materiais de apresentação agora **nascem de código**, não de edição manual: [`gerador/`](gerador/) (Node + pptxgenjs/docx pinados). `tema.js` é a única fonte da identidade (navy/dourado/versaletes/filetes — espelha o §0); `conteudo/precos.json` é validado contra a [régua](../06-ferramentas/regua-do-revisor.json) em todo build; um manifesto de hashes recusa sobrescrever arquivo retocado à mão sem `--force`. Uso: `cd gerador && npm ci && node build.js [--pdf]`. Alvos: `abba-apresentacao`, `abba-um-minuto`, `abba-deck-institucional`, `deck-programa`, `deck-conselheiro`.
+Os materiais de apresentação agora **nascem de código**, não de edição manual: [`gerador/`](gerador/) (Node + pptxgenjs/docx pinados). `tema.js` é a única fonte da identidade (navy/dourado/versaletes/filetes — espelha o §0); `conteudo/precos.json` é validado contra a [régua](../06-ferramentas/regua-do-revisor.json) em todo build; um manifesto de hashes recusa sobrescrever arquivo retocado à mão sem `--force`. Uso: `cd gerador && npm ci && node build.js [--pdf]`. Alvos: `abba-apresentacao`, `abba-um-minuto`, `abba-deck-institucional`, `deck-programa`, `deck-conselheiro`, `termo-do-programa-modelo` (DOCX).
 
 ## 1. ABBA Academy — Materiais Finais de Treinamento (PT-BR)
 
@@ -118,7 +118,7 @@ Prioridade no [plano de ação](../05-interno/plano-de-acao.md). Tudo nasce do [
 | Vídeos do Nível 1 + Módulo 2.1 | portal | roteiros prontos; gravar |
 | Cards impressos (6 artefatos do Tier 1D) | kickoff presencial | arte final + gráfica |
 | Card da Bússola do portal em pt-BR | o card existente ("My Week With AI") está em inglês — não pode aparecer em material pt-BR | pendência de tradução (Pedro/portal) |
-| **Modelo Word do Termo do Programa** (DOCX — o novo documento de proposta único: fase 1 firme + fases 2–3 como opção do Portão, preços pela [tabela v3](../03-comercial/tabela-de-precos.md)) | toda proposta de Programa | 🔲 na fila do gerador — até existir, os números vão direto da tabela v3 para o corpo do e-mail/conversa |
+| **Modelo Word do Termo do Programa** (DOCX — o documento de proposta único da V5: capa, sumário executivo, o que ouvimos, as 3 fases com os portões, investimento por porte (preços puxados de `gerador/conteudo/precos.json`, validados contra a régua no build), Assinatura ano 2+, como trabalhamos, aceite; placeholders `{{ }}`; **sem travessão**) | toda proposta de Programa — preencher, congelar PDF no Drive, registrar a ref `ABBA-AAAA-NNN` | ✅ [`modelos/termo-do-programa-modelo.docx`](modelos/termo-do-programa-modelo.docx) (gerador, alvo `termo-do-programa-modelo`) |
 | Papel timbrado (DOCX) | correspondência | ✅ [`modelos/papel-timbrado-modelo.docx`](modelos/papel-timbrado-modelo.docx) |
 | One-pager do Conselheiro de IA (DOCX) | [produto E1](../03-comercial/conselheiro-de-ia.md) — estágio 10 / venda direta | ✅ [`modelos/conselheiro-de-ia-onepager-modelo.docx`](modelos/conselheiro-de-ia-onepager-modelo.docx) |
 | Proposta do Conselheiro de IA (DOCX) | [processo](../03-comercial/proposta-conselheiro-de-ia.md) | ✅ [`modelos/proposta-conselheiro-modelo.docx`](modelos/proposta-conselheiro-modelo.docx) |
