@@ -47,6 +47,48 @@ uv run abba-crews janela -c 2027-03         # disponibilização x prazo final
 uv run abba-crews golden                    # o placar do golden set
 ```
 
+## O gate humano — a IA rascunha, o humano assina
+
+O dossiê nasce `RASCUNHO` e **só sai daí por assinatura de gente com nome**:
+
+```bash
+export ABBA_DB_PASSPHRASE=...               # sem ela, o sistema recusa gravar
+export ABBA_CREWS_DOSSIES=~/.abba-crews/dossies
+
+uv run abba-crews sentinela ... --guardar   # grava o rascunho, cifrado
+uv run abba-crews dossies                   # o estado real de cada um
+uv run abba-crews ver      --chave <ref>
+uv run abba-crews aprovar  --chave <ref> --por "Maria Contadora"
+uv run abba-crews devolver --chave <ref> --por "Maria" --motivo "faltou a nota 42"
+```
+
+Quatro regras que são o desenho, não validação decorativa:
+
+- **Nome obrigatório.** Gate humano sem nome é automação com nome de gate: não há quem
+  responda, e responder é o ponto inteiro.
+- **Os bytes têm de conferir.** `aprovar` recalcula o sha256 do rascunho e compara com o
+  índice. Divergiu, recusa — assinar sem isso é assinar em branco. A via assinada é
+  derivada dos **bytes conferidos**, nunca re-renderizada do modelo.
+- **Não volta atrás.** `APROVADO` e `DEVOLVIDO` são terminais. Conferência nova gera
+  dossiê novo **ao lado**, sem apagar o anterior — supersessão, como no cérebro.
+- **Aprovar não é transmitir.** A via assinada diz isso no próprio corpo. A manifestação
+  ao Fisco continua sendo ato do contribuinte; não existe ferramenta de transmissão aqui.
+
+### Onde o dado fica, e por quê
+
+Dossiê carrega dado fiscal de cliente. Ele é gravado **fora da árvore do repositório** e
+**cifrado** no envelope `ABBA-ENC-1` — o mesmo formato do
+[`assessment-brain`](../../assessment-brain/src/core/report-crypto.js), de propósito: um
+arquivo escrito aqui é legível lá, e a senha é a mesma (`ABBA_DB_PASSPHRASE`). Um teste
+chama o `node` de verdade para provar essa interoperabilidade — sem ele, mexer nos
+parâmetros do scrypt manteria o round-trip local verde e mataria a interoperação em
+silêncio.
+
+Duas recusas, ambas deliberadas: **sem senha não grava** (nada de degradar para texto
+claro) e **dentro de árvore git não grava** (dado de cliente a um `git add -A` de
+distância é acidente esperando acontecer). A retenção e o caminho de apagamento estão em
+aberto — `docs/PENDENCIAS.md`, **P6**.
+
 ## Creditabilidade: o que entra no dossiê e o que fica de fora
 
 O reconciliador acha divergência **estrutural** — o que falta na proposta, o que diverge

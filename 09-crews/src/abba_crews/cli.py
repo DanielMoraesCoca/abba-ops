@@ -168,6 +168,143 @@ def cobertura(
         typer.echo("")
 
 
+# --------------------------------------------------------------------------- #
+# O gate humano
+# --------------------------------------------------------------------------- #
+
+
+def _abre_arquivo() -> Arquivo:  # type: ignore[name-defined] # noqa: F821
+    """Abre o armazem, traduzindo as recusas em mensagem de terminal.
+
+    As duas recusas sao deliberadas (ver core/arquivo.py): sem senha nao grava, e
+    dentro de arvore git nao grava. Aqui elas viram texto que diz o que fazer.
+    """
+    from abba_crews.core.arquivo import Arquivo, RaizInsegura
+    from abba_crews.core.cofre import SenhaAusente, senha_obrigatoria
+
+    try:
+        arquivo = Arquivo()
+        # Confere a senha AQUI, nao la na hora de gravar. Mesma disciplina do
+        # `abrir_competencia` do Flow: validar antes de qualquer custo. Descobrir a
+        # falta de senha depois da conferencia rodada gastaria o trabalho e devolveria
+        # um traceback em vez de uma instrucao.
+        senha_obrigatoria()
+        return arquivo
+    except (RaizInsegura, SenhaAusente) as e:
+        typer.echo(f"\n  {e}\n")
+        raise typer.Exit(code=1) from e
+
+
+@app.command("dossies")
+def dossies(
+    cnpj: str = typer.Option("", "--cnpj"),
+    competencia: str = typer.Option("", "--competencia", "-c", help="AAAA-MM"),
+    estado: str = typer.Option("", "--estado", help="RASCUNHO | APROVADO | DEVOLVIDO"),
+) -> None:
+    """Lista os dossies guardados e o estado real de cada um.
+
+    Mostra tambem os devolvidos: esconder o que foi recusado seria perder o unico
+    sinal que temos de onde a conferencia erra.
+    """
+    from abba_crews.core.dossie import EstadoDossie
+
+    filtro = None
+    if estado:
+        try:
+            filtro = EstadoDossie(estado.strip().upper())
+        except ValueError:
+            validos = ", ".join(e.value for e in EstadoDossie)
+            typer.echo(f"estado desconhecido: {estado}. Validos: {validos}")
+            raise typer.Exit(code=1) from None
+
+    registros = _abre_arquivo().listar(
+        cnpj=cnpj or None, competencia=competencia or None, estado=filtro
+    )
+    typer.echo("")
+    if not registros:
+        typer.echo("  nenhum dossie guardado.")
+        typer.echo("  Rode `abba-crews sentinela ... --guardar` para produzir um.\n")
+        return
+    for r in registros:
+        typer.echo(f"  {r.resumo()}")
+    typer.echo(f"\n  {len(registros)} dossie(s).\n")
+
+
+@app.command("ver")
+def ver(
+    chave: str = typer.Option(..., "--chave", help="Chave ou prefixo da impressao."),
+    assinado: bool = typer.Option(False, "--assinado", help="Mostra a via assinada."),
+) -> None:
+    """Decifra e imprime um dossie guardado."""
+    arquivo = _abre_arquivo()
+    r = _localiza(arquivo, chave)
+    typer.echo("")
+    typer.echo(arquivo.markdown(r, assinado=assinado))
+
+
+def _localiza(arquivo: Arquivo, chave: str):  # type: ignore[name-defined,no-untyped-def] # noqa: F821,E501
+    from abba_crews.core.arquivo import DossieNaoEncontrado, ReferenciaAmbigua
+
+    try:
+        return arquivo.localizar(chave)
+    except (DossieNaoEncontrado, ReferenciaAmbigua) as e:
+        typer.echo(f"\n  {e}\n")
+        raise typer.Exit(code=1) from e
+
+
+@app.command("aprovar")
+def aprovar(
+    chave: str = typer.Option(..., "--chave", help="Chave ou prefixo da impressao."),
+    por: str = typer.Option(..., "--por", help='Nome de quem assina. Ex: "Maria Contadora".'),
+) -> None:
+    """Assina um dossie — o gate humano, com nome.
+
+    Confere que os bytes no disco sao os mesmos que foram indexados antes de assinar.
+    Aprovar NAO transmite nada ao Fisco: a manifestacao continua sendo ato do
+    contribuinte, no sistema do proprio Fisco.
+    """
+    from abba_crews.core.aprovacao import ConteudoDivergente, GateViolado
+    from abba_crews.core.aprovacao import aprovar as _aprovar
+
+    arquivo = _abre_arquivo()
+    r = _localiza(arquivo, chave)
+    try:
+        assinado = _aprovar(arquivo, r.chave, por=por)
+    except (GateViolado, ConteudoDivergente) as e:
+        typer.echo(f"\n  RECUSADO: {e}\n")
+        raise typer.Exit(code=1) from e
+
+    typer.echo("")
+    typer.echo(f"  ASSINADO  {assinado.chave}")
+    typer.echo(f"  por       {assinado.aprovado_por}")
+    typer.echo(f"  em        {assinado.aprovado_em:%d/%m/%Y %H:%M} UTC")
+    typer.echo(f"  sobre     sha256:{assinado.sha256}")
+    typer.echo("")
+    typer.echo("  Assinar nao e transmitir. A manifestacao ao Fisco continua sendo ato")
+    typer.echo("  do contribuinte, no sistema do Fisco, dentro da janela.")
+    typer.echo("")
+
+
+@app.command("devolver")
+def devolver(
+    chave: str = typer.Option(..., "--chave", help="Chave ou prefixo da impressao."),
+    por: str = typer.Option(..., "--por", help="Nome de quem devolve."),
+    motivo: str = typer.Option(..., "--motivo", help="O que esta errado. Obrigatorio."),
+) -> None:
+    """Recusa um dossie, com nome e motivo. O motivo e o que ensina a proxima competencia."""
+    from abba_crews.core.aprovacao import GateViolado
+    from abba_crews.core.aprovacao import devolver as _devolver
+
+    arquivo = _abre_arquivo()
+    r = _localiza(arquivo, chave)
+    try:
+        d = _devolver(arquivo, r.chave, por=por, motivo=motivo)
+    except GateViolado as e:
+        typer.echo(f"\n  RECUSADO: {e}\n")
+        raise typer.Exit(code=1) from e
+    typer.echo(f"\n  DEVOLVIDO {d.chave}\n  por {d.devolvido_por}: {d.motivo}\n")
+
+
 @app.command("janela")
 def janela(
     competencia: str = typer.Option(..., "--competencia", "-c", help="AAAA-MM"),
@@ -206,6 +343,9 @@ def sentinela(
         "--classificar",
         help="Liga a conferencia de creditabilidade. Com --mock usa a tabela de ENSAIO.",
     ),
+    guardar: bool = typer.Option(
+        False, "--guardar", help="Grava o dossie cifrado, para aprovacao posterior."
+    ),
 ) -> None:
     """Roda a Sentinela e imprime o dossie.
 
@@ -239,7 +379,9 @@ def sentinela(
     if hoje:
         payload["hoje"] = hoje
 
-    flow = SentinelaFlow(fonte=fonte, classificador=classificador)
+    arquivo = _abre_arquivo() if guardar else None
+
+    flow = SentinelaFlow(fonte=fonte, classificador=classificador, arquivo=arquivo)
     flow.kickoff({"crewai_trigger_payload": payload})
 
     if not flow.state.markdown:
@@ -248,6 +390,14 @@ def sentinela(
     typer.echo("")
     typer.echo(flow.state.markdown)
     typer.echo(f"<!-- chave de execucao: {flow.state.chave_execucao} -->")
+
+    if flow.state.registro is not None:
+        r = flow.state.registro
+        typer.echo("")
+        typer.echo(f"  guardado  {r.chave}")
+        typer.echo(f"  estado    {r.estado.value}  (aguardando {r.responsavel})")
+        typer.echo(f"  assinar   abba-crews aprovar --chave {r.impressao} --por \"Nome\"")
+        typer.echo("")
     _ = _date
 
 

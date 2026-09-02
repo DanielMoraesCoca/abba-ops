@@ -25,7 +25,7 @@ cliente. Nenhuma linha deste modulo produz linguagem de parecer.
 
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, datetime
 from decimal import Decimal
 from enum import Enum
 
@@ -42,13 +42,49 @@ from abba_crews.core.reconciliacao import (
 
 ZERO = Decimal("0.00")
 
+SUBTITULO = "Conferencia da apuracao assistida"
+MARCA_RODAPE_RASCUNHO = "Este documento esta em **RASCUNHO**"
+"""O paragrafo que a via assinada substitui.
+
+Definido aqui, e nao repetido em `aprovacao.py`, para que mudar o rodape quebre um
+teste em vez de quebrar em silencio a montagem da via assinada.
+"""
+
 
 class EstadoDossie(str, Enum):  # noqa: UP042
+    """Estado do documento. Anda para a frente e so para a frente.
+
+    Ate o M4a `APROVADO` era **enum morto**: existia na declaracao e nada o produzia.
+    O rodape de todo dossie prometia uma assinatura que o sistema nao sabia receber.
+    """
+
     RASCUNHO = "RASCUNHO"
-    """Nasce assim e so sai daqui por aprovacao nomeada (M4)."""
+    """Nasce assim e so sai daqui por aprovacao nomeada."""
 
     APROVADO = "APROVADO"
-    """Congelado, com nome e horario de quem assinou."""
+    """Congelado, com nome e horario de quem assinou. Terminal."""
+
+    DEVOLVIDO = "DEVOLVIDO"
+    """O humano recusou, com motivo. Tambem terminal: nao se reabre um documento —
+    conferencia nova gera dossie novo, ao lado, sem apagar este."""
+
+    @property
+    def terminal(self) -> bool:
+        return self is not EstadoDossie.RASCUNHO
+
+
+class Assinatura(BaseModel):
+    """Quem assinou, quando, e sobre quais bytes.
+
+    O `sha256` e o que da valor probatorio ao documento: sem ele, "aprovado por Maria"
+    e uma afirmacao sobre um texto que ninguem sabe qual era.
+    """
+
+    model_config = {"frozen": True}
+
+    por: str = Field(min_length=1)
+    em: datetime
+    sha256: str = Field(min_length=64, max_length=64)
 
 
 class Natureza(str, Enum):  # noqa: UP042
@@ -172,7 +208,12 @@ def _secao_descartados(descartados: tuple[ItemDescartado, ...], total: Decimal) 
 
 
 def renderizar(dossie: Dossie) -> str:
-    """O dossie em Markdown, para leitura humana."""
+    """O dossie em Markdown, para leitura humana. Sempre o rascunho.
+
+    A **via assinada nao se renderiza daqui** — ela e derivada dos bytes que o humano
+    conferiu (`core/aprovacao.via_assinada`). Re-renderizar do modelo abriria a fresta
+    exata que o sha256 existe para fechar: o assinado poderia divergir do conferido.
+    """
     d = dossie
     hoje = d.gerado_em
     favoraveis = tuple(x for x in d.resultado.divergencias if x.sentido is Sentido.FAVORAVEL)
@@ -185,7 +226,7 @@ def renderizar(dossie: Dossie) -> str:
     )
 
     L: list[str] = [
-        f"# {d.estado.value} — Conferencia da apuracao assistida",
+        f"# {d.estado.value} — {SUBTITULO}",
         "",
         f"**{d.razao_social}** · CNPJ {d.cnpj} · competencia **{d.competencia}**",
         f"Gerado em {hoje.strftime('%d/%m/%Y')}. Para conferencia e assinatura de "
@@ -275,8 +316,34 @@ def renderizar(dossie: Dossie) -> str:
         "que o sustenta; a conclusao, a decisao e a manifestacao sao do contribuinte "
         "e do profissional que o assessora.",
         "",
-        f"Este documento esta em **{d.estado.value}** e nao vale como manifestacao "
+        f"{MARCA_RODAPE_RASCUNHO} e nao vale como manifestacao "
         f"enquanto nao for conferido e assinado por {d.responsavel}.",
         "",
     ]
     return "\n".join(L)
+
+
+def bloco_de_assinatura(a: Assinatura) -> list[str]:
+    """A via assinada — e a frase que impede que ela seja lida como envio.
+
+    Sem esta secao, "APROVADO" no cabecalho pode ser lido como "transmitido ao Fisco".
+    Num produto fiscal essa confusao custa caro: o contribuinte acharia que a
+    manifestacao foi feita, perderia a janela, e o silencio consolidaria a proposta.
+    """
+    return [
+        "## Conferido e assinado",
+        "",
+        f"- **{a.por}**",
+        f"- em {a.em.strftime('%d/%m/%Y as %H:%M')} (UTC)",
+        f"- sobre o rascunho `sha256:{a.sha256}`",
+        "",
+        "> **Aprovar nao e transmitir.** Esta assinatura registra que o profissional "
+        "conferiu o conteudo acima e o assume. **A manifestacao ao Fisco continua "
+        "sendo ato do contribuinte**, feita no sistema do proprio Fisco, dentro da "
+        "janela. A ABBA nao transmite — nao existe ferramenta de transmissao neste "
+        "produto.",
+        "",
+        "O hash acima identifica exatamente os bytes conferidos. Qualquer versao deste "
+        "documento que nao produza esse hash **nao e a que foi assinada**.",
+        "",
+    ]

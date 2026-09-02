@@ -8,7 +8,7 @@ em `core/`; aqui mora a sequencia.
     reconciliar        -> core/reconciliacao (+ creditabilidade). Zero LLM.
     decidir_rota       -> sem_divergencia | rotina | julgamento (M3b)
     montar_dossie      -> core/dossie, sempre RASCUNHO
-    submeter_a_humano  -> grava e ENCERRA
+    submeter_a_humano  -> grava cifrado e ENCERRA (M4a)
 
 **A rota `julgamento` so existe de verdade com classificador.** Ate o M3a ela era
 alcancavel no papel e inalcancavel na pratica: nada construia uma divergencia de
@@ -37,6 +37,7 @@ from typing import Any
 from crewai.flow import Flow, listen, router, start
 from pydantic import BaseModel
 
+from abba_crews.core.arquivo import Arquivo, RegistroDossie
 from abba_crews.core.calendario import JanelaManifestacao
 from abba_crews.core.clientes import ConfigCliente, carregar_por_cnpj
 from abba_crews.core.creditabilidade import Classificador
@@ -85,6 +86,8 @@ class EstadoSentinela(BaseModel):
     dossie: Dossie | None = None
     markdown: str = ""
     chave_execucao: str = ""
+    registro: RegistroDossie | None = None
+    """O dossie guardado, quando ha arquivo. `None` = rodou sem persistir."""
 
 
 class SentinelaFlow(Flow[EstadoSentinela]):
@@ -96,11 +99,13 @@ class SentinelaFlow(Flow[EstadoSentinela]):
         fonte: Fonte | None = None,
         dir_clientes: Path | None = None,
         classificador: Classificador | None = None,
+        arquivo: Arquivo | None = None,
     ) -> None:
         super().__init__()
         self._fonte = fonte
         self._dir_clientes = dir_clientes
         self._classificador = classificador
+        self._arquivo = arquivo
 
     @start()
     def abrir_competencia(self, crewai_trigger_payload: dict[str, Any] | None = None) -> None:
@@ -194,3 +199,25 @@ class SentinelaFlow(Flow[EstadoSentinela]):
             hoje=self.state.hoje,
         )
         self.state.markdown = renderizar(self.state.dossie)
+        self._submeter_a_humano()
+
+    def _submeter_a_humano(self) -> None:
+        """Grava e ENCERRA — o passo que a docstring prometia desde o M2 e nao existia.
+
+        O turno do software termina aqui. Nao ha `human_input=True` no meio do Flow:
+        o contador tem dezenas de CNPJs e uma janela curta, e nao vai ficar preso a
+        um prompt esperando processo. O dossie fica guardado e ele assina no tempo
+        dele, por `abba-crews aprovar`.
+
+        Injetado e opcional, como o classificador: a CLI decide onde as coisas caem;
+        o Flow e biblioteca. Sem `arquivo`, o dossie sai so pela saida padrao.
+        """
+        if self._arquivo is None or self.state.dossie is None:
+            return
+        assert self.state.fonte
+        self.state.registro = self._arquivo.guardar(
+            self.state.dossie,
+            self.state.markdown,
+            impressao=self.state.fonte.impressao(),
+            origem=self.state.fonte.origem,
+        )

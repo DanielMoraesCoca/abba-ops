@@ -96,4 +96,41 @@ Inclui a decisão sobre **manifestação do destinatário** na Distribuição DF
 ela o web service devolve só o resumo, não o XML completo — mas manifestar é
 transmitir à SEFAZ, e a doutrina do produto é não transmitir.
 
+**O M4a deu a esta pendência um texto concreto para revisar.** A via assinada
+(`abba-crews aprovar`) carrega, no corpo do documento, a frase que separa assinar de
+transmitir:
+
+> **Aprovar não é transmitir.** Esta assinatura registra que o profissional conferiu o
+> conteúdo acima e o assume. A manifestação ao Fisco continua sendo ato do contribuinte,
+> feita no sistema do próprio Fisco, dentro da janela. A ABBA não transmite.
+
+É esse parágrafo — e não uma descrição nossa dele — que vai ao advogado. Ele é o que um
+contador lê no dia em que assina, e o que sobra num processo cinco anos depois.
+
 **Dono:** Fin-Admin. **Gate:** primeira venda.
+
+## P6 — Retenção e apagamento dos dossiês
+
+**Aberta no M4a (2026-09-02), junto com a primeira gravação em disco.**
+
+O `abba-crews` passou a guardar dossiês em `~/.abba-crews/dossies/` (ou onde
+`ABBA_CREWS_DOSSIES` apontar), cifrados no envelope **ABBA-ENC-1** — o mesmo do
+`assessment-brain`, deliberadamente, para que os dois lados leiam o mesmo arquivo.
+
+Duas perguntas ficam em aberto e **nenhuma delas é técnica**:
+
+1. **Por quanto tempo se guarda** o dossiê de um cliente? A resposta tem componente
+   legal (prazo decadencial tributário) e componente contratual (o que se promete ao
+   cliente sobre os dados dele).
+2. **Qual é o caminho de apagamento?** No `assessment-brain` a única via sancionada é
+   `abba forget --client|--engagement|--expired`, que expurga arquivo em disco,
+   cascateia e escreve tombstone. Hoje o `abba forget` **não alcança** o diretório de
+   dossiês do `abba-crews`. Enquanto não alcançar, existe dado de cliente fora do único
+   caminho de deleção que a casa reconhece — o que contraria a doutrina de PII do
+   `assessment-brain`.
+
+O formato compartilhado é o que torna isso resolvível sem migração: o `forget` já sabe
+ler o envelope, falta ensiná-lo o diretório.
+
+**Dono:** Tecnologia + Fin-Admin. **Gate:** primeiro cliente real (não a primeira venda —
+o dado só existe quando há competência rodada).

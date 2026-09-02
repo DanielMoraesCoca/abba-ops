@@ -5,6 +5,10 @@ description = "Camada de Caixa da reforma tributaria — biblioteca de crews da 
 requires-python = ">=3.10,<3.14"
 dependencies = [
     "crewai[tools]>=1.15.18,<2.0.0",
+    # Cifra dos dossies em repouso (core/cofre.py). Chega transitivamente pela crewai,
+    # mas depender disso seria depender de detalhe de outro pacote numa trava de
+    # privacidade — entao e declarada aqui.
+    "cryptography>=43",
     "pydantic>=2.9",
     "pyyaml>=6.0.3",
     "typer>=0.15",
@@ -39,7 +43,10 @@ type = "flow"
 
 [tool.ruff]
 line-length = 100
-target-version = "py311"
+# Tem de casar com requires-python (>=3.10). Com "py311" o ruff propunha idiomas que
+# quebram em 3.10 — reescreveu `timezone.utc` para `datetime.UTC`, que so existe em
+# 3.11+. Lint que mira mais alto que o pacote suporta nao avisa: ele introduz o bug.
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

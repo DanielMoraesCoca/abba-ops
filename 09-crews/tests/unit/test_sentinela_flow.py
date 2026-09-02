@@ -116,3 +116,45 @@ def test_sem_classificador_nenhum_caso_do_golden_set_vai_a_julgamento() -> None:
             {"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}}
         )
         assert f.state.markdown, f"{caso.id} terminou sem dossie"
+
+
+# --------------------------------------------------------------------------- #
+# submeter_a_humano — o passo que a docstring prometia desde o M2
+# --------------------------------------------------------------------------- #
+
+
+def test_o_flow_guarda_o_dossie_quando_ha_arquivo(tmp_path, monkeypatch) -> None:  # type: ignore[no-untyped-def]
+    """Ate o M4a o Flow montava o markdown e jogava fora. Nao havia o que assinar."""
+    from abba_crews.core.arquivo import Arquivo
+    from abba_crews.core.dossie import EstadoDossie
+
+    monkeypatch.setenv("ABBA_DB_PASSPHRASE", "senha-de-teste")
+    arq = Arquivo(tmp_path / "dossies")
+
+    f = SentinelaFlow(fonte=fonte_do("positivo-credito-omitido"), arquivo=arq)
+    f.kickoff({"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}})
+
+    assert f.state.registro is not None
+    assert f.state.registro.estado is EstadoDossie.RASCUNHO
+    assert arq.markdown(f.state.registro) == f.state.markdown
+
+
+def test_sem_arquivo_o_flow_nao_grava_nada(tmp_path) -> None:  # type: ignore[no-untyped-def]
+    """Padrao aditivo, como o classificador: a CLI decide onde as coisas caem."""
+    f = roda("positivo-credito-omitido")
+    assert f.state.registro is None
+    assert f.state.markdown
+
+
+def test_reexecutar_na_janela_nao_duplica_o_dossie(tmp_path, monkeypatch) -> None:  # type: ignore[no-untyped-def]
+    """Idempotencia com disco: mesmas entradas, mesmo arquivo, nao dois."""
+    from abba_crews.core.arquivo import Arquivo
+
+    monkeypatch.setenv("ABBA_DB_PASSPHRASE", "senha-de-teste")
+    arq = Arquivo(tmp_path / "dossies")
+    for _ in range(3):
+        f = SentinelaFlow(fonte=fonte_do("positivo-credito-omitido"), arquivo=arq)
+        f.kickoff(
+            {"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}}
+        )
+    assert len(arq.listar()) == 1

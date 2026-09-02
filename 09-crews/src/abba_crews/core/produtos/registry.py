@@ -107,9 +107,10 @@ PRODUTOS: tuple[Produto, ...] = (
         gate=(
             "M3b + tabela de vedacoes preenchida (P2) + golden set montado com um "
             "contador sobre competencias reais anonimizadas → PRODUCAO. "
-            "(M3a concluido: creditabilidade deterministica — o par CST/cClassTrib "
-            "passou a decidir, credito vedado sai do dossie com o dispositivo citado, "
-            "e a rota de julgamento deixou de ser codigo morto. Segue EXECUTAVEL: "
+            "(M4a concluido: o gate humano existe de verdade — o dossie e guardado "
+            "cifrado, tem estado que so anda para a frente, e so vira APROVADO por "
+            "gente com nome, com o sha256 conferindo. Antes disso o rodape prometia "
+            "uma assinatura que o sistema nao sabia receber. Segue EXECUTAVEL: "
             "demonstravel, NAO vendavel.)"
         ),
         base_legal="Decreto 12.955/2026 (RCBS) e Resolucao CGIBS 6/2026 (RIBS)",
