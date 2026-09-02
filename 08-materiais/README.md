@@ -60,7 +60,7 @@ Os materiais de apresentação agora **nascem de código**, não de edição man
 **O que é:** a proposta real enviada em jun/2026 (ref ABBA-2026-001) virou o **modelo canônico** de proposta do programa completo.
 
 **Onde vive:**
-- **Modelo genericizado (Word):** retirado na V5 (era o `proposta-comercial-modelo.docx` do cardápio antigo) — o novo modelo é o **Termo do Programa**, na fila de regeneração; números sempre pela [tabela v3](../03-comercial/tabela-de-precos.md)
+- **Modelo genericizado (Word):** o mestre vigente é o **Termo do Programa** ([`modelos/termo-do-programa-modelo.docx`](modelos/termo-do-programa-modelo.docx), gerado pelo gerador); o `proposta-comercial-modelo.docx` do cardápio antigo foi retirado na V5. Números sempre pela [tabela v3](../03-comercial/tabela-de-precos.md)
 - **Estrutura e conteúdo de referência (markdown):** [`../05-interno/arquivo/proposta-programa-completo.md`](../05-interno/arquivo/proposta-programa-completo.md) (reescrita sobre esta estrutura)
 - **Instância original (com nome do cliente):** Drive → `01 Comercial/Propostas enviadas/` — **nunca em git**
 
