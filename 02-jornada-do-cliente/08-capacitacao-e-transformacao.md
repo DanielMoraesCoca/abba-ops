@@ -10,23 +10,23 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 | Trilho | O quê |
 |---|---|
 | **Plataforma (assíncrono)** | Uma formação única (base comum de 8 aulas para todos, aprofundamentos por papel e Formação de Campeão, todos abertos sem seleção), aulas próprias em pt-BR (vídeos ABBA em gravação por lotes: [ficha](../06-ferramentas/ferramenta-portal.md)), desafios práticos avaliados pela Rubrica ABBA, Bússola (**Parar / Começar / Só eu** (redação canônica 19/08), Iris disponível o tempo todo) e a **academia diária** (Currículo v3, 23/08): Prática de Hoje na home, Boletim semanal, Biblioteca de Pedidos, cenários de decisão, Minhas Ferramentas: o portal entre as aulas e depois delas |
-| **Presencial (síncrono)** | Sessão de abertura (lançamento do programa com o patrocinador) · workshops nos marcos (por departamento ou por trilha de aprofundamento) · sessão de encerramento/graduação |
+| **Presencial (síncrono)** | Sessão de abertura (lançamento do programa com o patrocinador) · workshops nos marcos (por departamento) · sessão de encerramento/graduação |
 | **Ao concluir a formação** | Quem conclui as aulas do próprio programa e passa os desafios exigíveis ganha acesso a ferramentas de criação de agentes (CrewAI) para construir soluções dos próprios fluxos: com curadoria da ABBA |
 
 ## Checklist
 
 **Lançamento**
-- [ ] Plano de capacitação aprovado pelo patrocinador (trilhas × papéis, cadência, datas presenciais)
+- [ ] Plano de capacitação aprovado pelo patrocinador (cadência, datas presenciais, quem entra na turma)
 - [ ] **`turma:preflight` rodado no ambiente da turma** → 0 bloqueadores (o script audita currículo E operação: migrações, segredo de sessão, provedor de e-mail, estoque do Boletim)
 - [ ] **Turma criada com nome próprio**: "Turma {{N}} da {{Empresa}}" (formato único, decisão E4) em `/admin/turmas`: início e fim declarados, graduação agendada desde o dia 1
 - [ ] **Roster importado** em `/admin/roster` (lista nominal do cliente), pessoas vinculadas à turma, **convites disparados**: conferir na tela que o e-mail saiu, não só o sino
-- [ ] Catálogo do tenant publicado (as trilhas contratadas visíveis à turma)
+- [ ] Catálogo do tenant publicado (as 27 aulas visíveis à turma, sem recorte)
 - [ ] **[Ficha de Linha de Base](../08-materiais/ficha-linha-de-base.md) aplicada no kickoff** (bloco de 30 min): sem dia 0 não há relatório d90, e o d90 é o que assinamos
 - [ ] Sessão presencial de abertura realizada (patrocinador abre; ABBA conduz; Bússola preenchida ao vivo por todos)
 
 **Ritmo (semanal)**
 - [ ] Adoção monitorada no admin do portal: % ativos, conclusão de aulas e desafios, Bússola
-- [ ] Departamento travado (<{{PCT}}% ativos por 2 semanas) → diagnóstico com o gestor + intervenção (sessão extra, ajuste de trilha, conversa do patrocinador)
+- [ ] Departamento travado (<{{PCT}}% ativos por 2 semanas) → diagnóstico com o gestor + intervenção (sessão extra, ajuste de ritmo, conversa do patrocinador)
 - [ ] Nudges no canal do cliente (logística por WhatsApp/Slack conforme [política](../05-interno/comunicacao.md))
 
 **Marcos**
@@ -45,4 +45,4 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 Equipe operando no dia a dia + campeões formados + **relatório d90 assinado na mesa da diretoria** → alimenta [09-manutencao](09-manutencao.md), a venda da Turma 2 e o [pacote de handover do estágio 11](11-renovacao-e-encerramento.md).
 
 ## Ferramentas e templates
-Portal ABBA (trilhas, admin, Iris, Bússola) · [plano de capacitação](../04-entrega/plano-de-capacitacao.md) · Drive `05 Capacitacao/`
+Portal ABBA (formação, admin, Iris, Bússola) · [plano de capacitação](../04-entrega/plano-de-capacitacao.md) · Drive `05 Capacitacao/`

@@ -7,7 +7,7 @@
 > a demo que acompanha, em
 > [roteiro-demo-portal](../04-entrega/roteiro-demo-portal.md). Regra de
 > conteúdo: nada aqui promete o que o sócio não decidiu (vídeo com data,
-> trilhas em produção como prontas, CrewAI além do que o
+> conteúdo em produção como pronto, CrewAI além do que o
 > [kit da turma](../04-entrega/kit-da-turma.md) registra).
 
 ---
@@ -32,18 +32,29 @@ a gente assina.**
 Você recebe:
 
 - **27 aulas em português**, escritas pela ABBA, e **uma formação só:
-  a mesma para todo mundo da empresa, do estagiário ao diretor.** Começa
-  pela **base comum** (8 aulas que todos fazem, com os dois instrumentos
-  do método: a Lente de Oportunidade, para decidir o que a IA deve
-  tocar, e a Ficha de Padrão, para escrever como é o "bom" no seu
-  trabalho). Depois vêm os aprofundamentos, **todos abertos a qualquer
-  pessoa, sem seleção e sem autorização**: Operacional (6) e Gestor (5)
-  hoje (Comercial e Administrativo-Financeiro em produção) e a
-  **Formação de Campeão** (8 aulas sobre fazer a área inteira usar IA
-  bem, não só você).
+  as mesmas 27 aulas para todo mundo da empresa, do estagiário ao
+  diretor.** Não há trilha por cargo. Três blocos, na ordem em que se
+  aprende:
 
-  Não há degraus nem seleção de campeões: **o que se conquista não é
-  acesso, é reconhecimento.** O portal mede aplicação com evidência viva
+  **Base comum (8 aulas).** O vocabulário que todos passam a
+  compartilhar, com os dois instrumentos do método: a Lente de
+  Oportunidade, para decidir o que a IA deve tocar, e a Ficha de
+  Padrão, para escrever como é o "bom" no seu trabalho.
+
+  **Aplicação no trabalho (11 aulas).** O método descendo ao processo
+  real: as seis primeiras sobre o próprio fluxo (escolher a tarefa,
+  escrever o padrão, avaliar com critério, achar o erro que passa,
+  guardar o pedido, entregar assinado); as cinco últimas sobre o
+  trabalho que passa pela sua mão, o que você revisa, aprova ou assina
+  embaixo. Essas cinco servem ao gestor formal e a quem confere sem ter
+  cargo nenhum, que é a maior parte das pessoas.
+
+  **Formação de Campeão (8 aulas).** Sobre fazer a área inteira usar IA
+  bem, e não só você. Aberta a qualquer pessoa, sem seleção e sem
+  indicação.
+
+  Não há degraus, trilhas por papel nem seleção de campeões: **o que se
+  conquista não é acesso, é reconhecimento.** O portal mede aplicação com evidência viva
   aos 30 dias e ajuda reconhecida por um colega; **quem corrobora é o
   gestor da pessoa**, com esse quadro na frente, e é essa corroboração,
   com nome e evidência, que entra no relatório de 90 dias que assinamos.
@@ -72,9 +83,9 @@ Você recebe:
 |---|---|
 | **Dia 0: linha de base** | Registramos, por pessoa, o ponto de partida (uso atual, horas nas tarefas-alvo). É contra isso que os 90 dias serão medidos |
 | **Kickoff** | Turma aberta, contas ativadas, primeiro exercício feito em sala (no híbrido, com os fundadores presentes) |
-| **Fundação: 8 aulas** | O chão comum de segurança, pedido, crítica e entrega. Ritmo sugerido de 1–2 aulas/semana, cada uma com prática avaliada |
-| **Formatura da Fundação** | A pessoa escolhe a trilha do seu papel; a passagem de nível é automática pelos critérios do portal, inclusive os desafios práticos, não só "assistiu" |
-| **Trilha por papel** | Aulas aplicadas ao fluxo real de cada função, com os casos da sua operação |
+| **Base comum: 8 aulas** | O chão comum de segurança, pedido, crítica e entrega, mais os dois instrumentos do método. Ritmo sugerido de 1 a 2 aulas por semana, cada uma com prática avaliada |
+| **Fecho da base comum** | A pessoa revisa os compromissos que assumiu e marca quando abre a próxima aula. Não há escolha de trilha nem passagem de nível: a formação é uma só |
+| **Aplicação no trabalho: 11 aulas** | O método aplicado ao fluxo real, com os casos da operação do cliente. As cinco últimas tratam do trabalho que passa pela mão de quem revisa, aprova ou assina |
 | **d30 · d60 · d90** | O portal cobra evidência dos compromissos assumidos nas aulas: o que a pessoa disse que mudaria continua vivo, e o gestor corrobora |
 | **Relatório de 90 dias** | Comparação com a linha de base do dia 0, por pessoa e por área: durabilidade dos compromissos, casos com evidência, horas reinvestidas. Assinado pela ABBA |
 
@@ -91,17 +102,17 @@ Você recebe:
    fábrica, com tela e registro.
 3. **Credencial verificável por link.** Serve de critério auditável
    para os seus processos internos: por exemplo, liberar ferramenta de
-   IA só para quem concluiu a trilha. O seu processo de liberação deixa
+   IA só para quem concluiu a formação. O seu processo de liberação deixa
    de depender de planilha e memória.
 
 ## 4. Os dois modelos
 
 | | **Online** | **Híbrido** |
 |---|---|---|
-| Portal completo (trilhas, academia diária, guia de IA, painéis, credencial) | ✓ | ✓ |
+| Portal completo (as 27 aulas, academia diária, guia de IA, painéis, credencial) | ✓ | ✓ |
 | Linha de base dia 0 + medição d30/60/90 + relatório assinado | ✓ | ✓ |
 | Kickoff presencial de meio dia com os fundadores |  | ✓ |
-| Sessões presenciais nos marcos da turma (formatura da Fundação, marcos da trilha) |  | ✓ |
+| Sessões presenciais nos marcos da turma (fecho da base comum, marcos da aplicação no trabalho) |  | ✓ |
 | Sessões presenciais de formação de campeões (as 8 aulas da Formação de Campeão no portal valem nos dois modelos) |  | ✓ |
 | **Investimento por turma (até 25 pessoas, 12 meses de acesso)** | **R$ 15.000** | **R$ 35.000** |
 

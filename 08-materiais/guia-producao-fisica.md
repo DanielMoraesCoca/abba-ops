@@ -12,7 +12,8 @@
 
 Roteiros word-for-word prontos em
 `abba-portal/docs/platform/content/roteiros/`: **14 de 27** (Fundação
-8 + trilha Operacional 6); faltam os 5 do Gestor e os 8 do Especialista
+8 + as 6 primeiras de aplicação no trabalho); faltam as 5 últimas de
+aplicação e as 8 da Formação de Campeão
 (trilha escrita em 24/08). Gravação pelos fundadores, em lotes.
 
 A numeração de lotes abaixo é a MESMA de

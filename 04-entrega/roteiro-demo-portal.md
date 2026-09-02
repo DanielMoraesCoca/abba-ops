@@ -174,8 +174,8 @@ o relatório de 90 dias é o que a gente assina."*
 ## O que NÃO fazer na demo
 
 - Não prometer o que a mesa não decidiu: calendário de vídeo, CrewAI
-  além do que o [kit da turma](kit-da-turma.md) registra, trilhas "em
-  produção" como se prontas ([falas](../03-comercial/falas-treinamento.md)).
+  além do que o [kit da turma](kit-da-turma.md) registra, conteúdo "em
+  produção" como se pronto ([falas](../03-comercial/falas-treinamento.md)).
 - Não abrir `/admin/*` na frente do cliente (cozinha, não vitrine).
 - Não digitar dado real do cliente na Iris durante a demo.
 - Não corrigir defeito ao vivo. Anotar e seguir o bloco.

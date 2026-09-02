@@ -13,7 +13,7 @@
 | 0 | **Kickoff da Academy** ([kit do facilitador](kit-do-facilitador.md)): a turma nasce com data de graduação anunciada e **linha de base medida** |
 | 1–2 | **Base comum**: as 8 aulas que todo mundo faz + desafios + Bússola preenchida por todos |
 | 3 | **Marco 1: "o caso de vocês"** (presencial): os casos reais da empresa viram os desafios do resto do programa |
-| 3–5 | Aprofundamentos (Operacional, Gestor, Formação de Campeão: abertos a quem quiser) + desafios no fluxo real de cada um |
+| 3–5 | **Aplicação no trabalho**: as 11 aulas que todo mundo faz, mais desafios no fluxo real de cada um. A Formação de Campeão fica aberta em paralelo, a quem quiser |
 | 6 | **Marco 2: "o que já mudou"** (presencial, **turma inteira**): cada gestor corrobora, olhando o trabalho, quem aplicou com evidência viva aos 30 dias e quem ajudou um colega. A Formação de Campeão é anunciada como **aberta a quem quiser**: sem peneira, sem indicação. **Nunca dividir a sala entre selecionados e não selecionados** |
 | 6–7 | Quem abriu a Formação de Campeão pratica formando alguém · todos consolidam em duplas |
 | 8 | **Graduação**: cerimônia presencial: comparação com a linha de base, quem quiser apresenta a sua Primeira Vitória, certificados e credencial, patrocinador fala |

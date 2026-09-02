@@ -2,7 +2,7 @@
 
 > **O que é:** o roteiro de sala do modelo híbrido. O [kit da turma](kit-da-turma.md) cita "kit do facilitador da Academy" desde a decisão E4: **este é o documento que faltava**. Não confundir com o [roteiro do kickoff](kickoff-roteiro.md), que é a abertura do *engajamento* (estágio 05); aqui é a capacitação (estágio 08).
 >
-> **Por que existe:** o híbrido de R$ 35 mil vende **presença de sócio em sala**. Sem roteiro, o que se vende é improviso. Regra desta casa: *"prepara de fora a tua obra, apronta bem o teu campo, e então edifica a tua casa"* (Pv 24:27): nenhuma turma se vende sem a trilha do papel pronta e este roteiro escrito.
+> **Por que existe:** o híbrido de R$ 35 mil vende **presença de sócio em sala**. Sem roteiro, o que se vende é improviso. Regra desta casa: *"prepara de fora a tua obra, apronta bem o teu campo, e então edifica a tua casa"* (Pv 24:27): nenhuma turma se vende sem a formação pronta e este roteiro escrito.
 >
 > **Origem:** [reanálise do treinamento de 19/08/2026](https://github.com/DanielMoraesCoca/abba-portal/blob/main/docs/REANALISE-TREINAMENTO-2026-08.md) §5.4 e §6.
 
@@ -29,9 +29,9 @@ encontro muda no mesmo commit:
 
 | Encontro | Aulas da janela | O que o encontro usa delas |
 |---|---|---|
-| Kickoff (sem. 0) | Aula 1 da Fundação, feita na sala | as 3 perguntas + a primeira Bússola ao vivo |
-| Marco 1 (sem. 3) | Fundação 2–8 concluídas | os modos de falha (aula 4) e o colar-e-citar (aula 6) viram prática guiada sobre os artefatos trazidos |
-| Marco 2 (sem. 6) | trilha do papel concluída (Operacional: O1–O6 · Gestor: G1–G5) | quem vem da trilha Operacional chega com quatro artefatos escritos: Ficha de Padrão (O2), grade de avaliação (O3), pontos de conferência obrigatória (O4) e modelo de pedido (O5), e é **isso** que ele apresenta no bloco "Ensinar o que se pratica"; o passo a passo da O6 é literalmente o rascunho dos "dois nomes". Do lado do gestor, o ritual dos 15 minutos (G3) e as 3 faixas de amostragem (G2) entram no roteiro do plantão dos campeões |
+| Kickoff (sem. 0) | Aula 1 da base comum, feita na sala | as 3 perguntas + a primeira Bússola ao vivo |
+| Marco 1 (sem. 3) | Base comum 2 a 8 concluídas | os modos de falha (aula 4) e o colar-e-citar (aula 6) viram prática guiada sobre os artefatos trazidos |
+| Marco 2 (sem. 6) | Aplicação no trabalho concluída (as 11 aulas, iguais para todos) | todo mundo chega com quatro artefatos escritos das aulas 2 a 5: Ficha de Padrão, grade de avaliação, pontos de conferência obrigatória e modelo de pedido, e é **isso** que se apresenta no bloco "Ensinar o que se pratica"; o passo a passo da aula 6 é literalmente o rascunho dos "dois nomes". Das cinco últimas, o ritual dos 15 minutos (aula 9) e as 3 faixas de amostragem (aula 8) entram no roteiro do plantão dos campeões |
 | Graduação (sem. 8) | capstones prontos | comparação com a linha de base + credencial |
 
 ---
@@ -149,7 +149,7 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 | Bloco | Min | O que acontece |
 |---|---|---|
 | O que já mudou | 20 | Painel da turma: quantos compromissos da Bússola continuam vivos aos 30 dias **com evidência**, e quantas ajudas entre colegas foram registradas. Números da turma, nunca ranking de pessoas |
-| Ensinar o que se pratica | 40 | Voluntários apresentam em 5 min **um movimento que eles mesmos já usam**. Quem veio da trilha Operacional apresenta em cima dos próprios artefatos (Ficha de Padrão, grade, pontos de conferência, modelo de pedido): nada de slide novo. Os outros criticam. Ninguém ensina o que não pratica |
+| Ensinar o que se pratica | 40 | Voluntários apresentam em 5 min **um movimento que eles mesmos já usam**, em cima dos próprios artefatos das aulas de aplicação (Ficha de Padrão, grade, pontos de conferência, modelo de pedido): nada de slide novo. Os outros criticam. Ninguém ensina o que não pratica |
 | A pergunta que ensina | 40 | Treino de condução para todos: como responder com pergunta, como não resolver pela pessoa, como reconhecer quem está travado e não pede ajuda |
 | Intervalo | 15 |  |
 | O cético | 35 | Simulação: um participante conduz, o facilitador faz o papel do colega cético. Regra: a objeção é dado, nunca resistência a ser ridicularizada |

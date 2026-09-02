@@ -18,7 +18,7 @@
 **SÓ EU** (O que só eu faço) e devo fazer ainda melhor?
 *Sub: Onde está o meu julgamento? O que exige confiança humana e responsabilidade? O que perde valor se eu delegar?*
 
-Rastreamento de versão: [ ] v0 (Kickoff) [ ] v1 (fim da trilha do papel) [ ] v2 (pré-graduação) [ ] v3 (graduação, revisada com o gestor). Assinatura do gestor: ______
+Rastreamento de versão: [ ] v0 (Kickoff) [ ] v1 (fim da aplicação no trabalho) [ ] v2 (pré-graduação) [ ] v3 (graduação, revisada com o gestor). Assinatura do gestor: ______
 
 > ⚠️ O card legado dizia "CONTINUAR" na 3ª pergunta e "My Week With AI" na versão em inglês: **não imprimir o legado**.
 

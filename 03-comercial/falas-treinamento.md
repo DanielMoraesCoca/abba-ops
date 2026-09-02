@@ -9,7 +9,7 @@ Da transcrição (18/08, 17:07–17:59):
 | Hora | O que foi dito | Estado |
 |---|---|---|
 | 17:31 | *"a gente fez uma **parceria com Video Aulas**"* | **Não existe parceria.** Decisão de 19/08 (CONTENT-13): os vídeos são NOSSOS, roteiros prontos, gravação em lotes. A correção da fala está abaixo |
-| 17:32 | Rafa: *"Hoje essa solução já está pronta?"*: Daniel: *"a gente nunca fez nenhum treinamento presencial. Mas a nossa plataforma, sim"* | Meio-verdade na época (motor pronto, conteúdo não). Hoje: **27 aulas escritas em pt-BR no portal** (base comum (8, todo mundo faz), Operacional (6), Gestor (5) e Formação de Campeão (8), todas abertas a todos), presencial roteirizado no kit do facilitador. Para a Brasal isso importa duas vezes: o público dele é majoritariamente operacional, e a trilha Operacional é a que fala com esse público |
+| 17:32 | Rafa: *"Hoje essa solução já está pronta?"*: Daniel: *"a gente nunca fez nenhum treinamento presencial. Mas a nossa plataforma, sim"* | Meio-verdade na época (motor pronto, conteúdo não). Hoje: **27 aulas escritas em pt-BR no portal**, e **uma formação só, a mesma para todo mundo**: base comum (8), aplicação no trabalho (11) e Formação de Campeão (8). Presencial roteirizado no kit do facilitador. Para a Brasal isso importa: o público dele é majoritariamente operacional, e o argumento ficou mais forte com as trilhas fora, porque **a mesma formação inteira serve a esse público sem que ninguém seja recortado para uma versão menor dela** |
 | 17:32 | Rafa: *"depois eu queria conhecer mais a fundo, porque **a gente está exatamente nesse ponto agora**"* | O sinal de compra. A segunda reunião é sobre ISTO |
 | 17:33 | Letramento anterior com a Start: C-levels + gerência, ~70–80 pessoas | Confirma o pitch "vocês já treinaram e não colheram" |
 | 17:34–17:35 | O funil dele: barramento → **Claude Team** com MCPs para pessoas-chave → área "contaminada" pede mais; **~10 solicitações/dia** ("parece padaria"); a ideia DELE, já apresentada internamente: **licença só para quem concluir uma trilha** | A trilha-gate é o processo DELE. Nossa peça: a Fundação como filtro + credencial verificável como critério auditável |
@@ -65,7 +65,7 @@ Se o cliente já roda um funil de adoção próprio, **a oferta encaixa nele**. 
 | Etapa típica do funil do cliente | O que encaixa |
 |---|---|
 | Barrar pedidos de licença sem critério | A Fundação vira o filtro; a credencial verificável vira o critério auditável |
-| Escolher as pessoas-chave | A trilha por papel e o comportamento medido apontam: fruto observado, não indicação |
+| Escolher as pessoas-chave | O comportamento medido aponta: fruto observado, não indicação. Não há trilha por cargo a consultar, e é melhor assim: ninguém foi recortado antes de mostrar o que faz |
 | Área "contaminada" pede mais, e tudo passa por uma pessoa | Campeões por área são os chefes de dez (Êx 18). O gargalo dele é o problema que a arquitetura de campeões resolve |
 | "Aí entra IA de verdade" | Assessment · protótipos · construção. **O treinamento é a porta, não o fim** |
 
@@ -109,7 +109,7 @@ silencioso.
 
 - **Biblioteca de vídeo com data:** os vídeos são nossos (CONTENT-13), roteiros prontos, gravação em lotes; promete-se "aulas com prática avaliada", nunca calendário de vídeo.
 - **CrewAI para os destaques:** hoje consta como promessa oficial no [kit da turma](../04-entrega/kit-da-turma.md) para graduados nível Arquiteto. Enquanto o sócio não redecidir, vale o que está escrito lá, e não se amplia na mesa.
-- **Trilhas Comercial e Administrativo-Financeiro:** em produção. Diz-se "em produção", não "temos".
+- **Conteúdo por área (Comercial, Administrativo-Financeiro):** em produção como material COMPLEMENTAR, nunca como trilha separada: a formação é uma só desde 02/09. Diz-se "em produção", não "temos".
 - **Resultado medido de turma**, ainda não temos turma formada. A fala honesta é: *"a Turma 1 de vocês é a primeira a ser medida assim"*.
 
 ## Fontes
