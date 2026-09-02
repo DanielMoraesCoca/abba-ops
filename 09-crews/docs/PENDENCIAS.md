@@ -132,8 +132,25 @@ Duas perguntas ficam em aberto e **nenhuma delas é técnica**:
 O formato compartilhado é o que torna isso resolvível sem migração: o `forget` já sabe
 ler o envelope, falta ensiná-lo o diretório.
 
-**Dono:** Tecnologia + Fin-Admin. **Gate:** primeiro cliente real (não a primeira venda —
-o dado só existe quando há competência rodada).
+**Estado desde 2026-09-02 (P6 parcialmente fechada):** o **caminho de apagamento existe**.
+`abba forget --engagement|--client` no `assessment-brain` passa a purgar também os dossiês
+e o outbox do `abba-crews`, contando-os no tombstone. Ele acha o que é de quem pelo
+`engagement_id` gravado no índice em claro de cada dossiê — que é justamente por isso que
+esse campo fica fora da cifra.
+
+Duas honestidades no desenho: quando o outbox não pode ser lido (senha ausente ou
+diferente da usada para gravar), o comando **avisa em vez de dizer que apagou** —
+deleção parcial anunciada como completa é pior que deleção nenhuma, porque a pessoa para
+de procurar. E o diretório nomeado pelo CNPJ some junto: o nome dele é a carteira de
+clientes em texto claro.
+
+**O que continua aberto nesta pendência:** por quanto tempo se guarda. Isso tem componente
+legal (prazo decadencial tributário) e contratual (o que se promete ao cliente), e não é
+decisão de engenharia. Enquanto não houver resposta, os dossiês ficam indefinidamente —
+o que é o padrão conservador, mas não é uma política.
+
+**Dono:** Fin-Admin (retenção) + Tecnologia (feito). **Gate:** primeira venda, para a
+política de retenção entrar no contrato.
 
 ## P7 — Feriado estadual e municipal no cálculo do prazo
 
