@@ -123,6 +123,32 @@ def via_assinada(markdown: str, assinatura: Assinatura) -> str:
     return "\n".join([*linhas[:corte], *bloco_de_assinatura(assinatura)])
 
 
+def divergencia_de_assinante(r: RegistroDossie, nome: str) -> str | None:
+    """Quem assinou nao e quem a configuracao dizia que assinaria. Aviso, nao bloqueio.
+
+    O indice ja guardava `responsavel` e `aprovado_por` em campos separados, e portanto
+    ja **registrava** a divergencia — sem nunca mostra-la. Um dossie dirigido a "Nome do
+    Contador" e assinado por outra pessoa passava sem uma palavra.
+
+    Nao bloqueia de proposito: quem opera hoje sao os socios, o substituto legitimo
+    existe (ferias, troca de escritorio), e a CLI nao autentica ninguem — isto e um
+    **livro-razao de quem assumiu**, nao um controle de acesso. Autenticacao de verdade
+    e assunto do M4c, quando o dossie sair daqui. Ate la, o minimo honesto e a
+    divergencia aparecer.
+    """
+    if _normaliza(nome) == _normaliza(r.responsavel):
+        return None
+    return (
+        f"quem assina ({nome}) nao e o responsavel declarado na configuracao "
+        f"({r.responsavel}). A assinatura vale e fica registrada com o nome de quem "
+        f"assinou; se o responsavel mudou, atualize o YAML do cliente."
+    )
+
+
+def _normaliza(nome: str) -> str:
+    return " ".join(nome.strip().casefold().split())
+
+
 def aprovar(arquivo: Arquivo, referencia: str, *, por: str) -> RegistroDossie:
     """Assina um dossie. Exige nome de gente e os bytes conferindo.
 

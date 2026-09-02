@@ -16,8 +16,11 @@ Nao e escrupulo abstrato: e o que torna o dossie assinavel por um contador.
 ## A taxonomia, fechada
 
 Cinco tipos estruturais, todos deterministicos, mais um sexto que e a **unica**
-porta para julgamento por modelo. Quatro em cada cinco execucoes nao passam por
-essa porta — e o que faz a conta fechar em centenas de CNPJs por mes.
+porta para julgamento por modelo. Quanto do trabalho **nao** passa por essa porta e o
+que decide se a conta fecha em centenas de CNPJs por mes — e esse numero **se mede**,
+nao se afirma: `abba-crews cobertura`.
+Com a tabela de vedacoes como ela nasce (sem uma linha conferida), quase tudo cai em
+DUVIDOSO. O numero sobe conforme o contador preenche a tabela.
 
 ## A classificacao de creditabilidade e opcional, e isso e deliberado
 
@@ -88,8 +91,14 @@ class Sentido(str, Enum):  # noqa: UP042
 class Divergencia(BaseModel):
     """Uma diferenca achada, sempre com o documento que a comprova.
 
-    Invariante do produto: **nao existe divergencia sem chave de documento**. Um
-    guardrail barra qualquer item sem `chave` antes de o dossie sair.
+    Invariante do produto: **nao existe divergencia sem chave de documento**. Quem
+    garante isso e a validacao do proprio campo (`chave` com exatamente 44 digitos):
+    uma `Divergencia` sem documento **nao chega a ser construida**.
+
+    A versao anterior desta docstring falava de "um guardrail que barra qualquer item
+    sem chave antes de o dossie sair". Esse guardrail nunca existiu — nao havia nada
+    entre `reconciliar()` e `renderizar()`. A invariante era verdadeira e a explicacao
+    era falsa, o que e pior do que nao explicar: manda procurar defesa onde nao ha.
     """
 
     model_config = {"frozen": True}
@@ -134,6 +143,12 @@ class ResultadoReconciliacao(BaseModel):
     competencia: str
     divergencias: tuple[Divergencia, ...]
     itens_conferidos: int
+    tolerancia_brl: Decimal = ZERO
+    """A folga aplicada. Aparece no dossie: o contador tem de saber o que foi ignorado."""
+    suprimidos_por_tolerancia: int = 0
+    """Quantos itens divergiam menos que a tolerancia e por isso nao viraram achado."""
+    valor_suprimido_brl: Decimal = ZERO
+    """Quanto, em R$, a tolerancia engoliu. Zero quando a tolerancia e zero."""
     descartados: tuple[ItemDescartado, ...] = ()
     """Vazio quando se reconcilia sem classificador — o padrao ate a tabela existir."""
 
@@ -226,6 +241,13 @@ def reconciliar(
     sistemas diferentes. **Cuidado ao configurar:** tolerancia alta esconde
     divergencia real. O padrao e zero — quem quiser folga, declara e assume.
 
+    E o "assume" agora tem onde acontecer: o resultado registra a tolerancia aplicada,
+    quantos itens ela engoliu e quanto em R$, e o dossie mostra isso ao contador. Ate
+    2026-09-02 uma tolerancia de R$ 999.999.999 no YAML zerava as divergencias e o
+    documento nao dizia uma palavra — o profissional assinava "nada a manifestar" sem
+    saber que havia sido cegado por configuracao. E a mesma forma do `DEBITO_OMITIDO`:
+    o documento nao pode calar sobre o que escondeu.
+
     `classificador` (opcional) confere a creditabilidade de cada credito ausente da
     proposta. Sem ele, a conferencia e puramente estrutural — o comportamento do M2.
     Com ele, credito vedado sai do dossie para a lista de descartados e credito de
@@ -236,15 +258,18 @@ def reconciliar(
     depende de creditabilidade, mas ali o Fisco ja reconheceu o item — a duvida e
     de quantia, nao de direito. Ampliar isso exige a tabela preenchida (P2).
     """
-    if tolerancia_brl < ZERO:
-        raise ValueError("tolerancia nao pode ser negativa")
+    if not tolerancia_brl.is_finite() or tolerancia_brl < ZERO:
+        raise ValueError(f"tolerancia invalida: {tolerancia_brl!r}. Deve ser finita e >= 0.")
 
+    _exige_documentos_do_contribuinte(documentos, apuracao.cnpj)
     da_competencia = tuple(d for d in documentos if d.competencia == apuracao.competencia)
     proposta = apuracao.por_chave_item()
     vistos: set[tuple[str, int]] = set()
     achados: list[Divergencia] = []
     descartados: list[ItemDescartado] = []
     conferidos = 0
+    suprimidos = 0
+    valor_suprimido = ZERO
 
     for doc in da_competencia:
         for item in doc.itens:
@@ -280,7 +305,11 @@ def reconciliar(
                 continue
 
             diferenca = item.tributo_total - linha.tributo_total
-            if abs(diferenca) > tolerancia_brl:
+            if abs(diferenca) <= tolerancia_brl:
+                if diferenca != ZERO:
+                    suprimidos += 1
+                    valor_suprimido += abs(diferenca)
+            else:
                 achados.append(_valor_divergente(doc, item.numero, diferenca, item.tributo_total,
                                                  linha.tributo_total))
 
@@ -316,6 +345,49 @@ def reconciliar(
         divergencias=tuple(achados),
         itens_conferidos=conferidos,
         descartados=tuple(descartados),
+        tolerancia_brl=tolerancia_brl,
+        suprimidos_por_tolerancia=suprimidos,
+        valor_suprimido_brl=valor_suprimido,
+    )
+
+
+class DocumentoDeTerceiro(ValueError):
+    """Chegou documento que nao envolve o CNPJ sendo apurado."""
+
+
+def _exige_documentos_do_contribuinte(
+    documentos: tuple[DocumentoFiscal, ...], cnpj: str
+) -> None:
+    """O contribuinte tem de ser parte em todo documento conferido.
+
+    **O guarda contra o pior erro possivel deste produto** — palavras do proprio
+    `core/clientes.py`, que ate aqui so as aplicava ao nome do arquivo de configuracao.
+
+    Ate 2026-09-02 `reconciliar()` filtrava apenas por competencia. Uma nota de outra
+    empresa entrava no dossie deste cliente e virava pleito de credito, sem um aviso —
+    verificado: documento do CNPJ 11222333000181 gerou R$ 100,00 "a favor" na apuracao
+    do CNPJ 00000000000191. `emitente_cnpj` e `destinatario_cnpj` existiam no modelo,
+    validados a 14 digitos, e nenhuma linha os lia.
+
+    Isso deixa de ser hipotetico no M6: a Distribuicao DF-e responde por certificado, e
+    uma consulta mal escopada ou um certificado de escritorio contabil trazem documento
+    de terceiro. Recusar alto e a unica resposta — um falso positivo fiscal desses manda
+    o cliente pleitear credito de outra empresa.
+    """
+    intrusos = [
+        d for d in documentos if cnpj not in (d.emitente_cnpj, d.destinatario_cnpj)
+    ]
+    if not intrusos:
+        return
+    d = intrusos[0]
+    raise DocumentoDeTerceiro(
+        f"{len(intrusos)} documento(s) nao envolvem o CNPJ apurado.\n"
+        f"  apuracao do CNPJ: {cnpj}\n"
+        f"  documento {d.chave}: emitente {d.emitente_cnpj}, "
+        f"destinatario {d.destinatario_cnpj}\n"
+        f"Conferir a apuracao com documento de terceiro e o pior erro possivel deste "
+        f"produto: o cliente pleitearia credito que nao e dele. Conferir a origem da "
+        f"coleta antes de rodar de novo."
     )
 
 

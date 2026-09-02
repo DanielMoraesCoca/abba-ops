@@ -113,7 +113,8 @@ crédito à rota de julgamento, e a crew que julga só chega no M3b.
 
 **1. Determinístico onde há dinheiro e prazo; agêntico só onde há julgamento.**
 Aritmética fiscal vive em `core/`, em Python testado. Nenhum número nasce em LLM.
-A crew só entra para derrubar achados duvidosos e redigir o dossiê.
+A crew entrará para derrubar achados duvidosos e redigir — hoje ela não existe, e o
+produto inteiro roda sem uma chamada de modelo.
 
 **2. `core/` não importa `crewai` — e a CI prova.**
 O núcleo (reconciliador, tabela de vedações, calendário fiscal) é o ativo que vale
@@ -124,24 +125,29 @@ dinheiro e o que menos muda. A CrewAI é um framework jovem que já trocou de sc
 
 ```
 src/abba_crews/
-  core/            # ZERO crewai. Pydantic, parsers, reconciliação, régua.
-    produtos/      # o registro dos 7 produtos e suas maturidades
-  crews/           # crews CrewAI (convenção de projeto Flow)
-  flows/           # orquestração determinística
-  tools/           # BaseTool finos por cima de core/ — sem lógica
+  core/            # ZERO crewai. Pydantic, reconciliação, creditabilidade,
+    produtos/      # calendário, cofre, arquivo, aprovação, registro dos 7 produtos
+  flows/           # orquestração determinística (importa crewai)
+  crews/           # VAZIO — a primeira crew é a de julgamento, no M3b
+  tools/           # VAZIO — BaseTool finos por cima de core/, quando houver crew
   main.py          # kickoff/plot/run_with_trigger — convenção da CrewAI
   cli.py           # CLI de operação dos sócios
-scripts/           # auditoria de fronteira, geradores
+scripts/           # audita_fronteira.py
 tests/             # unit + golden
 ```
+
+`crews/` e `tools/` estão vazios de propósito e o layout diz isso: **não existe nenhuma
+crew neste projeto ainda.** A Sentinela roda ponta a ponta sem LLM nenhum; a primeira
+crew é a de julgamento do resíduo, e ela depende da tabela de vedações (P2).
 
 ## Fronteira — onde o produto para
 
 - **Nenhuma crew transmite ao Fisco.** Não existe ferramenta de transmissão no projeto.
 - **Nenhum parecer tributário gerado por LLM.** A crew evidencia; o contador conclui e assina.
 - **Sem 100% por resultado.**
-- Tudo que este projeto escreve no cérebro tem origem `tool_output` — nunca sobrepõe
-  o que um humano afirmou.
+- **Este projeto ainda não escreve nada no cérebro** (`assessment-brain`). Quando
+  escrever, no M5, será com origem `tool_output` — que nunca sobrepõe o que um humano
+  afirmou. `engagement_id` já existe na configuração e é a metade que espera a outra.
 
 ## Segredos
 

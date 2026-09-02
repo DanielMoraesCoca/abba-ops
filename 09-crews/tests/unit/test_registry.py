@@ -50,11 +50,48 @@ def test_estacionados_explicam_o_motivo() -> None:
 
 
 def test_produto_em_producao_precisa_de_crew_e_flow() -> None:
-    """Promover a PRODUCAO sem ter o que roda e a forma mais facil de mentir."""
+    """Promover a PRODUCAO sem ter o que roda e a forma mais facil de mentir.
+
+    Continua valendo, mas **nao protege nada hoje**: nenhum produto esta em PRODUCAO,
+    entao o laco nao entra. Fica por causa do dia em que um estiver — a trava viva e a
+    de baixo.
+    """
     for p in PRODUTOS:
         if p.maturidade is Maturidade.PRODUCAO:
             assert p.crew, f"{p.id} em PRODUCAO sem crew declarada"
             assert p.flow, f"{p.id} em PRODUCAO sem flow declarado"
+
+
+def test_produto_demonstravel_nao_aponta_para_modulo_inexistente() -> None:
+    """A trava que o teste acima parecia ser e nao era.
+
+    O registry aponta `crew` e `flow` por caminho em texto, e ate 2026-09-02 **sete dos
+    oito caminhos nao importavam** — inclusive o da Sentinela, que esta EXECUTAVEL. Uma
+    afirmacao em dado que nada conferia.
+
+    A regra: quem e `demonstravel` (PRODUCAO ou EXECUTAVEL) so pode apontar para modulo
+    que existe. Quem esta em ESPECIFICADO/ESTACIONADO pode apontar para o caminho
+    planejado — e ai o caminho e projeto, nao promessa.
+    """
+    import importlib
+
+    quebrados: list[str] = []
+    for prod in PRODUTOS:
+        if not prod.maturidade.demonstravel:
+            continue
+        for campo in ("crew", "flow"):
+            alvo = getattr(prod, campo)
+            if alvo is None:
+                continue
+            try:
+                importlib.import_module(alvo)
+            except ModuleNotFoundError:
+                quebrados.append(f"{prod.id}.{campo} -> {alvo}")
+
+    assert not quebrados, (
+        f"produto demonstravel apontando para modulo que nao existe: {quebrados}. "
+        f"Ou o modulo nasce, ou o campo fica None, ou a maturidade desce."
+    )
 
 
 def test_listar_ordena_por_prontidao() -> None:
@@ -68,8 +105,17 @@ def test_listar_filtra_por_maturidade() -> None:
 
 
 def test_vendaveis_reflete_o_estado_real() -> None:
-    """Hoje nenhum produto esta em PRODUCAO. Quando um estiver, este teste muda junto."""
-    assert vendaveis() == tuple(p for p in PRODUTOS if p.maturidade is Maturidade.PRODUCAO)
+    """Hoje nenhum produto esta em PRODUCAO — e a trava e afirmar isso, nao repetir a regra.
+
+    A versao anterior comparava `vendaveis()` com a propria definicao de `vendaveis()`,
+    o que e verdadeiro por construcao e nao pode falhar. Agora o teste afirma o **estado
+    real**: se alguem promover um produto, este teste quebra e obriga a decisao a ser
+    deliberada.
+    """
+    assert vendaveis() == (), (
+        "algum produto foi promovido a PRODUCAO. Isso exige o gate declarado no "
+        "registry cumprido — e a atualizacao deste teste no mesmo commit, com a razao."
+    )
 
 
 def test_produto_e_imutavel() -> None:

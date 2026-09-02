@@ -134,3 +134,23 @@ ler o envelope, falta ensiná-lo o diretório.
 
 **Dono:** Tecnologia + Fin-Admin. **Gate:** primeiro cliente real (não a primeira venda —
 o dado só existe quando há competência rodada).
+
+## P7 — Feriado estadual e municipal no cálculo do prazo
+
+**Aberta no M4b (2026-09-02).** `core/calendario.py` cobre feriados nacionais e pontos
+facultativos federais — e declara em código que **não** cobre estadual nem municipal.
+
+Isso importa porque o prazo de manifestação é o **último dia útil do mês seguinte**. Uma
+empresa em município cujo feriado local caia no último dia útil tem prazo diferente do
+que o produto calcula, e o erro é na direção ruim: o produto diria que ainda há prazo.
+
+A mitigação atual é o dossiê sempre mostrar **a data**, nunca só "você tem N dias" — o
+contador reconhece o feriado da cidade dele. A correção de verdade é a configuração por
+cliente aceitar uma lista de feriados locais, junto do município.
+
+**Correção relacionada, já feita:** faltava o **20 de novembro** (Consciência Negra,
+feriado nacional pela Lei 14.759/2023). O produto contava um dia útil a mais em novembro
+sempre que a data caía em dia de semana.
+
+**Dono:** Tecnologia + o contador do cliente. **Gate:** primeiro cliente fora de um
+município sem feriado relevante — na prática, o primeiro cliente real.

@@ -158,3 +158,58 @@ def test_reexecutar_na_janela_nao_duplica_o_dossie(tmp_path, monkeypatch) -> Non
             {"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}}
         )
     assert len(arq.listar()) == 1
+
+
+def test_dois_dias_geram_dois_dossies_e_nenhum_e_destruido(tmp_path, monkeypatch) -> None:  # type: ignore[no-untyped-def]
+    """A idempotencia era falsa, e o rascunho anterior era apagado.
+
+    A impressao era o hash das ENTRADAS, mas o conteudo depende tambem de `hoje` — dias
+    restantes, data de geracao, e ate a `natureza`. Verificado no review de 2026-09-02:
+    um dossie de 27/04 dizendo "manifeste-se, faltam 3 dias" era substituido, sob a
+    mesma chave, por um de 03/05 dizendo "prazo perdido". Um arquivo no disco, o
+    anterior perdido, e duas docstrings minhas mentindo ao mesmo tempo.
+    """
+    from abba_crews.core.arquivo import Arquivo
+
+    monkeypatch.setenv("ABBA_DB_PASSPHRASE", "senha-de-teste")
+    arq = Arquivo(tmp_path / "dossies")
+
+    for hoje in ("2027-04-27", "2027-05-03"):
+        f = SentinelaFlow(fonte=fonte_do("positivo-credito-omitido"), arquivo=arq)
+        f.kickoff(
+            {"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": hoje}}
+        )
+
+    registros = arq.listar()
+    assert len(registros) == 2, "rodar noutro dia tem de criar registro AO LADO"
+    assert len({r.impressao for r in registros}) == 2
+    for r in registros:
+        assert arq.markdown(r), f"{r.chave} ficou ilegivel — o anterior nao pode sumir"
+
+
+def test_o_mesmo_dia_continua_idempotente(tmp_path, monkeypatch) -> None:  # type: ignore[no-untyped-def]
+    """A data entrou na chave sem custar a idempotencia dentro da janela do dia."""
+    from abba_crews.core.arquivo import Arquivo
+
+    monkeypatch.setenv("ABBA_DB_PASSPHRASE", "senha-de-teste")
+    arq = Arquivo(tmp_path / "dossies")
+    for _ in range(3):
+        f = SentinelaFlow(fonte=fonte_do("positivo-credito-omitido"), arquivo=arq)
+        f.kickoff(
+            {"crewai_trigger_payload": {"cnpj": CNPJ, "competencia": COMP, "hoje": "2027-04-20"}}
+        )
+    assert len(arq.listar()) == 1
+
+
+def test_a_data_padrao_nao_congela_no_import() -> None:
+    """`date.today()` como default do Pydantic e avaliado UMA vez, na definicao da classe.
+
+    Num processo longo — que e como o AMP roda — a data envelhecia sozinha. E e ela que
+    decide o prazo, a `natureza` e os dias restantes.
+    """
+    from abba_crews.flows.sentinela_flow import EstadoSentinela
+
+    campo = EstadoSentinela.model_fields["hoje"]
+    assert campo.default_factory is not None, (
+        "use default_factory=date.today; um default fixo congela a data no import"
+    )

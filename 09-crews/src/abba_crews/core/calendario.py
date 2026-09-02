@@ -74,7 +74,8 @@ def _pascoa(ano: int) -> date:
 def feriados_nacionais(ano: int) -> frozenset[date]:
     """Feriados nacionais e pontos facultativos federais que fecham banco e Fisco.
 
-    Fixos (Lei 662/1949 e alteracoes) e moveis derivados da Pascoa.
+    Fixos (Lei 662/1949, com as alteracoes ate a Lei 14.759/2023) e moveis
+    derivados da Pascoa.
 
     **Limitacao declarada:** nao cobre feriado estadual nem municipal. Uma empresa em
     municipio com feriado local no ultimo dia util tem prazo diferente do calculado
@@ -96,6 +97,11 @@ def feriados_nacionais(ano: int) -> frozenset[date]:
             date(ano, 10, 12),  # Nossa Senhora Aparecida
             date(ano, 11, 2),  # Finados
             date(ano, 11, 15),  # Proclamacao da Republica
+            # Consciencia Negra — feriado NACIONAL pela Lei 14.759/2023, a partir de
+            # 2024. Faltava aqui ate 2026-09-02, e o erro era na direcao perigosa: o
+            # produto contava um dia util a mais em novembro (2026, 2028, 2029...),
+            # fazendo o contador achar que tinha mais tempo do que tem.
+            date(ano, 11, 20),  # Dia Nacional de Zumbi e da Consciencia Negra
             date(ano, 12, 25),  # Natal
         }
     )

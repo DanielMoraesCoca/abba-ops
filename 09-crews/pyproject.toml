@@ -54,7 +54,16 @@ select = ["E", "F", "I", "UP", "B"]
 [tool.mypy]
 python_version = "3.11"
 strict = true
-files = ["src/abba_crews/core"]
+# Ate 2026-09-02 isto era `files = ["src/abba_crews/core"]`, e cinco relatorios de marco
+# disseram "mypy estrito" sem a ressalva de que a CLI inteira (9 comandos), o `main.py`
+# e os `flows/` ficavam de fora. Agora cobre o pacote.
+files = ["src/abba_crews"]
+
+[[tool.mypy.overrides]]
+# A CrewAI nao publica tipos completos; `flows/` herda dela. O `core/`, que e o ativo,
+# segue estrito de verdade.
+module = ["crewai.*", "crewai_tools.*"]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

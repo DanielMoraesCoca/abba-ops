@@ -26,13 +26,22 @@ para o disco em claro. Sem `ABBA_DB_PASSPHRASE`, o comando falha alto.
 raiz e recusada. Dado de cliente a um `git add -A` de distancia e acidente esperando
 acontecer — e a defesa contra ele nao pode ser a memoria de quem digita.
 
-O `meta.json` fica em claro de proposito: ele guarda so o que ja se sabe de fora (CNPJ,
-competencia, estado, quem assinou) e nenhum valor, nenhuma chave de acesso, nenhum
-detalhe de divergencia. E o indice; o conteudo vive cifrado, sempre.
+**Permissao restrita.** `0700` nos diretorios, `0600` nos arquivos. A doutrina do
+`assessment-brain` e "perms + encryption" (cabecalho do `report-crypto.js`; o
+`config.js` avisa sobre arquivo group/other-readable) e ate 2026-09-02 tinhamos feito so
+a cifra: `0644`/`0755`. Cifrar e deixar legivel por qualquer usuario da maquina protege
+o conteudo e entrega o resto — os diretorios, nomeados por CNPJ, sao a carteira de
+clientes em texto claro.
+
+O `meta.json` fica em claro porque e o indice, e por isso guarda o **minimo**: chave,
+hash, estado, quem assinou e quando. Nao guarda valor, nem chave de acesso, nem detalhe
+de divergencia — e desde 2026-09-02 tambem nao guarda a `natureza`, porque
+`registro_de_perda` em claro e a frase "este cliente perdeu o prazo".
 """
 
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import json
 import os
@@ -84,7 +93,6 @@ class RegistroDossie(BaseModel):
     impressao: str = Field(description="hash das entradas; e o nome do arquivo")
     sha256: str = Field(min_length=64, max_length=64, description="hash do markdown")
     estado: EstadoDossie = EstadoDossie.RASCUNHO
-    natureza: str
     responsavel: str = Field(description="quem deveria assinar, segundo a config")
     origem: str = "desconhecida"
     guardado_em: datetime
@@ -115,6 +123,10 @@ def _dentro_de_arvore_git(caminho: Path) -> Path | None:
         if (pai / ".git").exists():
             return pai
     return None
+
+
+MODO_DIR = 0o700
+MODO_ARQ = 0o600
 
 
 class Arquivo:
@@ -159,7 +171,6 @@ class Arquivo:
             impressao=impressao,
             sha256=sha256_de(markdown),
             estado=EstadoDossie.RASCUNHO,
-            natureza=dossie.natureza.value,
             responsavel=dossie.responsavel,
             origem=origem,
             guardado_em=agora(),
@@ -170,16 +181,35 @@ class Arquivo:
             # Mesmas entradas, dossie ja julgado: nao se reescreve o que foi assinado.
             return existente
 
-        self._pasta(registro.cnpj, registro.competencia).mkdir(parents=True, exist_ok=True)
-        self.caminho_markdown(registro).write_text(cifrar(markdown, senha), encoding="utf-8")
+        self._preparar(registro)
+        self._escrever(self.caminho_markdown(registro), cifrar(markdown, senha))
         self._gravar_meta(registro)
         return registro
 
+    def _preparar(self, r: RegistroDossie) -> None:
+        """Cria a arvore com `0700`, incluindo os niveis intermediarios."""
+        pasta = self._pasta(r.cnpj, r.competencia)
+        pasta.mkdir(parents=True, exist_ok=True, mode=MODO_DIR)
+        # `mkdir(parents=True)` nao aplica o modo aos pais ja existentes nem, em algumas
+        # plataformas, aos criados — entao reforcamos nivel a nivel.
+        for nivel in (self.raiz, pasta.parent, pasta):
+            with contextlib.suppress(OSError):
+                nivel.chmod(MODO_DIR)
+
+    @staticmethod
+    def _escrever(destino: Path, conteudo: str) -> None:
+        """Grava com `0600` **antes** de escrever — nada de janela world-readable."""
+        fd = os.open(destino, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, MODO_ARQ)
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(conteudo)
+        with contextlib.suppress(OSError):
+            destino.chmod(MODO_ARQ)
+
     def _gravar_meta(self, r: RegistroDossie) -> None:
-        self._pasta(r.cnpj, r.competencia).mkdir(parents=True, exist_ok=True)
-        self._meta(r).write_text(
+        self._preparar(r)
+        self._escrever(
+            self._meta(r),
             json.dumps(r.model_dump(mode="json"), ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
         )
 
     def atualizar(self, r: RegistroDossie) -> RegistroDossie:
@@ -191,7 +221,8 @@ class Arquivo:
         from abba_crews.core.cofre import cifrar
 
         destino = self.caminho_assinado(r)
-        destino.write_text(cifrar(markdown, senha_obrigatoria()), encoding="utf-8")
+        self._preparar(r)
+        self._escrever(destino, cifrar(markdown, senha_obrigatoria()))
         return destino
 
     # ------------------------------------------------------------------ leitura

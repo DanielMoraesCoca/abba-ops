@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import typer
 
+from abba_crews.core.arquivo import Arquivo, RegistroDossie
 from abba_crews.core.calendario import JanelaManifestacao
 from abba_crews.core.produtos import Maturidade, listar, vendaveis
 from abba_crews.core.sinteticos import Familia, golden_set, rodar
@@ -173,13 +174,13 @@ def cobertura(
 # --------------------------------------------------------------------------- #
 
 
-def _abre_arquivo() -> Arquivo:  # type: ignore[name-defined] # noqa: F821
+def _abre_arquivo() -> Arquivo:
     """Abre o armazem, traduzindo as recusas em mensagem de terminal.
 
     As duas recusas sao deliberadas (ver core/arquivo.py): sem senha nao grava, e
     dentro de arvore git nao grava. Aqui elas viram texto que diz o que fazer.
     """
-    from abba_crews.core.arquivo import Arquivo, RaizInsegura
+    from abba_crews.core.arquivo import RaizInsegura
     from abba_crews.core.cofre import SenhaAusente, senha_obrigatoria
 
     try:
@@ -236,13 +237,23 @@ def ver(
     assinado: bool = typer.Option(False, "--assinado", help="Mostra a via assinada."),
 ) -> None:
     """Decifra e imprime um dossie guardado."""
+    from abba_crews.core.arquivo import DossieNaoEncontrado
+    from abba_crews.core.cofre import ConteudoAdulterado
+
     arquivo = _abre_arquivo()
     r = _localiza(arquivo, chave)
+    try:
+        conteudo = arquivo.markdown(r, assinado=assinado)
+    except (ConteudoAdulterado, DossieNaoEncontrado) as e:
+        # `cofre.py` descreve a falha alta como comportamento de projeto; entregar isso
+        # como traceback cru transformava o desenho em susto.
+        typer.echo(f"\n  {e}\n")
+        raise typer.Exit(code=1) from e
     typer.echo("")
-    typer.echo(arquivo.markdown(r, assinado=assinado))
+    typer.echo(conteudo)
 
 
-def _localiza(arquivo: Arquivo, chave: str):  # type: ignore[name-defined,no-untyped-def] # noqa: F821,E501
+def _localiza(arquivo: Arquivo, chave: str) -> RegistroDossie:
     from abba_crews.core.arquivo import DossieNaoEncontrado, ReferenciaAmbigua
 
     try:
@@ -263,14 +274,24 @@ def aprovar(
     Aprovar NAO transmite nada ao Fisco: a manifestacao continua sendo ato do
     contribuinte, no sistema do proprio Fisco.
     """
-    from abba_crews.core.aprovacao import ConteudoDivergente, GateViolado
+    from abba_crews.core.aprovacao import (
+        ConteudoDivergente,
+        GateViolado,
+        RodapeAusente,
+        divergencia_de_assinante,
+    )
     from abba_crews.core.aprovacao import aprovar as _aprovar
+    from abba_crews.core.cofre import ConteudoAdulterado
 
     arquivo = _abre_arquivo()
     r = _localiza(arquivo, chave)
+
+    if aviso := divergencia_de_assinante(r, por):
+        typer.echo(f"\n  ATENCAO: {aviso}")
+
     try:
         assinado = _aprovar(arquivo, r.chave, por=por)
-    except (GateViolado, ConteudoDivergente) as e:
+    except (GateViolado, ConteudoDivergente, RodapeAusente, ConteudoAdulterado) as e:
         typer.echo(f"\n  RECUSADO: {e}\n")
         raise typer.Exit(code=1) from e
 

@@ -114,7 +114,12 @@ PRODUTOS: tuple[Produto, ...] = (
             "demonstravel, NAO vendavel.)"
         ),
         base_legal="Decreto 12.955/2026 (RCBS) e Resolucao CGIBS 6/2026 (RIBS)",
-        crew="abba_crews.crews.sentinela",
+        # `crew=None` porque **nao existe crew**: a Sentinela roda ponta a ponta sem
+        # LLM nenhum, e a crew de julgamento chega no M3b. Ate 2026-09-02 este campo
+        # dizia "abba_crews.crews.sentinela", modulo que nunca existiu — afirmacao em
+        # dado que nada conferia. Agora `test_registry` reprova produto demonstravel
+        # apontando para modulo inexistente.
+        crew=None,
         flow="abba_crews.flows.sentinela_flow",
         observacao=(
             "Silencio do contribuinte = aceite. A proposta fica disponivel ate o dia 15 "

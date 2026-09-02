@@ -1,0 +1,90 @@
+# A CI do abba-crews — **na raiz do repositorio, que e o unico lugar onde o GitHub le**.
+#
+# Ate 2026-09-02 este arquivo vivia em `09-crews/.github/workflows/ci.yml` e **nunca
+# rodou**: o GitHub Actions so executa workflows em `.github/workflows/` na raiz do
+# repositorio. Enquanto isso, seis lugares do projeto afirmavam no presente que "a CI
+# prova" e "a CI reprova se algum segredo for rastreado" — README, core/clientes.py,
+# scripts/audita_fronteira.py, test_registry.py, test_fronteira.py e AGENTS.md.
+#
+# Era o mesmo defeito do CREWAI_TELEMETRY_OPT_OUT: um controle de seguranca documentado
+# como ativo e inerte. A varredura de segredo, em particular, nunca tinha rodado uma vez.
+#
+# O projeto continua em staging dentro de `09-crews/` (o app do GitHub desta sessao nao
+# pode criar repositorios). Por isso o workflow mora aqui e trabalha la, via
+# `working-directory`. Ao extrair para o repo `abba-crews` proprio (ver
+# `09-crews/STAGING.md`), este arquivo vira o `.github/workflows/ci.yml` de la, sem os
+# `working-directory` e sem o filtro de `paths`.
+
+name: abba-crews
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "09-crews/**"
+      - ".github/workflows/abba-crews.yml"
+  pull_request:
+    paths:
+      - "09-crews/**"
+      - ".github/workflows/abba-crews.yml"
+
+defaults:
+  run:
+    working-directory: 09-crews
+
+jobs:
+  verifica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sincronizar dependencias
+        run: uv sync --extra dev --locked
+
+      # A trava de portabilidade. core/ guarda o reconciliador, o calendario e a
+      # tabela de vedacoes — o que vale dinheiro. Se ele importar crewai, uma mudanca
+      # de API deles vira retrabalho no nosso ativo. Isto reprova o build.
+      - name: Fronteira — core/ nao depende da CrewAI
+        run: uv run python scripts/audita_fronteira.py
+
+      - name: Lint
+        run: uv run ruff check .
+
+      # Cobre o pacote inteiro desde o M4b. Antes olhava so `core/`, e cinco relatorios
+      # de marco disseram "mypy estrito" sem essa ressalva.
+      - name: Tipos
+        run: uv run mypy
+
+      - name: Testes
+        run: uv run pytest -q
+
+      # Dado fiscal de cliente e o dado mais sensivel que a ABBA toca.
+      # Certificado digital commitado e incidente, nao bug.
+      - name: Nenhum segredo commitado
+        working-directory: .
+        run: |
+          if git ls-files | grep -Ei '\.(p12|pfx|pem|key)$'; then
+            echo "::error::certificado ou chave privada commitada — remova e rotacione"
+            exit 1
+          fi
+          if git ls-files | grep -Ex '(.*/)?\.env'; then
+            echo "::error::.env commitado"
+            exit 1
+          fi
+          echo "nenhum segredo rastreado"
+
+      # O dossie carrega dado fiscal de cliente e nunca pode entrar no repositorio.
+      # `core/arquivo.py` ja recusa gravar dentro de arvore git; isto e o cinto.
+      - name: Nenhum dossie commitado
+        working-directory: .
+        run: |
+          if git ls-files | grep -E '\.(md\.enc|meta\.json)$'; then
+            echo "::error::dossie de cliente rastreado no repositorio"
+            exit 1
+          fi
+          echo "nenhum dossie rastreado"

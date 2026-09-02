@@ -14,10 +14,14 @@ silencioso num campo de credito e credito perdido sem ninguem perceber.
 Estrutura do grupo IBS/CBS conforme a NT 2025.002 (grupo UB):
 
     gIBSCBS
-      vBC
-      gIBSUF   -> pIBSUF, vIBSUF
-      gIBSMun  -> pIBSMun, vIBSMun
-      gCBS     -> pCBS, vCBS
+      vBC      -> vbc
+      gIBSUF   -> vIBSUF  (v_ibs_uf)
+      gIBSMun  -> vIBSMun (v_ibs_mun)
+      gCBS     -> vCBS    (v_cbs)
+
+**So os valores, nao as aliquotas.** `pIBSUF`, `pIBSMun` e `pCBS` existem no XML e
+**nao** estao no modelo: a conferencia compara valor contra valor, e guardar aliquota
+sem usar seria mais superficie declarada sem dono. Entram quando algo precisar delas.
 
 Item carrega `CST` (CST-IBS/CBS) e `cClassTrib` — o par que amarra o item a um
 dispositivo especifico da LC 214/2025.
@@ -51,9 +55,22 @@ def dinheiro(valor: Any) -> Decimal:
             "ponto flutuante perde centavos e o erro so aparece na conferencia."
         )
     try:
-        return Decimal(valor).quantize(CENTAVO, rounding=ROUND_HALF_UP)
+        d = Decimal(valor)
     except (InvalidOperation, ValueError, TypeError) as e:
         raise ValueError(f"valor monetario invalido: {valor!r}") from e
+
+    # `Decimal("nan")` nao levanta: devolve NaN, e `NaN.quantize(...)` devolve NaN.
+    # A defesa real vinha de fora — o Pydantic recusa nao-finito no campo, e comparacao
+    # de ordem com NaN levanta InvalidOperation. Ou seja: o guarda declarado do dinheiro
+    # se apoiava em terceiros sem saber, e quem chamasse `dinheiro()` fora de um modelo
+    # levava uma excecao crua em vez da ValueError que esta docstring promete.
+    if not d.is_finite():
+        raise ValueError(
+            f"valor monetario nao finito: {valor!r}. NaN e infinito nao sao dinheiro — "
+            f"comparados com qualquer limiar eles nao dao nem verdadeiro nem falso, e "
+            f"uma divergencia fiscal desapareceria sem ninguem ver."
+        )
+    return d.quantize(CENTAVO, rounding=ROUND_HALF_UP)
 
 
 class Papel(str, Enum):  # noqa: UP042
@@ -147,14 +164,18 @@ class DocumentoFiscal(BaseModel):
 
     @property
     def total_ibs(self) -> Decimal:
+        """Reservado para o Diagnostico de Impacto de Caixa (produto `diagnostico`).
+
+        Sem chamador hoje. Fica declarado porque a projecao de caixa por tributo e o
+        proximo uso previsto, e removida se ela nao vier — a regra da casa desde o
+        review de 2026-09-02 e que nada fica declarado sem dono.
+        """
         return sum((i.v_ibs for i in self.itens), Decimal("0.00"))
 
     @property
     def total_cbs(self) -> Decimal:
+        """Reservado para o Diagnostico de Impacto de Caixa. Ver `total_ibs`."""
         return sum((i.v_cbs for i in self.itens), Decimal("0.00"))
-
-    def item(self, numero: int) -> ItemDocumento | None:
-        return next((i for i in self.itens if i.numero == numero), None)
 
 
 class LinhaApuracao(BaseModel):
@@ -210,6 +231,7 @@ class ApuracaoFisco(BaseModel):
 
     @property
     def total_debito(self) -> Decimal:
+        """Usada por `saldo`. Ver a nota la sobre por que a cadeia existe."""
         return sum(
             (linha.tributo_total for linha in self.linhas if linha.papel is Papel.SAIDA),
             Decimal("0.00"),
@@ -224,7 +246,11 @@ class ApuracaoFisco(BaseModel):
 
     @property
     def saldo(self) -> Decimal:
-        """Positivo = a pagar. Negativo = credito acumulado."""
+        """Positivo = a pagar. Negativo = credito acumulado.
+
+        Reservado para o Diagnostico: o efeito de caixa da competencia e esta conta.
+        Sem chamador hoje — declarado com dono, nao por inercia.
+        """
         return self.total_debito - self.total_credito
 
     def por_chave_item(self) -> dict[tuple[str, int], LinhaApuracao]:

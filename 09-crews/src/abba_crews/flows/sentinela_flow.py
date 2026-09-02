@@ -3,12 +3,20 @@
 Este arquivo pode importar `crewai`; `core/` nao pode. Toda decisao de negocio mora
 em `core/`; aqui mora a sequencia.
 
-    abrir_competencia  -> config do cliente + janela de manifestacao
-    coletar            -> adaptador de fonte (sintetico neste marco)
-    reconciliar        -> core/reconciliacao (+ creditabilidade). Zero LLM.
-    decidir_rota       -> sem_divergencia | rotina | julgamento (M3b)
-    montar_dossie      -> core/dossie, sempre RASCUNHO
-    submeter_a_humano  -> grava cifrado e ENCERRA (M4a)
+    abrir_competencia       -> config do cliente + janela de manifestacao
+    coletar                 -> adaptador de fonte (sintetico neste marco)
+    reconciliar_competencia -> core/reconciliacao (+ creditabilidade). Zero LLM.
+    decidir_rota            -> sem_divergencia | rotina | julgamento (M3b)
+    dossie_conforme         -> core/dossie, sempre RASCUNHO
+    dossie_rotina           -> idem, quando ha divergencia estrutural
+    julgar                  -> recusa alto ate o M3b
+
+Os dois passos de dossie chamam `_montar`, que grava pelo arquivo e ENCERRA.
+
+> Os nomes acima sao conferidos por `tests/unit/test_promessas.py`: todo nome deste
+> bloco tem de existir e ser um passo do Flow. A trava existe porque este bloco ja
+> mentiu duas vezes — prometeu `submeter_a_humano` antes de o metodo existir, e depois
+> seguiu prometendo `reconciliar` e `montar_dossie`, que nunca existiram.
 
 **A rota `julgamento` so existe de verdade com classificador.** Ate o M3a ela era
 alcancavel no papel e inalcancavel na pratica: nada construia uma divergencia de
@@ -21,9 +29,15 @@ quando a tabela for preenchida com o contador.
 **O Flow nunca transmite ao Fisco e nunca conclui.** Nao existe ferramenta de
 transmissao no projeto, e a manifestacao e ato do contribuinte.
 
-Idempotencia: a chave de execucao e `(cnpj, competencia, hash_das_entradas)`. Mesmas
-entradas produzem o mesmo dossie — e o que permite reexecutar uma competencia sem
-medo durante a janela.
+Idempotencia: a chave de execucao e `(cnpj, competencia, impressao)`, e a **impressao
+inclui a data de referencia**. Reexecutar no mesmo dia devolve o mesmo dossie; rodar
+noutro dia gera dossie novo **ao lado**, sem apagar o anterior.
+
+A data entra porque o documento depende dela: dias restantes, data de geracao e ate a
+`natureza` (MANIFESTACAO vs. REGISTRO_DE_PERDA) mudam com o calendario. Ate 2026-09-02
+ela ficava de fora, e o efeito era o pior possivel — um dossie que dizia "manifeste-se,
+faltam 3 dias" era **silenciosamente substituido** por outro dizendo "prazo perdido",
+sob a mesma chave, com o anterior destruido.
 """
 
 from __future__ import annotations
@@ -35,7 +49,7 @@ from pathlib import Path
 from typing import Any
 
 from crewai.flow import Flow, listen, router, start
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from abba_crews.core.arquivo import Arquivo, RegistroDossie
 from abba_crews.core.calendario import JanelaManifestacao
@@ -59,11 +73,16 @@ class Fonte(BaseModel):
     apuracao: ApuracaoFisco
     origem: str = "sintetico"
 
-    def impressao(self) -> str:
-        """Hash estavel das entradas. Muda a entrada, muda a versao do dossie."""
+    def impressao(self, hoje: date) -> str:
+        """Hash estavel das entradas **e da data de referencia**.
+
+        `hoje` entra no hash porque o dossie muda com ela. Sem isso a chave prometia
+        idempotencia que nao existia e o rerun sobrescrevia o rascunho do dia anterior.
+        """
         payload = json.dumps(
             {
                 "origem": self.origem,
+                "hoje": hoje.isoformat(),
                 "documentos": [d.model_dump(mode="json") for d in self.documentos],
                 "apuracao": self.apuracao.model_dump(mode="json"),
             },
@@ -78,7 +97,10 @@ class EstadoSentinela(BaseModel):
 
     cnpj: str = ""
     competencia: str = ""
-    hoje: date = date.today()
+    hoje: date = Field(default_factory=date.today)
+    """`default_factory`, nao `date.today()`: o default do Pydantic e avaliado uma vez,
+    na definicao da classe. Num processo longo — que e como o AMP roda — a data
+    envelhecia sozinha, e e ela que decide o prazo."""
     config: ConfigCliente | None = None
     janela: JanelaManifestacao | None = None
     fonte: Fonte | None = None
@@ -143,7 +165,8 @@ class SentinelaFlow(Flow[EstadoSentinela]):
             )
         self.state.fonte = self._fonte
         self.state.chave_execucao = (
-            f"{self.state.cnpj}:{self.state.competencia}:{self._fonte.impressao()}"
+            f"{self.state.cnpj}:{self.state.competencia}:"
+            f"{self._fonte.impressao(self.state.hoje)}"
         )
 
     @listen(coletar)
@@ -218,6 +241,6 @@ class SentinelaFlow(Flow[EstadoSentinela]):
         self.state.registro = self._arquivo.guardar(
             self.state.dossie,
             self.state.markdown,
-            impressao=self.state.fonte.impressao(),
+            impressao=self.state.fonte.impressao(self.state.hoje),
             origem=self.state.fonte.origem,
         )

@@ -24,6 +24,15 @@ DIR_PADRAO = Path(__file__).resolve().parents[1] / "config" / "clientes"
 
 
 class Regime(str, Enum):  # noqa: UP042
+    """O regime do contribuinte.
+
+    **Declarado e ainda sem consequencia no codigo** — nenhuma linha ramifica nele hoje.
+    Fica porque o Simples Nacional tem cronograma proprio na reforma e a conferencia vai
+    precisar tratar os dois casos diferente; entra de verdade quando houver um cliente do
+    Simples. Ate la e configuracao registrada, nao comportamento — e o YAML de exemplo
+    diz isso.
+    """
+
     REGULAR = "regular"
     SIMPLES = "simples"
 
@@ -35,7 +44,14 @@ class Aprovacao(BaseModel):
 
     responsavel_nome: str = Field(min_length=3)
     responsavel_email: str
-    papel: str = Field(default="contador")
+    papel: str = Field(
+        default="contador",
+        description=(
+            "Funcao de quem assina, para o dossie e para o registro. Sem leitura no "
+            "codigo hoje; entra no M4c, quando o documento sair daqui e o papel de quem "
+            "assinou passar a importar para quem recebe."
+        ),
+    )
 
     @field_validator("responsavel_email")
     @classmethod
@@ -58,7 +74,12 @@ class ConfigCliente(BaseModel):
         description="Decide a data de disponibilizacao: dia 20 com DeRE, dia 15 sem.",
     )
     engagement_id: str | None = Field(
-        default=None, description="Liga ao cerebro do assessment-brain. Opcional ate o M5."
+        default=None,
+        description=(
+            "Liga ao engagement do assessment-brain. **Sem leitura ate o M5**, que e "
+            "quando o outbox do ledger passa a escrever fato e decisao no cerebro. "
+            "Declarado com marco e dono, nao por inercia."
+        ),
     )
     tolerancia_brl: Decimal = Field(
         default=Decimal("0.00"),
@@ -66,7 +87,15 @@ class ConfigCliente(BaseModel):
         "divergencia real — o padrao e zero e quem quiser folga assume.",
     )
     aprovacao: Aprovacao
-    produtos_ativos: tuple[str, ...] = ("sentinela",)
+    produtos_ativos: tuple[str, ...] = Field(
+        default=("sentinela",),
+        description=(
+            "Quais produtos rodam para este cliente. **Sem leitura hoje**: so a Sentinela "
+            "e demonstravel, entao nao ha o que ligar ou desligar. Vira filtro real "
+            "quando um segundo produto chegar a EXECUTAVEL — e `registry.por_id()` e a "
+            "outra metade dessa mesma funcao, hoje tambem sem chamador."
+        ),
+    )
 
     @field_validator("cnpj")
     @classmethod

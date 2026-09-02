@@ -336,3 +336,32 @@ def test_rascunho_sem_o_marcador_recusa_virar_via_assinada() -> None:
         via_assinada("# RASCUNHO — algo\n\ncorpo sem rodape\n", a)
     with pytest.raises(RodapeAusente, match="cabecalho"):
         via_assinada("sem cabecalho nenhum", a)
+
+
+# --------------------------------------------------------------------------- #
+# 7. Achados do review de 2026-09-02
+# --------------------------------------------------------------------------- #
+
+
+def test_o_disco_fica_so_para_o_dono(arquivo: Arquivo) -> None:
+    """Cifrar e deixar legivel por qualquer usuario protege o conteudo e entrega o resto.
+
+    A doutrina do `assessment-brain` e "perms + encryption" (cabecalho do
+    `report-crypto.js`; o `config.js` avisa sobre arquivo group/other-readable). Ate
+    2026-09-02 tinhamos feito so a cifra, e o disco saia `0644`/`0755` — os diretorios,
+    nomeados por CNPJ, eram a carteira de clientes em texto claro.
+    """
+    r, _, _ = _guarda(arquivo)
+    for caminho in (arquivo.caminho_markdown(r), arquivo.raiz / r.cnpj):
+        modo = caminho.stat().st_mode & 0o777
+        assert not modo & 0o077, f"{caminho} esta acessivel a outros: {modo:o}"
+
+
+def test_o_indice_em_claro_nao_diz_que_o_cliente_perdeu_o_prazo(arquivo: Arquivo) -> None:
+    """`natureza: registro_de_perda` em claro e a frase "este cliente perdeu o prazo"."""
+    r, _, _ = _guarda(arquivo)
+    bruto = (arquivo.raiz / r.cnpj / r.competencia / f"{r.impressao}.meta.json").read_text(
+        encoding="utf-8"
+    )
+    assert "natureza" not in bruto
+    assert "registro_de_perda" not in bruto

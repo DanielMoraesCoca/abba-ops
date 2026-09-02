@@ -135,7 +135,7 @@ def test_diferenca_dentro_da_tolerancia_nao_vira_divergencia() -> None:
 def test_tolerancia_negativa_e_recusada() -> None:
     docs = (documento(1, Papel.ENTRADA),)
     apuracao = apuracao_a_partir_de(docs, CNPJ, COMPETENCIA)
-    with pytest.raises(ValueError, match="negativa"):
+    with pytest.raises(ValueError, match="tolerancia invalida"):
         reconciliar(docs, apuracao, tolerancia_brl=Decimal("-1"))
 
 
@@ -377,3 +377,79 @@ def test_invariante_proposta_vazia_acha_tudo(docs: tuple[DocumentoFiscal, ...]) 
     esperado = sum(len(d.itens) for d in docs)
     assert len(r.divergencias) == esperado
     assert r.itens_conferidos == esperado
+
+
+# --------------------------------------------------------------------------- #
+# O pior erro possivel deste produto (achado no review de 2026-09-02)
+# --------------------------------------------------------------------------- #
+
+
+def test_documento_de_outra_empresa_e_recusado() -> None:
+    """O guarda que faltava: ate 2026-09-02 `reconciliar()` filtrava so por competencia.
+
+    Verificado no review: um documento do CNPJ 11222333000181 entrava na apuracao do
+    CNPJ 00000000000191 e virava R$ 100,00 "a favor do contribuinte" — pleito de credito
+    de outra empresa, sem um aviso. `emitente_cnpj` e `destinatario_cnpj` existiam no
+    modelo, validados a 14 digitos, e nenhuma linha os lia.
+
+    `core/clientes.py` chama exatamente este cenario de "o pior erro possivel deste
+    produto" — e ate aqui so o defendia no nome do arquivo de configuracao.
+    """
+    from abba_crews.core.reconciliacao import DocumentoDeTerceiro
+
+    alheio = DocumentoFiscal(
+        chave="9" * 44,
+        papel=Papel.ENTRADA,
+        emitente_cnpj="11444777000161",
+        destinatario_cnpj="11222333000181",
+        data_emissao=date(2027, 3, 15),
+        itens=(
+            item(1, "5.00", "5.00", "90.00"),
+        ),
+    )
+    apuracao = ApuracaoFisco(cnpj=CNPJ, competencia=COMPETENCIA, linhas=())
+    with pytest.raises(DocumentoDeTerceiro, match="pior erro possivel"):
+        reconciliar((alheio,), apuracao)
+
+
+def test_documento_em_que_a_empresa_e_emitente_ou_destinataria_passa() -> None:
+    """Os dois papeis valem: a empresa e parte tanto na entrada quanto na saida."""
+    entrada = documento(1, Papel.ENTRADA)
+    saida = documento(2, Papel.SAIDA)
+    apuracao = ApuracaoFisco(cnpj=CNPJ, competencia=COMPETENCIA, linhas=())
+    r = reconciliar((entrada, saida), apuracao)
+    assert r.itens_conferidos == 2
+
+
+# --------------------------------------------------------------------------- #
+# A tolerancia deixa de ser invisivel
+# --------------------------------------------------------------------------- #
+
+
+def test_tolerancia_registra_o_que_engoliu() -> None:
+    """Sem isto o contador assina "nada a manifestar" sem saber que foi cegado."""
+    from decimal import Decimal
+
+    docs = (documento(1, Papel.ENTRADA),)
+    apuracao = ApuracaoFisco(
+        cnpj=CNPJ,
+        competencia=COMPETENCIA,
+        linhas=(
+            LinhaApuracao(
+                chave=chave(1), item=1, papel=Papel.ENTRADA,
+                v_ibs=dinheiro("10.00"), v_cbs=dinheiro("40.00"),
+            ),
+        ),
+    )
+    r = reconciliar(docs, apuracao, tolerancia_brl=Decimal("100.00"))
+    assert r.divergencias == ()
+    assert r.suprimidos_por_tolerancia == 1
+    assert r.valor_suprimido_brl == Decimal("48.00")  # 98,00 documentado - 50,00 proposto
+    assert r.tolerancia_brl == Decimal("100.00")
+
+
+def test_sem_tolerancia_nada_e_suprimido() -> None:
+    docs = (documento(1, Papel.ENTRADA),)
+    r = reconciliar(docs, apuracao_a_partir_de(docs, CNPJ, COMPETENCIA))
+    assert r.suprimidos_por_tolerancia == 0
+    assert r.valor_suprimido_brl == Decimal("0.00")

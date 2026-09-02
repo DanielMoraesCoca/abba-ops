@@ -23,14 +23,48 @@ import pytest
 
 RAIZ = Path(__file__).resolve().parents[2]
 IGNORADOS = {".venv", ".pytest_cache", ".git", ".ruff_cache", ".mypy_cache", "dist", "build"}
-MARKDOWNS = sorted(
-    p for p in RAIZ.rglob("*.md") if not (IGNORADOS & set(p.parts))
+
+
+def _markdowns_do_projeto() -> list[Path]:
+    return [p for p in RAIZ.rglob("*.md") if not (IGNORADOS & set(p.parts))]
+
+
+# Documentos do `abba-ops` que falam DESTE produto. Entram na varredura porque o erro do
+# prazo (P3b) tinha sobrevivido justamente neles depois de corrigido no codigo — e la a
+# correcao dependia de eu lembrar. O caminho e relativo a raiz do repo, e a lista e
+# explicita: varrer o abba-ops inteiro traria documento de outra frente.
+DOCS_DO_PRODUTO_NO_OPS = (
+    "05-interno/plano-camada-de-caixa-2027.md",
+    "06-ferramentas/blueprint-crews-camada-de-caixa.md",
 )
-"""Todo markdown do projeto. Cache e build ficam de fora — nao sao nossos."""
+
+
+def _markdowns_do_ops() -> list[Path]:
+    ops = RAIZ.parent
+    return [c for nome in DOCS_DO_PRODUTO_NO_OPS if (c := ops / nome).exists()]
+
+
+MARKDOWNS = sorted(_markdowns_do_projeto() + _markdowns_do_ops())
+"""Todo markdown deste projeto, mais os documentos do abba-ops que falam dele."""
 
 
 def test_ha_markdown_para_conferir() -> None:
     assert MARKDOWNS, "nenhum .md encontrado — o teste estaria passando por vacuo"
+
+
+def test_os_documentos_do_ops_estao_na_varredura() -> None:
+    """O erro do prazo sobreviveu no `abba-ops` depois de corrigido aqui.
+
+    Se o staging sair de dentro do abba-ops (`STAGING.md`), estes caminhos deixam de
+    existir e este teste avisa — em vez de a varredura encolher em silencio.
+    """
+    achados = _markdowns_do_ops()
+    assert len(achados) == len(DOCS_DO_PRODUTO_NO_OPS), (
+        f"documentos do produto no abba-ops nao encontrados: "
+        f"{set(DOCS_DO_PRODUTO_NO_OPS) - {p.name for p in achados}}. "
+        f"Se o projeto foi extraido para o repo proprio, remova-os desta lista "
+        f"deliberadamente — nao deixe a varredura encolher sozinha."
+    )
 
 
 @pytest.mark.parametrize("doc", MARKDOWNS, ids=lambda p: p.name)

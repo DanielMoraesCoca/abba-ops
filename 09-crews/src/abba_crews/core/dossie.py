@@ -207,6 +207,36 @@ def _secao_descartados(descartados: tuple[ItemDescartado, ...], total: Decimal) 
     return linhas
 
 
+def _secao_tolerancia(r: ResultadoReconciliacao) -> list[str]:
+    """A folga aplicada, e o que ela engoliu. So aparece quando ha folga.
+
+    Um dossie que diz "nada a manifestar" depois de uma tolerancia ter apagado
+    divergencia real esta pedindo uma assinatura sob informacao incompleta. Se houve
+    folga, ela e declarada — mesmo que nada tenha sido suprimido, porque saber que a
+    conferencia rodou com folga muda como o contador le o resto.
+    """
+    if r.tolerancia_brl <= ZERO:
+        return []
+    linhas = [
+        f"### Tolerancia aplicada — {_brl(r.tolerancia_brl)} por item",
+        "",
+        f"Esta conferencia ignorou diferencas de ate {_brl(r.tolerancia_brl)} por item, "
+        f"conforme a configuracao deste cliente.",
+        "",
+    ]
+    if r.suprimidos_por_tolerancia:
+        linhas += [
+            f"**{r.suprimidos_por_tolerancia} item(ns) divergiam e nao foram reportados**, "
+            f"somando {_brl(r.valor_suprimido_brl)}. Se essa folga nao reflete o que foi "
+            f"combinado, a conferencia precisa rodar de novo com a tolerancia certa "
+            f"antes de este documento ser assinado.",
+            "",
+        ]
+    else:
+        linhas += ["Nenhuma divergencia caiu dentro dessa folga nesta competencia.", ""]
+    return linhas
+
+
 def renderizar(dossie: Dossie) -> str:
     """O dossie em Markdown, para leitura humana. Sempre o rascunho.
 
@@ -299,6 +329,7 @@ def renderizar(dossie: Dossie) -> str:
     # Fora do if: quando TUDO foi descartado nao ha divergencia, a natureza vira
     # "nada a fazer" — e e justamente ai que omitir os descartes seria pior.
     L += _secao_descartados(d.resultado.descartados, d.total_descartado)
+    L += _secao_tolerancia(d.resultado)
 
     L += [
         "---",
