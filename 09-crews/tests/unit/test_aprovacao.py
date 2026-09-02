@@ -326,12 +326,12 @@ def test_a_via_assinada_nao_fala_mais_em_rascunho(arquivo: Arquivo) -> None:
 
 def test_rascunho_sem_o_marcador_recusa_virar_via_assinada() -> None:
     """Se o rodape de core/dossie.py mudar, isto quebra — que e o objetivo."""
-    from datetime import datetime, timezone
+    from datetime import UTC, datetime
 
     from abba_crews.core.aprovacao import RodapeAusente, via_assinada
     from abba_crews.core.dossie import Assinatura
 
-    a = Assinatura(por="Maria", em=datetime.now(timezone.utc), sha256="a" * 64)  # noqa: UP017
+    a = Assinatura(por="Maria", em=datetime.now(UTC), sha256="a" * 64)
     with pytest.raises(RodapeAusente, match="MARCA_RODAPE_RASCUNHO"):
         via_assinada("# RASCUNHO — algo\n\ncorpo sem rodape\n", a)
     with pytest.raises(RodapeAusente, match="cabecalho"):

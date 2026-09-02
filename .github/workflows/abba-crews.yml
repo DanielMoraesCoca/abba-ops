@@ -35,6 +35,18 @@ defaults:
 jobs:
   verifica:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      # A faixa que o `requires-python` promete tem de ser a faixa que a CI prova.
+      # Na primeira execucao real desta CI (M4b) o runner escolheu 3.12 sozinho e o
+      # mypy quebrou; e o piso declarado era 3.10, versao em que o projeto nem instala
+      # (onnxruntime, via crewai[tools], nao publica wheel cp310). Faixa declarada sem
+      # matriz que a exercite e mais uma promessa sem mecanismo.
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+
+    name: verifica (py${{ matrix.python }})
+
     steps:
       - uses: actions/checkout@v4
 
@@ -42,9 +54,10 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
+          python-version: ${{ matrix.python }}
 
       - name: Sincronizar dependencias
-        run: uv sync --extra dev --locked
+        run: uv sync --extra dev
 
       # A trava de portabilidade. core/ guarda o reconciliador, o calendario e a
       # tabela de vedacoes — o que vale dinheiro. Se ele importar crewai, uma mudanca
@@ -57,8 +70,11 @@ jobs:
 
       # Cobre o pacote inteiro desde o M4b. Antes olhava so `core/`, e cinco relatorios
       # de marco disseram "mypy estrito" sem essa ressalva.
+      # `--python-version` casa a semantica assumida com os stubs instalados neste job.
+      # Sem isso o mypy le site-packages de 3.12/3.13 assumindo 3.11 e morre no stub do
+      # numpy — dependencia transitiva que nenhuma linha nossa importa.
       - name: Tipos
-        run: uv run mypy
+        run: uv run mypy --python-version ${{ matrix.python }}
 
       - name: Testes
         run: uv run pytest -q
@@ -66,6 +82,7 @@ jobs:
       # Dado fiscal de cliente e o dado mais sensivel que a ABBA toca.
       # Certificado digital commitado e incidente, nao bug.
       - name: Nenhum segredo commitado
+        if: matrix.python == '3.11'
         working-directory: .
         run: |
           if git ls-files | grep -Ei '\.(p12|pfx|pem|key)$'; then
@@ -81,6 +98,7 @@ jobs:
       # O dossie carrega dado fiscal de cliente e nunca pode entrar no repositorio.
       # `core/arquivo.py` ja recusa gravar dentro de arvore git; isto e o cinto.
       - name: Nenhum dossie commitado
+        if: matrix.python == '3.11'
         working-directory: .
         run: |
           if git ls-files | grep -E '\.(md\.enc|meta\.json)$'; then

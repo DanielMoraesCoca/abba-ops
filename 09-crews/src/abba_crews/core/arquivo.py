@@ -45,7 +45,7 @@ import contextlib
 import hashlib
 import json
 import os
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from pydantic import BaseModel, Field
@@ -75,7 +75,7 @@ class ReferenciaAmbigua(KeyError):
 
 def agora() -> datetime:
     """UTC, sempre. Prazo fiscal com fuso implicito e prazo errado esperando acontecer."""
-    return datetime.now(timezone.utc)  # noqa: UP017
+    return datetime.now(UTC)
 
 
 def sha256_de(texto: str) -> str:

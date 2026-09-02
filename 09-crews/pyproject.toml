@@ -52,6 +52,13 @@ target-version = "py310"
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.mypy]
+# Localmente, confere contra o **piso** que declaramos suportar (3.11).
+#
+# Na CI, cada job da matriz passa `--python-version` igual ao seu interpretador. Sem
+# isso, o mypy le os stubs de site-packages da versao instalada com a semantica de 3.11
+# e morre no stub do numpy (`type` statement, sintaxe de 3.12+) antes de conferir uma
+# linha nossa. Foi o primeiro defeito que a CI achou ao rodar de verdade — e nao dava
+# para ver localmente, porque a maquina de desenvolvimento roda exatamente o piso.
 python_version = "3.11"
 strict = true
 # Ate 2026-09-02 isto era `files = ["src/abba_crews/core"]`, e cinco relatorios de marco
@@ -64,6 +71,7 @@ files = ["src/abba_crews"]
 # segue estrito de verdade.
 module = ["crewai.*", "crewai_tools.*"]
 ignore_missing_imports = true
+
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
