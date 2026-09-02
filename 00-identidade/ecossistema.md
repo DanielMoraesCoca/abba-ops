@@ -46,7 +46,7 @@ Levantado no `abba-portal` em 2026-08-01. **Isto é código real, não plano.**
 | `src/lib/durability-benchmark.ts` | O mesmo para durabilidade de comportamento a 30/60/90 dias: a métrica **não inflacionável**, e o sinal de renovação mais forte | idem |
 | migração `20260625_benchmark_contribution.sql` | O opt-in **recíproco**: *"optar por não compartilhar é optar por não ver"*. Coluna `benchmark_contribution` no tenant | Aplicada. **Padrão = `true`**, com a premissa explícita de que *a contribuição anonimizada é divulgada em contrato* |
 | Credenciais verificáveis (`/api/credentials/issue`, `/verify`) | O campeão emite uma credencial assinada que ele carrega entre empregos. O token **não** carrega cliente, e-mail nem nota bruta | Funcional |
-| `/feed`, `/api/peer-help` | Reconhecimento e ajuda entre pares | Funcional, **escopo por tenant** (dentro do cliente, não entre clientes) |
+| `/api/peer-help` | Reconhecimento de ajuda entre pares | Funcional, **escopo por tenant** (dentro do cliente, não entre clientes). O `/feed` ("Mural de conquistas") saiu em 02/09: era placar social, e quem registra a ajuda passou a ser **quem foi ajudado**, nunca quem quer aparecer |
 | `docs/operational/CROSS_CLIENT_CHAMPION_NETWORK.md` | Plano de ativação da rede em 3 estágios (WhatsApp → Slack → plataforma) | Escrito, v1.0 |
 
 > **A implicação mais urgente:** o padrão da coluna é `true` **porque a premissa é que o contrato divulga a contribuição anonimizada**. Hoje o [contrato-esqueleto](../03-comercial/contrato-sow-esqueleto.md) não divulga. Ou o contrato passa a divulgar (Anexo IV), ou o padrão é indefensável perante um DPO. **É a única pendência deste documento que não pode esperar.**
