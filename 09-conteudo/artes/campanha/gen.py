@@ -38,7 +38,8 @@ STYLE = '''
 
     /* Grao pesado. Aqui ele e assunto, nao acabamento: e o que faz a peca ler
        como papel carimbado em vez de tela. */
-    .grao { position:absolute; inset:0; pointer-events:none;
+    .grao { position:absolute; top:0; left:0; width:1080px; height:1350px;
+            pointer-events:none;
             background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
             background-size:240px 240px; opacity:.5; mix-blend-mode:multiply; }
     .navy .grao { opacity:.09; mix-blend-mode:overlay; }
@@ -51,11 +52,13 @@ STYLE = '''
     .fio { position:absolute; left:96px; right:96px; height:1px; background:#CBD3DF; }
     .navy .fio { background:#33456A; }
 
-    .pe { position:absolute; bottom:66px; left:96px; right:96px;
-          display:flex; justify-content:space-between; align-items:flex-end;
-          font-family:"IBM Plex Mono", monospace; font-size:19px;
-          letter-spacing:.18em; color:#6B778E; }
-    .navy .pe { color:#5D6E92; }
+    /* Faixa de altura fixa, nao caixa que se mede pelo conteudo: como flex
+       sem altura declarada ele colapsava para 3px e o texto sumia do PNG. */
+    .pe { position:absolute; top:1186px; left:96px; right:96px;
+          display:flex; justify-content:space-between;
+          font-family:"IBM Plex Mono", monospace; font-size:21px; line-height:1.5;
+          letter-spacing:.16em; color:#4E5A70; }
+    .navy .pe { color:#8E9AB4; }
     .pe .ouro { color:#8A6E28; } .navy .pe .ouro { color:#C2A35B; }
 
     /* A FALA DO MERCADO. Sangra para fora da margem direita de proposito: e o
@@ -66,6 +69,8 @@ STYLE = '''
             color:#1B2A4A; }
     .navy .fala { color:#FFFFFF; }
     .fala .m { color:#AEB8C8; } .navy .fala .m { color:#4A5B80; }
+    .fala .g { color:#8A6E28; font-style:italic; }
+    .navy .fala .g { color:#D8BE7C; font-style:italic; }
 
     /* A TARJA. Feita com text-decoration em vez de barra posicionada a mao:
        o navegador acerta a altura por linha, inclusive quando a frase muda de
@@ -112,20 +117,24 @@ FILTRO = ('<svg width="0" height="0" style="position:absolute" aria-hidden="true
           '<feDisplacementMap in="SourceGraphic" in2="r" scale="8" '
           'xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg>')
 
-HEAD = ('<!doctype html>\n<html>\n<head>\n  <meta charset="utf-8">\n'
-        '  <script src="./support.js"></script>\n</head>\n<body>\n<x-dc>\n<helmet>'
-        + STYLE + '</helmet>\n')
+def cabeca():
+    """Montado na hora, e nao uma vez no import: STYLE cresce ao longo do
+    arquivo (o css da bula entra depois), e HEAD congelado deixava as regras
+    novas de fora sem nenhum erro aparecer."""
+    return ('<!doctype html>\n<html>\n<head>\n  <meta charset="utf-8">\n'
+            '  <script src="./support.js"></script>\n</head>\n<body>\n<x-dc>\n<helmet>'
+            + STYLE + '</helmet>\n')
 TAIL = '</x-dc>\n</body>\n</html>\n'
 
 F, PAGES = {}, []
 
 def pagina(nome, corpo, navy=False, cab_dir='', pe_esq=''):
     cls = 'p navy' if navy else 'p'
-    F[nome] = (HEAD + f'<div class="{cls}">' + FILTRO +
+    F[nome] = (cabeca() + f'<div class="{cls}">' + FILTRO +
                '<div class="grao"></div>'
                f'<div class="cab"><span>ABBA</span><span>{cab_dir}</span></div>'
                '<div class="fio" style="top:116px"></div>'
-               '<div class="fio" style="bottom:114px"></div>'
+               '<div class="fio" style="top:1140px"></div>'
                + corpo +
                f'<div class="pe"><span>{pe_esq}</span>'
                '<span class="ouro">abbaservices.com.br</span></div>'
@@ -207,6 +216,145 @@ pagina(
 )
 
 # ══════════ escrita ══════════
+
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# CAMPANHA "BOMBA" — a metafora e do socio (03/09): "transformar a empresa,
+# potencializa-la, faze-la tomar bomba, mas que nao faz mal a longo prazo".
+#
+# Por que ela e boa, e nao e so engracada:
+#
+#   · TODO MUNDO ENTENDE NA HORA. Nao precisa explicar o que e bomba, e
+#     ninguem usa essa metafora em B2B. Custa zero e nao tem dono.
+#   · ELA JA E A DOUTRINA DA CASA, so que em outra lingua. O DORA diz que a IA
+#     AMPLIFICA o que ja existe: bomba amplifica. Base ruim, carga pesada,
+#     lesao. O METR diz que os caras se sentiram 20% mais rapidos e estavam
+#     19% mais lentos: e exatamente quem se olha no espelho e se acha maior.
+#     A recusa de prometer acuracia que nao se mede e a bula.
+#   · E O CAMINHO MAIS CURTO ATE "AI NATIVE". Empresa AI native nao esta
+#     dopada, esta treinada. Nao e dose, e fisiologia.
+#
+# A regra do guardiao continua valendo: a piada e sobre a pratica, nunca sobre
+# pessoa nem empresa com nome, e toda peca fecha num numero do canone.
+# ══════════════════════════════════════════════════════════════════════════
+
+BULA_CSS = '''
+  <style>
+    .secao { display:grid; grid-template-columns:250px 1fr; gap:34px;
+             padding:30px 0; border-top:1px solid #CBD3DF; }
+    .navy .secao { border-top-color:#33456A; }
+    .secao:last-of-type { border-bottom:1px solid #CBD3DF; }
+    .navy .secao:last-of-type { border-bottom-color:#33456A; }
+    .secao .k { font-family:"IBM Plex Mono", monospace; font-size:19px;
+                letter-spacing:.18em; text-transform:uppercase; color:#8A6E28;
+                line-height:1.5; }
+    .navy .secao .k { color:#C2A35B; }
+    .secao .v { font-family:"IBM Plex Mono", monospace; font-size:26px;
+                line-height:1.62; color:#4E5A70; }
+    .navy .secao .v { color:#C3CAD8; }
+    .secao .v b { color:#1B2A4A; font-weight:600; }
+    .navy .secao .v b { color:#FFFFFF; }
+    .selo { position:absolute; font-family:"IBM Plex Mono", monospace;
+            font-weight:600; font-size:20px; letter-spacing:.3em;
+            border:3px solid #8A6E28; color:#8A6E28; padding:12px 22px;
+            filter:url(#tinta); }
+  </style>
+'''
+STYLE = STYLE + BULA_CSS
+
+# ── 04 · a capa da campanha ───────────────────────────────────────────────
+pagina(
+    'Bomba01',
+    '<div class="bloco" style="top:250px">'
+    '<p class="rot">Sobre atalho</p></div>'
+    '<div class="fala" style="top:330px;font-size:130px">'
+    'Tem empresa tomando <span class="g">bomba</span> de IA.</div>'
+    '<div class="bloco" style="top:900px">'
+    '<p class="cor">Cresce rápido. Fica bem na foto do trimestre. '
+    'E <b>quebra na primeira carga real.</b></p></div>'
+    '<div class="bloco" style="top:990px">'
+    '<p class="mono">Mais de 80% dos projetos de IA falham, o dobro da taxa dos '
+    'projetos de TI comuns.<br>RAND, 65 engenheiros de machine learning sêniores.</p>'
+    '</div>',
+    navy=False, cab_dir='Campanha · Bomba 01/05', pe_esq='Prova, não impressão.',
+)
+
+# ── 05 · a bula ───────────────────────────────────────────────────────────
+pagina(
+    'Bomba02',
+    '<div class="bloco" style="top:196px">'
+    '<p class="rot">Bula · uso corporativo</p>'
+    '<div class="fala" style="position:relative;left:0;right:-52px;top:8px;'
+    'font-size:104px">IA sem fundação</div></div>'
+    '<div class="bloco" style="top:470px">'
+    '<div class="secao"><div class="k">Composição</div><div class="v">'
+    'ferramenta comprada · piloto sem métrica combinada · pressa de diretoria'
+    '</div></div>'
+    '<div class="secao"><div class="k">Contraindicações</div><div class="v">'
+    'processo bagunçado · dado que ninguém confia · <b>sucesso não combinado antes</b>'
+    '</div></div>'
+    '<div class="secao"><div class="k">Efeitos colaterais</div><div class="v">'
+    'sistema que uma pessoa só entende · fornecedor que some levando o '
+    'conhecimento · a descoberta, dois anos depois, de que trocar custa mais '
+    'do que custou o projeto'
+    '</div></div>'
+    '</div>'
+    '<div class="bloco" style="top:1020px">'
+    '<p class="mono">A causa número um do fracasso não é técnica.<br>'
+    '<b>É começar sem combinar o que seria dar certo.</b> RAND.</p></div>',
+    navy=False, cab_dir='Campanha · Bomba 02/05', pe_esq='Prova, não impressão.',
+)
+
+# ── 06 · o exame ──────────────────────────────────────────────────────────
+pagina(
+    'Bomba03',
+    '<div class="bloco" style="top:250px"><p class="rot">O espelho mente</p></div>'
+    '<div class="fala" style="top:326px;font-size:138px">'
+    'No espelho, cresceu.<br><span class="g">No exame, não.</span></div>'
+    '<div class="bloco" style="top:730px">'
+    '<div class="secao"><div class="k">No espelho</div>'
+    '<div class="v"><b>20% mais rápidos</b>, foi o que eles relataram</div></div>'
+    '<div class="secao"><div class="k">No cronômetro</div>'
+    '<div class="v"><b>19% mais lentos</b>, foi o que a medição registrou</div></div>'
+    '</div>'
+    '<div class="bloco" style="top:1030px">'
+    '<p class="mono">Desenvolvedores experientes, 246 tarefas reais, tempo '
+    'cronometrado.<br>METR, julho de 2025.</p></div>',
+    navy=False, cab_dir='Campanha · Bomba 03/05', pe_esq='Prova, não impressão.',
+)
+
+# ── 07 · a amplificacao ───────────────────────────────────────────────────
+pagina(
+    'Bomba04',
+    '<div class="bloco" style="top:250px"><p class="rot">O que a substância faz</p></div>'
+    '<div class="fala" style="top:326px;font-size:122px">'
+    'Bomba não conserta técnica ruim. <span class="m">Ela amplifica.</span></div>'
+    '<div class="bloco" style="top:900px">'
+    '<p class="cor">Time com a base arrumada acelera. Time com processo bagunçado '
+    '<b>piora, e piora mais rápido.</b> Automatizar um cadastro errado só faz o '
+    'erro chegar mais cedo.</p></div>'
+    '<div class="bloco" style="top:1050px">'
+    '<p class="mono">A IA amplifica o que já existe. Relatório DORA, Google.</p></div>',
+    navy=False, cab_dir='Campanha · Bomba 04/05', pe_esq='Prova, não impressão.',
+)
+
+# ── 08 · o fecho: e aqui que "AI native" entra ────────────────────────────
+pagina(
+    'Bomba05',
+    '<div class="bloco" style="top:236px"><p class="rot">O outro caminho</p></div>'
+    '<div class="fala" style="top:312px;font-size:138px">'
+    'Não é dose.<br><span class="m">É fisiologia.</span></div>'
+    '<div class="bloco" style="top:770px">'
+    '<p class="cor">Empresa <i>AI native</i> não está dopada. Está treinada. '
+    'É a empresa que você teria desenhado hoje, construída a partir da que você '
+    'já tem, gargalo por gargalo, com <b>métrica combinada antes e medida depois.</b></p>'
+    '</div>'
+    '<div class="bloco" style="top:1030px">'
+    '<p class="mono">→ &nbsp;contato@abbaservices.com.br</p></div>',
+    navy=True, cab_dir='Campanha · Bomba 05/05', pe_esq='Prova, não impressão.',
+)
+
 for nome, html in F.items():
     open(nome + '.dc.html', 'w', encoding='utf-8').write(html)
-print('telas:', len(F), '|', ' '.join(sorted(F)))
+print('campanha bomba:', ' '.join(sorted(n for n in F if n.startswith('Bomba'))))

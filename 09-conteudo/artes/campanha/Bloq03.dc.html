@@ -22,7 +22,8 @@
 
     /* Grao pesado. Aqui ele e assunto, nao acabamento: e o que faz a peca ler
        como papel carimbado em vez de tela. */
-    .grao { position:absolute; inset:0; pointer-events:none;
+    .grao { position:absolute; top:0; left:0; width:1080px; height:1350px;
+            pointer-events:none;
             background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
             background-size:240px 240px; opacity:.5; mix-blend-mode:multiply; }
     .navy .grao { opacity:.09; mix-blend-mode:overlay; }
@@ -35,11 +36,13 @@
     .fio { position:absolute; left:96px; right:96px; height:1px; background:#CBD3DF; }
     .navy .fio { background:#33456A; }
 
-    .pe { position:absolute; bottom:66px; left:96px; right:96px;
-          display:flex; justify-content:space-between; align-items:flex-end;
-          font-family:"IBM Plex Mono", monospace; font-size:19px;
-          letter-spacing:.18em; color:#6B778E; }
-    .navy .pe { color:#5D6E92; }
+    /* Faixa de altura fixa, nao caixa que se mede pelo conteudo: como flex
+       sem altura declarada ele colapsava para 3px e o texto sumia do PNG. */
+    .pe { position:absolute; top:1186px; left:96px; right:96px;
+          display:flex; justify-content:space-between;
+          font-family:"IBM Plex Mono", monospace; font-size:21px; line-height:1.5;
+          letter-spacing:.16em; color:#4E5A70; }
+    .navy .pe { color:#8E9AB4; }
     .pe .ouro { color:#8A6E28; } .navy .pe .ouro { color:#C2A35B; }
 
     /* A FALA DO MERCADO. Sangra para fora da margem direita de proposito: e o
@@ -50,6 +53,8 @@
             color:#1B2A4A; }
     .navy .fala { color:#FFFFFF; }
     .fala .m { color:#AEB8C8; } .navy .fala .m { color:#4A5B80; }
+    .fala .g { color:#8A6E28; font-style:italic; }
+    .navy .fala .g { color:#D8BE7C; font-style:italic; }
 
     /* A TARJA. Feita com text-decoration em vez de barra posicionada a mao:
        o navegador acerta a altura por linha, inclusive quando a frase muda de
@@ -89,7 +94,7 @@
     .marca { display:block; width:148px; height:auto; }
   </style>
 </helmet>
-<div class="p navy"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="tinta" x="-14%" y="-14%" width="128%" height="128%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="7" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="8" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg><div class="grao"></div><div class="cab"><span>ABBA</span><span>Régua do Revisor · v1.5.0</span></div><div class="fio" style="top:116px"></div><div class="fio" style="bottom:114px"></div><div class="bloco" style="top:236px"><p class="rot">Por que a gente publica os próprios bloqueios</p><div class="fala" style="position:relative;left:0;right:-52px;top:26px;font-size:96px">A ferramenta existe para <span class="m">reprovar a gente.</span></div></div><div class="bloco" style="top:730px"><p class="mono">Antes de qualquer material nosso sair, ele passa por uma régua que tenta reprovar ele. Ela bloqueia número que não está na nossa base de evidências, preço fora da tabela, promessa que a infraestrutura não sustenta e qualquer frase que diga que a IA decide sozinha.<br><br><b>Bloqueio significa que o material não sai.</b> Existe uma opção de forçar, e usar ela é uma decisão com nome em cima.</p></div><div class="bloco" style="top:1108px"><p class="cor">O que impede, hoje, um número inventado de sair da sua empresa <i>dentro de uma proposta assinada?</i></p></div><div class="pe"><span>contato@abbaservices.com.br</span><span class="ouro">abbaservices.com.br</span></div></div>
+<div class="p navy"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="tinta" x="-14%" y="-14%" width="128%" height="128%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="7" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="8" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg><div class="grao"></div><div class="cab"><span>ABBA</span><span>Régua do Revisor · v1.5.0</span></div><div class="fio" style="top:116px"></div><div class="fio" style="top:1140px"></div><div class="bloco" style="top:236px"><p class="rot">Por que a gente publica os próprios bloqueios</p><div class="fala" style="position:relative;left:0;right:-52px;top:26px;font-size:96px">A ferramenta existe para <span class="m">reprovar a gente.</span></div></div><div class="bloco" style="top:730px"><p class="mono">Antes de qualquer material nosso sair, ele passa por uma régua que tenta reprovar ele. Ela bloqueia número que não está na nossa base de evidências, preço fora da tabela, promessa que a infraestrutura não sustenta e qualquer frase que diga que a IA decide sozinha.<br><br><b>Bloqueio significa que o material não sai.</b> Existe uma opção de forçar, e usar ela é uma decisão com nome em cima.</p></div><div class="bloco" style="top:1108px"><p class="cor">O que impede, hoje, um número inventado de sair da sua empresa <i>dentro de uma proposta assinada?</i></p></div><div class="pe"><span>contato@abbaservices.com.br</span><span class="ouro">abbaservices.com.br</span></div></div>
 </x-dc>
 </body>
 </html>
