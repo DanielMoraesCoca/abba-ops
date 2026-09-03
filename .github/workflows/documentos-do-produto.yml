@@ -1,0 +1,41 @@
+# A regra do dia 15, guardando os documentos DESTE repositorio.
+#
+# Ela nasceu como teste do `abba-crews` (`tests/unit/test_documentacao.py`) e alcancava
+# dois documentos daqui lendo `RAIZ.parent`, porque o projeto estava em staging dentro de
+# `09-crews/`. Com a extracao para `abba-solucao-tributaria` (2026-09-03), aquele teste
+# deixou de alcanca-los — e nem deveria: teste que le arquivo fora do proprio repositorio
+# passa conforme o que estiver no disco de quem roda, nao conforme o que esta versionado.
+#
+# Entao a trava mudou de casa em vez de morrer. Extrair o projeto e levar a protecao junto
+# teria apagado, em silencio, uma guarda que existe porque **o erro ja voltou por
+# documento**: o codigo foi corrigido e a versao errada sobreviveu justamente nestes dois
+# arquivos. Protecao que some sem ninguem notar e o defeito que este produto persegue
+# marco apos marco.
+#
+# Sem matriz e sem dependencia: e `python3` puro, e roda em segundos.
+
+name: documentos do produto
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "05-interno/plano-camada-de-caixa-2027.md"
+      - "06-ferramentas/blueprint-crews-camada-de-caixa.md"
+      - "scripts/confere-prazo.py"
+      - ".github/workflows/documentos-do-produto.yml"
+  pull_request:
+    paths:
+      - "05-interno/plano-camada-de-caixa-2027.md"
+      - "06-ferramentas/blueprint-crews-camada-de-caixa.md"
+      - "scripts/confere-prazo.py"
+      - ".github/workflows/documentos-do-produto.yml"
+
+jobs:
+  prazo:
+    runs-on: ubuntu-latest
+    name: o dia 15 nao e o prazo
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir o prazo nos documentos do produto
+        run: python3 scripts/confere-prazo.py
