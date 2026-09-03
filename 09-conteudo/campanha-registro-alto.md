@@ -106,43 +106,6 @@ transforma a piada em prova.
 
 ---
 
-## 4b. A segunda campanha: "Bomba"
-
-> **A metáfora é do sócio**, dita em 03/09: *"transformar a empresa,
-> potencializá-la, fazê-la tomar bomba, mas que não faz mal a longo prazo...
-> AI native."*
-
-**Por que ela é boa, e não é só engraçada.**
-
-- **Todo mundo entende na hora.** Não precisa explicar o que é bomba, e ninguém
-  usa essa metáfora em B2B. Custa zero e não tem dono.
-- **Ela já é a doutrina da casa, em outra língua.** O DORA diz que a IA
-  **amplifica** o que já existe: bomba amplifica. Base ruim, carga pesada,
-  lesão. O METR diz que os desenvolvedores se sentiram 20% mais rápidos e
-  estavam 19% mais lentos: é exatamente quem se olha no espelho e se acha maior.
-  As quatro recusas são a bula.
-- **É o caminho mais curto até AI native.** Empresa AI native não está dopada,
-  está treinada. **Não é dose, é fisiologia.** É a frase do sócio virando
-  posicionamento.
-
-| # | Peça | O que ancora |
-|---|---|---|
-| 01 | *"Tem empresa tomando **bomba** de IA."* | RAND, mais de 80% |
-| 02 | **A bula**: composição · contraindicações · efeitos colaterais | RAND, a causa nº 1 |
-| 03 | *"No espelho, cresceu. **No exame, não.**"* | METR, 20% × 19% |
-| 04 | *"Bomba não conserta técnica ruim. **Ela amplifica.**"* | DORA |
-| 05 | *"Não é dose. **É fisiologia.**"* | fecha em AI native |
-
-**A bula é o achado de formato.** Bula é um documento de registro, então o
-formato da piada é o mesmo formato da marca. A campanha não briga com o
-sistema: ela é o sistema em outro tipo de documento.
-
-**O que ela não pode virar:** piada sobre corpo, sobre pessoa, ou sobre quem
-usa anabolizante de verdade. A metáfora é sobre **atalho em empresa**, e para
-aí.
-
----
-
 ## 5. O que ainda não existe, e é decisão do sócio
 
 - **Voz sintética.** Regra proposta em 02/09 e ainda não decidida: voz sintética
