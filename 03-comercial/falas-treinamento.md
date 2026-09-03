@@ -13,7 +13,7 @@ Da transcrição (18/08, 17:07–17:59):
 | 17:32 | Rafa: *"depois eu queria conhecer mais a fundo, porque **a gente está exatamente nesse ponto agora**"* | O sinal de compra. A segunda reunião é sobre ISTO |
 | 17:33 | Letramento anterior com a Start: C-levels + gerência, ~70–80 pessoas | Confirma o pitch "vocês já treinaram e não colheram" |
 | 17:34–17:35 | O funil dele: barramento → **Claude Team** com MCPs para pessoas-chave → área "contaminada" pede mais; **~10 solicitações/dia** ("parece padaria"); a ideia DELE, já apresentada internamente: **licença só para quem concluir uma trilha** | A trilha-gate é o processo DELE. Nossa peça: a Fundação como filtro + credencial verificável como critério auditável |
-| 17:35–17:36 | Daniel ofereceu: destaques ganham **CrewAI de graça** pela parceria ("de 100, 20 avançando... a gente separa") | Promessa feita em reunião E escrita no [kit da turma](../04-entrega/kit-da-turma.md) (nível Arquiteto, ressalva R9). Não ampliar na mesa até decisão do sócio |
+| 17:35–17:36 | Daniel ofereceu: destaques ganham **CrewAI de graça** pela parceria ("de 100, 20 avançando... a gente separa") | Promessa feita em reunião E escrita no [kit da turma](../04-entrega/kit-da-turma.md) (hoje: quem **conclui a formação**, ressalva R9). Não ampliar na mesa até decisão do sócio |
 | 17:55 | Rafa: *"isso aí era bom a gente tentar **agilizar**... na próxima semana"* + *"estou recebendo **algumas propostas até de outras empresas**"* | Urgência real e concorrência viva: a reunião é na semana de 24/08 |
 | 17:55–17:56 | *"a última conversa que eu tive com o **Daniel** [decisor interno, homônimo] é: vamos focar em **economia de custo**"*; Start ~R$ 200 mil/~70 pessoas; **Keiros ~R$ 30 mil** (2 encontros + plataforma deles); ele ainda vai falar com o **Carlos**; head de RH no circuito | O terreno de preço. Resposta na seção de preço abaixo |
 
@@ -108,7 +108,7 @@ silencioso.
 ## O que não se promete até haver decisão do sócio
 
 - **Biblioteca de vídeo com data:** os vídeos são nossos (CONTENT-13), roteiros prontos, gravação em lotes; promete-se "aulas com prática avaliada", nunca calendário de vídeo.
-- **CrewAI para os destaques:** hoje consta como promessa oficial no [kit da turma](../04-entrega/kit-da-turma.md) para graduados nível Arquiteto. Enquanto o sócio não redecidir, vale o que está escrito lá, e não se amplia na mesa.
+- **CrewAI para quem conclui:** hoje consta como promessa oficial no [kit da turma](../04-entrega/kit-da-turma.md) para quem **conclui a formação** (as 27 aulas e os 15 desafios exigíveis). Não é seleção de destaques nem prêmio de posto: quem fecha o programa recebe. Enquanto o sócio não redecidir, vale o que está escrito lá, e não se amplia na mesa.
 - **Conteúdo por área (Comercial, Administrativo-Financeiro):** em produção como material COMPLEMENTAR, nunca como trilha separada: a formação é uma só desde 02/09. Diz-se "em produção", não "temos".
 - **Resultado medido de turma**, ainda não temos turma formada. A fala honesta é: *"a Turma 1 de vocês é a primeira a ser medida assim"*.
 

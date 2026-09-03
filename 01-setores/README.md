@@ -25,6 +25,6 @@
 | Checklist de um setor sistematicamente atrasado por 4+ semanas | Discutir terceirização ou contratação na reunião de sócios |
 | 2+ engajamentos simultâneos com entrega apertada | Primeiro contrato: perfil de entrega (consultor/implementador) |
 | Volume de leads > capacidade de resposta em 24h | Perfil comercial/SDR |
-| Conteúdo dos níveis Praticante+ virando gargalo | Designer instrucional pt-BR (freelance primeiro) |
+| Conteúdo da aplicação no trabalho e da Formação de Campeão virando gargalo | Designer instrucional pt-BR (freelance primeiro) |
 
 Primeira contratação herda o doc do setor como descrição de função, e o sócio vira gestor do chapéu, não executor.

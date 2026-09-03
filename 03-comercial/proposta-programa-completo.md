@@ -30,14 +30,13 @@ As três perguntas (espinha pedagógica): **O que posso parar de fazer? O que po
 - **4.6 Conselheiro de IA (a criação nova):** a cadeira do estrategista de IA do lado do cliente da mesa: presença na diretoria, roadmap vivo, arbitragem de fornecedores ([produto](conselheiro-de-ia.md)); embutido na camada Estratégia ou contratável avulso.
 
 ### 5. Capacitação híbrida: plataforma + presencial
-A capacitação é **híbrida por desenho**: kickoff e workshops de marco **presenciais com os fundadores** + aprendizado contínuo e gamificado na plataforma para todos os colaboradores. **Aprender desbloqueia ferramentas**: o aprendizado vira produtividade imediata e o engajamento se sustenta sozinho:
+A capacitação é **híbrida por desenho**: kickoff e workshops de marco **presenciais com os fundadores** + aprendizado contínuo na plataforma para todos os colaboradores. É **uma formação só, igual para todo mundo a quem for confiado acesso**: 27 aulas e 15 desafios exigíveis, sem degrau, sem seleção e sem distintivo. Quem conclui recebe a licença da ferramenta de construção de agentes:
 
-| Nível | Foco | Desbloqueia |
+| Bloco | Foco | Aulas |
 |---|---|---|
-| 1: Base comum (Fundamentos) | O que a IA é e onde se aplica ao trabalho | Primeiras ferramentas de produtividade |
-| 2: Praticante (Aplicação) | IA em tarefas reais da própria função | Ferramentas por área |
-| 3: Especialista (Autonomia) | Construir e ajustar fluxos com IA | Ferramentas avançadas |
-| 4: Arquiteto (Multiplicação) | Ser referência interna | Criação de agentes (CrewAI) + papel de multiplicador |
+| Base comum | O que a IA é, onde se aplica ao trabalho e como conferir o que ela devolve | 8 |
+| Aplicação no trabalho | IA na tarefa real da pessoa, e o julgamento de quem responde pelo trabalho de outros | 11 |
+| Formação de Campeão | Fazer a área inteira usar IA bem: ensinar, sustentar e propor a primeira solução | 8 |
 
 Conteúdo próprio (ABBA Academy: [materiais finais](../08-materiais/README.md)) + recursos das parcerias oficiais. Kickoff e marcos **presenciais** com os fundadores.
 

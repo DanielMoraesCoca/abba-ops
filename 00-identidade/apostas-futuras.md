@@ -11,7 +11,7 @@
 **Gatilhos de reavaliação:**
 - [ ] 5+ clientes de consultoria usando a plataforma com adoção comprovada
 - [ ] Pedido espontâneo de 2+ empresas para "só a plataforma"
-- [ ] Conteúdo dos níveis Praticante+ completo e revisado
+- [ ] Conteúdo da aplicação no trabalho e da Formação de Campeão completo e revisado
 
 ## Aposta 2: Degustação como widget público self-service ✅ REALIZADA (2026-07)
 

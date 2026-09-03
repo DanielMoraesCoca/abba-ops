@@ -118,9 +118,11 @@ Você recebe:
 
 - Pagamento: **50% na assinatura · 50% na formatura da Fundação**.
 - **Turmas adicionais** na mesma empresa: **−20%**.
-- Quem gradua no nível mais alto do programa (Arquiteto) recebe licença
-  de 12 meses da ferramenta de construção de agentes parceira da ABBA,
-  conforme registrado no kit da turma.
+- Quem **conclui a formação** (as 27 aulas e os 15 desafios exigíveis)
+  recebe licença de 12 meses da ferramenta de construção de agentes
+  parceira da ABBA, conforme registrado no kit da turma. É o portão
+  real do portal: conclusão do programa, não posto. A escada de níveis
+  foi revogada em 26/08 e não existe mais em lugar nenhum.
 
 ## 5. O que este serviço NÃO é
 

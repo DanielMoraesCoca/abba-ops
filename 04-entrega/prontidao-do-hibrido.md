@@ -56,9 +56,9 @@ proposta: não é detalhe de execução.
 | Boletim ABBA (estudo semanal) | **8 números**, publicação automática às segundas | `abba-portal/docs/platform/content/boletim/` |
 | Bússola (PARAR · COMEÇAR · SÓ EU) | instrumento + cadência d7/d30/d60/d90 | portal, `/compass` e `/me/cadence` |
 | Iris (guia em português) | disponível em toda tela | portal |
-| Escada e graduação com máquina | portão Fundação 8/8 + ≥6/8 drills, emissão de credenciais **em lote** | `/admin/graduacao` |
+| Graduação com máquina | portão base comum 8/8 + ≥6/8 drills, emissão de credenciais **em lote** | `/admin/graduacao` |
 | Credencial verificável | pt-BR de ponta a ponta, sem índice de fluência | `/verify` |
-| Motor P→S | 6 sinais medidos; **o gestor decide** | `/manager/attestations` |
+| Corroboração de aplicação | **5 sinais medidos** (aulas · desafios exigíveis · Bússolas visíveis · aplicou com evidência de 30 dias · ajudou um colega); **o gestor confirma o que viu** | `/manager/cohort` |
 
 ### 2.2 Trilho síncrono: a sala
 
@@ -142,12 +142,16 @@ Isto **não** bloqueia a turma: a aula é completa por desenho sem vídeo
 vídeo". Mas é a diferença entre o produto de hoje e o produto que a
 gente diz que quer. **Nunca prometer vídeo com data.**
 
-### 🟠 3.6 O nível Arquiteto não tem aula nenhuma
+### ✅ 3.6 O degrau vazio deixou de existir (fechado em 03/09)
 
-A escada tem máquina completa no topo (capstone com barra 80/piso 60,
-portão S→A com 3 atestações, workspace) e **zero conteúdo**. Não afeta
-a Turma 1 (ninguém chega a Arquiteto em 8 semanas), mas a escada que se
-mostra na home tem um degrau vazio.
+Este item registrava que o topo da escada tinha máquina completa
+(capstone, portão de atestação, workspace) e **zero conteúdo**. A
+escada inteira foi revogada em 26/08 e a segmentação por papel em
+02/09: hoje são **27 aulas e 15 desafios exigíveis, os mesmos para
+todo mundo**, sem degrau nenhum. O capstone continua existindo como
+desafio de entrega, e o desbloqueio da ferramenta de agentes passou a
+depender de **concluir a formação**, que é coisa que qualquer pessoa
+da turma pode fazer.
 
 ### 🟠 3.7 Cards impressos na gráfica
 
