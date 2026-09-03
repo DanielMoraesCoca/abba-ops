@@ -192,3 +192,31 @@ fonte primária, mais a decisão sobre a partir de quando um cliente pode aparec
 
 **Dono:** Tecnologia. **Gate:** primeiro cliente com CNPJ alfanumérico — que pode ser o
 primeiro cliente, dependendo de quando a emissão começou a valer para empresas novas.
+
+## P9 — Persistência no destino do deploy (antes de subir para a CrewAI)
+
+**Aberta no M8 (2026-09-03), ao responder "e quando transferirmos para a CrewAI?".**
+
+O armazém de dossiês (`core/arquivo.py`) assume **disco durável**: `~/.abba-crews/dossies`
+guarda o rascunho cifrado, a via assinada, o índice e o outbox do ledger. Todo o M4a, o
+M4b e o M5 dependem disso.
+
+O gate humano depende de disco durável por desenho, não por acaso: o contador assina
+**depois**, no tempo dele. Um dossiê que existe só durante a execução que o gerou não pode
+ser assinado por ninguém — e o outbox que espera o `abba crews sync` também se perde.
+
+**Não afirmo o modelo de runtime da plataforma da CrewAI: não consigo verificá-lo deste
+ambiente.** Por isso é pendência declarada, não correção. Mas a pergunta precisa de
+resposta **antes** do primeiro `crewai deploy push`, porque é decisão de arquitetura:
+
+- se o contêiner for efêmero, o armazém precisa de destino durável (volume, objeto
+  remoto, ou o próprio `assessment-brain` como guarda) — e aí a cifra em repouso e o
+  alcance do `abba forget` (P6) precisam acompanhar o destino novo;
+- se houver disco persistente por deployment, resta decidir onde ele mora em relação ao
+  `ABBA_CREWS_DOSSIES` e como a senha chega lá.
+
+**Ressalva de valor:** hoje um deploy não faria nada útil de qualquer forma. `main.py`
+monta o Flow sem `Fonte`, e a coleta real só chega no M6 (P4, credencial RTC) — subir
+agora produz um Flow que sempre levanta `NotImplementedError`. Honesto, e sem valor.
+
+**Dono:** Tecnologia. **Gate:** antes do primeiro `crewai deploy push`.

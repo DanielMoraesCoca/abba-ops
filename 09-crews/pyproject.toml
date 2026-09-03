@@ -2,7 +2,15 @@
 name = "abba-crews"
 version = "0.1.0"
 description = "Camada de Caixa da reforma tributaria — biblioteca de crews da ABBA para a apuracao assistida de IBS/CBS"
-requires-python = ">=3.10,<3.14"
+# Piso 3.11, e por dois motivos independentes. (1) `onnxruntime`, que chega
+# transitivamente pela crewai[tools], nao publica wheel cp310: `uv sync --python 3.10`
+# falha na instalacao. (2) `core/arquivo.py` usa `datetime.UTC`, que so existe em 3.11+.
+#
+# Esta linha ja "foi corrigida" uma vez, no commit 7ec9613 — que mudou oito linhas de
+# COMENTARIO e deixou o `>=3.10` intacto, enquanto o commit, o registro V4h e o relato
+# ao socio afirmavam a correcao. `tests/unit/test_alicerce.py` existe para que isso nao
+# passe de novo: nenhuma trava do projeto olhava para a configuracao.
+requires-python = ">=3.11,<3.14"
 dependencies = [
     "crewai[tools]>=1.15.18,<2.0.0",
     # Cifra dos dossies em repouso (core/cofre.py). Chega transitivamente pela crewai,
@@ -43,10 +51,12 @@ type = "flow"
 
 [tool.ruff]
 line-length = 100
-# Tem de casar com requires-python (>=3.10). Com "py311" o ruff propunha idiomas que
-# quebram em 3.10 — reescreveu `timezone.utc` para `datetime.UTC`, que so existe em
-# 3.11+. Lint que mira mais alto que o pacote suporta nao avisa: ele introduz o bug.
-target-version = "py310"
+# Tem de casar com `requires-python` — e `test_alicerce.py` reprova se divergirem.
+# A regra vale nos dois sentidos: lint que mira MAIS ALTO que o piso propoe idiomas que
+# quebram (foi assim que `timezone.utc` virou `datetime.UTC`); lint que mira MAIS BAIXO
+# nao reprova o simbolo novo que ja esta no codigo, porque o ruff nao tem essa regra —
+# quem tem e o `test_nenhum_simbolo_acima_do_piso`.
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

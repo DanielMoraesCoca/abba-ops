@@ -56,8 +56,12 @@ jobs:
           enable-cache: true
           python-version: ${{ matrix.python }}
 
-      - name: Sincronizar dependencias
-        run: uv sync --extra dev
+      # `--locked` de volta. Ele saiu no commit 7ec9613 — o MESMO que dessincronizou o
+      # lockfile — entao a guarda que teria pego a deriva foi removida junto com a
+      # mudanca que a criou. A plataforma da CrewAI resolve pelo lockfile: lock velho
+      # significa deploy com dependencias diferentes das testadas.
+      - name: Sincronizar dependencias (lockfile tem de estar em dia)
+        run: uv sync --extra dev --locked
 
       # A trava de portabilidade. core/ guarda o reconciliador, o calendario e a
       # tabela de vedacoes — o que vale dinheiro. Se ele importar crewai, uma mudanca
@@ -78,6 +82,18 @@ jobs:
 
       - name: Testes
         run: uv run pytest -q
+
+      # O check de prontidao para deploy vem da propria CrewAI. Ele **sai com codigo 0
+      # mesmo com aviso**, entao nao gateia sozinho — o passo confere a saida.
+      - name: Pronto para a CrewAI (crewai deploy validate)
+        if: matrix.python == '3.11'
+        run: |
+          saida=$(uv run crewai deploy validate 2>&1)
+          echo "$saida"
+          if echo "$saida" | grep -qiE "warning|error"; then
+            echo "::error::crewai deploy validate reprovou — o projeto nao esta pronto para subir"
+            exit 1
+          fi
 
       # Dado fiscal de cliente e o dado mais sensivel que a ABBA toca.
       # Certificado digital commitado e incidente, nao bug.
