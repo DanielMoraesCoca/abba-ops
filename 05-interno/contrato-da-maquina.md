@@ -36,6 +36,8 @@ A Parte IV do documento técnico lista o que espera a chave, e nomeia quais port
 
 ## A decisão do repositório novo
 
+> **Atualizado em 2026-09-03: isto deixou de ser desenho inerte.** O Daniel decidiu portar, o repositório existe (`DanielMoraesCoca/abba-engine`, privado) e duas fases fecharam: a base de prova (oráculo diferencial) e o núcleo imutável (a IP reproduzida byte a byte). A lista `porte` deste contrato continua sendo o critério de aceitação, e a ordem registrada abaixo continua valendo para tudo que muda o que é ENVIADO ao modelo: isso espera o primeiro voo real.
+
 **Não agora.** O desenho está pronto e inerte na Parte V: estrutura proposta, o que migra e o que não migra, o custo medido (3 a 6 meses, 57.851 linhas de código e teste) e o critério de aceitação.
 
 Os quatro gatilhos que autorizam começar:
