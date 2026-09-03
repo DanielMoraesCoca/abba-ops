@@ -85,13 +85,34 @@ jobs:
 
       # O check de prontidao para deploy vem da propria CrewAI. Ele **sai com codigo 0
       # mesmo com aviso**, entao nao gateia sozinho — o passo confere a saida.
+      #
+      # A primeira versao deste passo reprovou um validate que PASSOU. Ela procurava a
+      # palavra "warning" na saida, e quem escreveu essa palavra foi o `uv`, avisando que
+      # o `VIRTUAL_ENV` posto pelo setup-uv aponta para a raiz do repositorio enquanto o
+      # projeto mora em `09-crews`. Uma guarda que tira conclusao de ruido de terceiro e a
+      # mesma classe de defeito deste marco — desta vez na direcao segura, mas CI que fica
+      # vermelha por motivo errado e CI que as pessoas param de ler.
+      #
+      # O criterio de agora saiu de LER o `crewai_cli/deploy/validate.py`, nao de adivinhar
+      # o formato da saida: `render_report` imprime "Pre-deploy validation passed." **se e
+      # somente se** a lista de resultados estiver vazia — zero erro E zero aviso. Havendo
+      # qualquer coisa, ele imprime as linhas `ERROR`/`WARNING` e **nunca** a frase.
+      #
+      # Entao a frase e gate exato, e sozinha: procurar "warning" ALEM dela e redundante
+      # (nao existe saida com aviso e frase) e so consegue produzir vermelho falso. Exigir
+      # a PROVA de sucesso tambem cobre o comando que morre calado, que o criterio velho
+      # aprovava — ausencia de erro nao e evidencia de sucesso.
+      #
+      # `unset VIRTUAL_ENV` mata o ruido do uv na fonte, em vez de filtra-lo por nome:
+      # lista de ruido conhecido envelhece calada.
       - name: Pronto para a CrewAI (crewai deploy validate)
         if: matrix.python == '3.11'
         run: |
+          unset VIRTUAL_ENV
           saida=$(uv run crewai deploy validate 2>&1)
           echo "$saida"
-          if echo "$saida" | grep -qiE "warning|error"; then
-            echo "::error::crewai deploy validate reprovou — o projeto nao esta pronto para subir"
+          if ! echo "$saida" | grep -qF "Pre-deploy validation passed."; then
+            echo "::error::crewai deploy validate nao confirmou a validacao (erro, aviso, ou nenhuma saida) — o projeto nao esta pronto para subir"
             exit 1
           fi
 
