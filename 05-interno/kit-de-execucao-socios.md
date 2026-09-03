@@ -18,11 +18,11 @@
 >
 > Conforme conversamos, segue o contrato-mãe de prestação de serviços da ABBA com seus quatro anexos, para revisão. Três pontos pedem atenção específica além da revisão geral (LGPD, PI, limitação de responsabilidade):
 >
-> **1. Anexo IV: Contribuição Anonimizada e Rede (o mais urgente).** Nossa plataforma opera um comparativo estatístico entre clientes cuja premissa é que a contribuição anonimizada é divulgada em contrato. A minuta do anexo já traz as garantias técnicas (piso de 5 organizações, agregação irreversível, reciprocidade). Precisamos do seu parecer sobre: (a) se o legítimo interesse (Art. 7º, IX) basta para a cláusula IV.1 ou se convém consentimento expresso; (b) se o padrão "contribui, salvo recusa" é sustentável ou deve ser adesão ativa; (c) a redação de IV.5 sobre o que é irreversível após agregação; (d) a compatibilidade da adesão individual de colaboradores (IV.4) com políticas de RH do cliente. **Este anexo precisa estar válido no primeiro contrato que assinarmos**: consentimento não se retroage.
+> **1. Anexo IV. Contribuição Anonimizada e Rede (o mais urgente).** Nossa plataforma opera um comparativo estatístico entre clientes cuja premissa é que a contribuição anonimizada é divulgada em contrato. A minuta do anexo já traz as garantias técnicas (piso de 5 organizações, agregação irreversível, reciprocidade). Precisamos do seu parecer sobre: (a) se o legítimo interesse (Art. 7º, IX) basta para a cláusula IV.1 ou se convém consentimento expresso; (b) se o padrão "contribui, salvo recusa" é sustentável ou deve ser adesão ativa; (c) a redação de IV.5 sobre o que é irreversível após agregação; (d) a compatibilidade da adesão individual de colaboradores (IV.4) com políticas de RH do cliente. **Este anexo precisa estar válido no primeiro contrato que assinarmos**: consentimento não se retroage.
 >
 > **2. Licença do material pedagógico.** Parte do nosso material de capacitação deriva do "Método 4D", licenciado sob Creative Commons BY-NC-SA (cláusula não-comercial). Usamos em programa pago, com atribuição. Precisamos saber: isso configura uso comercial vedado? Se sim, quais as alternativas (licença direta com o autor, substituição do material, transformação suficiente)?
 >
-> **3. Cláusula de estudo de caso (Anexo III):** confirmar se a redação de aprovação prévia + direito de retirada é suficiente.
+> **3. Cláusula de estudo de caso (Anexo III)**: confirmar se a redação de aprovação prévia + direito de retirada é suficiente.
 >
 > Prazo ideal: retorno em até {{7}} dias úteis, mesmo que parcial (o Anexo IV pode vir antes do resto). Qualquer dúvida, temos documentação técnica detalhada de cada garantia mencionada.
 >
@@ -47,7 +47,7 @@ Pré-requisito de QUALQUER dado de cliente. Fazer numa chamada ou presencial, os
    openssl rand -base64 30        # gera a ABBA_DB_PASSPHRASE (~40 caracteres)
    openssl rand -base64 30        # gera a ABBA_BACKUP_PASSPHRASE (DIFERENTE da primeira)
    ```
-2. **Guardar nos dois gerenciadores de senha:** cada sócio salva AS DUAS no seu (1Password/Bitwarden/etc.), título "ABBA DB passphrase" e "ABBA backup passphrase". Nunca em nota de celular, WhatsApp ou e-mail.
+2. **Guardar nos dois gerenciadores de senha**: cada sócio salva AS DUAS no seu (1Password/Bitwarden/etc.), título "ABBA DB passphrase" e "ABBA backup passphrase". Nunca em nota de celular, WhatsApp ou e-mail.
 3. **Envelope físico:** imprimir (ou escrever à mão) as duas, selar em envelope, os dois assinam sobre o lacre, guardar **fora do escritório** (casa de um dos dois, cofre, gaveta dos pais). Anotar onde: ____
 4. **Configurar a máquina de produção:**
    ```bash
@@ -70,11 +70,11 @@ Regras: toda decisão sai com registro no [log](registro-de-decisoes.md) na hora
 
 | # | Decisão (tempo) | Opções | Recomendação preparada |
 |---|---|---|---|
-| 1 | **Faixa de faturamento do alvo** (10') | (a) confirmar R$ 50–500 mi · (b) ajustar | **(a)**: coerente com a tabela de preços e com o ticket de conforto (R$ 30–150k/fase). Ajustar depois com dado real é barato |
-| 2 | **Preço v2 e o ritual semanal** (30') | (a) manter v1 vigente; semanal incluída nas camadas Evolução+ ao preço atual durante o charter; revisar após as 3 primeiras reações reais de preço (a regra que já existe) · (b) ativar v2 já | **(a)**: não mudar preço sem reação de mercado; a semanal vira argumento de valor do charter, não linha de preço. Decidir também: o Conselheiro **Trimestral** fica SEM semanal (cadência é a do produto): confirmar |
-| 3 | **P3: nome do programa** (10') | (a) decidir agora · (b) fixar critérios e decidir com o site | **(b)**, mas sair da reunião com 3 candidatos anotados e o critério: nome em português, sem "IA" genérico, que caiba na frase do manifesto |
-| 4 | **Caça ao Dinheiro + Resgate** (20') | (a) aprovar preparação dos one-pagers agora, lançamento pós-Cliente Zero · (b) adiar tudo | **(a)**: os estudos estão completos com to-dos prontos; preparar não é lançar, e a porta do CFO é a mais quente do mercado ([estudo](estudo-ia-financeira.md) §4) |
-| 5 | **As 5 tensões da Visão 2029** (20') | Não são para resolver: são para cada sócio declarar posição | Ler [visao-2029.md §8](../00-identidade/visao-2029.md) ANTES da reunião. Na mesa: cada um diz, por tensão, para que lado pende e por quê. Registrar as divergências: elas são o mapa das brigas futuras, melhor tê-las mapeadas |
+| 1 | **Faixa de faturamento do alvo** (10') | (a) confirmar R$ 50–500 mi · (b) ajustar | **(a)** · coerente com a tabela de preços e com o ticket de conforto (R$ 30–150k/fase). Ajustar depois com dado real é barato |
+| 2 | **Preço v2 e o ritual semanal** (30') | (a) manter v1 vigente; semanal incluída nas camadas Evolução+ ao preço atual durante o charter; revisar após as 3 primeiras reações reais de preço (a regra que já existe) · (b) ativar v2 já | **(a)** · não mudar preço sem reação de mercado; a semanal vira argumento de valor do charter, não linha de preço. Decidir também: o Conselheiro **Trimestral** fica SEM semanal (cadência é a do produto) · confirmar |
+| 3 | **P3 · nome do programa** (10') | (a) decidir agora · (b) fixar critérios e decidir com o site | **(b)** · mas sair da reunião com 3 candidatos anotados e o critério: nome em português, sem "IA" genérico, que caiba na frase do manifesto |
+| 4 | **Caça ao Dinheiro + Resgate** (20') | (a) aprovar preparação dos one-pagers agora, lançamento pós-Cliente Zero · (b) adiar tudo | **(a)** · os estudos estão completos com to-dos prontos; preparar não é lançar, e a porta do CFO é a mais quente do mercado ([estudo](estudo-ia-financeira.md) §4) |
+| 5 | **As 5 tensões da Visão 2029** (20') | Não são para resolver · são para cada sócio declarar posição | Ler [visao-2029.md §8](../00-identidade/visao-2029.md) ANTES da reunião. Na mesa: cada um diz, por tensão, para que lado pende e por quê. Registrar as divergências · elas são o mapa das brigas futuras, melhor tê-las mapeadas |
 
 - [ ] Reunião feita em: ____ · Decisões registradas: V____
 
@@ -82,7 +82,7 @@ Regras: toda decisão sai com registro no [log](registro-de-decisoes.md) na hora
 
 ## 4. Checklist do Pedro (paralelo a tudo: ~2h somadas)
 
-1. **R23: cron do portal** (15'): no painel da Vercel, ver se `/api/cron/compass-cadence` executou nas últimas 24h (aba Crons/Logs). Se roda: apagar o comentário obsoleto no cabeçalho do arquivo. Se não roda: remover a entrada do `vercel.json` ou ligar de verdade: **um dos dois lados tem que ceder**. Registrar o achado no [registro de riscos](registro-de-riscos.md).
+1. **R23: cron do portal** (15'): no painel da Vercel, ver se `/api/cron/compass-cadence` executou nas últimas 24h (aba Crons/Logs). Se roda: apagar o comentário obsoleto no cabeçalho do arquivo. Se não roda: remover a entrada do `vercel.json` ou ligar de verdade. **um dos dois lados tem que ceder**. Registrar o achado no [registro de riscos](registro-de-riscos.md).
 2. **R16: código do assessment web** (o mais importante): commitar no repositório o código que está rodando em produção (`assessment.abbaservices.com.br`). Regra permanente dali em diante: produção só roda código versionado.
 3. **Provedor de busca do scout** (15'): conferir no ambiente de produção qual chave existe (`EXA_API_KEY`? `BRAVE_API_KEY`?) e rodar `node bin/abba.js scout "Empresa Teste" --industry varejo`: o brief NÃO pode sair carimbado "SYNTHETIC DESK RESEARCH". Registrar qual é e o custo por execução no [mapa de ferramentas](../06-ferramentas/mapa-jornada-ferramentas.md).
 4. **CrewAI (R9)** (decisão com o Daniel): Enterprise vs. self-host. Critério simples: se o 1º cliente com construção assina em <60 dias, Enterprise (rápido, caro); senão, self-host com tempo de maturar. Refletir o custo na [planilha de precificação](../03-comercial/precificacao-planilha.md).
@@ -106,11 +106,11 @@ Regras: toda decisão sai com registro no [log](registro-de-decisoes.md) na hora
 
 ---
 
-## 6. A rua: só depois do 5
+## 6. A rua, só depois do 5
 
-1. **Lista de 20 alvos nomeados** no [pipeline](../03-comercial/pipeline-modelo.md), da rede real de vocês. Para cada um: o placar 0–6 do [teste do alvo](../00-identidade/alvo.md) (as 3 primeiras perguntas dá para estimar antes mesmo da conversa) e a **obrigação com data** dele (pergunta 6), quem tem prazo compra primeiro, e a validação IBS/CBS está em produção AGORA.
+1. **Lista de 20 alvos nomeados** no [pipeline](../03-comercial/pipeline-modelo.md), da rede real de vocês. Para cada um: o placar 0–6 do [teste do alvo](../00-identidade/alvo.md) (as 3 primeiras perguntas dá para estimar antes mesmo da conversa) e a **obrigação com data** dele (pergunta 6): quem tem prazo compra primeiro, e a validação IBS/CBS está em produção AGORA.
 2. **Cadência:** 10 contatos novos/semana · degustação aceita = Mapa de Vazamento entregue em 5 dias úteis · [coreografia](../03-comercial/coreografia-da-conversao.md) em cada passo · retrospectiva de 10 min após cada conversa real.
-3. **O material da mesa:** [kit de presença](../03-comercial/kit-de-presenca.md) (30s/3min/1página, com as 3 objeções respondidas, inclusive "quantas empresas vocês já atenderam?") · [escada](../03-comercial/escada-abba.md) · [protocolo de prova](../04-entrega/protocolo-de-prova.md).
+3. **O material da mesa:** [kit de presença](../03-comercial/kit-de-presenca.md) (30s/3min/1página, com as 3 objeções respondidas: inclusive "quantas empresas vocês já atenderam?") · [escada](../03-comercial/escada-abba.md) · [protocolo de prova](../04-entrega/protocolo-de-prova.md).
 4. **Meta do trimestre: 1 cliente charter.** Ele resolve de uma vez: R1 (validação real), cofre vazio, primeiro caso publicável, primeiro ponto da curva de tenure.
 
 - [ ] Lista de 20 fechada: ____ · Primeiro contato: ____ · Charter assinado: ____

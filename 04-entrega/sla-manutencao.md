@@ -4,18 +4,18 @@
 
 ## 1. Camadas de serviço
 
-> A manutenção é vendida em 3 camadas ([tabela: preços v2 em rascunho](../03-comercial/tabela-de-precos.md)). **As severidades e tempos da seção 2 são idênticos nas três**: o que muda é escopo de evolução e presença estratégica, nunca a segurança.
+> As 3 camadas são a estrutura INTERNA de entrega da **fase 3 do Programa** e da **Assinatura da Capacidade**, não é mais venda separada ([modelo de serviço](../00-identidade/modelo-de-servico.md); [tabela v3](../03-comercial/tabela-de-precos.md)). **As severidades e tempos da seção 2 são idênticos nas três**: o que muda é escopo de evolução e presença estratégica, nunca a segurança.
 
 | | **Camada 1 · Operação** | **Camada 2 · Evolução** | **Camada 3 · Estratégia** |
 |---|---|---|---|
 | Monitoramento 24/7 + SLA S1–S3 + relatório mensal | ✅ | ✅ | ✅ |
-| **[Ritual semanal de 20 min](ritual-semanal.md)** (presença de sócio em cadência) |  | ✅ | ✅ |
-| Horas de evolução ({{HORAS_MES}}h/mês) + plataforma de capacitação ativa |  | ✅ | ✅ |
-| [Conselheiro de IA](../03-comercial/conselheiro-de-ia.md) trimestral embutido |  |  | ✅ |
+| **[Ritual semanal de 20 min](ritual-semanal.md)** (presença de sócio em cadência) | · | ✅ | ✅ |
+| Horas de evolução ({{HORAS_MES}}h/mês) + plataforma de capacitação ativa | · | ✅ | ✅ |
+| [Conselheiro de IA](../03-comercial/conselheiro-de-ia.md) trimestral embutido | · | · | ✅ |
 
 Camada contratada neste anexo: **{{CAMADA_CONTRATADA}}**.
 
-**Transição entre camadas** (regras contratuais: [detalhe comercial](../03-comercial/proposta-continuidade.md)): upgrade a qualquer momento com aprovação por escrito (pró-rata no ciclo corrente); downgrade só no aniversário da renovação, aviso de 30 dias; horas de evolução não cumulativas: aviso obrigatório ao cliente aos 80% de consumo do mês; excedente vira mini-ciclo cotado, nunca fatura-surpresa. Faturamento mensal pelo valor da camada vigente.
+**Transição entre camadas** (regras contratuais. [detalhe comercial](../03-comercial/tabela-de-precos.md)): upgrade a qualquer momento com aprovação por escrito (pró-rata no ciclo corrente); downgrade só no aniversário da renovação, aviso de 30 dias; horas de evolução não cumulativas: aviso obrigatório ao cliente aos 80% de consumo do mês; excedente vira mini-ciclo cotado, nunca fatura-surpresa. Faturamento mensal pelo valor da camada vigente.
 
 ## 1b. Escopo coberto
 
@@ -37,13 +37,13 @@ Camada contratada neste anexo: **{{CAMADA_CONTRATADA}}**.
 | **Incidente de dados** | Qualquer suspeita envolvendo dados pessoais | **imediata ao tomar ciência** | conforme Cláusula 9.7 do contrato (Art. 48 LGPD) |
 
 **O modelo honesto para uma equipe de 2 (padrão recomendado, confirmado em P9):**
-- **Monitoramento automatizado 24/7:** alertas de máquina vigiam os agentes o tempo todo (isso PODE ser prometido)
+- **Monitoramento automatizado 24/7**: alertas de máquina vigiam os agentes o tempo todo (isso PODE ser prometido)
 - **Suporte humano em dias úteis, 9h–18h** (Brasília): janela padrão de atendimento
 - **Canal de emergência S1**: telefone/WhatsApp dedicado, resposta em 4h corridas entre 8h–22h todos os dias; fora disso, melhor esforço
-- **Disponibilidade-alvo da plataforma: 99,5%/mês** (sustentada pela infraestrutura gerenciada de nuvem: não por plantão humano)
-- **Nunca prometer "suporte 24/7":** a frase correta em proposta: *"monitoramento automatizado 24/7 com canal de emergência para incidentes críticos"*
+- **Disponibilidade-alvo da plataforma: 99,5%/mês** (sustentada pela infraestrutura gerenciada de nuvem, não por plantão humano)
+- **Nunca prometer "suporte 24/7"**: a frase correta em proposta: *"monitoramento automatizado 24/7 com canal de emergência para incidentes críticos"*
 
-Canal de abertura: e-mail `suporte@abbaservices.com.br` / canal do projeto: WhatsApp **não** abre chamado ([política](../05-interno/comunicacao.md)), exceto o canal de emergência S1.
+Canal de abertura: e-mail `suporte@abbaservices.com.br` / canal do projeto. WhatsApp **não** abre chamado ([política](../05-interno/comunicacao.md)), exceto o canal de emergência S1.
 
 ## 3. Relatório mensal
 
@@ -51,7 +51,7 @@ O relatório mensal segue o modelo Word canônico: [`../08-materiais/modelos/rel
 
 ## 4. Condições
 
-- Vigência: 12 meses, renovação automática salvo aviso de 30 dias
-- Valor: {{PRECO_MANUTENCAO}}/mês · reajuste anual IPCA · fatura mensal
+- Vigência: 12 meses. **Renovação automática vale a partir do ano 2** (nunca na venda inicial do Programa. [tabela v3](../03-comercial/tabela-de-precos.md)), aviso de saída de 60 dias
+- Valor: {{PRECO_MANUTENCAO}}/mês. Assinatura da Capacidade por porte: **P R$ 11.000 · M R$ 15.000 · G R$ 21.000/mês** ([tabela v3](../03-comercial/tabela-de-precos.md)) · reajuste anual IPCA · fatura mensal (anual antecipado −8%)
 - Suspensão por inadimplência > {{30}} dias (agentes seguem rodando; suporte e evolução pausam)
 - Revisão de volumes: se execuções/usuários crescerem >{{50}}% sobre o contratado, as Partes repactuam

@@ -9,17 +9,17 @@ Cliente recebe proposta/abordagem de fornecedor de IA → encaminha para a ABBA 
 ## Processo (dono: chapéu Entrega)
 
 1. **Receber e enquadrar (dia 1):** o que exatamente está sendo proposto? Pedir ao cliente o material do fornecedor + o problema que ele acha que está comprando
-2. **Analisar nos 4 eixos (dias 2–4):** cada eixo termina numa frase de veredito:
+2. **Analisar nos 4 eixos (dias 2–4)**: cada eixo termina numa frase de veredito:
    - **É real?** A tecnologia faz o que o material diz? Maturidade, referências verificáveis, dependências escondidas
    - **É para vocês?** Encaixa nos objetivos declarados e na maturidade atual? Ou é solução procurando problema?
    - **O preço é justo?** Comparáveis de mercado, custo total (implantação + licença + integração + manutenção), alternativas (incluindo "fazer com o que já têm")
    - **Quais os riscos?** LGPD/dados, lock-in, dependência de suboperadores, o que acontece se o fornecedor sumir
-3. **Recomendar com convicção (dia 5):** contratar / negociar (o quê) / recusar / adiar: **uma** recomendação, com o porquê. Nunca "depende"
+3. **Recomendar com convicção (dia 5):** contratar / negociar (o quê) / recusar / adiar. **uma** recomendação, com o porquê. Nunca "depende"
 4. **Entregar e registrar:** PDF pelo modelo → Drive do cliente `07 Conselho/` → decisão do cliente registrada na próxima interação (eles decidem; nós registramos)
 
 ## Regras de honestidade
 
-- Analisamos concorrentes nossos também, se a melhor resposta for "contratem o outro", é essa a resposta (a cadeira vale mais que o projeto)
+- Analisamos concorrentes nossos também: se a melhor resposta for "contratem o outro", é essa a resposta (a cadeira vale mais que o projeto)
 - Sem comissão, sem revenda, sem indicação remunerada: a independência é o produto
 - O parecer cita fontes e comparáveis; opinião sem base vira "não sabemos ainda: eis o que verificaríamos"
 - Fora da cota → cotado à parte (não fazer "de favor": corrói o valor do formato Mensal)

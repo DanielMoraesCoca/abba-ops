@@ -54,7 +54,7 @@ Este é o cenário brasileiro típico e é a nossa melhor posição. O roteiro:
 1. **Reconhecer o que já foi feito.** *"Vocês fizeram letramento com gente boa. Não vim dizer que foi perdido."*
 2. **Nomear o que não aconteceu.** *"O que não veio foi a mudança no trabalho de terça-feira. É quase sempre assim: o evento acaba na sexta e o hábito volta na segunda."*
 3. **Dar o motivo estrutural, sem culpar ninguém.** Conteúdo genérico para um funcionário genérico que não existe · workshop único sem laço de aplicação · treino fora da ferramenta onde o trabalho acontece · medição por conclusão de aula, que é fácil de coletar e desligada de qualquer mudança real.
-4. **Oferecer o que falta, não o que já têm.** Base comum para toda a empresa · aprofundamento por papel · prática embutida no fluxo real · gente formando gente na própria área · e a medição que sustenta a conversa com o conselho.
+4. **Oferecer o que falta, não o que já têm.** Base comum para toda a empresa · aplicação no trabalho · prática embutida no fluxo real · gente formando gente na própria área · e a medição que sustenta a conversa com o conselho.
 
 ## Quando o cliente já tem um processo próprio (encaixar, nunca substituir)
 

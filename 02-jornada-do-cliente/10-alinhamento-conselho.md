@@ -27,7 +27,7 @@ Data trimestral chegando (agendar sempre a próxima ao fim da atual) ou etapa do
 
 **Depois (48h)**
 - [ ] Ata com decisões em `02 Clientes/<Nome>/07 Conselho/` + resumo por e-mail
-- [ ] **Registrar cada decisão no diário** (`abba decision add/advance --by "<quem decidiu>"`), e, quando o resultado for medido, `abba decision outcome`. É o que transforma o ritual em memória que compõe, em vez de uma reunião que passou
+- [ ] **Registrar cada decisão no diário** (`abba decision add/advance --by "<quem decidiu>"`): e, quando o resultado for medido, `abba decision outcome`. É o que transforma o ritual em memória que compõe, em vez de uma reunião que passou
 - [ ] Decisões viram ações nos estágios respectivos (nova construção → 07; ajuste de trilha → 08; expansão → proposta)
 - [ ] Próximo ritual agendado
 

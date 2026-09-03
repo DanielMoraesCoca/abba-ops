@@ -10,15 +10,15 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 
 | Momento | Ação | Comando |
 |---|---|---|
-| Durante o dia | Ingerir o que chegou do cliente (atas, KPIs, docs): a ingestão re-renderiza o brief do mês sozinha | `abba ingest <eng> <arquivos>` |
-| Noite (cron ou manual) | O cérebro dorme: extrai fatos, resolve contradições, expira KPIs vencidos, pontua runs, recompila o dossiê, rascunha o brief: tudo com teto de gasto (US$ 1 default) | `abba brain sleep <eng> [--max-usd]` |
-| Manhã (1º comando) | **A fila de antecipação**: o que venceu, gatilho disparado, decisão parada, claim contestado: ordenada por prazo. É a tela da manhã | `abba brain next <eng>` |
+| Durante o dia | Ingerir o que chegou do cliente (atas, KPIs, docs) · a ingestão re-renderiza o brief do mês sozinha | `abba ingest <eng> <arquivos>` |
+| Noite (cron ou manual) | O cérebro dorme: extrai fatos, resolve contradições, expira KPIs vencidos, pontua runs, recompila o dossiê, rascunha o brief · tudo com teto de gasto (US$ 1 default) | `abba brain sleep <eng> [--max-usd]` |
+| Manhã (1º comando) | **A fila de antecipação**: o que venceu, gatilho disparado, decisão parada, claim contestado · ordenada por prazo. É a tela da manhã | `abba brain next <eng>` |
 | Manhã | Ler o brief rascunhado (SEMPRE marcado RASCUNHO até você aprovar) | `abba brain brief <eng>` |
-| Manhã (30s) | **Reconfirmar o que vai vencer**: verdades perto do TTL ou contrariadas por um resultado medido. Perguntar ao cliente e reafirmar: é isso que mantém a memória viva | `abba brain reconfirm <eng>` |
+| Manhã (30s) | **Reconfirmar o que vai vencer**: verdades perto do TTL ou contrariadas por um resultado medido. Perguntar ao cliente e reafirmar · é isso que mantém a memória viva | `abba brain reconfirm <eng>` |
 | Mensal (opcional, custa) | Auditoria de fidelidade: compara os fatos com o texto-fonte de onde saíram. A auditoria de coerência já roda grátis toda noite | `abba brain audit <eng> --max-usd 0.10` |
-| Ao medir um resultado | Registrar o outcome MEDIDO: é o que renova o TTL e sobe a confiança dos fatos que informaram a decisão, e o que gera playbook | `abba decision outcome <eng> <dec> --metric ... --baseline ... --value ... --verdict better` |
-| Manhã (30s) | Revisar claims CONTESTADOS: documento contradisse verdade mais forte: o sleep avisa quando houver. Aceitar = afirmar você mesmo o valor; ignorar = claim fica inerte | `abba brain facts <eng> --contested` · aceitar: `abba brain fact <eng> --subject ... --predicate ... --object ... --by "Nome"` |
-| Curadoria | Aprovar com nome (congela o mês; snapshot imutável `*-aprovado.md`): OU corrigir | `abba brain brief <eng> --approve --by "Nome"` |
+| Ao medir um resultado | Registrar o outcome MEDIDO · é o que renova o TTL e sobe a confiança dos fatos que informaram a decisão, e o que gera playbook | `abba decision outcome <eng> <dec> --metric ... --baseline ... --value ... --verdict better` |
+| Manhã (30s) | Revisar claims CONTESTADOS: documento contradisse verdade mais forte · o sleep avisa quando houver. Aceitar = afirmar você mesmo o valor; ignorar = claim fica inerte | `abba brain facts <eng> --contested` · aceitar: `abba brain fact <eng> --subject ... --predicate ... --object ... --by "Nome"` |
+| Curadoria | Aprovar com nome (congela o mês; snapshot imutável `*-aprovado.md`) · OU corrigir | `abba brain brief <eng> --approve --by "Nome"` |
 | Correção (o cérebro aprende) | Rejeitar uma saída com motivo → vira rascunho de melhoria + caso de regressão | `abba learn feedback <eng> --verdict reject --reason "..." --purpose dimension --by "Nome"` |
 | Ativar a lição | Aprovar a melhoria proposta (gate humano nomeado; vale a partir do próximo run) | `abba addenda approve <pad_id> --by "Nome"` |
 | Medir | Conferir se a melhoria melhorou de verdade | `abba learn uplift <eng> <pad_id>` |
@@ -33,15 +33,15 @@ Um cérebro de IA POR CLIENTE, segregado, que ingere tudo do engajamento, **dorm
 ## Regras invioláveis (as mesmas do estudo, agora executáveis)
 
 - **Um cérebro por cliente, segregado**, nunca cruzar dados; só o vault anonimizado cruza padrões
-- **Toda saída ao cliente passa por curadoria e assinatura:** o brief nasce RASCUNHO e o approve é real (banner + congelamento do mês)
-- **Nada se deleta fora do `abba forget`:** episódios são append-only; fatos supersedem, nunca somem
+- **Toda saída ao cliente passa por curadoria e assinatura**: o brief nasce RASCUNHO e o approve é real (banner + congelamento do mês)
+- **Nada se deleta fora do `abba forget`**: episódios são append-only; fatos supersedem, nunca somem
 - **Todo job autônomo tem teto de gasto** (`--max-usd` / `ABBA_BRAIN_MAX_USD`) e deixa linha auditável (`brain_runs`)
-- **O avaliador é intocável:** golden sets e gates ficam fora do alcance de qualquer loop de melhoria
+- **O avaliador é intocável**: golden sets e gates ficam fora do alcance de qualquer loop de melhoria
 - Consentimento de transcrição/ingestão segue as 8 recusas do [estudo do Conselheiro presente](../05-interno/estudo-conselheiro-presente.md) (nunca sem aviso, nunca captura permanente) e o contrato
-- **A auditoria não se auto-elogia:** as sondas grátis medem COERÊNCIA da linha do tempo, não acurácia; só a sonda paga (contra o texto-fonte) mede fidelidade. Nunca apresentar uma como a outra
-- **Resultado ruim não rebaixa verdade em silêncio:** abre dúvida para o humano decidir (`abba brain reconfirm`)
-- **Previsão declarada não se reescreve:** a probabilidade registrada numa recomendação é imutável (trava no código, rodada 6): reescrever a aposta quando os números melhoram lavaria o placar de calibração, que é o ativo que a imutabilidade protege
+- **A auditoria não se auto-elogia**: as sondas grátis medem COERÊNCIA da linha do tempo, não acurácia; só a sonda paga (contra o texto-fonte) mede fidelidade. Nunca apresentar uma como a outra
+- **Resultado ruim não rebaixa verdade em silêncio**: abre dúvida para o humano decidir (`abba brain reconfirm`)
+- **Previsão declarada não se reescreve**: a probabilidade registrada numa recomendação é imutável (trava no código, rodada 6): reescrever a aposta quando os números melhoram lavaria o placar de calibração, que é o ativo que a imutabilidade protege
 
 ## O que falta para ligar em produção (gatilho: 1º cliente em manutenção)
 
-1. Dados reais entrando (a disciplina de ingestão desde o kickoff) · 2. Calibração do golden set (20–50 saídas notadas pelos sócios) · 3. **Cron do sono via [runbook de ativação](../06-ferramentas/runbook-ativacao.md)**: NÃO é "1 linha": um cron ingênuo roda sem chave e contra um segundo banco vazio, em silêncio; o runbook existe para isso · 4. Decisões de sócios pendentes: nome comercial e se/como o cérebro entra no discurso comercial (hoje: diferencial interno da cadeira de Conselheiro, nunca prometido como produto avulso).
+1. Dados reais entrando (a disciplina de ingestão desde o kickoff) · 2. Calibração do golden set (20–50 saídas notadas pelos sócios) · 3. **Cron do sono via [runbook de ativação](../06-ferramentas/runbook-ativacao.md)**. NÃO é "1 linha": um cron ingênuo roda sem chave e contra um segundo banco vazio, em silêncio; o runbook existe para isso · 4. Decisões de sócios pendentes: nome comercial e se/como o cérebro entra no discurso comercial (hoje: diferencial interno da cadeira de Conselheiro, nunca prometido como produto avulso).

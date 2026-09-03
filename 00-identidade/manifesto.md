@@ -2,7 +2,7 @@
 
 > **Camada:** identidade. O que a [identidade visual](identidade-visual.md) faz pelos olhos e o [posicionamento](posicionamento.md) faz pelas palavras de venda, este documento faz pela **postura**: o que a ABBA acredita, o que ela recusa, e como isso se reconhece em qualquer conversa.
 >
-> **Por que existe:** um sócio perguntou, com razão, o que dá "cara" à empresa. Marca não é logo nem headline: é o conjunto de coisas que uma empresa faz de um jeito e não do outro, de forma tão consistente que o cliente consegue prever. Esta é a lista.
+> **Por que existe:** um sócio perguntou, com razão, o que dá "cara" à empresa. Marca não é logo nem headline, é o conjunto de coisas que uma empresa faz de um jeito e não do outro, de forma tão consistente que o cliente consegue prever. Esta é a lista.
 >
 > Dono: Sócios. Muda com decisão registrada, não com conveniência de proposta.
 
@@ -41,7 +41,7 @@ Declaramos probabilidade com nome em cada recomendação e mantemos o placar do 
 | **Piloto sem métrica** | É a receita documentada do fracasso. Aceitar é vender uma derrota com nota fiscal |
 | **Slide sem caminho até produção** | Estratégia que não chega a rodar é entretenimento caro |
 | **Ser o dono da decisão do cliente** | Recomendamos com convicção e assinamos a recomendação. Quem decide é quem responde pela empresa |
-| **Cruzar dado entre clientes** | Um cérebro por cliente, segregado. Só o agregado anonimizado circula, e com piso de privacidade no código |
+| **Cruzar dado entre clientes** | Um cérebro por cliente, segregado. Só o agregado anonimizado circula · e com piso de privacidade no código |
 | **Apagar histórico** | Nada se deleta fora do caminho sancionado, que emite certificado. Verdade que some não era verdade |
 | **Virar agência generalista** | Uma espinha, um método. Toda oferta é um contêiner do mesmo IP |
 | **Prever mudança de regime e contrafactual causal** | A evidência é dura: modelos mais capazes preveem PIOR em séries com quebra de regime, e "o que acontece se fizermos X" está fora do alcance ([estudo](../05-interno/estudo-antecipacao.md) §2). Vender isso é ser desmentido pelo primeiro trimestre ruim |
@@ -71,8 +71,8 @@ Como a ABBA soa, em qualquer canal:
 
 | A ABBA soa | A ABBA não soa |
 |---|---|
-| Direta: a conclusão vem antes da justificativa | Cheia de rodeios de consultoria |
-| Concreta: número, prazo, nome | Adjetivada ("inovador", "disruptivo", "revolucionário") |
+| Direta · a conclusão vem antes da justificativa | Cheia de rodeios de consultoria |
+| Concreta · número, prazo, nome | Adjetivada ("inovador", "disruptivo", "revolucionário") |
 | Honesta sobre o que não sabe | Confiante em tudo por padrão |
 | Técnica sem ser hermética | Cheia de sigla e anglicismo desnecessário |
 | Respeitosa com a inteligência de quem lê | Didática demais, condescendente |

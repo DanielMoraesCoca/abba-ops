@@ -1,6 +1,6 @@
 # O Conselheiro no dia a dia: onde ele senta, por onde falam com ele, e o parecer que falta
 
-> **Camada:** interno (pesquisa + plano de produto). Origem: pedido do sócio (2026-08-04): *"pesquise como é o dia a dia de uma empresa e valide em quais situações ele deve estar... até os mais simples, como 'queremos desativar esse sistema multi-agêntico para não gastar, pois vamos mudar a estrutura dessa parte da empresa': ele precisa estar, entender e falar se vale a pena. E por onde iriam contatá-lo?"*
+> **Camada:** interno (pesquisa + plano de produto). Origem: pedido do sócio (2026-08-04). *"pesquise como é o dia a dia de uma empresa e valide em quais situações ele deve estar... até os mais simples, como 'queremos desativar esse sistema multi-agêntico para não gastar, pois vamos mudar a estrutura dessa parte da empresa': ele precisa estar, entender e falar se vale a pena. E por onde iriam contatá-lo?"*
 >
 > Complementa o [estudo do Conselheiro presente](estudo-conselheiro-presente.md) (que respondeu *como* ele se senta, com as travas legais). Este responde **quando**, **em quê**, **por onde**, e cria o entregável que faltava.
 >
@@ -24,9 +24,9 @@ E o contexto de desperdício é grande no nosso alvo: **25–40% de licenças co
 
 ## 2. O relógio de uma empresa média brasileira
 
-A intuição do sócio (*"ele deve estar onde tem números"*) está certa, e tem endereço exato: **o fechamento mensal é o pulso da empresa.** Mas há quatro relógios, não um, e o Conselheiro precisa estar acoplado aos quatro.
+A intuição do sócio. *"ele deve estar onde tem números"*: está certa, e tem endereço exato: **o fechamento mensal é o pulso da empresa.** Mas há quatro relógios, não um, e o Conselheiro precisa estar acoplado aos quatro.
 
-### Relógio 1: O pulso mensal (onde os números nascem)
+### Relógio 1. O pulso mensal (onde os números nascem)
 
 | Momento | Quando | O que acontece | Onde o Conselheiro entra |
 |---|---|---|---|
@@ -35,21 +35,21 @@ A intuição do sócio (*"ele deve estar onde tem números"*) está certa, e tem
 
 **A regra de ouro do encaixe:** o Conselheiro nunca compete com o controller. Ele não traz *o número*: o cliente já tem. Ele traz **o número ao lado da decisão que prometeu movê-lo**. Ninguém mais na sala tem esse par.
 
-### Relógio 2: O calendário fiscal (que decide quando NÃO mexer)
+### Relógio 2. O calendário fiscal (que decide quando NÃO mexer)
 
-O mês fiscal brasileiro tem **sequência obrigatória**: eSocial (dia 7) → EFD-Reinf (dia 15) → DCTFWeb (último dia útil do mês seguinte); sem respeitar a ordem, a declaração seguinte não transmite. Somam-se INSS e DIRBI (dia 20) e EFD-Contribuições (10º dia útil do 2º mês). No ano: ECD e IRPF dos sócios em **maio** (*o mês mais pesado do calendário*) e ECF em julho. Em 2026, IBS e CBS já aparecem destacados nas notas em caráter informativo. ([Contábeis](https://www.contabeis.com.br/noticias/77969/calendario-fiscal-2026-organize-as-obrigacoes-do-semestre/) · [Dattos](https://www.dattos.com.br/en/blog/obrigacoes-fiscais-2026) · [Pactum](https://www.pactum.com.br/conteudos/calendario-tributario-2026))
+O mês fiscal brasileiro tem **sequência obrigatória**: eSocial (dia 7) → EFD-Reinf (dia 15) → DCTFWeb (último dia útil do mês seguinte); sem respeitar a ordem, a declaração seguinte não transmite. Somam-se INSS e DIRBI (dia 20) e EFD-Contribuições (10º dia útil do 2º mês). No ano: ECD e IRPF dos sócios em **maio**. *o mês mais pesado do calendário*, e ECF em julho. Em 2026, IBS e CBS já aparecem destacados nas notas em caráter informativo. ([Contábeis](https://www.contabeis.com.br/noticias/77969/calendario-fiscal-2026-organize-as-obrigacoes-do-semestre/) · [Dattos](https://www.dattos.com.br/en/blog/obrigacoes-fiscais-2026) · [Pactum](https://www.pactum.com.br/conteudos/calendario-tributario-2026))
 
 **Isso não é trabalho nosso: somos consultoria de IA, não escritório contábil.** Mas é o relógio que diz **quando a empresa tem cabeça**. Propor go-live de sistema fiscal na primeira semana de maio é queimar o projeto. É a dimensão D17 do nosso próprio framework (*Sazonalidade e Ritmo*) virando operação: *"IA implantada bem antes do pico sem tempo de estabilização é desastre; IA que aguenta o pico é heroína."*
 
-### Relógio 3: O ciclo orçamentário (a janela de maior valor do ano)
+### Relógio 3. O ciclo orçamentário (a janela de maior valor do ano)
 
 Entre setembro e novembro decide-se **o que vive e o que morre** no ano seguinte. É a única janela em que a diretoria olha, de uma vez, todo o custo recorrente. **É onde o Conselheiro deve chegar com o inventário de custo × valor de tudo o que roda**, e é o momento em que o retainer se paga sozinho.
 
-### Relógio 4: As datas que ninguém lembra (o relógio oculto)
+### Relógio 4. As datas que ninguém lembra (o relógio oculto)
 
 Renovações automáticas de contrato e licença. A pesquisa é direta: *"se a área de compras só revisa o contrato poucos dias antes da renovação, não há tempo de checar uso, comparar alternativas ou reduzir quantidade"* ([Spendflo](https://www.spendflo.com/blog/software-renewal-management) · [Zylo](https://zylo.com/blog/guide-saas-renewal)).
 
-**Este relógio é literalmente o mecanismo que já construímos**: gatilho por decisão com data de revisão (`review_due_at`), fila da manhã, e a baixa manual do gatilho (`--checked`). O que falta não é código: é **carregar as datas do cliente na ativação**.
+**Este relógio é literalmente o mecanismo que já construímos**: gatilho por decisão com data de revisão (`review_due_at`), fila da manhã, e a baixa manual do gatilho (`--checked`). O que falta não é código, é **carregar as datas do cliente na ativação**.
 
 ---
 
@@ -87,7 +87,7 @@ Renovações automáticas de contrato e licença. A pesquisa é direta: *"se a �
 | 21 | Incidente com IA em produção | TI | Protocolo de incidente + registro |
 | 22 | "Queremos liberar IA para a empresa toda" | CEO | Caso de negócio + governança + IA-sombra |
 | 23 | Concorrente anunciou algo | CEO | Leitura fria: é real, é para vocês? |
-| 24 | Um indicador cruzou o limiar combinado | **o próprio sistema** | O gatilho dispara e ele chama: canal invertido |
+| 24 | Um indicador cruzou o limiar combinado | **o próprio sistema** | O gatilho dispara e ele chama · canal invertido |
 
 ### C. Onde ele NÃO entra (a lista que dá credibilidade)
 
@@ -97,7 +97,7 @@ Reunião sobre pessoas (desempenho, demissão, saúde) · comitê de ética ou i
 
 ## 4. O entregável que falta: o **Parecer de Permanência**
 
-Hoje o produto tem a **Arbitragem de Fornecedores**, que responde *"devemos comprar?"*. Falta o espelho, que é a pergunta do sócio: **"devemos manter, reduzir, pausar ou desligar?"**
+Hoje o produto tem a **Arbitragem de Fornecedores**: que responde *"devemos comprar?"*. Falta o espelho, que é a pergunta do sócio: **"devemos manter, reduzir, pausar ou desligar?"**
 
 É um vazio real de mercado: existe disciplina formal para aposentar sistemas (*application retirement / decommissioning*, incluindo a obrigação de **preservar o dado histórico** ao desligar), e o quadro de FinOps 2026 trata explicitamente de saída de escopo com métricas de sucesso pré-definidas e realocação de compromissos ([FinOps 2026](https://www.finops.org/insights/2026-finops-framework/) · [Virtasant](https://www.virtasant.com/blog/finops-framework-2026)). Mas **ninguém empacota isso para o médio porte brasileiro**, e ninguém tem o que nós temos: o baseline do que o sistema produziu.
 
@@ -121,7 +121,7 @@ A decisão de desligar é uma decisão como qualquer outra: tem hipótese ("vamo
 
 Uma página, entregue em até 5 dias úteis (mesmo SLA da arbitragem): situação · custo real com os baldes abertos · valor medido (ou o registro honesto de que nunca foi medido) · dependências · as 4 saídas com consequência de cada uma · **recomendação com probabilidade declarada** · plano de retirada se for o caso · a métrica e a data da revisão.
 
-**Onde entra comercialmente:** entregável do Conselheiro (nas duas portas) e artefato-estrela do ciclo orçamentário. **Não é produto avulso**: é a razão de o retainer existir.
+**Onde entra comercialmente:** entregável do Conselheiro (nas duas portas) e artefato-estrela do ciclo orçamentário. **Não é produto avulso**, é a razão de o retainer existir.
 
 ---
 
@@ -131,12 +131,12 @@ Seis canais, cada um com regra e prazo. O princípio: **nenhuma ferramenta nova 
 
 | # | Canal | Para quê | Regra | Prazo |
 |---|---|---|---|---|
-| 1 | **E-mail dedicado** (`conselheiro@` do cliente ou nosso) | A porta principal do formal: encaminhar a proposta do fornecedor, pedir parecer, mandar documento | Encaminhar já cria o registro: atrito zero, e é o canal oficial da nossa própria política | Aviso de recebimento em 1 dia útil |
-| 2 | **WhatsApp** | A pergunta rápida do diretor e o alerta do gatilho | **Nunca conteúdo sensível, valores ou decisão contratual**: leva a pergunta e o link ([política vigente](comunicacao.md)) | Resposta ou encaminhamento em 1 dia útil |
-| 3 | **Portal: área do conselho** | Onde a resposta com conteúdo vive: pareceres, decisões, gatilhos, brief | Autenticado, por perfil, auditado |  |
+| 1 | **E-mail dedicado** (`conselheiro@` do cliente ou nosso) | A porta principal do formal: encaminhar a proposta do fornecedor, pedir parecer, mandar documento | Encaminhar já cria o registro · atrito zero, e é o canal oficial da nossa própria política | Aviso de recebimento em 1 dia útil |
+| 2 | **WhatsApp** | A pergunta rápida do diretor e o alerta do gatilho | **Nunca conteúdo sensível, valores ou decisão contratual** · leva a pergunta e o link ([política vigente](comunicacao.md)) | Resposta ou encaminhamento em 1 dia útil |
+| 3 | **Portal · área do conselho** | Onde a resposta com conteúdo vive: pareceres, decisões, gatilhos, brief | Autenticado, por perfil, auditado | · |
 | 4 | **O assento na reunião** | Semanal, mensal de resultados, trimestral | Por convite, anunciado, com hora de entrar e sair | Pauta enviada antes |
 | 5 | **Canal do projeto** (Teams/Slack do cliente) | O campeão e a operação | Só o que já é do projeto; nada de dado pessoal | Dias úteis |
-| 6 | **O gatilho: o canal invertido** | **Ele** procura **eles**: prazo vencendo, renovação chegando, indicador cruzado, decisão parada | Deadline-ordenado, sem LLM, humano confere e dá baixa | Antecedência declarada por tipo |
+| 6 | **O gatilho · o canal invertido** | **Ele** procura **eles**: prazo vencendo, renovação chegando, indicador cruzado, decisão parada | Deadline-ordenado, sem LLM, humano confere e dá baixa | Antecedência declarada por tipo |
 
 **O canal 6 é o produto.** Os cinco primeiros são atendimento: qualquer consultor tem. O sexto é o que resolve os "5 a 15%" do §1: é ele que impede a decisão de morrer.
 
@@ -158,12 +158,12 @@ O resto é do campeão, e **ensinar essa régua ao cliente é parte da entrega**
 
 | # | Movimento | O que é | Depende de | Quando |
 |---|---|---|---|---|
-| 1 | **Mapa de presença do cliente** | No kickoff, carregar o relógio dele: data do fechamento, reunião de resultados, janela orçamentária, pico sazonal, **todas as renovações com a data-limite de opt-out**, obrigações com data | Nada: usa gatilho + fila da manhã já construídos | **Agora** (entra no roteiro de kickoff) |
+| 1 | **Mapa de presença do cliente** | No kickoff, carregar o relógio dele: data do fechamento, reunião de resultados, janela orçamentária, pico sazonal, **todas as renovações com a data-limite de opt-out**, obrigações com data | Nada · usa gatilho + fila da manhã já construídos | **Agora** (entra no roteiro de kickoff) |
 | 2 | **Inventário de custo × valor** | Uma linha por sistema/agente/licença: custo unitário, os baldes abertos, valor medido (ou "nunca medido"), dono, dependências, data de renovação | Levantamento no onboarding | Com o 1º cliente |
 | 3 | **Parecer de Permanência** | O processo (§4) + modelo DOCX no padrão, irmão do de arbitragem | Movimento 2 | Com o 1º cliente |
 | 4 | **A caixa de entrada** | Os 6 canais com prazos, publicados ao cliente no kickoff + a régua do §5 | E-mail + portal; WhatsApp na onda 2 | **Agora** (doutrina) |
-| 5 | **Decisão de desligar vira registro medido** | Toda recomendação de desligar/reduzir nasce com hipótese, probabilidade declarada e gatilho de 90 dias | Nada: é o motor atual | Com o 1º cliente |
-| 6 | **Pauta ancorada no relógio** | As pautas do ritual e do conselho passam a abrir pelo que **venceu** e pelo que **vence**: não pelo que aconteceu | Movimento 1 | Junto com 1 e 4 |
+| 5 | **Decisão de desligar vira registro medido** | Toda recomendação de desligar/reduzir nasce com hipótese, probabilidade declarada e gatilho de 90 dias | Nada · é o motor atual | Com o 1º cliente |
+| 6 | **Pauta ancorada no relógio** | As pautas do ritual e do conselho passam a abrir pelo que **venceu** e pelo que **vence** · não pelo que aconteceu | Movimento 1 | Junto com 1 e 4 |
 
 Os movimentos 1, 4 e 6 **não exigem código nem cliente**: são doutrina e podem ser escritos esta semana. Os 2, 3 e 5 entram com o primeiro cliente em manutenção.
 
@@ -177,7 +177,7 @@ Os movimentos 1, 4 e 6 **não exigem código nem cliente**: são doutrina e pode
 
 **Não pode ser dito ainda:** que o Conselheiro "conhece todos os custos da empresa" ou "monitora seus sistemas": os movimentos 2 e 3 não existem, e integração é a camada 3 do [Assento](estudo-conselheiro-presente.md), gateada.
 
-**Nunca:** que garantimos economia. Recomendamos com convicção e probabilidade declarada; a decisão é do cliente e o resultado é medido, inclusive quando dá errado.
+**Nunca:** que garantimos economia. Recomendamos com convicção e probabilidade declarada; a decisão é do cliente e o resultado é medido: inclusive quando dá errado.
 
 ---
 

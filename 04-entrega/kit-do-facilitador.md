@@ -171,7 +171,7 @@ Objetivo: cada pessoa sai com o rascunho de uma vitória real. Prompts de coachi
 | Primeira Vitória | 45 | 2 a 3 campeões apresentam a vitória no **próprio posto de trabalho**. Cada um edifica defronte da sua casa (Ne 3) |
 | Intervalo | 15 |  |
 | O que vem | 25 | O que continua: o portal segue 12 meses, os plantões dos campeões, e **os checkpoints de 30, 60 e 90 dias** |
-| Certificados | 30 | Entrega por nível alcançado + credencial verificável por link, que é **da pessoa**. Antes da cerimônia: conferir o portão (Fundação 8/8 + ≥6/8 drills) e emitir as credenciais **em lote** em `/admin/graduacao`: a tela mostra pessoa a pessoa quem passou |
+| Certificados | 30 | Entrega da **base comum concluída**, que é o que a cerimônia prova (nenhum certificado sai com nível: a escala P7 foi superada em 26/08) + credencial verificável por link, que é **da pessoa**. Antes da cerimônia: conferir o portão (Fundação 8/8 + ≥6/8 drills) e emitir as credenciais **em lote** em `/admin/graduacao`: a tela mostra pessoa a pessoa quem passou |
 | Palavra da diretoria | 10 |  |
 | Foto | 5 |  |
 

@@ -1,6 +1,6 @@
 # Playbook do Vault: a operação do volante ABBA
 
-> **Para que serve:** o vault (assessment-brain) guarda padrões anonimizados de todos os engajamentos. Cada encerramento alimenta; cada proposta nova colhe. Este playbook é a sequência exata a executar: sem ela, o volante é só discurso. Decisão E3 ([análise estratégica](analise-estrategica-2026-07.md)); regra bloqueante no [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md).
+> **Para que serve:** o vault (assessment-brain) guarda padrões anonimizados de todos os engajamentos. Cada encerramento alimenta; cada proposta nova colhe. Este playbook é a sequência exata a executar, sem ela, o volante é só discurso. Decisão E3 ([análise estratégica](analise-estrategica-2026-07.md)); regra bloqueante no [estágio 11](../02-jornada-do-cliente/11-renovacao-e-encerramento.md).
 
 ## A taxonomia: técnico × negócio
 
@@ -34,8 +34,8 @@ O ciclo fecha sozinho: os outcomes reconciliam a confiança empírica de cada pa
 ## Como preencher {{N_PADROES_SETOR}} na proposta
 
 1. `abba vault --stats` → linha do setor: `legal-services: 7 patterns from 3 engagement(s) (avg confidence 0.84, empirical 0.71)`
-2. **N = o número de patterns do setor:** usar APENAS se ≥ 3 e vindo do comando (nunca de memória, nunca inflado). Atenção: o "from M engagement(s)" da saída conta engajamentos do setor NA BASE, não necessariamente todos alimentaram o vault: em material de cliente, citar só o N de padrões
-3. A frase padrão (plantada na [proposta](../03-comercial/proposta-avaliacao-prontidao.md) e na [coreografia](../03-comercial/coreografia-da-conversao.md)): *"nosso método já acumulou N padrões validados no seu setor"*
+2. **N = o número de patterns do setor**: usar APENAS se ≥ 3 e vindo do comando (nunca de memória, nunca inflado). Atenção: o "from M engagement(s)" da saída conta engajamentos do setor NA BASE, não necessariamente todos alimentaram o vault: em material de cliente, citar só o N de padrões
+3. A frase padrão (plantada na [proposta arquivada](arquivo/proposta-avaliacao-prontidao.md) e na [coreografia](../03-comercial/coreografia-da-conversao.md)): *"nosso método já acumulou N padrões validados no seu setor"*
 4. Atenção à normalização: "Legal Services" e "legal-services" são o mesmo setor para a ferramenta; setores de cliente devem ser cadastrados com nome consistente ({{setor em inglês padronizado: convenção da ferramenta}})
 
 ## Métricas do volante (item 7 da [reunião semanal](comunicacao.md))
@@ -44,7 +44,7 @@ O ciclo fecha sozinho: os outcomes reconciliam a confiança empírica de cada pa
 |---|---|---|
 | Padrões novos na semana | `abba vault --stats` (delta) | > 0 em semana com encerramento |
 | Padrões por setor-alvo | idem, linha do setor | ≥ 3 antes da 2ª proposta no setor |
-| Confiança empírica média do setor | idem | acompanhar: queda = revisar o que extraímos |
+| Confiança empírica média do setor | idem | acompanhar · queda = revisar o que extraímos |
 | Outcomes registrados vs. intervenções entregues | `abba outcome` | 100% |
 
 ## O que NUNCA fazer

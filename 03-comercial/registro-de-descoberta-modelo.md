@@ -1,6 +1,6 @@
 # Registro de Descoberta: modelo
 
-> **Camada:** comercial (modelo). O que se preenche e manda ao time de engenharia **no mesmo dia** da reunião conduzida pelo [roteiro de descoberta](roteiro-descoberta-prototipo.md). O que faltar vira pergunta ao ponto focal: **não segunda reunião de descoberta**.
+> **Camada:** comercial (modelo). O que se preenche e manda ao time de engenharia **no mesmo dia** da reunião conduzida pelo [roteiro de descoberta](roteiro-descoberta-prototipo.md). O que faltar vira pergunta ao ponto focal. **não segunda reunião de descoberta**.
 >
 > **Regra de confidencialidade:** a instância preenchida (com nome do cliente) vive no **Drive, na pasta do lead, nunca em git**. Este arquivo é só o molde.
 >
@@ -19,17 +19,17 @@ Se a pessoa descreveu o que quer ver, transcrever **palavra por palavra**. É o 
 
 ## 4. Os fatos que mudam o desenho
 Os achados que simplificam ou complicam a engenharia. Os dois mais comuns:
-- **Consulta × execução:** a solução recomenda, ou age no sistema? (execução exige integração transacional; consulta não)
-- **Tempo real × lote:** precisa responder na hora, ou roda periodicamente? (define arquitetura e custo por execução)
+- **Consulta × execução**: a solução recomenda, ou age no sistema? (execução exige integração transacional; consulta não)
+- **Tempo real × lote**: precisa responder na hora, ou roda periodicamente? (define arquitetura e custo por execução)
 
 ## 5. Os gatilhos
 O que dispara uma nova execução, e com que frequência. Lista numerada.
 
 ## 6. Criticidade e erro
-O erro inaceitável e o tolerável, nas palavras dele. **Daqui nasce a decisão de onde vai a aprovação humana**, e, quando a exigência é de exatidão, a decisão de arquitetura correspondente (o que é cálculo determinístico e auditável × o que é trabalho de modelo).
+O erro inaceitável e o tolerável, nas palavras dele. **Daqui nasce a decisão de onde vai a aprovação humana**: e, quando a exigência é de exatidão, a decisão de arquitetura correspondente (o que é cálculo determinístico e auditável × o que é trabalho de modelo).
 
 ## 7. Dados
-O que existe, em que formato, quem fornece, o que é sensível: **e os riscos de dado que o próprio cliente apontou** (dado velho, dado incompleto, dado que só uma pessoa sabe corrigir).
+O que existe, em que formato, quem fornece, o que é sensível. **e os riscos de dado que o próprio cliente apontou** (dado velho, dado incompleto, dado que só uma pessoa sabe corrigir).
 
 ## 8. Pessoas
 Tabela: patrocinador · **quem já faz esse trabalho hoje** (o dono do conhecimento tácito: prioridade de contato) · quem revisa/aprova · ponto focal técnico · quem do nosso lado.
@@ -44,7 +44,7 @@ Uma frase de resumo + o fluxo numerado + **o que o protótipo NÃO faz** (dizer 
 Agrupadas por bloco, com destaque para o que mais falta. Inclui sempre o **pedido da amostra com gabarito** (quem monta, até quando).
 
 ## 12. Sinais comerciais registrados
-Reação a preço, disposição a pagar, urgência, quem ele quer envolver. **Reação a preço vai também para a [planilha de precificação](precificacao-planilha.md) §6**: é o dado que valida a tabela.
+Reação a preço, disposição a pagar, urgência, quem ele quer envolver. **Reação a preço vai também para a [planilha de precificação](precificacao-planilha.md) §6**, é o dado que valida a tabela.
 
 ## 13. Próximos passos
 Tabela: o quê · quem · quando.

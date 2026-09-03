@@ -31,22 +31,22 @@ Estrutura da ISO/IEC 42001 usada como referência: cláusulas 4–10 (contexto, 
 |---|---|---|---|
 | **D09** Risco & Compliance | 6.1 (riscos/oportunidades) · 8.2 (avaliação de risco de IA) · A.5 | Classificação de risco; avaliação preliminar; **avaliação de impacto algorítmico** (alto risco) | A pergunta-matadora ("que decisões exigem humano por lei?") é literalmente o insumo da classificação de risco |
 | **D19** Modos de Falha | A.6 (verificação & validação) · A.8 (comunicação de incidente) | Comunicação de **incidente grave** à autoridade; medidas de segurança | Raio de dano + limiar de confiança + fallback = o dossiê de segurança que a AIA pede |
-| **D14** Arquitetura de Confiança | A.9 (uso responsável) | **Supervisão humana efetiva** | O nível real de autonomia que a empresa aguenta: pré-requisito da supervisão humana exigida |
+| **D14** Arquitetura de Confiança | A.9 (uso responsável) | **Supervisão humana efetiva** | O nível real de autonomia que a empresa aguenta · pré-requisito da supervisão humana exigida |
 | **D05** Mapa de Decisões | A.9 · A.6 (requisitos) | Direito à **revisão humana** de decisão automatizada | A taxonomia (automatizar/aumentar/consertar dado) marca onde revisão humana é obrigatória, não opcional |
 | **D23** Dimensão Ética | A.5 (impactos em indivíduos/grupos/sociedade) | **Não-discriminação; correção de vieses** | O teste do jornalista é uma avaliação de impacto social em miniatura |
-| **D08** Dados Ocultos + **D12** Topologia da Informação | A.7 (gestão, qualidade, proveniência de dados) | Qualidade/governança de dados usados por IA (interface com LGPD) | Onde o dado mora, quem toca, qual a qualidade: o inventário que a A.7 exige |
-| **D03** Paisagem Tecnológica (shadow IT) | 4.1 (contexto) · A.4 (recursos) | Responsabilidade do **aplicador** por sistemas em uso | O shadow AI descoberto aqui é exatamente o "sistema de IA em uso sem governança" que os dois marcos punem: ligação direta com o [Workshop Shadow AI](../03-comercial/proposta-workshop-shadow-ai.md) |
+| **D08** Dados Ocultos + **D12** Topologia da Informação | A.7 (gestão, qualidade, proveniência de dados) | Qualidade/governança de dados usados por IA (interface com LGPD) | Onde o dado mora, quem toca, qual a qualidade · o inventário que a A.7 exige |
+| **D03** Paisagem Tecnológica (shadow IT) | 4.1 (contexto) · A.4 (recursos) | Responsabilidade do **aplicador** por sistemas em uso | O shadow AI descoberto aqui é exatamente o "sistema de IA em uso sem governança" que os dois marcos punem · ligação direta com o [Workshop Shadow AI](../05-interno/arquivo/proposta-workshop-shadow-ai.md) (arquivado na V5 · hoje capacidade da fase 1 do Programa) |
 | **D25** Baseline de Medição | 9.1 (monitoramento e medição) | Prestação de contas/documentação | O [protocolo de prova](../04-entrega/protocolo-de-prova.md) É a cláusula 9 em operação: métrica antes, medição depois, registro assinado |
 | **D18** Poder & Política | 5 (liderança) · A.3 (papéis e responsabilidades) | Definição de responsável interno pelos sistemas | "Quem mata o projeto no corredor" e "quem responde pelo sistema" são a mesma pergunta com sinais trocados |
 | **D06** Realidade das Pessoas + **D15** Decaimento de Conhecimento | 7.2–7.3 (competência e conscientização) · A.4 (recursos humanos) | Capacitação/letramento (dever de governança) | Composição de tarefas + conhecimento tácito = o diagnóstico de competência que a cláusula 7 pede |
 | **D07** Experiência do Cliente | A.8 (informação a usuários; transparência) | Direito à **informação** (saber que interage com IA) | Os pontos de contato mapeados são onde o aviso de IA precisa aparecer |
-| **D01/D10/D11** DNA, Lacuna de Visão, Inteligência Competitiva | 4.1–4.2 (contexto e partes interessadas) · 6.2 (objetivos) |  | O "porquê agora" e as partes interessadas: abertura obrigatória de qualquer SGIA |
-| **D24** Construir Hoje vs. Amanhã + **D22** Penhasco de Escala | 6.1 · 8.1 (planejamento operacional) |  | Roadmap com gates = o plano de tratamento de risco da cláusula 6 |
+| **D01/D10/D11** DNA, Lacuna de Visão, Inteligência Competitiva | 4.1–4.2 (contexto e partes interessadas) · 6.2 (objetivos) | · | O "porquê agora" e as partes interessadas · abertura obrigatória de qualquer SGIA |
+| **D24** Construir Hoje vs. Amanhã + **D22** Penhasco de Escala | 6.1 · 8.1 (planejamento operacional) | · | Roadmap com gates = o plano de tratamento de risco da cláusula 6 |
 | **D02/D13/D16/D17/D20/D21** Operação real | A.6 (operação, monitoramento, logs) | Registros/documentação dos sistemas | Fluxo real + exceções + latência = onde logging e monitoramento precisam existir |
 
 ### Sem correspondência direta, e está certo assim
 
-**D04 (Mapa do Dinheiro)** é dimensão de negócio puro: nenhum marco regulatório pede mapa de vazamento financeiro. Registrar a ausência é parte da honestidade do mapa: não inflar cobertura.
+**D04 (Mapa do Dinheiro)** é dimensão de negócio puro: nenhum marco regulatório pede mapa de vazamento financeiro. Registrar a ausência é parte da honestidade do mapa, não inflar cobertura.
 
 ---
 
@@ -58,7 +58,7 @@ O gap honesto: o framework avalia a **empresa para receber IA**; os marcos avali
 |---|---|---|
 | 1 | Existe uma **política de IA escrita e aprovada** pela diretoria? Quem a assina? | A.2 |
 | 2 | Existe um **inventário dos sistemas de IA em uso** (incluindo os embutidos em SaaS)? | 4.1 · aplicador (PL) |
-| 3 | Quem é o **responsável nomeado** por cada sistema de IA, e a quem ele reporta? | A.3 · PL |
+| 3 | Quem é o **responsável nomeado** por cada sistema de IA · e a quem ele reporta? | A.3 · PL |
 | 4 | Existe **canal para relatar preocupação** com um sistema de IA (funcionário ou cliente)? | A.3 · A.8 |
 | 5 | Para cada sistema: existe **documentação técnica e log de eventos** recuperável? | A.6 |
 | 6 | Existe **processo de resposta a incidente de IA** (quem decide desligar, quem comunica, em quanto tempo)? | A.8 · PL (incidente grave) |
@@ -96,7 +96,7 @@ Rodapé obrigatório do entregável: *"Esta é uma leitura de prontidão, não u
 - **Workshop Shadow AI (R$ 14k):** o inventário (P2) é o que ele já produz: agora com a moldura "primeiro passo da prontidão ISO/PL". Porta lateral fortalecida.
 - **Sprint LGPD (R$ 24k):** vizinho natural: mesma mesa (guardião), agora com a ponte IA×dados.
 - **Para o diretor de IA do cliente:** este é o entregável que ele leva ao conselho: feito por terceiro, o que é exatamente o que dá valor. Vender **para** ele ([objeção](../03-comercial/objecao-diretor-de-ia.md) §2).
-- **Fora do escopo por decisão:** virar consultoria de certificação/implantação ISO full: é outro negócio, com players estabelecidos. Ficamos na leitura de prontidão que nasce de graça do nosso próprio campo.
+- **Fora do escopo por decisão:** virar consultoria de certificação/implantação ISO full, é outro negócio, com players estabelecidos. Ficamos na leitura de prontidão que nasce de graça do nosso próprio campo.
 
 ## Pendências
 

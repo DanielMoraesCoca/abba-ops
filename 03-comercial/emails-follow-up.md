@@ -1,10 +1,10 @@
-# Sequência de E-mails: ABBA
+# Sequência de E-mails. ABBA
 
-> Modelos prontos para os momentos-chave do funil. Enviar **sempre de `@abbaservices.com.br`** (contas ativas: P2 ✅ 2026-07-25). Assinatura padrão no rodapé deste doc. Prazos contam a partir do evento anterior.
+> Modelos prontos para os momentos-chave do funil. Enviar **sempre de `@abbaservices.com.br`** (contas ativas. P2 ✅ 2026-07-25). Assinatura padrão no rodapé deste doc. Prazos contam a partir do evento anterior.
 
-## E-mail 0: Prospecção fria (quando não há indicação)
+## E-mail 0. Prospecção fria (quando não há indicação)
 
-**Assunto:** IA que a sua equipe realmente usa: [Nome da Empresa]
+**Assunto:** IA que a sua equipe realmente usa. [Nome da Empresa]
 
 > [Nome],
 >
@@ -16,7 +16,7 @@
 >
 > [Assinatura]
 
-## E-mail 1: Mesmo dia da primeira call
+## E-mail 1. Mesmo dia da primeira call
 
 **Assunto:** Obrigado pela conversa: próximo passo
 
@@ -24,13 +24,13 @@
 >
 > O que eu ouvi: [2–3 bullets com as dores nas palavras deles].
 >
-> Conforme combinado, o próximo passo é [degustação gratuita / proposta do produto X] até [data].
+> Conforme combinado, o próximo passo é [degustação gratuita / proposta do Termo do Programa / proposta do Conselheiro de IA] até [data].
 >
 > Qualquer coisa antes disso, estou por aqui.
 
-## E-mail 2: Envio da degustação (brief gratuito)
+## E-mail 2. Envio da degustação (brief gratuito)
 
-**Assunto:** Sua análise ABBA: [Empresa]
+**Assunto:** Sua análise ABBA. [Empresa]
 
 > [Nome], segue em anexo a análise da [Empresa] que preparamos com base em informação pública.
 >
@@ -40,27 +40,27 @@
 >
 > Posso apresentar em 45 minutos? Sugestões: [data A] ou [data B].
 
-## E-mail 3: Envio de proposta
+## E-mail 3. Envio de proposta
 
-**Assunto:** Proposta ABBA: [Produto] para [Empresa]
+**Assunto:** Proposta ABBA. [Termo do Programa / Conselheiro de IA] para [Empresa]
 
-> [Nome], segue a proposta de [produto], válida por 30 dias.
+> [Nome], segue a proposta: o Termo do Programa "AI Native · Ano 1", , válida por 30 dias.
 >
-> Em uma linha: [escopo] em [prazo], entregando [entregável principal], por [valor].
+> Em uma linha: fase 1 firme em [prazo: 6 semanas], entregando [caso construído e medido + portfólio priorizado], por R$ 26.000; o ano completo no porte de vocês fica em [valor por porte], com portão de saída sem multa na semana 6.
 >
 > Sugiro 45 minutos para percorrê-la juntos: de preferência com [decisor adicional identificado]. [Data A] ou [data B]?
 
-## E-mail 4: Reengajamento (7 dias sem resposta após proposta)
+## E-mail 4. Reengajamento (7 dias sem resposta após proposta)
 
-**Assunto:** Re: Proposta ABBA: [Empresa]
+**Assunto:** Re: Proposta ABBA. [Empresa]
 
 > [Nome], sem pressão: sei como a agenda aperta.
 >
-> Duas coisas: (1) a proposta segue válida até [data]; (2) se o momento não for agora, me diga e eu volto no trimestre que fizer sentido: sem rodeio de vendedor.
+> Duas coisas: (1) a proposta segue válida até [data]; (2) se o momento não for agora, me diga e eu volto no trimestre que fizer sentido, sem rodeio de vendedor.
 >
 > Se houver alguma trava específica (valor, escopo, timing), prefiro ouvir e resolver do que ficar adivinhando.
 
-## E-mail 5: Pós-assinatura (mesmo dia)
+## E-mail 5. Pós-assinatura (mesmo dia)
 
 **Assunto:** Bem-vindos à ABBA: próximos passos do kickoff
 

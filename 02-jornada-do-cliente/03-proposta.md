@@ -7,8 +7,8 @@ Lead qualificado pediu proposta, ou a apresentação da degustação ([estágio 
 
 ## Checklist
 
-- [ ] Escolher o produto certo: dor difusa/curiosidade → **Workshop Shadow AI** · decisão de investimento em IA → **Avaliação de Prontidão** · dor jurídica/compliance → **Sprint LGPD** · avaliação já feita + apetite confirmado → **Programa Completo**
-- [ ] Preços SOMENTE da [tabela v1 vigente](../03-comercial/tabela-de-precos.md) (fixada 2026-07-23), nunca improvisar valor
+- [ ] A proposta é sempre o **Termo do Programa** ("AI Native · Ano 1", porte pela [calculadora](../06-ferramentas/calculadora-construcao.md)) ou o **[Conselheiro de IA](../03-comercial/conselheiro-de-ia.md)** (só quando o prospect já tem IA rodando). Diagnóstico standalone (R$ 45 mil) só se o cliente insistir em não assinar o programa: produto distinto, nunca comparado com a fase 1 na mesa
+- [ ] Preços SOMENTE da [tabela v3](../03-comercial/tabela-de-precos.md), nunca improvisar valor
 - [ ] Copiar o template correspondente de [`03-comercial/`](../03-comercial/) e preencher TODOS os `{{CAMPOS}}` (nada de placeholder sobrando)
 - [ ] Personalizar com as dores anotadas na descoberta (palavras do prospect, não as nossas)
 - [ ] Revisão cruzada: o outro sócio lê antes do envio (4 olhos em tudo que sai)

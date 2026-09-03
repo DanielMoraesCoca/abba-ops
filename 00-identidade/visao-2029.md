@@ -21,36 +21,36 @@ A demanda cresce: consultoria de tecnologia passa de **US$ 400 bi em 2026** (Sou
 - Apresentação interna da **Deloitte projeta que a cobrança por hora vira "uma fatia fina" do mercado até 2035**.
 - A pirâmide está sendo cortada pela base: vagas de trainee nas Big 4 no Reino Unido caíram entre 6% e 30%; vagas de *graduate* em consultoria/contabilidade caíram 44% em um ano.
 
-**O termômetro mais honesto é a Accenture.** No 3º trimestre de 2026: receita de US$ 18,7 bi (+6%), mas **novas reservas caindo 2%**, enquanto as reservas de IA quase dobram (US$ 2,2 bi só no Q1 FY26). Ou seja: **a IA não está somando ao bolo; está substituindo trabalho tradicional a preço menor.**
+**O termômetro mais honesto é a Accenture.** No 3º trimestre de 2026: receita de US$ 18,7 bi (+6%), mas **novas reservas caindo 2%**: enquanto as reservas de IA quase dobram (US$ 2,2 bi só no Q1 FY26). Ou seja: **a IA não está somando ao bolo; está substituindo trabalho tradicional a preço menor.**
 
 ### 1.2 O sinal que uma firma de dois sócios precisa ler com atenção
 
-Em **janeiro de 2026 a Accenture comprou a Faculty AI**: 400 cientistas de dados, £42 mi de receita crescendo 29% ao ano, **e ainda com prejuízo**.
+Em **janeiro de 2026 a Accenture comprou a Faculty AI**: 400 cientistas de dados, £42 mi de receita crescendo 29% ao ano. **e ainda com prejuízo**.
 
-A consultoria de IA "pura", de porte médio, **não se sustentou sozinha**. Isso define o tabuleiro: ou você é pequeno e cirúrgico demais para importar, ou grande o bastante para ser ativo estratégico de alguém. **O meio-termo (30 a 300 pessoas) é a zona da morte.** Escolher não crescer em headcount não é modéstia: é sobrevivência estrutural.
+A consultoria de IA "pura", de porte médio, **não se sustentou sozinha**. Isso define o tabuleiro: ou você é pequeno e cirúrgico demais para importar, ou grande o bastante para ser ativo estratégico de alguém. **O meio-termo: 30 a 300 pessoas, é a zona da morte.** Escolher não crescer em headcount não é modéstia: é sobrevivência estrutural.
 
 ### 1.3 Os arquétipos de concorrente
 
 | Arquétipo | O que vende | Preço | Força | **Fraqueza estrutural** |
 |---|---|---|---|---|
-| **Consultorias AI-native globais** (Faculty, Fractal, Distyl, Tribe) | Sistemas em produção em ~90 dias, código e não slide | US$ 75–250k onde a Big 4 cobra US$ 200k–1M+ | Velocidade e credibilidade técnica real | **Economia unitária ruim na escala média**: custo de talento sênior é global, preço da entrega não. Terminam comprados |
+| **Consultorias AI-native globais** (Faculty, Fractal, Distyl, Tribe) | Sistemas em produção em ~90 dias, código e não slide | US$ 75–250k onde a Big 4 cobra US$ 200k–1M+ | Velocidade e credibilidade técnica real | **Economia unitária ruim na escala média** · custo de talento sênior é global, preço da entrega não. Terminam comprados |
 | **Big 4 + Accenture no mid-market** | Plataformas com selo de confiança (KPMG Workbench com ISO/IEC 42001, Deloitte Zora, EY, PwC) | **Piso de seis dígitos anuais** para fechar a conta | Marca que ninguém é demitido por contratar; assinam embaixo do risco | **Não conseguem atender R$ 50–500 mi sem destruir a própria margem.** E vivem um conflito: cada ganho de eficiência que entregam destrói receita própria |
 | **Brasileiros** (CI&T, Semantix, Blip, Datarisk, Aquarela, Zup/Ília) | CI&T é o benchmark real: o **Flow** já tem 140+ clientes e ~4.700 agentes ativos, receita +23% YoY | Tickets grandes; mid-market só via canal | CI&T tem camada de orquestração proprietária e capital aberto | Capital aberto precisa de ticket grande; os de *staff augmentation* estão em **commoditização acelerada** |
-| **A onda das "agências de IA"** (n8n, Make, Zapier) | Automações e "agentes" no-code | R$ 5–30k por projeto, retainers de R$ 2–10k/mês | Velocidade absurda, demonstração fácil | **Zero fosso.** O que entregam, o cliente aprende em 6 meses, ou a própria plataforma embute no próximo release. **É com este que o comprador brasileiro vai nos confundir** |
-| **Fornecedores entrando em advisory** (Palantir, OpenAI, Salesforce, Microsoft) | Palantir: modelo **forward-deployed engineer**: engenheiros embarcados que constroem dentro do cliente. Receita +85% YoY, retenção líquida de 150% | OpenAI: **ticket mínimo de US$ 10 mi**; capitalizou uma subsidiária de serviços com >US$ 4 bi (mai/2026) | Escala, capital, acesso ao modelo | **Ticket mínimo altíssimo e zero neutralidade**: a solução sempre acaba sendo a tecnologia do próprio fornecedor |
+| **A onda das "agências de IA"** (n8n, Make, Zapier) | Automações e "agentes" no-code | R$ 5–30k por projeto, retainers de R$ 2–10k/mês | Velocidade absurda, demonstração fácil | **Zero fosso.** O que entregam, o cliente aprende em 6 meses · ou a própria plataforma embute no próximo release. **É com este que o comprador brasileiro vai nos confundir** |
+| **Fornecedores entrando em advisory** (Palantir, OpenAI, Salesforce, Microsoft) | Palantir: modelo **forward-deployed engineer** · engenheiros embarcados que constroem dentro do cliente. Receita +85% YoY, retenção líquida de 150% | OpenAI: **ticket mínimo de US$ 10 mi**; capitalizou uma subsidiária de serviços com >US$ 4 bi (mai/2026) | Escala, capital, acesso ao modelo | **Ticket mínimo altíssimo e zero neutralidade** · a solução sempre acaba sendo a tecnologia do próprio fornecedor |
 
 **A leitura que importa:** nenhum deles atende uma empresa brasileira de R$ 80 mi de faturamento. **Mas todos ensinaram o mercado a esperar código rodando em 5 dias, não diagnóstico em 5 semanas.** O padrão de expectativa muda antes do padrão de atendimento.
 
 ### 1.4 A categoria "cérebro de empresa", e por que não devemos entrar nela
 
-O Y Combinator colocou **"Company Brain" no Request for Startups** (abril/2026), com a tese: *"o bloqueio não são mais os modelos: é conhecimento de domínio"*. O batch tem Hyper, GBrain, Savant, Cerenovus, Memory Store correndo pela mesma coisa, com capital de risco: o que significa que **vão subsidiar o preço até perto de zero**.
+O Y Combinator colocou **"Company Brain" no Request for Startups** (abril/2026), com a tese: *"o bloqueio não são mais os modelos, é conhecimento de domínio"*. O batch tem Hyper, GBrain, Savant, Cerenovus, Memory Store correndo pela mesma coisa, com capital de risco: o que significa que **vão subsidiar o preço até perto de zero**.
 
 E os grandes já entregaram:
 
 | Quem | O que já existe |
 |---|---|
 | **Glean** | Grafo de conhecimento com permissões, **US$ 300 mi de ARR** (mai/2026), 15 meses após os US$ 100 mi |
-| **Microsoft Work IQ** | Camada de **memória organizacional dentro do M365**: preferências, decisões históricas, padrões. APIs desde jun/2026 |
+| **Microsoft Work IQ** | Camada de **memória organizacional dentro do M365** · preferências, decisões históricas, padrões. APIs desde jun/2026 |
 | **OpenAI** | Company Knowledge com citações; memória que **envelhece fatos** |
 | **Google Gemini Enterprise** | Busca + agentes com conectores para Workspace, Salesforce, ServiceNow |
 | **Infra pura** (Mem0, Zep, Letta) | **Mem0 a US$ 249/mês, Zep a US$ 25/mês** |
@@ -61,14 +61,14 @@ E os grandes já entregaram:
 
 **Mas eles param todos na mesma fronteira**, e é ali que existe trabalho que nenhuma plataforma faz:
 
-1. **Indexam o que está escrito; não capturam o que nunca foi escrito.** O critério real pelo qual o diretor comercial concede 15% de desconto, a regra informal de qual cliente nunca se recusa, o motivo pelo qual a linha 3 nunca roda às sextas: **isso não está em Slack nenhum.** Extrair exige entrevista e observação. É trabalho de gente.
+1. **Indexam o que está escrito; não capturam o que nunca foi escrito.** O critério real pelo qual o diretor comercial concede 15% de desconto, a regra informal de qual cliente nunca se recusa, o motivo pelo qual a linha 3 nunca roda às sextas. **isso não está em Slack nenhum.** Extrair exige entrevista e observação. É trabalho de gente.
 2. **Não decidem o que é verdade.** Um grafo que ingere tudo ingere o obsoleto, o contraditório e o politicamente conveniente. **Curadoria é um ato de autoridade, não de software**, e nenhum fornecedor assume essa responsabilidade.
 3. **São por-fornecedor, não por-empresa.** O Work IQ enxerga o mundo Microsoft. O TOTVS, o WhatsApp, a planilha do controller e o sistema do chão de fábrica **não estão em nenhum deles**, e é exatamente aí que a empresa brasileira média vive.
 4. **Não fazem a mudança organizacional.** O gargalo comprovado é a lacuna de aprendizado, não o modelo.
 5. **Criam, e não resolvem, o problema de dependência.** 76–81% das empresas declaram preocupação com lock-in, e o mid-market já constrói dependências com 4+ fornecedores simultâneos. **Alguém precisa ser o árbitro neutro, e não pode ser um dos 4.**
 6. **Nenhum deles assina embaixo perante o regulador brasileiro.**
 
-**Nossa posição, em uma frase:** não construímos a memória; **somos a curadora do que entra nela e a fiadora do que sai.** A infraestrutura é grátis; a autoridade sobre o conteúdo não é.
+**Nossa posição, em uma frase:** não construímos a memória. **somos a curadora do que entra nela e a fiadora do que sai.** A infraestrutura é grátis; a autoridade sobre o conteúdo não é.
 
 ---
 
@@ -89,7 +89,7 @@ E o dado que fecha o diagnóstico do nosso mercado: **72% das empresas brasileir
 
 ### 2.2 O diagnóstico honesto
 
-**Hoje a ABBA vende episódios com recorrência anexada.** Avaliação, construção, capacitação (cada um com começo, meio e fim) e depois uma manutenção que o cliente pode cortar no primeiro aperto de caixa sem perder nada que ele consiga nomear.
+**Hoje a ABBA vende episódios com recorrência anexada.** Avaliação, construção, capacitação: cada um com começo, meio e fim, e depois uma manutenção que o cliente pode cortar no primeiro aperto de caixa sem perder nada que ele consiga nomear.
 
 Necessidade disruptiva é outra coisa: **é quando nos remover custa mais do que nos manter.** E o teste é brutalmente simples:
 
@@ -103,8 +103,8 @@ Se for (a), o preço será comprimido até o custo. Se for (b), somos infraestru
 
 1. **Ancorar em obrigação com data, não em oportunidade.** Uma diretoria adia "melhorar produtividade com IA" indefinidamente. Não adia **03/08/2026** (validação dos campos de IBS/CBS em produção), não adia uma fiscalização da ANPD, não adia a cláusula de IA do comprador europeu. **Prazo legal é o conversor mais barato de vitamina em analgésico que existe.**
 2. **Acumulação assimétrica.** O teste operacional: *o mês 24 vale visivelmente mais que o mês 1?* Se cada engajamento parte do zero, é hora bilhável fantasiada. É exatamente isso que distingue os 5% de pilotos que dão certo: **entregam ferramentas com memória e ciclos de aprendizado.**
-3. **Ser o sistema de registro, não o consultor sobre o sistema.** Serviço onde a decisão *nasce* (não onde ela é *revisada*) vira infraestrutura.
-4. **Compressão de ciclo como produto.** O bootcamp de 5 dias da Palantir: **1.300 execuções, ~75% de conversão**, ciclo de venda de 12–18 meses comprimido para semanas. O que converte não é a promessa: é o cliente **ver o próprio dado funcionando** antes de assinar. Para dois sócios, é o único modelo de venda com custo de aquisição viável. **Nossa Análise ABBA gratuita já é isso e ainda não a tratamos assim.**
+3. **Ser o sistema de registro, não o consultor sobre o sistema.** Serviço onde a decisão *nasce*, não onde ela é *revisada*: vira infraestrutura.
+4. **Compressão de ciclo como produto.** O bootcamp de 5 dias da Palantir: **1.300 execuções, ~75% de conversão**, ciclo de venda de 12–18 meses comprimido para semanas. O que converte não é a promessa, é o cliente **ver o próprio dado funcionando** antes de assinar. Para dois sócios, é o único modelo de venda com custo de aquisição viável. **Nossa Análise ABBA gratuita já é isso e ainda não a tratamos assim.**
 5. **Preço colado ao resultado.** McKinsey em 25% outcome-based; Sierra cobra US$ 1,50 por resolução. Cobrar por resultado é a declaração pública de que não somos vitamina, e o único jeito de não ser comparado a R$/hora.
 6. **Neutralidade como serviço.** Estruturalmente indisponível para Microsoft, Google, OpenAI, Salesforce e para qualquer parceiro de implementação deles.
 
@@ -113,7 +113,7 @@ Se for (a), o preço será comprimido até o custo. Se for (b), somos infraestru
 | Hoje | 2029 |
 |---|---|
 | O cérebro é ferramenta interna da ABBA | O cérebro é onde as decisões de IA do cliente são registradas e provadas |
-| Vendemos um relatório e depois uma manutenção | Vendemos uma **capacidade instalada que compõe**, e a manutenção é o acesso a ela |
+| Vendemos um relatório e depois uma manutenção | Vendemos uma **capacidade instalada que compõe** · e a manutenção é o acesso a ela |
 | A prova é o depoimento do cliente | A prova é a **curva de tenure** (`abba brain benchmark`): a memória fica demonstravelmente melhor com o tempo de casa |
 | Governança é um sprint de LGPD | Governança é **obrigação legal com data** e nós somos quem mantém o dossiê que a satisfaz |
 | Cada cliente começa do zero | O 8º cliente de um setor recebe um diagnóstico **impossível de produzir no 1º** |
@@ -124,17 +124,19 @@ Se for (a), o preço será comprimido até o custo. Se for (b), somos infraestru
 
 Separar isto é o que impede de defender a camada errada.
 
-### Camada 1: Commodity (o preço vai a zero, e tudo bem)
+### Camada 1. Commodity (o preço vai a zero, e tudo bem)
 Análise de texto, geração de conteúdo, automação simples, RAG sobre documentos, memória persistente. **Não é aqui que se defende margem.** Usamos, não vendemos como diferencial. Quem vende isso é a agência de n8n, e vai ser comprimido pelo próximo release da plataforma.
 
-### Camada 2: Serviço (defensável enquanto houver escassez de gente boa)
-Integrar sistemas que não conversam, redesenhar processo, treinar organização, decidir o que fazer primeiro, **responsabilizar-se pelo resultado**. É aqui que vive o número mais valioso que temos:
+### Camada 2. Serviço (defensável enquanto houver escassez de gente boa)
+Integrar sistemas que não conversam, redesenhar processo, treinar organização, decidir o que fazer primeiro, **responsabilizar-se pelo resultado**. É aqui que vive o argumento mais valioso que temos:
 
-> **Pilotos com expertise externa acertam 67%. Só com TI interna: 22%** (MIT, "The GenAI Divide", 2025).
+> **Mais de 80% dos projetos de IA falham: o dobro da taxa de projetos de TI comuns, e a causa nº 1 é começar sem critério de sucesso definido** (RAND, 2024, 65 entrevistas com engenheiros de ML sêniores).
 
-**Esse é o produto da ABBA em forma numérica:** defensável, citável em qualquer sala de conselho, e a única coisa desta pesquisa que **nenhuma plataforma pode embutir num SKU**.
+**Esse é o produto da ABBA em forma numérica**: nós somos, literalmente, a empresa do critério de sucesso combinado antes. Defensável, citável em qualquer sala de conselho, e a única coisa desta pesquisa que **nenhuma plataforma pode embutir num SKU**.
 
-### Camada 3: Ativo acumulado (o único fosso que cresce sozinho)
+> ⚠️ Correção de fonte (V4a, 2026-08-23): a versão anterior deste bloco citava "67% externo vs 22% interno" do MIT "GenAI Divide". O número foi **aposentado**: relatório não revisado por pares, autorrelato, e autores com conflito de interesse. Cânone e proibições: [base de evidências](base-de-evidencias.md).
+
+### Camada 3. Ativo acumulado (o único fosso que cresce sozinho)
 - **Memória por cliente** com autoridade de origem, linha do tempo bitemporal e deleção comprovável
 - **Trilha decisão → resultado medido** (`decisions` → `decision_outcomes`): a prova de que funcionou
 - **Vault de padrões anonimizados** entre clientes: o volante
@@ -149,12 +151,12 @@ Integrar sistemas que não conversam, redesenhar processo, treinar organização
 
 ### 4.1 O que realmente defende uma firma de serviços
 
-1. **Dados entre clientes:** *"uma das formas mais defensáveis de IP que uma firma de serviços pode ter, porque nenhum cliente individual consegue replicar, e nenhum concorrente que não fez o trabalho também."* É assim que McKinsey e BCG acumulam o que chamam de "best practices".
-2. **IP metodológico que funciona sem a pessoa:** a diferença entre 0,5× e 4× de receita no valuation.
-3. **O volante dados↔produto:** ferramenta usada em todo engajamento (barateia a entrega) e vendida à parte (recorrência).
-4. **Custo de troca por acúmulo de contexto**, se detemos o mapa curado da empresa, trocar a ABBA custa reconstruir o mapa.
-5. **Posicionamento regulatório:** o mais subestimado no Brasil e o de data mais marcada (§5).
-6. **Histórico de resultado medido:** num mercado onde 95% falham, prova é escassez pura.
+1. **Dados entre clientes**. *"uma das formas mais defensáveis de IP que uma firma de serviços pode ter, porque nenhum cliente individual consegue replicar, e nenhum concorrente que não fez o trabalho também."* É assim que McKinsey e BCG acumulam o que chamam de "best practices".
+2. **IP metodológico que funciona sem a pessoa**: a diferença entre 0,5× e 4× de receita no valuation.
+3. **O volante dados↔produto**: ferramenta usada em todo engajamento (barateia a entrega) e vendida à parte (recorrência).
+4. **Custo de troca por acúmulo de contexto**: se detemos o mapa curado da empresa, trocar a ABBA custa reconstruir o mapa.
+5. **Posicionamento regulatório**: o mais subestimado no Brasil e o de data mais marcada (§5).
+6. **Histórico de resultado medido**: num mercado onde mais de 80% falham (RAND) e onde quem faz o trabalho erra em ~40 pontos a própria percepção de ganho (METR), prova medida de fora é escassez pura.
 
 ### 4.2 A nossa interseção defensável
 
@@ -201,11 +203,11 @@ Regras que não se vendem, nem por um contrato grande, nem por um cliente import
 |---|---|---|
 | 1 | **Toda saída ao cliente passa por curadoria e assinatura humana.** O brief nasce RASCUNHO | Perdemos a defesa legal sob o PL 2338 e viramos "mais um que despeja saída de LLM" no primeiro erro público |
 | 2 | **Um cérebro por cliente, segregado.** Só o vault anonimizado cruza padrões | Um vazamento entre clientes encerra a empresa. Não há pedido de desculpas para isso |
-| 3 | **Nada se deleta fora do `abba forget`.** Episódios são append-only; fatos supersedem, nunca somem | Perdemos a única coisa que nos torna auditáveis, e o certificado de resíduo zero vira mentira |
+| 3 | **Nada se deleta fora do `abba forget`.** Episódios são append-only; fatos supersedem, nunca somem | Perdemos a única coisa que nos torna auditáveis · e o certificado de resíduo zero vira mentira |
 | 4 | **O avaliador é intocável.** Golden sets e travas ficam fora do alcance de qualquer loop de melhoria | O sistema passa a otimizar a própria nota. É a lição da Darwin Gödel Machine, e ela não perdoa |
 | 5 | **Nunca prometer acurácia onde só medimos coerência.** As sondas grátis medem consistência da linha do tempo; só a sonda paga mede fidelidade à fonte | Vendemos um número que não temos. Um cliente técnico descobre, e a credibilidade não volta |
-| 6 | **Origem fraca nunca supersede verdade forte em silêncio** | Reabrimos o envenenamento de memória que a Onda 1 fechou, e a memória deixa de ser confiável exatamente onde importa |
-| 7 | **Não virar agência generalista.** Uma espinha, um segmento; toda oferta é contêiner do MESMO IP | O posicionamento dilui, o preço cai, e viramos o arquétipo (d), que não tem fosso nenhum |
+| 6 | **Origem fraca nunca supersede verdade forte em silêncio** | Reabrimos o envenenamento de memória que a Onda 1 fechou · e a memória deixa de ser confiável exatamente onde importa |
+| 7 | **Não virar agência generalista.** Uma espinha, um segmento; toda oferta é contêiner do MESMO IP | O posicionamento dilui, o preço cai, e viramos o arquétipo (d) · que não tem fosso nenhum |
 | 8 | **Não vender estratégia sem caminho até produção** | Advisory-only está perdendo estruturalmente. É o negócio que está sendo desmontado |
 | 9 | **Não aceitar preço 100% por resultado** | Vira guerra de atribuição. O modelo que o comprador brasileiro aceita: fixo que cobre o custo + variável na métrica combinada |
 | 10 | **Não crescer para a zona da morte** (30–300 pessoas) | A Faculty crescia 29% ao ano, tinha 400 pessoas e dava prejuízo. Foi vendida |
@@ -216,7 +218,7 @@ Regras que não se vendem, nem por um contrato grande, nem por um cliente import
 
 Hoje as [5 apostas](apostas-futuras.md) são paralelas e sem ordem. A sequência abaixo é a proposta; os números marcados são **propostas para os sócios decidirem**, não decisões tomadas.
 
-### Horizonte 1: Provar (2026, até o 3º cliente)
+### Horizonte 1. Provar (2026, até o 3º cliente)
 **Objetivo: sair de zero clientes reais e transformar o sistema construído em evidência.**
 - Merge da PR do Conselheiro · primeiro engajamento com o ciclo noturno ligado de verdade
 - **Validação com LLM real** (os 4 passos do runbook) e golden set calibrado pelos sócios: hoje o método está validado só em dados sintéticos ([R1](../05-interno/registro-de-riscos.md))
@@ -224,14 +226,14 @@ Hoje as [5 apostas](apostas-futuras.md) são paralelas e sem ordem. A sequência
 - Primeira curva de tenure com dados reais: mesmo curta, é o começo do artefato publicável
 - *Métrica que importa:* 1 estudo de caso com **resultado medido**, não com depoimento
 
-### Horizonte 2: Compor (2027–2028, 4 a 10 clientes)
+### Horizonte 2. Compor (2027–2028, 4 a 10 clientes)
 **Objetivo: o ativo começa a valer mais que a hora.**
 - **Verticalizar** onde o vault já mostrar padrão repetido (gatilho existente: 3+ clientes no mesmo setor)
 - **Governança de IA como prática**, ancorada no calendário do PL 2338 e da ANPD: a porta com data marcada
 - A recorrência (manutenção + Conselheiro + governança) passa a **cobrir os custos fixos**
 - *Métrica que importa:* o 8º cliente de um setor recebe um diagnóstico impossível no 1º. **Se isso não for verdade, não há fosso, e o horizonte 3 não existe.**
 
-### Horizonte 3: Ser infraestrutura (2029)
+### Horizonte 3. Ser infraestrutura (2029)
 **Objetivo: passar no teste da §2.2 com (b).**
 - O cérebro é onde as decisões de IA do cliente nascem e são provadas
 - Curvas de tenure publicadas como artefato de marketing
@@ -249,7 +251,7 @@ O [plano de negócio](plano-de-negocio.md) tem metas do ano 1 em branco (`{{VALO
 
 ---
 
-## 8. As cinco tensões mais duras: sem resposta pronta
+## 8. As cinco tensões mais duras, sem resposta pronta
 
 Estas vão para a pauta de sócios. Não têm solução óbvia, e fingir que têm seria o pior serviço que este documento poderia prestar.
 
@@ -263,7 +265,7 @@ Se nos posicionarmos como "quem constrói o cérebro", seremos atropelados por u
 Os únicos gatilhos de urgência real no mid-market brasileiro são **regulatórios e fiscais**. Vender a porta com urgência (compliance, reforma, auditabilidade) e a tese de longo prazo (o cérebro que compõe) é vender **duas coisas diferentes ao mesmo cliente**. Só a porta = viramos escritório de compliance com margem de commodity. Só a tese = ciclo longo e morte por fluxo de caixa. **Com dois sócios não há banda para dois motores comerciais.**
 
 **4. Concentração é a única forma de construir o fosso, e é o que mata a firma.**
-A profundidade que cria o custo de troca **é** a concentração que cria o risco existencial: são a mesma variável com dois sinais. E a degradação é passiva (*o preço é deixado quieto para evitar atrito, o ajuste é adiado, o trabalho é aceito com margem menor*) até o negócio se moldar a poucas contas **sem que ninguém tenha decidido isso**. Não dá para maximizar uma sem a outra: só dá para escolher o ponto conscientemente e revisá-lo em calendário fixo.
+A profundidade que cria o custo de troca **é** a concentração que cria o risco existencial: são a mesma variável com dois sinais. E a degradação é passiva. *o preço é deixado quieto para evitar atrito, o ajuste é adiado, o trabalho é aceito com margem menor*, até o negócio se moldar a poucas contas **sem que ninguém tenha decidido isso**. Não dá para maximizar uma sem a outra: só dá para escolher o ponto conscientemente e revisá-lo em calendário fixo.
 
 **5. A janela fecha por cima e por baixo ao mesmo tempo.**
 Vinte e quatro a trinta e seis meses para converter reputação em ativo proprietário. Depois disso, ou donos de algo irreconstruível, ou mais uma firma de dois sócios vendendo horas caras.
@@ -272,6 +274,6 @@ Vinte e quatro a trinta e seis meses para converter reputação em ativo proprie
 
 ## Fontes
 
-Pesquisa competitiva e regulatória de 2026-08-01 (21 buscas, EN+PT). Principais: Source Global Research (outlook 2026) · Accenture Q3 FY2026 e aquisição da Faculty · McKinsey (25% outcome-based, 25 mil agentes) · Deloitte (hora bilhável) · **MIT NANDA "The GenAI Divide" (95% dos pilotos; 67% vs 22%)** · Palantir (FDE, AIP Bootcamp, Q1 2026) · OpenAI Deployment Company · Y Combinator RFS "Company Brain" · Glean, Microsoft Work IQ, OpenAI Company Knowledge, Gemini Enterprise, Mem0/Zep/Letta · CI&T Q1 2026 · Cetic.br e Exame (adoção no Brasil) · PL 2338 · ANPD (Mapa de Temas Prioritários 2026-27) · cronograma da reforma tributária · EU AI Act.
+Pesquisa competitiva e regulatória de 2026-08-01 (21 buscas, EN+PT). Principais: Source Global Research (outlook 2026) · Accenture Q3 FY2026 e aquisição da Faculty · McKinsey (25% outcome-based, 25 mil agentes) · Deloitte (hora bilhável) · **MIT NANDA "The GenAI Divide" (95% dos pilotos; 67% vs 22%: números APOSENTADOS em V4a; ver [base de evidências](base-de-evidencias.md))** · Palantir (FDE, AIP Bootcamp, Q1 2026) · OpenAI Deployment Company · Y Combinator RFS "Company Brain" · Glean, Microsoft Work IQ, OpenAI Company Knowledge, Gemini Enterprise, Mem0/Zep/Letta · CI&T Q1 2026 · Cetic.br e Exame (adoção no Brasil) · PL 2338 · ANPD (Mapa de Temas Prioritários 2026-27) · cronograma da reforma tributária · EU AI Act.
 
 Estudos internos que este documento pressupõe e não repete: [mercado de ofertas](../05-interno/arquivo/estudo-mercado-ofertas.md) · [big techs e o cérebro de empresa](../05-interno/arquivo/estudo-big-techs-company-brain.md) · [memória agêntica](../05-interno/arquivo/estudo-memoria-agentica.md) · [IA financeira](../05-interno/estudo-ia-financeira.md) · [arquitetura do cérebro](../05-interno/arquitetura-cerebro-conselheiro.md).

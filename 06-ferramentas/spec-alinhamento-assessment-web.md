@@ -1,8 +1,8 @@
-# Spec: Alinhamento do Assessment Web (para execução dev)
+# Spec. Alinhamento do Assessment Web (para execução dev)
 
 > Ticket pronto para o chapéu Tecnologia. Objetivo: o assessment (`assessment.abbaservices.com.br`) vestir a marca da casa, falar a língua oficial e converter para conversa. Contexto na [ficha da avaliação](ferramenta-avaliacao.md). **O site ainda não está aberto ao público** (confirmado 2026-07-24): este ticket inteiro executa ANTES do lançamento.
 
-> **Execução pavimentada (2026-07-25):** este ticket foi transposto para dentro do repo da ferramenta: [`docs/ALINHAMENTO-WEB.md`](https://github.com/DanielMoraesCoca/assessment-brain/blob/claude/abba-consulting-structure-kdyfga/docs/ALINHAMENTO-WEB.md): com tokens CSS prontos, logo em `web/public/brand/` e checklist. Pedro executa sem sair do repo dele. **Achado da inspeção: o site público não está no repo de forma alguma** (o `web/` é o console interno): o passo 0 é commitar o site inteiro, não só "mudanças".
+> **Execução pavimentada (2026-07-25):** este ticket foi transposto para dentro do repo da ferramenta. [`docs/ALINHAMENTO-WEB.md`](https://github.com/DanielMoraesCoca/assessment-brain/blob/claude/abba-consulting-structure-kdyfga/docs/ALINHAMENTO-WEB.md): com tokens CSS prontos, logo em `web/public/brand/` e checklist. Pedro executa sem sair do repo dele. **Achado da inspeção: o site público não está no repo de forma alguma** (o `web/` é o console interno): o passo 0 é commitar o site inteiro, não só "mudanças".
 
 ## 0. Pré-requisito (bloqueante: risco R16)
 - A produção roda mudanças que **não estão** no repo assessment-brain. Antes de tocar em qualquer item abaixo: commitar/sincronizar o estado de produção no repo (branch própria, PR normal). Regra daqui em diante: produção só roda código versionado
@@ -15,12 +15,12 @@
 
 ## 2. Nomes (tabela da [marca](../00-identidade/marca-e-nomenclatura.md))
 - "Assessment" → **"Análise ABBA"** em toda a UI e no PDF
-- Recomendações do relatório NUNCA inventam produto: mapear para a escada oficial: "Discovery de IA" → **"Avaliação de Prontidão para IA"** · workshops → "Workshop de Descoberta de Shadow AI" · governança → "Sprint LGPD + Governança de IA". Prompt/template do gerador deve citar apenas estes nomes
+- Recomendações do relatório NUNCA inventam produto: mapear para a escada oficial. "Discovery de IA" → **"Avaliação de Prontidão para IA"** · workshops → "Workshop de Descoberta de Shadow AI" · governança → "Sprint LGPD + Governança de IA". Prompt/template do gerador deve citar apenas estes nomes
 - Rodapé do PDF: sempre `assessment.abbaservices.com.br` (NUNCA URL de staging: checar build de produção)
 
 ## 3. Página final de CTA (nova: copy pronta, usar como está)
 > ## Isto foi feito de fora. Imagine com os dados de dentro.
-> Esta análise usou apenas informação pública. A **Avaliação de Prontidão para IA** entrevista do conselho à linha de frente, quantifica cada oportunidade em reais e entrega um caminho recomendado de até 3 soluções de IA (arquitetura, integrações e agentes trabalhando em conjunto) em 2 semanas.
+> Esta análise usou apenas informação pública. A **Avaliação de Prontidão para IA** entrevista do conselho à linha de frente, quantifica cada oportunidade em reais e entrega um caminho recomendado de até 3 soluções de IA: arquitetura, integrações e agentes trabalhando em conjunto: em 2 semanas.
 > **O próximo passo é gratuito:** apresentamos esta análise ao vivo, em 45 minutos, e mostramos o que a avaliação profunda revelaria no seu caso.
 > **contato@abbaservices.com.br** · abbaservices.com.br
 > *ABBA · Consultoria de IA · Confidencial: elaborado exclusivamente com informação pública; não constitui consultoria formal.*

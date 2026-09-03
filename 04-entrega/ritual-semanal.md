@@ -1,6 +1,6 @@
 # Ritual Semanal: 20 minutos que seguram o cliente
 
-> **Camada:** entrega (processo). O pulso dos degraus **3 e 4** da [escada](../03-comercial/escada-abba.md) (Manutenção e Conselheiro/Estratégia). Decisão dos sócios em 2026-08-01, fundamentada no [estudo de antecipação](../05-interno/estudo-antecipacao.md) §3: contato humano recorrente muda comportamento (meta-análise só de RCTs, g = 0,59); cutucão automatizado não (d = 0,004 corrigido viés). **A ligação é o produto; a IA prepara a pauta.**
+> **Camada:** entrega (processo). O pulso da **fase 3** e da **Assinatura da Capacidade** ([modelo de serviço](../00-identidade/modelo-de-servico.md); estrutura interna nas [3 fases](../03-comercial/escada-abba.md)). Decisão dos sócios em 2026-08-01, fundamentada no [estudo de antecipação](../05-interno/estudo-antecipacao.md) §3: contato humano recorrente muda comportamento (meta-análise só de RCTs, g = 0,59); cutucão automatizado não (d = 0,004 corrigido viés). **A ligação é o produto; a IA prepara a pauta.**
 >
 > Dono: o sócio Conselheiro daquele cliente. **20 minutos, cronometrados.** O relatório mensal e o conselho trimestral continuam: isto é pulso, não substituição.
 
@@ -8,9 +8,9 @@
 
 ## Quando começa e quando não se aplica
 
-- **Começa** quando o cliente entra no degrau 3, **camadas Evolução ou Estratégia** (a camada Operação não inclui presença semanal de sócio: é o que diferencia as camadas, e é o que protege o teto de capacidade abaixo). Nunca antes do primeiro mês de manutenção: sem sistema vivo e sem diário, a semanal vira conversa vazia e mata a percepção de valor.
-- **Não se aplica** a Workshop, Avaliação e Sprint LGPD (têm começo, meio e fim).
-- **Durante o Programa** (16 semanas) vale a reunião de projeto, que é outra coisa e mais longa. A semanal assume quando o programa termina, e é exatamente a ponte que impede o "acabou, obrigado".
+- **Começa** na fase 3 do Programa (ou já na Assinatura), **camadas Evolução ou Estratégia** (a camada Operação não inclui presença semanal de sócio, é o que diferencia as camadas, e é o que protege o teto de capacidade abaixo). Nunca antes do primeiro mês de manutenção: sem sistema vivo e sem diário, a semanal vira conversa vazia e mata a percepção de valor.
+- **Não se aplica** à fase 1 nem à fase 2 do Programa (têm começo, meio e fim definidos).
+- **Durante as fases 1 e 2 do Programa** (semanas 1 ao mês 6) vale a reunião de projeto, que é outra coisa e mais longa. A semanal assume na fase 3, e é exatamente a ponte que impede o "acabou, obrigado".
 
 ## Preparação (5 min, antes de ligar)
 
@@ -25,10 +25,10 @@ A fila é ordenada por prazo. **Escolher no máximo 4 itens**: o que não couber
 
 | # | Item | Tempo | O que se diz |
 |---|---|---|---|
-| 1 | **O que venceu** | 5' | *"Três verdades da memória de vocês estão vencendo: o churn ainda é 4%? O prazo do fornecedor mudou?"*: reconfirmar ou corrigir ali (`abba brain fact ... --by`) |
-| 2 | **Qual gatilho disparou** | 5' | *"Combinamos revisar se o DSO passasse de 45. Passou?"*: conferência do indicador é humana; se disparou, a revisão entra na agenda com data |
-| 3 | **O que decidimos** | 5' | Decisão nova ou destravada → diário na hora, com nome (`abba decision add` / `advance --by`). Decisão parada há 30+ dias → implementar, medir ou abandonar com motivo: **em voz alta** |
-| 4 | **O que vamos medir** | 5' | Toda decisão do item 3 sai com métrica, linha de base e data de medição: **antes** de executar ([protocolo de prova](protocolo-de-prova.md) §1) |
+| 1 | **O que venceu** | 5' | *"Três verdades da memória de vocês estão vencendo: o churn ainda é 4%? O prazo do fornecedor mudou?"* · reconfirmar ou corrigir ali (`abba brain fact ... --by`) |
+| 2 | **Qual gatilho disparou** | 5' | *"Combinamos revisar se o DSO passasse de 45. Passou?"* · conferência do indicador é humana; se disparou, a revisão entra na agenda com data |
+| 3 | **O que decidimos** | 5' | Decisão nova ou destravada → diário na hora, com nome (`abba decision add` / `advance --by`). Decisão parada há 30+ dias → implementar, medir ou abandonar com motivo · **em voz alta** |
+| 4 | **O que vamos medir** | 5' | Toda decisão do item 3 sai com métrica, linha de base e data de medição · **antes** de executar ([protocolo de prova](protocolo-de-prova.md) §1) |
 
 ## O que NÃO entra (e como cortar sem grosseria)
 
@@ -48,7 +48,7 @@ Na pasta do cliente, após cada ligação: `data · itens tocados · decisões n
 ## Por que isso segura o cliente (a mecânica, para não virar cerimônia)
 
 1. A cada semana o cliente **reconfirma ou corrige a própria memória**: o dossiê fica mais dele, e sair da ABBA passa a significar perder um sistema vivo, não cancelar uma reunião.
-2. O item 4 alimenta o [protocolo de prova](protocolo-de-prova.md): sem a semanal, a métrica "combinada antes" atrasa até virar métrica reconstruída depois, que não vale nada.
+2. O item 4 alimenta o [protocolo de prova](protocolo-de-prova.md), sem a semanal, a métrica "combinada antes" atrasa até virar métrica reconstruída depois, que não vale nada.
 3. É a diferença estrutural contra a agência de automação: ela entrega e some; nós aparecemos toda semana com a fila na mão. **O concorrente pode copiar o software; não pode copiar a cadência sem pagar o custo dela.**
 
 ## Ligações

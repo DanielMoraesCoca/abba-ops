@@ -1,4 +1,4 @@
-# Proposta: Conselheiro de IA ABBA (processo)
+# Proposta. Conselheiro de IA ABBA (processo)
 
 > **Camada:** processo. **O enviável é o modelo Word:** [`../08-materiais/modelos/proposta-conselheiro-modelo.docx`](../08-materiais/modelos/proposta-conselheiro-modelo.docx). Produto definido em [conselheiro-de-ia.md](conselheiro-de-ia.md); operado pelo [estágio 10](../02-jornada-do-cliente/10-alinhamento-conselho.md). Estrutura calibrada com a prática de mercado de retainers de CAIO fracionário (primeiros 90 dias com entregas definidas + ciclos com decisão explícita: fontes na [análise estratégica](../05-interno/analise-estrategica-2026-07.md)).
 
@@ -7,29 +7,30 @@
 A cadeira de estrategista de IA da empresa, em regime fracionário: com entregas nomeadas, não horas:
 
 - **Presença estruturada na diretoria** (cadência conforme formato): resultados contra os objetivos que VOCÊS declararam, recomendações priorizadas (máx. 3), decisões registradas em ata
-- **Roadmap vivo de IA:** revisado a cada ciclo, realinhado à visão da diretoria
-- **Arbitragem independente de fornecedores:** parecer por escrito em ≤5 dias úteis ([formato](../04-entrega/arbitragem-de-fornecedores.md))
+- **Roadmap vivo de IA**: revisado a cada ciclo, realinhado à visão da diretoria
+- **Arbitragem independente de fornecedores**: parecer por escrito em ≤5 dias úteis ([formato](../04-entrega/arbitragem-de-fornecedores.md))
 - **Governança e LGPD de IA** vigiadas continuamente
-- **Antena de oportunidades:** padrões anonimizados da nossa prática chegam antes do mercado
+- **Antena de oportunidades**: padrões anonimizados da nossa prática chegam antes do mercado
 
-## 2. Os primeiros 90 dias (entregas definidas: não "acompanhamento")
+## 2. Os primeiros 90 dias (entregas definidas, não "acompanhamento")
 
 | Até | Entrega |
 |---|---|
-| Dia 15 | **Baseline de objetivos declarados**: sessão com a diretoria; o documento-norte de todo o retainer |
+| Dia 15 | **Baseline de objetivos declarados** · sessão com a diretoria; o documento-norte de todo o retainer |
 | Dia 45 | **Roadmap de IA v1** + baseline de governança (política de uso, riscos, adequação LGPD do estado atual) |
 | Dia 90 | **Primeiro ritual completo do conselho** + plano de entrega do próximo ciclo. **Decisão explícita de vocês: escalar, continuar ou parar** |
 
 Ciclos seguintes de 90 dias repetem o ritmo: ritual → recomendações → decisões → registro.
 
-## 3. Formatos: [RASCUNHO v2: NÃO vigente]
+## 3. Formatos: tabela v3 (Virada V5: proposta, Pedro valida)
 
 | Formato | Cadência | Investimento |
 |---|---|---|
-| **Trimestral** | 1 ritual/trimestre + até 2 arbitragens/trimestre | R$ 6.000/mês |
-| **Mensal** | presença mensal + ritual semanal de 20 min + arbitragens ilimitadas + linha direta | R$ 9.000/mês |
+| **Trimestral** | 1 ritual/trimestre + até 2 arbitragens/trimestre | R$ 7.500/mês |
+| **Mensal** | presença mensal + ritual semanal de 20 min + arbitragens ilimitadas + linha direta | R$ 12.000/mês |
+| **Instalação da memória** (venda direta, sem Programa antes) | ingestão, perfil da empresa, primeiro dossiê | R$ 15.000 (única vez) |
 
-Preços em regime rascunho ([tabela](tabela-de-precos.md)); em proposta real antes da ativação da v2, apresentar como condição de lançamento com transparência.
+Preços da [tabela v3](tabela-de-precos.md). Regra de anti-canibalização: o Conselheiro é só para quem **já tem IA rodando**: quem pode comprar o Programa não recebe proposta de Conselheiro.
 
 ## 4. O que precisamos de você
 

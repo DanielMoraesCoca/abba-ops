@@ -15,8 +15,8 @@ Onboarding concluído ([05](05-onboarding.md)); escopo da avaliação no Anexo I
 
 **Análise (semana 2)**
 - [ ] Entrevista de governança (90 min, Jurídico/Compliance/TI)
-- [ ] `abba assess` rodado (modelo de nível cliente: Sonnet/Opus, nunca o barato para entregável)
-- [ ] Conjunto do Assessment produzido nos 3 modelos Word e **editado pelos sócios** (a ferramenta produz o rascunho; o julgamento é nosso): [processo de handoff](../04-entrega/relatorio-avaliacao-handoff.md)
+- [ ] `abba assess` rodado (modelo de nível cliente. Sonnet/Opus, nunca o barato para entregável)
+- [ ] Conjunto do Assessment produzido nos 3 modelos Word e **editado pelos sócios** (a ferramenta produz o rascunho; o julgamento é nosso). [processo de handoff](../04-entrega/relatorio-avaliacao-handoff.md)
 - [ ] Revisão cruzada do outro sócio
 
 **Entrega**

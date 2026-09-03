@@ -6,7 +6,7 @@
 
 **O que é:** a visão documentada em `abba-portal/docs/platform/01_VISION.md` (histórico): o portal de capacitação vendido como produto por assento (SaaS por níveis), com a consultoria como um dos canais de venda; marketplace de agentes; parcerias de conteúdo.
 
-**Por que não agora:** exige conteúdo completo nos 4 níveis, autenticação corporativa madura, billing, suporte self-serve e marca: tudo enquanto o negócio de consultoria ainda não tem o primeiro cliente. Vender consultoria financia e valida a plataforma; o inverso não.
+**Por que não agora:** exige a formação inteira escrita e gravada, autenticação corporativa madura, billing, suporte self-serve e marca: tudo enquanto o negócio de consultoria ainda não tem o primeiro cliente. Vender consultoria financia e valida a plataforma; o inverso não.
 
 **Gatilhos de reavaliação:**
 - [ ] 5+ clientes de consultoria usando a plataforma com adoção comprovada

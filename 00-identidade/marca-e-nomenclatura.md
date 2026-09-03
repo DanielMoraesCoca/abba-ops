@@ -1,4 +1,4 @@
-# Marca e Nomenclatura: ABBA
+# Marca e Nomenclatura. ABBA
 
 > Fonte única dos nomes oficiais. Sete pontos estavam desalinhados entre repos e documentos: este doc fixa cada um (os pendentes viram decisão de sócios).
 
@@ -7,16 +7,20 @@
 | Item | Nome oficial (pt-BR) | Status |
 |---|---|---|
 | Empresa (marca) | **ABBA** | ✅ fixo |
-| E-mail oficial de contato | **`contato@abbaservices.com.br`** (decisão do sócio, 2026-08-04: é o que vai em TODO material externo; `comercial@` existe como caixa interna, nunca em material) |
-| Empresa (assinatura comercial) | **ABBA Consultoria de IA** | ✅ fixo (era "ABBA AI Consulting": traduzido; razão social definitiva pende do CNPJ, pendência do [societário](../05-interno/acordo-societario.md)) |
-| Programa principal | **Programa de Transformação em IA** (proposta alternativa: "Programa de Instalação de Capacidade em IA") | ⏳ decisão P3 |
+| E-mail oficial de contato | **`contato@abbaservices.com.br`** (decisão do sócio, 2026-08-04 · é o que vai em TODO material externo; `comercial@` existe como caixa interna, nunca em material) |
+| Empresa (assinatura comercial) | **ABBA Consultoria de IA** | ✅ fixo (era "ABBA AI Consulting" · traduzido; razão social definitiva pende do CNPJ, pendência do [societário](../05-interno/acordo-societario.md)) |
+| Programa principal | **AI Native · Ano 1** (o Programa) | ✅ fixo (Virada V5, 2026-08-31 · fecha a pendência P3) |
+| Retenção perpétua (ano 2+) | **Assinatura da Capacidade** | ✅ fixo (V5) |
+| Re-medição anual (dentro da Assinatura) | **Exame Anual de IA** | ✅ fixo (V5) · nunca "auditoria" |
+| Marco de saída da fase 1 | **Portão da Prova** | ✅ fixo (V5) |
+| Documento de contratação em dois tempos | **Termo do Programa** | ✅ fixo (V5) |
 | Degustação gratuita | **Análise ABBA** (externa) / "scout" (interna) | ✅ fixo |
 | Avaliação paga | **Avaliação de Prontidão para IA** | ✅ fixo |
-| Workshop | **Workshop de Descoberta de Shadow AI** | ✅ fixo |
-| Sprint | **Sprint LGPD + Governança de IA** | ✅ fixo |
-| Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade), em 3 camadas: **Operação · Evolução · Estratégia** | ✅ fixo (camadas: E2, 2026-07-25; preços v2 em rascunho) |
+| Workshop de Descoberta de Shadow AI | descontinuado como oferta (Virada V5) · vira atividade interna da fase 1 do Programa, sem nome de produto externo | ❌ descontinuado (V5) |
+| Sprint LGPD + Governança de IA | descontinuado como oferta (Virada V5) · vira atividade interna da fase 1 do Programa | ❌ descontinuado (V5) |
+| Manutenção | **Manutenção ABBA** (contrato de manutenção + continuidade) · em 3 camadas: **Operação · Evolução · Estratégia** | ✅ fixo (camadas: E2, 2026-07-25; preços v2 em rascunho) |
 | Alinhamento com conselho (produto) | **Conselheiro de IA ABBA** (externa) / estágio 10, CAIO fracionário (interna) | ✅ fixo (E1, 2026-07-25) |
-| Formato da capacitação | **Turma {{N}} da {{Empresa}}**, sempre turma nomeada com kickoff, semanas definidas e graduação; nunca "acesso à plataforma" | ✅ fixo (E4, 2026-07-25) |
+| Formato da capacitação | **Turma {{N}} da {{Empresa}}** · sempre turma nomeada com kickoff, semanas definidas e graduação; nunca "acesso à plataforma" | ✅ fixo (E4, 2026-07-25) |
 | Partes da formação | **Base comum** (8 aulas) · **Aplicação no trabalho** (11 aulas) · **Formação de Campeão** (8 aulas). São 27 aulas e 15 desafios exigíveis, a MESMA formação para todo mundo a quem for confiado acesso. Nomeie assim em proposta, sala e portal | ✅ fixo (2026-09-03) |
 | ~~Trilhas por papel~~ | ~~Trilhas de aprofundamento por papel (Operacional 6, Gestor 5)~~: **REVOGADO em 2026-09-03.** Era a segmentação HORIZONTAL, e caiu pela mesma razão que a escada de níveis caiu em 26/08: a ABBA vende UMA formação, e dividir a turma por cargo fragmenta o que se quer unir. As 11 aulas continuam existindo e viraram o bloco de aplicação no trabalho, que todo mundo faz. Não usar "trilha do Gestor" nem "trilha Operacional" para descrever o que alguém cursa. O nome sobrevive apenas como vocabulário interno de armazenamento no banco do portal | ❌ revogado |
 | ~~Níveis da plataforma~~ | ~~Nível 1 Explorador · 2 Praticante · 3 Especialista · 4 Arquiteto~~: **REVOGADO em 2026-08-26.** A escada de quatro níveis foi retirada do produto: o sócio decidiu que a ABBA vende UMA formação, igual para todos os funcionários, e uma escada por cima disso fragmenta exatamente o que se quer unir. Na prática ela fechava 19 das 27 aulas. Não usar "Explorador/Praticante/Especialista/Arquiteto" para descrever pessoas em nenhum material. Os nomes sobrevivem apenas como vocabulário interno de armazenamento no banco do portal | ❌ revogado (P7 superado) |
@@ -24,7 +28,7 @@
 | Instrumento pessoal | **Bússola**: card com colunas **PARAR / COMEÇAR / SÓ EU** (redação canônica de 19/08/2026: [currículo](https://github.com/DanielMoraesCoca/abba-portal/blob/main/docs/platform/content/CURRICULO-ABBA-V2.md)). No discurso, as três perguntas: "o que posso parar de fazer? o que posso começar a fazer? **o que só eu faço?**" (card e discurso são a mesma coisa). ⚠️ O card legado dizia CONTINUAR: não imprimir o legado ([texto final](../08-materiais/artefatos-impressos.md)) | ✅ fixo (atualizado 25/08) |
 | Método pedagógico | **Rubrica ABBA**: os quatro movimentos: **escolha · pedido · crítica · entrega** (RUBRICA-01, 20/08/2026). Nossa, sem licença de terceiros. ⚠️ O Método 4D licenciado foi **revogado** em 20/08: a atribuição obrigatória dele só vale se material LEGADO for reusado, e a regra vigente é não gravar nem imprimir nada com 4D ([guia](../08-materiais/guia-producao-fisica.md)) | ✅ fixo (atualizado 25/08) |
 | Artefatos impressos do Kickoff | Card da Bússola · Semáforo de Dados · Esqueleto de Prompt · Lente de Oportunidade · Solution Canvas · Ficha Primeira Vitória | ✅ fixo |
-| Instrumentos internos do método | Lente (tarefa) · Canvas (solução) · Brief (departamento) · Bússola (pessoa) | ✅ fixo: só a Bússola é vocabulário externo |
+| Instrumentos internos do método | Lente (tarefa) · Canvas (solução) · Brief (departamento) · Bússola (pessoa) | ✅ fixo · só a Bússola é vocabulário externo |
 | Metodologia de avaliação | **Avaliação em 25 dimensões** (externa) / assessment-brain (interna, nome de ferramenta) | ✅ fixo |
 | Plataforma de capacitação | **Plataforma ABBA** (externa) / abba-portal (interna) | ✅ fixo |
 | Construção de agentes | **Agentes ABBA** (externa) / CrewAI (stack interna de construção) | ✅ fixo |
@@ -34,7 +38,7 @@
 1. **Nome externo ≠ nome de ferramenta.** Cliente nunca ouve "assessment-brain", "abba-portal", "scout", "tenant": ouve os nomes da coluna oficial.
 2. **Domínio único: `abbaservices.com.br`** em toda assinatura, rodapé e material. Proibido usar URLs `*.vercel.app` com prospect.
 3. **Idioma:** tudo externo em pt-BR. Termos em inglês só quando consagrados (Shadow AI, kickoff, sprint).
-4. Identidade visual: **definida** (navy `#1B2A4A` + dourado `#B8985A`: [identidade-visual](identidade-visual.md); logo em [`../08-materiais/marca/`](../08-materiais/README.md)); arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
+4. Identidade visual: **definida** (navy `#1B2A4A` + dourado `#C2A35B`. [identidade-visual](identidade-visual.md); logo em [`../08-materiais/marca/`](../08-materiais/README.md)); arquivos-fonte viverão em `05 Marketing/Marca/` no Drive.
 
 ## Histórico
 

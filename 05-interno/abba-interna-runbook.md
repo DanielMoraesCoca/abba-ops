@@ -22,7 +22,7 @@ abba ingest "abba-interna" caminho/para/abba-ops/00-identidade/visao-2029.md
 
 ## 2. As decisões reais, com gatilho (uma vez, ~30 min)
 
-Cada pendência viva vira uma decisão com data de revisão: é isso que enche a fila da manhã com coisa verdadeira:
+Cada pendência viva vira uma decisão com data de revisão, é isso que enche a fila da manhã com coisa verdadeira:
 
 ```bash
 abba decision add "abba-interna" --title "P4/P4b: advogado (contrato + Anexo IV)" --recommended-by consultant
@@ -42,7 +42,7 @@ Decisões já tomadas (V3c prateleira, V2z discurso CAIO…) entram como `decide
 ## 3. A rotina (diária, ~10 min; semanal na reunião de sócios)
 
 ```bash
-abba brain sleep "abba-interna"          # noite: LLM REAL, teto padrão US$1: anotar o custo impresso
+abba brain sleep "abba-interna"          # noite: LLM REAL, teto padrão US$1; anotar o custo impresso
 abba brain next "abba-interna"           # manhã: a fila: o que vence, o que está parado
 abba brain facts "abba-interna" --contested   # semanal: claims disputados p/ resolver com --by
 abba brain brief "abba-interna" --render      # mensal: o brief da própria ABBA
@@ -71,7 +71,7 @@ TTL mensal é proposital: snapshot esquecido **expira sozinho** e aparece na fil
 ## 6. O que NÃO fazer nesta instância
 
 - **Não ligar `ABBA_INJECT_FACTS`** antes do eval com flag (plano V3g, bloco E): a injeção de memória na análise está construída e desligada.
-- **Não misturar dado de cliente real:** a abba-interna é da ABBA; cliente real tem engajamento próprio, segregado como sempre.
+- **Não misturar dado de cliente real**: a abba-interna é da ABBA; cliente real tem engajamento próprio, segregado como sempre.
 - **Não usar os padrões `market_research` do vault como "nossa experiência"** em material: são pesquisa com fonte, e o material deve dizer isso.
 - **Não pular a passphrase** em máquina real (R18 continua valendo).
 

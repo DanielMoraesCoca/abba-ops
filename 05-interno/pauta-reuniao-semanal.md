@@ -12,7 +12,7 @@
 | 3 | **Caixa e runway** | 5 min | O número dito em voz alta + faturas a emitir/vencer (Fin-Admin) |
 | 4 | **Checklists dos 5 setores** | 25 min | 5 min por chapéu, dono conduz ([setores](../01-setores/README.md)) |
 | 5 | **Decisões** | 10 min | Cada decisão: classificar a porta (guia abaixo) → [registro](registro-de-decisoes.md) na hora |
-| 6 | **Pendências abertas** | 5 min | Tabela de pendências do registro: o que destravou? quem cobra o quê? |
+| 6 | **Pendências abertas** | 5 min | Tabela de pendências do registro · o que destravou? quem cobra o quê? |
 | 7 | **"O que compôs esta semana?"** | 15 min | Day 1: padrões no vault ([playbook](playbook-vault.md)), melhoria em template/método/material. Semana sem composição = anotar por quê |
 
 ## Guia rápido de portas (item 5)

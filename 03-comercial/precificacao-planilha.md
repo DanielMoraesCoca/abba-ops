@@ -1,6 +1,6 @@
 # Planilha de Precificação
 
-> **Status (2026-08-02):** os §1–§5 foram efetivamente preenchidos e decididos na [proposta do especialista](precificacao-proposta-especialista.md) (cenário C → tabela v1); os `{{ }}` abaixo ficam como molde para a v2. **A seção 6 (registro de reações a preço) é a parte VIVA deste arquivo**: preencher a cada conversa real.: preencher pelos sócios
+> **Status (2026-08-02):** os §1–§5 foram efetivamente preenchidos e decididos na [proposta do especialista](precificacao-proposta-especialista.md) (cenário C → tabela v1); os `{{ }}` abaixo ficam como molde para a v2. **A seção 6 (registro de reações a preço) é a parte VIVA deste arquivo**: preencher a cada conversa real. preencher pelos sócios
 
 > Preencher **numa sentada, juntos**. Seguir a [metodologia](precificacao-metodologia.md). Ao final: transcrever para [`tabela-de-precos.md`](tabela-de-precos.md), registrar no [registro de decisões](../05-interno/registro-de-decisoes.md) (pendência P1). Campos `{{ }}` = só os sócios podem responder.
 
@@ -11,15 +11,15 @@
 | Renda-alvo anual Sócio A (pró-labore) | R$ {{ }} | O que você PRECISA ganhar/ano para esta empresa fazer sentido |
 | Renda-alvo anual Sócio B | R$ {{ }} | idem |
 | **Overhead anual** | soma abaixo ↓ | |
-| · API Anthropic/Claude (avaliações + Iris) | R$ {{ }} | ref.: ~R$ 5/avaliação em Haiku, ~R$ 130 em Sonnet; estimar nº de engajamentos/ano |
-| · Vercel + Supabase + Render | R$ {{ }} | ref.: US$ 40–100/mês somados nos planos pagos iniciais |
-| · CrewAI | R$ {{ }} | ref.: Enterprise ~US$ 60–120 mil/ano OU self-host ≈ R$ 0 + ops. **Decisão embutida: qual via?** |
-| · Google Workspace + domínio | R$ {{ }} | ref.: ~R$ 40/usuário/mês × 2 |
-| · Contador | R$ {{ }} | ref.: R$ 400–1.200/mês para serviços |
-| · Advogado (pacote LGPD + contrato, ano 1) | R$ {{ }} | ref.: R$ 10–30 mil no ano 1 (do checklist do fundador) |
+| · API Anthropic/Claude (avaliações + Iris) | R$ {{ }} | ref. ~R$ 5/avaliação em Haiku, ~R$ 130 em Sonnet; estimar nº de engajamentos/ano |
+| · Vercel + Supabase + Render | R$ {{ }} | ref. US$ 40–100/mês somados nos planos pagos iniciais |
+| · CrewAI | R$ {{ }} | ref. Enterprise ~US$ 60–120 mil/ano OU self-host ≈ R$ 0 + ops. **Decisão embutida: qual via?** |
+| · Google Workspace + domínio | R$ {{ }} | ref. ~R$ 40/usuário/mês × 2 |
+| · Contador | R$ {{ }} | ref. R$ 400–1.200/mês para serviços |
+| · Advogado (pacote LGPD + contrato, ano 1) | R$ {{ }} | ref. R$ 10–30 mil no ano 1 (do checklist do fundador) |
 | · Marketing (site, LinkedIn, eventos) | R$ {{ }} | |
 | · Outros (seguro, viagens não repassadas...) | R$ {{ }} | |
-| Impostos (% sobre receita) | {{ }}% | simulação inicial: 15,5% (Simples Anexo III): confirmar com contador (P5) |
+| Impostos (% sobre receita) | {{ }}% | simulação inicial: 15,5% (Simples Anexo III) · confirmar com contador (P5) |
 | Semanas úteis/ano por sócio | {{ 46 }} | 52 − férias − feriados − doença |
 | Horas/semana dedicadas à ABBA por sócio | {{ }} | honestidade > otimismo |
 | Utilização faturável | {{ }}% | sugerido 50–60% |
@@ -72,14 +72,17 @@ Estimar horas TOTAIS dos dois sócios por entrega (usar os escopos das propostas
 | Política | Decisão |
 |---|---|
 | Desconto charter máximo (com contrapartidas da Cl. 5.3) | {{ }}% |
-| Desconto por pagamento anual antecipado (recorrentes) | {{ }}% |
-| Crédito do produto de entrada no programa (prazo) | 100% em até {{ 90 }} dias |
+| Desconto por pagamento anual antecipado (recorrentes) | **−8%** (v3 · tabela de preços, linha do Ano 2) |
+| Mensalidade (Assinatura/Conselheiro) vs. trimestral antecipado | mensal = **+8%** sobre o equivalente (regra da tabela v3) |
+| Crédito do produto de entrada no programa (prazo) | 100% em até {{ 90 }} dias *(na v3 não se aplica mais ao diagnóstico standalone · produto distinto, sem crédito)* |
 | Alçada: acima de R$ {{ }} exige revisão de advogado antes de assinar | (pendência P4) |
 
 ## 6. Descoberta de preço (preencher após cada conversa real)
 
 | Data | Prospect | Pacote | Preço dito | Reação (susto / neutro / fácil demais) | Ajuste? |
 |---|---|---|---|---|---|
-| 2026-06 | Galápagos Capital (ref ABBA-2026-001) | proposta apresentada **SEM valor**: os R$ 150K constavam do documento interno mas não foram comunicados |  | (sem dado de preço) |  |
+| 2026-06 | Galápagos Capital (ref ABBA-2026-001) | proposta apresentada **SEM valor** · os R$ 150K constavam do documento interno mas não foram comunicados | · | (sem dado de preço) | · |
 
 > ⚠️ Correção 2026-07-23: **nenhum preço foi testado em mercado ainda**: o valor da proposta Galápagos não chegou ao prospect. As primeiras 3 conversas reais com a tabela v1 são o primeiro teste de descoberta de preço. Registrar TODAS.
+
+> 📌 A partir de 2026-08-31 (v3, Virada V5): as próximas conversas reais testam a **tabela v3** (Termo do Programa por porte + Assinatura da Capacidade. [tabela](tabela-de-precos.md)). Registrar aqui cada reação, como sempre.

@@ -6,9 +6,9 @@
 
 | Documento | Responde | Público |
 |---|---|---|
-| Relatório de Maturidade | "Onde estamos?": 6 dimensões executivas (consolidação das 25 internas), lacunas, quick wins | Diretoria |
-| Mapa de Oportunidades | "O que vale a pena?": portfólio priorizado com ROI rastreável | Diretoria + gestores |
-| Plano Diretor | "Em que ordem, com que governança?": roadmap com gates | Patrocinador + diretoria |
+| Relatório de Maturidade | "Onde estamos?" · 6 dimensões executivas (consolidação das 25 internas), lacunas, quick wins | Diretoria |
+| Mapa de Oportunidades | "O que vale a pena?" · portfólio priorizado com ROI rastreável | Diretoria + gestores |
+| Plano Diretor | "Em que ordem, com que governança?" · roadmap com gates | Patrocinador + diretoria |
 
 ## Checklist de handoff
 

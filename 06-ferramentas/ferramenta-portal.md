@@ -43,4 +43,4 @@ Levantado em 2026-08-01: o portal tem três capacidades de ecossistema prontas e
 
 ## Dono e lacunas
 
-**Operação:** chapéu [Capacitação](../01-setores/capacitacao.md) · **Saúde:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R3 (auth interina) · R5 (vídeos: roteiros prontos em `abba-portal/docs/platform/content/roteiros/`, gravação em lotes pelos fundadores). P7: ✅ resolvida 2026-07-23. Status no [mapa](mapa-jornada-ferramentas.md).
+**Operação:** chapéu [Capacitação](../01-setores/capacitacao.md) · **Saúde:** [Tecnologia](../01-setores/tecnologia.md). Lacunas ativas: R3 (auth interina) · R5 (vídeos: roteiros prontos em `abba-portal/docs/platform/content/roteiros/`, gravação em lotes pelos fundadores). P7: ⛔ superada em 26/08 (a escala de níveis saiu do produto; o que ficou resolvido em 23/07 era a escala, e a escala não existe mais). Status no [mapa](mapa-jornada-ferramentas.md).

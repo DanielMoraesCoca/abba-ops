@@ -8,7 +8,7 @@ Contrato assinado, primeira parcela cobrada, kickoff agendado.
 ## Checklist
 
 **Antes do kickoff**
-- [ ] Patrocinador confirmado por escrito (nome, cargo, e-mail): sem patrocinador, não há kickoff
+- [ ] Patrocinador confirmado por escrito (nome, cargo, e-mail), sem patrocinador, não há kickoff
 - [ ] Canal de comunicação criado: canal no Slack/Teams **do cliente** (preferência) ou grupo dedicado; regras do [doc de comunicação](../05-interno/comunicacao.md) aplicadas (WhatsApp = logística; decisão = e-mail)
 - [ ] Lista de participantes recebida (nomes, e-mails, papéis, departamentos)
 - [ ] Contas criadas na plataforma ABBA para os participantes (quando o escopo inclui capacitação/avaliação com pré-trabalho)

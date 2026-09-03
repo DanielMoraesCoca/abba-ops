@@ -36,7 +36,7 @@ Análise da empresa em **25 dimensões proprietárias**: entrevistas em todos os
 
 ### 4. Transformação (capacitação híbrida)
 Mudar todos os níveis da organização, não só os processos:
-- **Plataforma ABBA:** uma formação única para toda a empresa (base comum de 8 aulas para todos, mais aprofundamentos por papel e a Formação de Campeão, todos abertos sem seleção), videoaulas, desafios práticos avaliados por IA, a Iris (guia de IA em português) e a **Bússola**: a pergunta instalada em cada colaborador: *o que posso **parar** de fazer (a IA faz)? o que posso **começar** a fazer (a IA permite)? o que **ainda preciso** fazer?*
+- **Plataforma ABBA:** uma formação única para toda a empresa (base comum de 8 aulas, aplicação no trabalho de 11 e Formação de Campeão de 8: **27 aulas e 15 desafios exigíveis, os mesmos para todo mundo**, sem seleção, sem autorização e sem trilha por papel), videoaulas, desafios práticos avaliados pela Rubrica ABBA, a Iris (guia de IA em português) e a **Bússola**: a pergunta instalada em cada colaborador: *o que posso **parar** de fazer (a IA faz)? o que posso **começar** a fazer (a IA permite)? o que **só eu** faço?*
 - **Presencial:** sessões ao vivo com os fundadores nos marcos do programa: abertura, workshops de nível, encerramento.
 - **Topo da progressão:** acesso a ferramentas de criação de agentes (CrewAI) para o colaborador construir as próprias soluções do dia a dia.
 

@@ -9,7 +9,7 @@ Onboarding concluído; participantes com conta na plataforma; [plano de capacita
 
 | Trilho | O quê |
 |---|---|
-| **Plataforma (assíncrono)** | Uma formação única (base comum de 8 aulas para todos, aprofundamentos por papel e Formação de Campeão, todos abertos sem seleção), aulas próprias em pt-BR (vídeos ABBA em gravação por lotes: [ficha](../06-ferramentas/ferramenta-portal.md)), desafios práticos avaliados pela Rubrica ABBA, Bússola (**Parar / Começar / Só eu** (redação canônica 19/08), Iris disponível o tempo todo) e a **academia diária** (Currículo v3, 23/08): Prática de Hoje na home, Boletim semanal, Biblioteca de Pedidos, cenários de decisão, Minhas Ferramentas: o portal entre as aulas e depois delas |
+| **Plataforma (assíncrono)** | Uma formação única (base comum de 8 aulas, aplifundamentos por papel e Formação de Campeão, todos abertos sem seleção), aulas próprias em pt-BR (vídeos ABBA em gravação por lotes: [ficha](../06-ferramentas/ferramenta-portal.md)), desafios práticos avaliados pela Rubrica ABBA, Bússola (**Parar / Começar / Só eu** (redação canônica 19/08), Iris disponível o tempo todo) e a **academia diária** (Currículo v3, 23/08): Prática de Hoje na home, Boletim semanal, Biblioteca de Pedidos, cenários de decisão, Minhas Ferramentas: o portal entre as aulas e depois delas |
 | **Presencial (síncrono)** | Sessão de abertura (lançamento do programa com o patrocinador) · workshops nos marcos (por departamento) · sessão de encerramento/graduação |
 | **Ao concluir a formação** | Quem conclui as aulas do próprio programa e passa os desafios exigíveis ganha acesso a ferramentas de criação de agentes (CrewAI) para construir soluções dos próprios fluxos: com curadoria da ABBA |
 
