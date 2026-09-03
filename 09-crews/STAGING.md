@@ -14,6 +14,10 @@ O app do GitHub desta sessão pode ler e escrever nos repositórios existentes, 
 pode criar novos. Então o projeto nasceu aqui, íntegro e completo, para não se perder —
 e sai daqui com um comando.
 
+**Tentado de novo no M8 (2026-09-03): o mesmo 403.** Não é permissão que se conquiste
+insistindo — a criação do repositório é ato manual de quem tem a conta, e é o passo 1
+abaixo.
+
 **Nada no código depende deste caminho.** Não há import relativo para fora de `09-crews/`,
 nem caminho absoluto. O único arquivo que menciona o staging é este e o `README.md`.
 

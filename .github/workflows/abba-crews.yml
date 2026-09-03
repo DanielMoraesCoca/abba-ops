@@ -118,8 +118,16 @@ jobs:
 
       # Dado fiscal de cliente e o dado mais sensivel que a ABBA toca.
       # Certificado digital commitado e incidente, nao bug.
+      #
+      # `!cancelled()` porque **controle de seguranca nao pode depender de o resto passar**.
+      # Ate 2026-09-03 estas duas varreduras rodavam so depois de tudo, so no job 3.11 — e
+      # quando o passo do `crewai deploy validate` reprovou (por defeito DELE, nao do
+      # projeto), o job abortou ali e as varreduras **nao rodaram em job nenhum**. Um
+      # certificado commitado no mesmo push teria passado despercebido, com a CI vermelha
+      # por outro motivo. E a mesma familia do G3 do M4b: controle documentado como ativo
+      # e, na hora que importa, inerte. Lint quebrado nao e razao para nao olhar segredo.
       - name: Nenhum segredo commitado
-        if: matrix.python == '3.11'
+        if: ${{ !cancelled() && matrix.python == '3.11' }}
         working-directory: .
         run: |
           if git ls-files | grep -Ei '\.(p12|pfx|pem|key)$'; then
@@ -135,7 +143,7 @@ jobs:
       # O dossie carrega dado fiscal de cliente e nunca pode entrar no repositorio.
       # `core/arquivo.py` ja recusa gravar dentro de arvore git; isto e o cinto.
       - name: Nenhum dossie commitado
-        if: matrix.python == '3.11'
+        if: ${{ !cancelled() && matrix.python == '3.11' }}
         working-directory: .
         run: |
           if git ls-files | grep -E '\.(md\.enc|meta\.json)$'; then
