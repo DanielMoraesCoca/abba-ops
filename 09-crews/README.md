@@ -47,6 +47,30 @@ uv run abba-crews janela -c 2027-03         # disponibilização x prazo final
 uv run abba-crews golden                    # o placar do golden set
 ```
 
+## A agenda — o que vence, e o que ninguém olhou
+
+A tese do produto é um **prazo**. A ferramenta tem de saber quais estão perto:
+
+```bash
+uv run abba-crews agenda --hoje 2027-04-27          # só o que exige ação
+uv run abba-crews agenda --hoje 2027-04-27 --tudo   # a carteira inteira
+uv run abba-crews sentinela -c 2027-03 --mock --todos --guardar
+```
+
+Ordenada por **prazo, nunca por valor**. A doutrina vem da fila do Conselheiro
+(`abba brain next`): *importância é julgamento humano, e uma fila que ranqueia por
+relevância vira a fila que o humano para de ler*. O R$ informa; a data manda — ela é o
+critério que a lei impõe, e trocá-lo por um nosso seria decidir no lugar do contador.
+
+Seis estados: `aguardando_proposta` (o Fisco ainda não disponibilizou — não é pendência),
+`sem_conferencia`, `aguardando_assinatura`, `devolvido_sem_nova_conferencia`, `assinado`,
+`prazo_perdido`. Os três do meio exigem ação.
+
+**Um cliente quebrado não derruba o lote.** Duzentos CNPJs em que o 37º aborta a rodada é
+pior que não ter lote: os 163 seguintes ficariam sem conferência e ninguém saberia quais.
+Cada um reporta o seu desfecho, e o YAML que não carregou aparece nomeado — cliente que
+some da fila é cliente que ninguém confere.
+
 ## O gate humano — a IA rascunha, o humano assina
 
 O dossiê nasce `RASCUNHO` e **só sai daí por assinatura de gente com nome**:

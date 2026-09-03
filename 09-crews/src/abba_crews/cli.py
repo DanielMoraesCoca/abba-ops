@@ -329,6 +329,61 @@ def devolver(
     typer.echo(f"\n  DEVOLVIDO {d.chave}\n  por {d.devolvido_por}: {d.motivo}\n")
 
 
+@app.command("agenda")
+def agenda(
+    hoje: str = typer.Option("", "--hoje", help="Data de referencia (AAAA-MM-DD)."),
+    tudo: bool = typer.Option(False, "--tudo", help="Mostra tambem o que nao exige acao."),
+) -> None:
+    """A fila da manha: o que vence, e o que ninguem olhou.
+
+    Ordenada por PRAZO, nunca por valor. A doutrina vem da fila do Conselheiro
+    (`abba brain next`): importancia e julgamento humano, e uma fila que ranqueia por
+    relevancia vira a fila que o humano para de ler. O R$ informa; a data manda.
+
+    Roda sem senha — ai ela diz o que **deveria** ter sido conferido, sem saber o que ja
+    foi. Com `ABBA_DB_PASSPHRASE` definida, cruza com os dossies guardados.
+    """
+    from datetime import date as _date
+
+    from abba_crews.core.agenda import montar as _montar_agenda
+    from abba_crews.core.arquivo import Arquivo, RaizInsegura
+    from abba_crews.core.cofre import senha_do_ambiente
+
+    ref = _date.fromisoformat(hoje) if hoje else _date.today()
+
+    arquivo = None
+    if senha_do_ambiente():
+        try:
+            arquivo = Arquivo()
+        except RaizInsegura as e:
+            typer.echo(f"\n  {e}\n")
+            raise typer.Exit(code=1) from e
+
+    a = _montar_agenda(hoje=ref, arquivo=arquivo)
+    typer.echo("")
+    typer.echo(f"  agenda de {ref.strftime('%d/%m/%Y')}")
+    if arquivo is None:
+        typer.echo("  (sem ABBA_DB_PASSPHRASE: mostra o que deveria ser conferido, nao o")
+        typer.echo("   que ja foi. Defina a senha para cruzar com os dossies guardados.)")
+    typer.echo("")
+
+    mostrados = a.itens if tudo else a.exigem_acao
+    if not mostrados:
+        typer.echo("  Nada exige acao hoje.")
+        if not tudo and a.itens:
+            typer.echo(f"  ({len(a.itens)} competencia(s) acompanhada(s) — use --tudo para ver.)")
+    for item in mostrados:
+        typer.echo(f"  {item.resumo()}")
+
+    typer.echo("")
+    typer.echo(f"  {len(a.exigem_acao)} de {len(a.itens)} exigem acao.")
+
+    for problema in a.problemas:
+        # Cliente que sumiu da fila por YAML quebrado e cliente que ninguem confere.
+        typer.echo(f"  ATENCAO: {problema.caminho} nao carregou — {problema.motivo}")
+    typer.echo("")
+
+
 @app.command("janela")
 def janela(
     competencia: str = typer.Option(..., "--competencia", "-c", help="AAAA-MM"),
@@ -357,7 +412,7 @@ def janela(
 
 @app.command("sentinela")
 def sentinela(
-    cnpj: str = typer.Option(..., "--cnpj"),
+    cnpj: str = typer.Option("", "--cnpj", help="Um CNPJ. Ignorado com --todos."),
     competencia: str = typer.Option(..., "--competencia", "-c", help="AAAA-MM"),
     hoje: str = typer.Option("", "--hoje", help="Data de referencia (AAAA-MM-DD)."),
     mock: bool = typer.Option(False, "--mock", help="Usa fonte sintetica."),
@@ -369,6 +424,9 @@ def sentinela(
     ),
     guardar: bool = typer.Option(
         False, "--guardar", help="Grava o dossie cifrado, para aprovacao posterior."
+    ),
+    todos: bool = typer.Option(
+        False, "--todos", help="Roda a carteira inteira em vez de um CNPJ."
     ),
 ) -> None:
     """Roda a Sentinela e imprime o dossie.
@@ -390,6 +448,19 @@ def sentinela(
     if classificar:
         classificador = TABELA_ENSAIO if mock else carregar()
 
+    arquivo = _abre_arquivo() if guardar else None
+
+    if todos:
+        _roda_carteira(
+            competencia=competencia, hoje=hoje, mock=mock,
+            classificador=classificador, arquivo=arquivo,
+        )
+        return
+
+    if not cnpj:
+        typer.echo("informe --cnpj, ou use --todos para rodar a carteira inteira")
+        raise typer.Exit(code=1)
+
     fonte = None
     if mock:
         casos = {c.id: c for c in golden_set()}
@@ -402,8 +473,6 @@ def sentinela(
     payload: dict[str, object] = {"cnpj": cnpj, "competencia": competencia}
     if hoje:
         payload["hoje"] = hoje
-
-    arquivo = _abre_arquivo() if guardar else None
 
     flow = SentinelaFlow(fonte=fonte, classificador=classificador, arquivo=arquivo)
     flow.kickoff({"crewai_trigger_payload": payload})
@@ -423,6 +492,61 @@ def sentinela(
         typer.echo(f"  assinar   abba-crews aprovar --chave {r.impressao} --por \"Nome\"")
         typer.echo("")
     _ = _date
+
+
+def _roda_carteira(  # type: ignore[no-untyped-def]
+    *, competencia: str, hoje: str, mock: bool, classificador, arquivo,
+) -> None:
+    """Roda a carteira inteira. **Um cliente quebrado nao derruba os outros.**
+
+    Duzentos CNPJs em que o 37º aborta a rodada e pior que nao ter lote nenhum: os 163
+    seguintes ficariam sem conferencia e ninguem saberia quais. Aqui cada cliente reporta
+    o seu desfecho, o resumo conta, e a saida e nao-zero se algum falhou — o operador
+    ve o estrago sem perder o resto.
+    """
+    from abba_crews.core.clientes import listar_com_problemas
+    from abba_crews.core.sinteticos import caso_para
+    from abba_crews.flows.sentinela_flow import Fonte, SentinelaFlow
+
+    clientes, problemas = listar_com_problemas()
+    typer.echo("")
+    typer.echo(f"  carteira: {len(clientes)} cliente(s), competencia {competencia}")
+    typer.echo("")
+
+    ok = 0
+    falhas: list[str] = []
+    for config in clientes:
+        fonte = None
+        if mock:
+            # Caso sintetico POR CNPJ: o golden set e ancorado num CNPJ so, e a guarda
+            # do M4b (com razao) recusa documento de terceiro.
+            c = caso_para(config.cnpj, competencia)
+            fonte = Fonte(documentos=c.documentos, apuracao=c.apuracao, origem=f"carteira:{c.id}")
+
+        payload: dict[str, object] = {"cnpj": config.cnpj, "competencia": competencia}
+        if hoje:
+            payload["hoje"] = hoje
+        try:
+            flow = SentinelaFlow(fonte=fonte, classificador=classificador, arquivo=arquivo)
+            flow.kickoff({"crewai_trigger_payload": payload})
+            r = flow.state.registro
+            marca = f"guardado {r.impressao}" if r else "sem persistir"
+            typer.echo(f"  ok   {config.cnpj}  {config.razao_social}  ({marca})")
+            ok += 1
+        except Exception as e:  # noqa: BLE001 — o lote nao pode parar por um cliente
+            falhas.append(f"{config.cnpj}: {type(e).__name__}: {str(e).splitlines()[0]}")
+            typer.echo(f"  ERRO {config.cnpj}  {config.razao_social}")
+
+    typer.echo("")
+    typer.echo(f"  {ok}/{len(clientes)} conferido(s).")
+    for f in falhas:
+        typer.echo(f"  falhou: {f}")
+    for problema in problemas:
+        typer.echo(f"  ATENCAO: {problema.caminho} nao carregou — {problema.motivo}")
+    typer.echo("")
+
+    if falhas or problemas:
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":

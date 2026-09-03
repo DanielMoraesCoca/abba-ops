@@ -30,6 +30,7 @@ from enum import Enum
 
 from pydantic import BaseModel
 
+from abba_crews.core.cnpj import exigir
 from abba_crews.core.creditabilidade import Regra, TabelaCreditabilidade, Veredito
 from abba_crews.core.modelos import (
     ApuracaoFisco,
@@ -317,6 +318,41 @@ def golden_set() -> tuple[CasoGolden, ...]:
             ),
             tipos_esperados=(TipoDivergencia.PAPEL_DIVERGENTE,),
         ),
+    )
+
+
+def caso_para(cnpj: str, competencia: str = COMPETENCIA) -> CasoGolden:
+    """Um caso sintetico **para o CNPJ pedido** — nao um caso do golden set renomeado.
+
+    Existe por causa da guarda do M4b: `reconciliar()` recusa documento que nao envolve o
+    CNPJ apurado, entao o golden set (todo ancorado em CNPJ_EMPRESA) e corretamente
+    rejeitado para qualquer outro cliente. Sem isto, `sentinela --todos` so funcionaria
+    para um cliente — que e exatamente o ponto cego que este marco veio corrigir.
+
+    **O golden set nao e tocado.** Ele e IP travado e a sua funcao e outra: medir recall e
+    precisao com gabarito conhecido. Este construtor e vizinho, e serve so para demonstrar
+    a carteira ponta a ponta em dado sintetico.
+    """
+    limpo = exigir(cnpj, campo="cnpj")
+    ano, mes = (int(x) for x in competencia.split("-"))
+    entrada = DocumentoFiscal(
+        chave=_chave(int(limpo[-6:]) or 1),
+        papel=Papel.ENTRADA,
+        emitente_cnpj=CNPJ_CONTRAPARTE,
+        destinatario_cnpj=limpo,
+        data_emissao=date(ano, mes, 15),
+        itens=(_item(),),
+    )
+    return CasoGolden(
+        id=f"carteira-{limpo}",
+        familia=Familia.POSITIVO,
+        descricao=(
+            f"Credito de entrada do CNPJ {limpo} ausente da proposta do Fisco. "
+            f"Caso sintetico de carteira — nao faz parte do golden set."
+        ),
+        documentos=(entrada,),
+        apuracao=ApuracaoFisco(cnpj=limpo, competencia=competencia, linhas=()),
+        tipos_esperados=(TipoDivergencia.CREDITO_OMITIDO,),
     )
 
 

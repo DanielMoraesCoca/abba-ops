@@ -171,3 +171,24 @@ sempre que a data caía em dia de semana.
 
 **Dono:** Tecnologia + o contador do cliente. **Gate:** primeiro cliente fora de um
 município sem feriado relevante — na prática, o primeiro cliente real.
+
+## P8 — CNPJ alfanumérico
+
+**Aberta no M7 (2026-09-03).** `core/cnpj.py` valida o dígito verificador do CNPJ
+**numérico** — o que fecha o buraco em que `00000000000192` e `11111111111111` eram
+aceitos como clientes válidos.
+
+A Receita passou a emitir **CNPJ com letras**, e a regra de dígito do formato novo
+**não pôde ser conferida deste ambiente** (gov.br bloqueado, como no P1 e no P3b).
+Implementar regra fiscal que não dá para verificar é exatamente o defeito que este
+projeto vem combatendo marco após marco — então ela não foi implementada.
+
+**Efeito hoje:** um CNPJ alfanumérico é recusado por tamanho, porque `normalizar()`
+descarta as letras. Falha alto, que é o desfecho seguro — mas por sorte, não por
+desenho, e a mensagem de erro aponta para esta pendência.
+
+**O que fecha:** a regra oficial do dígito verificador para o formato alfanumérico, na
+fonte primária, mais a decisão sobre a partir de quando um cliente pode aparecer com um.
+
+**Dono:** Tecnologia. **Gate:** primeiro cliente com CNPJ alfanumérico — que pode ser o
+primeiro cliente, dependendo de quando a emissão começou a valer para empresas novas.

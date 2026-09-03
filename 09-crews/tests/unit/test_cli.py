@@ -183,3 +183,78 @@ def test_sem_mock_recusa_citando_o_gate_do_m6() -> None:
     assert r.exit_code != 0
     assert isinstance(r.exception, NotImplementedError)
     assert "M6" in str(r.exception)
+
+
+# --------------------------------------------------------------------------- #
+# Operar uma carteira (M7) — o ponto cego que a engenharia reversa achou
+# --------------------------------------------------------------------------- #
+
+
+def test_agenda_roda_sem_senha_e_diz_que_esta_incompleta() -> None:
+    """Sem senha ela responde o que DEVERIA ter sido conferido, e avisa disso."""
+    r = roda("agenda", "--hoje", "2027-04-27")
+    assert r.exit_code == 0
+    assert "agenda de 27/04/2027" in r.stdout
+    assert "ABBA_DB_PASSPHRASE" in r.stdout
+
+
+def test_agenda_mostra_o_que_exige_acao_e_esconde_o_resto(ambiente: Path) -> None:
+    r = roda("agenda", "--hoje", "2027-04-27")
+    assert "sem_conferencia" in r.stdout
+    assert "prazo_perdido" not in r.stdout, "sem --tudo, so o que exige acao"
+
+    completa = roda("agenda", "--hoje", "2027-04-27", "--tudo")
+    assert "prazo_perdido" in completa.stdout
+
+
+def test_agenda_reflete_o_dossie_guardado(ambiente: Path) -> None:
+    """A fila tem de saber o que ja foi conferido — senao repete trabalho feito."""
+    assert "sem_conferencia" in roda("agenda", "--hoje", "2027-04-27").stdout
+    _guarda(ambiente)
+    assert "aguardando_assinatura" in roda("agenda", "--hoje", "2027-04-27").stdout
+
+
+def test_agenda_depois_do_prazo_para_de_pedir_acao(ambiente: Path) -> None:
+    r = roda("agenda", "--hoje", "2027-06-10", "--tudo")
+    assert "prazo_perdido" in r.stdout
+    assert "0 de" in r.stdout
+
+
+def test_sentinela_sem_cnpj_e_sem_todos_recusa() -> None:
+    r = roda("sentinela", "-c", "2027-03", "--mock")
+    assert r.exit_code == 1
+    assert "--todos" in r.stdout
+
+
+def test_carteira_roda_todos_os_clientes(ambiente: Path) -> None:
+    r = roda("sentinela", "-c", "2027-03", "--hoje", "2027-04-20", "--mock", "--todos", "--guardar")
+    assert r.exit_code == 0
+    assert "1/1 conferido(s)" in r.stdout
+    assert "RASCUNHO" in roda("dossies").stdout
+
+
+def test_um_cliente_quebrado_nao_derruba_o_lote(
+    ambiente: Path, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Duzentos CNPJs em que o 37º aborta a rodada é pior que não ter lote nenhum.
+
+    Os 163 seguintes ficariam sem conferência e ninguém saberia quais.
+    """
+    from abba_crews.core import clientes as _clientes
+
+    dirc = tmp_path / "clientes"
+    dirc.mkdir()
+    for cnpj, nome in (("00000000000191", "Empresa A"), ("11444777000161", "Empresa B")):
+        (dirc / f"{cnpj}.yaml").write_text(
+            f'cnpj: "{cnpj}"\nrazao_social: "{nome}"\ntolerancia_brl: "0.00"\n'
+            'aprovacao:\n  responsavel_nome: "Maria Contadora"\n'
+            '  responsavel_email: "maria@escritorio.com.br"\n',
+            encoding="utf-8",
+        )
+    (dirc / "11222333000181.yaml").write_text('cnpj: "11222333000181"\n', encoding="utf-8")
+    monkeypatch.setattr(_clientes, "DIR_PADRAO", dirc)
+
+    r = roda("sentinela", "-c", "2027-03", "--hoje", "2027-04-20", "--mock", "--todos", "--guardar")
+    assert "2/2 conferido(s)" in r.stdout, "os validos tem de rodar apesar do quebrado"
+    assert "11222333000181.yaml nao carregou" in r.stdout
+    assert r.exit_code == 1, "o lote termina em nao-zero quando algo ficou de fora"

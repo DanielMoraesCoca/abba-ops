@@ -40,6 +40,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
+from abba_crews.core.cnpj import exigir
+
 CENTAVO = Decimal("0.01")
 
 
@@ -142,11 +144,8 @@ class DocumentoFiscal(BaseModel):
 
     @field_validator("emitente_cnpj", "destinatario_cnpj")
     @classmethod
-    def _cnpj_numerico(cls, v: str) -> str:
-        limpo = "".join(c for c in v if c.isdigit())
-        if len(limpo) != 14:
-            raise ValueError(f"CNPJ deve ter 14 digitos, veio {len(limpo)}")
-        return limpo
+    def _cnpj_valido(cls, v: str, info: Any) -> str:
+        return exigir(v, campo=info.field_name)
 
     @model_validator(mode="after")
     def _tem_item(self) -> DocumentoFiscal:
@@ -223,11 +222,8 @@ class ApuracaoFisco(BaseModel):
 
     @field_validator("cnpj")
     @classmethod
-    def _cnpj_numerico(cls, v: str) -> str:
-        limpo = "".join(c for c in v if c.isdigit())
-        if len(limpo) != 14:
-            raise ValueError(f"CNPJ deve ter 14 digitos, veio {len(limpo)}")
-        return limpo
+    def _cnpj_valido(cls, v: str) -> str:
+        return exigir(v, campo="cnpj")
 
     @property
     def total_debito(self) -> Decimal:

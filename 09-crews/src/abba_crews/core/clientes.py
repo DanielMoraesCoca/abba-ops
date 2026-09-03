@@ -18,6 +18,7 @@ from typing import Any
 import yaml
 from pydantic import BaseModel, Field, ValidationError, field_validator
 
+from abba_crews.core.cnpj import exigir, normalizar
 from abba_crews.core.modelos import dinheiro
 
 DIR_PADRAO = Path(__file__).resolve().parents[1] / "config" / "clientes"
@@ -100,10 +101,9 @@ class ConfigCliente(BaseModel):
     @field_validator("cnpj")
     @classmethod
     def _cnpj(cls, v: str) -> str:
-        limpo = "".join(c for c in str(v) if c.isdigit())
-        if len(limpo) != 14:
-            raise ValueError(f"CNPJ deve ter 14 digitos, veio {len(limpo)}: {v!r}")
-        return limpo
+        # Digito verificador, nao so contagem: este YAML e digitado a mao, e numa
+        # carteira de centenas o typo e questao de quando. Ver core/cnpj.py.
+        return exigir(v, campo="cnpj")
 
     @field_validator("tolerancia_brl", mode="before")
     @classmethod
@@ -144,9 +144,59 @@ def carregar(caminho: Path) -> ConfigCliente:
     return config
 
 
+def listar(diretorio: Path | None = None) -> tuple[ConfigCliente, ...]:
+    """A carteira inteira, ordenada por CNPJ.
+
+    Ate 2026-09-03 o diretorio de clientes so era varrido **dentro de uma mensagem de
+    erro** — dava para saber quais existiam quando se pedia um que nao existia, e de
+    nenhum outro jeito. A tese do produto e "centenas de CNPJs por mes"; nada sabia
+    responder quantos eram.
+
+    `exemplo.yaml` fica de fora: e gabarito de configuracao, nao cliente.
+
+    Configuracao invalida **nao derruba a listagem** — vira `ConfigInvalida` na lista de
+    problemas de quem chamou, via `listar_com_problemas`. Numa carteira de duzentos, o
+    37º arquivo quebrado nao pode esconder os outros 199.
+    """
+    clientes, _ = listar_com_problemas(diretorio)
+    return clientes
+
+
+class ConfigInvalida(BaseModel):
+    """Um YAML que nao carregou, e por que. Aparece no lugar do cliente que faltou."""
+
+    model_config = {"frozen": True}
+
+    caminho: str
+    motivo: str
+
+
+def listar_com_problemas(
+    diretorio: Path | None = None,
+) -> tuple[tuple[ConfigCliente, ...], tuple[ConfigInvalida, ...]]:
+    """A carteira **e** o que nela nao carregou. Silencio sobre o segundo e o defeito."""
+    base = diretorio or DIR_PADRAO
+    if not base.is_dir():
+        return (), ()
+
+    clientes: list[ConfigCliente] = []
+    problemas: list[ConfigInvalida] = []
+    for caminho in sorted(base.glob("*.yaml")):
+        if caminho.stem == "exemplo":
+            continue
+        try:
+            clientes.append(carregar(caminho))
+        except (ValueError, FileNotFoundError) as e:
+            problemas.append(ConfigInvalida(caminho=caminho.name, motivo=str(e)))
+    return (
+        tuple(sorted(clientes, key=lambda c: c.cnpj)),
+        tuple(problemas),
+    )
+
+
 def carregar_por_cnpj(cnpj: str, diretorio: Path | None = None) -> ConfigCliente:
     """Busca `<cnpj>.yaml` no diretorio de configuracoes."""
-    limpo = "".join(c for c in cnpj if c.isdigit())
+    limpo = normalizar(cnpj)
     base = diretorio or DIR_PADRAO
     caminho = base / f"{limpo}.yaml"
     if not caminho.exists():
