@@ -339,10 +339,12 @@ def espinha():
               f'<text x="{x+34}" y="{y-2}" font-family="Newsreader, Georgia, serif" font-size="35" fill="#FFFFFF">{t}</text>',
               f'<text x="{x+34}" y="{y+30}" font-family="IBM Plex Mono, monospace" font-size="18" fill="#7C88A2" letter-spacing="1.2">{s}</text>']
     yb = y0 + dy*6
-    for dx in (-120,-46,46,120):
-        q.append(f'<path d="M{x} {yb+14} C {x} {yb+70}, {x+dx} {yb+62}, {x+dx} {yb+128}" fill="none" stroke="#33456A" stroke-width="1"/>')
-    q.append(f'<text x="{x-4}" y="{yb+176}" font-family="IBM Plex Mono, monospace" font-size="19" fill="#5D6E92" letter-spacing="3.4" text-anchor="middle">ATÉ CADA PESSOA, EM CADA PROCESSO</text>')
-    return f'<svg viewBox="0 0 872 {yb+210}" width="100%" style="margin-top:auto;margin-bottom:auto" aria-hidden="true">{"".join(q)}</svg>'
+    # O leque de raizes e a legenda "ate cada pessoa, em cada processo" sairam em
+    # 02/09. Dois motivos, os dois de peso: a metafora da arvore foi removida do
+    # material inteiro pela V3v, e a legenda estava centrada em x=42 num desenho
+    # de 500px de largura, ou seja, 210px dela corriam para fora do cartao. A
+    # peca 02 foi publicada assim.
+    return f'<svg viewBox="0 0 872 {yb+40}" width="100%" style="margin-top:auto;margin-bottom:auto" aria-hidden="true">{"".join(q)}</svg>'
 
 peca("peca-02", "02 · A jornada", "Jornada", 2, [
  ("PEÇA 02", '''
