@@ -28,7 +28,13 @@ Este produto conta dinheiro e cumpre prazo legal. Um LLM que soma errado é um p
 
 ## 2. Estrutura do projeto
 
-Repositório novo, Python. Não mora no `assessment-brain` (que é Node/CLI de avaliação) nem no `abba-portal` (Next.js). Nome de trabalho: `abba-crews`.
+Repositório próprio, Python. Não mora no `assessment-brain` (que é Node/CLI de avaliação) nem no `abba-portal` (Next.js).
+
+> **O código vive em [`DanielMoraesCoca/abba-solucao-tributaria`](https://github.com/DanielMoraesCoca/abba-solucao-tributaria)** desde 2026-09-03. Antes disso ficou em staging dentro de `abba-ops/09-crews/`, porque o app do GitHub da sessão não podia criar repositórios; saiu por `git subtree split`, com os commits do M0 ao M8 preservados, e o staging foi removido daqui.
+>
+> O **repositório** se chama `abba-solucao-tributaria`; o **pacote Python** continua `abba_crews` e a **CLI** continua `abba-crews` — é por isso que os dois nomes convivem no texto abaixo. Renomear o pacote mexeria em imports, nos entrypoints do CrewAI AMP e no `[tool.crewai]`, sem ganho.
+>
+> A árvore abaixo é **spec**, não inventário: descreve o alvo, e parte dela ainda não existe (`diagnostico_flow.py`, `rad_flow.py`, `crews/`). O estado real sai de `uv run abba-crews produtos --detalhe`, no repositório.
 
 ```
 abba-crews/
