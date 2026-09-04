@@ -134,8 +134,8 @@ real (`npm run demo:rehearsal`).
 
 ### 🟠 3.5 Vídeos: zero gravados
 
-14 de 27 roteiros escritos (Fundação 8 + Operacional 6); faltam Gestor
-5 e Especialista 8. **Nenhum vídeo gravado.**
+Os **27 roteiros** estão escritos desde 04/09, palavra por palavra, com
+as marcações de tela. **Nenhum vídeo gravado.**
 
 Isto **não** bloqueia a turma: a aula é completa por desenho sem vídeo
 (4 blocos) e a proposta já diz que o serviço "não é biblioteca de

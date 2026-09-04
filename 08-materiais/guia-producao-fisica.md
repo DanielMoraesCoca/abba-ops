@@ -11,10 +11,9 @@
 ## Vídeos: os NOSSOS, por lote (CONTENT-13)
 
 Roteiros word-for-word prontos em
-`abba-portal/docs/platform/content/roteiros/`: **14 de 27** (Fundação
-8 + as 6 primeiras de aplicação no trabalho); faltam as 5 últimas de
-aplicação e as 8 da Formação de Campeão
-(trilha escrita em 24/08). Gravação pelos fundadores, em lotes.
+`abba-portal/docs/platform/content/roteiros/`: **27 de 27**, desde
+04/09 (base comum 8, aplicação no trabalho 11, Formação de Campeão 8).
+**Zero gravados.** Gravação pelos fundadores, em lotes.
 
 A numeração de lotes abaixo é a MESMA de
 `abba-portal/docs/platform/content/roteiros/README.md` (corrigido
@@ -25,10 +24,10 @@ coisas distintas):
 |---|---|---|
 | 1 | **Aulas 3, 4 e 1 da Fundação** | 3 e 4 são o coração do método (pedido bem construído + crítica do resultado); a 1 é a porta de entrada que todo mundo vê |
 | 2 | Aulas 2, 5, 6 da Fundação | completam o meio da Fundação |
-| 3 | Aulas 7, 8 da Fundação | fechamento da trilha que toda turma percorre |
-| 4 | Operacional O1–O6 | a trilha mais larga (o público da Brasal) |
-| 5 | Gestor G1–G5 (quando os 5 roteiros saírem) | menor público por turma; o gestor lê melhor do que assiste |
-| 6 | Especialista E1–E8 (quando os 8 roteiros saírem) | formação de campeão: público pequeno e tardio na jornada da turma; último lote de propósito |
+| 3 | Aulas 7, 8 da base comum | fechamento da base que toda turma percorre |
+| 4 | Aplicação no trabalho, aulas 1 a 6 | o fluxo da própria pessoa: é por onde todo mundo começa |
+| 5 | Aplicação no trabalho, aulas 7 a 11 | quem revisa, aprova ou assina o trabalho de outros; esse público lê melhor do que assiste |
+| 6 | Formação de Campeão, as 8 | aberta a todos, mas alcançada mais tarde na jornada da turma; último lote de propósito |
 
 **Setup:** talking-head + screen capture · 130–150 palavras/min (8 min ≈
 1.000–1.200 palavras) · gancho nos primeiros 8s · encerrar com a ação de
@@ -59,7 +58,7 @@ terceiros em nenhum card**.
 
 ## Estado e donos
 
-- **Vídeos:** roteiros prontos (14/27); gravação é ação de sócio:
+- **Vídeos:** roteiros prontos (27/27); gravação é ação de sócio:
   consta no checklist de pendências dos fundadores. A ficha do
   [portal](../06-ferramentas/ferramenta-portal.md) mantém o ⚠️ até o
   lote 1 subir.
