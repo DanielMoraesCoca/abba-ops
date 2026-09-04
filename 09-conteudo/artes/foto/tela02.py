@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+# A tela 2 da peca 07, feita com a MESMA foto, cortada no detalhe.
+#
+# Este e o achado que resolve "o resto do carrossel precisa acompanhar a capa":
+# nao e gerar sete fotos por post. E usar UMA foto duas ou tres vezes, em
+# enquadramentos diferentes. Aberto na capa, fechado no detalhe, e o dedo sente
+# que entrou na imagem em vez de trocar de assunto.
+#
+# Custa zero geracao a mais e e o ritmo que cinema e revista usam ha um seculo.
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+STYLE = '''
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin:0; } x-dc { display:block; } helmet { display:none; }
+    .p { width:1080px; height:1350px; position:relative; overflow:hidden;
+         background:#0E1728; color:#FFFFFF;
+         font-family:"Source Serif 4", Georgia, serif; }
+    /* MESMO arquivo da capa. So muda o zoom e o ponto de foco: o mostrador. */
+    .foto { position:absolute; top:0; left:0; width:1080px; height:1350px;
+            background:url("cronometro.jpg") 52% 62%/265% no-repeat; }
+    .veu { position:absolute; top:0; left:0; width:1080px; height:1350px;
+           background:linear-gradient(180deg,
+             rgba(9,16,30,.30) 0%, rgba(9,16,30,.08) 22%,
+             rgba(9,16,30,.34) 56%, rgba(9,16,30,.90) 86%, rgba(9,16,30,.96) 100%); }
+    .grao { position:absolute; top:0; left:0; width:1080px; height:1350px;
+            background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-size:240px 240px; opacity:.11; mix-blend-mode:overlay; }
+    .cab { position:absolute; top:70px; left:96px; right:96px; display:flex;
+           justify-content:space-between; font-family:"IBM Plex Mono", monospace;
+           font-size:19px; letter-spacing:.2em; color:#C3CAD8; }
+    .fio { position:absolute; left:96px; height:1px; width:888px;
+           background:rgba(255,255,255,.26); }
+    .rot { position:absolute; left:96px; top:836px; margin:0;
+           font-family:"IBM Plex Mono", monospace; font-size:21px;
+           letter-spacing:.24em; text-transform:uppercase; color:#D8BE7C; }
+    h1 { position:absolute; left:96px; right:-40px; top:892px; margin:0;
+         font-family:"Newsreader", Georgia, serif; font-weight:400;
+         font-size:96px; line-height:1.04; letter-spacing:-.022em;
+         text-shadow:0 2px 34px rgba(9,16,30,.7); }
+    h1 i { font-style:italic; font-weight:300; color:#D8BE7C; }
+    .pe { position:absolute; top:1186px; left:96px; right:96px; display:flex;
+          justify-content:space-between; font-family:"IBM Plex Mono", monospace;
+          font-size:21px; letter-spacing:.16em; color:#AEB8C8; }
+    .pe .ouro { color:#C2A35B; }
+  </style>
+'''
+open('Foto07b.dc.html','w',encoding='utf-8').write(
+ '<!doctype html>\n<html>\n<head>\n  <meta charset="utf-8">\n'
+ '  <script src="./support.js"></script>\n</head>\n<body>\n<x-dc>\n<helmet>' + STYLE + '</helmet>\n'
+ '<div class="p"><div class="foto"></div><div class="veu"></div><div class="grao"></div>'
+ '<div class="cab"><span>ABBA</span><span>O EXPERIMENTO</span></div>'
+ '<div class="fio" style="top:116px"></div>'
+ '<div class="fio" style="top:1140px"></div>'
+ '<p class="rot">Não foi enquete</p>'
+ '<h1>246 tarefas reais. <i>Cronometradas.</i></h1>'
+ '<div class="pe"><span>§7 · 02/07</span>'
+ '<span class="ouro">abbaservices.com.br</span></div>'
+ '</div>\n</x-dc>\n</body>\n</html>\n')
+print('tela 2 composta')
