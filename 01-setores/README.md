@@ -1,16 +1,16 @@
 # Setores: o modelo de chapéus
 
-> A ABBA tem 2 pessoas e 5 setores. Setor aqui não é departamento, é um **chapéu**: um conjunto nomeado de responsabilidades com UM dono. O dono não faz tudo sozinho; ele **responde** por aquilo (decide, cobra, não deixa cair). Quando a empresa contratar, cada chapéu está pronto para virar função e depois departamento: a descrição de cargo já existe: é o doc do setor.
+> A ABBA tem 2 pessoas e 5 setores. Setor aqui não é departamento: é um **chapéu**: um conjunto nomeado de responsabilidades com UM dono. O dono não faz tudo sozinho; ele **responde** por aquilo (decide, cobra, não deixa cair). Quando a empresa contratar, cada chapéu está pronto para virar função e depois departamento: a descrição de cargo já existe: é o doc do setor.
 
 ## Matriz setor × dono (P6 ✅ decidida em 2026-07-24)
 
 | Setor | Dono | Suplente |
 |---|---|---|
-| [Comercial](comercial.md) · vender: funil, propostas, marketing | **Daniel** | Pedro |
-| [Entrega](entrega.md) · entregar: avaliação, construção, operação | **Daniel** | Pedro |
-| [Capacitação](capacitacao.md) · transformar: plataforma, conteúdo, presencial | **Pedro** | Daniel |
-| [Tecnologia](tecnologia.md) · manter as ferramentas: 3 repos, infra, segurança | **Pedro** | Daniel |
-| [Financeiro-Admin](financeiro-admin.md) · sustentar: caixa, NF, jurídico, LGPD interna | **Daniel** | Pedro |
+| [Comercial](comercial.md): vender: funil, propostas, marketing | **Daniel** | Pedro |
+| [Entrega](entrega.md): entregar: avaliação, construção, operação | **Daniel** | Pedro |
+| [Capacitação](capacitacao.md): transformar: plataforma, conteúdo, presencial | **Pedro** | Daniel |
+| [Tecnologia](tecnologia.md): manter as ferramentas: 3 repos, infra, segurança | **Pedro** | Daniel |
+| [Financeiro-Admin](financeiro-admin.md): sustentar: caixa, NF, jurídico, LGPD interna | **Daniel** | Pedro |
 
 **Regras do modelo:**
 1. Todo setor tem exatamente **um** dono. Empate = o dono decide; discordância forte = [registro de decisões](../05-interno/registro-de-decisoes.md) e segue.
@@ -25,6 +25,6 @@
 | Checklist de um setor sistematicamente atrasado por 4+ semanas | Discutir terceirização ou contratação na reunião de sócios |
 | 2+ engajamentos simultâneos com entrega apertada | Primeiro contrato: perfil de entrega (consultor/implementador) |
 | Volume de leads > capacidade de resposta em 24h | Perfil comercial/SDR |
-| Conteúdo dos níveis Praticante+ virando gargalo | Designer instrucional pt-BR (freelance primeiro) |
+| Conteúdo da aplicação no trabalho e da Formação de Campeão virando gargalo | Designer instrucional pt-BR (freelance primeiro) |
 
 Primeira contratação herda o doc do setor como descrição de função, e o sócio vira gestor do chapéu, não executor.

@@ -1,16 +1,16 @@
-# Proposta — Avaliação de Prontidão para IA
+# Proposta, Avaliação de Prontidão para IA
 
-> ⚠️ SUPERADO PELA V5 (2026-08-31): esta oferta saiu da vitrine — ver
+> ⚠️ SUPERADO PELA V5 (2026-08-31): esta oferta saiu da vitrine, ver
 > [tabela v3](../../03-comercial/tabela-de-precos.md) e
 > [estudo da virada](../estudo-virada-v5.md). Mantido como memória de
 > processo.
 
-> **Uso interno:** proposta da avaliação standalone (2 semanas de campo + semana de entrega) — o produto de entrada mais importante (é a porta natural para o programa completo). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](../../03-comercial/tabela-de-precos.md), congelar PDF no Drive, enviar. Nota: o relatório é entregue em **português** (a cláusula antiga de relatório apenas em inglês foi descartada).
+> **Uso interno:** proposta da avaliação standalone (2 semanas de campo + semana de entrega), o produto de entrada mais importante (é a porta natural para o programa completo). Preencher `{{CAMPOS}}`, preço pela [tabela vigente](../../03-comercial/tabela-de-precos.md), congelar PDF no Drive, enviar. Nota: o relatório é entregue em **português** (a cláusula antiga de relatório apenas em inglês foi descartada).
 
 ---
 
 # {{NOME_DA_EMPRESA}}
-## Avaliação de Prontidão para IA — Proposta
+## Avaliação de Prontidão para IA, Proposta
 
 **Preparado para:** {{NOME_CONTATO}}, {{CARGO_CONTATO}}
 **Preparado por:** ABBA Consultoria de IA
@@ -24,12 +24,12 @@ Um **engajamento standalone de 2 semanas de campo (+ semana de entrega)** que pr
 
 Você recebe:
 
-- **Uma pontuação de prontidão** (0–100) aberta em cinco eixos ponderados de pontuação — *não confundir com as 25 dimensões de análise: as 25 são o que investigamos; os 5 eixos são como a nota se organiza para a diretoria*
-- **Um portfólio de oportunidades** — os casos de uso específicos e ranqueados em que IA produziria mais valor nos próximos 90 dias
-- **Um caminho de solução recomendado** — até 3 agentes de IA concretos, dimensionados para a sua realidade operacional, com propósito e justificativa
-- **O Relatório de Avaliação** — deck executivo com marca ABBA, em português, pronto para levar ao conselho, à diretoria ou a investidores
+- **Uma pontuação de prontidão** (0–100) aberta em cinco eixos ponderados de pontuação, *não confundir com as 25 dimensões de análise: as 25 são o que investigamos; os 5 eixos são como a nota se organiza para a diretoria*
+- **Um portfólio de oportunidades**, os casos de uso específicos e ranqueados em que IA produziria mais valor nos próximos 90 dias
+- **Um caminho de solução recomendado**, até 3 agentes de IA concretos, dimensionados para a sua realidade operacional, com propósito e justificativa
+- **O Relatório de Avaliação**, deck executivo com marca ABBA, em português, pronto para levar ao conselho, à diretoria ou a investidores
 
-A avaliação usa a mesma metodologia proprietária do programa completo da ABBA — análise estruturada em **25 dimensões**, entrevistas com lideranças e equipe e revisão documental. Se você decidir continuar, todos os artefatos aproveitam integralmente como insumo da próxima fase — zero retrabalho. A saída limpa ao final também é totalmente suportada.
+A avaliação usa a mesma metodologia proprietária do programa completo da ABBA, análise estruturada em **25 dimensões**, entrevistas com lideranças e equipe e revisão documental. Se você decidir continuar, todos os artefatos aproveitam integralmente como insumo da próxima fase, zero retrabalho. A saída limpa ao final também é totalmente suportada.
 
 ## 2. Quando o standalone faz sentido
 
@@ -37,9 +37,9 @@ Você está aqui porque uma destas três situações se aplica:
 
 1. **Precisa decidir se compromete com um programa maior de IA** e quer um diagnóstico estruturado antes de assinar um engajamento de transformação
 2. **Já sabe que vai investir em IA**, mas precisa que conselho / patrocinador / controller vejam o caso na linguagem da sua organização, não num deck genérico de fornecedor
-3. **Tem vários fornecedores de IA na mesa** e precisa de uma avaliação independente de prontidão antes de escolher — algo verdadeiro para a sua empresa, não para o pipeline de vendas deles
+3. **Tem vários fornecedores de IA na mesa** e precisa de uma avaliação independente de prontidão antes de escolher, algo verdadeiro para a sua empresa, não para o pipeline de vendas deles
 
-Se você já sabe que quer a transformação completa, é mais barato fechar a jornada de uma vez (o Assessment está incluído). Se está em dúvida, o Assessment é o caminho mais barato para ter certeza — R$ 45.000 para saber exatamente o que fazer, em que ordem, e por quê.
+Se você já sabe que quer a transformação completa, é mais barato fechar a jornada de uma vez (o Assessment está incluído). Se está em dúvida, o Assessment é o caminho mais barato para ter certeza, R$ 45.000 para saber exatamente o que fazer, em que ordem, e por quê.
 
 ## 3. Os cinco eixos da pontuação (as 25 dimensões de análise se consolidam neles)
 
@@ -48,7 +48,7 @@ Se você já sabe que quer a transformação completa, é mais barato fechar a j
 | **Engajamento no pré-trabalho** | /40 | Quantos executivos, gestores e operadores completaram o pré-trabalho. Mede atenção organizacional, não só apetite da liderança |
 | **Profundidade de governança** | /20 | Decisões sobre dados, autorização, escalonamento, auditoria, resposta a incidentes. Nota baixa aqui bloqueia implantação |
 | **Portfólio de oportunidades** | /10 | Quantidade e qualidade de casos de uso concretos levantados pelos seus gestores |
-| **Aprendizado operacional** | /15 | Alfabetização em IA da equipe operacional — medida, não teorizada |
+| **Aprendizado operacional** | /15 | Alfabetização em IA da equipe operacional, medida, não teorizada |
 | **Saúde do ciclo de feedback** | /15 | Participação nas pesquisas + variância entre níveis. Executivos falantes com operadores calados é sinal de alerta |
 
 ## 4. O que está incluído
@@ -61,7 +61,7 @@ Se você já sabe que quer a transformação completa, é mais barato fechar a j
 
 **Semanas 1–2 (execução)**
 - Pré-trabalho assíncrono: reflexões executivas guiadas por IA (3–6 líderes), mapeamento de fluxo de trabalho (5–12 gestores), briefs de oportunidade por departamento, Bússola (Parar / Começar / Continuar) para todos, pesquisas por nível
-- Sessão presencial ou remota (1 dia): entrevista de governança de 90 min com Jurídico/Compliance/TI + workshop de briefing estratégico de 3 horas com a liderança — pontuação revelada, portfólio percorrido, caminho recomendado discutido
+- Sessão presencial ou remota (1 dia): entrevista de governança de 90 min com Jurídico/Compliance/TI + workshop de briefing estratégico de 3 horas com a liderança, pontuação revelada, portfólio percorrido, caminho recomendado discutido
 
 **Semana 3 (entrega)**
 - Relatório de Avaliação em até 3 dias úteis após a sessão
@@ -83,14 +83,14 @@ Cada tabela e gráfico deriva de dados reais que o seu time registrou. Você pod
 
 ## 6. O que precisamos de você
 
-- **Patrocinador executivo** — uma pessoa, sênior o bastante para mandatar participação. ~2 horas ao longo das 2 semanas.
+- **Patrocinador executivo**, uma pessoa, sênior o bastante para mandatar participação. ~2 horas ao longo das 2 semanas.
 - 3–6 executivos (reflexão de 5 min cada) · 5–12 gestores (mapa de fluxo de 10–15 min + brief de 10 min) · 10–25 operadores (pesquisa) · 2–3 pessoas de Jurídico/Compliance/TI (entrevista de governança) · liderança (5–10 pessoas) para o briefing estratégico
 - Canal no Slack/Teams para lembretes de pré-trabalho; sala com projetor (ou Zoom + Miro)
 
 ## 7. Investimento
 
-<!-- ATIVAR QUANDO {{N_PADROES_SETOR}} ≥ 3: "Nosso método já acumulou {{N_PADROES_SETOR}} padrões validados no seu setor — sua avaliação começa na frente." (fonte: vault, E3) -->
-**Engajamento padrão: R$ 45.000** (faixa R$ 35–60 mil conforme porte — [tabela v2](../../03-comercial/tabela-de-precos.md); na v2 este serviço é o **Assessment com dados internos**) — inclui tudo da seção 4, até 25 participantes.
+<!-- ATIVAR QUANDO {{N_PADROES_SETOR}} ≥ 3: "Nosso método já acumulou {{N_PADROES_SETOR}} padrões validados no seu setor, sua avaliação começa na frente." (fonte: vault, E3) -->
+**Engajamento padrão: R$ 45.000** (faixa R$ 35–60 mil conforme porte, [tabela v2](../../03-comercial/tabela-de-precos.md); na v2 este serviço é o **Assessment com dados internos**), inclui tudo da seção 4, até 25 participantes.
 
 Ajustes: organização pequena (<50 colaboradores, até 12 participantes): {{PRECO_AVALIACAO_PEQUENA}} · organização grande (100+, 25–50 participantes, multi-site): {{PRECO_AVALIACAO_GRANDE}} · segunda avaliação para outra divisão em até 90 dias: {{PRECO_SEGUNDA_AVALIACAO}} · entrega remota: sem desconto · pré-revisão jurídica do relatório: {{AJUSTE_REVISAO_JURIDICA}}.
 
@@ -98,9 +98,9 @@ Ajustes: organização pequena (<50 colaboradores, até 12 participantes): {{PRE
 
 ## 8. Saída limpa vs. continuação
 
-- **Caminho A — Continuar para o programa completo.** Todos os artefatos aproveitados; o valor da avaliação **credita 100%** no programa se contratado em até 90 dias.
-- **Caminho B — Adiar 3–6 meses.** O relatório é seu. Reavaliação em 3–6 meses por 50% do valor, se o escopo não mudou materialmente.
-- **Caminho C — Saída limpa.** Você fica com o relatório e todos os artefatos. Guardamos seu arquivo por 24 meses.
+- **Caminho A, Continuar para o programa completo.** Todos os artefatos aproveitados; o valor da avaliação **credita 100%** no programa se contratado em até 90 dias.
+- **Caminho B, Adiar 3–6 meses.** O relatório é seu. Reavaliação em 3–6 meses por 50% do valor, se o escopo não mudou materialmente.
+- **Caminho C, Saída limpa.** Você fica com o relatório e todos os artefatos. Guardamos seu arquivo por 24 meses.
 
 ## 9. O que esta avaliação NÃO é
 
@@ -128,7 +128,7 @@ Dúvidas: {{NOME_FACILITADOR}}, {{EMAIL_FACILITADOR}}.
 Assinaturas:
 
 _______________________________
-{{SIGNATARIO_CLIENTE}} — {{NOME_DA_EMPRESA}} · Data:
+{{SIGNATARIO_CLIENTE}} · {{NOME_DA_EMPRESA}} · Data:
 
 _______________________________
 ABBA Consultoria de IA · Data:

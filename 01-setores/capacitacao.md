@@ -6,7 +6,7 @@
 ## Responsabilidades
 
 - Plano de capacitação por cliente (do [template](../04-entrega/plano-de-capacitacao.md)): trilhas, cadência, sessões presenciais
-- Conteúdo: os materiais finais da Academy estão prontos ([catálogo](../08-materiais/README.md)): prioridade atual: **gravar os 3 vídeos de maior alavancagem (1.3.3, 1.3.1, 2.1.2), imprimir os 6 cards do Kickoff e carregar as trilhas no portal**; personalização [PERSONALIZAR] com dados do 1º cliente
+- Conteúdo: os materiais finais da Academy estão prontos ([catálogo](../08-materiais/README.md)); as 27 aulas JÁ estão no portal (o `turma:preflight` audita). Prioridade atual: **gravar os vídeos pelos roteiros VIGENTES em lotes (Fundação primeiro: aulas 3, 4 e 1; [guia](../08-materiais/guia-producao-fisica.md)) e imprimir os 6 cards do Kickoff**. Nada do Módulo 2.1 (4D revogado) se grava: a correção de 25/08 tirou daqui o vídeo 2.1.2 que esta linha ainda mandava gravar; personalização [PERSONALIZAR] com dados do 1º cliente
 - Sessões presenciais: preparar, conduzir, colher presença e feedback
 - Progressão: acompanhar adoção por cliente (níveis, desafios, Bússola) e agir sobre departamentos travados
 - Graduação: certificados, campeões formados, cerimônia de encerramento
