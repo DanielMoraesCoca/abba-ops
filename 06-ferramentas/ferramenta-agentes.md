@@ -2,6 +2,8 @@
 
 > **Nome externo:** "Agentes ABBA" / serviços gerenciados · **stack interna:** CrewAI + roteamento de LLMs. Serve os estágios [07](../02-jornada-do-cliente/07-construcao-e-implantacao.md) e [09](../02-jornada-do-cliente/09-manutencao.md). (O repo ABBA original é legado/origem: nada aqui depende dele.)
 
+> **Antes de desenhar qualquer agente, passar pela [régua do crew](quando-vira-crew.md):** nem todo fluxo repetitivo vira agente, e prometer agente onde cabia uma função custa caro nos dois sentidos.
+
 ## O que podemos prometer hoje
 
 | ✅ Prometer | ⚠️ Com cuidado | ❌ Não prometer (ainda) |
