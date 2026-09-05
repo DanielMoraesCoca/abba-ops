@@ -58,13 +58,18 @@ export ABBA_DATA_DIR=/caminho/absoluto/para/dados-reais
 export ABBA_DB_PASSPHRASE=...           # regra zero do runbook de ativação
 
 node bin/abba.js doctor --live          # a chave responde? qual renderizador de PDF existe?
-node bin/abba.js engagement create "ABBA" "Ensaio interno" --profile manufacturing-mid-market --currency BRL
-node bin/abba.js ingest "Ensaio interno" ./corpus --level c_suite --phase 2
+node bin/abba.js engagement create "ABBA" "Ensaio interno" --profile general --currency BRL
+sh ../abba-ops/scripts/montar-corpus-primeiro-voo.sh /caminho/para/corpus
+for N in ceo_board:1 c_suite:2 dept_head:3 internal_data:0 external:2; do
+  node bin/abba.js ingest "Ensaio interno" /caminho/para/corpus/${N%%:*} --level ${N%%:*} --phase ${N##*:}
+done
 node bin/abba.js assess "Ensaio interno" --dry-run          # estimativa, zero gasto
 node bin/abba.js assess "Ensaio interno" --budget 8
 ```
 
-**Corpus:** documentos da própria ABBA, ou o Cliente Zero. Nada de cliente pagante.
+**Corpus:** montado pelo [script](../scripts/montar-corpus-primeiro-voo.sh) a partir dos documentos vivos deste repo, com a curadoria explicada em [corpus do primeiro voo](../05-interno/corpus-primeiro-voo.md). Nada de cliente pagante.
+
+**`--profile general` não é detalhe, e a versão anterior deste runbook mandava `manufacturing-mid-market`, que estava errado por dois motivos.** A ABBA não é indústria, e o perfil não é decoração: ele NARRA as dimensões. Medido: `general` roda **25**, `manufacturing-mid-market` roda **20**. Como `abba validate` tem um portão que exige as 25, o comando escrito aqui produziria um vermelho no dia um por um motivo que não é defeito, e você acharia que a ferramenta quebrou.
 
 **`--currency BRL` não é detalhe.** Nada no pipeline instrui moeda ao modelo, então a aritmética feita sobre documentos em reais **sai em reais**. A ferramenta imprime o que o engajamento declara e não converte nada. Sem a flag, o default é dólar e todo número do relatório aparece com o símbolo errado, na direção que nos favorece. Se esquecer: `abba engagement set-currency "<engajamento>" BRL` e re-renderize (relabela, não recalcula).
 
